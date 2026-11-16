@@ -6,6 +6,7 @@ authors:
   - family-names: Goyal
     given-names: Dev D.
     affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0009-9132-744X"
 repository-code: "https://github.com/dvgyl/value-names-in-tool-schemas"
 url: "https://github.com/dvgyl/value-names-in-tool-schemas"
 license:
@@ -41,5 +42,6 @@ preferred-citation:
     - family-names: Goyal
       given-names: Dev D.
       affiliation: Independent Researcher
+      orcid: "https://orcid.org/0009-0009-9132-744X"
   year: 2026
   url: "https://github.com/dvgyl/value-names-in-tool-schemas"
