@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or these data, please cite the preprint."
 title: "How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid"
 type: software
+doi: "10.5281/zenodo.24270645"
 authors:
   - family-names: Goyal
     given-names: Dev D.
@@ -36,6 +37,7 @@ identifiers:
     description: "Registration B (further registered tests)"
 preferred-citation:
   type: article
+  doi: "10.5281/zenodo.24270645"
   status: preprint
   title: "How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid"
   authors:
