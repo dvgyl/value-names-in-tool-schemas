@@ -1,0 +1,63 @@
+EXPLORATORY: analysis chosen after the runs
+subset sizes: {'brief names a guesthouse': 267, 'brief names a hotel': 117, 'brief: no type, no name': 423, 'brief: no type (all)': 807} | no hotel fits the brief: 451
+
+== 1. reads with type = hotel, F0 and F1
+brief names a guesthouse
+  sonnet    F0 2/801 (0.2%, 267 dialogues) | F1 0/801 (0.0%, 267 dialogues)
+  haiku     F0 0/801 (0.0%, 267 dialogues) | F1 0/801 (0.0%, 267 dialogues)
+  sol       F0 9/266 (3.4%, 266 dialogues) | F1 1/267 (0.4%, 267 dialogues)
+  luna      F0 12/801 (1.5%, 267 dialogues) | F1 0/801 (0.0%, 267 dialogues)
+  deepseek  F0 1/267 (0.4%, 267 dialogues) | F1 0/267 (0.0%, 267 dialogues)
+  qwen      F0 3/267 (1.1%, 267 dialogues) | F1 0/267 (0.0%, 267 dialogues)
+  gemma     F0 1/267 (0.4%, 267 dialogues) | F1 0/267 (0.0%, 267 dialogues)
+brief names a hotel
+  sonnet    F0 6/351 (1.7%, 117 dialogues) | F1 3/351 (0.9%, 117 dialogues)
+  haiku     F0 4/351 (1.1%, 117 dialogues) | F1 0/351 (0.0%, 117 dialogues)
+  sol       F0 13/117 (11.1%, 117 dialogues) | F1 3/117 (2.6%, 117 dialogues)
+  luna      F0 24/351 (6.8%, 117 dialogues) | F1 0/351 (0.0%, 117 dialogues)
+  deepseek  F0 0/117 (0.0%, 117 dialogues) | F1 0/117 (0.0%, 117 dialogues)
+  qwen      F0 0/117 (0.0%, 117 dialogues) | F1 1/117 (0.9%, 117 dialogues)
+  gemma     F0 3/117 (2.6%, 117 dialogues) | F1 1/117 (0.9%, 117 dialogues)
+brief: no type, no name
+  sonnet    F0 331/1269 (26.1%, 423 dialogues) | F1 69/1269 (5.4%, 423 dialogues)
+  haiku     F0 72/1269 (5.7%, 423 dialogues) | F1 14/1269 (1.1%, 423 dialogues)
+  sol       F0 248/422 (58.8%, 422 dialogues) | F1 80/423 (18.9%, 423 dialogues)
+  luna      F0 394/1269 (31.0%, 423 dialogues) | F1 22/1269 (1.7%, 423 dialogues)
+  deepseek  F0 94/423 (22.2%, 423 dialogues) | F1 16/421 (3.8%, 421 dialogues)
+  qwen      F0 81/376 (21.5%, 376 dialogues) | F1 15/377 (4.0%, 377 dialogues)
+  gemma     F0 150/420 (35.7%, 420 dialogues) | F1 10/422 (2.4%, 422 dialogues)
+brief: no type (all)
+  sonnet    F0 339/2421 (14.0%, 807 dialogues) | F1 72/2421 (3.0%, 807 dialogues)
+  haiku     F0 76/2421 (3.1%, 807 dialogues) | F1 14/2421 (0.6%, 807 dialogues)
+  sol       F0 270/805 (33.5%, 805 dialogues) | F1 84/807 (10.4%, 807 dialogues)
+  luna      F0 430/2421 (17.8%, 807 dialogues) | F1 22/2421 (0.9%, 807 dialogues)
+  deepseek  F0 95/807 (11.8%, 807 dialogues) | F1 16/805 (2.0%, 805 dialogues)
+  qwen      F0 84/760 (11.1%, 760 dialogues) | F1 16/761 (2.1%, 761 dialogues)
+  gemma     F0 154/804 (19.2%, 804 dialogues) | F1 11/806 (1.4%, 806 dialogues)
+
+== 2. search failure: reads whose type hides every guesthouse while no hotel fits the brief
+   (share of all reads on the dialogues whose brief sets no type)
+  sonnet    f0 130/2421 (5.4%)
+  sonnet    f1 14/2421 (0.6%)
+  haiku     f0 12/2421 (0.5%)
+  haiku     f1 8/2421 (0.3%)
+  sol       f0 124/805 (15.4%)
+  sol       f1 35/807 (4.3%)
+  luna      f0 150/2421 (6.2%)
+  luna      f1 5/2421 (0.2%)
+  deepseek  f0 38/807 (4.7%)
+  deepseek  f1 4/805 (0.5%)
+  qwen      f0 23/760 (3.0%)
+  qwen      f1 2/761 (0.3%)
+  gemma     f0 67/804 (8.3%)
+  gemma     f1 3/806 (0.4%)
+
+== 3. trade against F0, 95% cluster bootstrap interval
+  sonnet    f1: wrong removed 154.5, correct lost 138.0, ratio 0.89 [0.73, 1.09]; paired dialogues {'S1t': 994, 'S3': 490, 'S2': 545}
+  sonnet    f4: wrong removed 202.2, correct lost 273.5, ratio 1.35 [1.17, 1.56]; paired dialogues {'S1t': 994, 'S3': 490, 'S2': 545}
+  haiku     f1: wrong removed 53.7, correct lost 99.0, ratio 1.84 [1.36, 2.61]; paired dialogues {'S1t': 994, 'S3': 490, 'S2': 545}
+  haiku     f4: wrong removed 49.3, correct lost 94.3, ratio 1.91 [1.43, 2.66]; paired dialogues {'S1t': 994, 'S3': 490, 'S2': 545}
+  sol       f1: wrong removed 294.4, correct lost 161.8, ratio 0.55 [0.43, 0.68]; paired dialogues {'S1t': 992, 'S3': 201, 'S2': 229}
+  sol       f4: wrong removed 355.3, correct lost 224.7, ratio 0.63 [0.52, 0.76]; paired dialogues {'S1t': 992, 'S3': 201, 'S2': 228}
+  luna      f1: wrong removed 255.3, correct lost 238.7, ratio 0.93 [0.82, 1.06]; paired dialogues {'S1t': 994, 'S3': 490, 'S2': 545}
+  luna      f4: wrong removed 266.3, correct lost 294.0, ratio 1.10 [0.98, 1.25]; paired dialogues {'S1t': 994, 'S3': 490, 'S2': 545}

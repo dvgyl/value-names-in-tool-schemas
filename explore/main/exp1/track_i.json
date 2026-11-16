@@ -1,0 +1,3067 @@
+{
+ "meta": {
+  "status": "confirmatory",
+  "panel": [
+   "sonnet",
+   "haiku",
+   "sol",
+   "luna",
+   "deepseek",
+   "qwen",
+   "gemma"
+  ],
+  "alpha": 0.05,
+  "permutation": {
+   "draws": 10000,
+   "seed": 2026111301
+  },
+  "bootstrap": {
+   "draws": 2000,
+   "seed": 20261113
+  },
+  "counts": {
+   "objects": 100,
+   "objects_per_word": 25,
+   "requests_per_model": 1200
+  },
+  "rows": {
+   "sonnet": 1200,
+   "haiku": 1200,
+   "sol": 1200,
+   "luna": 1200,
+   "deepseek": 1200,
+   "qwen": 1200,
+   "gemma": 1200
+  },
+  "frozen_sha256": {
+   "main/exp1/analysis_b.py": "e89c7d6a5d2f4b10b034b92b2cf9cb7cd0dc9e2a672dc88c42476925897de34f",
+   "r10/analysis/stats.py": "c90eb62a84f69fe2c6352ed4a9d5d9aad9d6265765088f30ba8fc47d36f03982"
+  },
+  "input_sha256": {
+   "main/track_i/SHA256SUMS": "3de2525ee359618a4256af38bc3bbc350f494abff4d0f8cd24dd6504b0eb236f",
+   "main/track_i/gold.jsonl": "00e11a9c2256c605e22421a6616852c9ca9117105816141e9aa46dc2d9e3baa6",
+   "main/track_i/objects.json": "65c0274e25b59dc4561187e51e7488ab7f7451e4ad9abdbb96239647996c092d",
+   "main/track_i/prompts.jsonl": "791c5eaa6b9ca9096085999b43c20e9dedd204baa6f998a70ca30cee6670c50a",
+   "main/track_i/schema_snapshot.json": "d3810d0c3a291a5fa5cb8888b7008bebbe2b51ba380ff7fdcfdae946502c1215",
+   "main/wave2_track_i_manifest.json": "7612d07cb172cdaddcd6a7400516e7c12926e9370220d01bfc7e8411f97b5e63",
+   "unseal_manifest.json": "8722af479267ae068c3e89d6fc0acaa2a9a357fe19c6d5cbfc5963280c7676be",
+   "em2i_sonnet/raw.jsonl": "bd1dfeb2786c4b317861791859efcb24bf3015971e95f1b6b732196444c28065",
+   "em2i_haiku/raw.jsonl": "75b58a4bc9dad2d5824f99b7cec814d8280a6dda58f41c196fbea64771c080a3",
+   "em2i_sol/raw.jsonl": "1eff25cf5ce708b05196a695de366aeeb83d48e7690bcc2b936fb0178cb539db",
+   "em2i_luna/raw.jsonl": "bb3444644661804028fedb149616abe401f842b6c080e357a7a96db610ba1a16",
+   "em2i_deepseek/raw.jsonl": "b4c21be7a21aced49c53153aa33c0785d58145f19e6301b7642328c526898726",
+   "em2i_qwen/raw.jsonl": "efa2a087e52889da09fa51a18e1b64f19c500dd8bc766f858b4cdb9f84ef282f",
+   "em2i_gemma/raw.jsonl": "ee5ef03a535308b7967d4a5d6ca08da0c48eb0acb6f3603dbf6e74fcf948369b"
+  },
+  "choices": {
+   "family": "The 5 contrasts are registration B section 5, H4 synthetic family, items 1 to 5, in that order, with Holm over the 5 p values. Each is a paired difference per base object and model.",
+   "panel": "The panel is the 7 models that ran Track I (PANEL). gemini-3.8-flash has no Track I answer at the filing; if it runs later, its answers do not enter these tests (registration B section 5b).",
+   "reply": "The reply is the last top-level JSON object in the answer text: the scan starts at each `{` from the left, and an object that parses moves the scan to its end. No object is a parse failure.",
+   "V0": "V0 is the closed JSON schema of the request's family and variant in main/track_i/schema_snapshot.json (keys, types, enums, no extra key). A boolean is never a string, and a string is never a boolean.",
+   "V1": "V1 is the typed validator of PLAN SI-05 for the Track I report, on a reply that passes V0. It rejects: an organization name that is not one of the 6 names of the object (after whitespace and case folding); an organization twice in `ranking`, twice in `unacceptable`, or in both; two conditions with the same organization and attribute; a report with all three lists empty; and a label without a canonical value in the variant's attribute table. Reason: PLAN SI-05 lists unknown values, duplicate or overlapping organizations and an all-empty report; the SI-05 validator itself does not exist yet.",
+   "canonical": "A V1-valid reply is mapped to the canonical labels by the attribute table of its variant (schema_snapshot.json, `attributes`: name to canonical name, label to canonical value), and it is compared with `gold_canonical` of main/track_i/gold.jsonl.",
+   "fields": "The fields are those of the repository rule (semantic-integrity si_eval/extraction_task.py, _erroneous_fields), without valuations: `acceptability:<org>` for each of the 6 organizations (acceptable = in `ranking`, unacceptable = in `unacceptable`, else unspecified); `conditions:<org>.<attribute>` for each pair in the gold or the reply; `ranking:full` when the ranked set differs or two organizations of both rankings change order.",
+   "silent error": "A read scores 1 when it passes V0 and V1 and at least one field differs from the gold, and 0 when it passes V0 and V1 and no field differs. Reason: PLAN SI-08, a field value that passes V1 and differs from the constructive gold; one read is the unit of a cell.",
+   "missing": "A read is a missing cell for the silent error when it has no row, its row did not succeed, it did not stop at end_turn, or it fails the parse, V0 or V1. Reason: registration A section 7 (a V0 failure or a cut reply is a missing cell); a V1 failure is loud, so it is not silent.",
+   "gold check": "Before any answer is scored, the gold of each of the 1,200 requests, in the labels of its variant, must pass V0 and V1 and score 0. Else the script stops.",
+   "contrast value": "Per base object and model, a contrast is the sum of its terms, coefficient times the value. A term on one wording is the read of that cell. A term on the two rewordings is the mean of their valid reads (one or two). A contrast with a term without a value has no value.",
+   "panel mean": "Per base object, the mean of the contrast over the panel models that have a value. A base object without any value leaves the test. Each base object has equal weight.",
+   "test": "Two-sided sign-flip permutation test of the mean over base objects (stats.permutation_test), 10,000 draws, seed PERMUTATION_SEED, the same seed for each contrast. Holm (stats.holm) over the 5 contrasts. A contrast rejects when its Holm p is 0.05 or less.",
+   "predicted signs": "Contrast 1 (renaming) negative, 2 (descriptions) negative, 3 (wording) positive, 4 (interaction) positive, 5 (value label) negative. The tests are two-sided. The signs are used by the claim rules (contrasts 1, 3 and 5) and to break a zero mean in the worst case.",
+   "claims": "Claim 1 holds on constructed items when contrasts 3 and 1 reject with the predicted signs. The anchoring reading holds when Claim 1 holds and contrast 5 rejects with the predicted sign. Reason: registration B section 5, Claim 1 (decision D1).",
+   "worst case": "Each missing cell is scored in the direction that shrinks the contrast: against the sign of the primary panel mean of that contrast (the predicted sign when the mean is 0). A cell whose term has a coefficient of the same sign scores 0, else 1. Then the same test and Holm run again.",
+   "intervals": "Every interval is the 95% percentile interval of stats.cluster_bootstrap, 2,000 draws, BOOTSTRAP_SEED. The cluster is the base object.",
+   "per model": "Each model's paired effect is the mean of its contrast values over the base objects, with its interval. The exact sign test of each model is a description, not a registered test.",
+   "per word": "Part 4 gives each contrast on the 25 base objects of each collision word, with its interval and no test. Reason: PLAN SI-11, the results per collision word as description.",
+   "all errors": "Secondary, no test: a read scores 1 when it fails the parse, V0 or V1, or has a silent error, and 0 when it passes V1 with no wrong field. A read with no row, a row that did not succeed or a cut reply is missing. Reason: PLAN SI-08, all errors add the V0 and V1 failures.",
+   "unsupported commitment": "Secondary, no test: a V1-valid read scores 1 when it states a condition (organization and attribute) that the gold does not state, else 0. Reason: PLAN SI-08, a value for a field that the text leaves not stated; every Track I text states one condition.",
+   "one read": "Track I has one read per cell (PLAN SI-10). There is no repeat analysis.",
+   "frozen inputs": "Every file of main/track_i/SHA256SUMS must have its hash, the SHA-256 of SHA256SUMS must equal track_i_sha256sums of main/wave2_track_i_manifest.json, and the manifest must give 1,200 requests for each panel model.",
+   "input check": "The input folder must hold em2i_<model> folders of the panel only, and unseal_manifest.json with the same panel. Each raw.jsonl must match the SHA-256 and row count of the manifest. `._*` files are ignored."
+  }
+ },
+ "results": {
+  "part1_family": {
+   "tests": [
+    {
+     "number": 1,
+     "contrast": "renaming",
+     "text": "b_renamed minus c_described, collision wording",
+     "objects": 100,
+     "mean": -0.006286,
+     "p": 0.656434,
+     "ci95": [
+      -0.032952,
+      0.020714
+     ],
+     "p_holm": 0.656434,
+     "reject": false,
+     "predicted_sign": -1,
+     "direction": "as predicted"
+    },
+    {
+     "number": 2,
+     "contrast": "descriptions",
+     "text": "c_described minus a_legacy, collision wording",
+     "objects": 100,
+     "mean": -0.025,
+     "p": 0.060394,
+     "ci95": [
+      -0.05,
+      -0.000476
+     ],
+     "p_holm": 0.20038,
+     "reject": false,
+     "predicted_sign": -1,
+     "direction": "as predicted"
+    },
+    {
+     "number": 3,
+     "contrast": "wording",
+     "text": "collision wording minus the mean of the two rewordings, under a_legacy",
+     "objects": 100,
+     "mean": -0.012143,
+     "p": 0.280172,
+     "ci95": [
+      -0.03381,
+      0.009524
+     ],
+     "p_holm": 0.560344,
+     "reject": false,
+     "predicted_sign": 1,
+     "direction": "against the prediction"
+    },
+    {
+     "number": 4,
+     "contrast": "interaction",
+     "text": "wording effect under a_legacy minus wording effect under b_renamed",
+     "objects": 100,
+     "mean": -0.039024,
+     "p": 0.023798,
+     "ci95": [
+      -0.07319,
+      -0.004881
+     ],
+     "p_holm": 0.118988,
+     "reject": false,
+     "predicted_sign": 1,
+     "direction": "against the prediction"
+    },
+    {
+     "number": 5,
+     "contrast": "value_label",
+     "text": "e_value_renamed minus b_renamed, collision wording",
+     "objects": 100,
+     "mean": -0.025714,
+     "p": 0.050095,
+     "ci95": [
+      -0.049429,
+      0.0
+     ],
+     "p_holm": 0.20038,
+     "reject": false,
+     "predicted_sign": -1,
+     "direction": "as predicted"
+    }
+   ],
+   "claim1_holds": false,
+   "anchoring_reading": false
+  },
+  "part2_missing": {
+   "rule": "A read with no row, a row that did not succeed, a cut reply, or a parse, V0 or V1 failure is a missing cell for the silent error. The primary test leaves it out. The worst case scores it in the direction that shrinks the contrast.",
+   "reads": 8400,
+   "missing": 102,
+   "cells": {
+    "sonnet a_legacy collision": {
+     "missing": 3,
+     "reasons": {
+      "V1 empty report": 3
+     }
+    },
+    "sonnet a_legacy reword_1": {
+     "missing": 13,
+     "reasons": {
+      "V1 empty report": 13
+     }
+    },
+    "sonnet a_legacy reword_2": {
+     "missing": 5,
+     "reasons": {
+      "V1 empty report": 5
+     }
+    },
+    "sonnet c_described collision": {
+     "missing": 7,
+     "reasons": {
+      "V1 empty report": 7
+     }
+    },
+    "sonnet c_described reword_1": {
+     "missing": 9,
+     "reasons": {
+      "V1 empty report": 9
+     }
+    },
+    "sonnet c_described reword_2": {
+     "missing": 4,
+     "reasons": {
+      "V1 empty report": 4
+     }
+    },
+    "sonnet b_renamed collision": {
+     "missing": 5,
+     "reasons": {
+      "V1 empty report": 5
+     }
+    },
+    "sonnet b_renamed reword_1": {
+     "missing": 6,
+     "reasons": {
+      "V1 empty report": 6
+     }
+    },
+    "sonnet b_renamed reword_2": {
+     "missing": 5,
+     "reasons": {
+      "V1 empty report": 5
+     }
+    },
+    "sonnet e_value_renamed collision": {
+     "missing": 4,
+     "reasons": {
+      "V1 empty report": 4
+     }
+    },
+    "sonnet e_value_renamed reword_1": {
+     "missing": 5,
+     "reasons": {
+      "V1 empty report": 5
+     }
+    },
+    "sonnet e_value_renamed reword_2": {
+     "missing": 2,
+     "reasons": {
+      "V1 empty report": 2
+     }
+    },
+    "haiku a_legacy collision": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "haiku a_legacy reword_2": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "haiku c_described collision": {
+     "missing": 2,
+     "reasons": {
+      "V1 empty report": 2
+     }
+    },
+    "haiku c_described reword_1": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "haiku c_described reword_2": {
+     "missing": 2,
+     "reasons": {
+      "V1 empty report": 2
+     }
+    },
+    "haiku b_renamed collision": {
+     "missing": 2,
+     "reasons": {
+      "V1 empty report": 1,
+      "V1 unknown organization": 1
+     }
+    },
+    "haiku b_renamed reword_2": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "haiku e_value_renamed collision": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "haiku e_value_renamed reword_1": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "deepseek a_legacy reword_2": {
+     "missing": 2,
+     "reasons": {
+      "V1 duplicate condition": 1,
+      "V1 unknown organization": 1
+     }
+    },
+    "deepseek c_described reword_1": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "deepseek b_renamed collision": {
+     "missing": 2,
+     "reasons": {
+      "V1 duplicate or overlapping organization": 1,
+      "V1 empty report": 1
+     }
+    },
+    "deepseek b_renamed reword_2": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "deepseek e_value_renamed collision": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "deepseek e_value_renamed reword_2": {
+     "missing": 2,
+     "reasons": {
+      "V1 empty report": 2
+     }
+    },
+    "qwen a_legacy collision": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "qwen a_legacy reword_1": {
+     "missing": 2,
+     "reasons": {
+      "V1 duplicate or overlapping organization": 2
+     }
+    },
+    "qwen c_described reword_1": {
+     "missing": 1,
+     "reasons": {
+      "V1 unknown organization": 1
+     }
+    },
+    "qwen c_described reword_2": {
+     "missing": 1,
+     "reasons": {
+      "V1 duplicate condition": 1
+     }
+    },
+    "qwen b_renamed collision": {
+     "missing": 1,
+     "reasons": {
+      "V1 duplicate or overlapping organization": 1
+     }
+    },
+    "qwen b_renamed reword_2": {
+     "missing": 4,
+     "reasons": {
+      "V1 duplicate condition": 1,
+      "V1 duplicate or overlapping organization": 1,
+      "V1 unknown organization": 2
+     }
+    },
+    "qwen e_value_renamed reword_1": {
+     "missing": 1,
+     "reasons": {
+      "V1 empty report": 1
+     }
+    },
+    "gemma c_described collision": {
+     "missing": 1,
+     "reasons": {
+      "V1 duplicate or overlapping organization": 1
+     }
+    },
+    "gemma b_renamed reword_2": {
+     "missing": 1,
+     "reasons": {
+      "V1 duplicate or overlapping organization": 1
+     }
+    }
+   },
+   "worst_case": [
+    {
+     "number": 1,
+     "contrast": "renaming",
+     "text": "b_renamed minus c_described, collision wording",
+     "objects": 100,
+     "mean": 0.007143,
+     "p": 0.687131,
+     "ci95": [
+      -0.021429,
+      0.034286
+     ],
+     "p_holm": 1.0,
+     "reject": false,
+     "predicted_sign": -1,
+     "direction": "against the prediction",
+     "sign_used": -1
+    },
+    {
+     "number": 2,
+     "contrast": "descriptions",
+     "text": "c_described minus a_legacy, collision wording",
+     "objects": 100,
+     "mean": -0.008571,
+     "p": 0.59574,
+     "ci95": [
+      -0.035714,
+      0.017143
+     ],
+     "p_holm": 1.0,
+     "reject": false,
+     "predicted_sign": -1,
+     "direction": "as predicted",
+     "sign_used": -1
+    },
+    {
+     "number": 3,
+     "contrast": "wording",
+     "text": "collision wording minus the mean of the two rewordings, under a_legacy",
+     "objects": 100,
+     "mean": -0.002143,
+     "p": 0.891611,
+     "ci95": [
+      -0.023571,
+      0.018571
+     ],
+     "p_holm": 1.0,
+     "reject": false,
+     "predicted_sign": 1,
+     "direction": "against the prediction",
+     "sign_used": -1
+    },
+    {
+     "number": 4,
+     "contrast": "interaction",
+     "text": "wording effect under a_legacy minus wording effect under b_renamed",
+     "objects": 100,
+     "mean": -0.014286,
+     "p": 0.409459,
+     "ci95": [
+      -0.046429,
+      0.019286
+     ],
+     "p_holm": 1.0,
+     "reject": false,
+     "predicted_sign": 1,
+     "direction": "against the prediction",
+     "sign_used": -1
+    },
+    {
+     "number": 5,
+     "contrast": "value_label",
+     "text": "e_value_renamed minus b_renamed, collision wording",
+     "objects": 100,
+     "mean": -0.017143,
+     "p": 0.233477,
+     "ci95": [
+      -0.041429,
+      0.01
+     ],
+     "p_holm": 1.0,
+     "reject": false,
+     "predicted_sign": -1,
+     "direction": "as predicted",
+     "sign_used": -1
+    }
+   ],
+   "same_decisions": true,
+   "same_claims": true
+  },
+  "part3_models": {
+   "renaming": {
+    "sonnet": {
+     "n": 89,
+     "mean": 0.022472,
+     "ci95": [
+      -0.033708,
+      0.078652
+     ],
+     "positive": 5,
+     "negative": 3,
+     "sign_p": 0.726562
+    },
+    "haiku": {
+     "n": 96,
+     "mean": -0.125,
+     "ci95": [
+      -0.25,
+      0.0
+     ],
+     "positive": 14,
+     "negative": 26,
+     "sign_p": 0.08069
+    },
+    "sol": {
+     "n": 100,
+     "mean": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "positive": 0,
+     "negative": 0,
+     "sign_p": 1.0
+    },
+    "luna": {
+     "n": 100,
+     "mean": -0.01,
+     "ci95": [
+      -0.03,
+      0.0
+     ],
+     "positive": 0,
+     "negative": 1,
+     "sign_p": 1.0
+    },
+    "deepseek": {
+     "n": 98,
+     "mean": 0.0,
+     "ci95": [
+      -0.071429,
+      0.071429
+     ],
+     "positive": 6,
+     "negative": 6,
+     "sign_p": 1.0
+    },
+    "qwen": {
+     "n": 99,
+     "mean": 0.060606,
+     "ci95": [
+      -0.030303,
+      0.151515
+     ],
+     "positive": 14,
+     "negative": 8,
+     "sign_p": 0.286279
+    },
+    "gemma": {
+     "n": 99,
+     "mean": 0.010101,
+     "ci95": [
+      -0.060606,
+      0.070707
+     ],
+     "positive": 6,
+     "negative": 5,
+     "sign_p": 1.0
+    }
+   },
+   "descriptions": {
+    "sonnet": {
+     "n": 90,
+     "mean": 0.022222,
+     "ci95": [
+      -0.022222,
+      0.066667
+     ],
+     "positive": 3,
+     "negative": 1,
+     "sign_p": 0.625
+    },
+    "haiku": {
+     "n": 97,
+     "mean": -0.010309,
+     "ci95": [
+      -0.123711,
+      0.103093
+     ],
+     "positive": 15,
+     "negative": 16,
+     "sign_p": 1.0
+    },
+    "sol": {
+     "n": 100,
+     "mean": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "positive": 0,
+     "negative": 0,
+     "sign_p": 1.0
+    },
+    "luna": {
+     "n": 100,
+     "mean": -0.15,
+     "ci95": [
+      -0.23,
+      -0.08
+     ],
+     "positive": 1,
+     "negative": 16,
+     "sign_p": 0.000275
+    },
+    "deepseek": {
+     "n": 100,
+     "mean": 0.02,
+     "ci95": [
+      -0.05,
+      0.09
+     ],
+     "positive": 7,
+     "negative": 5,
+     "sign_p": 0.774414
+    },
+    "qwen": {
+     "n": 99,
+     "mean": -0.040404,
+     "ci95": [
+      -0.131313,
+      0.040404
+     ],
+     "positive": 8,
+     "negative": 12,
+     "sign_p": 0.503445
+    },
+    "gemma": {
+     "n": 99,
+     "mean": -0.010101,
+     "ci95": [
+      -0.070707,
+      0.060606
+     ],
+     "positive": 5,
+     "negative": 6,
+     "sign_p": 1.0
+    }
+   },
+   "wording": {
+    "sonnet": {
+     "n": 96,
+     "mean": -0.109375,
+     "ci95": [
+      -0.166667,
+      -0.052083
+     ],
+     "positive": 1,
+     "negative": 18,
+     "sign_p": 7.6e-05
+    },
+    "haiku": {
+     "n": 99,
+     "mean": 0.09596,
+     "ci95": [
+      0.005051,
+      0.181818
+     ],
+     "positive": 33,
+     "negative": 20,
+     "sign_p": 0.098371
+    },
+    "sol": {
+     "n": 100,
+     "mean": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "positive": 0,
+     "negative": 0,
+     "sign_p": 1.0
+    },
+    "luna": {
+     "n": 100,
+     "mean": 0.035,
+     "ci95": [
+      -0.015,
+      0.085
+     ],
+     "positive": 16,
+     "negative": 9,
+     "sign_p": 0.229523
+    },
+    "deepseek": {
+     "n": 100,
+     "mean": -0.09,
+     "ci95": [
+      -0.145,
+      -0.03
+     ],
+     "positive": 4,
+     "negative": 25,
+     "sign_p": 0.000104
+    },
+    "qwen": {
+     "n": 99,
+     "mean": 0.040404,
+     "ci95": [
+      -0.030303,
+      0.116162
+     ],
+     "positive": 12,
+     "negative": 14,
+     "sign_p": 0.845019
+    },
+    "gemma": {
+     "n": 100,
+     "mean": -0.055,
+     "ci95": [
+      -0.115,
+      0.005
+     ],
+     "positive": 6,
+     "negative": 19,
+     "sign_p": 0.014633
+    }
+   },
+   "interaction": {
+    "sonnet": {
+     "n": 91,
+     "mean": -0.137363,
+     "ci95": [
+      -0.208791,
+      -0.071429
+     ],
+     "positive": 4,
+     "negative": 21,
+     "sign_p": 0.000911
+    },
+    "haiku": {
+     "n": 97,
+     "mean": 0.051546,
+     "ci95": [
+      -0.082474,
+      0.180412
+     ],
+     "positive": 40,
+     "negative": 29,
+     "sign_p": 0.2284
+    },
+    "sol": {
+     "n": 100,
+     "mean": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "positive": 0,
+     "negative": 0,
+     "sign_p": 1.0
+    },
+    "luna": {
+     "n": 100,
+     "mean": 0.035,
+     "ci95": [
+      -0.015,
+      0.085
+     ],
+     "positive": 16,
+     "negative": 9,
+     "sign_p": 0.229523
+    },
+    "deepseek": {
+     "n": 98,
+     "mean": -0.127551,
+     "ci95": [
+      -0.219388,
+      -0.040816
+     ],
+     "positive": 11,
+     "negative": 29,
+     "sign_p": 0.006427
+    },
+    "qwen": {
+     "n": 98,
+     "mean": -0.005102,
+     "ci95": [
+      -0.132653,
+      0.112245
+     ],
+     "positive": 24,
+     "negative": 24,
+     "sign_p": 1.0
+    },
+    "gemma": {
+     "n": 100,
+     "mean": -0.085,
+     "ci95": [
+      -0.175,
+      -0.005
+     ],
+     "positive": 9,
+     "negative": 22,
+     "sign_p": 0.029449
+    }
+   },
+   "value_label": {
+    "sonnet": {
+     "n": 91,
+     "mean": 0.0,
+     "ci95": [
+      -0.065934,
+      0.065934
+     ],
+     "positive": 5,
+     "negative": 5,
+     "sign_p": 1.0
+    },
+    "haiku": {
+     "n": 97,
+     "mean": -0.051546,
+     "ci95": [
+      -0.164948,
+      0.061856
+     ],
+     "positive": 12,
+     "negative": 17,
+     "sign_p": 0.458258
+    },
+    "sol": {
+     "n": 100,
+     "mean": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "positive": 0,
+     "negative": 0,
+     "sign_p": 1.0
+    },
+    "luna": {
+     "n": 100,
+     "mean": 0.01,
+     "ci95": [
+      0.0,
+      0.03
+     ],
+     "positive": 1,
+     "negative": 0,
+     "sign_p": 1.0
+    },
+    "deepseek": {
+     "n": 97,
+     "mean": -0.051546,
+     "ci95": [
+      -0.113402,
+      0.010309
+     ],
+     "positive": 3,
+     "negative": 8,
+     "sign_p": 0.226562
+    },
+    "qwen": {
+     "n": 99,
+     "mean": -0.090909,
+     "ci95": [
+      -0.171717,
+      -0.010101
+     ],
+     "positive": 5,
+     "negative": 14,
+     "sign_p": 0.063568
+    },
+    "gemma": {
+     "n": 100,
+     "mean": 0.0,
+     "ci95": [
+      -0.07,
+      0.07
+     ],
+     "positive": 6,
+     "negative": 6,
+     "sign_p": 1.0
+    }
+   }
+  },
+  "part4_words": {
+   "onsite": {
+    "renaming": {
+     "n": 25,
+     "mean": -0.088952,
+     "ci95": [
+      -0.142857,
+      -0.04
+     ]
+    },
+    "descriptions": {
+     "n": 25,
+     "mean": -0.108571,
+     "ci95": [
+      -0.154286,
+      -0.062857
+     ]
+    },
+    "wording": {
+     "n": 25,
+     "mean": -0.039048,
+     "ci95": [
+      -0.088571,
+      0.012381
+     ]
+    },
+    "interaction": {
+     "n": 25,
+     "mean": -0.027524,
+     "ci95": [
+      -0.098952,
+      0.052381
+     ]
+    },
+    "value_label": {
+     "n": 25,
+     "mean": 0.000952,
+     "ci95": [
+      -0.050476,
+      0.051048
+     ]
+    }
+   },
+   "north": {
+    "renaming": {
+     "n": 25,
+     "mean": 0.029524,
+     "ci95": [
+      -0.028571,
+      0.091429
+     ]
+    },
+    "descriptions": {
+     "n": 25,
+     "mean": 0.017143,
+     "ci95": [
+      -0.028571,
+      0.062857
+     ]
+    },
+    "wording": {
+     "n": 25,
+     "mean": -0.00619,
+     "ci95": [
+      -0.042857,
+      0.030476
+     ]
+    },
+    "interaction": {
+     "n": 25,
+     "mean": -0.07,
+     "ci95": [
+      -0.14,
+      0.002857
+     ]
+    },
+    "value_label": {
+     "n": 25,
+     "mean": -0.05619,
+     "ci95": [
+      -0.108571,
+      0.001905
+     ]
+    }
+   },
+   "retail": {
+    "renaming": {
+     "n": 25,
+     "mean": -0.000952,
+     "ci95": [
+      -0.048571,
+      0.044762
+     ]
+    },
+    "descriptions": {
+     "n": 25,
+     "mean": 0.011429,
+     "ci95": [
+      -0.024762,
+      0.052381
+     ]
+    },
+    "wording": {
+     "n": 25,
+     "mean": -0.011429,
+     "ci95": [
+      -0.053333,
+      0.027143
+     ]
+    },
+    "interaction": {
+     "n": 25,
+     "mean": -0.054762,
+     "ci95": [
+      -0.1,
+      -0.008571
+     ]
+    },
+    "value_label": {
+     "n": 25,
+     "mean": -0.041905,
+     "ci95": [
+      -0.082857,
+      0.005714
+     ]
+    }
+   },
+   "large": {
+    "renaming": {
+     "n": 25,
+     "mean": 0.035238,
+     "ci95": [
+      -0.007619,
+      0.080952
+     ]
+    },
+    "descriptions": {
+     "n": 25,
+     "mean": -0.02,
+     "ci95": [
+      -0.08,
+      0.033333
+     ]
+    },
+    "wording": {
+     "n": 25,
+     "mean": 0.008095,
+     "ci95": [
+      -0.034286,
+      0.055714
+     ]
+    },
+    "interaction": {
+     "n": 25,
+     "mean": -0.00381,
+     "ci95": [
+      -0.07,
+      0.061905
+     ]
+    },
+    "value_label": {
+     "n": 25,
+     "mean": -0.005714,
+     "ci95": [
+      -0.057143,
+      0.045714
+     ]
+    }
+   }
+  },
+  "part5_secondary": {
+   "all_errors": [
+    {
+     "number": 1,
+     "contrast": "renaming",
+     "n": 100,
+     "mean": -0.007143,
+     "ci95": [
+      -0.035714,
+      0.02
+     ]
+    },
+    {
+     "number": 2,
+     "contrast": "descriptions",
+     "n": 100,
+     "mean": -0.015714,
+     "ci95": [
+      -0.041429,
+      0.01
+     ]
+    },
+    {
+     "number": 3,
+     "contrast": "wording",
+     "n": 100,
+     "mean": -0.018571,
+     "ci95": [
+      -0.04,
+      0.003571
+     ]
+    },
+    {
+     "number": 4,
+     "contrast": "interaction",
+     "n": 100,
+     "mean": -0.045,
+     "ci95": [
+      -0.081429,
+      -0.008571
+     ]
+    },
+    {
+     "number": 5,
+     "contrast": "value_label",
+     "n": 100,
+     "mean": -0.031429,
+     "ci95": [
+      -0.057143,
+      -0.005714
+     ]
+    }
+   ],
+   "unsupported_commitment": [
+    {
+     "number": 1,
+     "contrast": "renaming",
+     "n": 100,
+     "mean": -0.025095,
+     "ci95": [
+      -0.040524,
+      -0.012
+     ]
+    },
+    {
+     "number": 2,
+     "contrast": "descriptions",
+     "n": 100,
+     "mean": -0.025952,
+     "ci95": [
+      -0.041667,
+      -0.011429
+     ]
+    },
+    {
+     "number": 3,
+     "contrast": "wording",
+     "n": 100,
+     "mean": 0.022262,
+     "ci95": [
+      0.008214,
+      0.037381
+     ]
+    },
+    {
+     "number": 4,
+     "contrast": "interaction",
+     "n": 100,
+     "mean": 0.0175,
+     "ci95": [
+      0.002262,
+      0.034167
+     ]
+    },
+    {
+     "number": 5,
+     "contrast": "value_label",
+     "n": 100,
+     "mean": -0.004286,
+     "ci95": [
+      -0.01,
+      0.001429
+     ]
+    }
+   ]
+  },
+  "part6_rates": {
+   "models": {
+    "sonnet": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 1,
+       "n": 97
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 97
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 7,
+       "n": 87
+      },
+      "all_errors": {
+       "k": 20,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 87
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 13,
+       "n": 95
+      },
+      "all_errors": {
+       "k": 18,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 95
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 3,
+       "n": 93
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 93
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 4,
+       "n": 91
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 91
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 4,
+       "n": 96
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 96
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 5,
+       "n": 95
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 95
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 6,
+       "n": 94
+      },
+      "all_errors": {
+       "k": 12,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 94
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 3,
+       "n": 95
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 95
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 5,
+       "n": 96
+      },
+      "all_errors": {
+       "k": 9,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 96
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 2,
+       "n": 95
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 95
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 4,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 98
+      }
+     }
+    },
+    "haiku": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 35,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 36,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 20,
+       "n": 99
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 17,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 17,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 34,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 35,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 21,
+       "n": 99
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 35,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 37,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 17,
+       "n": 98
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 13,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 14,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 18,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 20,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 5,
+       "n": 98
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 22,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 24,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 98
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 19,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 19,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 14,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 15,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 16,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 17,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 21,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 22,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 18,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 18,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     }
+    },
+    "sol": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     }
+    },
+    "luna": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 16,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 16,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 15,
+       "n": 100
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 25,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 25,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 9,
+       "n": 100
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 1,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 1,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 100
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 1,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 1,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 100
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 1,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 1,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 0,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 0,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     }
+    },
+    "deepseek": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 6,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 9,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 9,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 21,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 23,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 13,
+       "n": 98
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 8,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 5,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 6,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 8,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 98
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 4,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 5,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 4,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 5,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 4,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 4,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 98
+      }
+     }
+    },
+    "qwen": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 12,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 4,
+       "n": 99
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 8,
+       "n": 98
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 3,
+       "n": 98
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 8,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 2,
+       "n": 100
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 8,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 3,
+       "n": 100
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 6,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 6,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 14,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 15,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 3,
+       "n": 99
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 12,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 12,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 6,
+       "n": 96
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 96
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 5,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 5,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 6,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 2,
+       "n": 99
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 7,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 100
+      }
+     }
+    },
+    "gemma": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 6,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 4,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 19,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 19,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 5,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 4,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 4,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 6,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 2,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 2,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 4,
+       "n": 99
+      },
+      "all_errors": {
+       "k": 5,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 99
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 6,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 10,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 4,
+       "n": 100
+      },
+      "all_errors": {
+       "k": 4,
+       "n": 100
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 100
+      }
+     }
+    }
+   },
+   "words": {
+    "onsite": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 46,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 47,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 38,
+       "n": 174
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 7,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 174
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 97,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 100,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 44,
+       "n": 172
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 28,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 29,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 18,
+       "n": 174
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 12,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 17,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 17,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 6,
+       "n": 175
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 12,
+       "n": 169
+      },
+      "all_errors": {
+       "k": 18,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 169
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 16,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 18,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 173
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 10,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 172
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 13,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 14,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 14,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 6,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 6,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     }
+    },
+    "north": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 9,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 13,
+       "n": 170
+      },
+      "all_errors": {
+       "k": 18,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 170
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 7,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 12,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 2,
+       "n": 174
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 9,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 6,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 173
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 17,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 17,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 2,
+       "n": 175
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 7,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 172
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 5,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 173
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 6,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 9,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 172
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 9,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 12,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     }
+    },
+    "retail": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 11,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 173
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 17,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 20,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 172
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 8,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 11,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 172
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 13,
+       "n": 171
+      },
+      "all_errors": {
+       "k": 17,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 171
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 8,
+       "n": 169
+      },
+      "all_errors": {
+       "k": 14,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 169
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 8,
+       "n": 170
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 170
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 13,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 15,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 173
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 8,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 9,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 7,
+       "n": 171
+      },
+      "all_errors": {
+       "k": 11,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 171
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 6,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 8,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 11,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 172
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 10,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 172
+      }
+     }
+    },
+    "large": {
+     "a_legacy collision": {
+      "silent_error": {
+       "k": 10,
+       "n": 174
+      },
+      "all_errors": {
+       "k": 11,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 174
+      }
+     },
+     "a_legacy reword_1": {
+      "silent_error": {
+       "k": 8,
+       "n": 169
+      },
+      "all_errors": {
+       "k": 14,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 169
+      }
+     },
+     "a_legacy reword_2": {
+      "silent_error": {
+       "k": 8,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 10,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 173
+      }
+     },
+     "c_described collision": {
+      "silent_error": {
+       "k": 7,
+       "n": 171
+      },
+      "all_errors": {
+       "k": 11,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 171
+      }
+     },
+     "c_described reword_1": {
+      "silent_error": {
+       "k": 3,
+       "n": 171
+      },
+      "all_errors": {
+       "k": 7,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 171
+      }
+     },
+     "c_described reword_2": {
+      "silent_error": {
+       "k": 8,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 8,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     },
+     "b_renamed collision": {
+      "silent_error": {
+       "k": 13,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 15,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 173
+      }
+     },
+     "b_renamed reword_1": {
+      "silent_error": {
+       "k": 12,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 12,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     },
+     "b_renamed reword_2": {
+      "silent_error": {
+       "k": 10,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 13,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 172
+      }
+     },
+     "e_value_renamed collision": {
+      "silent_error": {
+       "k": 12,
+       "n": 173
+      },
+      "all_errors": {
+       "k": 14,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 1,
+       "n": 173
+      }
+     },
+     "e_value_renamed reword_1": {
+      "silent_error": {
+       "k": 12,
+       "n": 172
+      },
+      "all_errors": {
+       "k": 15,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 2,
+       "n": 172
+      }
+     },
+     "e_value_renamed reword_2": {
+      "silent_error": {
+       "k": 9,
+       "n": 175
+      },
+      "all_errors": {
+       "k": 9,
+       "n": 175
+      },
+      "unsupported_commitment": {
+       "k": 0,
+       "n": 175
+      }
+     }
+    }
+   },
+   "field_kinds": {
+    "sonnet": {
+     "acceptability": 1,
+     "conditions": 56
+    },
+    "haiku": {
+     "acceptability": 1,
+     "conditions": 261,
+     "ranking": 1
+    },
+    "sol": {},
+    "luna": {
+     "acceptability": 2,
+     "conditions": 43,
+     "ranking": 2
+    },
+    "deepseek": {
+     "acceptability": 19,
+     "conditions": 72,
+     "ranking": 19
+    },
+    "qwen": {
+     "acceptability": 22,
+     "conditions": 78,
+     "ranking": 25
+    },
+    "gemma": {
+     "conditions": 74
+    }
+   }
+  }
+ }
+}

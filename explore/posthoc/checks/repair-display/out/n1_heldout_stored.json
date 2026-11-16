@@ -1,0 +1,364 @@
+{
+ "spec": "SPEC-N1-heldout.md",
+ "source": "r10/analysis/out/heldout_confirm.json",
+ "models": {
+  "sonnet": {
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   },
+   "answers": 290,
+   "original_failures_NT": 20.0,
+   "original_losses_H": 5.0,
+   "verifier_calls": 76,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 10.0,
+     "failures_ended_NT": 10.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 2.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 2.0,
+     "second_searches": 0,
+     "model_calls": 76
+    },
+    "relax_any": {
+     "net_avoided_NT": 10.0,
+     "failures_ended_NT": 10.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 14,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 10.0,
+     "failures_ended_NT": 10.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 79,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 1,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {}
+  },
+  "haiku": {
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   },
+   "answers": 290,
+   "original_failures_NT": 23.0,
+   "original_losses_H": 2.0,
+   "verifier_calls": 48,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 2.0,
+     "failures_ended_NT": 2.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 1.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 1.0,
+     "second_searches": 0,
+     "model_calls": 48
+    },
+    "relax_any": {
+     "net_avoided_NT": 2.0,
+     "failures_ended_NT": 2.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 4,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 2.0,
+     "failures_ended_NT": 2.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 76,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 0,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {}
+  },
+  "sol": {
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   },
+   "answers": 290,
+   "original_failures_NT": 44.0,
+   "original_losses_H": 4.0,
+   "verifier_calls": 131,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 29.0,
+     "failures_ended_NT": 29.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 3.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 3.0,
+     "second_searches": 0,
+     "model_calls": 131
+    },
+    "relax_any": {
+     "net_avoided_NT": 30.0,
+     "failures_ended_NT": 30.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 43,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 30.0,
+     "failures_ended_NT": 30.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 126,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 0,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {}
+  },
+  "luna": {
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   },
+   "answers": 290,
+   "original_failures_NT": 31.0,
+   "original_losses_H": 11.0,
+   "verifier_calls": 79,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 10.0,
+     "failures_ended_NT": 10.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 2.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 2.0,
+     "second_searches": 0,
+     "model_calls": 79
+    },
+    "relax_any": {
+     "net_avoided_NT": 10.0,
+     "failures_ended_NT": 10.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 24,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 10.0,
+     "failures_ended_NT": 10.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 97,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 1,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {}
+  },
+  "deepseek": {
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   },
+   "answers": 290,
+   "original_failures_NT": 30.0,
+   "original_losses_H": 8.0,
+   "verifier_calls": 63,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 7.0,
+     "failures_ended_NT": 7.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 0,
+     "model_calls": 63
+    },
+    "relax_any": {
+     "net_avoided_NT": 9.0,
+     "failures_ended_NT": 9.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 18,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 9.0,
+     "failures_ended_NT": 9.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 121,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 0,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {}
+  },
+  "qwen": {
+   "dialogues": {
+    "NT": 199,
+    "H": 60,
+    "G": 9
+   },
+   "answers": 268,
+   "original_failures_NT": 39.0,
+   "original_losses_H": 14.0,
+   "verifier_calls": 49,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 5.0,
+     "failures_ended_NT": 6.0,
+     "failures_caused_NT": 1.0,
+     "gross_losses_H": 2.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 2.0,
+     "second_searches": 0,
+     "model_calls": 49
+    },
+    "relax_any": {
+     "net_avoided_NT": 4.0,
+     "failures_ended_NT": 4.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 15,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 6.0,
+     "failures_ended_NT": 6.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 89,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 0,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {
+    "NT | read 1 | original answer not valid": 14,
+    "NT | reads 2-3 | original answer not valid": 1,
+    "G | read 1 | original answer not valid": 2,
+    "H | read 1 | original answer not valid": 6
+   }
+  },
+  "gemma": {
+   "dialogues": {
+    "NT": 212,
+    "H": 66,
+    "G": 11
+   },
+   "answers": 289,
+   "original_failures_NT": 38.0,
+   "original_losses_H": 7.0,
+   "verifier_calls": 87,
+   "policies": {
+    "planned": {
+     "net_avoided_NT": 13.0,
+     "failures_ended_NT": 14.0,
+     "failures_caused_NT": 1.0,
+     "gross_losses_H": 2.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 2.0,
+     "second_searches": 0,
+     "model_calls": 87
+    },
+    "relax_any": {
+     "net_avoided_NT": 14.0,
+     "failures_ended_NT": 14.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 26,
+     "model_calls": 0
+    },
+    "soft": {
+     "net_avoided_NT": 14.0,
+     "failures_ended_NT": 14.0,
+     "failures_caused_NT": 0.0,
+     "gross_losses_H": 0.0,
+     "gross_gains_H": 0.0,
+     "net_added_H": 0.0,
+     "second_searches": 101,
+     "model_calls": 0
+    }
+   },
+   "guesthouse_newly_shown_stated_H": {
+    "relax_any": 0,
+    "planned": null,
+    "soft": null,
+    "why_none": "not computed: needs the per-answer held-out original answers, which exist only in em* folders"
+   },
+   "missing": {
+    "NT | read 1 | original answer not valid": 1,
+    "H | reads 2-3 | original answer not valid": 1
+   }
+  }
+ }
+}

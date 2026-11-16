@@ -1,0 +1,617 @@
+{
+ "post_hoc": true,
+ "sizes": {
+  "no_type": 807,
+  "hotel": 233
+ },
+ "models": {
+  "sonnet": {
+   "f0": {
+    "visible_failure": 0.1734820322180917,
+    "visible_loss": 0.15021459227467812
+   },
+   "b_list": {
+    "visible_failure": 0.16604708798017348,
+    "visible_loss": 0.15450643776824036,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.16666666666666666,
+     "ci": [
+      -1.0,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": 0.31650201639018666,
+     "ci": [
+      -1.8990120983411198,
+      Infinity
+     ]
+    }
+   },
+   "b_shot": {
+    "visible_failure": 0.1771995043370508,
+    "visible_loss": 0.15450643776824036,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      -1.0,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      -1.8990120983411198,
+      Infinity
+     ]
+    }
+   },
+   "b_evidence": {
+    "visible_failure": 0.2094175960346964,
+    "visible_loss": 0.14163090128755365,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    }
+   },
+   "verify": {
+    "visible_failure": 0.12763320941759604,
+    "visible_loss": 0.18454935622317598,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.21621621621621623,
+     "ci": [
+      0.08108108108108109,
+      0.4285714285714285
+     ]
+    },
+    "groups": {
+     "ratio": 0.41059721045213404,
+     "ci": [
+      0.15397395391955027,
+      0.8138623278604799
+     ]
+    }
+   },
+   "verify_no_only (post hoc)": {
+    "visible_failure": 0.14002478314745972,
+    "visible_loss": 0.1630901287553648,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.11111111111111112,
+     "ci": [
+      0.0,
+      0.2857142857142857
+     ]
+    },
+    "groups": {
+     "ratio": 0.21100134426012443,
+     "ci": [
+      0.0,
+      0.5425748852403199
+     ]
+    }
+   }
+  },
+  "haiku": {
+   "f0": {
+    "visible_failure": 0.1536555142503098,
+    "visible_loss": 0.1781115879828326
+   },
+   "b_list": {
+    "visible_failure": 0.15985130111524162,
+    "visible_loss": 0.18669527896995708,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      -0.4,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      -0.7596048393364478,
+      Infinity
+     ]
+    }
+   },
+   "b_shot": {
+    "visible_failure": 0.15489467162329615,
+    "visible_loss": 0.20386266094420602,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      0.045454545454545456,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      0.08631873174277817,
+      Infinity
+     ]
+    }
+   },
+   "b_evidence": {
+    "visible_failure": 0.18401486988847585,
+    "visible_loss": 0.1888412017167382,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    }
+   },
+   "verify": {
+    "visible_failure": 0.15303593556381662,
+    "visible_loss": 0.19742489270386265,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 9.0,
+     "ci": [
+      1.3333333333333333,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": 17.091108885070074,
+     "ci": [
+      2.5320161311214933,
+      Infinity
+     ]
+    }
+   },
+   "verify_no_only (post hoc)": {
+    "visible_failure": 0.1536555142503098,
+    "visible_loss": 0.1888412017167382,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    }
+   }
+  },
+  "sol": {
+   "f0": {
+    "visible_failure": 0.2664188351920694,
+    "visible_loss": 0.12446351931330472
+   },
+   "b_list": {
+    "visible_failure": 0.275092936802974,
+    "visible_loss": 0.12017167381974249,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      -1.0,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      -1.8990120983411194,
+      Infinity
+     ]
+    }
+   },
+   "b_shot": {
+    "visible_failure": 0.1821561338289963,
+    "visible_loss": 0.1459227467811159,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.07352941176470588,
+     "ci": [
+      -0.013513513513513514,
+      0.16417910447761194
+     ]
+    },
+    "groups": {
+     "ratio": 0.13963324252508233,
+     "ci": [
+      -0.025662325653258378,
+      0.31177810569779574
+     ]
+    }
+   },
+   "b_evidence": {
+    "visible_failure": 0.27633209417596033,
+    "visible_loss": 0.12875536480686695,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      -0.25,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      -0.47475302458527985,
+      Infinity
+     ]
+    }
+   },
+   "verify": {
+    "visible_failure": 0.14374225526641884,
+    "visible_loss": 0.14163090128755365,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.04040404040404041,
+     "ci": [
+      0.009009009009009009,
+      0.08421052631578947
+     ]
+    },
+    "groups": {
+     "ratio": 0.07672776154913614,
+     "ci": [
+      0.017108217102172252,
+      0.15991680828135743
+     ]
+    }
+   },
+   "verify_no_only (post hoc)": {
+    "visible_failure": 0.1536555142503098,
+    "visible_loss": 0.12446351931330472,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    },
+    "groups": {
+     "ratio": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "luna": {
+   "f0": {
+    "visible_failure": 0.23234200743494424,
+    "visible_loss": 0.18240343347639484
+   },
+   "b_list": {
+    "visible_failure": 0.21127633209417596,
+    "visible_loss": 0.23819742489270387,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.7647058823529411,
+     "ci": [
+      0.29310344827586204,
+      2.4615384615384617
+     ]
+    },
+    "groups": {
+     "ratio": 1.4521857222608565,
+     "ci": [
+      0.5566069943413627,
+      4.674491318993526
+     ]
+    }
+   },
+   "b_shot": {
+    "visible_failure": 0.23667905824039653,
+    "visible_loss": 0.2017167381974249,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      -0.25,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      -0.47475302458527985,
+      Infinity
+     ]
+    }
+   },
+   "b_evidence": {
+    "visible_failure": 0.419454770755886,
+    "visible_loss": 0.18240343347639484,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": Infinity,
+     "ci": [
+      Infinity,
+      Infinity
+     ]
+    }
+   },
+   "verify": {
+    "visible_failure": 0.18711276332094176,
+    "visible_loss": 0.22103004291845493,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.2465753424657534,
+     "ci": [
+      0.10975609756097561,
+      0.45652173913043476
+     ]
+    },
+    "groups": {
+     "ratio": 0.4682495584950706,
+     "ci": [
+      0.20842815713500093,
+      0.8669403057644243
+     ]
+    }
+   },
+   "verify_no_only (post hoc)": {
+    "visible_failure": 0.201363073110285,
+    "visible_loss": 0.2017167381974249,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.18,
+     "ci": [
+      0.043478260869565216,
+      0.4
+     ]
+    },
+    "groups": {
+     "ratio": 0.34182217770140155,
+     "ci": [
+      0.08256574340613564,
+      0.7596048393364478
+     ]
+    }
+   }
+  },
+  "opus": {
+   "f0": {
+    "visible_failure": 0.12143742255266418,
+    "visible_loss": 0.12446351931330472
+   },
+   "b_list": {
+    "visible_failure": 0.11771995043370508,
+    "visible_loss": 0.1072961373390558,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": -1.3333333333333333,
+     "ci": [
+      -5.0,
+      Infinity
+     ]
+    },
+    "groups": {
+     "ratio": -2.5320161311214933,
+     "ci": [
+      -9.495060491705598,
+      Infinity
+     ]
+    }
+   },
+   "verify": {
+    "visible_failure": 0.09541511771995044,
+    "visible_loss": 0.13733905579399142,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.14285714285714285,
+     "ci": [
+      0.0,
+      0.3846153846153847
+     ]
+    },
+    "groups": {
+     "ratio": 0.27128744262015997,
+     "ci": [
+      0.0,
+      0.7303892685927384
+     ]
+    }
+   },
+   "verify_no_only (post hoc)": {
+    "visible_failure": 0.09913258983890955,
+    "visible_loss": 0.12446351931330472,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    },
+    "groups": {
+     "ratio": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  },
+  "astra": {
+   "f0": {
+    "visible_failure": 0.26270136307311026,
+    "visible_loss": 0.12446351931330472
+   },
+   "b_list": {
+    "visible_failure": 0.241635687732342,
+    "visible_loss": 0.12875536480686695,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.058823529411764705,
+     "ci": [
+      -0.15789473684210525,
+      0.3333333333333333
+     ]
+    },
+    "groups": {
+     "ratio": 0.11170659402006587,
+     "ci": [
+      -0.29984401552754525,
+      0.6330040327803733
+     ]
+    }
+   },
+   "verify": {
+    "visible_failure": 0.13011152416356878,
+    "visible_loss": 0.15450643776824036,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.06542056074766354,
+     "ci": [
+      0.02040816326530612,
+      0.11764705882352942
+     ]
+    },
+    "groups": {
+     "ratio": 0.12423443634007324,
+     "ci": [
+      0.038755348945737136,
+      0.22341318804013177
+     ]
+    }
+   },
+   "verify_no_only (post hoc)": {
+    "visible_failure": 0.14869888475836432,
+    "visible_loss": 0.12446351931330472,
+    "paired": [
+     807,
+     233
+    ],
+    "subset": {
+     "ratio": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    },
+    "groups": {
+     "ratio": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ]
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,571 @@
+{
+ "amendment": "R10-17",
+ "exploratory": true,
+ "pilot": false,
+ "limit": 0.3,
+ "weights": {
+  "subset": [
+   233,
+   807
+  ],
+  "groups": [
+   545,
+   994
+  ]
+ },
+ "sizes": {
+  "no_type": 807,
+  "hotel": 233
+ },
+ "self_check": {
+  "sonnet verify": "equal",
+  "sonnet verify_no_only (post hoc)": "equal",
+  "haiku verify": "equal",
+  "haiku verify_no_only (post hoc)": "equal"
+ },
+ "missing": [],
+ "models": {
+  "deepseek": {
+   "gates": {
+    "verify": {
+     "f0": {
+      "visible_failure": 0.21995043370508055,
+      "visible_loss": 0.21888412017167383
+     },
+     "gate": {
+      "visible_failure": 0.18277571251548946,
+      "visible_loss": 0.24034334763948498
+     },
+     "paired": [
+      807,
+      233
+     ],
+     "net_failures_avoided": 30.0,
+     "net_losses_added": 5.0,
+     "failures_ended": 30.0,
+     "failures_caused": 0.0,
+     "losses_caused": 5.0,
+     "losses_ended": 0.0,
+     "subset": {
+      "ratio": 0.16666666666666666,
+      "ci": [
+       0.04838709677419355,
+       0.3404255319148936
+      ]
+     },
+     "groups": {
+      "ratio": 0.3165020163901866,
+      "ci": [
+       0.09188768217779612,
+       0.646472203690594
+      ]
+     },
+     "verdict": "point under, subset weights only"
+    },
+    "verify_no_only (post hoc)": {
+     "f0": {
+      "visible_failure": 0.21995043370508055,
+      "visible_loss": 0.21888412017167383
+     },
+     "gate": {
+      "visible_failure": 0.19021065675340768,
+      "visible_loss": 0.2317596566523605
+     },
+     "paired": [
+      807,
+      233
+     ],
+     "net_failures_avoided": 24.0,
+     "net_losses_added": 3.0,
+     "failures_ended": 24.0,
+     "failures_caused": 0.0,
+     "losses_caused": 3.0,
+     "losses_ended": 0.0,
+     "subset": {
+      "ratio": 0.125,
+      "ci": [
+       0.02040816326530612,
+       0.2826086956521739
+      ]
+     },
+     "groups": {
+      "ratio": 0.23737651229263998,
+      "ci": [
+       0.038755348945737136,
+       0.5366773321398817
+      ]
+     },
+     "verdict": "point under, both weightings (interval crosses 0.30)"
+    }
+   },
+   "descriptions": {
+    "hotel_only_share": {
+     "f0 | no_type": {
+      "k": 201,
+      "n": 1614,
+      "share": 0.12453531598513011
+     },
+     "f0 | hotel": {
+      "k": 275,
+      "n": 466,
+      "share": 0.5901287553648069
+     },
+     "verify | no_type": {
+      "k": 48,
+      "n": 1614,
+      "share": 0.02973977695167286
+     },
+     "verify | hotel": {
+      "k": 173,
+      "n": 466,
+      "share": 0.37124463519313305
+     },
+     "verify_no_only (post hoc) | no_type": {
+      "k": 90,
+      "n": 1614,
+      "share": 0.055762081784386616
+     },
+     "verify_no_only (post hoc) | hotel": {
+      "k": 206,
+      "n": 466,
+      "share": 0.44206008583690987
+     }
+    },
+    "search_failure_807": {
+     "f0": {
+      "k": 83,
+      "n": 1614,
+      "share": 0.051425030978934326
+     },
+     "verify": {
+      "k": 15,
+      "n": 1614,
+      "share": 0.00929368029739777
+     },
+     "verify_no_only (post hoc)": {
+      "k": 28,
+      "n": 1614,
+      "share": 0.01734820322180917
+     }
+    },
+    "verifier_answers_for_hotel_only": {
+     "no_type": {
+      "yes": 48,
+      "no": 111,
+      "unclear": 42
+     },
+     "hotel": {
+      "unclear": 33,
+      "no": 69,
+      "yes": 173
+     }
+    },
+    "value_count": {
+     "verify": {
+      "removed": 94.22676579925651,
+      "lost": 119.29184549356225,
+      "share_removed": 0.7611940298507464,
+      "ratio": 1.2660080655607466,
+      "ci": [
+       0.94950604917056,
+       1.66163558604848
+      ]
+     },
+     "verify_no_only (post hoc)": {
+      "removed": 68.36059479553903,
+      "lost": 80.69742489270389,
+      "share_removed": 0.5522388059701492,
+      "ratio": 1.1804669800498857,
+      "ci": [
+       0.839418391295712,
+       1.616180509226485
+      ]
+     }
+    }
+   }
+  },
+  "qwen": {
+   "gates": {
+    "verify": {
+     "f0": {
+      "visible_failure": 0.27965043695380776,
+      "visible_loss": 0.27973568281938327
+     },
+     "gate": {
+      "visible_failure": 0.2590511860174782,
+      "visible_loss": 0.36784140969163
+     },
+     "paired": [
+      801,
+      227
+     ],
+     "net_failures_avoided": 16.5,
+     "net_losses_added": 20.0,
+     "failures_ended": 19.5,
+     "failures_caused": 3.0,
+     "losses_caused": 20.0,
+     "losses_ended": 0.0,
+     "subset": {
+      "ratio": 1.2349094005743697,
+      "ci": [
+       0.6792001703159032,
+       2.445120613137252
+      ]
+     },
+     "groups": {
+      "ratio": 2.345107892045908,
+      "ci": [
+       1.2898093406252493,
+       4.643313626250898
+      ]
+     },
+     "verdict": "over at the point value"
+    },
+    "verify_no_only (post hoc)": {
+     "f0": {
+      "visible_failure": 0.27965043695380776,
+      "visible_loss": 0.27973568281938327
+     },
+     "gate": {
+      "visible_failure": 0.2634207240948814,
+      "visible_loss": 0.3590308370044053
+     },
+     "paired": [
+      801,
+      227
+     ],
+     "net_failures_avoided": 13.0,
+     "net_losses_added": 18.0,
+     "failures_ended": 16.0,
+     "failures_caused": 3.0,
+     "losses_caused": 18.0,
+     "losses_ended": 0.0,
+     "subset": {
+      "ratio": 1.4106465075791836,
+      "ci": [
+       0.7216501809606471,
+       3.124320783453155
+      ]
+     },
+     "groups": {
+      "ratio": 2.678834784375518,
+      "ci": [
+       1.3704224244143273,
+       5.933122966876146
+      ]
+     },
+     "verdict": "over at the point value"
+    }
+   },
+   "descriptions": {
+    "hotel_only_share": {
+     "f0 | no_type": {
+      "k": 132,
+      "n": 1539,
+      "share": 0.08576998050682261
+     },
+     "f0 | hotel": {
+      "k": 247,
+      "n": 423,
+      "share": 0.5839243498817966
+     },
+     "verify | no_type": {
+      "k": 8,
+      "n": 1539,
+      "share": 0.005198180636777128
+     },
+     "verify | hotel": {
+      "k": 83,
+      "n": 423,
+      "share": 0.19621749408983452
+     },
+     "verify_no_only (post hoc) | no_type": {
+      "k": 25,
+      "n": 1539,
+      "share": 0.016244314489928524
+     },
+     "verify_no_only (post hoc) | hotel": {
+      "k": 94,
+      "n": 423,
+      "share": 0.2222222222222222
+     }
+    },
+    "search_failure_807": {
+     "f0": {
+      "k": 50,
+      "n": 1539,
+      "share": 0.03248862897985705
+     },
+     "verify": {
+      "k": 3,
+      "n": 1539,
+      "share": 0.001949317738791423
+     },
+     "verify_no_only (post hoc)": {
+      "k": 7,
+      "n": 1539,
+      "share": 0.004548408057179987
+     }
+    },
+    "verifier_answers_for_hotel_only": {
+     "no_type": {
+      "no": 107,
+      "unclear": 17,
+      "yes": 8
+     },
+     "hotel": {
+      "no": 153,
+      "yes": 83,
+      "unclear": 11
+     }
+    },
+    "value_count": {
+     "verify": {
+      "removed": 80.08836907082521,
+      "lost": 211.30023640661935,
+      "share_removed": 0.9353335028392236,
+      "ratio": 2.638338610938106,
+      "ci": [
+       2.049865373726365,
+       3.4071916869880052
+      ]
+     },
+     "verify_no_only (post hoc)": {
+      "removed": 69.10851202079272,
+      "lost": 197.12765957446805,
+      "share_removed": 0.8071022968048138,
+      "ratio": 2.8524367521494045,
+      "ci": [
+       2.1925184817708923,
+       3.7478422461411784
+      ]
+     }
+    }
+   }
+  },
+  "gemma": {
+   "gates": {
+    "verify": {
+     "f0": {
+      "visible_failure": 0.25620347394540943,
+      "visible_loss": 0.17381974248927037
+     },
+     "gate": {
+      "visible_failure": 0.18858560794044665,
+      "visible_loss": 0.19527896995708155
+     },
+     "paired": [
+      806,
+      233
+     ],
+     "net_failures_avoided": 54.5,
+     "net_losses_added": 5.0,
+     "failures_ended": 54.5,
+     "failures_caused": 0.0,
+     "losses_caused": 5.0,
+     "losses_ended": 0.0,
+     "subset": {
+      "ratio": 0.09162943510339575,
+      "ci": [
+       0.01939341441994201,
+       0.1939341441994201
+      ]
+     },
+     "groups": {
+      "ratio": 0.17400540582551102,
+      "ci": [
+       0.036828328611613004,
+       0.3682832861161301
+      ]
+     },
+     "verdict": "point under, both weightings (interval crosses 0.30)"
+    },
+    "verify_no_only (post hoc)": {
+     "f0": {
+      "visible_failure": 0.25620347394540943,
+      "visible_loss": 0.17381974248927037
+     },
+     "gate": {
+      "visible_failure": 0.20037220843672457,
+      "visible_loss": 0.1759656652360515
+     },
+     "paired": [
+      806,
+      233
+     ],
+     "net_failures_avoided": 45.0,
+     "net_losses_added": 0.5,
+     "failures_ended": 45.0,
+     "failures_caused": 0.0,
+     "losses_caused": 0.5,
+     "losses_ended": 0.0,
+     "subset": {
+      "ratio": 0.011097342695855706,
+      "ci": [
+       0.0,
+       0.03841387856257745
+      ]
+     },
+     "groups": {
+      "ratio": 0.021073988038867446,
+      "ci": [
+       0.0,
+       0.07294842013454116
+      ]
+     },
+     "verdict": "under (whole interval, both weightings)"
+    }
+   },
+   "descriptions": {
+    "hotel_only_share": {
+     "f0 | no_type": {
+      "k": 300,
+      "n": 1604,
+      "share": 0.18703241895261846
+     },
+     "f0 | hotel": {
+      "k": 376,
+      "n": 463,
+      "share": 0.8120950323974082
+     },
+     "verify | no_type": {
+      "k": 16,
+      "n": 1604,
+      "share": 0.00997506234413965
+     },
+     "verify | hotel": {
+      "k": 186,
+      "n": 463,
+      "share": 0.4017278617710583
+     },
+     "verify_no_only (post hoc) | no_type": {
+      "k": 118,
+      "n": 1604,
+      "share": 0.07356608478802992
+     },
+     "verify_no_only (post hoc) | hotel": {
+      "k": 307,
+      "n": 463,
+      "share": 0.6630669546436285
+     }
+    },
+    "search_failure_807": {
+     "f0": {
+      "k": 132,
+      "n": 1604,
+      "share": 0.08229426433915212
+     },
+     "verify": {
+      "k": 8,
+      "n": 1604,
+      "share": 0.004987531172069825
+     },
+     "verify_no_only (post hoc)": {
+      "k": 35,
+      "n": 1604,
+      "share": 0.021820448877805487
+     }
+    },
+    "verifier_answers_for_hotel_only": {
+     "no_type": {
+      "yes": 16,
+      "no": 182,
+      "unclear": 102
+     },
+     "hotel": {
+      "no": 69,
+      "unclear": 121,
+      "yes": 186
+     }
+    },
+    "value_count": {
+     "verify": {
+      "removed": 175.99501246882795,
+      "lost": 223.6501079913607,
+      "share_removed": 0.932733525662967,
+      "ratio": 1.270775261491989,
+      "ci": [
+       1.022001070967507,
+       1.5528421881517602
+      ]
+     },
+     "verify_no_only (post hoc)": {
+      "removed": 112.78553615960101,
+      "lost": 81.22030237580992,
+      "share_removed": 0.5977376819389436,
+      "ratio": 0.7201304807460096,
+      "ci": [
+       0.49839747296036785,
+       1.0018873780390247
+      ]
+     }
+    }
+   }
+  }
+ },
+ "predictions": {
+  "V1": {
+   "words": "for each model, the planned gate's search trade ratio (subset weights) is under 0.30 at the point value",
+   "value": {
+    "deepseek": 0.16666666666666666,
+    "qwen": 1.2349094005743697,
+    "gemma": 0.09162943510339575
+   },
+   "held": "failed"
+  },
+  "V2": {
+   "words": "for at least one model, the whole 95% interval of the planned gate's ratio is under 0.30 with both weightings",
+   "value": {
+    "deepseek": {
+     "subset_ci": [
+      0.04838709677419355,
+      0.3404255319148936
+     ],
+     "groups_ci": [
+      0.09188768217779612,
+      0.646472203690594
+     ]
+    },
+    "qwen": {
+     "subset_ci": [
+      0.6792001703159032,
+      2.445120613137252
+     ],
+     "groups_ci": [
+      1.2898093406252493,
+      4.643313626250898
+     ]
+    },
+    "gemma": {
+     "subset_ci": [
+      0.01939341441994201,
+      0.1939341441994201
+     ],
+     "groups_ci": [
+      0.036828328611613004,
+      0.3682832861161301
+     ]
+    }
+   },
+   "held": "failed"
+  },
+  "V3": {
+   "words": "for each model, the planned gate's value-count ratio on the two sets is above 0.30 at the point value, or not defined",
+   "value": {
+    "deepseek": 1.2660080655607466,
+    "qwen": 2.638338610938106,
+    "gemma": 1.270775261491989
+   },
+   "held": "held"
+  },
+  "V4": {
+   "words": "for each model, the clear-no gate's search trade ratio (subset weights) is under 0.30 at the point value",
+   "value": {
+    "deepseek": 0.125,
+    "qwen": 1.4106465075791836,
+    "gemma": 0.011097342695855706
+   },
+   "held": "failed"
+  }
+ }
+}

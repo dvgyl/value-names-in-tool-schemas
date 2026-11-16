@@ -1,0 +1,171 @@
+{
+ "what": "beta-binomial maximum-likelihood fit of the per-request hotel probability of the unchanged tool or form (amendment R10-26)",
+ "profiles": {
+  "haiku": {
+   "sources": [
+    "era1 read 1 (read 1)",
+    "era1 read 2 (read 2)",
+    "erm (read 1)",
+    "ers (read 1)",
+    "erc (all)",
+    "erc2 (all)"
+   ],
+   "sets": {
+    "open": {
+     "requests": 448,
+     "answers": 2686,
+     "hotel": 186,
+     "rate": 0.06924795234549516,
+     "a": 0.011121755395675711,
+     "b": 0.14735102217093157,
+     "mean": 0.07018085734631083,
+     "neg_loglik": 233.3303863139898,
+     "modal_answers_per_request": 6,
+     "requests_with_modal_answers": 446,
+     "observed": {
+      "all_0": 406,
+      "all_m": 23,
+      "mixed": 17
+     },
+     "predicted": {
+      "all_0": 405.19856800181395,
+      "all_m": 22.73840045785765,
+      "mixed": 18.063031540328396
+     }
+    },
+    "specific": {
+     "requests": 59,
+     "answers": 1413,
+     "hotel": 188,
+     "rate": 0.13305024769992924,
+     "a": 0.02602878719202154,
+     "b": 0.17601814945457575,
+     "mean": 0.12882544830436504,
+     "neg_loglik": 137.44326141549422,
+     "modal_answers_per_request": 24,
+     "requests_with_modal_answers": 58,
+     "observed": {
+      "all_0": 47,
+      "all_m": 4,
+      "mixed": 7
+     },
+     "predicted": {
+      "all_0": 46.166671059649175,
+      "all_m": 3.98725396479128,
+      "mixed": 7.846074975559544
+     }
+    }
+   }
+  },
+  "deepseek": {
+   "sources": [
+    "erk_deepseek p0",
+    "erk_deepseek prep",
+    "erk3_deepseek p0"
+   ],
+   "sets": {
+    "open": {
+     "requests": 448,
+     "answers": 1343,
+     "hotel": 251,
+     "rate": 0.18689501116902457,
+     "a": 0.04996200031345468,
+     "b": 0.2167018882114197,
+     "mean": 0.1873594530921806,
+     "neg_loglik": 393.5338664990311,
+     "modal_answers_per_request": 3,
+     "requests_with_modal_answers": 447,
+     "observed": {
+      "all_0": 342,
+      "all_m": 62,
+      "mixed": 43
+     },
+     "predicted": {
+      "all_0": 341.23138516535676,
+      "all_m": 62.78472702666749,
+      "mixed": 42.983887807975755
+     }
+    },
+    "specific": {
+     "requests": 59,
+     "answers": 1768,
+     "hotel": 601,
+     "rate": 0.3399321266968326,
+     "a": 0.134242186545164,
+     "b": 0.2512274082520209,
+     "mean": 0.3482562265794158,
+     "neg_loglik": 401.8616062632986,
+     "modal_answers_per_request": 30,
+     "requests_with_modal_answers": 58,
+     "observed": {
+      "all_0": 23,
+      "all_m": 7,
+      "mixed": 28
+     },
+     "predicted": {
+      "all_0": 23.488292105906474,
+      "all_m": 8.15069090574699,
+      "mixed": 26.361016988346535
+     }
+    }
+   }
+  },
+  "sol": {
+   "sources": [
+    "era1 read 1 (read 1)",
+    "era1 read 2 (read 2)",
+    "fill read 3 (read 3)",
+    "erp (read 1)",
+    "erk_sol t0",
+    "erk_sol trep",
+    "erk2_sol t0"
+   ],
+   "sets": {
+    "open": {
+     "requests": 448,
+     "answers": 3136,
+     "hotel": 1112,
+     "rate": 0.35459183673469385,
+     "a": 0.02262782524301108,
+     "b": 0.04118341462283701,
+     "mean": 0.354605635160547,
+     "neg_loglik": 511.27995836441,
+     "modal_answers_per_request": 7,
+     "requests_with_modal_answers": 448,
+     "observed": {
+      "all_0": 274,
+      "all_m": 144,
+      "mixed": 30
+     },
+     "predicted": {
+      "all_0": 274.00903837454973,
+      "all_m": 143.9844266891199,
+      "mixed": 30.006534936330354
+     }
+    },
+    "specific": {
+     "requests": 59,
+     "answers": 2006,
+     "hotel": 1679,
+     "rate": 0.8369890329012961,
+     "a": 0.29179205246900314,
+     "b": 0.06122091307973374,
+     "mean": 0.8265760211255424,
+     "neg_loglik": 325.84237680658725,
+     "modal_answers_per_request": 34,
+     "requests_with_modal_answers": 59,
+     "observed": {
+      "all_0": 4,
+      "all_m": 39,
+      "mixed": 16
+     },
+     "predicted": {
+      "all_0": 3.3731137750978406,
+      "all_m": 38.96539540818359,
+      "mixed": 16.66149081671857
+     }
+    }
+   }
+  }
+ }
+}

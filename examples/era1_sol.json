@@ -1,0 +1,956 @@
+{
+ "run": "era1_sol",
+ "experiment": "A",
+ "model": "sol",
+ "cells": [
+  "p0",
+  "t0",
+  "t1",
+  "t0ask"
+ ],
+ "pairs": [
+  {
+   "custom_id": "era1_sol-MUL0001-p0-1",
+   "request": {
+    "custom_id": "era1_sol-MUL0001-p0-1",
+    "body": {
+     "model": "gpt-6.1-sol",
+     "input": [
+      {
+       "role": "system",
+       "content": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object."
+      },
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either."
+      }
+     ],
+     "max_output_tokens": 4000,
+     "reasoning": {
+      "effort": "low"
+     },
+     "text": {
+      "format": {
+       "type": "json_schema",
+       "name": "answer",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      }
+     }
+    },
+    "cell": "p0"
+   },
+   "answer": {
+    "custom_id": "era1_sol-MUL0001-p0-1",
+    "type": "succeeded",
+    "model": "gpt-6.1-sol",
+    "stop": "end_turn",
+    "provider_stop": "completed",
+    "input_tokens": 680,
+    "output_tokens": 70,
+    "reasoning_tokens": 26,
+    "text": "{\"name\":null,\"area\":[\"centre\"],\"pricerange\":null,\"stars\":[\"3\"],\"type\":[\"hotel\"],\"parking\":null,\"internet\":[\"no\"]}"
+   }
+  },
+  {
+   "custom_id": "era1_sol-MUL0001-t0-1",
+   "request": {
+    "custom_id": "era1_sol-MUL0001-t0-1",
+    "body": {
+     "model": "gpt-6.1-sol",
+     "input": [
+      {
+       "role": "system",
+       "content": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with one call of the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Call search_hotels one time, and write no other text."
+      },
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either."
+      }
+     ],
+     "max_output_tokens": 4000,
+     "reasoning": {
+      "effort": "low"
+     },
+     "tools": [
+      {
+       "type": "function",
+       "name": "search_hotels",
+       "description": "Search the hotel database of Cambridge with the traveller's requirements. Each argument is a requirement in the same form as described in the instructions.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      }
+     ],
+     "tool_choice": "auto",
+     "parallel_tool_calls": false
+    },
+    "cell": "t0"
+   },
+   "answer": {
+    "custom_id": "era1_sol-MUL0001-t0-1",
+    "type": "succeeded",
+    "model": "gpt-6.1-sol",
+    "stop": "end_turn",
+    "provider_stop": "completed",
+    "input_tokens": 695,
+    "output_tokens": 49,
+    "reasoning_tokens": 0,
+    "text": "",
+    "tool_calls": [
+     {
+      "name": "search_hotels",
+      "input": {
+       "name": null,
+       "area": [
+        "centre"
+       ],
+       "pricerange": null,
+       "stars": [
+        "3"
+       ],
+       "type": [
+        "hotel"
+       ],
+       "parking": null,
+       "internet": [
+        "no"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "custom_id": "era1_sol-MUL0001-t1-1",
+   "request": {
+    "custom_id": "era1_sol-MUL0001-t1-1",
+    "body": {
+     "model": "gpt-6.1-sol",
+     "input": [
+      {
+       "role": "system",
+       "content": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with one call of the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, property_kind, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. property_kind: guesthouse, large_property. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Call search_hotels one time, and write no other text."
+      },
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either."
+      }
+     ],
+     "max_output_tokens": 4000,
+     "reasoning": {
+      "effort": "low"
+     },
+     "tools": [
+      {
+       "type": "function",
+       "name": "search_hotels",
+       "description": "Search the hotel database of Cambridge with the traveller's requirements. Each argument is a requirement in the same form as described in the instructions.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "property_kind": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "large_property"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "property_kind",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      }
+     ],
+     "tool_choice": "auto",
+     "parallel_tool_calls": false
+    },
+    "cell": "t1"
+   },
+   "answer": {
+    "custom_id": "era1_sol-MUL0001-t1-1",
+    "type": "succeeded",
+    "model": "gpt-6.1-sol",
+    "stop": "end_turn",
+    "provider_stop": "completed",
+    "input_tokens": 700,
+    "output_tokens": 49,
+    "reasoning_tokens": 0,
+    "text": "",
+    "tool_calls": [
+     {
+      "name": "search_hotels",
+      "input": {
+       "name": null,
+       "area": [
+        "centre"
+       ],
+       "pricerange": null,
+       "stars": [
+        "3"
+       ],
+       "property_kind": null,
+       "parking": null,
+       "internet": [
+        "no"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "custom_id": "era1_sol-MUL0001-t0ask-1",
+   "request": {
+    "custom_id": "era1_sol-MUL0001-t0ask-1",
+    "body": {
+     "model": "gpt-6.1-sol",
+     "input": [
+      {
+       "role": "system",
+       "content": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with one call of the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Call search_hotels one time, or call ask_traveller one time if you must ask the traveller a question before you search, and write no other text."
+      },
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either."
+      }
+     ],
+     "max_output_tokens": 4000,
+     "reasoning": {
+      "effort": "low"
+     },
+     "tools": [
+      {
+       "type": "function",
+       "name": "search_hotels",
+       "description": "Search the hotel database of Cambridge with the traveller's requirements. Each argument is a requirement in the same form as described in the instructions.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      },
+      {
+       "type": "function",
+       "name": "ask_traveller",
+       "description": "Ask the traveller one question before you search.",
+       "parameters": {
+        "type": "object",
+        "properties": {
+         "question": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "question"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      }
+     ],
+     "tool_choice": "auto",
+     "parallel_tool_calls": false
+    },
+    "cell": "t0ask"
+   },
+   "answer": {
+    "custom_id": "era1_sol-MUL0001-t0ask-1",
+    "type": "succeeded",
+    "model": "gpt-6.1-sol",
+    "stop": "end_turn",
+    "provider_stop": "completed",
+    "input_tokens": 740,
+    "output_tokens": 49,
+    "reasoning_tokens": 0,
+    "text": "",
+    "tool_calls": [
+     {
+      "name": "search_hotels",
+      "input": {
+       "name": null,
+       "area": [
+        "centre"
+       ],
+       "pricerange": null,
+       "stars": [
+        "3"
+       ],
+       "type": [
+        "hotel"
+       ],
+       "parking": null,
+       "internet": [
+        "no"
+       ]
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

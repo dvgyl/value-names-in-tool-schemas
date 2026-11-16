@@ -1,0 +1,128 @@
+custom_id	model	arm	rule_kind	G	L	Q	E	verdict	note
+erw2_haiku-MUL0666-flag-1	haiku	flag	tell	1	1	0	0	tell	says guesthouses fit; keeps the traveller's exclusion
+erw2_haiku-MUL0666-flag-2	haiku	flag	tell	1	1	0	1	tell	
+erw2_haiku-MUL0666-plain-1	haiku	plain	tell	0	0	0	0	no tell	restates "hotels (not guesthouses)"; asks to relax price or parking; keeps the traveller's exclusion
+erw2_haiku-MUL0666-plain-2	haiku	plain	tell	0	0	0	0	no tell	restates "hotels rather than guesthouses"; asks to relax price or parking; keeps the traveller's exclusion
+erw2_haiku-MUL1105-flag-1	haiku	flag	tell	1	1	0	1	tell	
+erw2_haiku-MUL1105-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-MUL1105-plain-1	haiku	plain	other	0	0	0	0	no tell	named venue not found; no type option
+erw2_haiku-MUL2296-flag-1	haiku	flag	tell	1	0	1	0	tell	
+erw2_haiku-MUL2296-flag-2	haiku	flag	tell	1	1	1	0	tell	
+erw2_haiku-MUL2296-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-MUL2296-plain-2	haiku	plain	tell	1	0	0	0	tell	
+erw2_haiku-PMUL0317-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-PMUL0317-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-PMUL0317-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-PMUL0317-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-PMUL0425-plain-1	haiku	plain	other	0	0	0	0	no tell	named venue not found; no type option
+erw2_haiku-PMUL0456-plain-1	haiku	plain	tell	1	0	1	0	tell	wrongly says the type was not restricted
+erw2_haiku-PMUL2861-flag-1	haiku	flag	tell	1	1	0	0	tell	
+erw2_haiku-PMUL2861-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-PMUL2861-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-PMUL2861-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-PMUL3055-flag-1	haiku	flag	tell	1	1	1	0	tell	
+erw2_haiku-PMUL3589-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-PMUL3589-flag-2	haiku	flag	tell	1	1	1	0	tell	
+erw2_haiku-PMUL3589-plain-2	haiku	plain	tell	1	0	0	0	tell	
+erw2_haiku-PMUL3620-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-PMUL3620-flag-2	haiku	flag	tell	1	1	1	0	tell	
+erw2_haiku-PMUL3620-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-PMUL3620-plain-2	haiku	plain	tell	1	0	0	0	tell	
+erw2_haiku-PMUL3761-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw2_haiku-PMUL3761-flag-2	haiku	flag	tell	1	1	0	0	tell	says guesthouses fit; keeps the stated preference
+erw2_haiku-PMUL3761-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw2_haiku-PMUL3761-plain-2	haiku	plain	tell	1	1	0	0	tell	says guesthouses fit; keeps the stated preference
+erw2_haiku-PMUL4092-flag-2	haiku	flag	tell	1	1	1	0	tell	
+erw2_haiku-PMUL4092-plain-2	haiku	plain	tell	1	1	1	0	tell	
+erw2_haiku-PMUL4376-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw2_opus-MUL0200-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-MUL1097-flag-1	opus	flag	tell	1	1	1	0	tell	
+erw2_opus-MUL1150-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-MUL2296-flag-1	opus	flag	tell	1	1	1	0	tell	
+erw2_opus-MUL2532-flag-1	opus	flag	tell	1	1	1	0	tell	
+erw2_opus-PMUL0317-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-PMUL1539-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-PMUL1690-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-PMUL2861-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-PMUL2861-plain-1	opus	plain	tell	1	0	0	0	tell	
+erw2_opus-PMUL2888-flag-1	opus	flag	tell	1	1	1	0	tell	
+erw2_opus-PMUL3055-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-PMUL3157-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw2_opus-PMUL3761-flag-1	opus	flag	tell	1	1	1	0	tell	
+erw2_opus-PMUL3761-plain-1	opus	plain	tell	1	1	1	0	tell	
+erw2_sonnet-PMUL2861-flag-1	sonnet	flag	tell	1	1	1	0	tell	
+erw2_sonnet-PMUL2861-flag-2	sonnet	flag	tell	1	1	1	0	tell	
+erw2_sonnet-PMUL3761-flag-1	sonnet	flag	tell	1	1	1	0	tell	
+erw2_sonnet-PMUL3761-flag-2	sonnet	flag	tell	1	1	1	0	tell	
+erw2_sonnet-PMUL4701-flag-1	sonnet	flag	tell	1	0	1	0	tell	
+erw3_haiku-MUL0666-flag-1	haiku	flag	tell	1	1	0	1	tell	says guesthouses fit; keeps the traveller's exclusion
+erw3_haiku-MUL0666-flag-2	haiku	flag	tell	1	1	0	1	tell	says guesthouses fit; keeps the traveller's exclusion
+erw3_haiku-MUL0666-plain-1	haiku	plain	tell	0	0	0	0	no tell	restates "hotel (not guesthouse)"; asks to relax price or parking; keeps the traveller's exclusion
+erw3_haiku-MUL0666-plain-2	haiku	plain	tell	0	0	0	0	no tell	restates "hotels (not guesthouses)"; offers a broader price or parking search; keeps the traveller's exclusion
+erw3_haiku-MUL1105-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw3_haiku-MUL1105-plain-1	haiku	plain	tell	1	1	0	0	tell	weak: the venue may be listed as a guesthouse; offers a new search
+erw3_haiku-MUL2296-flag-1	haiku	flag	tell	1	1	1	0	tell	
+erw3_haiku-MUL2296-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw3_haiku-MUL2296-plain-2	haiku	plain	tell	1	1	1	0	tell	
+erw3_haiku-PMUL0035-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw3_haiku-PMUL0317-flag-1	haiku	flag	tell	1	1	0	0	tell	
+erw3_haiku-PMUL0317-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw3_haiku-PMUL0317-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw3_haiku-PMUL0317-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw3_haiku-PMUL0425-plain-1	haiku	plain	tell	1	1	0	0	tell	weak: the venue may be listed as a guesthouse; offers a new search
+erw3_haiku-PMUL0425-plain-2	haiku	plain	other	0	0	0	0	no tell	named venue not found; no type option
+erw3_haiku-PMUL0456-plain-2	haiku	plain	other	0	0	0	0	no tell	offers other price ranges or areas only
+erw3_haiku-PMUL2861-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw3_haiku-PMUL2861-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw3_haiku-PMUL3589-flag-1	haiku	flag	tell	1	0	1	0	tell	
+erw3_haiku-PMUL3589-flag-2	haiku	flag	tell	1	1	1	0	tell	
+erw3_haiku-PMUL3589-plain-1	haiku	plain	tell	0	0	0	0	no tell	"guesthouse" names an earlier booking; offers other price ranges or areas only
+erw3_haiku-PMUL3620-plain-1	haiku	plain	other	0	0	0	0	no tell	offers other areas or star ratings only
+erw3_haiku-PMUL3761-flag-1	haiku	flag	tell	1	1	1	0	tell	
+erw3_haiku-PMUL3761-flag-2	haiku	flag	tell	1	1	0	0	tell	says guesthouses fit; keeps the stated preference
+erw3_haiku-PMUL3761-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw3_haiku-PMUL3761-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw3_haiku-PMUL4092-plain-2	haiku	plain	tell	1	1	1	0	tell	
+erw3_haiku-PMUL4376-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw_haiku-MUL0666-flag-1	haiku	flag	tell	1	1	0	1	tell	says guesthouses fit; keeps the traveller's exclusion
+erw_haiku-MUL0666-flag-2	haiku	flag	tell	1	1	0	1	tell	says guesthouses fit; keeps the traveller's exclusion
+erw_haiku-MUL0666-plain-1	haiku	plain	tell	0	0	0	0	no tell	says it kept the type because the traveller excluded guesthouses; asks to relax price or parking
+erw_haiku-MUL0666-plain-2	haiku	plain	tell	0	0	0	0	no tell	restates "hotels (not guesthouses)"; asks to relax price or parking; keeps the traveller's exclusion
+erw_haiku-MUL1105-plain-1	haiku	plain	other	0	0	0	0	no tell	named venue not found; no type option
+erw_haiku-MUL1105-plain-2	haiku	plain	other	0	0	0	0	no tell	named venue not found; no type option
+erw_haiku-MUL2296-flag-1	haiku	flag	tell	1	1	1	0	tell	
+erw_haiku-MUL2296-flag-2	haiku	flag	tell	1	0	1	0	tell	
+erw_haiku-MUL2296-plain-1	haiku	plain	tell	1	1	1	0	tell	
+erw_haiku-PMUL0317-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL0317-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL0317-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw_haiku-PMUL0317-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw_haiku-PMUL0425-plain-1	haiku	plain	other	0	0	0	0	no tell	named venue not found; no type option
+erw_haiku-PMUL0425-plain-2	haiku	plain	tell	1	1	0	0	tell	weak: the venue may be listed as a guesthouse; offers a new search
+erw_haiku-PMUL2861-flag-1	haiku	flag	tell	1	1	1	0	tell	
+erw_haiku-PMUL2861-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL3055-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL3055-plain-1	haiku	plain	other	0	0	0	0	no tell	offers other star ratings or price ranges only
+erw_haiku-PMUL3589-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL3589-flag-2	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL3589-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw_haiku-PMUL3620-flag-1	haiku	flag	tell	1	1	1	1	tell	
+erw_haiku-PMUL3761-flag-1	haiku	flag	tell	1	1	0	0	tell	says guesthouses fit; keeps the stated preference
+erw_haiku-PMUL3761-flag-2	haiku	flag	tell	1	1	0	0	tell	says guesthouses fit; keeps the stated preference
+erw_haiku-PMUL3761-plain-1	haiku	plain	tell	1	0	1	0	tell	
+erw_haiku-PMUL4376-plain-2	haiku	plain	tell	1	0	1	0	tell	
+erw_opus-MUL1097-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw_opus-MUL1374-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw_opus-MUL2532-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw_opus-PMUL0317-flag-1	opus	flag	tell	1	1	1	1	tell	
+erw_opus-PMUL1539-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw_opus-PMUL1911-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw_opus-PMUL2861-flag-1	opus	flag	tell	1	1	1	1	tell	
+erw_opus-PMUL3055-flag-1	opus	flag	tell	1	0	0	0	tell	
+erw_opus-PMUL3157-flag-1	opus	flag	tell	1	0	1	0	tell	
+erw_opus-PMUL3620-plain-1	opus	plain	tell	1	0	1	0	tell	
+erw_opus-PMUL3761-flag-1	opus	flag	tell	1	1	1	0	tell	
+erw_sonnet-PMUL2861-flag-1	sonnet	flag	tell	1	1	1	0	tell	
+erw_sonnet-PMUL2861-flag-2	sonnet	flag	tell	1	1	1	0	tell	
+erw_sonnet-PMUL3761-flag-1	sonnet	flag	tell	1	1	1	0	tell	
+erw_sonnet-PMUL3761-flag-2	sonnet	flag	tell	1	1	1	0	tell	

@@ -1,0 +1,161 @@
+{
+ "n3_d3_guesthouse_rows": {
+  "sonnet": {
+   "values": 15,
+   "yes": 0,
+   "no": 14,
+   "unclear": 1,
+   "share_yes": "0.0%",
+   "share_no": "93.3%",
+   "md": "| | Guesthouse | 15 | 0 | 14 | 1 | 0.0% | 93.3% |"
+  },
+  "haiku": {
+   "values": 21,
+   "yes": 10,
+   "no": 11,
+   "unclear": 0,
+   "share_yes": "47.6%",
+   "share_no": "52.4%",
+   "md": "| | Guesthouse | 21 | 10 | 11 | 0 | 47.6% | 52.4% |"
+  },
+  "sol": {
+   "values": 43,
+   "yes": 1,
+   "no": 41,
+   "unclear": 1,
+   "share_yes": "2.3%",
+   "share_no": "95.3%",
+   "md": "| | Guesthouse | 43 | 1 | 41 | 1 | 2.3% | 95.3% |"
+  },
+  "luna": {
+   "values": 39,
+   "yes": 0,
+   "no": 37,
+   "unclear": 2,
+   "share_yes": "0.0%",
+   "share_no": "94.9%",
+   "md": "| | Guesthouse | 39 | 0 | 37 | 2 | 0.0% | 94.9% |"
+  },
+  "opus": {
+   "values": 12,
+   "yes": 1,
+   "no": 10,
+   "unclear": 1,
+   "share_yes": "8.3%",
+   "share_no": "83.3%",
+   "md": "| | Guesthouse | 12 | 1 | 10 | 1 | 8.3% | 83.3% |"
+  },
+  "astra": {
+   "values": 43,
+   "yes": 1,
+   "no": 41,
+   "unclear": 1,
+   "share_yes": "2.3%",
+   "share_no": "95.3%",
+   "md": "| | Guesthouse | 43 | 1 | 41 | 1 | 2.3% | 95.3% |"
+  }
+ },
+ "n3_sonnet_example": {
+  "removed": 187.0,
+  "lost": 243.0,
+  "ratio": 1.3,
+  "variant_a_ratio": 1.41
+ },
+ "n3_luna_bases": {
+  "n0": {
+   "S1t": 1988,
+   "S3": 980,
+   "S2": 1090
+  },
+  "n1": {
+   "S1t": 1987,
+   "S3": 978,
+   "S2": 1090
+  }
+ },
+ "n3_reproduces_all_12_rows": true,
+ "n1": {
+  "original_failures_NT": "20 to 44",
+  "avoided_planned": "2 to 29",
+  "avoided_relax": "2 to 30",
+  "avoided_soft": "2 to 30",
+  "planned_gross_losses_H": {
+   "Sonnet": "2",
+   "Haiku": "1",
+   "Sol": "3",
+   "Luna": "2",
+   "DeepSeek": "0",
+   "Qwen": "2",
+   "Gemma": "2"
+  },
+  "planned_gross_losses_H_range": "0 to 3",
+  "planned_gross_losses_H_total": "12",
+  "gross_gains_H_all_policies": [
+   0.0
+  ],
+  "symbolic_gross_losses_H": [
+   0.0
+  ],
+  "H_dialogues": {
+   "Sonnet": 66,
+   "Haiku": 66,
+   "Sol": 66,
+   "Luna": 66,
+   "DeepSeek": 66,
+   "Qwen": 60,
+   "Gemma": 66
+  },
+  "NT_dialogues": {
+   "Sonnet": 213,
+   "Haiku": 213,
+   "Sol": 213,
+   "Luna": 213,
+   "DeepSeek": 213,
+   "Qwen": 199,
+   "Gemma": 212
+  },
+  "relax_guesthouse_stated": {
+   "Sonnet": 1,
+   "Haiku": 0,
+   "Sol": 0,
+   "Luna": 1,
+   "DeepSeek": 0,
+   "Qwen": 0,
+   "Gemma": 0
+  }
+ },
+ "n2": {
+  "table_rows": [
+   "| Sonnet | 26 | 11 [5, 18] | 11 [5, 18] | 2 |",
+   "| Haiku | 0 | 0.5 [0, 1.5] | 3.5 [0.5, 7.5] | 3.5 |",
+   "| Sol | 90 | 9 [3, 16] | 19 [11, 27] | 0 |",
+   "| Luna | 25 | 11.5 [6, 18] | 11.5 [6, 18] | 11.5 |",
+   "| Opus | 18 | 3 [-1, 7] | 7 [2, 13] | 0 |",
+   "| Astra | 90 | 17 [9, 26] | 20 [12, 30] | 0 |",
+   "| DeepSeek | 24 | 6 [2, 10.5] | 11 [6, 17] | 2 |",
+   "| Qwen | 16 | 0.5 [-3.5, 5] | 4.5 [1.5, 8] | 13 |",
+   "| Gemma | 45 | 9.5 [4.5, 15.5] | 13 [6.5, 20] | 1 |"
+  ],
+  "guesthouse_stated_range": "0 to 13",
+  "conditional_calls_range": "13.8% to 46.0%",
+  "second_search_range": "2.1% to 15.6%",
+  "fewer_than_soft_whole_interval": 9,
+  "fewer_than_verifier_point": 9,
+  "fewer_than_verifier_whole_interval": 6,
+  "fewer_than_verifier_whole_interval_models": [
+   "Sonnet",
+   "Sol",
+   "Luna",
+   "Astra",
+   "DeepSeek",
+   "Gemma"
+  ],
+  "gross_losses_H": [
+   0.0
+  ],
+  "gross_gains_H": [
+   0.0
+  ],
+  "avoided_range": "0 to 90"
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "post_hoc": true,
+ "models": {
+  "sonnet": {
+   "counts": {
+    "search calls": 1105,
+    "in flag sample": 64,
+    "invalid after normalization": 18,
+    "invalid, hotel-only": 8,
+    "invalid, search finds a venue": 0,
+    "invalid, search without type finds a venue": 1,
+    "invalid, flagged by the relaxation check": 1,
+    "invalid, hotel-only and flagged": 0,
+    "invalid, in flag sample": 0
+   },
+   "kinds": {
+    "quoted value": 18
+   },
+   "invalid_flagged": [
+    {
+     "custom_id": "era1_sonnet-PMUL4953-t0-2",
+     "kinds": [
+      "quoted value"
+     ],
+     "problems": [
+      "$.type: \"\\\"any\\\"\" not in the allowed values"
+     ],
+     "hotel_only": false,
+     "in_sample": false
+    }
+   ],
+   "sample_size": 64
+  },
+  "haiku": {
+   "counts": {
+    "search calls": 1072,
+    "in flag sample": 29,
+    "invalid after normalization": 76,
+    "invalid, hotel-only": 14,
+    "invalid, search finds a venue": 0,
+    "invalid, search without type finds a venue": 3,
+    "invalid, flagged by the relaxation check": 3,
+    "invalid, hotel-only and flagged": 0,
+    "invalid, in flag sample": 0
+   },
+   "kinds": {
+    "quoted value": 68,
+    "option word in a list": 9
+   },
+   "invalid_flagged": [
+    {
+     "custom_id": "era1_haiku-PMUL4845-t0-1",
+     "kinds": [
+      "quoted value"
+     ],
+     "problems": [
+      "$.type: \"\\\"any\\\"\" not in the allowed values"
+     ],
+     "hotel_only": false,
+     "in_sample": false
+    },
+    {
+     "custom_id": "era1_haiku-PMUL4953-t0-2",
+     "kinds": [
+      "quoted value"
+     ],
+     "problems": [
+      "$.type: \"\\\"any\\\"\" not in the allowed values"
+     ],
+     "hotel_only": false,
+     "in_sample": false
+    },
+    {
+     "custom_id": "era1_haiku-PMUL4845-t0-2",
+     "kinds": [
+      "quoted value"
+     ],
+     "problems": [
+      "$.type: \"\\\"any\\\"\" not in the allowed values"
+     ],
+     "hotel_only": false,
+     "in_sample": false
+    }
+   ],
+   "sample_size": 29
+  },
+  "opus": {
+   "counts": {
+    "search calls": 554,
+    "in flag sample": 26,
+    "invalid after normalization": 33,
+    "invalid, hotel-only": 12,
+    "invalid, search finds a venue": 0,
+    "invalid, search without type finds a venue": 1,
+    "invalid, flagged by the relaxation check": 1,
+    "invalid, hotel-only and flagged": 0,
+    "invalid, in flag sample": 0
+   },
+   "kinds": {
+    "quoted value": 33
+   },
+   "invalid_flagged": [
+    {
+     "custom_id": "era1_opus-PMUL4845-t0-1",
+     "kinds": [
+      "quoted value"
+     ],
+     "problems": [
+      "$.type: \"\\\"any\\\"\" not in the allowed values"
+     ],
+     "hotel_only": false,
+     "in_sample": false
+    }
+   ],
+   "sample_size": 26
+  },
+  "sol": {
+   "counts": {
+    "search calls": 1108,
+    "in flag sample": 96
+   },
+   "kinds": {},
+   "invalid_flagged": [],
+   "sample_size": 96
+  },
+  "astra": {
+   "counts": {
+    "search calls": 554,
+    "in flag sample": 51
+   },
+   "kinds": {},
+   "invalid_flagged": [],
+   "sample_size": 51
+  }
+ }
+}

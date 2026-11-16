@@ -1,0 +1,72 @@
+{
+ "post_hoc": true,
+ "models": {
+  "sonnet": {
+   "empty": {
+    "trials": 88,
+    "first_requests": 46
+   },
+   "nonempty": {
+    "trials": 219,
+    "first_requests": 116
+   },
+   "unmatched": 0
+  },
+  "haiku": {
+   "empty": {
+    "trials": 49,
+    "first_requests": 28
+   },
+   "nonempty": {
+    "trials": 39,
+    "first_requests": 23
+   },
+   "unmatched": 0
+  },
+  "opus": {
+   "empty": {
+    "trials": 47,
+    "first_requests": 47
+   },
+   "nonempty": {
+    "trials": 132,
+    "first_requests": 132
+   },
+   "unmatched": 0
+  },
+  "sol": {
+   "empty": {
+    "trials": 134,
+    "first_requests": 68
+   },
+   "nonempty": {
+    "trials": 351,
+    "first_requests": 186
+   },
+   "unmatched": 0
+  },
+  "astra": {
+   "empty": {
+    "trials": 70,
+    "first_requests": 70
+   },
+   "nonempty": {
+    "trials": 183,
+    "first_requests": 183
+   },
+   "unmatched": 0
+  },
+  "luna": {
+   "empty": {
+    "trials": 70,
+    "first_requests": 41
+   },
+   "nonempty": {
+    "trials": 179,
+    "first_requests": 96
+   },
+   "unmatched": 0
+  }
+ },
+ "haiku_nonempty_upper_95": 0.1481851289152244
+}

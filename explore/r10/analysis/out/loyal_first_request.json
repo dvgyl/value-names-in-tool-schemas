@@ -1,0 +1,527 @@
+{
+ "post_hoc": true,
+ "sizes": {
+  "first_requests": 554,
+  "open": 448,
+  "specific": 59
+ },
+ "word_rule": {
+  "open": {
+   "unclear": 448
+  },
+  "specific": {
+   "unclear": 58,
+   "hotel_only": 1
+  }
+ },
+ "models": {
+  "sonnet": {
+   "folders": [
+    "era1_sonnet",
+    "erx_a1_sonnet",
+    "erx_a2_sonnet"
+   ],
+   "counts": {
+    "valid_open": 1344,
+    "search_open": 1343,
+    "relaxed_open": 68,
+    "added_visible_failure_open": 0,
+    "exclusions": 144,
+    "exclusion_type_alone": 113,
+    "exclusion_other_fields_too": 31,
+    "exclusion_empty_call": 74,
+    "exclusion_ended_by_policy": 60,
+    "exclusion_no_stated_type": 144,
+    "search_specific": 175,
+    "relaxed_specific": 0,
+    "added_visible_loss_specific": 0,
+    "ended_visible_loss_specific": 0
+   },
+   "exclusion": {
+    "k": 144,
+    "n": 1344,
+    "share": 0.10714285714285714,
+    "ci": [
+     0.07961309523809523,
+     0.13839285714285715
+    ]
+   },
+   "type_alone_of_exclusions": {
+    "k": 113,
+    "n": 144,
+    "share": 0.7847222222222222,
+    "ci": [
+     0.6620689655172414,
+     0.891156462585034
+    ]
+   },
+   "relaxation_ends_exclusion": {
+    "k": 60,
+    "n": 144,
+    "share": 0.4166666666666667,
+    "ci": [
+     0.272108843537415,
+     0.5571428571428572
+    ]
+   },
+   "visible_failure_open_before": {
+    "k": 407,
+    "n": 1343,
+    "share": 0.30305286671630677,
+    "ci": [
+     0.2615499254843517,
+     0.3472429210134128
+    ]
+   },
+   "visible_failure_open_after": {
+    "k": 345,
+    "n": 1343,
+    "share": 0.2568875651526433,
+    "ci": [
+     0.21742367833209233,
+     0.2976190476190476
+    ]
+   },
+   "visible_loss_specific_before": {
+    "k": 59,
+    "n": 175,
+    "share": 0.33714285714285713,
+    "ci": [
+     0.2254335260115607,
+     0.45930232558139533
+    ]
+   },
+   "visible_loss_specific_after": {
+    "k": 59,
+    "n": 175,
+    "share": 0.33714285714285713,
+    "ci": [
+     0.2254335260115607,
+     0.45930232558139533
+    ]
+   }
+  },
+  "haiku": {
+   "folders": [
+    "era1_haiku"
+   ],
+   "counts": {
+    "valid_open": 894,
+    "search_open": 865,
+    "relaxed_open": 22,
+    "added_visible_failure_open": 0,
+    "exclusions": 28,
+    "exclusion_type_alone": 20,
+    "exclusion_other_fields_too": 8,
+    "exclusion_empty_call": 23,
+    "exclusion_ended_by_policy": 18,
+    "exclusion_no_stated_type": 28,
+    "search_specific": 115,
+    "relaxed_specific": 0,
+    "added_visible_loss_specific": 0,
+    "ended_visible_loss_specific": 0
+   },
+   "exclusion": {
+    "k": 28,
+    "n": 894,
+    "share": 0.03131991051454139,
+    "ci": [
+     0.016816143497757848,
+     0.048044692737430165
+    ]
+   },
+   "type_alone_of_exclusions": {
+    "k": 20,
+    "n": 28,
+    "share": 0.7142857142857143,
+    "ci": [
+     0.5,
+     0.9
+    ]
+   },
+   "relaxation_ends_exclusion": {
+    "k": 18,
+    "n": 28,
+    "share": 0.6428571428571429,
+    "ci": [
+     0.4074074074074074,
+     0.8387096774193549
+    ]
+   },
+   "visible_failure_open_before": {
+    "k": 248,
+    "n": 865,
+    "share": 0.28670520231213875,
+    "ci": [
+     0.2459396751740139,
+     0.3275462962962963
+    ]
+   },
+   "visible_failure_open_after": {
+    "k": 227,
+    "n": 865,
+    "share": 0.26242774566473986,
+    "ci": [
+     0.22145328719723184,
+     0.3020833333333333
+    ]
+   },
+   "visible_loss_specific_before": {
+    "k": 53,
+    "n": 115,
+    "share": 0.4608695652173913,
+    "ci": [
+     0.3391304347826087,
+     0.5826086956521739
+    ]
+   },
+   "visible_loss_specific_after": {
+    "k": 53,
+    "n": 115,
+    "share": 0.4608695652173913,
+    "ci": [
+     0.3391304347826087,
+     0.5826086956521739
+    ]
+   }
+  },
+  "opus": {
+   "folders": [
+    "era1_opus",
+    "erx_a2_opus"
+   ],
+   "counts": {
+    "valid_open": 896,
+    "search_open": 896,
+    "relaxed_open": 36,
+    "added_visible_failure_open": 0,
+    "exclusions": 107,
+    "exclusion_type_alone": 79,
+    "exclusion_other_fields_too": 28,
+    "exclusion_empty_call": 49,
+    "exclusion_ended_by_policy": 30,
+    "exclusion_no_stated_type": 107,
+    "search_specific": 118,
+    "relaxed_specific": 0,
+    "added_visible_loss_specific": 0,
+    "ended_visible_loss_specific": 0
+   },
+   "exclusion": {
+    "k": 107,
+    "n": 896,
+    "share": 0.11941964285714286,
+    "ci": [
+     0.09040178571428571,
+     0.14955357142857142
+    ]
+   },
+   "type_alone_of_exclusions": {
+    "k": 79,
+    "n": 107,
+    "share": 0.7383177570093458,
+    "ci": [
+     0.6226415094339622,
+     0.8440366972477065
+    ]
+   },
+   "relaxation_ends_exclusion": {
+    "k": 30,
+    "n": 107,
+    "share": 0.2803738317757009,
+    "ci": [
+     0.16831683168316833,
+     0.39603960396039606
+    ]
+   },
+   "visible_failure_open_before": {
+    "k": 266,
+    "n": 896,
+    "share": 0.296875,
+    "ci": [
+     0.25558035714285715,
+     0.33816964285714285
+    ]
+   },
+   "visible_failure_open_after": {
+    "k": 233,
+    "n": 896,
+    "share": 0.26004464285714285,
+    "ci": [
+     0.21763392857142858,
+     0.3013392857142857
+    ]
+   },
+   "visible_loss_specific_before": {
+    "k": 27,
+    "n": 118,
+    "share": 0.2288135593220339,
+    "ci": [
+     0.1271186440677966,
+     0.3389830508474576
+    ]
+   },
+   "visible_loss_specific_after": {
+    "k": 27,
+    "n": 118,
+    "share": 0.2288135593220339,
+    "ci": [
+     0.1271186440677966,
+     0.3389830508474576
+    ]
+   }
+  },
+  "sol": {
+   "folders": [
+    "era1_sol",
+    "erx_a3_sol"
+   ],
+   "counts": {
+    "valid_open": 1344,
+    "search_open": 1344,
+    "relaxed_open": 105,
+    "added_visible_failure_open": 0,
+    "exclusions": 243,
+    "exclusion_type_alone": 199,
+    "exclusion_other_fields_too": 44,
+    "exclusion_empty_call": 112,
+    "exclusion_ended_by_policy": 91,
+    "exclusion_no_stated_type": 243,
+    "search_specific": 177,
+    "relaxed_specific": 3,
+    "added_visible_loss_specific": 0,
+    "ended_visible_loss_specific": 0
+   },
+   "exclusion": {
+    "k": 243,
+    "n": 1344,
+    "share": 0.18080357142857142,
+    "ci": [
+     0.14583333333333334,
+     0.21875
+    ]
+   },
+   "type_alone_of_exclusions": {
+    "k": 199,
+    "n": 243,
+    "share": 0.8189300411522634,
+    "ci": [
+     0.7349397590361446,
+     0.8958333333333334
+    ]
+   },
+   "relaxation_ends_exclusion": {
+    "k": 91,
+    "n": 243,
+    "share": 0.37448559670781895,
+    "ci": [
+     0.2708333333333333,
+     0.4793388429752066
+    ]
+   },
+   "visible_failure_open_before": {
+    "k": 450,
+    "n": 1344,
+    "share": 0.33482142857142855,
+    "ci": [
+     0.2931547619047619,
+     0.3802083333333333
+    ]
+   },
+   "visible_failure_open_after": {
+    "k": 359,
+    "n": 1344,
+    "share": 0.26711309523809523,
+    "ci": [
+     0.22544642857142858,
+     0.31026785714285715
+    ]
+   },
+   "visible_loss_specific_before": {
+    "k": 37,
+    "n": 177,
+    "share": 0.20903954802259886,
+    "ci": [
+     0.11299435028248588,
+     0.3107344632768362
+    ]
+   },
+   "visible_loss_specific_after": {
+    "k": 37,
+    "n": 177,
+    "share": 0.20903954802259886,
+    "ci": [
+     0.11299435028248588,
+     0.3107344632768362
+    ]
+   }
+  },
+  "luna": {
+   "folders": [
+    "era1_luna"
+   ],
+   "counts": {
+    "valid_open": 896,
+    "search_open": 896,
+    "relaxed_open": 36,
+    "added_visible_failure_open": 0,
+    "exclusions": 85,
+    "exclusion_type_alone": 66,
+    "exclusion_other_fields_too": 19,
+    "exclusion_empty_call": 41,
+    "exclusion_ended_by_policy": 33,
+    "exclusion_no_stated_type": 85,
+    "search_specific": 118,
+    "relaxed_specific": 2,
+    "added_visible_loss_specific": 0,
+    "ended_visible_loss_specific": 0
+   },
+   "exclusion": {
+    "k": 85,
+    "n": 896,
+    "share": 0.09486607142857142,
+    "ci": [
+     0.06919642857142858,
+     0.12388392857142858
+    ]
+   },
+   "type_alone_of_exclusions": {
+    "k": 66,
+    "n": 85,
+    "share": 0.7764705882352941,
+    "ci": [
+     0.6470588235294118,
+     0.8888888888888888
+    ]
+   },
+   "relaxation_ends_exclusion": {
+    "k": 33,
+    "n": 85,
+    "share": 0.38823529411764707,
+    "ci": [
+     0.24719101123595505,
+     0.5294117647058824
+    ]
+   },
+   "visible_failure_open_before": {
+    "k": 268,
+    "n": 896,
+    "share": 0.29910714285714285,
+    "ci": [
+     0.25892857142857145,
+     0.34151785714285715
+    ]
+   },
+   "visible_failure_open_after": {
+    "k": 235,
+    "n": 896,
+    "share": 0.2622767857142857,
+    "ci": [
+     0.22209821428571427,
+     0.30245535714285715
+    ]
+   },
+   "visible_loss_specific_before": {
+    "k": 39,
+    "n": 118,
+    "share": 0.3305084745762712,
+    "ci": [
+     0.22033898305084745,
+     0.4491525423728814
+    ]
+   },
+   "visible_loss_specific_after": {
+    "k": 39,
+    "n": 118,
+    "share": 0.3305084745762712,
+    "ci": [
+     0.22033898305084745,
+     0.4491525423728814
+    ]
+   }
+  },
+  "astra": {
+   "folders": [
+    "era1_astra"
+   ],
+   "counts": {
+    "valid_open": 448,
+    "search_open": 448,
+    "relaxed_open": 38,
+    "added_visible_failure_open": 0,
+    "exclusions": 85,
+    "exclusion_type_alone": 71,
+    "exclusion_other_fields_too": 14,
+    "exclusion_empty_call": 41,
+    "exclusion_ended_by_policy": 34,
+    "exclusion_no_stated_type": 85,
+    "search_specific": 59,
+    "relaxed_specific": 1,
+    "added_visible_loss_specific": 0,
+    "ended_visible_loss_specific": 0
+   },
+   "exclusion": {
+    "k": 85,
+    "n": 448,
+    "share": 0.18973214285714285,
+    "ci": [
+     0.15401785714285715,
+     0.22767857142857142
+    ]
+   },
+   "type_alone_of_exclusions": {
+    "k": 71,
+    "n": 85,
+    "share": 0.8352941176470589,
+    "ci": [
+     0.7529411764705882,
+     0.9058823529411765
+    ]
+   },
+   "relaxation_ends_exclusion": {
+    "k": 34,
+    "n": 85,
+    "share": 0.4,
+    "ci": [
+     0.29411764705882354,
+     0.5058823529411764
+    ]
+   },
+   "visible_failure_open_before": {
+    "k": 155,
+    "n": 448,
+    "share": 0.34598214285714285,
+    "ci": [
+     0.30357142857142855,
+     0.39285714285714285
+    ]
+   },
+   "visible_failure_open_after": {
+    "k": 121,
+    "n": 448,
+    "share": 0.2700892857142857,
+    "ci": [
+     0.22767857142857142,
+     0.31473214285714285
+    ]
+   },
+   "visible_loss_specific_before": {
+    "k": 8,
+    "n": 59,
+    "share": 0.13559322033898305,
+    "ci": [
+     0.05084745762711865,
+     0.23728813559322035
+    ]
+   },
+   "visible_loss_specific_after": {
+    "k": 8,
+    "n": 59,
+    "share": 0.13559322033898305,
+    "ci": [
+     0.05084745762711865,
+     0.23728813559322035
+    ]
+   }
+  }
+ }
+}

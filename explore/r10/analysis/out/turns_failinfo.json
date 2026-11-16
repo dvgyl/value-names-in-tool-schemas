@@ -1,0 +1,1060 @@
+{
+ "post_hoc": true,
+ "arms": {
+  "t0": {
+   "table": {
+    "F": {
+     "all": {
+      "n": 130,
+      "initial_failure": 20,
+      "never_fit": 7
+     },
+     "first_choice": {
+      "n": 47,
+      "initial_failure": 7,
+      "never_fit": 6
+     },
+     "first_choice_name": {
+      "n": 26,
+      "initial_failure": 0,
+      "never_fit": 0
+     },
+     "first_choice_requirements": {
+      "n": 21,
+      "initial_failure": 7,
+      "never_fit": 6
+     },
+     "no_first_choice": {
+      "n": 83,
+      "initial_failure": 13,
+      "never_fit": 1
+     }
+    },
+    "R": {
+     "all": {
+      "n": 130,
+      "initial_failure": 0,
+      "never_fit": 10
+     },
+     "first_choice": {
+      "n": 46,
+      "initial_failure": 0,
+      "never_fit": 8
+     },
+     "first_choice_name": {
+      "n": 16,
+      "initial_failure": 0,
+      "never_fit": 0
+     },
+     "first_choice_requirements": {
+      "n": 30,
+      "initial_failure": 0,
+      "never_fit": 8
+     },
+     "no_first_choice": {
+      "n": 84,
+      "initial_failure": 0,
+      "never_fit": 2
+     }
+    }
+   },
+   "F_no_first_choice_failure_vs_none": {
+    "failure": {
+     "n": 13,
+     "initial_failure": 13,
+     "never_fit": 1
+    },
+    "none": {
+     "n": 70,
+     "initial_failure": 0,
+     "never_fit": 0
+    },
+    "diff": {
+     "diff": 0.07692307692307693,
+     "ci": [
+      0.0,
+      0.23076923076923078
+     ],
+     "fisher_p": 0.1566265060240964,
+     "n": [
+      13,
+      70
+     ]
+    }
+   },
+   "F_first_choice_failure_vs_none": {
+    "failure": {
+     "n": 7,
+     "initial_failure": 7,
+     "never_fit": 2
+    },
+    "none": {
+     "n": 40,
+     "initial_failure": 0,
+     "never_fit": 4
+    },
+    "diff": {
+     "diff": 0.1857142857142857,
+     "ci": [
+      -0.125,
+      0.5642857142857143
+     ],
+     "fisher_p": 0.21356194737861153,
+     "n": [
+      7,
+      40
+     ]
+    }
+   },
+   "never_fit_first_choice": [
+    {
+     "dialogue": "PMUL0388.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "pricerange": {
+       "first": "moderate",
+       "final": "cheap",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "stars": {
+       "first": "5",
+       "final": "4",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1075.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "north",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "expensive",
+       "final": "moderate",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL3693.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "centre",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1087.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "pricerange": {
+       "first": "expensive",
+       "final": "moderate",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0035.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      },
+      "pricerange": {
+       "first": "cheap",
+       "final": "moderate",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL0085.json",
+     "group": "F",
+     "initial_failure": true,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "centre",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "moderate",
+       "final": "cheap",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "MUL0709.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "west",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "parking": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "expensive",
+       "final": "cheap",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0123.json",
+     "group": "F",
+     "initial_failure": true,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "south",
+       "final": "north",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL4111.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "east",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "parking": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL2698.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "south",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "expensive",
+       "final": "cheap",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1142.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "south",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "parking": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL4661.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "west",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL0606.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "pricerange": {
+       "first": "expensive",
+       "final": "moderate",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "stars": {
+       "first": "5",
+       "final": "4",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0371.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "south",
+       "final": "north",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    }
+   ],
+   "first_choice_venue_counts": {
+    "F": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "R": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  },
+  "t1": {
+   "table": {
+    "F": {
+     "all": {
+      "n": 130,
+      "initial_failure": 1,
+      "never_fit": 9
+     },
+     "first_choice": {
+      "n": 47,
+      "initial_failure": 0,
+      "never_fit": 8
+     },
+     "first_choice_name": {
+      "n": 26,
+      "initial_failure": 0,
+      "never_fit": 0
+     },
+     "first_choice_requirements": {
+      "n": 21,
+      "initial_failure": 0,
+      "never_fit": 8
+     },
+     "no_first_choice": {
+      "n": 83,
+      "initial_failure": 1,
+      "never_fit": 1
+     }
+    },
+    "R": {
+     "all": {
+      "n": 130,
+      "initial_failure": 0,
+      "never_fit": 13
+     },
+     "first_choice": {
+      "n": 46,
+      "initial_failure": 0,
+      "never_fit": 9
+     },
+     "first_choice_name": {
+      "n": 16,
+      "initial_failure": 0,
+      "never_fit": 1
+     },
+     "first_choice_requirements": {
+      "n": 30,
+      "initial_failure": 0,
+      "never_fit": 8
+     },
+     "no_first_choice": {
+      "n": 84,
+      "initial_failure": 0,
+      "never_fit": 4
+     }
+    }
+   },
+   "F_no_first_choice_failure_vs_none": {
+    "failure": {
+     "n": 1,
+     "initial_failure": 1,
+     "never_fit": 0
+    },
+    "none": {
+     "n": 82,
+     "initial_failure": 0,
+     "never_fit": 1
+    },
+    "diff": {
+     "diff": -0.012195121951219513,
+     "ci": [
+      -0.036585365853658534,
+      0.0
+     ],
+     "fisher_p": 1.0,
+     "n": [
+      1,
+      82
+     ]
+    }
+   },
+   "F_first_choice_failure_vs_none": {
+    "failure": {
+     "n": 0,
+     "initial_failure": 0,
+     "never_fit": 0
+    },
+    "none": {
+     "n": 47,
+     "initial_failure": 0,
+     "never_fit": 8
+    },
+    "diff": null
+   },
+   "never_fit_first_choice": [
+    {
+     "dialogue": "PMUL0388.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "pricerange": {
+       "first": "moderate",
+       "final": "cheap",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "stars": {
+       "first": "5",
+       "final": "4",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1075.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "north",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      },
+      "pricerange": {
+       "first": "expensive",
+       "final": "moderate",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0370.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL3693.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "centre",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1087.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "pricerange": {
+       "first": "expensive",
+       "final": "moderate",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0035.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "cheap",
+       "final": "moderate",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL0085.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "centre",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "moderate",
+       "final": "cheap",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "MUL0709.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "west",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "parking": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      },
+      "pricerange": {
+       "first": "expensive",
+       "final": "cheap",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0123.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "south",
+       "final": "north",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL4111.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "east",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "parking": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL2698.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "south",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "pricerange": {
+       "first": "expensive",
+       "final": "cheap",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1142.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "south",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "parking": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL4661.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "east",
+       "final": "west",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "internet": {
+       "first": "no",
+       "final": "yes",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "MUL1222.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "west",
+       "final": "north",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "MUL0606.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "pricerange": {
+       "first": "expensive",
+       "final": "moderate",
+       "named_by_traveller": false,
+       "searched": false
+      },
+      "stars": {
+       "first": "5",
+       "final": "4",
+       "named_by_traveller": true,
+       "searched": true
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL0371.json",
+     "group": "F",
+     "initial_failure": false,
+     "kind": "requirements",
+     "first_choice_venues": 0,
+     "first_choice_hotels": 0,
+     "slots": {
+      "area": {
+       "first": "south",
+       "final": "north",
+       "named_by_traveller": false,
+       "searched": false
+      }
+     }
+    },
+    {
+     "dialogue": "PMUL2650.json",
+     "group": "R",
+     "initial_failure": false,
+     "kind": "name",
+     "first_choice_venues": 1,
+     "first_choice_hotels": 0,
+     "slots": {
+      "name": {
+       "first": "bridge guest house",
+       "final": "the lensfield hotel",
+       "named_by_traveller": true,
+       "searched": false
+      }
+     }
+    }
+   ],
+   "first_choice_venue_counts": {
+    "F": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "R": [
+     1,
+     0,
+     0,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     0,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "table1_first_answers": 4473,
+ "table1_missing_reasons": {
+  "stop max_tokens": 39
+ },
+ "table1_missing_by_form": {
+  "t_legacy": {
+   "stop max_tokens": 13
+  },
+  "t_renamed": {
+   "stop max_tokens": 10
+  },
+  "f4": {
+   "stop max_tokens": 16
+  }
+ },
+ "tests_first_answers": 4060,
+ "tests_missing": 55,
+ "schema_failures_all_parts": 0,
+ "hotel_sample_77_types": {
+  "first choice None, final hotel": 50,
+  "first choice hotel, final guesthouse": 11,
+  "first choice hotel, final hotel": 8,
+  "first choice guesthouse, final hotel": 8
+ },
+ "hotel_sample_77_final_hotel": 66,
+ "test2_mean": -0.29128,
+ "test2_bound_on_final_hotel": {
+  "dialogues": 66,
+  "largest_possible_mean": -0.17315999999999995,
+  "formula": "(77 x -0.29128 + 11) / 66"
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "post_hoc": true,
+ "no_model_call": true,
+ "folder": "erp_sonnet",
+ "arms": {
+  "t0": {
+   "counts": {
+    "answers": 554,
+    "answers with any": 59,
+    "answers with dont_care (any spelling)": 0,
+    "answers with quoted dont_care": 0,
+    "answers with an empty list": 0,
+    "no single call": 1
+   },
+   "fields_with_any": {
+    "internet": 12,
+    "parking": 15,
+    "area": 21,
+    "pricerange": 17,
+    "type": 3,
+    "stars": 3
+   },
+   "fields_with_dont_care": {}
+  },
+  "tedit": {
+   "counts": {
+    "answers": 554,
+    "answers with any": 0,
+    "answers with dont_care (any spelling)": 64,
+    "answers with quoted dont_care": 22,
+    "answers with an empty list": 0,
+    "answers changed by the mapping back": 42,
+    "changes in the type field": 1,
+    "hotel value changed by the mapping back": 0
+   },
+   "fields_with_any": {},
+   "fields_with_dont_care": {
+    "pricerange": 18,
+    "stars": 3,
+    "parking": 16,
+    "internet": 15,
+    "area": 20,
+    "type": 3
+   }
+  }
+ },
+ "strict_variant": {
+  "answers_missing": 22,
+  "open": {
+   "pairs": 432,
+   "change": 3.935185185185185,
+   "interval": [
+    1.3888888888888888,
+    6.712962962962963
+   ],
+   "decision": "unresolved"
+  },
+  "specific": {
+   "pairs": 56,
+   "change": 1.7857142857142858,
+   "interval": [
+    0.0,
+    7.142857142857143
+   ],
+   "decision": "unresolved"
+  },
+  "release": "hold"
+ }
+}

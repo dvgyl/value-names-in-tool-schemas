@@ -1,0 +1,7363 @@
+{
+ "amendment": "R10-25",
+ "exploratory": true,
+ "M": [
+  "sonnet",
+  "haiku",
+  "sol",
+  "luna",
+  "deepseek",
+  "qwen",
+  "gemma"
+ ],
+ "models": {
+  "sonnet": {
+   "missing": {},
+   "symbolic": {
+    "answers": 290,
+    "dialogues": {
+     "NT": 213,
+     "H": 66,
+     "G": 11
+    },
+    "original": {
+     "failures_NT": 20.0,
+     "losses_H": 5.0,
+     "failures_G": 0.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.0482758620689656,
+     "relax_hotel_only": 1.0482758620689656,
+     "soft": 1.2724137931034483,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 1,
+     "stated_dialogues_changed": 1,
+     "answers_changed_show_guesthouse": 1
+    },
+    "relax_any": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "soft": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "always": {
+     "net_avoided_NT": 9.0,
+     "net_added_H": 4.0,
+     "failures_caused_NT": 1.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 4.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 1.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 1.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 30.0,
+       "removed": 27.0,
+       "lost_stated": 4.0,
+       "share_removed": [
+        0.9,
+        0.782608695652174,
+        1.0
+       ],
+       "ratio": [
+        0.2621452621452621,
+        0.05362062180243998,
+        0.5587833219412167
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 27.0,
+       "lost": 26.0,
+       "share_removed": [
+        0.9,
+        0.782608695652174,
+        1.0
+       ],
+       "ratio": [
+        1.7039442039442039,
+        1.0616883116883116,
+        2.7062643239113826
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 30.0,
+        "removed": 27.0,
+        "lost_stated": 4.0,
+        "share_removed": [
+         0.9,
+         0.782608695652174,
+         1.0
+        ],
+        "ratio": [
+         0.14814814814814814,
+         0.030303030303030304,
+         0.3157894736842105
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 27.0,
+        "lost": 26.0,
+        "share_removed": [
+         0.9,
+         0.782608695652174,
+         1.0
+        ],
+        "ratio": [
+         0.9629629629629629,
+         0.6,
+         1.5294117647058822
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 141.94258373205741,
+       "lost": 250.40540540540542,
+       "share_removed": [
+        0.963903457133683,
+        0.8653356625904668,
+        1.0
+       ],
+       "ratio": [
+        1.7641316567696936,
+        1.0156605230567493,
+        3.638372953508965
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 30.0,
+       "removed": 19.0,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.6333333333333333,
+        0.4482758620689655,
+        0.8
+       ],
+       "ratio": [
+        0.1862611073137389,
+        0.0,
+        0.5055658627087198
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 19.0,
+       "lost": 10.0,
+       "share_removed": [
+        0.6333333333333333,
+        0.4482758620689655,
+        0.8
+       ],
+       "ratio": [
+        0.9313055365686946,
+        0.40215466351829987,
+        1.7694805194805197
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 30.0,
+        "removed": 19.0,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.6333333333333333,
+         0.4482758620689655,
+         0.8
+        ],
+        "ratio": [
+         0.10526315789473684,
+         0.0,
+         0.2857142857142857
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 19.0,
+        "lost": 10.0,
+        "share_removed": [
+         0.6333333333333333,
+         0.4482758620689655,
+         0.8
+        ],
+        "ratio": [
+         0.5263157894736842,
+         0.22727272727272727,
+         1.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 110.04953560371516,
+       "lost": 117.83783783783784,
+       "share_removed": [
+        0.7473241999357807,
+        0.5,
+        0.910198375715617
+       ],
+       "ratio": [
+        1.070770877781512,
+        0.4818237283850719,
+        2.8174989386361964
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 30.0,
+       "removed": 29.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9666666666666667,
+        0.8888888888888888,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 29.0,
+       "lost": 28.0,
+       "share_removed": [
+        0.9666666666666667,
+        0.8888888888888888,
+        1.0
+       ],
+       "ratio": [
+        1.7084639498432606,
+        1.0710013670539988,
+        2.696351267779839
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 30.0,
+        "removed": 29.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9666666666666667,
+         0.8888888888888888,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 29.0,
+        "lost": 28.0,
+        "share_removed": [
+         0.9666666666666667,
+         0.8888888888888888,
+         1.0
+        ],
+        "ratio": [
+         0.9655172413793104,
+         0.6052631578947368,
+         1.5238095238095237
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      }
+     }
+    },
+    "display": {
+     "answers": 290,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 20.0,
+      "losses_H": 5.0,
+      "failures_G": 0.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0482758620689656,
+      "relax_hotel_only": 1.0482758620689656,
+      "soft": 1.2724137931034483,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 1,
+      "stated_dialogues_changed": 1,
+      "answers_changed_show_guesthouse": 1
+     },
+     "planned": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.35389610389610393,
+       0.0,
+       1.1796536796536796
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.19660894660894662,
+       0.0,
+       0.8847402597402597
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "soft": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "always": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 4.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 4.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 3,
+      "no": 19,
+      "unclear": 8
+     },
+     "H": {
+      "yes": 20,
+      "no": 10,
+      "unclear": 16
+     },
+     "G": {
+      "yes": 0,
+      "no": 0,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 30.0,
+       "removed": 27.0,
+       "lost_stated": 4.0,
+       "share_removed": [
+        0.9,
+        0.782608695652174,
+        1.0
+       ],
+       "ratio": [
+        0.2621452621452621,
+        0.05362062180243998,
+        0.5587833219412167
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 27.0,
+       "lost": 25.666666666666668,
+       "share_removed": [
+        0.9,
+        0.782608695652174,
+        1.0
+       ],
+       "ratio": [
+        1.682098765432099,
+        1.0506290584415585,
+        2.6738816738816737
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 30.0,
+        "removed": 27.0,
+        "lost_stated": 4.0,
+        "share_removed": [
+         0.9,
+         0.782608695652174,
+         1.0
+        ],
+        "ratio": [
+         0.14814814814814814,
+         0.030303030303030304,
+         0.3157894736842105
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 27.0,
+        "lost": 25.666666666666668,
+        "share_removed": [
+         0.9,
+         0.782608695652174,
+         1.0
+        ],
+        "ratio": [
+         0.9506172839506173,
+         0.59375,
+         1.5111111111111108
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 169.63183427297758,
+       "lost": 221.40625000000003,
+       "share_removed": [
+        0.9782051824879329,
+        0.911764705882353,
+        1.0
+       ],
+       "ratio": [
+        1.3052163878845124,
+        0.6958433820400056,
+        3.0842413000941953
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 30.0,
+       "removed": 18.333333333333332,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.611111111111111,
+        0.43478260869565216,
+        0.7777777777777778
+       ],
+       "ratio": [
+        0.19303423848878398,
+        0.0,
+        0.5308441558441559
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 18.333333333333332,
+       "lost": 10.0,
+       "share_removed": [
+        0.611111111111111,
+        0.43478260869565216,
+        0.7777777777777778
+       ],
+       "ratio": [
+        0.9651711924439199,
+        0.41908749145591256,
+        1.9055944055944056
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 30.0,
+        "removed": 18.333333333333332,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.611111111111111,
+         0.43478260869565216,
+         0.7777777777777778
+        ],
+        "ratio": [
+         0.1090909090909091,
+         0.0,
+         0.3
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 18.333333333333332,
+        "lost": 10.0,
+        "share_removed": [
+         0.611111111111111,
+         0.43478260869565216,
+         0.7777777777777778
+        ],
+        "ratio": [
+         0.5454545454545455,
+         0.2368421052631579,
+         1.0769230769230769
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 131.83715746689393,
+       "lost": 113.54166666666669,
+       "share_removed": [
+        0.7602570073672622,
+        0.4864864864864865,
+        0.9162565583438402
+       ],
+       "ratio": [
+        0.8612265983903553,
+        0.3497027411165906,
+        2.741674995865361
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 30.0,
+       "removed": 29.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9666666666666667,
+        0.8888888888888888,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 29.0,
+       "lost": 28.333333333333332,
+       "share_removed": [
+        0.9666666666666667,
+        0.8888888888888888,
+        1.0
+       ],
+       "ratio": [
+        1.7288028063890135,
+        1.0953927025355596,
+        2.7525252525252526
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 30.0,
+        "removed": 29.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9666666666666667,
+         0.8888888888888888,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 29.0,
+        "lost": 28.333333333333332,
+        "share_removed": [
+         0.9666666666666667,
+         0.8888888888888888,
+         1.0
+        ],
+        "ratio": [
+         0.9770114942528735,
+         0.6190476190476191,
+         1.5555555555555556
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      }
+     }
+    },
+    "display": {
+     "answers": 402,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 20.0,
+      "losses_H": 5.0,
+      "failures_G": 0.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0497512437810945,
+      "relax_hotel_only": 1.0497512437810945,
+      "soft": 1.2761194029850746,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 1,
+      "stated_dialogues_changed": 1,
+      "answers_changed_show_guesthouse": 1
+     },
+     "planned": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.35389610389610393,
+       0.0,
+       1.1796536796536796
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.19660894660894662,
+       0.0,
+       0.8847402597402597
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "soft": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "always": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 4.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 4.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 3,
+      "no": 27,
+      "unclear": 12
+     },
+     "H": {
+      "yes": 32,
+      "no": 14,
+      "unclear": 17
+     },
+     "G": {
+      "yes": 0,
+      "no": 0,
+      "unclear": 0
+     }
+    }
+   }
+  },
+  "haiku": {
+   "missing": {},
+   "symbolic": {
+    "answers": 290,
+    "dialogues": {
+     "NT": 213,
+     "H": 66,
+     "G": 11
+    },
+    "original": {
+     "failures_NT": 23.0,
+     "losses_H": 2.0,
+     "failures_G": 1.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.013793103448276,
+     "relax_hotel_only": 1.013793103448276,
+     "soft": 1.2620689655172415,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 0,
+     "stated_dialogues_changed": 0,
+     "answers_changed_show_guesthouse": 0
+    },
+    "relax_any": {
+     "net_avoided_NT": 2.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 2.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 2.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 2.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "soft": {
+     "net_avoided_NT": 2.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 2.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "always": {
+     "net_avoided_NT": 2.0,
+     "net_added_H": 3.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 2.0,
+     "losses_caused_H": 3.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 2.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 2.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 11.0,
+       "removed": 3.0,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.2727272727272727,
+        0.0,
+        0.5714285714285714
+       ],
+       "ratio": [
+        1.1796536796536796,
+        0.0,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 3.0,
+       "lost": 7.0,
+       "share_removed": [
+        0.2727272727272727,
+        0.0,
+        0.5714285714285714
+       ],
+       "ratio": [
+        4.128787878787879,
+        1.1059253246753247,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 11.0,
+        "removed": 3.0,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.2727272727272727,
+         0.0,
+         0.5714285714285714
+        ],
+        "ratio": [
+         0.6666666666666666,
+         0.0,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 3.0,
+        "lost": 7.0,
+        "share_removed": [
+         0.2727272727272727,
+         0.0,
+         0.5714285714285714
+        ],
+        "ratio": [
+         2.3333333333333335,
+         0.625,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 41.73599774838165,
+       "lost": 51.55405405405404,
+       "share_removed": [
+        0.662496872654491,
+        0.1428571428571427,
+        0.9363198640483384
+       ],
+       "ratio": [
+        1.2352419214909771,
+        0.3033264346555488,
+        12.469886888900978
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 11.0,
+       "removed": 1.0,
+       "lost_stated": 1.0,
+       "share_removed": [
+        0.09090909090909091,
+        0.0,
+        0.3076923076923077
+       ],
+       "ratio": [
+        1.7694805194805194,
+        0.0,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 1.0,
+       "lost": 4.0,
+       "share_removed": [
+        0.09090909090909091,
+        0.0,
+        0.3076923076923077
+       ],
+       "ratio": [
+        7.077922077922078,
+        0.8847402597402597,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 11.0,
+        "removed": 1.0,
+        "lost_stated": 1.0,
+        "share_removed": [
+         0.09090909090909091,
+         0.0,
+         0.3076923076923077
+        ],
+        "ratio": [
+         1.0,
+         0.0,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 1.0,
+        "lost": 4.0,
+        "share_removed": [
+         0.09090909090909091,
+         0.0,
+         0.3076923076923077
+        ],
+        "ratio": [
+         4.0,
+         0.5,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 36.42048972699127,
+       "lost": 22.094594594594582,
+       "share_removed": [
+        0.5781210908181136,
+        0.0,
+        0.8870278871116323
+       ],
+       "ratio": [
+        0.6066528693110969,
+        0.0,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 11.0,
+       "removed": 9.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.8181818181818182,
+        0.5555555555555556,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 9.0,
+       "lost": 18.0,
+       "share_removed": [
+        0.8181818181818182,
+        0.5555555555555556,
+        1.0
+       ],
+       "ratio": [
+        3.538961038961039,
+        1.7694805194805192,
+        8.847402597402597
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 11.0,
+        "removed": 9.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.8181818181818182,
+         0.5555555555555556,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 9.0,
+        "lost": 18.0,
+        "share_removed": [
+         0.8181818181818182,
+         0.5555555555555556,
+         1.0
+        ],
+        "ratio": [
+         2.0,
+         1.0,
+         5.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      }
+     }
+    },
+    "display": {
+     "answers": 290,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 23.0,
+      "losses_H": 2.0,
+      "failures_G": 1.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.013793103448276,
+      "relax_hotel_only": 1.013793103448276,
+      "soft": 1.2620689655172415,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       0.8847402597402597,
+       0.0,
+       "inf"
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 1.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 1.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       1.7694805194805194,
+       0.0,
+       "inf"
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "soft": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "always": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 3.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 3.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 8,
+      "no": 1,
+      "unclear": 2
+     },
+     "H": {
+      "yes": 29,
+      "no": 4,
+      "unclear": 3
+     },
+     "G": {
+      "yes": 0,
+      "no": 1,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 11.0,
+       "removed": 3.0,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.2727272727272727,
+        0.0,
+        0.5714285714285714
+       ],
+       "ratio": [
+        1.1796536796536796,
+        0.0,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 3.0,
+       "lost": 7.0,
+       "share_removed": [
+        0.2727272727272727,
+        0.0,
+        0.5714285714285714
+       ],
+       "ratio": [
+        4.128787878787879,
+        1.1059253246753247,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 11.0,
+        "removed": 3.0,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.2727272727272727,
+         0.0,
+         0.5714285714285714
+        ],
+        "ratio": [
+         0.6666666666666666,
+         0.0,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 3.0,
+        "lost": 7.0,
+        "share_removed": [
+         0.2727272727272727,
+         0.0,
+         0.5714285714285714
+        ],
+        "ratio": [
+         2.3333333333333335,
+         0.625,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 35.79389012717976,
+       "lost": 39.739583333333314,
+       "share_removed": [
+        0.5420882908929167,
+        0.08333333333333343,
+        0.9247881355932205
+       ],
+       "ratio": [
+        1.1102337072649566,
+        0.2804153075564732,
+        13.444288178047888
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 11.0,
+       "removed": 1.0,
+       "lost_stated": 1.0,
+       "share_removed": [
+        0.09090909090909091,
+        0.0,
+        0.3076923076923077
+       ],
+       "ratio": [
+        1.7694805194805194,
+        0.0,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 1.0,
+       "lost": 4.0,
+       "share_removed": [
+        0.09090909090909091,
+        0.0,
+        0.3076923076923077
+       ],
+       "ratio": [
+        7.077922077922078,
+        0.8847402597402597,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 11.0,
+        "removed": 1.0,
+        "lost_stated": 1.0,
+        "share_removed": [
+         0.09090909090909091,
+         0.0,
+         0.3076923076923077
+        ],
+        "ratio": [
+         1.0,
+         0.0,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 1.0,
+        "lost": 4.0,
+        "share_removed": [
+         0.09090909090909091,
+         0.0,
+         0.3076923076923077
+        ],
+        "ratio": [
+         4.0,
+         0.5,
+         "inf"
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 32.01442244657139,
+       "lost": 17.03125,
+       "share_removed": [
+        0.4848493272545312,
+        0.0,
+        0.8750000000000001
+       ],
+       "ratio": [
+        0.5319867952771385,
+        0.0,
+        "inf"
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 11.0,
+       "removed": 9.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.8181818181818182,
+        0.5555555555555556,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 9.0,
+       "lost": 18.0,
+       "share_removed": [
+        0.8181818181818182,
+        0.5555555555555556,
+        1.0
+       ],
+       "ratio": [
+        3.538961038961039,
+        1.7694805194805192,
+        8.847402597402597
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 11.0,
+        "removed": 9.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.8181818181818182,
+         0.5555555555555556,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 9.0,
+        "lost": 18.0,
+        "share_removed": [
+         0.8181818181818182,
+         0.5555555555555556,
+         1.0
+        ],
+        "ratio": [
+         2.0,
+         1.0,
+         5.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      }
+     }
+    },
+    "display": {
+     "answers": 402,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 23.0,
+      "losses_H": 2.0,
+      "failures_G": 1.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0149253731343284,
+      "relax_hotel_only": 1.0149253731343284,
+      "soft": 1.2587064676616915,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       0.8847402597402597,
+       0.0,
+       "inf"
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 1.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 1.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       1.7694805194805194,
+       0.0,
+       "inf"
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "soft": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "always": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 3.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 3.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 2.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 2.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 12,
+      "no": 3,
+      "unclear": 2
+     },
+     "H": {
+      "yes": 45,
+      "no": 4,
+      "unclear": 3
+     },
+     "G": {
+      "yes": 0,
+      "no": 1,
+      "unclear": 0
+     }
+    }
+   }
+  },
+  "sol": {
+   "missing": {},
+   "symbolic": {
+    "answers": 290,
+    "dialogues": {
+     "NT": 213,
+     "H": 66,
+     "G": 11
+    },
+    "original": {
+     "failures_NT": 44.0,
+     "losses_H": 4.0,
+     "failures_G": 5.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.1482758620689655,
+     "relax_hotel_only": 1.1448275862068966,
+     "soft": 1.4344827586206896,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 0,
+     "stated_dialogues_changed": 0,
+     "answers_changed_show_guesthouse": 0
+    },
+    "relax_any": {
+     "net_avoided_NT": 30.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 30.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 5.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 30.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 30.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 5.0
+    },
+    "soft": {
+     "net_avoided_NT": 30.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 30.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 5.0
+    },
+    "always": {
+     "net_avoided_NT": 29.0,
+     "net_added_H": 5.0,
+     "failures_caused_NT": 1.0,
+     "failures_ended_NT": 30.0,
+     "losses_caused_H": 5.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 5.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 30.0,
+     "net_added_H": 4.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 30.0,
+     "losses_caused_H": 4.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 1.0,
+     "net_avoided_G": 4.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 67.0,
+       "removed": 48.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.7164179104477612,
+        0.6081081081081081,
+        0.8214285714285714
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 48.0,
+       "lost": 20.0,
+       "share_removed": [
+        0.7164179104477612,
+        0.6081081081081081,
+        0.8214285714285714
+       ],
+       "ratio": [
+        0.7372835497835498,
+        0.45041322314049587,
+        1.1059253246753247
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 67.0,
+        "removed": 48.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.7164179104477612,
+         0.6081081081081081,
+         0.8214285714285714
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 48.0,
+        "lost": 20.0,
+        "share_removed": [
+         0.7164179104477612,
+         0.6081081081081081,
+         0.8214285714285714
+        ],
+        "ratio": [
+         0.4166666666666667,
+         0.2545454545454545,
+         0.625
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 5.0,
+       "removed": 5.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 459.8840416549395,
+       "lost": 176.75675675675677,
+       "share_removed": [
+        0.9057763497939513,
+        0.8385902404328721,
+        0.9613728989892242
+       ],
+       "ratio": [
+        0.3843507074537303,
+        0.24227537217335235,
+        0.5881430130443988
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 67.0,
+       "removed": 32.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.47761194029850745,
+        0.3582089552238806,
+        0.5942028985507246
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 32.0,
+       "lost": 3.0,
+       "share_removed": [
+        0.47761194029850745,
+        0.3582089552238806,
+        0.5942028985507246
+       ],
+       "ratio": [
+        0.1658887987012987,
+        0.0,
+        0.3995601173020528
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 67.0,
+        "removed": 32.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.47761194029850745,
+         0.3582089552238806,
+         0.5942028985507246
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 32.0,
+        "lost": 3.0,
+        "share_removed": [
+         0.47761194029850745,
+         0.3582089552238806,
+         0.5942028985507246
+        ],
+        "ratio": [
+         0.09375,
+         0.0,
+         0.22580645161290325
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 5.0,
+       "removed": 5.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 343.73093160709254,
+       "lost": 66.28378378378378,
+       "share_removed": [
+        0.6770040278456846,
+        0.5306357719854794,
+        0.7976985867884496
+       ],
+       "ratio": [
+        0.1928362497779239,
+        0.08022221942347277,
+        0.3605801952344723
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 67.0,
+       "removed": 65.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9701492537313433,
+        0.9230769230769231,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 65.0,
+       "lost": 41.0,
+       "share_removed": [
+        0.9701492537313433,
+        0.9230769230769231,
+        1.0
+       ],
+       "ratio": [
+        1.116133866133866,
+        0.8439060939060938,
+        1.4572192513368984
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 67.0,
+        "removed": 65.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9701492537313433,
+         0.9230769230769231,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 65.0,
+        "lost": 41.0,
+        "share_removed": [
+         0.9701492537313433,
+         0.9230769230769231,
+         1.0
+        ],
+        "ratio": [
+         0.6307692307692307,
+         0.47692307692307695,
+         0.8235294117647058
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 5.0,
+       "removed": 4.0,
+       "share_removed": 0.8
+      }
+     }
+    },
+    "display": {
+     "answers": 290,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 44.0,
+      "losses_H": 4.0,
+      "failures_G": 5.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.1482758620689655,
+      "relax_hotel_only": 1.1448275862068966,
+      "soft": 1.4344827586206896,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 29.0,
+      "net_added_H": 3.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 29.0,
+      "losses_caused_H": 3.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0,
+      "display_loss_ratio": [
+       0.1830497089117779,
+       0.0,
+       0.44237012987012986
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 26.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 26.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0,
+      "display_loss_ratio": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 30.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 30.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 30.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 30.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "soft": {
+      "net_avoided_NT": 30.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 30.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "always": {
+      "net_avoided_NT": 29.0,
+      "net_added_H": 5.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 30.0,
+      "losses_caused_H": 5.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 30.0,
+      "net_added_H": 4.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 30.0,
+      "losses_caused_H": 4.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 1.0,
+      "net_avoided_G": 4.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4694835680751174,
+       0.0,
+       1.408450704225352
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4694835680751174,
+       0.0,
+       1.408450704225352
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 19,
+      "no": 32,
+      "unclear": 16
+     },
+     "H": {
+      "yes": 39,
+      "no": 3,
+      "unclear": 17
+     },
+     "G": {
+      "yes": 0,
+      "no": 5,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 65.66666666666667,
+       "removed": 48.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.7309644670050761,
+        0.6242424242424243,
+        0.8309178743961353
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 48.0,
+       "lost": 20.0,
+       "share_removed": [
+        0.7309644670050761,
+        0.6242424242424243,
+        0.8309178743961353
+       ],
+       "ratio": [
+        0.7372835497835498,
+        0.44546362728180916,
+        1.1044408611522707
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 65.66666666666667,
+        "removed": 48.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.7309644670050761,
+         0.6242424242424243,
+         0.8309178743961353
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 48.0,
+        "lost": 20.0,
+        "share_removed": [
+         0.7309644670050761,
+         0.6242424242424243,
+         0.8309178743961353
+        ],
+        "ratio": [
+         0.4166666666666667,
+         0.2517482517482518,
+         0.6241610738255033
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 5.0,
+       "removed": 5.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 474.43608233905866,
+       "lost": 170.3125,
+       "share_removed": [
+        0.9061574221776584,
+        0.8314977136216017,
+        0.9642016806722689
+       ],
+       "ratio": [
+        0.35897880945379934,
+        0.21692846266540516,
+        0.5720376334147361
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 65.66666666666667,
+       "removed": 31.333333333333332,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.4771573604060913,
+        0.3575129533678757,
+        0.5966850828729282
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 31.333333333333332,
+       "lost": 3.0,
+       "share_removed": [
+        0.4771573604060913,
+        0.3575129533678757,
+        0.5966850828729282
+       ],
+       "ratio": [
+        0.169418347609837,
+        0.0,
+        0.40834165834165836
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 65.66666666666667,
+        "removed": 31.333333333333332,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.4771573604060913,
+         0.3575129533678757,
+         0.5966850828729282
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 31.333333333333332,
+        "lost": 3.0,
+        "share_removed": [
+         0.4771573604060913,
+         0.3575129533678757,
+         0.5966850828729282
+        ],
+        "ratio": [
+         0.09574468085106384,
+         0.0,
+         0.23076923076923078
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 5.0,
+       "removed": 5.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 363.0528385997116,
+       "lost": 62.447916666666686,
+       "share_removed": [
+        0.6934190644140055,
+        0.5293448056513442,
+        0.8109510162055102
+       ],
+       "ratio": [
+        0.17200779067732178,
+        0.06528215384835231,
+        0.3611849058759678
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 65.66666666666667,
+       "removed": 63.666666666666664,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9695431472081217,
+        0.9210526315789473,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 63.666666666666664,
+       "lost": 41.0,
+       "share_removed": [
+        0.9695431472081217,
+        0.9210526315789473,
+        1.0
+       ],
+       "ratio": [
+        1.1395083973618005,
+        0.8583862945565074,
+        1.4900888585099112
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 65.66666666666667,
+        "removed": 63.666666666666664,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9695431472081217,
+         0.9210526315789473,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 63.666666666666664,
+        "lost": 41.0,
+        "share_removed": [
+         0.9695431472081217,
+         0.9210526315789473,
+         1.0
+        ],
+        "ratio": [
+         0.6439790575916231,
+         0.48510638297872344,
+         0.8421052631578948
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 5.0,
+       "removed": 4.0,
+       "share_removed": 0.8
+      }
+     }
+    },
+    "display": {
+     "answers": 402,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 43.333333333333336,
+      "losses_H": 4.0,
+      "failures_G": 5.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.1467661691542288,
+      "relax_hotel_only": 1.144278606965174,
+      "soft": 1.4427860696517414,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 28.333333333333332,
+      "net_added_H": 3.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 28.333333333333332,
+      "losses_caused_H": 3.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0,
+      "display_loss_ratio": [
+       0.18735676088617265,
+       0.0,
+       0.45664013405948894
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 25.333333333333332,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 25.333333333333332,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0,
+      "display_loss_ratio": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 29.333333333333332,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 29.333333333333332,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 29.333333333333332,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 29.333333333333332,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "soft": {
+      "net_avoided_NT": 29.333333333333332,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 29.333333333333332,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "always": {
+      "net_avoided_NT": 28.333333333333332,
+      "net_added_H": 5.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 29.333333333333332,
+      "losses_caused_H": 5.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 5.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 29.333333333333332,
+      "net_added_H": 4.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 29.333333333333332,
+      "losses_caused_H": 4.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 1.0,
+      "net_avoided_G": 4.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4694835680751174,
+       0.0,
+       1.408450704225352
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4694835680751174,
+       0.0,
+       1.408450704225352
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 23,
+      "no": 44,
+      "unclear": 26
+     },
+     "H": {
+      "yes": 55,
+      "no": 7,
+      "unclear": 19
+     },
+     "G": {
+      "yes": 0,
+      "no": 7,
+      "unclear": 0
+     }
+    }
+   }
+  },
+  "luna": {
+   "missing": {},
+   "symbolic": {
+    "answers": 290,
+    "dialogues": {
+     "NT": 213,
+     "H": 66,
+     "G": 11
+    },
+    "original": {
+     "failures_NT": 31.0,
+     "losses_H": 11.0,
+     "failures_G": 0.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.0827586206896551,
+     "relax_hotel_only": 1.0655172413793104,
+     "soft": 1.3344827586206895,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 2,
+     "stated_dialogues_changed": 1,
+     "answers_changed_show_guesthouse": 2
+    },
+    "relax_any": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "soft": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "always": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 3.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 3.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 10.0,
+     "net_added_H": 1.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 10.0,
+     "losses_caused_H": 1.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 33.0,
+       "removed": 32.0,
+       "lost_stated": 7.0,
+       "share_removed": [
+        0.9696969696969697,
+        0.9024390243902439,
+        1.0
+       ],
+       "ratio": [
+        0.38707386363636365,
+        0.16086186540731995,
+        0.6924054206662901
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 32.0,
+       "lost": 35.0,
+       "share_removed": [
+        0.9696969696969697,
+        0.9024390243902439,
+        1.0
+       ],
+       "ratio": [
+        1.935369318181818,
+        1.2912425412425412,
+        2.9234895539243366
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 33.0,
+        "removed": 32.0,
+        "lost_stated": 7.0,
+        "share_removed": [
+         0.9696969696969697,
+         0.9024390243902439,
+         1.0
+        ],
+        "ratio": [
+         0.21875,
+         0.09090909090909091,
+         0.391304347826087
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 32.0,
+        "lost": 35.0,
+        "share_removed": [
+         0.9696969696969697,
+         0.9024390243902439,
+         1.0
+        ],
+        "ratio": [
+         1.09375,
+         0.7297297297297297,
+         1.6521739130434783
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 148.04615817618915,
+       "lost": 316.68918918918916,
+       "share_removed": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "ratio": [
+        2.1391246695662214,
+        1.3603590169352173,
+        3.6461657569885886
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 33.0,
+       "removed": 18.0,
+       "lost_stated": 5.0,
+       "share_removed": [
+        0.5454545454545454,
+        0.38461538461538464,
+        0.7142857142857143
+       ],
+       "ratio": [
+        0.4915223665223665,
+        0.14745670995670995,
+        1.0616883116883118
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 18.0,
+       "lost": 20.0,
+       "share_removed": [
+        0.5454545454545454,
+        0.38461538461538464,
+        0.7142857142857143
+       ],
+       "ratio": [
+        1.966089466089466,
+        1.114117364117364,
+        3.5389610389610384
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 33.0,
+        "removed": 18.0,
+        "lost_stated": 5.0,
+        "share_removed": [
+         0.5454545454545454,
+         0.38461538461538464,
+         0.7142857142857143
+        ],
+        "ratio": [
+         0.2777777777777778,
+         0.08333333333333333,
+         0.6
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 18.0,
+        "lost": 20.0,
+        "share_removed": [
+         0.5454545454545454,
+         0.38461538461538464,
+         0.7142857142857143
+        ],
+        "ratio": [
+         1.1111111111111112,
+         0.6296296296296297,
+         2.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 78.94455389811428,
+       "lost": 198.85135135135133,
+       "share_removed": [
+        0.5332428404130736,
+        0.29032258064516125,
+        0.7474470692354822
+       ],
+       "ratio": [
+        2.518873583198514,
+        1.2352419214909776,
+        6.6967911070023725
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 33.0,
+       "removed": 31.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9393939393939394,
+        0.84375,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 31.0,
+       "lost": 28.0,
+       "share_removed": [
+        0.9393939393939394,
+        0.84375,
+        1.0
+       ],
+       "ratio": [
+        1.5982404692082113,
+        1.0321969696969697,
+        2.4933589138134593
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 33.0,
+        "removed": 31.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9393939393939394,
+         0.84375,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 31.0,
+        "lost": 28.0,
+        "share_removed": [
+         0.9393939393939394,
+         0.84375,
+         1.0
+        ],
+        "ratio": [
+         0.903225806451613,
+         0.5833333333333334,
+         1.4090909090909092
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      }
+     }
+    },
+    "display": {
+     "answers": 290,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 31.0,
+      "losses_H": 11.0,
+      "failures_G": 0.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0827586206896551,
+      "relax_hotel_only": 1.0655172413793104,
+      "soft": 1.3344827586206895,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 2,
+      "stated_dialogues_changed": 1,
+      "answers_changed_show_guesthouse": 2
+     },
+     "planned": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.35389610389610393,
+       0.0,
+       1.1796536796536796
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 7.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 7.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.2527829313543599,
+       0.0,
+       1.1796536796536796
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "soft": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "always": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 3.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 3.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 1,
+      "no": 18,
+      "unclear": 14
+     },
+     "H": {
+      "yes": 11,
+      "no": 20,
+      "unclear": 15
+     },
+     "G": {
+      "yes": 0,
+      "no": 0,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 33.0,
+       "removed": 32.0,
+       "lost_stated": 7.0,
+       "share_removed": [
+        0.9696969696969697,
+        0.9024390243902439,
+        1.0
+       ],
+       "ratio": [
+        0.38707386363636365,
+        0.16086186540731995,
+        0.6924054206662901
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 32.0,
+       "lost": 35.333333333333336,
+       "share_removed": [
+        0.9696969696969697,
+        0.9024390243902439,
+        1.0
+       ],
+       "ratio": [
+        1.953801406926407,
+        1.310726310726311,
+        2.925541125541126
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 33.0,
+        "removed": 32.0,
+        "lost_stated": 7.0,
+        "share_removed": [
+         0.9696969696969697,
+         0.9024390243902439,
+         1.0
+        ],
+        "ratio": [
+         0.21875,
+         0.09090909090909091,
+         0.391304347826087
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 32.0,
+        "lost": 35.333333333333336,
+        "share_removed": [
+         0.9696969696969697,
+         0.9024390243902439,
+         1.0
+        ],
+        "ratio": [
+         1.1041666666666667,
+         0.7407407407407408,
+         1.6533333333333333
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.3333333333333333,
+       "removed": 0.3333333333333333,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 194.30942703553166,
+       "lost": 295.2083333333333,
+       "share_removed": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "ratio": [
+        1.5192692286584282,
+        0.8882367246276108,
+        3.0456242157244544
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 33.0,
+       "removed": 17.333333333333332,
+       "lost_stated": 5.0,
+       "share_removed": [
+        0.5252525252525252,
+        0.36666666666666664,
+        0.6904761904761905
+       ],
+       "ratio": [
+        0.510427072927073,
+        0.15166975881261596,
+        1.1260330578512396
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 17.333333333333332,
+       "lost": 20.0,
+       "share_removed": [
+        0.5252525252525252,
+        0.36666666666666664,
+        0.6904761904761905
+       ],
+       "ratio": [
+        2.041708291708292,
+        1.1716830466830466,
+        3.6430481283422456
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 33.0,
+        "removed": 17.333333333333332,
+        "lost_stated": 5.0,
+        "share_removed": [
+         0.5252525252525252,
+         0.36666666666666664,
+         0.6904761904761905
+        ],
+        "ratio": [
+         0.2884615384615385,
+         0.08571428571428572,
+         0.6363636363636364
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 17.333333333333332,
+        "lost": 20.0,
+        "share_removed": [
+         0.5252525252525252,
+         0.36666666666666664,
+         0.6904761904761905
+        ],
+        "ratio": [
+         1.153846153846154,
+         0.6621621621621621,
+         2.0588235294117645
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.3333333333333333,
+       "removed": 0.3333333333333333,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 122.49954110397272,
+       "lost": 175.98958333333334,
+       "share_removed": [
+        0.6304353986982438,
+        0.3461538461538461,
+        0.8098261781673783
+       ],
+       "ratio": [
+        1.4366550417030577,
+        0.6754842993476254,
+        4.4045942320590195
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 33.0,
+       "removed": 31.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9393939393939394,
+        0.84375,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 31.0,
+       "lost": 28.333333333333332,
+       "share_removed": [
+        0.9393939393939394,
+        0.84375,
+        1.0
+       ],
+       "ratio": [
+        1.6172671414606898,
+        1.0501794953014463,
+        2.5131752305665342
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 33.0,
+        "removed": 31.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9393939393939394,
+         0.84375,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 31.0,
+        "lost": 28.333333333333332,
+        "share_removed": [
+         0.9393939393939394,
+         0.84375,
+         1.0
+        ],
+        "ratio": [
+         0.913978494623656,
+         0.5934959349593496,
+         1.4202898550724636
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 0.3333333333333333,
+       "removed": 0.0,
+       "share_removed": 0.0
+      }
+     }
+    },
+    "display": {
+     "answers": 402,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 31.666666666666668,
+      "losses_H": 11.333333333333334,
+      "failures_G": 0.3333333333333333
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.099502487562189,
+      "relax_hotel_only": 1.0746268656716418,
+      "soft": 1.3582089552238805,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 2,
+      "stated_dialogues_changed": 1,
+      "answers_changed_show_guesthouse": 2
+     },
+     "planned": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.3333333333333333,
+      "display_loss_ratio": [
+       0.35389610389610393,
+       0.0,
+       1.1796536796536796
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 7.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 7.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.3333333333333333,
+      "display_loss_ratio": [
+       0.2527829313543599,
+       0.0,
+       1.1796536796536796
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.3333333333333333
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.3333333333333333
+     },
+     "soft": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.3333333333333333
+     },
+     "always": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 3.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 3.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.3333333333333333
+     },
+     "word_rule": {
+      "net_avoided_NT": 10.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 10.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.3333333333333333,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "points": [
+       0.0,
+       0.0,
+       0.0
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 1,
+      "no": 28,
+      "unclear": 22
+     },
+     "H": {
+      "yes": 19,
+      "no": 24,
+      "unclear": 18
+     },
+     "G": {
+      "yes": 0,
+      "no": 1,
+      "unclear": 0
+     }
+    }
+   }
+  },
+  "deepseek": {
+   "missing": {},
+   "symbolic": {
+    "answers": 290,
+    "dialogues": {
+     "NT": 213,
+     "H": 66,
+     "G": 11
+    },
+    "original": {
+     "failures_NT": 30.0,
+     "losses_H": 8.0,
+     "failures_G": 1.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.0620689655172413,
+     "relax_hotel_only": 1.0482758620689656,
+     "soft": 1.4172413793103449,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 0,
+     "stated_dialogues_changed": 0,
+     "answers_changed_show_guesthouse": 0
+    },
+    "relax_any": {
+     "net_avoided_NT": 9.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 9.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 9.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 9.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "soft": {
+     "net_avoided_NT": 9.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 9.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "always": {
+     "net_avoided_NT": 9.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 9.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 1.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 9.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 9.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 1.0,
+     "net_avoided_G": 0.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 29.0,
+       "removed": 19.0,
+       "lost_stated": 3.0,
+       "share_removed": [
+        0.6551724137931034,
+        0.4782608695652174,
+        0.8275862068965517
+       ],
+       "ratio": [
+        0.27939166097060836,
+        0.0,
+        0.7077922077922079
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 19.0,
+       "lost": 11.0,
+       "share_removed": [
+        0.6551724137931034,
+        0.4782608695652174,
+        0.8275862068965517
+       ],
+       "ratio": [
+        1.024436090225564,
+        0.4423701298701299,
+        2.0643939393939394
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 29.0,
+        "removed": 19.0,
+        "lost_stated": 3.0,
+        "share_removed": [
+         0.6551724137931034,
+         0.4782608695652174,
+         0.8275862068965517
+        ],
+        "ratio": [
+         0.15789473684210525,
+         0.0,
+         0.4
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 19.0,
+        "lost": 11.0,
+        "share_removed": [
+         0.6551724137931034,
+         0.4782608695652174,
+         0.8275862068965517
+        ],
+        "ratio": [
+         0.5789473684210527,
+         0.25,
+         1.1666666666666667
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 63.78609625668449,
+       "lost": 139.9324324324324,
+       "share_removed": [
+        0.75,
+        0.5238095238095238,
+        0.9473684210526316
+       ],
+       "ratio": [
+        2.193776397121467,
+        1.077644545954405,
+        4.7108461580292555
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 29.0,
+       "removed": 13.0,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.4482758620689655,
+        0.2727272727272727,
+        0.6388888888888888
+       ],
+       "ratio": [
+        0.2722277722277722,
+        0.0,
+        0.8847402597402597
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 13.0,
+       "lost": 6.0,
+       "share_removed": [
+        0.4482758620689655,
+        0.2727272727272727,
+        0.6388888888888888
+       ],
+       "ratio": [
+        0.8166833166833167,
+        0.23593073593073594,
+        1.990665584415584
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 29.0,
+        "removed": 13.0,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.4482758620689655,
+         0.2727272727272727,
+         0.6388888888888888
+        ],
+        "ratio": [
+         0.15384615384615385,
+         0.0,
+         0.5
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 13.0,
+        "lost": 6.0,
+        "share_removed": [
+         0.4482758620689655,
+         0.2727272727272727,
+         0.6388888888888888
+        ],
+        "ratio": [
+         0.46153846153846156,
+         0.13333333333333333,
+         1.125
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 47.839572192513366,
+       "lost": 81.01351351351347,
+       "share_removed": [
+        0.5625,
+        0.3076923076923077,
+        0.8181818181818181
+       ],
+       "ratio": [
+        1.6934414293569215,
+        0.6520202294850183,
+        4.354563675489229
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 29.0,
+       "removed": 28.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9655172413793104,
+        0.8846153846153846,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 28.0,
+       "lost": 17.0,
+       "share_removed": [
+        0.9655172413793104,
+        0.8846153846153846,
+        1.0
+       ],
+       "ratio": [
+        1.0743274582560296,
+        0.5708001675743611,
+        1.7694805194805199
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 29.0,
+        "removed": 28.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9655172413793104,
+         0.8846153846153846,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 28.0,
+        "lost": 17.0,
+        "share_removed": [
+         0.9655172413793104,
+         0.8846153846153846,
+         1.0
+        ],
+        "ratio": [
+         0.6071428571428571,
+         0.32258064516129037,
+         1.0
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 0.0,
+       "share_removed": 0.0
+      }
+     }
+    },
+    "display": {
+     "answers": 290,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 30.0,
+      "losses_H": 8.0,
+      "failures_G": 1.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0620689655172413,
+      "relax_hotel_only": 1.0482758620689656,
+      "soft": 1.4172413793103449,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 7.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 7.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 6.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "soft": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "always": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 1.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       2.0,
+       0.0,
+       5.0
+      ],
+      "points": [
+       0.9389671361502347,
+       0.0,
+       2.347417840375587
+      ],
+      "not_worse": true,
+      "equivalent": false
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       2.0,
+       0.0,
+       5.0
+      ],
+      "points": [
+       0.9389671361502347,
+       0.0,
+       2.347417840375587
+      ],
+      "not_worse": true,
+      "equivalent": false
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 10,
+      "no": 13,
+      "unclear": 6
+     },
+     "H": {
+      "yes": 22,
+      "no": 6,
+      "unclear": 5
+     },
+     "G": {
+      "yes": 0,
+      "no": 1,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 28.666666666666668,
+       "removed": 18.666666666666668,
+       "lost_stated": 3.0,
+       "share_removed": [
+        0.6511627906976745,
+        0.4810126582278481,
+        0.8192771084337349
+       ],
+       "ratio": [
+        0.28438079777365494,
+        0.0,
+        0.7372835497835498
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 18.666666666666668,
+       "lost": 11.0,
+       "share_removed": [
+        0.6511627906976745,
+        0.4810126582278481,
+        0.8192771084337349
+       ],
+       "ratio": [
+        1.0427295918367345,
+        0.44986792868148806,
+        2.0548806032677
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 28.666666666666668,
+        "removed": 18.666666666666668,
+        "lost_stated": 3.0,
+        "share_removed": [
+         0.6511627906976745,
+         0.4810126582278481,
+         0.8192771084337349
+        ],
+        "ratio": [
+         0.1607142857142857,
+         0.0,
+         0.4166666666666667
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 18.666666666666668,
+        "lost": 11.0,
+        "share_removed": [
+         0.6511627906976745,
+         0.4810126582278481,
+         0.8192771084337349
+        ],
+        "ratio": [
+         0.5892857142857143,
+         0.2542372881355932,
+         1.161290322580645
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 96.2653730169136,
+       "lost": 113.54166666666666,
+       "share_removed": [
+        0.835907489759161,
+        0.64,
+        0.9725070886993019
+       ],
+       "ratio": [
+        1.1794652958620713,
+        0.5659525312594492,
+        2.788444955446969
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 28.666666666666668,
+       "removed": 12.0,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.41860465116279066,
+        0.25,
+        0.6
+       ],
+       "ratio": [
+        0.2949134199134199,
+        0.0,
+        0.9651711924439198
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 12.0,
+       "lost": 6.0,
+       "share_removed": [
+        0.41860465116279066,
+        0.25,
+        0.6
+       ],
+       "ratio": [
+        0.8847402597402597,
+        0.2589483687044663,
+        2.235133287764867
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 28.666666666666668,
+        "removed": 12.0,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.41860465116279066,
+         0.25,
+         0.6
+        ],
+        "ratio": [
+         0.16666666666666666,
+         0.0,
+         0.5454545454545455
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 12.0,
+        "lost": 6.0,
+        "share_removed": [
+         0.41860465116279066,
+         0.25,
+         0.6
+        ],
+        "ratio": [
+         0.5,
+         0.14634146341463417,
+         1.2631578947368423
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 1.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 187,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 73.58856693326341,
+       "lost": 62.44791666666666,
+       "share_removed": [
+        0.6389964774701541,
+        0.3684210526315789,
+        0.8511293960669695
+       ],
+       "ratio": [
+        0.8486089520305502,
+        0.3274167644912985,
+        2.662632042253521
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 213,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 28.666666666666668,
+       "removed": 27.666666666666668,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9651162790697675,
+        0.881578947368421,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 213,
+        "H": 66
+       },
+       "removed": 27.666666666666668,
+       "lost": 16.666666666666668,
+       "share_removed": [
+        0.9651162790697675,
+        0.881578947368421,
+        1.0
+       ],
+       "ratio": [
+        1.0659521201689877,
+        0.5630165289256199,
+        1.796290830381739
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 213,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 28.666666666666668,
+        "removed": 27.666666666666668,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9651162790697675,
+         0.881578947368421,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 213,
+         "H": 66
+        },
+        "removed": 27.666666666666668,
+        "lost": 16.666666666666668,
+        "share_removed": [
+         0.9651162790697675,
+         0.881578947368421,
+         1.0
+        ],
+        "ratio": [
+         0.6024096385542168,
+         0.3181818181818182,
+         1.0151515151515151
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 1.0,
+       "removed": 0.0,
+       "share_removed": 0.0
+      }
+     }
+    },
+    "display": {
+     "answers": 402,
+     "dialogues": {
+      "NT": 213,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 32.333333333333336,
+      "losses_H": 7.666666666666667,
+      "failures_G": 1.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0696517412935322,
+      "relax_hotel_only": 1.054726368159204,
+      "soft": 1.407960199004975,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 7.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 7.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 6.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0,
+      "display_loss_ratio": [
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "soft": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "always": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.33333333333333337,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.33333333333333337,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 1.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 9.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 9.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 1.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       2.0,
+       0.0,
+       5.0
+      ],
+      "points": [
+       0.9389671361502347,
+       0.0,
+       2.347417840375587
+      ],
+      "not_worse": true,
+      "equivalent": false
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       2.0,
+       0.0,
+       5.0
+      ],
+      "points": [
+       0.9389671361502347,
+       0.0,
+       2.347417840375587
+      ],
+      "not_worse": true,
+      "equivalent": false
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 12,
+      "no": 18,
+      "unclear": 10
+     },
+     "H": {
+      "yes": 31,
+      "no": 6,
+      "unclear": 5
+     },
+     "G": {
+      "yes": 0,
+      "no": 3,
+      "unclear": 0
+     }
+    }
+   }
+  },
+  "qwen": {
+   "missing": {
+    "NT | read 1 | original answer not valid": 14,
+    "NT | reads 2-3 | original answer not valid": 1,
+    "G | read 1 | original answer not valid": 2,
+    "H | read 1 | original answer not valid": 6
+   },
+   "symbolic": {
+    "answers": 268,
+    "dialogues": {
+     "NT": 199,
+     "H": 60,
+     "G": 9
+    },
+    "original": {
+     "failures_NT": 39.0,
+     "losses_H": 14.0,
+     "failures_G": 0.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.0559701492537314,
+     "relax_hotel_only": 1.0223880597014925,
+     "soft": 1.3320895522388059,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 0,
+     "stated_dialogues_changed": 0,
+     "answers_changed_show_guesthouse": 0
+    },
+    "relax_any": {
+     "net_avoided_NT": 4.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 4.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 4.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 4.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "soft": {
+     "net_avoided_NT": 6.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 6.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "always": {
+     "net_avoided_NT": 5.0,
+     "net_added_H": 4.0,
+     "failures_caused_NT": 1.0,
+     "failures_ended_NT": 6.0,
+     "losses_caused_H": 4.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 6.0,
+     "net_added_H": 2.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 6.0,
+     "losses_caused_H": 2.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 0.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 199,
+        "H stated": 17,
+        "H not stated": 43
+       },
+       "original_values_NT": 19.0,
+       "removed": 17.0,
+       "lost_stated": 4.0,
+       "share_removed": [
+        0.8947368421052632,
+        0.7368421052631579,
+        1.0
+       ],
+       "ratio": [
+        0.4278810115595535,
+        0.0865949666251477,
+        0.991905981342601
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 199,
+        "H": 60
+       },
+       "removed": 17.0,
+       "lost": 21.0,
+       "share_removed": [
+        0.8947368421052632,
+        0.7368421052631579,
+        1.0
+       ],
+       "ratio": [
+        2.2463753106876556,
+        1.2442329415087015,
+        4.182536887994635
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 199,
+         "H stated": 17,
+         "H not stated": 43
+        },
+        "original_values_NT": 19.0,
+        "removed": 17.0,
+        "lost_stated": 4.0,
+        "share_removed": [
+         0.8947368421052632,
+         0.7368421052631579,
+         1.0
+        ],
+        "ratio": [
+         0.24181165423916048,
+         0.04893807288173486,
+         0.5605633802816902
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 199,
+         "H": 60
+        },
+        "removed": 17.0,
+        "lost": 21.0,
+        "share_removed": [
+         0.8947368421052632,
+         0.7368421052631579,
+         1.0
+        ],
+        "ratio": [
+         1.2695111847555922,
+         0.7031628366691376,
+         2.3637089201877934
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 9,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 175,
+        "LG": 17,
+        "LH": 67
+       },
+       "removed": 114.4470588235294,
+       "lost": 211.49253731343285,
+       "share_removed": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "ratio": [
+        1.8479508297329146,
+        0.9440675523106893,
+        4.833337712844229
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 199,
+        "H stated": 17,
+        "H not stated": 43
+       },
+       "original_values_NT": 19.0,
+       "removed": 15.0,
+       "lost_stated": 4.0,
+       "share_removed": [
+        0.7894736842105263,
+        0.5882352941176471,
+        0.9523809523809523
+       ],
+       "ratio": [
+        0.4849318131008272,
+        0.09571022626990011,
+        1.2123295327520678
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 199,
+        "H": 60
+       },
+       "removed": 15.0,
+       "lost": 21.0,
+       "share_removed": [
+        0.7894736842105263,
+        0.5882352941176471,
+        0.9523809523809523
+       ],
+       "ratio": [
+        2.545892018779343,
+        1.3906132875685489,
+        4.794212243155905
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 199,
+         "H stated": 17,
+         "H not stated": 43
+        },
+        "original_values_NT": 19.0,
+        "removed": 15.0,
+        "lost_stated": 4.0,
+        "share_removed": [
+         0.7894736842105263,
+         0.5882352941176471,
+         0.9523809523809523
+        ],
+        "ratio": [
+         0.2740532081377152,
+         0.05408944897454905,
+         0.6851330203442879
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 199,
+         "H": 60
+        },
+        "removed": 15.0,
+        "lost": 21.0,
+        "share_removed": [
+         0.7894736842105263,
+         0.5882352941176471,
+         0.9523809523809523
+        ],
+        "ratio": [
+         1.4387793427230047,
+         0.7858878762772715,
+         2.709389671361502
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 9,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 175,
+        "LG": 17,
+        "LH": 67
+       },
+       "removed": 108.76705882352941,
+       "lost": 203.35820895522392,
+       "share_removed": [
+        0.9503700657894737,
+        0.7929532043364897,
+        1.0
+       ],
+       "ratio": [
+        1.8696672609780245,
+        0.9461816096794525,
+        5.191362728610469
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 199,
+        "H stated": 17,
+        "H not stated": 43
+       },
+       "original_values_NT": 19.0,
+       "removed": 18.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9473684210526315,
+        0.8235294117647058,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 199,
+        "H": 60
+       },
+       "removed": 18.0,
+       "lost": 17.0,
+       "share_removed": [
+        0.9473684210526315,
+        0.8235294117647058,
+        1.0
+       ],
+       "ratio": [
+        1.7174668380654294,
+        0.9092471495640508,
+        3.152056785155377
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 199,
+         "H stated": 17,
+         "H not stated": 43
+        },
+        "original_values_NT": 19.0,
+        "removed": 18.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9473684210526315,
+         0.8235294117647058,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 199,
+         "H": 60
+        },
+        "removed": 18.0,
+        "lost": 17.0,
+        "share_removed": [
+         0.9473684210526315,
+         0.8235294117647058,
+         1.0
+        ],
+        "ratio": [
+         0.9706051121544078,
+         0.5138497652582159,
+         1.781345852895149
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 9,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      }
+     }
+    },
+    "display": {
+     "answers": 268,
+     "dialogues": {
+      "NT": 199,
+      "H": 60,
+      "G": 9
+     },
+     "original": {
+      "failures_NT": 39.0,
+      "losses_H": 14.0,
+      "failures_G": 0.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0559701492537314,
+      "relax_hotel_only": 1.0223880597014925,
+      "soft": 1.3320895522388059,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 5.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.7273977196512408,
+       0.0,
+       "inf"
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 6.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.6061647663760341,
+       0.0,
+       2.7277414486921527
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 4.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 4.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 4.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 4.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "soft": {
+      "net_avoided_NT": 6.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "always": {
+      "net_avoided_NT": 5.0,
+      "net_added_H": 4.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 4.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 6.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 6.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       -1.0,
+       -5.0,
+       2.0
+      ],
+      "points": [
+       -0.5025125628140703,
+       -2.512562814070352,
+       1.0050251256281406
+      ],
+      "not_worse": false,
+      "equivalent": false
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.5025125628140703,
+       0.0,
+       1.5075376884422111
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 2,
+      "no": 15,
+      "unclear": 2
+     },
+     "H": {
+      "yes": 9,
+      "no": 21,
+      "unclear": 0
+     },
+     "G": {
+      "yes": 0,
+      "no": 0,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 203,
+        "H stated": 17,
+        "H not stated": 44
+       },
+       "original_values_NT": 18.666666666666668,
+       "removed": 16.333333333333332,
+       "lost_stated": 4.333333333333333,
+       "share_removed": [
+        0.8749999999999999,
+        0.6964285714285714,
+        1.0
+       ],
+       "ratio": [
+        0.48408719294690855,
+        0.13033116733186004,
+        1.0947818055876242
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 203,
+        "H": 61
+       },
+       "removed": 16.333333333333332,
+       "lost": 21.5,
+       "share_removed": [
+        0.8749999999999999,
+        0.6964285714285714,
+        1.0
+       ],
+       "ratio": [
+        2.4018172265442774,
+        1.3801736437963636,
+        4.404294620180097
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 203,
+         "H stated": 17,
+         "H not stated": 44
+        },
+        "original_values_NT": 18.666666666666668,
+        "removed": 16.333333333333332,
+        "lost_stated": 4.333333333333333,
+        "share_removed": [
+         0.8749999999999999,
+         0.6964285714285714,
+         1.0
+        ],
+        "ratio": [
+         0.2735758815186199,
+         0.07365504502424383,
+         0.6187023782036482
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 203,
+         "H": 61
+        },
+        "removed": 16.333333333333332,
+        "lost": 21.5,
+        "share_removed": [
+         0.8749999999999999,
+         0.6964285714285714,
+         1.0
+        ],
+        "ratio": [
+         1.357357258303922,
+         0.7799880408977615,
+         2.4890325559916877
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 10,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 179,
+        "LG": 18,
+        "LH": 68
+       },
+       "removed": 95.93629629629629,
+       "lost": 183.70786516853934,
+       "share_removed": [
+        0.9602050983974093,
+        0.8711303821720278,
+        1.0
+       ],
+       "ratio": [
+        1.9148942815257666,
+        1.0377604215641656,
+        5.138173212718044
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 203,
+        "H stated": 17,
+        "H not stated": 44
+       },
+       "original_values_NT": 18.666666666666668,
+       "removed": 14.333333333333334,
+       "lost_stated": 4.333333333333333,
+       "share_removed": [
+        0.7678571428571428,
+        0.5714285714285714,
+        0.9464285714285714
+       ],
+       "ratio": [
+        0.5516342431255471,
+        0.1520530285538367,
+        1.3270082491971202
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 203,
+        "H": 61
+       },
+       "removed": 14.333333333333334,
+       "lost": 21.0,
+       "share_removed": [
+        0.7678571428571428,
+        0.5714285714285714,
+        0.9464285714285714
+       ],
+       "ratio": [
+        2.673304408993036,
+        1.4928842803467604,
+        4.98266078184111
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 203,
+         "H stated": 17,
+         "H not stated": 44
+        },
+        "original_values_NT": 18.666666666666668,
+        "removed": 14.333333333333334,
+        "lost_stated": 4.333333333333333,
+        "share_removed": [
+         0.7678571428571428,
+         0.5714285714285714,
+         0.9464285714285714
+        ],
+        "ratio": [
+         0.31174926033517153,
+         0.0859308858616178,
+         0.7499422766104826
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 203,
+         "H": 61
+        },
+        "removed": 14.333333333333334,
+        "lost": 21.0,
+        "share_removed": [
+         0.7678571428571428,
+         0.5714285714285714,
+         0.9464285714285714
+        ],
+        "ratio": [
+         1.510784877008908,
+         0.843685061186793,
+         2.8158890290037837
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 10,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      },
+      "label": {
+       "dialogues": {
+        "LN": 179,
+        "LG": 18,
+        "LH": 68
+       },
+       "removed": 91.96029629629629,
+       "lost": 171.46067415730337,
+       "share_removed": [
+        0.9204101967948186,
+        0.7777777777777778,
+        1.0
+       ],
+       "ratio": [
+        1.864507630606764,
+        0.9741281483280823,
+        5.184535750414563
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 203,
+        "H stated": 17,
+        "H not stated": 44
+       },
+       "original_values_NT": 18.666666666666668,
+       "removed": 17.666666666666668,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9464285714285714,
+        0.8333333333333334,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 203,
+        "H": 61
+       },
+       "removed": 17.666666666666668,
+       "lost": 17.5,
+       "share_removed": [
+        0.9464285714285714,
+        0.8333333333333334,
+        1.0
+       ],
+       "ratio": [
+        1.8074227922437187,
+        0.9557618937669734,
+        3.284345416762872
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 203,
+         "H stated": 17,
+         "H not stated": 44
+        },
+        "original_values_NT": 18.666666666666668,
+        "removed": 17.666666666666668,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9464285714285714,
+         0.8333333333333334,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 203,
+         "H": 61
+        },
+        "removed": 17.666666666666668,
+        "lost": 17.5,
+        "share_removed": [
+         0.9464285714285714,
+         0.8333333333333334,
+         1.0
+        ],
+        "ratio": [
+         1.0214426055248909,
+         0.5401369968444547,
+         1.8561071346109443
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 10,
+       "original_values": 0.0,
+       "removed": 0.0,
+       "share_removed": null
+      }
+     }
+    },
+    "display": {
+     "answers": 379,
+     "dialogues": {
+      "NT": 203,
+      "H": 61,
+      "G": 10
+     },
+     "original": {
+      "failures_NT": 36.666666666666664,
+      "losses_H": 13.333333333333334,
+      "failures_G": 0.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0554089709762533,
+      "relax_hotel_only": 1.029023746701847,
+      "soft": 1.3324538258575198,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 1,
+      "stated_dialogues_changed": 1,
+      "answers_changed_show_guesthouse": 1
+     },
+     "planned": {
+      "net_avoided_NT": 4.333333333333333,
+      "net_added_H": 1.6666666666666665,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 5.333333333333333,
+      "losses_caused_H": 1.6666666666666665,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.7017832087100154,
+       0.0,
+       "inf"
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 5.333333333333333,
+      "net_added_H": 1.6666666666666665,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 5.333333333333333,
+      "losses_caused_H": 1.6666666666666665,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0,
+      "display_loss_ratio": [
+       0.5701988570768876,
+       0.0,
+       3.0410605710767333
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 3.666666666666667,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 3.666666666666667,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 3.666666666666667,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 3.666666666666667,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "soft": {
+      "net_avoided_NT": 5.333333333333333,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 5.333333333333333,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "always": {
+      "net_avoided_NT": 4.0,
+      "net_added_H": 3.3333333333333335,
+      "failures_caused_NT": 1.3333333333333333,
+      "failures_ended_NT": 5.333333333333333,
+      "losses_caused_H": 3.3333333333333335,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 5.0,
+      "net_added_H": 1.6666666666666665,
+      "failures_caused_NT": 0.3333333333333333,
+      "failures_ended_NT": 5.333333333333333,
+      "losses_caused_H": 1.6666666666666665,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 0.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       -0.6666666666666666,
+       -3.6666666666666665,
+       2.3333333333333335
+      ],
+      "points": [
+       -0.32840722495894903,
+       -1.8062397372742198,
+       1.149425287356322
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.49261083743842365,
+       0.0,
+       1.477832512315271
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 3,
+      "no": 21,
+      "unclear": 2
+     },
+     "H": {
+      "yes": 17,
+      "no": 23,
+      "unclear": 1
+     },
+     "G": {
+      "yes": 0,
+      "no": 0,
+      "unclear": 0
+     }
+    }
+   }
+  },
+  "gemma": {
+   "missing": {
+    "NT | read 1 | original answer not valid": 1,
+    "H | reads 2-3 | original answer not valid": 1
+   },
+   "symbolic": {
+    "answers": 289,
+    "dialogues": {
+     "NT": 212,
+     "H": 66,
+     "G": 11
+    },
+    "original": {
+     "failures_NT": 38.0,
+     "losses_H": 7.0,
+     "failures_G": 2.0
+    },
+    "searches_per_answer": {
+     "original": 1.0,
+     "relax_any": 1.0899653979238755,
+     "relax_hotel_only": 1.0795847750865053,
+     "soft": 1.3494809688581315,
+     "always": 1.0,
+     "word_rule": 1.0
+    },
+    "relax_any_on_H": {
+     "dialogues_changed": 0,
+     "stated_dialogues_changed": 0,
+     "answers_changed_show_guesthouse": 0
+    },
+    "relax_any": {
+     "net_avoided_NT": 14.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 14.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 2.0
+    },
+    "relax_hotel_only": {
+     "net_avoided_NT": 14.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 14.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 2.0
+    },
+    "soft": {
+     "net_avoided_NT": 14.0,
+     "net_added_H": 0.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 14.0,
+     "losses_caused_H": 0.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 2.0
+    },
+    "always": {
+     "net_avoided_NT": 13.0,
+     "net_added_H": 5.0,
+     "failures_caused_NT": 1.0,
+     "failures_ended_NT": 14.0,
+     "losses_caused_H": 5.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 0.0,
+     "net_avoided_G": 2.0
+    },
+    "word_rule": {
+     "net_avoided_NT": 14.0,
+     "net_added_H": 2.0,
+     "failures_caused_NT": 0.0,
+     "failures_ended_NT": 14.0,
+     "losses_caused_H": 2.0,
+     "losses_ended_H": 0.0,
+     "failures_G": 1.0,
+     "net_avoided_G": 1.0
+    }
+   },
+   "read1": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 212,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 38.0,
+       "removed": 35.0,
+       "lost_stated": 4.0,
+       "share_removed": [
+        0.9210526315789473,
+        0.8275862068965517,
+        1.0
+       ],
+       "ratio": [
+        0.20127692562300212,
+        0.04759927295138563,
+        0.4109403898136293
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 212,
+        "H": 66
+       },
+       "removed": 35.0,
+       "lost": 25.0,
+       "share_removed": [
+        0.9210526315789473,
+        0.8275862068965517,
+        1.0
+       ],
+       "ratio": [
+        1.2579807851437632,
+        0.7781927647633511,
+        1.9372904091213952
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 212,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 38.0,
+        "removed": 35.0,
+        "lost_stated": 4.0,
+        "share_removed": [
+         0.9210526315789473,
+         0.8275862068965517,
+         1.0
+        ],
+        "ratio": [
+         0.11374916163648559,
+         0.026900139576195917,
+         0.2322378716744914
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 212,
+         "H": 66
+        },
+        "removed": 35.0,
+        "lost": 25.0,
+        "share_removed": [
+         0.9210526315789473,
+         0.8275862068965517,
+         1.0
+        ],
+        "ratio": [
+         0.7109322602280349,
+         0.4397860028387378,
+         1.0948356807511737
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 2.0,
+       "removed": 2.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 186,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 179.83701188455007,
+       "lost": 265.13513513513516,
+       "share_removed": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "ratio": [
+        1.4743079433801085,
+        0.922931511597288,
+        2.618453967045516
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 212,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 38.0,
+       "removed": 21.0,
+       "lost_stated": 2.0,
+       "share_removed": [
+        0.5526315789473685,
+        0.3939393939393939,
+        0.7073170731707317
+       ],
+       "ratio": [
+        0.16773077135250175,
+        0.0,
+        0.46964615978700486
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 212,
+        "H": 66
+       },
+       "removed": 21.0,
+       "lost": 14.0,
+       "share_removed": [
+        0.5526315789473685,
+        0.3939393939393939,
+        0.7073170731707317
+       ],
+       "ratio": [
+        1.1741153994675122,
+        0.587057699733756,
+        2.201466374001585
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 212,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 38.0,
+        "removed": 21.0,
+        "lost_stated": 2.0,
+        "share_removed": [
+         0.5526315789473685,
+         0.3939393939393939,
+         0.7073170731707317
+        ],
+        "ratio": [
+         0.09479096803040464,
+         0.0,
+         0.26541471048513304
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 212,
+         "H": 66
+        },
+        "removed": 21.0,
+        "lost": 14.0,
+        "share_removed": [
+         0.5526315789473685,
+         0.3939393939393939,
+         0.7073170731707317
+        ],
+        "ratio": [
+         0.6635367762128325,
+         0.33176838810641623,
+         1.244131455399061
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 2.0,
+       "removed": 2.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 186,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 137.08432371250706,
+       "lost": 139.93243243243245,
+       "share_removed": [
+        0.7622698035069169,
+        0.5714285714285715,
+        0.9046934978687327
+       ],
+       "ratio": [
+        1.0207763268825576,
+        0.5283041536238469,
+        2.1656386193609536
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 212,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 38.0,
+       "removed": 36.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9473684210526315,
+        0.8620689655172413,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 212,
+        "H": 66
+       },
+       "removed": 36.0,
+       "lost": 29.0,
+       "share_removed": [
+        0.9473684210526315,
+        0.8620689655172413,
+        1.0
+       ],
+       "ratio": [
+        1.4187227743565773,
+        0.9206132109461175,
+        2.152544899023772
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 212,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 38.0,
+        "removed": 36.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9473684210526315,
+         0.8620689655172413,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 212,
+         "H": 66
+        },
+        "removed": 36.0,
+        "lost": 29.0,
+        "share_removed": [
+         0.9473684210526315,
+         0.8620689655172413,
+         1.0
+        ],
+        "ratio": [
+         0.801773604590506,
+         0.520273154075971,
+         1.2164840897235263
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 2.0,
+       "removed": 1.0,
+       "share_removed": 0.5
+      }
+     }
+    },
+    "display": {
+     "answers": 289,
+     "dialogues": {
+      "NT": 212,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 38.0,
+      "losses_H": 7.0,
+      "failures_G": 2.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.0899653979238755,
+      "relax_hotel_only": 1.0795847750865053,
+      "soft": 1.3494809688581315,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 13.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0,
+      "display_loss_ratio": [
+       0.2709497075694259,
+       0.0,
+       0.8805865496006342
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 11.0,
+      "net_added_H": 1.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 11.0,
+      "losses_caused_H": 1.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0,
+      "display_loss_ratio": [
+       0.16010664538193348,
+       0.0,
+       0.6604399122004757
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "soft": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "always": {
+      "net_avoided_NT": 13.0,
+      "net_added_H": 5.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 5.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 1.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4716981132075472,
+       0.0,
+       1.4150943396226414
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4716981132075472,
+       0.0,
+       1.4150943396226414
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 3,
+      "no": 21,
+      "unclear": 14
+     },
+     "H": {
+      "yes": 22,
+      "no": 14,
+      "unclear": 11
+     },
+     "G": {
+      "yes": 0,
+      "no": 2,
+      "unclear": 0
+     }
+    }
+   },
+   "mean": {
+    "value": {
+     "planned": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 212,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 38.0,
+       "removed": 35.0,
+       "lost_stated": 4.333333333333333,
+       "share_removed": [
+        0.9210526315789473,
+        0.8275862068965517,
+        1.0
+       ],
+       "ratio": [
+        0.21805000275825226,
+        0.06346569726851417,
+        0.42268154380830436
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 212,
+        "H": 66
+       },
+       "removed": 35.0,
+       "lost": 25.333333333333332,
+       "share_removed": [
+        0.9210526315789473,
+        0.8275862068965517,
+        1.0
+       ],
+       "ratio": [
+        1.274753862279013,
+        0.7942545349339053,
+        1.9498702169728326
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 212,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 38.0,
+        "removed": 35.0,
+        "lost_stated": 4.333333333333333,
+        "share_removed": [
+         0.9210526315789473,
+         0.8275862068965517,
+         1.0
+        ],
+        "ratio": [
+         0.12322825843952603,
+         0.03586685276826123,
+         0.2388732394366197
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 212,
+         "H": 66
+        },
+        "removed": 35.0,
+        "lost": 25.333333333333332,
+        "share_removed": [
+         0.9210526315789473,
+         0.8275862068965517,
+         1.0
+        ],
+        "ratio": [
+         0.7204113570310753,
+         0.4488631133204456,
+         1.1019450033534541
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 2.0,
+       "removed": 2.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 186,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 253.1350355356673,
+       "lost": 235.21052631578945,
+       "share_removed": [
+        1.0,
+        1.0,
+        1.0
+       ],
+       "ratio": [
+        0.9291899314452967,
+        0.5517952943228652,
+        1.908860570832402
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "clear_no": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 212,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 38.0,
+       "removed": 21.666666666666668,
+       "lost_stated": 2.3333333333333335,
+       "share_removed": [
+        0.5701754385964912,
+        0.41441441441441446,
+        0.723404255319149
+       ],
+       "ratio": [
+        0.18966479529859814,
+        0.0,
+        0.48345928213368156
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 212,
+        "H": 66
+       },
+       "removed": 21.666666666666668,
+       "lost": 14.333333333333334,
+       "share_removed": [
+        0.5701754385964912,
+        0.41441441441441446,
+        0.723404255319149
+       ],
+       "ratio": [
+        1.1650837425485312,
+        0.5705208631215376,
+        2.0934699103713186
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 212,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 38.0,
+        "removed": 21.666666666666668,
+        "lost_stated": 2.3333333333333335,
+        "share_removed": [
+         0.5701754385964912,
+         0.41441441441441446,
+         0.723404255319149
+        ],
+        "ratio": [
+         0.10718671000361145,
+         0.0,
+         0.27322102549940175
+        ],
+        "meets_point": true,
+        "meets_whole": false
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 212,
+         "H": 66
+        },
+        "removed": 21.666666666666668,
+        "lost": 14.333333333333334,
+        "share_removed": [
+         0.5701754385964912,
+         0.41441441441441446,
+         0.723404255319149
+        ],
+        "ratio": [
+         0.6584326471650416,
+         0.32242279970905247,
+         1.1830985915492955
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 2.0,
+       "removed": 2.0,
+       "share_removed": 1.0
+      },
+      "label": {
+       "dialogues": {
+        "LN": 186,
+        "LG": 19,
+        "LH": 74
+       },
+       "removed": 207.60831797841539,
+       "lost": 126.21052631578944,
+       "share_removed": [
+        0.8201484932304557,
+        0.6285714285714286,
+        0.9328287606433301
+       ],
+       "ratio": [
+        0.6079261541385412,
+        0.3054718699642683,
+        1.5130185877167766
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "word_rule": {
+      "word_rule": {
+       "dialogues": {
+        "NT": 212,
+        "H stated": 18,
+        "H not stated": 48
+       },
+       "original_values_NT": 38.0,
+       "removed": 36.0,
+       "lost_stated": 0.0,
+       "share_removed": [
+        0.9473684210526315,
+        0.8620689655172413,
+        1.0
+       ],
+       "ratio": [
+        0.0,
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "brief": {
+       "dialogues": {
+        "NT": 212,
+        "H": 66
+       },
+       "removed": 36.0,
+       "lost": 29.0,
+       "share_removed": [
+        0.9473684210526315,
+        0.8620689655172413,
+        1.0
+       ],
+       "ratio": [
+        1.4187227743565773,
+        0.9206132109461175,
+        2.152544899023772
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "evaluated_mix": {
+       "word_rule": {
+        "dialogues": {
+         "NT": 212,
+         "H stated": 18,
+         "H not stated": 48
+        },
+        "original_values_NT": 38.0,
+        "removed": 36.0,
+        "lost_stated": 0.0,
+        "share_removed": [
+         0.9473684210526315,
+         0.8620689655172413,
+         1.0
+        ],
+        "ratio": [
+         0.0,
+         0.0,
+         0.0
+        ],
+        "meets_point": true,
+        "meets_whole": true
+       },
+       "brief": {
+        "dialogues": {
+         "NT": 212,
+         "H": 66
+        },
+        "removed": 36.0,
+        "lost": 29.0,
+        "share_removed": [
+         0.9473684210526315,
+         0.8620689655172413,
+         1.0
+        ],
+        "ratio": [
+         0.801773604590506,
+         0.520273154075971,
+         1.2164840897235263
+        ],
+        "meets_point": false,
+        "meets_whole": false
+       }
+      },
+      "G": {
+       "dialogues": 11,
+       "original_values": 2.0,
+       "removed": 1.0,
+       "share_removed": 0.5
+      }
+     }
+    },
+    "display": {
+     "answers": 400,
+     "dialogues": {
+      "NT": 212,
+      "H": 66,
+      "G": 11
+     },
+     "original": {
+      "failures_NT": 38.0,
+      "losses_H": 7.0,
+      "failures_G": 2.0
+     },
+     "searches_per_answer": {
+      "original": 1.0,
+      "planned": 1.0,
+      "clear_no": 1.0,
+      "relax_any": 1.09,
+      "relax_hotel_only": 1.0825,
+      "soft": 1.35,
+      "always": 1.0,
+      "word_rule": 1.0
+     },
+     "relax_any_on_H": {
+      "dialogues_changed": 0,
+      "stated_dialogues_changed": 0,
+      "answers_changed_show_guesthouse": 0
+     },
+     "planned": {
+      "net_avoided_NT": 13.0,
+      "net_added_H": 2.3333333333333335,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 2.3333333333333335,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0,
+      "display_loss_ratio": [
+       0.3161079921643303,
+       0.0,
+       0.9979980895473852
+      ]
+     },
+     "clear_no": {
+      "net_avoided_NT": 11.0,
+      "net_added_H": 1.3333333333333333,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 11.0,
+      "losses_caused_H": 1.3333333333333333,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0,
+      "display_loss_ratio": [
+       0.21347552717591126,
+       0.0,
+       0.7338221246671952
+      ]
+     },
+     "relax_any": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "relax_hotel_only": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "soft": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 0.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 0.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "always": {
+      "net_avoided_NT": 13.0,
+      "net_added_H": 5.0,
+      "failures_caused_NT": 1.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 5.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 0.0,
+      "net_avoided_G": 2.0
+     },
+     "word_rule": {
+      "net_avoided_NT": 14.0,
+      "net_added_H": 2.0,
+      "failures_caused_NT": 0.0,
+      "failures_ended_NT": 14.0,
+      "losses_caused_H": 2.0,
+      "losses_ended_H": 0.0,
+      "failures_G": 1.0,
+      "net_avoided_G": 1.0
+     },
+     "relax_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4716981132075472,
+       0.0,
+       1.4150943396226414
+      ],
+      "not_worse": true,
+      "equivalent": true
+     },
+     "soft_minus_verifier": {
+      "dialogues": [
+       1.0,
+       0.0,
+       3.0
+      ],
+      "points": [
+       0.4716981132075472,
+       0.0,
+       1.4150943396226414
+      ],
+      "not_worse": true,
+      "equivalent": true
+     }
+    },
+    "verifier_answers": {
+     "NT": {
+      "yes": 3,
+      "no": 35,
+      "unclear": 18
+     },
+     "H": {
+      "yes": 33,
+      "no": 17,
+      "unclear": 13
+     },
+     "G": {
+      "yes": 0,
+      "no": 4,
+      "unclear": 0
+     }
+    }
+   }
+  }
+ },
+ "predictions": {
+  "V1": {
+   "k": 3,
+   "models_that_meet": [
+    "sonnet",
+    "sol",
+    "deepseek",
+    "gemma"
+   ],
+   "verdict": "holds"
+  },
+  "V1w": {
+   "models": {
+    "sol": true,
+    "gemma": false
+   },
+   "verdict": "fails"
+  },
+  "V2": {
+   "verdict": "fails"
+  },
+  "V4": {
+   "verdict": "holds"
+  },
+  "V3": {
+   "models_that_meet": [],
+   "verdict": "holds"
+  },
+  "D1": {
+   "models": {
+    "sonnet": true,
+    "haiku": true,
+    "sol": true,
+    "luna": true,
+    "deepseek": true,
+    "qwen": false,
+    "gemma": true
+   },
+   "verdict": "fails"
+  },
+  "D2": {
+   "models": {
+    "sonnet": true,
+    "haiku": true,
+    "sol": true,
+    "luna": true,
+    "deepseek": true,
+    "qwen": true,
+    "gemma": true
+   },
+   "verdict": "holds"
+  }
+ }
+}

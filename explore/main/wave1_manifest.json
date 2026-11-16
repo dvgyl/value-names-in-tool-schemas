@@ -1,0 +1,74 @@
+{
+ "seed_text": "Semantic Integrity revision 12, Track P split, 2026-11-04",
+ "seed": 14829592008656330191,
+ "counts": {
+  "gate": 64,
+  "pool": 623,
+  "sample": 144,
+  "natural": 281,
+  "goal_hotel": 97,
+  "natural_repeat": 57,
+  "goal_hotel_repeat": 20,
+  "sample_repeat": 29
+ },
+ "ids_sha256": "54743585a28df8ae39200c10fd526e55d3e07b4f87005989524fcc21428ae8f0",
+ "forms_sha256": {
+  "t_legacy": "1dd212c6cc2c8ab46498f359a923710fbd732d0fd7f0108d9596ffab5b7854d5",
+  "t_renamed": "b424f344b502c1b06e269367d26d7e1a5a8bdbd3ba93ada76c7517a425684eec",
+  "t_described": "93ca8405aea0840d61ddbd1f0298bc072385ed44306519485303b6c18b6ac136",
+  "f4": "6390a9a4023604413d408a9564d29efc9c5a7b473cb64dbf30659083351cbf21",
+  "f5": "7cc7963e23e1f5432ca809ce4cd1571cf797b2446ec6d256f60e07084672529f",
+  "p_main": "1dd212c6cc2c8ab46498f359a923710fbd732d0fd7f0108d9596ffab5b7854d5",
+  "p_unclear": "784ddacb190f056faabb100bdd63d0631d5fa2ec474c6a4ce45dd883b531948f"
+ },
+ "folders": {
+  "em1_sonnet": {
+   "account": "anthropic_r9a",
+   "model": "claude-sonnet-5-5",
+   "requests": 4507,
+   "sha256": "a470da03f498eac9d6fe060a94139a70b987e8e58c69f9a91487649c95176ed4"
+  },
+  "em1_haiku": {
+   "account": "anthropic_r9b",
+   "model": "claude-haiku-5-5",
+   "requests": 4507,
+   "sha256": "9f3fe41b30af344634ee107661eb2ff29099541203c0d57f2c745ffb4c82c9d5"
+  },
+  "em1_sol": {
+   "account": "openai_r9",
+   "model": "gpt-6.1-sol",
+   "requests": 4112,
+   "sha256": "cac9cd64c8ed85756b8a1e6aa806ed63a2c0f0ad20523bf41ead49515886bbb4"
+  },
+  "em1_luna": {
+   "account": "openai_r9",
+   "model": "gpt-6-luna",
+   "requests": 4112,
+   "sha256": "530405764ae98bee8e0731c5de615fc5cea1f24147ad337fbbbe43b8fd2c9de3"
+  },
+  "em1_deepseek": {
+   "account": "deepinfra_main",
+   "model": "deepseek-ai/DeepSeek-V4.1-Flash",
+   "requests": 4112,
+   "sha256": "fedfe09e137a1ea2118907d8e6181468c83c16a633dbcd2b507713b188d36632"
+  },
+  "em1_qwen": {
+   "account": "deepinfra_main",
+   "model": "Qwen/Qwen3.8-27B",
+   "requests": 4112,
+   "sha256": "c5035ae5738b15aabcf4f1ca7b2fa6722f3ccab7527fd33d679120f2cc150999"
+  },
+  "em1_gemma": {
+   "account": "deepinfra_main",
+   "model": "google/gemma-4-31B-it",
+   "requests": 4112,
+   "sha256": "5fd972960170fcd87877c1536224ab7c3d1aba2f94fb7304371881d256bde74a"
+  },
+  "em1_gemini": {
+   "account": "google",
+   "model": "gemini-3.8-flash",
+   "requests": 4112,
+   "sha256": "7725b7eb5e64d99b2ff1e1709a849ccc1ae8ab5fc5bd9cda23918caa39104af2"
+  }
+ }
+}

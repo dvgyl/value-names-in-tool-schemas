@@ -1,0 +1,3684 @@
+{
+ "amendment": "R10-27",
+ "exploratory": true,
+ "pilot": false,
+ "L": 5.0,
+ "draws": 2000,
+ "seed": 20261112,
+ "sizes": {
+  "open": 448,
+  "specific": 59
+ },
+ "missing": [],
+ "updates": {
+  "repeat": {
+   "cell": "trep",
+   "C": 4,
+   "level": 0.9875,
+   "k_symmetric": 12,
+   "models": {
+    "luna": {
+     "decisions": {
+      "final": "pass",
+      "revised": "pass",
+      "original": "pass"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -0.6696,
+       "up": 11,
+       "down": 14,
+       "sign_p": 0.690038,
+       "as_run": [
+        -3.3482,
+        2.0089
+       ],
+       "symmetric": [
+        -3.3482,
+        2.0089
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "within limits",
+        "revised": "within limits",
+        "final": "within limits"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -0.8475,
+       "up": 3,
+       "down": 5,
+       "sign_p": 0.726562,
+       "as_run": [
+        -2.8814,
+        0.678
+       ],
+       "symmetric": [
+        -2.8814,
+        0.678
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "within limits",
+        "revised": "within limits",
+        "final": "within limits"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 154,
+        "n": 448,
+        "share": 0.34375
+       },
+       "update": {
+        "k": 151,
+        "n": 448,
+        "share": 0.33705357142857145
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 388,
+        "n": 590,
+        "share": 0.6576271186440678
+       },
+       "update": {
+        "k": 382,
+        "n": 589,
+        "share": 0.6485568760611206
+       }
+      }
+     }
+    },
+    "sol": {
+     "decisions": {
+      "final": "pass",
+      "revised": "pass",
+      "original": "pass"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": 1.1161,
+       "up": 12,
+       "down": 7,
+       "sign_p": 0.359283,
+       "as_run": [
+        -1.1161,
+        3.7946
+       ],
+       "symmetric": [
+        -1.1161,
+        3.7946
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "within limits",
+        "revised": "within limits",
+        "final": "within limits"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 1.3559,
+       "up": 6,
+       "down": 0,
+       "sign_p": 0.03125,
+       "as_run": [
+        0.1695,
+        2.8814
+       ],
+       "symmetric": [
+        0.1695,
+        2.8814
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "within limits",
+        "revised": "within limits",
+        "final": "within limits"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 247,
+        "n": 448,
+        "share": 0.5513392857142857
+       },
+       "update": {
+        "k": 252,
+        "n": 448,
+        "share": 0.5625
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 536,
+        "n": 590,
+        "share": 0.9084745762711864
+       },
+       "update": {
+        "k": 544,
+        "n": 590,
+        "share": 0.9220338983050848
+       }
+      }
+     }
+    }
+   },
+   "tally": {
+    "final": {
+     "flag": 0,
+     "pass": 2,
+     "hold": 0
+    },
+    "revised": {
+     "flag": 0,
+     "pass": 2,
+     "hold": 0
+    },
+    "original": {
+     "flag": 0,
+     "pass": 2,
+     "hold": 0
+    }
+   }
+  },
+  "field-order edit": {
+   "cell": "tord",
+   "C": 2,
+   "level": 0.975,
+   "k_symmetric": 25,
+   "models": {
+    "luna": {
+     "decisions": {
+      "final": "hold",
+      "revised": "hold",
+      "original": "hold"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": 3.5714,
+       "up": 26,
+       "down": 10,
+       "sign_p": 0.011331,
+       "as_run": [
+        0.6696,
+        6.6964
+       ],
+       "symmetric": [
+        0.6696,
+        6.6964
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "unresolved",
+        "revised": "unresolved",
+        "final": "unresolved"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 4.0678,
+       "up": 7,
+       "down": 2,
+       "sign_p": 0.179688,
+       "as_run": [
+        0.678,
+        8.9831
+       ],
+       "symmetric": [
+        0.678,
+        8.9831
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "unresolved",
+        "revised": "unresolved",
+        "final": "unresolved"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 154,
+        "n": 448,
+        "share": 0.34375
+       },
+       "update": {
+        "k": 170,
+        "n": 448,
+        "share": 0.3794642857142857
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 388,
+        "n": 590,
+        "share": 0.6576271186440678
+       },
+       "update": {
+        "k": 412,
+        "n": 590,
+        "share": 0.6983050847457627
+       }
+      }
+     }
+    }
+   },
+   "tally": {
+    "final": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 1
+    },
+    "revised": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 1
+    },
+    "original": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 1
+    }
+   }
+  },
+  "paraphrase 1": {
+   "cell": "tpar",
+   "C": 2,
+   "level": 0.975,
+   "k_symmetric": 25,
+   "models": {
+    "luna": {
+     "decisions": {
+      "final": "pass",
+      "revised": "pass",
+      "original": "pass"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -1.1161,
+       "up": 12,
+       "down": 17,
+       "sign_p": 0.458258,
+       "as_run": [
+        -3.7946,
+        1.5625
+       ],
+       "symmetric": [
+        -3.7946,
+        1.5625
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "within limits",
+        "revised": "within limits",
+        "final": "within limits"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -1.0169,
+       "up": 4,
+       "down": 5,
+       "sign_p": 1.0,
+       "as_run": [
+        -4.7458,
+        2.8814
+       ],
+       "symmetric": [
+        -4.7458,
+        3.0508
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "within limits",
+        "revised": "within limits",
+        "final": "within limits"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 154,
+        "n": 448,
+        "share": 0.34375
+       },
+       "update": {
+        "k": 149,
+        "n": 448,
+        "share": 0.3325892857142857
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 388,
+        "n": 590,
+        "share": 0.6576271186440678
+       },
+       "update": {
+        "k": 382,
+        "n": 590,
+        "share": 0.6474576271186441
+       }
+      }
+     }
+    }
+   },
+   "tally": {
+    "final": {
+     "flag": 0,
+     "pass": 1,
+     "hold": 0
+    },
+    "revised": {
+     "flag": 0,
+     "pass": 1,
+     "hold": 0
+    },
+    "original": {
+     "flag": 0,
+     "pass": 1,
+     "hold": 0
+    }
+   }
+  },
+  "paraphrase 2": {
+   "cell": "tpar2",
+   "C": 2,
+   "level": 0.975,
+   "k_symmetric": 25,
+   "models": {
+    "luna": {
+     "decisions": {
+      "final": "hold",
+      "revised": "hold",
+      "original": "hold"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -4.6875,
+       "up": 6,
+       "down": 27,
+       "sign_p": 0.000324,
+       "as_run": [
+        -7.5893,
+        -1.7857
+       ],
+       "symmetric": [
+        -7.5893,
+        -1.7857
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "unresolved",
+        "revised": "unresolved",
+        "final": "unresolved"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -3.8983,
+       "up": 2,
+       "down": 8,
+       "sign_p": 0.109375,
+       "as_run": [
+        -8.4746,
+        0.1695
+       ],
+       "symmetric": [
+        -8.4746,
+        0.1695
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "unresolved",
+        "revised": "unresolved",
+        "final": "unresolved"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 154,
+        "n": 448,
+        "share": 0.34375
+       },
+       "update": {
+        "k": 133,
+        "n": 448,
+        "share": 0.296875
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 388,
+        "n": 590,
+        "share": 0.6576271186440678
+       },
+       "update": {
+        "k": 365,
+        "n": 590,
+        "share": 0.6186440677966102
+       }
+      }
+     }
+    }
+   },
+   "tally": {
+    "final": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 1
+    },
+    "revised": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 1
+    },
+    "original": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 1
+    }
+   }
+  },
+  "full rename": {
+   "cell": "t1",
+   "C": 4,
+   "level": 0.9875,
+   "k_symmetric": 12,
+   "models": {
+    "luna": {
+     "decisions": {
+      "final": "flag",
+      "revised": "flag",
+      "original": "flag"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -30.3571,
+       "up": 2,
+       "down": 138,
+       "sign_p": 0.0,
+       "as_run": [
+        -35.9375,
+        -25.2232
+       ],
+       "symmetric": [
+        -35.9375,
+        -25.2232
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "meets flag rule",
+        "revised": "meets flag rule",
+        "final": "meets flag rule"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -40.5085,
+       "up": 0,
+       "down": 33,
+       "sign_p": 0.0,
+       "as_run": [
+        -54.7458,
+        -26.9492
+       ],
+       "symmetric": [
+        -54.7458,
+        -26.7797
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "meets flag rule",
+        "revised": "meets flag rule",
+        "final": "meets flag rule"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 154,
+        "n": 448,
+        "share": 0.34375
+       },
+       "update": {
+        "k": 18,
+        "n": 448,
+        "share": 0.04017857142857143
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 388,
+        "n": 590,
+        "share": 0.6576271186440678
+       },
+       "update": {
+        "k": 149,
+        "n": 590,
+        "share": 0.25254237288135595
+       }
+      }
+     }
+    },
+    "sol": {
+     "decisions": {
+      "final": "flag",
+      "revised": "flag",
+      "original": "flag"
+     },
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -28.125,
+       "up": 0,
+       "down": 126,
+       "sign_p": 0.0,
+       "as_run": [
+        -33.9286,
+        -22.5446
+       ],
+       "symmetric": [
+        -33.9286,
+        -22.5446
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "meets flag rule",
+        "revised": "meets flag rule",
+        "final": "meets flag rule"
+       }
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -33.2203,
+       "up": 0,
+       "down": 26,
+       "sign_p": 0.0,
+       "as_run": [
+        -46.9492,
+        -19.661
+       ],
+       "symmetric": [
+        -46.9492,
+        -19.4915
+       ],
+       "zero_width_symmetric": false,
+       "class": {
+        "original": "meets flag rule",
+        "revised": "meets flag rule",
+        "final": "meets flag rule"
+       }
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 247,
+        "n": 448,
+        "share": 0.5513392857142857
+       },
+       "update": {
+        "k": 121,
+        "n": 448,
+        "share": 0.2700892857142857
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 536,
+        "n": 590,
+        "share": 0.9084745762711864
+       },
+       "update": {
+        "k": 340,
+        "n": 590,
+        "share": 0.576271186440678
+       }
+      }
+     }
+    }
+   },
+   "tally": {
+    "final": {
+     "flag": 2,
+     "pass": 0,
+     "hold": 0
+    },
+    "revised": {
+     "flag": 2,
+     "pass": 0,
+     "hold": 0
+    },
+    "original": {
+     "flag": 2,
+     "pass": 0,
+     "hold": 0
+    }
+   }
+  }
+ },
+ "checks": [
+  {
+   "update": "repeat",
+   "model": "luna",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  },
+  {
+   "update": "repeat",
+   "model": "sol",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  },
+  {
+   "update": "field-order edit",
+   "model": "luna",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  },
+  {
+   "update": "paraphrase 1",
+   "model": "luna",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  },
+  {
+   "update": "paraphrase 2",
+   "model": "luna",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  },
+  {
+   "update": "full rename",
+   "model": "luna",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  },
+  {
+   "update": "full rename",
+   "model": "sol",
+   "sets_equal_to_release_test_analyze": true,
+   "decisions_equal_to_release_test_analyze": true
+  }
+ ],
+ "predictions": {
+  "F1_final": {
+   "want": "flag",
+   "decisions": {
+    "full rename, luna": "flag",
+    "full rename, sol": "flag"
+   },
+   "held": {
+    "full rename, luna": true,
+    "full rename, sol": true
+   },
+   "result": "holds"
+  },
+  "F1_revised": {
+   "want": "flag",
+   "decisions": {
+    "full rename, luna": "flag",
+    "full rename, sol": "flag"
+   },
+   "held": {
+    "full rename, luna": true,
+    "full rename, sol": true
+   },
+   "result": "holds"
+  },
+  "F1_original": {
+   "want": "flag",
+   "decisions": {
+    "full rename, luna": "flag",
+    "full rename, sol": "flag"
+   },
+   "held": {
+    "full rename, luna": true,
+    "full rename, sol": true
+   },
+   "result": "holds"
+  },
+  "F2_final": {
+   "want": "no flag",
+   "decisions": {
+    "repeat, luna": "pass",
+    "repeat, sol": "pass"
+   },
+   "held": {
+    "repeat, luna": true,
+    "repeat, sol": true
+   },
+   "result": "holds"
+  },
+  "F2_revised": {
+   "want": "no flag",
+   "decisions": {
+    "repeat, luna": "pass",
+    "repeat, sol": "pass"
+   },
+   "held": {
+    "repeat, luna": true,
+    "repeat, sol": true
+   },
+   "result": "holds"
+  },
+  "F2_original": {
+   "want": "no flag",
+   "decisions": {
+    "repeat, luna": "pass",
+    "repeat, sol": "pass"
+   },
+   "held": {
+    "repeat, luna": true,
+    "repeat, sol": true
+   },
+   "result": "holds"
+  },
+  "F3_final": {
+   "want": "no flag",
+   "decisions": {
+    "field-order edit, luna": "hold"
+   },
+   "held": {
+    "field-order edit, luna": true
+   },
+   "result": "holds"
+  },
+  "F3_revised": {
+   "want": "no flag",
+   "decisions": {
+    "field-order edit, luna": "hold"
+   },
+   "held": {
+    "field-order edit, luna": true
+   },
+   "result": "holds"
+  },
+  "F3_original": {
+   "want": "no flag",
+   "decisions": {
+    "field-order edit, luna": "hold"
+   },
+   "held": {
+    "field-order edit, luna": true
+   },
+   "result": "holds"
+  },
+  "F4_final": {
+   "want": "no flag",
+   "decisions": {
+    "paraphrase 1, luna": "pass",
+    "paraphrase 2, luna": "hold"
+   },
+   "held": {
+    "paraphrase 1, luna": true,
+    "paraphrase 2, luna": true
+   },
+   "result": "holds"
+  },
+  "F4_revised": {
+   "want": "no flag",
+   "decisions": {
+    "paraphrase 1, luna": "pass",
+    "paraphrase 2, luna": "hold"
+   },
+   "held": {
+    "paraphrase 1, luna": true,
+    "paraphrase 2, luna": true
+   },
+   "result": "holds"
+  },
+  "F4_original": {
+   "want": "no flag",
+   "decisions": {
+    "paraphrase 1, luna": "pass",
+    "paraphrase 2, luna": "hold"
+   },
+   "held": {
+    "paraphrase 1, luna": true,
+    "paraphrase 2, luna": true
+   },
+   "result": "holds"
+  }
+ },
+ "harmless_totals": {
+  "final": {
+   "flag": 0,
+   "pass": 3,
+   "hold": 2
+  },
+  "revised": {
+   "flag": 0,
+   "pass": 3,
+   "hold": 2
+  },
+  "original": {
+   "flag": 0,
+   "pass": 3,
+   "hold": 2
+  }
+ },
+ "kinds": {
+  "luna": {
+   "t0": {
+    "search": 1038
+   },
+   "trep": {
+    "search": 1037,
+    "invalid: cut": 1
+   },
+   "tord": {
+    "search": 1037,
+    "none": 1
+   },
+   "tpar": {
+    "search": 1038
+   },
+   "tpar2": {
+    "search": 1038
+   },
+   "t1": {
+    "search": 1037,
+    "none": 1
+   }
+  },
+  "sol": {
+   "t0": {
+    "search": 1038
+   },
+   "trep": {
+    "search": 1038
+   },
+   "t1": {
+    "search": 1038
+   }
+  }
+ },
+ "selection": {
+  "pool": {
+   "e7": 2874,
+   "after_exclusions": 2320,
+   "traveller_says_hotel": 1504,
+   "eligible_open": 711,
+   "eligible_specific": 296,
+   "release_test_dialogues": 554,
+   "release_test_outside_554": 0
+  },
+  "open": [
+   "MUL0005.json",
+   "MUL0026.json",
+   "MUL0044.json",
+   "MUL0070.json",
+   "MUL0083.json",
+   "MUL0098.json",
+   "MUL0109.json",
+   "MUL0114.json",
+   "MUL0115.json",
+   "MUL0122.json",
+   "MUL0123.json",
+   "MUL0127.json",
+   "MUL0130.json",
+   "MUL0143.json",
+   "MUL0145.json",
+   "MUL0149.json",
+   "MUL0156.json",
+   "MUL0611.json",
+   "MUL0632.json",
+   "MUL0642.json",
+   "MUL0646.json",
+   "MUL0653.json",
+   "MUL0656.json",
+   "MUL0659.json",
+   "MUL0664.json",
+   "MUL0672.json",
+   "MUL0678.json",
+   "MUL0684.json",
+   "MUL0686.json",
+   "MUL0692.json",
+   "MUL0698.json",
+   "MUL0699.json",
+   "MUL0704.json",
+   "MUL0716.json",
+   "MUL0718.json",
+   "MUL0721.json",
+   "MUL0723.json",
+   "MUL0750.json",
+   "MUL0757.json",
+   "MUL0777.json",
+   "MUL0795.json",
+   "MUL0799.json",
+   "MUL1013.json",
+   "MUL1021.json",
+   "MUL1027.json",
+   "MUL1031.json",
+   "MUL1032.json",
+   "MUL1033.json",
+   "MUL1035.json",
+   "MUL1036.json",
+   "MUL1056.json",
+   "MUL1057.json",
+   "MUL1092.json",
+   "MUL1106.json",
+   "MUL1123.json",
+   "MUL1124.json",
+   "MUL1129.json",
+   "MUL1132.json",
+   "MUL1138.json",
+   "MUL1141.json",
+   "MUL1153.json",
+   "MUL1156.json",
+   "MUL1165.json",
+   "MUL1170.json",
+   "MUL1171.json",
+   "MUL1176.json",
+   "MUL1206.json",
+   "MUL1207.json",
+   "MUL1213.json",
+   "MUL1216.json",
+   "MUL1220.json",
+   "MUL1224.json",
+   "MUL1232.json",
+   "MUL1233.json",
+   "MUL1234.json",
+   "MUL1241.json",
+   "MUL1246.json",
+   "MUL1255.json",
+   "MUL1264.json",
+   "MUL1269.json",
+   "MUL1277.json",
+   "MUL1282.json",
+   "MUL1294.json",
+   "MUL1300.json",
+   "MUL1302.json",
+   "MUL1306.json",
+   "MUL1311.json",
+   "MUL1313.json",
+   "MUL1329.json",
+   "MUL1353.json",
+   "MUL1355.json",
+   "MUL1362.json",
+   "MUL1363.json",
+   "MUL1384.json",
+   "MUL1387.json",
+   "MUL1389.json",
+   "MUL1396.json",
+   "MUL2006.json",
+   "MUL2025.json",
+   "MUL2030.json",
+   "MUL2032.json",
+   "MUL2069.json",
+   "MUL2079.json",
+   "MUL2087.json",
+   "MUL2094.json",
+   "MUL2101.json",
+   "MUL2103.json",
+   "MUL2114.json",
+   "MUL2115.json",
+   "MUL2126.json",
+   "MUL2136.json",
+   "MUL2140.json",
+   "MUL2154.json",
+   "MUL2156.json",
+   "MUL2169.json",
+   "MUL2187.json",
+   "MUL2192.json",
+   "MUL2200.json",
+   "MUL2202.json",
+   "MUL2203.json",
+   "MUL2214.json",
+   "MUL2221.json",
+   "MUL2236.json",
+   "MUL2244.json",
+   "MUL2245.json",
+   "MUL2267.json",
+   "MUL2274.json",
+   "MUL2292.json",
+   "MUL2293.json",
+   "MUL2298.json",
+   "MUL2505.json",
+   "MUL2519.json",
+   "MUL2524.json",
+   "MUL2527.json",
+   "MUL2528.json",
+   "MUL2534.json",
+   "MUL2539.json",
+   "MUL2545.json",
+   "MUL2546.json",
+   "MUL2548.json",
+   "MUL2550.json",
+   "MUL2553.json",
+   "MUL2568.json",
+   "MUL2573.json",
+   "MUL2575.json",
+   "MUL2585.json",
+   "MUL2590.json",
+   "MUL2597.json",
+   "MUL2602.json",
+   "MUL2606.json",
+   "MUL2608.json",
+   "MUL2613.json",
+   "MUL2619.json",
+   "MUL2622.json",
+   "MUL2624.json",
+   "MUL2625.json",
+   "MUL2628.json",
+   "MUL2635.json",
+   "MUL2666.json",
+   "MUL2668.json",
+   "MUL2672.json",
+   "MUL2676.json",
+   "MUL2679.json",
+   "MUL2682.json",
+   "PMUL0007.json",
+   "PMUL0008.json",
+   "PMUL0014.json",
+   "PMUL0022.json",
+   "PMUL0037.json",
+   "PMUL0046.json",
+   "PMUL0053.json",
+   "PMUL0060.json",
+   "PMUL0073.json",
+   "PMUL0085.json",
+   "PMUL0092.json",
+   "PMUL0107.json",
+   "PMUL0116.json",
+   "PMUL0125.json",
+   "PMUL0130.json",
+   "PMUL0144.json",
+   "PMUL0163.json",
+   "PMUL0183.json",
+   "PMUL0190.json",
+   "PMUL0210.json",
+   "PMUL0222.json",
+   "PMUL0230.json",
+   "PMUL0237.json",
+   "PMUL0248.json",
+   "PMUL0252.json",
+   "PMUL0259.json",
+   "PMUL0264.json",
+   "PMUL0270.json",
+   "PMUL0280.json",
+   "PMUL0296.json",
+   "PMUL0303.json",
+   "PMUL0322.json",
+   "PMUL0326.json",
+   "PMUL0330.json",
+   "PMUL0333.json",
+   "PMUL0341.json",
+   "PMUL0357.json",
+   "PMUL0373.json",
+   "PMUL0375.json",
+   "PMUL0403.json",
+   "PMUL0408.json",
+   "PMUL0446.json",
+   "PMUL0450.json",
+   "PMUL0455.json",
+   "PMUL0476.json",
+   "PMUL0477.json",
+   "PMUL0480.json",
+   "PMUL0488.json",
+   "PMUL0498.json",
+   "PMUL0500.json",
+   "PMUL1501.json",
+   "PMUL1512.json",
+   "PMUL1520.json",
+   "PMUL1527.json",
+   "PMUL1540.json",
+   "PMUL1550.json",
+   "PMUL1577.json",
+   "PMUL1588.json",
+   "PMUL1602.json",
+   "PMUL1603.json",
+   "PMUL1607.json",
+   "PMUL1609.json",
+   "PMUL1616.json",
+   "PMUL1634.json",
+   "PMUL1641.json",
+   "PMUL1663.json",
+   "PMUL1668.json",
+   "PMUL1675.json",
+   "PMUL1688.json",
+   "PMUL1693.json",
+   "PMUL1697.json",
+   "PMUL1700.json",
+   "PMUL1708.json",
+   "PMUL1714.json",
+   "PMUL1715.json",
+   "PMUL1718.json",
+   "PMUL1720.json",
+   "PMUL1733.json",
+   "PMUL1766.json",
+   "PMUL1769.json",
+   "PMUL1780.json",
+   "PMUL1783.json",
+   "PMUL1787.json",
+   "PMUL1813.json",
+   "PMUL1833.json",
+   "PMUL1840.json",
+   "PMUL1850.json",
+   "PMUL1861.json",
+   "PMUL1864.json",
+   "PMUL1865.json",
+   "PMUL1873.json",
+   "PMUL1884.json",
+   "PMUL1901.json",
+   "PMUL1915.json",
+   "PMUL1934.json",
+   "PMUL1936.json",
+   "PMUL1954.json",
+   "PMUL1955.json",
+   "PMUL1967.json",
+   "PMUL1976.json",
+   "PMUL1985.json",
+   "PMUL2501.json",
+   "PMUL2505.json",
+   "PMUL2524.json",
+   "PMUL2534.json",
+   "PMUL2535.json",
+   "PMUL2536.json",
+   "PMUL2540.json",
+   "PMUL2542.json",
+   "PMUL2553.json",
+   "PMUL2559.json",
+   "PMUL2564.json",
+   "PMUL2583.json",
+   "PMUL2590.json",
+   "PMUL2593.json",
+   "PMUL2605.json",
+   "PMUL2608.json",
+   "PMUL2625.json",
+   "PMUL2632.json",
+   "PMUL2637.json",
+   "PMUL2644.json",
+   "PMUL2676.json",
+   "PMUL2677.json",
+   "PMUL2685.json",
+   "PMUL2687.json",
+   "PMUL2690.json",
+   "PMUL2691.json",
+   "PMUL2697.json",
+   "PMUL2712.json",
+   "PMUL2717.json",
+   "PMUL2723.json",
+   "PMUL2731.json",
+   "PMUL2733.json",
+   "PMUL2738.json",
+   "PMUL2743.json",
+   "PMUL2744.json",
+   "PMUL2751.json",
+   "PMUL2776.json",
+   "PMUL2793.json",
+   "PMUL2803.json",
+   "PMUL2805.json",
+   "PMUL2817.json",
+   "PMUL2824.json",
+   "PMUL2834.json",
+   "PMUL2837.json",
+   "PMUL2840.json",
+   "PMUL2847.json",
+   "PMUL2851.json",
+   "PMUL2854.json",
+   "PMUL2867.json",
+   "PMUL2872.json",
+   "PMUL2875.json",
+   "PMUL2884.json",
+   "PMUL2899.json",
+   "PMUL2900.json",
+   "PMUL2901.json",
+   "PMUL2903.json",
+   "PMUL2905.json",
+   "PMUL2907.json",
+   "PMUL2914.json",
+   "PMUL2932.json",
+   "PMUL2939.json",
+   "PMUL2943.json",
+   "PMUL2952.json",
+   "PMUL2960.json",
+   "PMUL2966.json",
+   "PMUL2967.json",
+   "PMUL2969.json",
+   "PMUL2979.json",
+   "PMUL2981.json",
+   "PMUL2999.json",
+   "PMUL3006.json",
+   "PMUL3031.json",
+   "PMUL3032.json",
+   "PMUL3038.json",
+   "PMUL3056.json",
+   "PMUL3057.json",
+   "PMUL3058.json",
+   "PMUL3069.json",
+   "PMUL3082.json",
+   "PMUL3092.json",
+   "PMUL3130.json",
+   "PMUL3131.json",
+   "PMUL3132.json",
+   "PMUL3151.json",
+   "PMUL3181.json",
+   "PMUL3193.json",
+   "PMUL3223.json",
+   "PMUL3234.json",
+   "PMUL3266.json",
+   "PMUL3305.json",
+   "PMUL3311.json",
+   "PMUL3341.json",
+   "PMUL3360.json",
+   "PMUL3373.json",
+   "PMUL3393.json",
+   "PMUL3400.json",
+   "PMUL3407.json",
+   "PMUL3430.json",
+   "PMUL3461.json",
+   "PMUL3467.json",
+   "PMUL3496.json",
+   "PMUL3579.json",
+   "PMUL3601.json",
+   "PMUL3615.json",
+   "PMUL3670.json",
+   "PMUL3681.json",
+   "PMUL3689.json",
+   "PMUL3690.json",
+   "PMUL3691.json",
+   "PMUL3696.json",
+   "PMUL3724.json",
+   "PMUL3732.json",
+   "PMUL3746.json",
+   "PMUL3750.json",
+   "PMUL3757.json",
+   "PMUL3765.json",
+   "PMUL3767.json",
+   "PMUL3774.json",
+   "PMUL3812.json",
+   "PMUL3824.json",
+   "PMUL3825.json",
+   "PMUL3842.json",
+   "PMUL3843.json",
+   "PMUL3845.json",
+   "PMUL3854.json",
+   "PMUL3881.json",
+   "PMUL3904.json",
+   "PMUL3932.json",
+   "PMUL3941.json",
+   "PMUL3952.json",
+   "PMUL3955.json",
+   "PMUL3958.json",
+   "PMUL3961.json",
+   "PMUL4013.json",
+   "PMUL4019.json",
+   "PMUL4021.json",
+   "PMUL4040.json",
+   "PMUL4136.json",
+   "PMUL4160.json",
+   "PMUL4161.json",
+   "PMUL4179.json",
+   "PMUL4201.json",
+   "PMUL4221.json",
+   "PMUL4227.json",
+   "PMUL4228.json",
+   "PMUL4238.json",
+   "PMUL4254.json",
+   "PMUL4273.json",
+   "PMUL4282.json",
+   "PMUL4283.json",
+   "PMUL4300.json",
+   "PMUL4327.json",
+   "PMUL4338.json",
+   "PMUL4353.json",
+   "PMUL4372.json",
+   "PMUL4382.json",
+   "PMUL4422.json",
+   "PMUL4452.json",
+   "PMUL4476.json",
+   "PMUL4481.json",
+   "PMUL4483.json",
+   "PMUL4502.json",
+   "PMUL4545.json",
+   "PMUL4546.json",
+   "PMUL4548.json",
+   "PMUL4561.json",
+   "PMUL4621.json",
+   "PMUL4642.json",
+   "PMUL4698.json",
+   "PMUL4714.json",
+   "PMUL4724.json",
+   "PMUL4749.json",
+   "PMUL4838.json",
+   "PMUL4874.json",
+   "PMUL4882.json",
+   "PMUL4886.json",
+   "PMUL4890.json",
+   "PMUL4906.json",
+   "PMUL4924.json",
+   "PMUL4925.json",
+   "PMUL4935.json",
+   "PMUL4959.json",
+   "PMUL4992.json"
+  ],
+  "specific": [
+   "MUL0033.json",
+   "MUL0045.json",
+   "MUL0064.json",
+   "MUL0124.json",
+   "MUL0605.json",
+   "MUL1187.json",
+   "MUL1358.json",
+   "MUL1386.json",
+   "MUL1388.json",
+   "MUL2144.json",
+   "MUL2283.json",
+   "MUL2522.json",
+   "MUL2631.json",
+   "MUL2639.json",
+   "MUL2641.json",
+   "MUL2681.json",
+   "PMUL0042.json",
+   "PMUL0104.json",
+   "PMUL0122.json",
+   "PMUL0165.json",
+   "PMUL0168.json",
+   "PMUL0209.json",
+   "PMUL0249.json",
+   "PMUL0251.json",
+   "PMUL0255.json",
+   "PMUL0359.json",
+   "PMUL1532.json",
+   "PMUL1734.json",
+   "PMUL1750.json",
+   "PMUL1940.json",
+   "PMUL2567.json",
+   "PMUL2680.json",
+   "PMUL2828.json",
+   "PMUL2874.json",
+   "PMUL2890.json",
+   "PMUL2911.json",
+   "PMUL2916.json",
+   "PMUL3114.json",
+   "PMUL3139.json",
+   "PMUL3254.json",
+   "PMUL3271.json",
+   "PMUL3399.json",
+   "PMUL3509.json",
+   "PMUL3539.json",
+   "PMUL3561.json",
+   "PMUL3736.json",
+   "PMUL3864.json",
+   "PMUL3944.json",
+   "PMUL3965.json",
+   "PMUL4139.json",
+   "PMUL4390.json",
+   "PMUL4427.json",
+   "PMUL4652.json",
+   "PMUL4663.json",
+   "PMUL4794.json",
+   "PMUL4816.json",
+   "PMUL4829.json",
+   "PMUL4971.json",
+   "PMUL4977.json"
+  ],
+  "seed": 20261115
+ },
+ "money": {
+  "ledger_rows": [
+   {
+    "utc": "2026-11-15T15:12:38+00:00",
+    "experiment": "erk4_luna",
+    "step": "pilot",
+    "bound_usd": "0.03",
+    "list_price_usd": "0.0011",
+    "paid_from": "openai credits",
+    "cash_usd": "0.00"
+   },
+   {
+    "utc": "2026-11-15T15:13:08+00:00",
+    "experiment": "erk4_sol",
+    "step": "pilot",
+    "bound_usd": "0.26",
+    "list_price_usd": "0.0108",
+    "paid_from": "openai credits",
+    "cash_usd": "0.00"
+   },
+   {
+    "utc": "2026-11-15T16:00:25+00:00",
+    "experiment": "erk4_sol",
+    "step": "batch",
+    "bound_usd": "3.44",
+    "list_price_usd": "2.7395",
+    "paid_from": "openai credits",
+    "cash_usd": "0.00"
+   },
+   {
+    "utc": "2026-11-15T16:04:36+00:00",
+    "experiment": "erk4_luna",
+    "step": "batch",
+    "bound_usd": "0.35",
+    "list_price_usd": "0.2741",
+    "paid_from": "openai credits",
+    "cash_usd": "0.00"
+   }
+  ],
+  "total_list_price_usd": 3.0255,
+  "batches": {
+   "erk4_luna": {
+    "bound": 0.35,
+    "requests": 6228,
+    "created": "2026-11-15T15:15:01.354921+00:00",
+    "status": "completed",
+    "request_counts": {
+     "total": 6228,
+     "completed": 6228,
+     "failed": 0
+    }
+   },
+   "erk4_sol": {
+    "bound": 3.44,
+    "requests": 3114,
+    "created": "2026-11-15T15:15:44.885755+00:00",
+    "status": "completed",
+    "request_counts": {
+     "total": 3114,
+     "completed": 3114,
+     "failed": 0
+    }
+   }
+  }
+ },
+ "sha256": {
+  "r10/analysis/release_test.py": "da7b68c154ed3e44d69e1be0ed7aad7671123b896fd5cba15c8aa7097198021a",
+  "r10/analysis/rtest_final9.py": "5e98f0ec93609d5ffb6972c2a57bcba2b48c09c26f82eab94d3080491bd07f11",
+  "verify.py of the independent check (not in this repository)": "636bb367ccb475525f177fa5d4cfa0e5cbeb574606a5a22a5b9f078266f948c3",
+  "verify_release.py of the independent check (not in this repository)": "883dbcaf856a8b1704c1b77e29fa7bb1ccf66d0d5d8782166d6841db19f696d4",
+  "verify_release2.py of the independent check (not in this repository)": "2583c266454b79090e30d6253773a7473314208ce8a998e8cb5cbca69e464f26",
+  "r10/analysis/release_analyze.py": "416f5302b8f95c4dee0d2d5c9ede7bb8aad047550270aa7f941fdd9cd4c8f729",
+  "r10/analysis/stats.py": "c90eb62a84f69fe2c6352ed4a9d5d9aad9d6265765088f30ba8fc47d36f03982",
+  "r9/natural/natural_analyze.py": "275d0b99105c088857d22ef1e021bb5d0a46db30c6c1067251d853c03e16245e",
+  "r9/natural/natural.py": "a28868ae705282b5e9dd259d36c23953fd890b3273e7ed8b42f27da5d628b8c3",
+  "r10/tools.py": "7c3b562b04fab5c9683e6fc0579c771892acd77e018c67240bfc2497bfdbc5d2",
+  "r10/control.py": "bf4ac3f0886732e139a30501148d077b70f6bfba4e0870b2e3daa53c4d077934",
+  "r10/harmless.py": "4f4d4cddbbd5988005681d31fab2f2c1329fec892a8db93086cac4ecdf6854c1",
+  "r10/harmless2.py": "df30c41ef0efeb9469f22fadfa73614a503883d3a76e1aaf53c75e303e7e616b",
+  "r10/fresh27.py": "51ef3e5e8f5d65909e263da1e8c4f4578eb18114a27b3a734253eee706782ae7",
+  "posthoc/release-fresh/analyze.py": "295a158054bd7f6efae11f55ffc7c7c3b7d8a014c3c113bda9e948023ee91fa0"
+ },
+ "posthoc_bootstrap_sensitivity": {
+  "status": "post hoc",
+  "primary_seed": 20261112,
+  "other_seeds": [
+   20261113,
+   20261114,
+   20261115,
+   20261116,
+   20261117,
+   20261118,
+   20261119,
+   20261120,
+   20261121,
+   20261122,
+   20261123,
+   20261124,
+   20261125,
+   20261126,
+   20261127,
+   20261128,
+   20261129,
+   20261130,
+   20261131,
+   20261132
+  ],
+  "rows": [
+   {
+    "update": "repeat",
+    "model": "luna",
+    "C": 4,
+    "level": 0.9875,
+    "primary": "pass",
+    "draws_20000": "pass",
+    "draws_20000_intervals": {
+     "open": [
+      -3.5714,
+      2.0089
+     ],
+     "specific": [
+      -2.8814,
+      0.678
+     ]
+    },
+    "other_seeds": {
+     "flag": 0,
+     "pass": 20,
+     "hold": 0
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -3.0508,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -3.0508,
+        0.8475
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -2.7119,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -2.8814,
+        0.8475
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.0089
+       ],
+       "specific": [
+        -3.0508,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.8475
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.2321
+       ],
+       "specific": [
+        -2.7119,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -3.0508,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        2.2321
+       ],
+       "specific": [
+        -2.7119,
+        0.8475
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.0089
+       ],
+       "specific": [
+        -2.8814,
+        0.8475
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.3482,
+        2.2321
+       ],
+       "specific": [
+        -2.8814,
+        0.678
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "update": "repeat",
+    "model": "sol",
+    "C": 4,
+    "level": 0.9875,
+    "primary": "pass",
+    "draws_20000": "pass",
+    "draws_20000_intervals": {
+     "open": [
+      -1.3393,
+      3.5714
+     ],
+     "specific": [
+      0.1695,
+      2.8814
+     ]
+    },
+    "other_seeds": {
+     "flag": 0,
+     "pass": 20,
+     "hold": 0
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.7946
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.5625,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.1161,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.1161,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.3482
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.1161,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.1161,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.7946
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -1.3393,
+        3.5714
+       ],
+       "specific": [
+        0.1695,
+        3.0508
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "update": "field-order edit",
+    "model": "luna",
+    "C": 2,
+    "level": 0.975,
+    "primary": "hold",
+    "draws_20000": "hold",
+    "draws_20000_intervals": {
+     "open": [
+      0.6696,
+      6.6964
+     ],
+     "specific": [
+      0.5085,
+      8.8136
+     ]
+    },
+    "other_seeds": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 20
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.4464,
+        6.4732
+       ],
+       "specific": [
+        0.339,
+        9.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.8136
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.6441
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.8136
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.25
+       ],
+       "specific": [
+        0.339,
+        8.8136
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.339,
+        8.8136
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.8929,
+        6.4732
+       ],
+       "specific": [
+        0.5085,
+        9.322
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.4732
+       ],
+       "specific": [
+        0.5085,
+        8.6441
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.4464,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.9831
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.678,
+        9.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.4732
+       ],
+       "specific": [
+        0.339,
+        8.9831
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        9.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.4464,
+        6.9196
+       ],
+       "specific": [
+        0.5085,
+        8.8136
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.678,
+        9.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.339,
+        9.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.4464,
+        6.4732
+       ],
+       "specific": [
+        0.5085,
+        8.8136
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.9831
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.9831
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.678,
+        8.6441
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        0.6696,
+        6.6964
+       ],
+       "specific": [
+        0.5085,
+        8.9831
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "update": "paraphrase 1",
+    "model": "luna",
+    "C": 2,
+    "level": 0.975,
+    "primary": "pass",
+    "draws_20000": "pass",
+    "draws_20000_intervals": {
+     "open": [
+      -3.7946,
+      1.5625
+     ],
+     "specific": [
+      -4.9153,
+      2.8814
+     ]
+    },
+    "other_seeds": {
+     "flag": 0,
+     "pass": 19,
+     "hold": 1
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.7857
+       ],
+       "specific": [
+        -4.5763,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        2.5424
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        3.2203
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.3393
+       ],
+       "specific": [
+        -4.7458,
+        3.2203
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.9153,
+        2.7119
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.5714,
+        1.3393
+       ],
+       "specific": [
+        -4.9153,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.9153,
+        2.7119
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -4.0179,
+        1.5625
+       ],
+       "specific": [
+        -4.9153,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -4.0179,
+        1.3393
+       ],
+       "specific": [
+        -4.9153,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -4.0179,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        3.2203
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.9153,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.9153,
+        2.7119
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -4.0179,
+        1.7857
+       ],
+       "specific": [
+        -4.9153,
+        3.0508
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.9153,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.7857
+       ],
+       "specific": [
+        -5.0847,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.5625
+       ],
+       "specific": [
+        -4.7458,
+        2.8814
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "pass",
+      "intervals": {
+       "open": [
+        -3.7946,
+        1.7857
+       ],
+       "specific": [
+        -4.9153,
+        2.7119
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "update": "paraphrase 2",
+    "model": "luna",
+    "C": 2,
+    "level": 0.975,
+    "primary": "hold",
+    "draws_20000": "hold",
+    "draws_20000_intervals": {
+     "open": [
+      -7.5893,
+      -2.0089
+     ],
+     "specific": [
+      -8.4746,
+      0.339
+     ]
+    },
+    "other_seeds": {
+     "flag": 0,
+     "pass": 0,
+     "hold": 20
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.1356,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.1695
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -1.7857
+       ],
+       "specific": [
+        -8.3051,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.8136,
+        0.1695
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.4746,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.3661,
+        -1.7857
+       ],
+       "specific": [
+        -8.4746,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.1356,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.3661,
+        -1.7857
+       ],
+       "specific": [
+        -8.3051,
+        0.0
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.3661,
+        -1.7857
+       ],
+       "specific": [
+        -8.3051,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.1695
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.4746,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -1.5625
+       ],
+       "specific": [
+        -8.4746,
+        0.5085
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.0
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.4746,
+        0.339
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -1.7857
+       ],
+       "specific": [
+        -8.6441,
+        0.5085
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -2.0089
+       ],
+       "specific": [
+        -8.3051,
+        0.1695
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "hold",
+      "intervals": {
+       "open": [
+        -7.5893,
+        -1.5625
+       ],
+       "specific": [
+        -8.6441,
+        0.1695
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "update": "full rename",
+    "model": "luna",
+    "C": 4,
+    "level": 0.9875,
+    "primary": "flag",
+    "draws_20000": "flag",
+    "draws_20000_intervals": {
+     "open": [
+      -35.9375,
+      -25.0
+     ],
+     "specific": [
+      -54.7458,
+      -26.6102
+     ]
+    },
+    "other_seeds": {
+     "flag": 20,
+     "pass": 0,
+     "hold": 0
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.7143,
+        -24.7768
+       ],
+       "specific": [
+        -54.0678,
+        -27.4576
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.1607,
+        -25.0
+       ],
+       "specific": [
+        -54.2373,
+        -26.9492
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.1607,
+        -24.7768
+       ],
+       "specific": [
+        -54.7458,
+        -27.7966
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.1607,
+        -25.2232
+       ],
+       "specific": [
+        -54.9153,
+        -26.7797
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.7143,
+        -24.5536
+       ],
+       "specific": [
+        -54.5763,
+        -26.7797
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -24.5536
+       ],
+       "specific": [
+        -54.9153,
+        -26.2712
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -25.0
+       ],
+       "specific": [
+        -54.9153,
+        -26.6102
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.3839,
+        -24.5536
+       ],
+       "specific": [
+        -54.2373,
+        -26.9492
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -25.0
+       ],
+       "specific": [
+        -54.5763,
+        -25.7627
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.6071,
+        -25.0
+       ],
+       "specific": [
+        -56.2712,
+        -26.4407
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -24.7768
+       ],
+       "specific": [
+        -54.4068,
+        -26.2712
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.1607,
+        -24.7768
+       ],
+       "specific": [
+        -55.5932,
+        -27.7966
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.7143,
+        -25.0
+       ],
+       "specific": [
+        -55.0847,
+        -26.9492
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -24.7768
+       ],
+       "specific": [
+        -54.5763,
+        -27.7966
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.4911,
+        -24.7768
+       ],
+       "specific": [
+        -54.9153,
+        -27.1186
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.1607,
+        -25.0
+       ],
+       "specific": [
+        -55.4237,
+        -26.7797
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -24.3304
+       ],
+       "specific": [
+        -54.5763,
+        -26.9492
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.3839,
+        -24.5536
+       ],
+       "specific": [
+        -54.4068,
+        -26.2712
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -36.3839,
+        -24.7768
+       ],
+       "specific": [
+        -55.0847,
+        -26.6102
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -35.9375,
+        -24.7768
+       ],
+       "specific": [
+        -54.4068,
+        -26.2712
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "update": "full rename",
+    "model": "sol",
+    "C": 4,
+    "level": 0.9875,
+    "primary": "flag",
+    "draws_20000": "flag",
+    "draws_20000_intervals": {
+     "open": [
+      -33.4821,
+      -22.9911
+     ],
+     "specific": [
+      -47.2881,
+      -19.4915
+     ]
+    },
+    "other_seeds": {
+     "flag": 20,
+     "pass": 0,
+     "hold": 0
+    },
+    "other_seed_rows": [
+     {
+      "seed": 20261113,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -22.7679
+       ],
+       "specific": [
+        -47.1186,
+        -19.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261114,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.7679
+       ],
+       "specific": [
+        -48.1356,
+        -19.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261115,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -22.9911
+       ],
+       "specific": [
+        -48.3051,
+        -19.8305
+       ]
+      }
+     },
+     {
+      "seed": 20261116,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.5446
+       ],
+       "specific": [
+        -47.1186,
+        -19.8305
+       ]
+      }
+     },
+     {
+      "seed": 20261117,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.7679
+       ],
+       "specific": [
+        -47.6271,
+        -19.8305
+       ]
+      }
+     },
+     {
+      "seed": 20261118,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.5446
+       ],
+       "specific": [
+        -47.2881,
+        -20.0
+       ]
+      }
+     },
+     {
+      "seed": 20261119,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -23.2143
+       ],
+       "specific": [
+        -46.9492,
+        -20.0
+       ]
+      }
+     },
+     {
+      "seed": 20261120,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.7679
+       ],
+       "specific": [
+        -46.9492,
+        -19.661
+       ]
+      }
+     },
+     {
+      "seed": 20261121,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.9911
+       ],
+       "specific": [
+        -46.7797,
+        -20.339
+       ]
+      }
+     },
+     {
+      "seed": 20261122,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -22.7679
+       ],
+       "specific": [
+        -47.9661,
+        -19.4915
+       ]
+      }
+     },
+     {
+      "seed": 20261123,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -22.7679
+       ],
+       "specific": [
+        -48.4746,
+        -20.339
+       ]
+      }
+     },
+     {
+      "seed": 20261124,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.5446
+       ],
+       "specific": [
+        -48.4746,
+        -19.661
+       ]
+      }
+     },
+     {
+      "seed": 20261125,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -34.1518,
+        -22.7679
+       ],
+       "specific": [
+        -48.1356,
+        -20.5085
+       ]
+      }
+     },
+     {
+      "seed": 20261126,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -22.5446
+       ],
+       "specific": [
+        -47.6271,
+        -19.4915
+       ]
+      }
+     },
+     {
+      "seed": 20261127,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.9911
+       ],
+       "specific": [
+        -46.6102,
+        -19.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261128,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.7054,
+        -22.7679
+       ],
+       "specific": [
+        -48.1356,
+        -18.9831
+       ]
+      }
+     },
+     {
+      "seed": 20261129,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.7679
+       ],
+       "specific": [
+        -47.4576,
+        -19.661
+       ]
+      }
+     },
+     {
+      "seed": 20261130,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.2589,
+        -22.9911
+       ],
+       "specific": [
+        -48.1356,
+        -19.1525
+       ]
+      }
+     },
+     {
+      "seed": 20261131,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.2589,
+        -22.7679
+       ],
+       "specific": [
+        -47.4576,
+        -19.322
+       ]
+      }
+     },
+     {
+      "seed": 20261132,
+      "decision": "flag",
+      "intervals": {
+       "open": [
+        -33.4821,
+        -22.7679
+       ],
+       "specific": [
+        -47.4576,
+        -19.1525
+       ]
+      }
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "sonnet": {
+  "widened_answers": 95,
+  "hotels_in_original_equal_all_matching_hotels": 95,
+  "added_guesthouse": 158
+ },
+ "haiku": {
+  "widened_answers": 43,
+  "hotels_in_original_equal_all_matching_hotels": 43,
+  "added_guesthouse": 31
+ },
+ "sol": {
+  "widened_answers": 162,
+  "hotels_in_original_equal_all_matching_hotels": 162,
+  "added_guesthouse": 379
+ },
+ "luna": {
+  "widened_answers": 239,
+  "hotels_in_original_equal_all_matching_hotels": 239,
+  "added_guesthouse": 285
+ },
+ "opus": {
+  "widened_answers": 58,
+  "hotels_in_original_equal_all_matching_hotels": 58,
+  "added_guesthouse": 93
+ },
+ "astra": {
+  "widened_answers": 160,
+  "hotels_in_original_equal_all_matching_hotels": 160,
+  "added_guesthouse": 374
+ },
+ "deepseek": {
+  "widened_answers": 177,
+  "hotels_in_original_equal_all_matching_hotels": 177,
+  "added_guesthouse": 232
+ },
+ "qwen": {
+  "widened_answers": 218,
+  "hotels_in_original_equal_all_matching_hotels": 218,
+  "added_guesthouse": 287
+ },
+ "gemma": {
+  "widened_answers": 244,
+  "hotels_in_original_equal_all_matching_hotels": 244,
+  "added_guesthouse": 405
+ }
+}

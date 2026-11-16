@@ -1,0 +1,30 @@
+# The public corpus (README, section 3). It is not part of this repository.
+corpus/
+MULTIWOZ2.4.zip
+# The answer rows that reproduce.py unpacks from the .gz files
+explore/*/raw.jsonl
+explore/*/conversations.jsonl
+__pycache__/
+.DS_Store
+._*
+
+# Private files. They must never be in this repository (README, section 8).
+.env
+.env.*
+*.env
+keys-r9.env
+*.sealed
+*.sealed.*
+seal_keys/
+SI-seal/
+*.pem
+*.key
+labels_local.jsonl
+key.json
+key2.json
+# The answers of the registered tests (encrypted or opened) and the main-study answer folders
+explore/em*/
+explore/main/exp0/open/
+explore/main/exp1/open/
+# The verifier answers of the held-out confirmation (README, section 8)
+explore/ern_*/

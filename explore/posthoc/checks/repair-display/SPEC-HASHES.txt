@@ -1,0 +1,3 @@
+f958c4ab6413d923691ba056e99929c4942f049e3cfa373aec48495a77841e22  SPEC-N3-D3.md  (recorded 2026-11-15T22:58:18Z, before the run)
+8420c59a4e5eef8f8793bc3e12760b4d17fcf095b0dad4bc1d4997a85f0e27a5  SPEC-N1-heldout.md  (recorded 2026-11-15T23:00:03Z, before the run)
+f3092af5b408e82006f7c5c4475e54569ec4ced337573fef99e8b9ed4cbc32d3  SPEC-N2-gated-soft.md  (recorded 2026-11-15T23:00:03Z, before the run)

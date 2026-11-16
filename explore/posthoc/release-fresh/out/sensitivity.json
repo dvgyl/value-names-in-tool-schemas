@@ -1,0 +1,2163 @@
+{
+ "status": "post hoc",
+ "primary_seed": 20261112,
+ "other_seeds": [
+  20261113,
+  20261114,
+  20261115,
+  20261116,
+  20261117,
+  20261118,
+  20261119,
+  20261120,
+  20261121,
+  20261122,
+  20261123,
+  20261124,
+  20261125,
+  20261126,
+  20261127,
+  20261128,
+  20261129,
+  20261130,
+  20261131,
+  20261132
+ ],
+ "rows": [
+  {
+   "update": "repeat",
+   "model": "luna",
+   "C": 4,
+   "level": 0.9875,
+   "primary": "pass",
+   "draws_20000": "pass",
+   "draws_20000_intervals": {
+    "open": [
+     -3.5714,
+     2.0089
+    ],
+    "specific": [
+     -2.8814,
+     0.678
+    ]
+   },
+   "other_seeds": {
+    "flag": 0,
+    "pass": 20,
+    "hold": 0
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -3.0508,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -3.0508,
+       0.8475
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -2.7119,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -2.8814,
+       0.8475
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.0089
+      ],
+      "specific": [
+       -3.0508,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.8475
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.2321
+      ],
+      "specific": [
+       -2.7119,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -3.0508,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       2.2321
+      ],
+      "specific": [
+       -2.7119,
+       0.8475
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.0089
+      ],
+      "specific": [
+       -2.8814,
+       0.8475
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.3482,
+       2.2321
+      ],
+      "specific": [
+       -2.8814,
+       0.678
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "update": "repeat",
+   "model": "sol",
+   "C": 4,
+   "level": 0.9875,
+   "primary": "pass",
+   "draws_20000": "pass",
+   "draws_20000_intervals": {
+    "open": [
+     -1.3393,
+     3.5714
+    ],
+    "specific": [
+     0.1695,
+     2.8814
+    ]
+   },
+   "other_seeds": {
+    "flag": 0,
+    "pass": 20,
+    "hold": 0
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.7946
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.5625,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.1161,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.1161,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.3482
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.1161,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.1161,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.7946
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -1.3393,
+       3.5714
+      ],
+      "specific": [
+       0.1695,
+       3.0508
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "update": "field-order edit",
+   "model": "luna",
+   "C": 2,
+   "level": 0.975,
+   "primary": "hold",
+   "draws_20000": "hold",
+   "draws_20000_intervals": {
+    "open": [
+     0.6696,
+     6.6964
+    ],
+    "specific": [
+     0.5085,
+     8.8136
+    ]
+   },
+   "other_seeds": {
+    "flag": 0,
+    "pass": 0,
+    "hold": 20
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.4464,
+       6.4732
+      ],
+      "specific": [
+       0.339,
+       9.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.8136
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.6441
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.8136
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.25
+      ],
+      "specific": [
+       0.339,
+       8.8136
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.339,
+       8.8136
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.8929,
+       6.4732
+      ],
+      "specific": [
+       0.5085,
+       9.322
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.4732
+      ],
+      "specific": [
+       0.5085,
+       8.6441
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.4464,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.9831
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.678,
+       9.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.4732
+      ],
+      "specific": [
+       0.339,
+       8.9831
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       9.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.4464,
+       6.9196
+      ],
+      "specific": [
+       0.5085,
+       8.8136
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.678,
+       9.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.339,
+       9.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.4464,
+       6.4732
+      ],
+      "specific": [
+       0.5085,
+       8.8136
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.9831
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.9831
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.678,
+       8.6441
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       0.6696,
+       6.6964
+      ],
+      "specific": [
+       0.5085,
+       8.9831
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "update": "paraphrase 1",
+   "model": "luna",
+   "C": 2,
+   "level": 0.975,
+   "primary": "pass",
+   "draws_20000": "pass",
+   "draws_20000_intervals": {
+    "open": [
+     -3.7946,
+     1.5625
+    ],
+    "specific": [
+     -4.9153,
+     2.8814
+    ]
+   },
+   "other_seeds": {
+    "flag": 0,
+    "pass": 19,
+    "hold": 1
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.7857
+      ],
+      "specific": [
+       -4.5763,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       2.5424
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       3.2203
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.3393
+      ],
+      "specific": [
+       -4.7458,
+       3.2203
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.9153,
+       2.7119
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.5714,
+       1.3393
+      ],
+      "specific": [
+       -4.9153,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.9153,
+       2.7119
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -4.0179,
+       1.5625
+      ],
+      "specific": [
+       -4.9153,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -4.0179,
+       1.3393
+      ],
+      "specific": [
+       -4.9153,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -4.0179,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       3.2203
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.9153,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.9153,
+       2.7119
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -4.0179,
+       1.7857
+      ],
+      "specific": [
+       -4.9153,
+       3.0508
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.9153,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.7857
+      ],
+      "specific": [
+       -5.0847,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.5625
+      ],
+      "specific": [
+       -4.7458,
+       2.8814
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "pass",
+     "intervals": {
+      "open": [
+       -3.7946,
+       1.7857
+      ],
+      "specific": [
+       -4.9153,
+       2.7119
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "update": "paraphrase 2",
+   "model": "luna",
+   "C": 2,
+   "level": 0.975,
+   "primary": "hold",
+   "draws_20000": "hold",
+   "draws_20000_intervals": {
+    "open": [
+     -7.5893,
+     -2.0089
+    ],
+    "specific": [
+     -8.4746,
+     0.339
+    ]
+   },
+   "other_seeds": {
+    "flag": 0,
+    "pass": 0,
+    "hold": 20
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.1356,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.1695
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -1.7857
+      ],
+      "specific": [
+       -8.3051,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.8136,
+       0.1695
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.4746,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.3661,
+       -1.7857
+      ],
+      "specific": [
+       -8.4746,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.1356,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.3661,
+       -1.7857
+      ],
+      "specific": [
+       -8.3051,
+       0.0
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.3661,
+       -1.7857
+      ],
+      "specific": [
+       -8.3051,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.1695
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.4746,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -1.5625
+      ],
+      "specific": [
+       -8.4746,
+       0.5085
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.0
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.4746,
+       0.339
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -1.7857
+      ],
+      "specific": [
+       -8.6441,
+       0.5085
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -2.0089
+      ],
+      "specific": [
+       -8.3051,
+       0.1695
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "hold",
+     "intervals": {
+      "open": [
+       -7.5893,
+       -1.5625
+      ],
+      "specific": [
+       -8.6441,
+       0.1695
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "update": "full rename",
+   "model": "luna",
+   "C": 4,
+   "level": 0.9875,
+   "primary": "flag",
+   "draws_20000": "flag",
+   "draws_20000_intervals": {
+    "open": [
+     -35.9375,
+     -25.0
+    ],
+    "specific": [
+     -54.7458,
+     -26.6102
+    ]
+   },
+   "other_seeds": {
+    "flag": 20,
+    "pass": 0,
+    "hold": 0
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.7143,
+       -24.7768
+      ],
+      "specific": [
+       -54.0678,
+       -27.4576
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.1607,
+       -25.0
+      ],
+      "specific": [
+       -54.2373,
+       -26.9492
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.1607,
+       -24.7768
+      ],
+      "specific": [
+       -54.7458,
+       -27.7966
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.1607,
+       -25.2232
+      ],
+      "specific": [
+       -54.9153,
+       -26.7797
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.7143,
+       -24.5536
+      ],
+      "specific": [
+       -54.5763,
+       -26.7797
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -24.5536
+      ],
+      "specific": [
+       -54.9153,
+       -26.2712
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -25.0
+      ],
+      "specific": [
+       -54.9153,
+       -26.6102
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.3839,
+       -24.5536
+      ],
+      "specific": [
+       -54.2373,
+       -26.9492
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -25.0
+      ],
+      "specific": [
+       -54.5763,
+       -25.7627
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.6071,
+       -25.0
+      ],
+      "specific": [
+       -56.2712,
+       -26.4407
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -24.7768
+      ],
+      "specific": [
+       -54.4068,
+       -26.2712
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.1607,
+       -24.7768
+      ],
+      "specific": [
+       -55.5932,
+       -27.7966
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.7143,
+       -25.0
+      ],
+      "specific": [
+       -55.0847,
+       -26.9492
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -24.7768
+      ],
+      "specific": [
+       -54.5763,
+       -27.7966
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.4911,
+       -24.7768
+      ],
+      "specific": [
+       -54.9153,
+       -27.1186
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.1607,
+       -25.0
+      ],
+      "specific": [
+       -55.4237,
+       -26.7797
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -24.3304
+      ],
+      "specific": [
+       -54.5763,
+       -26.9492
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.3839,
+       -24.5536
+      ],
+      "specific": [
+       -54.4068,
+       -26.2712
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -36.3839,
+       -24.7768
+      ],
+      "specific": [
+       -55.0847,
+       -26.6102
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -35.9375,
+       -24.7768
+      ],
+      "specific": [
+       -54.4068,
+       -26.2712
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "update": "full rename",
+   "model": "sol",
+   "C": 4,
+   "level": 0.9875,
+   "primary": "flag",
+   "draws_20000": "flag",
+   "draws_20000_intervals": {
+    "open": [
+     -33.4821,
+     -22.9911
+    ],
+    "specific": [
+     -47.2881,
+     -19.4915
+    ]
+   },
+   "other_seeds": {
+    "flag": 20,
+    "pass": 0,
+    "hold": 0
+   },
+   "other_seed_rows": [
+    {
+     "seed": 20261113,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -22.7679
+      ],
+      "specific": [
+       -47.1186,
+       -19.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261114,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.7679
+      ],
+      "specific": [
+       -48.1356,
+       -19.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261115,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -22.9911
+      ],
+      "specific": [
+       -48.3051,
+       -19.8305
+      ]
+     }
+    },
+    {
+     "seed": 20261116,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.5446
+      ],
+      "specific": [
+       -47.1186,
+       -19.8305
+      ]
+     }
+    },
+    {
+     "seed": 20261117,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.7679
+      ],
+      "specific": [
+       -47.6271,
+       -19.8305
+      ]
+     }
+    },
+    {
+     "seed": 20261118,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.5446
+      ],
+      "specific": [
+       -47.2881,
+       -20.0
+      ]
+     }
+    },
+    {
+     "seed": 20261119,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -23.2143
+      ],
+      "specific": [
+       -46.9492,
+       -20.0
+      ]
+     }
+    },
+    {
+     "seed": 20261120,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.7679
+      ],
+      "specific": [
+       -46.9492,
+       -19.661
+      ]
+     }
+    },
+    {
+     "seed": 20261121,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.9911
+      ],
+      "specific": [
+       -46.7797,
+       -20.339
+      ]
+     }
+    },
+    {
+     "seed": 20261122,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -22.7679
+      ],
+      "specific": [
+       -47.9661,
+       -19.4915
+      ]
+     }
+    },
+    {
+     "seed": 20261123,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -22.7679
+      ],
+      "specific": [
+       -48.4746,
+       -20.339
+      ]
+     }
+    },
+    {
+     "seed": 20261124,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.5446
+      ],
+      "specific": [
+       -48.4746,
+       -19.661
+      ]
+     }
+    },
+    {
+     "seed": 20261125,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -34.1518,
+       -22.7679
+      ],
+      "specific": [
+       -48.1356,
+       -20.5085
+      ]
+     }
+    },
+    {
+     "seed": 20261126,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -22.5446
+      ],
+      "specific": [
+       -47.6271,
+       -19.4915
+      ]
+     }
+    },
+    {
+     "seed": 20261127,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.9911
+      ],
+      "specific": [
+       -46.6102,
+       -19.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261128,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.7054,
+       -22.7679
+      ],
+      "specific": [
+       -48.1356,
+       -18.9831
+      ]
+     }
+    },
+    {
+     "seed": 20261129,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.7679
+      ],
+      "specific": [
+       -47.4576,
+       -19.661
+      ]
+     }
+    },
+    {
+     "seed": 20261130,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.2589,
+       -22.9911
+      ],
+      "specific": [
+       -48.1356,
+       -19.1525
+      ]
+     }
+    },
+    {
+     "seed": 20261131,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.2589,
+       -22.7679
+      ],
+      "specific": [
+       -47.4576,
+       -19.322
+      ]
+     }
+    },
+    {
+     "seed": 20261132,
+     "decision": "flag",
+     "intervals": {
+      "open": [
+       -33.4821,
+       -22.7679
+      ],
+      "specific": [
+       -47.4576,
+       -19.1525
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

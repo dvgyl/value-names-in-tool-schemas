@@ -1,0 +1,197 @@
+{
+ "post_hoc": true,
+ "no_model_call": true,
+ "dialogues": 2029,
+ "groups": {
+  "S1t": 994,
+  "S3": 490,
+  "S2": 545
+ },
+ "pairs": {
+  "sol_astra_f0": {
+   "label": "Sol and Astra, original form",
+   "cell": "f0",
+   "field": "type",
+   "first": [
+    "erb_sol"
+   ],
+   "second": [
+    "erg_astra"
+   ],
+   "all": {
+    "same_text": {
+     "k": 1885,
+     "n": 2029,
+     "share": 0.929029078363726
+    },
+    "same_value": {
+     "k": 1977,
+     "n": 2029,
+     "share": 0.9743716116313454
+    }
+   },
+   "by_group": {
+    "S1t": {
+     "same_text": {
+      "k": 921,
+      "n": 994,
+      "share": 0.9265593561368209
+     },
+     "same_value": {
+      "k": 964,
+      "n": 994,
+      "share": 0.9698189134808853
+     }
+    },
+    "S3": {
+     "same_text": {
+      "k": 459,
+      "n": 490,
+      "share": 0.936734693877551
+     },
+     "same_value": {
+      "k": 482,
+      "n": 490,
+      "share": 0.9836734693877551
+     }
+    },
+    "S2": {
+     "same_text": {
+      "k": 505,
+      "n": 545,
+      "share": 0.926605504587156
+     },
+     "same_value": {
+      "k": 531,
+      "n": 545,
+      "share": 0.9743119266055046
+     }
+    }
+   }
+  },
+  "sonnet_opus_f0": {
+   "label": "Sonnet and Opus, original form (reference)",
+   "cell": "f0",
+   "field": "type",
+   "first": [
+    "erb_sonnet"
+   ],
+   "second": [
+    "ere_opus"
+   ],
+   "all": {
+    "same_text": {
+     "k": 1356,
+     "n": 2029,
+     "share": 0.6683095120749137
+    },
+    "same_value": {
+     "k": 1734,
+     "n": 2029,
+     "share": 0.8546081813701331
+    }
+   },
+   "by_group": {
+    "S1t": {
+     "same_text": {
+      "k": 689,
+      "n": 994,
+      "share": 0.693158953722334
+     },
+     "same_value": {
+      "k": 857,
+      "n": 994,
+      "share": 0.8621730382293763
+     }
+    },
+    "S3": {
+     "same_text": {
+      "k": 361,
+      "n": 490,
+      "share": 0.736734693877551
+     },
+     "same_value": {
+      "k": 444,
+      "n": 490,
+      "share": 0.9061224489795918
+     }
+    },
+    "S2": {
+     "same_text": {
+      "k": 306,
+      "n": 545,
+      "share": 0.5614678899082569
+     },
+     "same_value": {
+      "k": 433,
+      "n": 545,
+      "share": 0.7944954128440367
+     }
+    }
+   }
+  },
+  "sol_astra_verify": {
+   "label": "Sol and Astra, verifier",
+   "cell": "verify",
+   "field": "answer",
+   "first": [
+    "erb_sol"
+   ],
+   "second": [
+    "erx_b1_astra",
+    "erx_b2_astra",
+    "erx_b3_astra"
+   ],
+   "all": {
+    "same_text": {
+     "k": 1853,
+     "n": 2029,
+     "share": 0.9132577624445539
+    },
+    "same_value": {
+     "k": 1853,
+     "n": 2029,
+     "share": 0.9132577624445539
+    }
+   },
+   "by_group": {
+    "S1t": {
+     "same_text": {
+      "k": 899,
+      "n": 994,
+      "share": 0.9044265593561368
+     },
+     "same_value": {
+      "k": 899,
+      "n": 994,
+      "share": 0.9044265593561368
+     }
+    },
+    "S3": {
+     "same_text": {
+      "k": 490,
+      "n": 490,
+      "share": 1.0
+     },
+     "same_value": {
+      "k": 490,
+      "n": 490,
+      "share": 1.0
+     }
+    },
+    "S2": {
+     "same_text": {
+      "k": 464,
+      "n": 545,
+      "share": 0.8513761467889909
+     },
+     "same_value": {
+      "k": 464,
+      "n": 545,
+      "share": 0.8513761467889909
+     }
+    }
+   }
+  }
+ }
+}

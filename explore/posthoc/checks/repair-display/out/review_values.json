@@ -1,0 +1,139 @@
+{
+ "d6_new_columns": {
+  "sonnet": {
+   "original_failures": "20",
+   "avoided": "10 / 10 / 10",
+   "verifier_losses_added_ended": "2 / 0",
+   "verifier_calls": "76",
+   "second_searches": "14 / 79",
+   "answers": 290,
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   }
+  },
+  "haiku": {
+   "original_failures": "23",
+   "avoided": "2 / 2 / 2",
+   "verifier_losses_added_ended": "1 / 0",
+   "verifier_calls": "48",
+   "second_searches": "4 / 76",
+   "answers": 290,
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   }
+  },
+  "sol": {
+   "original_failures": "44",
+   "avoided": "29 / 30 / 30",
+   "verifier_losses_added_ended": "3 / 0",
+   "verifier_calls": "131",
+   "second_searches": "43 / 126",
+   "answers": 290,
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   }
+  },
+  "luna": {
+   "original_failures": "31",
+   "avoided": "10 / 10 / 10",
+   "verifier_losses_added_ended": "2 / 0",
+   "verifier_calls": "79",
+   "second_searches": "24 / 97",
+   "answers": 290,
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   }
+  },
+  "deepseek": {
+   "original_failures": "30",
+   "avoided": "7 / 9 / 9",
+   "verifier_losses_added_ended": "0 / 0",
+   "verifier_calls": "63",
+   "second_searches": "18 / 121",
+   "answers": 290,
+   "dialogues": {
+    "NT": 213,
+    "H": 66,
+    "G": 11
+   }
+  },
+  "qwen": {
+   "original_failures": "39",
+   "avoided": "5 / 4 / 6",
+   "verifier_losses_added_ended": "2 / 0",
+   "verifier_calls": "49",
+   "second_searches": "15 / 89",
+   "answers": 268,
+   "dialogues": {
+    "NT": 199,
+    "H": 60,
+    "G": 9
+   }
+  },
+  "gemma": {
+   "original_failures": "38",
+   "avoided": "13 / 14 / 14",
+   "verifier_losses_added_ended": "2 / 0",
+   "verifier_calls": "87",
+   "second_searches": "26 / 101",
+   "answers": 289,
+   "dialogues": {
+    "NT": 212,
+    "H": 66,
+    "G": 11
+   }
+  }
+ },
+ "heldout_qwen_G_dialogues": 9,
+ "heldout_H_dialogues": {
+  "Sonnet": 66,
+  "Haiku": 66,
+  "Sol": 66,
+  "Luna": 66,
+  "DeepSeek": 66,
+  "Qwen": 60,
+  "Gemma": 66
+ },
+ "dev_qwen_hotel_dialogues": 227,
+ "dev_hotel_dialogues": {
+  "sonnet": 233,
+  "haiku": 233,
+  "sol": 233,
+  "luna": 233,
+  "opus": 233,
+  "astra": 233,
+  "deepseek": 233,
+  "qwen": 227,
+  "gemma": 233
+ },
+ "dev_gated_gross_gains": {
+  "sonnet": 0.0,
+  "haiku": 0.0,
+  "sol": 0.0,
+  "luna": 0.0,
+  "opus": 0.0,
+  "astra": 0.0,
+  "deepseek": 0.0,
+  "qwen": 0.0,
+  "gemma": 0.0
+ },
+ "dev_gated_gross_losses": {
+  "sonnet": 0.0,
+  "haiku": 0.0,
+  "sol": 0.0,
+  "luna": 0.0,
+  "opus": 0.0,
+  "astra": 0.0,
+  "deepseek": 0.0,
+  "qwen": 0.0,
+  "gemma": 0.0
+ }
+}

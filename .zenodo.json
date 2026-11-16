@@ -1,0 +1,33 @@
+{
+ "title": "How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "creators": [
+  {
+   "name": "Goyal, Dev D.",
+   "affiliation": "Independent Researcher"
+  }
+ ],
+ "description": "An AI agent fills the fields of a tool with values from a fixed list, the tool's schema. Some allowed values are also everyday words. A traveller who asks for \"a hotel\" can mean any place to stay, but a booking tool can separate hotel from guesthouse. This preprint asks whether such a value name changes what an agent searches for while every call stays valid. It uses public MultiWOZ booking dialogues and nine language models. In 5.6% to 18.8% of valid first answers, depending on the model, the search would have excluded every place that fits the traveller's task. In tests registered before we opened the answers, a rename of the field and the value removed hotel filters that the task did not need, and also filters that it needed. The preprint also gives a release test for schema updates. It shows that the verdict on a repair depends on the reference record. The evidence concerns one word in one corpus.",
+ "license": "cc-by-4.0",
+ "keywords": [
+  "AI agents",
+  "tool use",
+  "tool schemas",
+  "large language models",
+  "preregistration",
+  "MultiWOZ",
+  "release testing",
+  "neuro-symbolic evaluation"
+ ],
+ "related_identifiers": [
+  {
+   "identifier": "https://osf.io/bv8q9",
+   "relation": "references"
+  },
+  {
+   "identifier": "https://osf.io/jy3pd",
+   "relation": "references"
+  }
+ ]
+}

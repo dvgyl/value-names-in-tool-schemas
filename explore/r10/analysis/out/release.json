@@ -1,0 +1,270 @@
+{
+ "amendment": "R10-6",
+ "exploratory": true,
+ "dry_run": false,
+ "edit_sha256": "c6918fbea8ac5e4c14e8b225206a379a4dfb525cbfb1d815c5e1af5a66ca7ac3",
+ "L": 5,
+ "C": 4,
+ "level": 0.9875,
+ "draws": 2000,
+ "seed": 20261112,
+ "n_max": 554,
+ "sets": {
+  "open": 448,
+  "specific": 59,
+  "guesthouse": 47
+ },
+ "missing": [],
+ "models": {
+  "sonnet": {
+   "rates": {
+    "open": {
+     "t0": {
+      "k": 94,
+      "n": 448,
+      "share": 0.20982142857142858
+     },
+     "tedit": {
+      "k": 110,
+      "n": 448,
+      "share": 0.24553571428571427
+     }
+    },
+    "specific": {
+     "t0": {
+      "k": 33,
+      "n": 59,
+      "share": 0.559322033898305
+     },
+     "tedit": {
+      "k": 34,
+      "n": 59,
+      "share": 0.576271186440678
+     }
+    },
+    "guesthouse": {
+     "t0": {
+      "k": 24,
+      "n": 47,
+      "share": 0.5106382978723404
+     },
+     "tedit": {
+      "k": 29,
+      "n": 47,
+      "share": 0.6170212765957447
+     }
+    }
+   },
+   "kinds": {
+    "t0": {
+     "search": 553,
+     "none": 1
+    },
+    "tedit": {
+     "search": 554
+    }
+   },
+   "type_values": {
+    "t0": {
+     "null": 395,
+     "hotel": 150,
+     "any": 3,
+     "hotel+guesthouse": 1,
+     "guesthouse": 4
+    },
+    "tedit": {
+     "null": 372,
+     "hotel": 172,
+     "guesthouse": 6,
+     "hotel+guesthouse": 1,
+     "any": 1,
+     "\"dont_care\"": 2
+    }
+   },
+   "sets": {
+    "open": {
+     "pairs": 448,
+     "change": 3.5714285714285716,
+     "interval": [
+      0.8928571428571429,
+      6.026785714285714
+     ],
+     "decision": "unresolved"
+    },
+    "specific": {
+     "pairs": 59,
+     "change": 1.694915254237288,
+     "interval": [
+      0.0,
+      6.779661016949152
+     ],
+     "decision": "unresolved"
+    },
+    "guesthouse": {
+     "pairs": 47,
+     "change": 10.638297872340425,
+     "interval": [
+      0.0,
+      23.404255319148938
+     ],
+     "decision": null
+    }
+   },
+   "release": "hold",
+   "trade": {
+    "wrong_removed": -15.999999999999993,
+    "correct_lost": -1.000000000000004,
+    "ratio": null,
+    "ratio_ci95": [
+     null,
+     null
+    ],
+    "defined": false
+   },
+   "blocking_open": {
+    "t0": {
+     "k": 46,
+     "n": 448,
+     "share": 0.10267857142857142,
+     "ci95": [
+      0.07589285714285714,
+      0.13392857142857142
+     ]
+    },
+    "tedit": {
+     "k": 52,
+     "n": 448,
+     "share": 0.11607142857142858,
+     "ci95": [
+      0.08482142857142858,
+      0.14732142857142858
+     ]
+    }
+   }
+  },
+  "sol": {
+   "rates": {
+    "open": {
+     "t0": {
+      "k": 154,
+      "n": 448,
+      "share": 0.34375
+     },
+     "tedit": {
+      "k": 178,
+      "n": 448,
+      "share": 0.39732142857142855
+     }
+    },
+    "specific": {
+     "t0": {
+      "k": 49,
+      "n": 59,
+      "share": 0.8305084745762712
+     },
+     "tedit": {
+      "k": 54,
+      "n": 59,
+      "share": 0.9152542372881356
+     }
+    },
+    "guesthouse": {
+     "t0": {
+      "k": 37,
+      "n": 47,
+      "share": 0.7872340425531915
+     },
+     "tedit": {
+      "k": 37,
+      "n": 47,
+      "share": 0.7872340425531915
+     }
+    }
+   },
+   "kinds": {
+    "t0": {
+     "search": 554
+    },
+    "tedit": {
+     "search": 554
+    }
+   },
+   "type_values": {
+    "t0": {
+     "hotel": 239,
+     "null": 307,
+     "guesthouse": 4,
+     "hotel+guesthouse": 1,
+     "any": 3
+    },
+    "tedit": {
+     "hotel": 268,
+     "null": 277,
+     "guesthouse": 5,
+     "hotel+guesthouse": 1,
+     "any": 3
+    }
+   },
+   "sets": {
+    "open": {
+     "pairs": 448,
+     "change": 5.357142857142857,
+     "interval": [
+      2.6785714285714284,
+      8.258928571428571
+     ],
+     "decision": "flag-worthy"
+    },
+    "specific": {
+     "pairs": 59,
+     "change": 8.474576271186441,
+     "interval": [
+      -3.389830508474576,
+      20.338983050847457
+     ],
+     "decision": "unresolved"
+    },
+    "guesthouse": {
+     "pairs": 47,
+     "change": 0.0,
+     "interval": [
+      0.0,
+      0.0
+     ],
+     "decision": null
+    }
+   },
+   "release": "flag",
+   "trade": {
+    "wrong_removed": -23.99999999999999,
+    "correct_lost": -5.0,
+    "ratio": null,
+    "ratio_ci95": [
+     null,
+     null
+    ],
+    "defined": false
+   },
+   "blocking_open": {
+    "t0": {
+     "k": 79,
+     "n": 448,
+     "share": 0.17633928571428573,
+     "ci95": [
+      0.140625,
+      0.21428571428571427
+     ]
+    },
+    "tedit": {
+     "k": 88,
+     "n": 448,
+     "share": 0.19642857142857142,
+     "ci95": [
+      0.15848214285714285,
+      0.234375
+     ]
+    }
+   }
+  }
+ }
+}

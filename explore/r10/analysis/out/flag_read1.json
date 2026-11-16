@@ -1,0 +1,383 @@
+{
+ "exploratory": true,
+ "pilot": false,
+ "missing": [],
+ "models": {
+  "sonnet": {
+   "calls": 64,
+   "dialogues": 32,
+   "runs": [
+    "erw_sonnet"
+   ],
+   "kinds": {
+    "plain": {
+     "widen": 56,
+     "kept": 8
+    },
+    "flag": {
+     "widen": 55,
+     "kept": 5,
+     "tell": 4
+    }
+   },
+   "rates": {
+    "recovery": {
+     "plain": [
+      0.875,
+      0.75,
+      0.96875
+     ],
+     "flag": [
+      0.921875,
+      0.828125,
+      1.0
+     ]
+    },
+    "widen": {
+     "plain": [
+      0.875,
+      0.75,
+      0.96875
+     ],
+     "flag": [
+      0.859375,
+      0.734375,
+      0.96875
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "flag": [
+      0.0625,
+      0.0,
+      0.15625
+     ]
+    }
+   },
+   "flag_minus_plain": {
+    "recovery": {
+     "dialogues": 32,
+     "pairs": 64,
+     "mean": 0.046875,
+     "ci": [
+      0.0,
+      0.125
+     ],
+     "higher": 2,
+     "lower": 0,
+     "sign_p": 0.5,
+     "flag_only": 3,
+     "plain_only": 0
+    },
+    "widen": {
+     "dialogues": 32,
+     "pairs": 64,
+     "mean": -0.015625,
+     "ci": [
+      -0.09375,
+      0.046875
+     ],
+     "higher": 1,
+     "lower": 1,
+     "sign_p": 1.0,
+     "flag_only": 1,
+     "plain_only": 2
+    },
+    "tell": {
+     "dialogues": 32,
+     "pairs": 64,
+     "mean": 0.0625,
+     "ci": [
+      0.0,
+      0.15625
+     ],
+     "higher": 2,
+     "lower": 0,
+     "sign_p": 0.5,
+     "flag_only": 4,
+     "plain_only": 0
+    }
+   },
+   "era2": {
+    "kinds": {
+     "tell": 45,
+     "widen": 17,
+     "kept": 1,
+     "other": 1
+    },
+    "recovery": 0.96875,
+    "widen": 0.265625
+   }
+  },
+  "haiku": {
+   "calls": 29,
+   "dialogues": 16,
+   "runs": [
+    "erw_haiku"
+   ],
+   "kinds": {
+    "plain": {
+     "widen": 12,
+     "tell": 9,
+     "other": 4,
+     "kept": 4
+    },
+    "flag": {
+     "tell": 14,
+     "widen": 15
+    }
+   },
+   "rates": {
+    "recovery": {
+     "plain": [
+      0.7241379310344828,
+      0.5357142857142857,
+      0.896551724137931
+     ],
+     "flag": [
+      1.0,
+      1.0,
+      1.0
+     ]
+    },
+    "widen": {
+     "plain": [
+      0.41379310344827586,
+      0.2,
+      0.6551724137931034
+     ],
+     "flag": [
+      0.5172413793103449,
+      0.2903225806451613,
+      0.75
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.3103448275862069,
+      0.11538461538461539,
+      0.5
+     ],
+     "flag": [
+      0.4827586206896552,
+      0.25,
+      0.7096774193548387
+     ]
+    }
+   },
+   "flag_minus_plain": {
+    "recovery": {
+     "dialogues": 16,
+     "pairs": 29,
+     "mean": 0.25,
+     "ci": [
+      0.09375,
+      0.4375
+     ],
+     "higher": 6,
+     "lower": 0,
+     "sign_p": 0.03125,
+     "flag_only": 8,
+     "plain_only": 0
+    },
+    "widen": {
+     "dialogues": 16,
+     "pairs": 29,
+     "mean": 0.125,
+     "ci": [
+      -0.09375,
+      0.34375
+     ],
+     "higher": 3,
+     "lower": 2,
+     "sign_p": 1.0,
+     "flag_only": 6,
+     "plain_only": 3
+    },
+    "tell": {
+     "dialogues": 16,
+     "pairs": 29,
+     "mean": 0.125,
+     "ci": [
+      -0.09375,
+      0.34375
+     ],
+     "higher": 6,
+     "lower": 2,
+     "sign_p": 0.2890625,
+     "flag_only": 7,
+     "plain_only": 2
+    }
+   },
+   "era2": {
+    "kinds": {
+     "other": 10,
+     "kept": 1,
+     "tell": 15,
+     "widen": 3
+    },
+    "recovery": 0.6206896551724138,
+    "widen": 0.10344827586206896
+   }
+  },
+  "opus": {
+   "calls": 26,
+   "dialogues": 26,
+   "runs": [
+    "erw_opus"
+   ],
+   "kinds": {
+    "plain": {
+     "widen": 22,
+     "tell": 1,
+     "kept": 3
+    },
+    "flag": {
+     "widen": 15,
+     "tell": 10,
+     "kept": 1
+    }
+   },
+   "rates": {
+    "recovery": {
+     "plain": [
+      0.8846153846153846,
+      0.7692307692307693,
+      1.0
+     ],
+     "flag": [
+      0.9615384615384616,
+      0.8846153846153846,
+      1.0
+     ]
+    },
+    "widen": {
+     "plain": [
+      0.8461538461538461,
+      0.6923076923076923,
+      0.9615384615384616
+     ],
+     "flag": [
+      0.5769230769230769,
+      0.38461538461538464,
+      0.7692307692307693
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.038461538461538464,
+      0.0,
+      0.11538461538461539
+     ],
+     "flag": [
+      0.38461538461538464,
+      0.19230769230769232,
+      0.5769230769230769
+     ]
+    }
+   },
+   "flag_minus_plain": {
+    "recovery": {
+     "dialogues": 26,
+     "pairs": 26,
+     "mean": 0.07692307692307693,
+     "ci": [
+      0.0,
+      0.19230769230769232
+     ],
+     "higher": 2,
+     "lower": 0,
+     "sign_p": 0.5,
+     "flag_only": 2,
+     "plain_only": 0
+    },
+    "widen": {
+     "dialogues": 26,
+     "pairs": 26,
+     "mean": -0.2692307692307692,
+     "ci": [
+      -0.46153846153846156,
+      -0.07692307692307693
+     ],
+     "higher": 1,
+     "lower": 8,
+     "sign_p": 0.0390625,
+     "flag_only": 1,
+     "plain_only": 8
+    },
+    "tell": {
+     "dialogues": 26,
+     "pairs": 26,
+     "mean": 0.34615384615384615,
+     "ci": [
+      0.11538461538461539,
+      0.5384615384615384
+     ],
+     "higher": 10,
+     "lower": 1,
+     "sign_p": 0.01171875,
+     "flag_only": 10,
+     "plain_only": 1
+    }
+   },
+   "era2": {
+    "kinds": {
+     "tell": 22,
+     "other": 2,
+     "widen": 2
+    },
+    "recovery": 0.9230769230769231,
+    "widen": 0.07692307692307693
+   }
+  }
+ },
+ "predictions": {
+  "W1": {
+   "words": "with the flag, recovery is 90% or more for each of Sonnet, Haiku and Opus",
+   "value": {
+    "sonnet": 0.921875,
+    "haiku": 1.0,
+    "opus": 0.9615384615384616
+   },
+   "held": true,
+   "complete": true
+  },
+  "W2": {
+   "words": "Haiku: recovery, flag minus plain, is +15 points or more, and its 95% interval excludes 0",
+   "value": {
+    "mean": 0.25,
+    "ci": [
+     0.09375,
+     0.4375
+    ]
+   },
+   "held": true,
+   "complete": true
+  },
+  "W3": {
+   "words": "without the flag and without the one-call limit, recovery is 85% or more for Sonnet and Opus",
+   "value": {
+    "sonnet": 0.875,
+    "opus": 0.8846153846153846
+   },
+   "held": true,
+   "complete": true
+  },
+  "W4": {
+   "words": "Sonnet: a new search without the hotel-only filter, flag minus plain, is +10 points or more",
+   "value": -0.015625,
+   "held": false,
+   "complete": true
+  },
+  "W5": {
+   "words": "Opus: with the flag, a new search without the hotel-only filter is 20% or less",
+   "value": 0.5769230769230769,
+   "held": false,
+   "complete": true
+  }
+ }
+}

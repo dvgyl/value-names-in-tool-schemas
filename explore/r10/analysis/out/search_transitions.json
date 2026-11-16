@@ -1,0 +1,318 @@
+{
+ "post_hoc": true,
+ "sizes": {
+  "no_type": 807,
+  "hotel": 233
+ },
+ "models": {
+  "sonnet": {
+   "transitions": {
+    "verify": {
+     "no_type": {
+      "good_to_good": 667.0,
+      "bad_to_bad": 103.0,
+      "bad_to_good": 37.0
+     },
+     "hotel": {
+      "good_to_good": 190.0,
+      "bad_to_bad": 35.0,
+      "good_to_bad": 8.0
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "no_type": {
+      "good_to_good": 667.0,
+      "bad_to_bad": 113.0,
+      "bad_to_good": 27.0
+     },
+     "hotel": {
+      "good_to_good": 195.0,
+      "bad_to_bad": 35.0,
+      "good_to_bad": 3.0
+     }
+    }
+   },
+   "removed_share": {
+    "b_list": [
+     0.23645320197044326,
+     0.16483516483516472,
+     0.3076923076923076
+    ],
+    "b_shot": [
+     0.09852216748768462,
+     0.01421800947867291,
+     0.18000000000000005
+    ],
+    "b_evidence": [
+     -0.32512315270935976,
+     -0.4550561797752809,
+     -0.21052631578947367
+    ],
+    "verify": [
+     0.9211822660098522,
+     0.8833333333333333,
+     0.9569377990430622
+    ],
+    "verify_no_only (post hoc)": [
+     0.541871921182266,
+     0.4729064039408866,
+     0.6084656084656084
+    ]
+   }
+  },
+  "haiku": {
+   "transitions": {
+    "verify": {
+     "no_type": {
+      "good_to_good": 683.0,
+      "bad_to_bad": 123.5,
+      "bad_to_good": 0.5
+     },
+     "hotel": {
+      "good_to_good": 187.0,
+      "good_to_bad": 4.5,
+      "bad_to_bad": 41.5
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "no_type": {
+      "good_to_good": 683.0,
+      "bad_to_bad": 124.0
+     },
+     "hotel": {
+      "good_to_good": 189.0,
+      "bad_to_bad": 41.5,
+      "good_to_bad": 2.5
+     }
+    }
+   },
+   "removed_share": {
+    "b_list": [
+     -0.5636363636363636,
+     -0.9120879120879121,
+     -0.30701754385964924
+    ],
+    "b_shot": [
+     -0.02727272727272719,
+     -0.2222222222222223,
+     0.13559322033898305
+    ],
+    "b_evidence": [
+     -0.33636363636363625,
+     -0.6627906976744186,
+     -0.09599999999999996
+    ],
+    "verify": [
+     0.32727272727272727,
+     0.21428571428571436,
+     0.4563106796116505
+    ],
+    "verify_no_only (post hoc)": [
+     0.22727272727272738,
+     0.12621359223300974,
+     0.33695652173913043
+    ]
+   }
+  },
+  "sol": {
+   "transitions": {
+    "verify": {
+     "no_type": {
+      "good_to_good": 591.0,
+      "bad_to_bad": 115.0,
+      "bad_to_good": 100.0,
+      "good_to_bad": 1.0
+     },
+     "hotel": {
+      "good_to_good": 200.0,
+      "bad_to_bad": 29.0,
+      "good_to_bad": 4.0
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "no_type": {
+      "good_to_good": 592.0,
+      "bad_to_bad": 124.0,
+      "bad_to_good": 91.0
+     },
+     "hotel": {
+      "good_to_good": 204.0,
+      "bad_to_bad": 29.0
+     }
+    }
+   },
+   "removed_share": {
+    "b_list": [
+     0.013129102844638942,
+     -0.026315789473684233,
+     0.050438596491228095
+    ],
+    "b_shot": [
+     0.47702407002188185,
+     0.4304932735426008,
+     0.5260869565217391
+    ],
+    "b_evidence": [
+     -0.054704595185995554,
+     -0.0983981693363844,
+     -0.016913319238900538
+    ],
+    "verify": [
+     0.7505470459518601,
+     0.7094594594594594,
+     0.7900943396226415
+    ],
+    "verify_no_only (post hoc)": [
+     0.5339168490153173,
+     0.4886877828054299,
+     0.5805739514348786
+    ]
+   }
+  },
+  "luna": {
+   "transitions": {
+    "verify": {
+     "no_type": {
+      "good_to_good": 619.5,
+      "bad_to_bad": 151.0,
+      "bad_to_good": 36.5
+     },
+     "hotel": {
+      "good_to_good": 181.5,
+      "good_to_bad": 9.0,
+      "bad_to_bad": 42.5
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "no_type": {
+      "good_to_good": 619.5,
+      "bad_to_bad": 162.5,
+      "bad_to_good": 25.0
+     },
+     "hotel": {
+      "good_to_good": 186.0,
+      "bad_to_bad": 42.5,
+      "good_to_bad": 4.5
+     }
+    }
+   },
+   "removed_share": {
+    "b_list": [
+     0.3240343347639485,
+     0.26291079812206575,
+     0.3871681415929203
+    ],
+    "b_shot": [
+     0.002145922746781068,
+     -0.06588235294117654,
+     0.06567796610169496
+    ],
+    "b_evidence": [
+     -0.3948497854077254,
+     -0.516629711751663,
+     -0.2893700787401575
+    ],
+    "verify": [
+     0.939883923615086,
+     0.9081850357423665,
+     0.9680170575692963
+    ],
+    "verify_no_only (post hoc)": [
+     0.48041872299845334,
+     0.4247493165754694,
+     0.5342950312275466
+    ]
+   }
+  },
+  "opus": {
+   "transitions": {
+    "verify": {
+     "no_type": {
+      "good_to_good": 708.0,
+      "bad_to_bad": 76.0,
+      "bad_to_good": 22.0,
+      "good_to_bad": 1.0
+     },
+     "hotel": {
+      "good_to_good": 201.0,
+      "bad_to_bad": 29.0,
+      "good_to_bad": 3.0
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "no_type": {
+      "good_to_good": 709.0,
+      "bad_to_bad": 80.0,
+      "bad_to_good": 18.0
+     },
+     "hotel": {
+      "good_to_good": 204.0,
+      "bad_to_bad": 29.0
+     }
+    }
+   },
+   "removed_share": {
+    "b_list": [
+     0.12999999999999992,
+     0.05500000000000003,
+     0.20179372197309417
+    ],
+    "verify": [
+     0.74,
+     0.6792452830188679,
+     0.8019323671497586
+    ],
+    "verify_no_only (post hoc)": [
+     0.36,
+     0.2926829268292682,
+     0.42564102564102574
+    ]
+   }
+  },
+  "astra": {
+   "transitions": {
+    "verify": {
+     "no_type": {
+      "good_to_good": 594.0,
+      "bad_to_bad": 104.0,
+      "bad_to_good": 108.0,
+      "good_to_bad": 1.0
+     },
+     "hotel": {
+      "good_to_good": 197.0,
+      "bad_to_bad": 29.0,
+      "good_to_bad": 7.0
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "no_type": {
+      "good_to_good": 595.0,
+      "bad_to_bad": 120.0,
+      "bad_to_good": 92.0
+     },
+     "hotel": {
+      "good_to_good": 204.0,
+      "bad_to_bad": 29.0
+     }
+    }
+   },
+   "removed_share": {
+    "b_list": [
+     0.09761388286334048,
+     0.06511627906976743,
+     0.13125000000000003
+    ],
+    "verify": [
+     0.8329718004338394,
+     0.7982456140350879,
+     0.8676470588235293
+    ],
+    "verify_no_only (post hoc)": [
+     0.5184381778741864,
+     0.4734513274336283,
+     0.5655913978494623
+    ]
+   }
+  }
+ }
+}

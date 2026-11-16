@@ -1,0 +1,594 @@
+{
+ "amendment": "R10-16",
+ "exploratory": true,
+ "pilot": false,
+ "L": 5,
+ "level": 0.9875,
+ "reads": {
+  "open": 1,
+  "specific": 10,
+  "guesthouse": 1
+ },
+ "missing": [],
+ "updates": {
+  "haiku trep (a)": {
+   "agent": "haiku",
+   "control": "erc_haiku t0",
+   "update": "erc2_haiku trep",
+   "all": {
+    "rates": {
+     "open": {
+      "t0": {
+       "k": 31,
+       "n": 448,
+       "share": 0.06919642857142858
+      },
+      "tedit": {
+       "k": 32,
+       "n": 448,
+       "share": 0.07142857142857142
+      }
+     },
+     "specific": {
+      "t0": {
+       "k": 79,
+       "n": 590,
+       "share": 0.13389830508474576
+      },
+      "tedit": {
+       "k": 79,
+       "n": 589,
+       "share": 0.13412563667232597
+      }
+     },
+     "guesthouse": {
+      "t0": {
+       "k": 9,
+       "n": 47,
+       "share": 0.19148936170212766
+      },
+      "tedit": {
+       "k": 8,
+       "n": 47,
+       "share": 0.1702127659574468
+      }
+     }
+    },
+    "kinds": {
+     "t0": {
+      "search": 1066,
+      "none": 19
+     },
+     "tedit": {
+      "search": 1062,
+      "none": 22,
+      "invalid: JSONDecodeError: Expecting property name enclosed in double ": 1
+     }
+    },
+    "type_values": {
+     "t0": {
+      "null": 895,
+      "hotel": 108,
+      "\"any\"": 10,
+      "any": 32,
+      "hotel+guesthouse": 11,
+      "guesthouse": 10
+     },
+     "tedit": {
+      "null": 885,
+      "hotel+guesthouse": 11,
+      "hotel": 108,
+      "\"any\"": 9,
+      "any": 39,
+      "\"hotel\"": 1,
+      "guesthouse": 9
+     }
+    },
+    "sets": {
+     "open": {
+      "pairs": 448,
+      "change": 0.22321428571428573,
+      "interval": [
+       -0.8928571428571429,
+       1.5625
+      ],
+      "decision": "absent"
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.09416195856873828,
+      "interval": [
+       -1.751412429378531,
+       2.2033898305084745
+      ],
+      "decision": "absent"
+     },
+     "guesthouse": {
+      "pairs": 47,
+      "change": -2.127659574468085,
+      "interval": [
+       -8.51063829787234,
+       0.0
+      ],
+      "decision": null
+     }
+    },
+    "release": "pass",
+    "trade": {
+     "wrong_removed": -0.9999999999999964,
+     "correct_lost": -0.013412563667232036,
+     "ratio": null,
+     "ratio_ci95": [
+      -0.4000000000000004,
+      null
+     ],
+     "defined": false
+    },
+    "blocking_open": {
+     "t0": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125,
+      "ci95": [
+       0.017857142857142856,
+       0.049107142857142856
+      ]
+     },
+     "tedit": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125,
+      "ci95": [
+       0.017857142857142856,
+       0.049107142857142856
+      ]
+     }
+    }
+   },
+   "read1": {
+    "rates": {
+     "open": {
+      "t0": {
+       "k": 31,
+       "n": 448,
+       "share": 0.06919642857142858
+      },
+      "tedit": {
+       "k": 32,
+       "n": 448,
+       "share": 0.07142857142857142
+      }
+     },
+     "specific": {
+      "t0": {
+       "k": 9,
+       "n": 59,
+       "share": 0.15254237288135594
+      },
+      "tedit": {
+       "k": 8,
+       "n": 59,
+       "share": 0.13559322033898305
+      }
+     },
+     "guesthouse": {
+      "t0": {
+       "k": 9,
+       "n": 47,
+       "share": 0.19148936170212766
+      },
+      "tedit": {
+       "k": 8,
+       "n": 47,
+       "share": 0.1702127659574468
+      }
+     }
+    },
+    "kinds": {
+     "t0": {
+      "search": 536,
+      "none": 18
+     },
+     "tedit": {
+      "search": 533,
+      "none": 21
+     }
+    },
+    "type_values": {
+     "t0": {
+      "hotel": 47,
+      "null": 455,
+      "guesthouse": 10,
+      "any": 15,
+      "\"any\"": 7,
+      "hotel+guesthouse": 2
+     },
+     "tedit": {
+      "null": 455,
+      "hotel": 46,
+      "\"any\"": 6,
+      "any": 15,
+      "hotel+guesthouse": 2,
+      "guesthouse": 9
+     }
+    },
+    "sets": {
+     "open": {
+      "pairs": 448,
+      "change": 0.22321428571428573,
+      "interval": [
+       -0.8928571428571429,
+       1.5625
+      ],
+      "decision": "absent"
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.694915254237288,
+      "interval": [
+       -10.169491525423728,
+       5.084745762711864
+      ],
+      "decision": "unresolved"
+     },
+     "guesthouse": {
+      "pairs": 47,
+      "change": -2.127659574468085,
+      "interval": [
+       -8.51063829787234,
+       0.0
+      ],
+      "decision": null
+     }
+    },
+    "release": "hold",
+    "trade": {
+     "wrong_removed": -0.9999999999999964,
+     "correct_lost": 1.0000000000000007,
+     "ratio": null,
+     "ratio_ci95": [
+      -0.999999999999998,
+      null
+     ],
+     "defined": false
+    },
+    "blocking_open": {
+     "t0": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125,
+      "ci95": [
+       0.017857142857142856,
+       0.049107142857142856
+      ]
+     },
+     "tedit": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125,
+      "ci95": [
+       0.017857142857142856,
+       0.049107142857142856
+      ]
+     }
+    }
+   },
+   "reads_per_prefix": {
+    "open": {
+     "1 and 1": 448
+    },
+    "specific": {
+     "10 and 10": 59
+    },
+    "guesthouse": {
+     "1 and 1": 47
+    }
+   }
+  },
+  "haiku tord (b)": {
+   "agent": "haiku",
+   "control": "erc_haiku t0",
+   "update": "erc_haiku tord",
+   "all": {
+    "rates": {
+     "open": {
+      "t0": {
+       "k": 31,
+       "n": 448,
+       "share": 0.06919642857142858
+      },
+      "tedit": {
+       "k": 32,
+       "n": 448,
+       "share": 0.07142857142857142
+      }
+     },
+     "specific": {
+      "t0": {
+       "k": 79,
+       "n": 590,
+       "share": 0.13389830508474576
+      },
+      "tedit": {
+       "k": 86,
+       "n": 590,
+       "share": 0.14576271186440679
+      }
+     },
+     "guesthouse": {
+      "t0": {
+       "k": 9,
+       "n": 47,
+       "share": 0.19148936170212766
+      },
+      "tedit": {
+       "k": 7,
+       "n": 47,
+       "share": 0.14893617021276595
+      }
+     }
+    },
+    "kinds": {
+     "t0": {
+      "search": 1066,
+      "none": 19
+     },
+     "tedit": {
+      "search": 1055,
+      "none": 30
+     }
+    },
+    "type_values": {
+     "t0": {
+      "null": 895,
+      "hotel": 108,
+      "\"any\"": 10,
+      "any": 32,
+      "hotel+guesthouse": 11,
+      "guesthouse": 10
+     },
+     "tedit": {
+      "hotel": 114,
+      "null": 880,
+      "any": 26,
+      "hotel+guesthouse": 11,
+      "\"any\"": 7,
+      "\"hotel\"": 4,
+      "guesthouse": 13
+     }
+    },
+    "sets": {
+     "open": {
+      "pairs": 448,
+      "change": 0.22321428571428573,
+      "interval": [
+       -1.7857142857142858,
+       2.232142857142857
+      ],
+      "decision": "absent"
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.1864406779661014,
+      "interval": [
+       -3.5593220338983054,
+       6.610169491525424
+      ],
+      "decision": "unresolved"
+     },
+     "guesthouse": {
+      "pairs": 47,
+      "change": -4.25531914893617,
+      "interval": [
+       -14.893617021276595,
+       6.382978723404255
+      ],
+      "decision": null
+     }
+    },
+    "release": "hold",
+    "trade": {
+     "wrong_removed": -0.9999999999999964,
+     "correct_lost": -0.7000000000000004,
+     "ratio": null,
+     "ratio_ci95": [
+      -1.6000000000000059,
+      null
+     ],
+     "defined": false
+    },
+    "blocking_open": {
+     "t0": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125,
+      "ci95": [
+       0.017857142857142856,
+       0.049107142857142856
+      ]
+     },
+     "tedit": {
+      "k": 15,
+      "n": 448,
+      "share": 0.033482142857142856,
+      "ci95": [
+       0.017857142857142856,
+       0.05133928571428571
+      ]
+     }
+    }
+   },
+   "read1": {
+    "rates": {
+     "open": {
+      "t0": {
+       "k": 31,
+       "n": 448,
+       "share": 0.06919642857142858
+      },
+      "tedit": {
+       "k": 32,
+       "n": 448,
+       "share": 0.07142857142857142
+      }
+     },
+     "specific": {
+      "t0": {
+       "k": 9,
+       "n": 59,
+       "share": 0.15254237288135594
+      },
+      "tedit": {
+       "k": 6,
+       "n": 59,
+       "share": 0.1016949152542373
+      }
+     },
+     "guesthouse": {
+      "t0": {
+       "k": 9,
+       "n": 47,
+       "share": 0.19148936170212766
+      },
+      "tedit": {
+       "k": 7,
+       "n": 47,
+       "share": 0.14893617021276595
+      }
+     }
+    },
+    "kinds": {
+     "t0": {
+      "search": 536,
+      "none": 18
+     },
+     "tedit": {
+      "search": 529,
+      "none": 25
+     }
+    },
+    "type_values": {
+     "t0": {
+      "hotel": 47,
+      "null": 455,
+      "guesthouse": 10,
+      "any": 15,
+      "\"any\"": 7,
+      "hotel+guesthouse": 2
+     },
+     "tedit": {
+      "null": 451,
+      "any": 11,
+      "\"any\"": 7,
+      "hotel": 43,
+      "guesthouse": 13,
+      "hotel+guesthouse": 2,
+      "\"hotel\"": 2
+     }
+    },
+    "sets": {
+     "open": {
+      "pairs": 448,
+      "change": 0.22321428571428573,
+      "interval": [
+       -1.7857142857142858,
+       2.232142857142857
+      ],
+      "decision": "absent"
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -5.084745762711864,
+      "interval": [
+       -16.949152542372882,
+       3.389830508474576
+      ],
+      "decision": "unresolved"
+     },
+     "guesthouse": {
+      "pairs": 47,
+      "change": -4.25531914893617,
+      "interval": [
+       -14.893617021276595,
+       6.382978723404255
+      ],
+      "decision": null
+     }
+    },
+    "release": "hold",
+    "trade": {
+     "wrong_removed": -0.9999999999999964,
+     "correct_lost": 3.0,
+     "ratio": null,
+     "ratio_ci95": [
+      0.0,
+      null
+     ],
+     "defined": false
+    },
+    "blocking_open": {
+     "t0": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125,
+      "ci95": [
+       0.017857142857142856,
+       0.049107142857142856
+      ]
+     },
+     "tedit": {
+      "k": 15,
+      "n": 448,
+      "share": 0.033482142857142856,
+      "ci95": [
+       0.017857142857142856,
+       0.05133928571428571
+      ]
+     }
+    }
+   },
+   "reads_per_prefix": {
+    "open": {
+     "1 and 1": 448
+    },
+    "specific": {
+     "10 and 10": 59
+    },
+    "guesthouse": {
+     "1 and 1": 47
+    }
+   }
+  }
+ },
+ "predictions": {
+  "C1": {
+   "words": "Haiku, update trep (a): the rule gives \"pass\"",
+   "value": "pass",
+   "held": "held"
+  },
+  "C2": {
+   "words": "Haiku, update tord (b): the rule gives \"pass\"",
+   "value": "hold",
+   "held": "failed"
+  },
+  "C3": {
+   "words": "no set of a control update is \"flag-worthy\"",
+   "value": {
+    "haiku trep (a)": [
+     "absent",
+     "absent"
+    ],
+    "haiku tord (b)": [
+     "absent",
+     "unresolved"
+    ]
+   },
+   "held": "held"
+  },
+  "C4": {
+   "words": "Sonnet, update (a): the rule gives \"pass\"",
+   "value": null,
+   "held": "n/a (Sonnet did not run: its bound did not fit the shared limit)"
+  }
+ }
+}

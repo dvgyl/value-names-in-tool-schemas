@@ -1,0 +1,21 @@
+{
+ "post_hoc": true,
+ "corpus_only": true,
+ "dialogues": "the 213 held-out (stage-1) natural dialogues whose brief sets no type; first request only",
+ "first_request_labels_phrase_rule": {
+  "unclear": 213
+ },
+ "first_request_labels_strict_rule": {
+  "unclear": 213
+ },
+ "type_sentences_phrase_rule": 0,
+ "type_sentences_strict_rule": 0,
+ "answers_read": 0,
+ "project_files_opened": [
+  "explore/main/wave1_ids.json"
+ ],
+ "other_data_files_opened": [
+  "corpus/MULTIWOZ2.4/data.json",
+  "corpus/MULTIWOZ2.4/hotel_db.json"
+ ]
+}

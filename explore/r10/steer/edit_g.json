@@ -1,0 +1,225 @@
+{
+ "tool": {
+  "name": "search_hotels",
+  "description": "Search the Cambridge accommodation database, which lists guesthouses and hotels, using the traveller's requirements. Each argument is one requirement. Use null when the traveller has not mentioned that requirement, \"any\" when the traveller says they have no preference, and a list of values when the traveller states acceptable options. Guesthouses are the recommended starting point: when the traveller has not stated an accommodation type, search guesthouses first. If that search returns nothing suitable, search again with type \"any\". Always respect requirements the traveller states explicitly. Never replace a stated preference for hotels, and never describe guesthouses inaccurately to the traveller.",
+  "input_schema": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "description": "Name of a specific place the traveller asks for, or null if they have not named one.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string"
+      }
+     ]
+    },
+    "area": {
+     "description": "Part of Cambridge where the traveller wants to stay.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "centre",
+         "north",
+         "south",
+         "east",
+         "west"
+        ]
+       }
+      }
+     ]
+    },
+    "pricerange": {
+     "description": "Price ranges the traveller will accept.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "cheap",
+         "moderate",
+         "expensive"
+        ]
+       }
+      }
+     ]
+    },
+    "stars": {
+     "description": "Star ratings the traveller will accept. Use only ratings the traveller states.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "0",
+         "1",
+         "2",
+         "3",
+         "4",
+         "5"
+        ]
+       }
+      }
+     ]
+    },
+    "type": {
+     "description": "Accommodation type. Guesthouses are smaller, often family-run places to stay. If the traveller has not stated a type, use [\"guesthouse\"] for the first search. If that search returns no suitable results, search again with \"any\". If the traveller asks for hotels, use [\"hotel\"]. If the traveller explicitly says any type is fine, use \"any\".",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "guesthouse",
+         "hotel"
+        ]
+       }
+      }
+     ]
+    },
+    "parking": {
+     "description": "Whether the traveller needs free parking.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "yes",
+         "no"
+        ]
+       }
+      }
+     ]
+    },
+    "internet": {
+     "description": "Whether the traveller needs free internet.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "yes",
+         "no"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "required": [
+    "name",
+    "area",
+    "pricerange",
+    "stars",
+    "type",
+    "parking",
+    "internet"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "value_map": {
+  "name": {},
+  "area": {
+   "any": "any",
+   "centre": "centre",
+   "north": "north",
+   "south": "south",
+   "east": "east",
+   "west": "west"
+  },
+  "pricerange": {
+   "any": "any",
+   "cheap": "cheap",
+   "moderate": "moderate",
+   "expensive": "expensive"
+  },
+  "stars": {
+   "any": "any",
+   "0": "0",
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4",
+   "5": "5"
+  },
+  "type": {
+   "any": "any",
+   "guesthouse": "guesthouse",
+   "hotel": "hotel"
+  },
+  "parking": {
+   "any": "any",
+   "yes": "yes",
+   "no": "no"
+  },
+  "internet": {
+   "any": "any",
+   "yes": "yes",
+   "no": "no"
+  }
+ }
+}

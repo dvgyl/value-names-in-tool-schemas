@@ -1,0 +1,2589 @@
+{
+ "post_hoc": true,
+ "note": "final-8 analyses of the repairs; see the docstring",
+ "factor": 1.8990120983411198,
+ "part1a_text_reference": {
+  "models": {
+   "sonnet": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.9743589743589743,
+      0.9416666666666667,
+      1.0
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.14912280701754385,
+       "ci": [
+        0.0847457627118644,
+        0.22429906542056074
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.2831860146649038,
+       "ci": [
+        0.16093322867297624,
+        0.42594663888025114
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.14035087719298245,
+       "ci": [
+        0.078125,
+        0.212962962962963
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.2665280138022624,
+       "ci": [
+        0.14836032018289996,
+        0.4044192431652385
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.9122807017543858,
+       "ci": [
+        0.7372262773722628,
+        1.1313131313131313
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.7324320897147056,
+       "ci": [
+        1.4000016199449132,
+        2.1483773233758123
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.5213675213675214,
+      0.432,
+      0.6120689655172413
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.11475409836065574,
+       "ci": [
+        0.03703703703703704,
+        0.2153846153846154
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.2179194211211121,
+       "ci": [
+        0.07033378142004147,
+        0.4090179904119335
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.11475409836065574,
+       "ci": [
+        0.038461538461538464,
+        0.21739130434782608
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.2179194211211121,
+       "ci": [
+        0.07303892685927385,
+        0.4128287170306782
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.6065573770491803,
+       "ci": [
+        0.4057971014492754,
+        0.8863636363636364
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.1518597973544495,
+       "ci": [
+        0.7706136051239327,
+        1.6832152689841744
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "haiku": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.22916666666666666,
+      0.08888888888888889,
+      0.4
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 2.3636363636363638,
+       "ci": [
+        1.0,
+        7.25
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 4.4885740506244645,
+       "ci": [
+        1.8990120983411196,
+        13.767837712973117
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 1.7272727272727273,
+       "ci": [
+        0.6666666666666666,
+        5.6
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 3.28011180622557,
+       "ci": [
+        1.2660080655607464,
+        10.63446775071027
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 5.2727272727272725,
+       "ci": [
+        2.6,
+        15.750000000000002
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 10.012972882162268,
+       "ci": [
+        4.937431455686911,
+        29.90944054887264
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.14583333333333334,
+      0.034482758620689655,
+      0.29411764705882354
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 2.4285714285714284,
+       "ci": [
+        0.7692307692307694,
+        12.0
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 4.61188652454272,
+       "ci": [
+        1.460778537185477,
+        22.788145180093434
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 1.5714285714285712,
+       "ci": [
+        0.375,
+        8.0
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 2.9841618688217593,
+       "ci": [
+        0.7121295368779198,
+        15.192096786728955
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 5.7142857142857135,
+       "ci": [
+        2.3333333333333335,
+        27.0
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 10.851497704806398,
+       "ci": [
+        4.431028229462613,
+        51.273326655210234
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "sol": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.7619047619047619,
+      0.7107142857142857,
+      0.8093525179856115
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.019230769230769232,
+       "ci": [
+        0.004484304932735426,
+        0.04020100502512563
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.036519463429636925,
+       "ci": [
+        0.008515749319915335,
+        0.07634219490818572
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.32211538461538464,
+       "ci": [
+        0.25490196078431376,
+        0.39790575916230364
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.6117010124464184,
+       "ci": [
+        0.48406190742028554,
+        0.7556278506488225
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.5274725274725275,
+      0.46886446886446886,
+      0.5875912408759124
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.027777777777777776,
+       "ci": [
+        0.006369426751592357,
+        0.058823529411764705
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.0527503360650311,
+       "ci": [
+        0.012095618460771463,
+        0.11170659402006587
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.14583333333333334,
+       "ci": [
+        0.08823529411764706,
+        0.21323529411764705
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.2769392643414133,
+       "ci": [
+        0.16755989103009883,
+        0.4049364033227388
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "luna": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.9586466165413534,
+      0.9253112033195021,
+      0.9878542510121457
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.29803921568627445,
+       "ci": [
+        0.2225705329153605,
+        0.38910505836575876
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.5659800763683337,
+       "ci": [
+        0.4226641347405,
+        0.7389152133623034
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.2823529411764706,
+       "ci": [
+        0.20754716981132076,
+        0.37554585152838427
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.5361916512963161,
+       "ci": [
+        0.39413458644815696,
+        0.7131661155342196
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.9137254901960783,
+       "ci": [
+        0.7490494296577946,
+        1.1152073732718892
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.735175760445023,
+       "ci": [
+        1.4224539291756677,
+        2.117792294002539
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.4473684210526316,
+      0.36823104693140796,
+      0.5215686274509804
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.3865546218487395,
+       "ci": [
+        0.24778761061946902,
+        0.574468085106383
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.7340719035604328,
+       "ci": [
+        0.4705516703854102,
+        1.0909218437278774
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.4117647058823529,
+       "ci": [
+        0.26548672566371684,
+        0.6190476190476191
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.7819461581404611,
+       "ci": [
+        0.504162503984368,
+        1.175578918020693
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 1.0756302521008403,
+       "ci": [
+        0.8045112781954887,
+        1.480769230769231
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 2.0426348620812043,
+       "ci": [
+        1.5277766505451114,
+        2.8119986840820435
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "opus": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.8130841121495327,
+      0.7355371900826446,
+      0.8833333333333333
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.06896551724137931,
+       "ci": [
+        0.021505376344086023,
+        0.13095238095238096
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.1309663516097324,
+       "ci": [
+        0.040838969856798274,
+        0.24868015573514662
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.011494252873563218,
+       "ci": [
+        0.0,
+        0.0379746835443038
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.02182772526828873,
+       "ci": [
+        0.0,
+        0.07211438348130834
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.7816091954022989,
+       "ci": [
+        0.5943396226415096,
+        1.0285714285714285
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.484285318243634,
+       "ci": [
+        1.1286581339197226,
+        1.9532695868651517
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.40186915887850466,
+      0.3142857142857143,
+      0.5
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.13953488372093023,
+       "ci": [
+        0.0425531914893617,
+        0.28205128205128205
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.26497843232666785,
+       "ci": [
+        0.08080902546132425,
+        0.5356187969680081
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.023255813953488372,
+       "ci": [
+        0.0,
+        0.08108108108108109
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.04416307205444464,
+       "ci": [
+        0.0,
+        0.15397395391955027
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.46511627906976744,
+       "ci": [
+        0.2619047619047619,
+        0.7567567567567568
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.8832614410888928,
+       "ci": [
+        0.4973603114702933,
+        1.4370902365824691
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "astra": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.8514492753623188,
+      0.8101694915254237,
+      0.8913857677902621
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.017021276595744685,
+       "ci": [
+        0.00398406374501992,
+        0.03524229074889868
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.0323236101845297,
+       "ci": [
+        0.007565785252355058,
+        0.06692553650541391
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.374468085106383,
+       "ci": [
+        0.30916030534351147,
+        0.44196428571428564
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.7111194240596533,
+       "ci": [
+        0.5870991601741631,
+        0.8392955256061198
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.5181159420289855,
+      0.4581818181818182,
+      0.5769230769230769
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.027972027972027972,
+       "ci": [
+        0.006329113924050633,
+        0.058823529411764705
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.05311921953401733,
+       "ci": [
+        0.012019063913551389,
+        0.11170659402006586
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.0,
+       "ci": [
+        0.0,
+        0.0
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.14685314685314685,
+       "ci": [
+        0.08974358974358974,
+        0.21518987341772153
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.278875902553591,
+       "ci": [
+        0.17042416267163896,
+        0.4086481730607473
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "deepseek": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.7611940298507462,
+      0.6903553299492385,
+      0.8277777777777777
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.16339869281045752,
+       "ci": [
+        0.09659090909090909,
+        0.24822695035460993
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.3102960945001829,
+       "ci": [
+        0.18342730495340362,
+        0.47138598185772485
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.13071895424836602,
+       "ci": [
+        0.07027027027027027,
+        0.20714285714285716
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.24823687560014635,
+       "ci": [
+        0.13344409339694355,
+        0.39336679179923195
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.6666666666666666,
+       "ci": [
+        0.5031847133757962,
+        0.8768115942028984
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.2660080655607464,
+       "ci": [
+        0.9555538584009456,
+        1.6650758253570686
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.5522388059701493,
+      0.47959183673469385,
+      0.6292682926829268
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.15315315315315314,
+       "ci": [
+        0.07843137254901962,
+        0.25
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.2908396907369283,
+       "ci": [
+        0.14894212536008783,
+        0.4747530245852799
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.0990990990990991,
+       "ci": [
+        0.041666666666666664,
+        0.17346938775510204
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.18819038812389477,
+       "ci": [
+        0.07912550409754665,
+        0.3294204660387657
+       ],
+       "meets_point": true,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.6216216216216216,
+       "ci": [
+        0.451923076923077,
+        0.8631578947368421
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.1804669800498853,
+       "ci": [
+        0.8582073905964678,
+        1.639147284883914
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "qwen": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.9420289855072463,
+      0.896774193548387,
+      0.9791666666666666
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.517237052779034,
+       "ci": [
+        0.3691305273455996,
+        0.6998714798472568
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.9822394209376897,
+       "ci": [
+        0.7009833372963311,
+        1.329064407513844
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.5250739778211406,
+       "ci": [
+        0.3811837690548437,
+        0.7060107033546889
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.9971218364064428,
+       "ci": [
+        0.7238725891264153,
+        1.3407228672288778
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 1.3714618823686509,
+       "ci": [
+        1.0816030109482706,
+        1.77099857493586
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 2.604422707031753,
+       "ci": [
+        2.0539772033929484,
+        3.363147719948081
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.8043478260869565,
+      0.728,
+      0.8767123287671232
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.5782379828365122,
+       "ci": [
+        0.40752010218954193,
+        0.7982352517114739
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.0980809251269013,
+       "ci": [
+        0.7738856043751495,
+        1.515858400322458
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.587416363516457,
+       "ci": [
+        0.41796933557901744,
+        0.7997034263396925
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.1155107810812968,
+       "ci": [
+        0.7937288250001535,
+        1.5186464817039225
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 1.496076050830976,
+       "ci": [
+        1.1621869580961013,
+        1.9600831002051338
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 2.8410665205664274,
+       "ci": [
+        2.2070070939587603,
+        3.7222215210435183
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   },
+   "gemma": {
+    "verifier, planned gate": {
+     "share_removed_ci": [
+      0.9444444444444444,
+      0.9058441558441559,
+      0.9758620689655172
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.082942076896361,
+       "ci": [
+        0.04076574867865362,
+        0.13178094451328654
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.157508007487729,
+       "ci": [
+        0.07741464993869672,
+        0.2502536079615509
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.03801511857749879,
+       "ci": [
+        0.011264220029627974,
+        0.07061945351908178
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.07219117009854245,
+       "ci": [
+        0.021390890114639887,
+        0.13410719661097467
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.663536615170888,
+       "ci": [
+        0.5387637352972219,
+        0.8175510694921546
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 1.260064059901832,
+       "ci": [
+        1.023118851476877,
+        1.5525393719773233
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    },
+    "verifier, clear-no gate": {
+     "share_removed_ci": [
+      0.6013071895424836,
+      0.5257731958762887,
+      0.674496644295302
+     ],
+     "word rule": {
+      "set": {
+       "ratio": 0.037996336404288567,
+       "ci": [
+        0.006203483494577724,
+        0.07821621056717576
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.0721555025243831,
+       "ci": [
+        0.011780490208062547,
+        0.14853353015346332
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "reader majority (5 of the other 8)": {
+      "set": {
+       "ratio": 0.037996336404288567,
+       "ci": [
+        0.006527848644621004,
+        0.07728506520328082
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      },
+      "group": {
+       "ratio": 0.0721555025243831,
+       "ci": [
+        0.012396463552274969,
+        0.14676527384211255
+       ],
+       "meets_point": true,
+       "meets_whole": true
+      }
+     },
+     "brief": {
+      "set": {
+       "ratio": 0.3745353159851301,
+       "ci": [
+        0.2691271731629677,
+        0.5208262062778906
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      },
+      "group": {
+       "ratio": 0.7112470963117763,
+       "ci": [
+        0.5110757578288212,
+        0.9890552668548219
+       ],
+       "meets_point": false,
+       "meets_whole": false
+      }
+     }
+    }
+   }
+  },
+  "counts": {
+   "verifier, planned gate | word rule | set": {
+    "point": 7,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 6,
+    "whole_models": [
+     "sonnet",
+     "sol",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ]
+   },
+   "verifier, planned gate | word rule | group": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "opus",
+     "astra",
+     "gemma"
+    ],
+    "whole": 4,
+    "whole_models": [
+     "sol",
+     "opus",
+     "astra",
+     "gemma"
+    ]
+   },
+   "verifier, planned gate | reader majority (5 of the other 8) | set": {
+    "point": 7,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 6,
+    "whole_models": [
+     "sonnet",
+     "sol",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ]
+   },
+   "verifier, planned gate | reader majority (5 of the other 8) | group": {
+    "point": 6,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 4,
+    "whole_models": [
+     "sol",
+     "opus",
+     "astra",
+     "gemma"
+    ]
+   },
+   "verifier, planned gate | brief | set": {
+    "point": 0,
+    "point_models": [],
+    "whole": 0,
+    "whole_models": []
+   },
+   "verifier, planned gate | brief | group": {
+    "point": 0,
+    "point_models": [],
+    "whole": 0,
+    "whole_models": []
+   },
+   "verifier, clear-no gate | word rule | set": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 1,
+    "whole_models": [
+     "gemma"
+    ]
+   },
+   "verifier, clear-no gate | word rule | group": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 1,
+    "whole_models": [
+     "gemma"
+    ]
+   },
+   "verifier, clear-no gate | reader majority (5 of the other 8) | set": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 1,
+    "whole_models": [
+     "gemma"
+    ]
+   },
+   "verifier, clear-no gate | reader majority (5 of the other 8) | group": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "astra",
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 1,
+    "whole_models": [
+     "gemma"
+    ]
+   },
+   "verifier, clear-no gate | brief | set": {
+    "point": 2,
+    "point_models": [
+     "sol",
+     "astra"
+    ],
+    "whole": 0,
+    "whole_models": []
+   },
+   "verifier, clear-no gate | brief | group": {
+    "point": 2,
+    "point_models": [
+     "sol",
+     "astra"
+    ],
+    "whole": 0,
+    "whole_models": []
+   }
+  }
+ },
+ "part1b_display": {
+  "counts": {
+   "verify | six models (post hoc) | set": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra"
+    ],
+    "whole": 2,
+    "whole_models": [
+     "sol",
+     "astra"
+    ]
+   },
+   "verify | six models (post hoc) | group": {
+    "point": 3,
+    "point_models": [
+     "sol",
+     "opus",
+     "astra"
+    ],
+    "whole": 2,
+    "whole_models": [
+     "sol",
+     "astra"
+    ]
+   },
+   "verify | three open models (fixed) | set": {
+    "point": 2,
+    "point_models": [
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 1,
+    "whole_models": [
+     "gemma"
+    ]
+   },
+   "verify | three open models (fixed) | group": {
+    "point": 1,
+    "point_models": [
+     "gemma"
+    ],
+    "whole": 0,
+    "whole_models": []
+   },
+   "verify_no_only (post hoc) | six models (post hoc) | set": {
+    "point": 5,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra"
+    ],
+    "whole": 4,
+    "whole_models": [
+     "sonnet",
+     "sol",
+     "opus",
+     "astra"
+    ]
+   },
+   "verify_no_only (post hoc) | six models (post hoc) | group": {
+    "point": 4,
+    "point_models": [
+     "sonnet",
+     "sol",
+     "opus",
+     "astra"
+    ],
+    "whole": 3,
+    "whole_models": [
+     "sol",
+     "opus",
+     "astra"
+    ]
+   },
+   "verify_no_only (post hoc) | three open models (fixed) | set": {
+    "point": 2,
+    "point_models": [
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 2,
+    "whole_models": [
+     "deepseek",
+     "gemma"
+    ]
+   },
+   "verify_no_only (post hoc) | three open models (fixed) | group": {
+    "point": 2,
+    "point_models": [
+     "deepseek",
+     "gemma"
+    ],
+    "whole": 1,
+    "whole_models": [
+     "gemma"
+    ]
+   }
+  },
+  "values": {
+   "sonnet | verify": {
+    "set": [
+     0.21621621621621623,
+     [
+      0.08108108108108109,
+      0.4285714285714285
+     ]
+    ],
+    "group": [
+     0.41059721045213404,
+     [
+      0.15397395391955027,
+      0.8138623278604799
+     ]
+    ]
+   },
+   "sonnet | verify_no_only (post hoc)": {
+    "set": [
+     0.11111111111111112,
+     [
+      0.0,
+      0.2857142857142857
+     ]
+    ],
+    "group": [
+     0.21100134426012443,
+     [
+      0.0,
+      0.5425748852403199
+     ]
+    ]
+   },
+   "haiku | verify": {
+    "set": [
+     9.0,
+     [
+      1.3333333333333333,
+      Infinity
+     ]
+    ],
+    "group": [
+     17.091108885070074,
+     [
+      2.5320161311214933,
+      Infinity
+     ]
+    ]
+   },
+   "haiku | verify_no_only (post hoc)": {
+    "set": [
+     Infinity,
+     [
+      Infinity,
+      Infinity
+     ]
+    ],
+    "group": [
+     Infinity,
+     [
+      Infinity,
+      Infinity
+     ]
+    ]
+   },
+   "sol | verify": {
+    "set": [
+     0.04040404040404041,
+     [
+      0.009009009009009009,
+      0.08421052631578947
+     ]
+    ],
+    "group": [
+     0.07672776154913614,
+     [
+      0.017108217102172252,
+      0.15991680828135743
+     ]
+    ]
+   },
+   "sol | verify_no_only (post hoc)": {
+    "set": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ],
+    "group": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ]
+   },
+   "luna | verify": {
+    "set": [
+     0.2465753424657534,
+     [
+      0.10975609756097561,
+      0.45652173913043476
+     ]
+    ],
+    "group": [
+     0.4682495584950706,
+     [
+      0.20842815713500093,
+      0.8669403057644243
+     ]
+    ]
+   },
+   "luna | verify_no_only (post hoc)": {
+    "set": [
+     0.18,
+     [
+      0.043478260869565216,
+      0.4
+     ]
+    ],
+    "group": [
+     0.34182217770140155,
+     [
+      0.08256574340613564,
+      0.7596048393364478
+     ]
+    ]
+   },
+   "opus | verify": {
+    "set": [
+     0.14285714285714285,
+     [
+      0.0,
+      0.3846153846153847
+     ]
+    ],
+    "group": [
+     0.27128744262015997,
+     [
+      0.0,
+      0.7303892685927384
+     ]
+    ]
+   },
+   "opus | verify_no_only (post hoc)": {
+    "set": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ],
+    "group": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ]
+   },
+   "astra | verify": {
+    "set": [
+     0.06542056074766354,
+     [
+      0.02040816326530612,
+      0.11764705882352942
+     ]
+    ],
+    "group": [
+     0.12423443634007324,
+     [
+      0.038755348945737136,
+      0.22341318804013177
+     ]
+    ]
+   },
+   "astra | verify_no_only (post hoc)": {
+    "set": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ],
+    "group": [
+     0.0,
+     [
+      0.0,
+      0.0
+     ]
+    ]
+   },
+   "deepseek | verify": {
+    "set": [
+     0.16666666666666666,
+     [
+      0.04838709677419355,
+      0.3404255319148936
+     ]
+    ],
+    "group": [
+     0.3165020163901866,
+     [
+      0.09188768217779612,
+      0.646472203690594
+     ]
+    ]
+   },
+   "deepseek | verify_no_only (post hoc)": {
+    "set": [
+     0.125,
+     [
+      0.02040816326530612,
+      0.2826086956521739
+     ]
+    ],
+    "group": [
+     0.23737651229263998,
+     [
+      0.038755348945737136,
+      0.5366773321398817
+     ]
+    ]
+   },
+   "qwen | verify": {
+    "set": [
+     1.2349094005743697,
+     [
+      0.6792001703159032,
+      2.445120613137252
+     ]
+    ],
+    "group": [
+     2.345107892045908,
+     [
+      1.2898093406252493,
+      4.643313626250898
+     ]
+    ]
+   },
+   "qwen | verify_no_only (post hoc)": {
+    "set": [
+     1.4106465075791836,
+     [
+      0.7216501809606471,
+      3.124320783453155
+     ]
+    ],
+    "group": [
+     2.678834784375518,
+     [
+      1.3704224244143273,
+      5.933122966876146
+     ]
+    ]
+   },
+   "gemma | verify": {
+    "set": [
+     0.09162943510339575,
+     [
+      0.01939341441994201,
+      0.1939341441994201
+     ]
+    ],
+    "group": [
+     0.17400540582551102,
+     [
+      0.036828328611613004,
+      0.3682832861161301
+     ]
+    ]
+   },
+   "gemma | verify_no_only (post hoc)": {
+    "set": [
+     0.011097342695855706,
+     [
+      0.0,
+      0.03841387856257745
+     ]
+    ],
+    "group": [
+     0.021073988038867446,
+     [
+      0.0,
+      0.07294842013454116
+     ]
+    ]
+   }
+  }
+ },
+ "part1c_label_clear_no": {
+  "sol": {
+   "removed": 244.0,
+   "lost": 60.99999999999997,
+   "ratio": 0.2499999999999999,
+   "ci": [
+    0.18888888888888883,
+    0.31718061674008813
+   ],
+   "f0_wrong": 457.0,
+   "removed_share": 0.5339168490153173,
+   "meets_rule": true,
+   "dialogues": {
+    "S1t": 994,
+    "S3": 490,
+    "S2": 545
+   }
+  },
+  "astra": {
+   "removed": 238.99999999999997,
+   "lost": 60.0,
+   "ratio": 0.25104602510460255,
+   "ci": [
+    0.1875,
+    0.32173913043478264
+   ],
+   "f0_wrong": 461.0,
+   "removed_share": 0.5184381778741864,
+   "meets_rule": true,
+   "dialogues": {
+    "S1t": 994,
+    "S3": 490,
+    "S2": 545
+   }
+  }
+ },
+ "part1d_word_rule_repair_and_full": {
+  "models": {
+   "sonnet": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9829059829059829,
+      0.956140350877193,
+      1.0
+     ],
+     "majority_set": [
+      0.20869565217391303,
+      0.13043478260869565,
+      0.3055555555555556
+     ],
+     "majority_group": [
+      0.3963155683494511,
+      0.24769723021840692,
+      0.5802536967153422
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.91324200913242,
+      0.8743961352657005,
+      0.9481132075471698
+     ],
+     "ratio_ci": [
+      0.09,
+      0.052132701421800945,
+      0.13903743315508021
+     ]
+    }
+   },
+   "haiku": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9166666666666666,
+      0.7959183673469388,
+      1.0
+     ],
+     "majority_set": [
+      0.9545454545454546,
+      0.5178571428571428,
+      1.7222222222222223
+     ],
+     "majority_group": [
+      1.8126933665983416,
+      0.9834169794980798,
+      3.2705208360319284
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.2925170068027211,
+      0.1968503937007874,
+      0.3961038961038961
+     ],
+     "ratio_ci": [
+      0.6046511627906976,
+      0.2857142857142857,
+      1.15625
+     ]
+    }
+   },
+   "sol": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.989010989010989,
+      0.9745454545454545,
+      1.0
+     ],
+     "majority_set": [
+      0.07777777777777778,
+      0.04710144927536232,
+      0.11387900355871886
+     ],
+     "majority_group": [
+      0.1477009409820871,
+      0.08944622202331362,
+      0.21625760550503856
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.6625916870415648,
+      0.6180904522613065,
+      0.7066326530612245
+     ],
+     "ratio_ci": [
+      0.014760147601476014,
+      0.0035087719298245615,
+      0.03187250996015936
+     ]
+    }
+   },
+   "luna": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9849624060150376,
+      0.9598393574297188,
+      1.0
+     ],
+     "majority_set": [
+      0.19083969465648856,
+      0.12162162162162163,
+      0.2727272727272727
+     ],
+     "majority_group": [
+      0.36240688899639684,
+      0.2309609308793254,
+      0.517912390456669
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.910913140311804,
+      0.8743961352657005,
+      0.9447115384615384
+     ],
+     "ratio_ci": [
+      0.19315403422982885,
+      0.1366906474820144,
+      0.25806451612903225
+     ]
+    }
+   },
+   "opus": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9906542056074766,
+      0.967391304347826,
+      1.0
+     ],
+     "majority_set": [
+      0.2075471698113208,
+      0.12605042016806722,
+      0.30927835051546393
+     ],
+     "majority_group": [
+      0.39413458644815696,
+      0.23937127290014112,
+      0.5873233293838515
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.6711711711711712,
+      0.6086956521739131,
+      0.7316017316017316
+     ],
+     "ratio_ci": [
+      0.040268456375838924,
+      0.011764705882352941,
+      0.07746478873239436
+     ]
+    }
+   },
+   "astra": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9891304347826086,
+      0.9748201438848921,
+      1.0
+     ],
+     "majority_set": [
+      0.07692307692307693,
+      0.046511627906976744,
+      0.11200000000000002
+     ],
+     "majority_group": [
+      0.14607785371854767,
+      0.08832614410888931,
+      0.2126893550142054
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.7761557177615572,
+      0.7371007371007371,
+      0.8127962085308057
+     ],
+     "ratio_ci": [
+      0.012539184952978056,
+      0.0029411764705882353,
+      0.026785714285714284
+     ]
+    }
+   },
+   "deepseek": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9950248756218906,
+      0.9836956521739131,
+      1.0
+     ],
+     "majority_set": [
+      0.2,
+      0.12236286919831224,
+      0.2995169082125604
+     ],
+     "majority_group": [
+      0.3798024196682239,
+      0.23236856899532687,
+      0.5687862323533788
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.6865671641791045,
+      0.6288951841359773,
+      0.7440476190476191
+     ],
+     "ratio_ci": [
+      0.10869565217391304,
+      0.06382978723404255,
+      0.164021164021164
+     ]
+    }
+   },
+   "qwen": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9927536231884058,
+      0.9747899159663865,
+      1.0
+     ],
+     "majority_set": [
+      0.30489642682064266,
+      0.1846148113945911,
+      0.4689715461705046
+     ],
+     "majority_group": [
+      0.5790020032733783,
+      0.3505857603712925,
+      0.8905826399555292
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.9015151515151515,
+      0.8576642335766423,
+      0.9427480916030534
+     ],
+     "ratio_ci": [
+      0.2815126050420168,
+      0.1935483870967742,
+      0.39545454545454545
+     ]
+    }
+   },
+   "gemma": {
+    "word_rule_repair": {
+     "share_removed_ci": [
+      0.9803921568627451,
+      0.9554140127388535,
+      1.0
+     ],
+     "majority_set": [
+      0.1664601404378356,
+      0.10444557831393607,
+      0.23686027888387673
+     ],
+     "majority_group": [
+      0.3161098205830116,
+      0.1983434168363995,
+      0.44980053521693353
+     ]
+    },
+    "full_reassignment_verify": {
+     "share_removed_ci": [
+      0.8830409356725146,
+      0.8419047619047619,
+      0.9201596806387226
+     ],
+     "ratio_ci": [
+      0.06181015452538632,
+      0.03131991051454139,
+      0.09685230024213075
+     ]
+    }
+   }
+  },
+  "counts": {
+   "word rule as a repair vs majority, set: point": {
+    "n": 7,
+    "models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ]
+   },
+   "word rule as a repair vs majority, set: whole": {
+    "n": 5,
+    "models": [
+     "sol",
+     "luna",
+     "astra",
+     "deepseek",
+     "gemma"
+    ]
+   },
+   "word rule as a repair vs majority, group: point": {
+    "n": 2,
+    "models": [
+     "sol",
+     "astra"
+    ]
+   },
+   "word rule as a repair vs majority, group: whole": {
+    "n": 2,
+    "models": [
+     "sol",
+     "astra"
+    ]
+   },
+   "full reassignment, planned verifier: point": {
+    "n": 8,
+    "models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra",
+     "deepseek",
+     "qwen",
+     "gemma"
+    ]
+   },
+   "full reassignment, planned verifier: whole": {
+    "n": 7,
+    "models": [
+     "sonnet",
+     "sol",
+     "luna",
+     "opus",
+     "astra",
+     "deepseek",
+     "gemma"
+    ]
+   }
+  }
+ },
+ "part3_main_text_values": {
+  "rename": {
+   "word rule": {
+    "dialogues": {
+     "nt": 807,
+     "st": 89,
+     "ns": 144
+    },
+    "brief_evaluated": [
+     0.71105846135273,
+     0.6097763595126325,
+     0.8330966976798572
+    ],
+    "brief_label_group": [
+     1.350308620736656,
+     1.1579726839968933,
+     1.5820607079820832
+    ],
+    "text_evaluated": [
+     0.18121661183714122,
+     0.1354615686054974,
+     0.23119943833671078
+    ],
+    "text_label_group": [
+     0.3441325382991178,
+     0.2572431576421052,
+     0.4390505305310855
+    ]
+   },
+   "reader majority": {
+    "dialogues": {
+     "nt": 807,
+     "st": 100,
+     "ns": 133
+    },
+    "brief_evaluated": [
+     0.71105846135273,
+     0.6105104261742611,
+     0.828449662537519
+    ],
+    "brief_label_group": [
+     1.350308620736656,
+     1.159366685468315,
+     1.5732359320253664
+    ],
+    "text_evaluated": [
+     0.18344248936105997,
+     0.13559057044972542,
+     0.23576967260195295
+    ],
+    "text_label_group": [
+     0.34835950664646503,
+     0.2574881337050025,
+     0.4477294606930335
+    ]
+   }
+  },
+  "verifier_planned": {
+   "sonnet": {
+    "brief_group": 1.7324320897147056,
+    "word_rule_group": 0.2831860146649038,
+    "word_rule_group_ci": [
+     0.2831860146649038,
+     0.16093322867297624,
+     0.42594663888025114
+    ],
+    "majority_group": 0.2665280138022624
+   },
+   "haiku": {
+    "brief_group": 10.012972882162268,
+    "word_rule_group": 4.4885740506244645,
+    "word_rule_group_ci": [
+     4.4885740506244645,
+     1.8990120983411196,
+     13.767837712973117
+    ],
+    "majority_group": 3.28011180622557
+   },
+   "sol": {
+    "brief_group": 0.6117010124464184,
+    "word_rule_group": 0.036519463429636925,
+    "word_rule_group_ci": [
+     0.036519463429636925,
+     0.008515749319915335,
+     0.07634219490818572
+    ],
+    "majority_group": 0.0
+   },
+   "luna": {
+    "brief_group": 1.735175760445023,
+    "word_rule_group": 0.5659800763683337,
+    "word_rule_group_ci": [
+     0.5659800763683337,
+     0.4226641347405,
+     0.7389152133623034
+    ],
+    "majority_group": 0.5361916512963161
+   },
+   "opus": {
+    "brief_group": 1.484285318243634,
+    "word_rule_group": 0.1309663516097324,
+    "word_rule_group_ci": [
+     0.1309663516097324,
+     0.040838969856798274,
+     0.24868015573514662
+    ],
+    "majority_group": 0.02182772526828873
+   },
+   "astra": {
+    "brief_group": 0.7111194240596533,
+    "word_rule_group": 0.0323236101845297,
+    "word_rule_group_ci": [
+     0.0323236101845297,
+     0.007565785252355058,
+     0.06692553650541391
+    ],
+    "majority_group": 0.0
+   },
+   "deepseek": {
+    "brief_group": 1.2660080655607464,
+    "word_rule_group": 0.3102960945001829,
+    "word_rule_group_ci": [
+     0.3102960945001829,
+     0.18342730495340362,
+     0.47138598185772485
+    ],
+    "majority_group": 0.24823687560014635
+   },
+   "qwen": {
+    "brief_group": 2.604422707031753,
+    "word_rule_group": 0.9822394209376897,
+    "word_rule_group_ci": [
+     0.9822394209376897,
+     0.7009833372963311,
+     1.329064407513844
+    ],
+    "majority_group": 0.9971218364064428
+   },
+   "gemma": {
+    "brief_group": 1.260064059901832,
+    "word_rule_group": 0.157508007487729,
+    "word_rule_group_ci": [
+     0.157508007487729,
+     0.07741464993869672,
+     0.2502536079615509
+    ],
+    "majority_group": 0.07219117009854245
+   }
+  },
+  "word_rule_repair_brief": {
+   "group": [
+    0.9599401815790276,
+    4.445414684753075
+   ],
+   "evaluated": [
+    0.5054945054945055,
+    2.340909090909091
+   ]
+  },
+  "display_word_rule": {
+   "group": [
+    0.19164342276836988,
+    2.4415869835814394
+   ],
+   "evaluated": [
+    0.10091743119266056,
+    1.2857142857142856
+   ],
+   "group_by_model": {
+    "sonnet": 0.39979202070339365,
+    "haiku": 2.4415869835814394,
+    "sol": 0.19164342276836988,
+    "luna": 0.36419410105172156,
+    "opus": 0.7121295368779199,
+    "astra": 0.20529860522606702,
+    "deepseek": 0.3577848880932545,
+    "qwen": 1.4372161224109918,
+    "gemma": 0.2289071114566636
+   }
+  },
+  "display_always": {
+   "group": [
+    0.37638077624778954,
+    8.409910721224957
+   ],
+   "evaluated": [
+    0.1981981981981982,
+    4.428571428571428
+   ],
+   "group_by_model": {
+    "sonnet": 1.0494540543464084,
+    "haiku": 8.409910721224957,
+    "sol": 0.38328684553673975,
+    "luna": 0.8324436595467922,
+    "opus": 1.8198865942435731,
+    "astra": 0.37638077624778954,
+    "deepseek": 0.8531793485300683,
+    "qwen": 3.1508199606702516,
+    "gemma": 0.5559172706804688
+   }
+  },
+  "display_verifier_group": {
+   "sonnet": [
+    0.41059721045213404,
+    0.15397395391955027,
+    0.8138623278604799
+   ],
+   "haiku": [
+    17.091108885070074,
+    2.5320161311214933,
+    Infinity
+   ],
+   "sol": [
+    0.07672776154913614,
+    0.017108217102172252,
+    0.15991680828135743
+   ],
+   "luna": [
+    0.4682495584950706,
+    0.20842815713500093,
+    0.8669403057644243
+   ],
+   "opus": [
+    0.27128744262015997,
+    0.0,
+    0.7303892685927384
+   ],
+   "astra": [
+    0.12423443634007324,
+    0.038755348945737136,
+    0.22341318804013177
+   ],
+   "deepseek": [
+    0.3165020163901866,
+    0.09188768217779612,
+    0.646472203690594
+   ],
+   "qwen": [
+    2.345107892045908,
+    1.2898093406252493,
+    4.643313626250898
+   ],
+   "gemma": [
+    0.17400540582551102,
+    0.036828328611613004,
+    0.3682832861161301
+   ]
+  }
+ },
+ "part2_table3_paired": {
+  "sonnet": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 37.0,
+    "relax_any": 37.0,
+    "soft": 37.0
+   },
+   "relax_minus_verify": [
+    0.0,
+    -3.0,
+    3.0
+   ],
+   "soft_minus_verify": [
+    0.0,
+    -3.0,
+    3.0
+   ]
+  },
+  "haiku": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 0.5,
+    "relax_any": 3.5,
+    "soft": 3.5
+   },
+   "relax_minus_verify": [
+    3.0,
+    0.0,
+    7.0
+   ],
+   "soft_minus_verify": [
+    3.0,
+    0.0,
+    7.0
+   ]
+  },
+  "sol": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 99.0,
+    "relax_any": 103.0,
+    "soft": 109.0
+   },
+   "relax_minus_verify": [
+    4.0,
+    -4.0,
+    11.0
+   ],
+   "soft_minus_verify": [
+    10.0,
+    4.0,
+    17.0
+   ]
+  },
+  "luna": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 36.5,
+    "relax_any": 33.5,
+    "soft": 36.5
+   },
+   "relax_minus_verify": [
+    -3.0,
+    -6.5,
+    -0.5
+   ],
+   "soft_minus_verify": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "opus": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 21.0,
+    "relax_any": 23.0,
+    "soft": 25.0
+   },
+   "relax_minus_verify": [
+    2.0,
+    -2.0,
+    6.0
+   ],
+   "soft_minus_verify": [
+    4.0,
+    1.0,
+    8.0
+   ]
+  },
+  "astra": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 107.0,
+    "relax_any": 105.0,
+    "soft": 110.0
+   },
+   "relax_minus_verify": [
+    -2.0,
+    -9.0,
+    4.0
+   ],
+   "soft_minus_verify": [
+    3.0,
+    -2.0,
+    8.0
+   ]
+  },
+  "deepseek": {
+   "dialogues": 807,
+   "avoided": {
+    "verify": 30.0,
+    "relax_any": 31.5,
+    "soft": 35.0
+   },
+   "relax_minus_verify": [
+    1.5,
+    -2.5,
+    6.0
+   ],
+   "soft_minus_verify": [
+    5.0,
+    2.0,
+    9.0
+   ]
+  },
+  "qwen": {
+   "dialogues": 801,
+   "avoided": {
+    "verify": 16.5,
+    "relax_any": 15.0,
+    "soft": 20.5
+   },
+   "relax_minus_verify": [
+    -1.5,
+    -6.0,
+    2.5
+   ],
+   "soft_minus_verify": [
+    4.0,
+    1.5,
+    7.0
+   ]
+  },
+  "gemma": {
+   "dialogues": 806,
+   "avoided": {
+    "verify": 54.5,
+    "relax_any": 55.0,
+    "soft": 58.0
+   },
+   "relax_minus_verify": [
+    0.5,
+    -4.5,
+    5.5
+   ],
+   "soft_minus_verify": [
+    3.5,
+    0.5,
+    7.5
+   ]
+  }
+ }
+}

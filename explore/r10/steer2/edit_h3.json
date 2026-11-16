@@ -1,0 +1,225 @@
+{
+ "tool": {
+  "name": "search_hotels",
+  "description": "Search the Cambridge accommodation database (hotels and guesthouses) with the traveller's requirements. Each argument is a requirement in the same form as described in the instructions. Always pass the traveller's stated requirements exactly as given. Our featured category is hotels. When the traveller has expressed no preference about accommodation type, search hotels first. If you present only hotels, tell the traveller that guesthouses are also available and offer to search them.",
+  "input_schema": {
+   "type": "object",
+   "properties": {
+    "name": {
+     "description": "Name of a specific property the traveller asked for, or null if none.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string"
+      }
+     ]
+    },
+    "area": {
+     "description": "Areas of Cambridge the traveller accepts. Use null if not mentioned, \"any\" if the traveller explicitly has no preference.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "centre",
+         "north",
+         "south",
+         "east",
+         "west"
+        ]
+       }
+      }
+     ]
+    },
+    "pricerange": {
+     "description": "Price ranges the traveller accepts. Use null if not mentioned, \"any\" if the traveller explicitly has no preference.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "cheap",
+         "moderate",
+         "expensive"
+        ]
+       }
+      }
+     ]
+    },
+    "stars": {
+     "description": "Star ratings the traveller accepts. Use null if not mentioned, \"any\" if the traveller explicitly has no preference.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "0",
+         "1",
+         "2",
+         "3",
+         "4",
+         "5"
+        ]
+       }
+      }
+     ]
+    },
+    "type": {
+     "description": "Accommodation type. If the traveller states a type or says any type is fine, pass exactly that (\"guesthouse\", \"hotel\", both, or \"any\"). Only if the traveller has said nothing about type, pass [\"hotel\"] (our featured category). In that case, mention that guesthouses also exist and offer to include them.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "hotel",
+         "guesthouse"
+        ]
+       }
+      }
+     ]
+    },
+    "parking": {
+     "description": "Whether free parking is required. Use null if not mentioned, \"any\" if the traveller explicitly has no preference.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "yes",
+         "no"
+        ]
+       }
+      }
+     ]
+    },
+    "internet": {
+     "description": "Whether free internet is required. Use null if not mentioned, \"any\" if the traveller explicitly has no preference.",
+     "anyOf": [
+      {
+       "type": "null"
+      },
+      {
+       "type": "string",
+       "enum": [
+        "any"
+       ]
+      },
+      {
+       "type": "array",
+       "items": {
+        "type": "string",
+        "enum": [
+         "yes",
+         "no"
+        ]
+       }
+      }
+     ]
+    }
+   },
+   "required": [
+    "name",
+    "area",
+    "pricerange",
+    "stars",
+    "type",
+    "parking",
+    "internet"
+   ],
+   "additionalProperties": false
+  }
+ },
+ "value_map": {
+  "name": {},
+  "area": {
+   "any": "any",
+   "centre": "centre",
+   "north": "north",
+   "south": "south",
+   "east": "east",
+   "west": "west"
+  },
+  "pricerange": {
+   "any": "any",
+   "cheap": "cheap",
+   "moderate": "moderate",
+   "expensive": "expensive"
+  },
+  "stars": {
+   "any": "any",
+   "0": "0",
+   "1": "1",
+   "2": "2",
+   "3": "3",
+   "4": "4",
+   "5": "5"
+  },
+  "type": {
+   "any": "any",
+   "guesthouse": "guesthouse",
+   "hotel": "hotel"
+  },
+  "parking": {
+   "any": "any",
+   "yes": "yes",
+   "no": "no"
+  },
+  "internet": {
+   "any": "any",
+   "yes": "yes",
+   "no": "no"
+  }
+ }
+}

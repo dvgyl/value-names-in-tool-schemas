@@ -1,0 +1,465 @@
+{
+ "sonnet": {
+  "counts": {
+   "t0": {
+    "answers": 1662,
+    "search, schema-valid": 1630,
+    "non-call": 3,
+    "search, not schema-valid": 29
+   },
+   "t1": {
+    "answers": 1662,
+    "search, schema-valid": 1636,
+    "search, not schema-valid": 21,
+    "non-call": 5
+   },
+   "t0ask": {
+    "answers": 1662,
+    "search, schema-valid": 1562,
+    "ask call": 74,
+    "search, not schema-valid": 26
+   }
+  },
+  "exclusion_448": {
+   "t0": {
+    "non-calls among scorable": 1,
+    "n scorable": 1344,
+    "k scorable": 144,
+    "n schema-valid": 1322,
+    "k schema-valid": 142,
+    "k removed": 2
+   },
+   "t1": {
+    "non-calls among scorable": 3,
+    "n scorable": 1344,
+    "k scorable": 15,
+    "n schema-valid": 1329,
+    "k schema-valid": 15,
+    "k removed": 0
+   },
+   "t0ask": {
+    "non-calls among scorable": 0,
+    "n scorable": 1344,
+    "k scorable": 123,
+    "n schema-valid": 1325,
+    "k schema-valid": 121,
+    "k removed": 2
+   }
+  },
+  "step2": {
+   "empty trials": 88,
+   "empty trials after a call that is not schema-valid": 8,
+   "trials after an exclusion": 96,
+   "trials after an exclusion, call not schema-valid": 2,
+   "nonempty trials": 219,
+   "nonempty trials after a call that is not schema-valid": 0,
+   "empty, not valid: a search without the invalid fields finds a venue": 8,
+   "empty, not valid: kinds quoted value": 8
+  },
+  "paired": {
+   "all 554": {
+    "stored": -24.127557160048134,
+    "sensitivity": -24.239659367396595,
+    "difference": -0.11210220734846033
+   },
+   "brief no type 448": {
+    "stored": -19.12202380952381,
+    "sensitivity": -19.288389513108616,
+    "difference": -0.1663657035848054
+   }
+  },
+  "ask_share": {
+   "stored": [
+    74,
+    1662,
+    4.452466907340553
+   ],
+   "sensitivity": [
+    74,
+    1636,
+    4.52322738386308
+   ]
+  }
+ },
+ "haiku": {
+  "counts": {
+   "t0": {
+    "answers": 1108,
+    "search, schema-valid": 996,
+    "search, not schema-valid": 76,
+    "non-call": 32,
+    "other": 4
+   },
+   "t1": {
+    "answers": 1108,
+    "search, schema-valid": 992,
+    "search, not schema-valid": 75,
+    "non-call": 40,
+    "other": 1
+   },
+   "t0ask": {
+    "answers": 1108,
+    "search, schema-valid": 954,
+    "ask call": 71,
+    "search, not schema-valid": 72,
+    "non-call": 11
+   }
+  },
+  "exclusion_448": {
+   "t0": {
+    "non-calls among scorable": 29,
+    "n scorable": 894,
+    "k scorable": 28,
+    "n schema-valid": 839,
+    "k schema-valid": 25,
+    "k removed": 3
+   },
+   "t1": {
+    "non-calls among scorable": 35,
+    "n scorable": 895,
+    "k scorable": 2,
+    "n schema-valid": 840,
+    "k schema-valid": 2,
+    "k removed": 0
+   },
+   "t0ask": {
+    "non-calls among scorable": 10,
+    "n scorable": 896,
+    "k scorable": 25,
+    "n schema-valid": 841,
+    "k schema-valid": 22,
+    "k removed": 3
+   }
+  },
+  "step2": {
+   "empty trials": 49,
+   "empty trials after a call that is not schema-valid": 14,
+   "nonempty trials": 39,
+   "nonempty trials after a call that is not schema-valid": 0,
+   "empty, not valid: a search without the invalid fields finds a venue": 9,
+   "empty, not valid: kinds quoted value": 14,
+   "trials after an exclusion": 28,
+   "trials after an exclusion, call not schema-valid": 3
+  },
+  "paired": {
+   "all 554": {
+    "stored": -6.148282097649186,
+    "sensitivity": -5.577299412915851,
+    "difference": 0.5709826847333348
+   },
+   "brief no type 448": {
+    "stored": -5.803571428571429,
+    "sensitivity": -5.515587529976019,
+    "difference": 0.2879838985954102
+   }
+  },
+  "ask_share": {
+   "stored": [
+    71,
+    1108,
+    6.407942238267148
+   ],
+   "sensitivity": [
+    71,
+    1036,
+    6.853281853281853
+   ]
+  }
+ },
+ "opus": {
+  "counts": {
+   "t0": {
+    "answers": 1108,
+    "search, schema-valid": 1035,
+    "search, not schema-valid": 73
+   },
+   "t1": {
+    "answers": 1108,
+    "search, schema-valid": 1041,
+    "search, not schema-valid": 67
+   },
+   "t0ask": {
+    "answers": 1108,
+    "search, schema-valid": 1014,
+    "search, not schema-valid": 66,
+    "ask call": 28
+   }
+  },
+  "exclusion_448": {
+   "t0": {
+    "non-calls among scorable": 0,
+    "n scorable": 896,
+    "k scorable": 107,
+    "n schema-valid": 842,
+    "k schema-valid": 97,
+    "k removed": 10
+   },
+   "t1": {
+    "non-calls among scorable": 0,
+    "n scorable": 896,
+    "k scorable": 12,
+    "n schema-valid": 845,
+    "k schema-valid": 12,
+    "k removed": 0
+   },
+   "t0ask": {
+    "non-calls among scorable": 0,
+    "n scorable": 896,
+    "k scorable": 69,
+    "n schema-valid": 847,
+    "k schema-valid": 64,
+    "k removed": 5
+   }
+  },
+  "step2": {
+   "nonempty trials": 132,
+   "nonempty trials after a call that is not schema-valid": 0,
+   "empty trials": 47,
+   "empty trials after a call that is not schema-valid": 12,
+   "trials after an exclusion": 51,
+   "trials after an exclusion, call not schema-valid": 5,
+   "empty, not valid: a search without the invalid fields finds a venue": 11,
+   "empty, not valid: kinds quoted value": 12
+  },
+  "paired": {
+   "all 554": {
+    "stored": -26.444043321299638,
+    "sensitivity": -26.878612716763005,
+    "difference": -0.4345693954633667
+   },
+   "brief no type 448": {
+    "stored": -21.875,
+    "sensitivity": -21.61520190023753,
+    "difference": 0.25979809976247026
+   }
+  },
+  "ask_share": {
+   "stored": [
+    28,
+    1108,
+    2.527075812274368
+   ],
+   "sensitivity": [
+    28,
+    1042,
+    2.6871401151631478
+   ]
+  }
+ },
+ "sol": {
+  "counts": {
+   "t0": {
+    "answers": 1662,
+    "search, schema-valid": 1662
+   },
+   "t1": {
+    "answers": 1662,
+    "search, schema-valid": 1662
+   },
+   "t0ask": {
+    "answers": 1662,
+    "search, schema-valid": 1617,
+    "ask call": 45
+   }
+  },
+  "exclusion_448": {
+   "t0": {
+    "non-calls among scorable": 0,
+    "n scorable": 1344,
+    "k scorable": 243,
+    "n schema-valid": 1344,
+    "k schema-valid": 243
+   },
+   "t1": {
+    "non-calls among scorable": 0,
+    "n scorable": 1344,
+    "k scorable": 93,
+    "n schema-valid": 1344,
+    "k schema-valid": 93
+   },
+   "t0ask": {
+    "non-calls among scorable": 0,
+    "n scorable": 1344,
+    "k scorable": 223,
+    "n schema-valid": 1344,
+    "k schema-valid": 223
+   }
+  },
+  "step2": {
+   "empty trials": 134,
+   "empty trials after a call that is not schema-valid": 0,
+   "nonempty trials": 351,
+   "nonempty trials after a call that is not schema-valid": 0,
+   "trials after an exclusion": 161,
+   "trials after an exclusion, call not schema-valid": 0
+  },
+  "paired": {
+   "all 554": {
+    "stored": -29.482551143200965,
+    "sensitivity": -29.482551143200965,
+    "difference": 0.0
+   },
+   "brief no type 448": {
+    "stored": -23.958333333333332,
+    "sensitivity": -23.958333333333332,
+    "difference": 0.0
+   }
+  },
+  "ask_share": {
+   "stored": [
+    45,
+    1662,
+    2.707581227436823
+   ],
+   "sensitivity": [
+    45,
+    1662,
+    2.707581227436823
+   ]
+  }
+ },
+ "luna": {
+  "counts": {
+   "t0": {
+    "answers": 1108,
+    "search, schema-valid": 1108
+   },
+   "t1": {
+    "answers": 1108,
+    "search, schema-valid": 1108
+   },
+   "t0ask": {
+    "answers": 1108,
+    "search, schema-valid": 1062,
+    "ask call": 46
+   }
+  },
+  "exclusion_448": {
+   "t0": {
+    "non-calls among scorable": 0,
+    "n scorable": 896,
+    "k scorable": 85,
+    "n schema-valid": 896,
+    "k schema-valid": 85
+   },
+   "t1": {
+    "non-calls among scorable": 0,
+    "n scorable": 896,
+    "k scorable": 1,
+    "n schema-valid": 896,
+    "k schema-valid": 1
+   },
+   "t0ask": {
+    "non-calls among scorable": 0,
+    "n scorable": 896,
+    "k scorable": 81,
+    "n schema-valid": 896,
+    "k schema-valid": 81
+   }
+  },
+  "step2": {
+   "nonempty trials": 179,
+   "nonempty trials after a call that is not schema-valid": 0,
+   "trials after an exclusion": 85,
+   "trials after an exclusion, call not schema-valid": 0,
+   "empty trials": 70,
+   "empty trials after a call that is not schema-valid": 0
+  },
+  "paired": {
+   "all 554": {
+    "stored": -21.299638989169676,
+    "sensitivity": -21.299638989169676,
+    "difference": 0.0
+   },
+   "brief no type 448": {
+    "stored": -18.191964285714285,
+    "sensitivity": -18.191964285714285,
+    "difference": 0.0
+   }
+  },
+  "ask_share": {
+   "stored": [
+    46,
+    1108,
+    4.1516245487364625
+   ],
+   "sensitivity": [
+    46,
+    1108,
+    4.1516245487364625
+   ]
+  }
+ },
+ "astra": {
+  "counts": {
+   "t0": {
+    "answers": 554,
+    "search, schema-valid": 554
+   },
+   "t1": {
+    "answers": 554,
+    "search, schema-valid": 554
+   },
+   "t0ask": {
+    "answers": 554,
+    "search, schema-valid": 535,
+    "ask call": 19
+   }
+  },
+  "exclusion_448": {
+   "t0": {
+    "non-calls among scorable": 0,
+    "n scorable": 448,
+    "k scorable": 85,
+    "n schema-valid": 448,
+    "k schema-valid": 85
+   },
+   "t1": {
+    "non-calls among scorable": 0,
+    "n scorable": 448,
+    "k scorable": 12,
+    "n schema-valid": 448,
+    "k schema-valid": 12
+   },
+   "t0ask": {
+    "non-calls among scorable": 0,
+    "n scorable": 448,
+    "k scorable": 79,
+    "n schema-valid": 448,
+    "k schema-valid": 79
+   }
+  },
+  "step2": {
+   "empty trials": 70,
+   "empty trials after a call that is not schema-valid": 0,
+   "nonempty trials": 183,
+   "nonempty trials after a call that is not schema-valid": 0,
+   "trials after an exclusion": 85,
+   "trials after an exclusion, call not schema-valid": 0
+  },
+  "paired": {
+   "all 554": {
+    "stored": -38.628158844765345,
+    "sensitivity": -38.628158844765345,
+    "difference": 0.0
+   },
+   "brief no type 448": {
+    "stored": -31.026785714285715,
+    "sensitivity": -31.026785714285715,
+    "difference": 0.0
+   }
+  },
+  "ask_share": {
+   "stored": [
+    19,
+    554,
+    3.4296028880866425
+   ],
+   "sensitivity": [
+    19,
+    554,
+    3.4296028880866425
+   ]
+  }
+ }
+}

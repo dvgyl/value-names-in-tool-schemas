@@ -1,0 +1,1402 @@
+{
+ "exploratory": true,
+ "missing": [],
+ "models": {
+  "sonnet": {
+   "missing_folders": [],
+   "rates": {
+    "f0": {
+     "S1t": {
+      "k": 191,
+      "n": 994,
+      "share": 0.1921529175050302
+     },
+     "S3": {
+      "k": 36,
+      "n": 490,
+      "share": 0.07346938775510205
+     },
+     "S2": {
+      "k": 375,
+      "n": 545,
+      "share": 0.6880733944954128
+     }
+    },
+    "b_list": {
+     "S1t": {
+      "k": 145,
+      "n": 994,
+      "share": 0.14587525150905434
+     },
+     "S3": {
+      "k": 10,
+      "n": 490,
+      "share": 0.02040816326530612
+     },
+     "S2": {
+      "k": 326,
+      "n": 545,
+      "share": 0.5981651376146789
+     }
+    },
+    "b_shot": {
+     "S1t": {
+      "k": 173,
+      "n": 994,
+      "share": 0.17404426559356137
+     },
+     "S3": {
+      "k": 26,
+      "n": 490,
+      "share": 0.053061224489795916
+     },
+     "S2": {
+      "k": 369,
+      "n": 545,
+      "share": 0.6770642201834862
+     }
+    },
+    "b_evidence": {
+     "S1t": {
+      "k": 261,
+      "n": 994,
+      "share": 0.2625754527162978
+     },
+     "S3": {
+      "k": 39,
+      "n": 490,
+      "share": 0.07959183673469387
+     },
+     "S2": {
+      "k": 429,
+      "n": 545,
+      "share": 0.7871559633027523
+     }
+    },
+    "verify": {
+     "S1t": {
+      "k": 19,
+      "n": 994,
+      "share": 0.019114688128772636
+     },
+     "S3": {
+      "k": 21,
+      "n": 490,
+      "share": 0.04285714285714286
+     },
+     "S2": {
+      "k": 132,
+      "n": 545,
+      "share": 0.24220183486238533
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "S1t": {
+      "k": 95,
+      "n": 994,
+      "share": 0.09557344064386318
+     },
+     "S3": {
+      "k": 22,
+      "n": 490,
+      "share": 0.044897959183673466
+     },
+     "S2": {
+      "k": 276,
+      "n": 545,
+      "share": 0.5064220183486239
+     }
+    }
+   },
+   "trade": {
+    "b_list": {
+     "removed": 72.0,
+     "lost": 48.99999999999997,
+     "ratio": 0.6805555555555551,
+     "ci": [
+      0.43902439024390244,
+      1.0188679245283019
+     ],
+     "f0_wrong": 227.0,
+     "removed_share": 0.31718061674008813,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_shot": {
+     "removed": 28.00000000000001,
+     "lost": 6.0,
+     "ratio": 0.2142857142857142,
+     "ci": [
+      -0.24999999999999978,
+      0.9999999999999963
+     ],
+     "f0_wrong": 227.0,
+     "removed_share": 0.12334801762114542,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_evidence": {
+     "removed": -72.99999999999999,
+     "lost": -54.0,
+     "ratio": null,
+     "ci": [
+      null,
+      null
+     ],
+     "f0_wrong": 227.0,
+     "removed_share": -0.3215859030837004,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify": {
+     "removed": 187.00000000000003,
+     "lost": 242.99999999999997,
+     "ratio": 1.2994652406417109,
+     "ci": [
+      1.1085972850678731,
+      1.5341614906832297
+     ],
+     "f0_wrong": 227.0,
+     "removed_share": 0.8237885462555067,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "removed": 110.00000000000001,
+     "lost": 98.99999999999997,
+     "ratio": 0.8999999999999996,
+     "ci": [
+      0.6949152542372881,
+      1.1630434782608696
+     ],
+     "f0_wrong": 227.0,
+     "removed_share": 0.4845814977973569,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    }
+   },
+   "evidence": {
+    "wrong_hotel_raw": 365,
+    "stated": 300,
+    "quote_given": 365,
+    "quote_verbatim": 364
+   },
+   "verify_table": {
+    "S1t, baseline hotel and guesthouse": {
+     "no": 3
+    },
+    "S1t, baseline hotel only": {
+     "yes": 16,
+     "no": 96,
+     "unclear": 76
+    },
+    "S1t, baseline no hotel": {
+     "no": 634,
+     "unclear": 168,
+     "yes": 1
+    },
+    "S2, baseline hotel and guesthouse": {
+     "no": 6
+    },
+    "S2, baseline hotel only": {
+     "unclear": 144,
+     "no": 99,
+     "yes": 126
+    },
+    "S2, baseline no hotel": {
+     "unclear": 79,
+     "no": 90,
+     "yes": 1
+    },
+    "S3, baseline hotel and guesthouse": {
+     "no": 21
+    },
+    "S3, baseline hotel only": {
+     "unclear": 1,
+     "no": 14
+    },
+    "S3, baseline no hotel": {
+     "no": 451,
+     "yes": 3
+    }
+   },
+   "random_deletion_ratio": 1.6519823788546255
+  },
+  "haiku": {
+   "missing_folders": [],
+   "rates": {
+    "f0": {
+     "S1t": {
+      "k": 103,
+      "n": 1988,
+      "share": 0.05181086519114688
+     },
+     "S3": {
+      "k": 46,
+      "n": 980,
+      "share": 0.04693877551020408
+     },
+     "S2": {
+      "k": 447,
+      "n": 1090,
+      "share": 0.41009174311926605
+     }
+    },
+    "b_list": {
+     "S1t": {
+      "k": 161,
+      "n": 1988,
+      "share": 0.08098591549295775
+     },
+     "S3": {
+      "k": 11,
+      "n": 980,
+      "share": 0.011224489795918367
+     },
+     "S2": {
+      "k": 502,
+      "n": 1090,
+      "share": 0.46055045871559636
+     }
+    },
+    "b_shot": {
+     "S1t": {
+      "k": 112,
+      "n": 1988,
+      "share": 0.056338028169014086
+     },
+     "S3": {
+      "k": 40,
+      "n": 980,
+      "share": 0.04081632653061224
+     },
+     "S2": {
+      "k": 499,
+      "n": 1090,
+      "share": 0.4577981651376147
+     }
+    },
+    "b_evidence": {
+     "S1t": {
+      "k": 132,
+      "n": 1988,
+      "share": 0.06639839034205232
+     },
+     "S3": {
+      "k": 37,
+      "n": 980,
+      "share": 0.03775510204081633
+     },
+     "S2": {
+      "k": 492,
+      "n": 1090,
+      "share": 0.45137614678899085
+     }
+    },
+    "verify": {
+     "S1t": {
+      "k": 78,
+      "n": 1988,
+      "share": 0.039235412474849095
+     },
+     "S3": {
+      "k": 35,
+      "n": 980,
+      "share": 0.03571428571428571
+     },
+     "S2": {
+      "k": 367,
+      "n": 1090,
+      "share": 0.336697247706422
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "S1t": {
+      "k": 89,
+      "n": 1988,
+      "share": 0.04476861167002012
+     },
+     "S3": {
+      "k": 35,
+      "n": 980,
+      "share": 0.03571428571428571
+     },
+     "S2": {
+      "k": 393,
+      "n": 1090,
+      "share": 0.3605504587155963
+     }
+    }
+   },
+   "trade": {
+    "b_list": {
+     "removed": -11.500000000000004,
+     "lost": -27.500000000000018,
+     "ratio": null,
+     "ci": [
+      null,
+      null
+     ],
+     "f0_wrong": 74.5,
+     "removed_share": -0.1543624161073826,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_shot": {
+     "removed": -1.5,
+     "lost": -26.0,
+     "ratio": null,
+     "ci": [
+      null,
+      null
+     ],
+     "f0_wrong": 74.5,
+     "removed_share": -0.020134228187919462,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_evidence": {
+     "removed": -10.000000000000005,
+     "lost": -22.500000000000018,
+     "ratio": null,
+     "ci": [
+      null,
+      null
+     ],
+     "f0_wrong": 74.5,
+     "removed_share": -0.13422818791946317,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify": {
+     "removed": 18.0,
+     "lost": 40.0,
+     "ratio": 2.2222222222222223,
+     "ci": [
+      1.3617021276595744,
+      3.884615384615385
+     ],
+     "f0_wrong": 74.5,
+     "removed_share": 0.24161073825503357,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "removed": 12.5,
+     "lost": 27.0,
+     "ratio": 2.16,
+     "ci": [
+      1.2105263157894735,
+      4.214285714285718
+     ],
+     "f0_wrong": 74.5,
+     "removed_share": 0.16778523489932887,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    }
+   },
+   "evidence": {
+    "wrong_hotel_raw": 213,
+    "stated": 169,
+    "quote_given": 213,
+    "quote_verbatim": 208
+   },
+   "verify_table": {
+    "S1t, baseline hotel and guesthouse": {
+     "unclear": 2,
+     "no": 7,
+     "yes": 5
+    },
+    "S1t, baseline hotel only": {
+     "unclear": 11,
+     "no": 14,
+     "yes": 64
+    },
+    "S1t, baseline no hotel": {
+     "unclear": 662,
+     "no": 1117,
+     "yes": 106
+    },
+    "S2, baseline hotel and guesthouse": {
+     "no": 5,
+     "yes": 1
+    },
+    "S2, baseline hotel only": {
+     "unclear": 26,
+     "yes": 361,
+     "no": 54
+    },
+    "S2, baseline no hotel": {
+     "no": 260,
+     "unclear": 306,
+     "yes": 77
+    },
+    "S3, baseline hotel and guesthouse": {
+     "no": 24,
+     "yes": 1
+    },
+    "S3, baseline hotel only": {
+     "yes": 10,
+     "no": 11
+    },
+    "S3, baseline no hotel": {
+     "no": 859,
+     "yes": 55,
+     "unclear": 20
+    }
+   },
+   "random_deletion_ratio": 3.0
+  },
+  "sol": {
+   "missing_folders": [],
+   "rates": {
+    "f0": {
+     "S1t": {
+      "k": 417,
+      "n": 994,
+      "share": 0.41951710261569414
+     },
+     "S3": {
+      "k": 59,
+      "n": 490,
+      "share": 0.12040816326530612
+     },
+     "S2": {
+      "k": 496,
+      "n": 545,
+      "share": 0.9100917431192661
+     }
+    },
+    "b_list": {
+     "S1t": {
+      "k": 423,
+      "n": 994,
+      "share": 0.4255533199195171
+     },
+     "S3": {
+      "k": 28,
+      "n": 490,
+      "share": 0.05714285714285714
+     },
+     "S2": {
+      "k": 483,
+      "n": 545,
+      "share": 0.8862385321100917
+     }
+    },
+    "b_shot": {
+     "S1t": {
+      "k": 219,
+      "n": 994,
+      "share": 0.22032193158953722
+     },
+     "S3": {
+      "k": 42,
+      "n": 490,
+      "share": 0.08571428571428572
+     },
+     "S2": {
+      "k": 388,
+      "n": 545,
+      "share": 0.7119266055045872
+     }
+    },
+    "b_evidence": {
+     "S1t": {
+      "k": 447,
+      "n": 994,
+      "share": 0.44969818913480886
+     },
+     "S3": {
+      "k": 54,
+      "n": 490,
+      "share": 0.11020408163265306
+     },
+     "S2": {
+      "k": 493,
+      "n": 545,
+      "share": 0.9045871559633027
+     }
+    },
+    "verify": {
+     "S1t": {
+      "k": 116,
+      "n": 994,
+      "share": 0.11670020120724346
+     },
+     "S3": {
+      "k": 17,
+      "n": 490,
+      "share": 0.03469387755102041
+     },
+     "S2": {
+      "k": 306,
+      "n": 545,
+      "share": 0.5614678899082569
+     }
+    },
+    "b_define": {
+     "S1t": {
+      "k": 0,
+      "n": 0,
+      "share": null
+     },
+     "S3": {
+      "k": 26,
+      "n": 490,
+      "share": 0.053061224489795916
+     },
+     "S2": {
+      "k": 306,
+      "n": 545,
+      "share": 0.5614678899082569
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "S1t": {
+      "k": 214,
+      "n": 994,
+      "share": 0.2152917505030181
+     },
+     "S3": {
+      "k": 18,
+      "n": 490,
+      "share": 0.036734693877551024
+     },
+     "S2": {
+      "k": 435,
+      "n": 545,
+      "share": 0.7981651376146789
+     }
+    }
+   },
+   "trade": {
+    "b_list": {
+     "removed": 24.999999999999964,
+     "lost": 13.00000000000003,
+     "ratio": 0.5200000000000019,
+     "ci": [
+      0.15384615384615383,
+      2.750000000000002
+     ],
+     "f0_wrong": 476.0,
+     "removed_share": 0.05252100840336127,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_shot": {
+     "removed": 214.99999999999997,
+     "lost": 108.0,
+     "ratio": 0.5023255813953489,
+     "ci": [
+      0.4045454545454544,
+      0.6153846153846154
+     ],
+     "f0_wrong": 476.0,
+     "removed_share": 0.4516806722689075,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_evidence": {
+     "removed": -25.000000000000032,
+     "lost": 3.00000000000003,
+     "ratio": null,
+     "ci": [
+      null,
+      null
+     ],
+     "f0_wrong": 476.0,
+     "removed_share": -0.052521008403361415,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify": {
+     "removed": 343.0,
+     "lost": 190.0,
+     "ratio": 0.5539358600583091,
+     "ci": [
+      0.4756446991404011,
+      0.6392961876832844
+     ],
+     "f0_wrong": 476.0,
+     "removed_share": 0.7205882352941176,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_define": null,
+    "verify_no_only (post hoc)": {
+     "removed": 243.99999999999997,
+     "lost": 61.000000000000036,
+     "ratio": 0.25000000000000017,
+     "ci": [
+      0.18888888888888877,
+      0.31718061674008813
+     ],
+     "f0_wrong": 476.0,
+     "removed_share": 0.5126050420168067,
+     "meets_rule": true,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    }
+   },
+   "evidence": {
+    "wrong_hotel_raw": 671,
+    "stated": 501,
+    "quote_given": 671,
+    "quote_verbatim": 671
+   },
+   "verify_table": {
+    "S1t, baseline hotel and guesthouse": {
+     "no": 3
+    },
+    "S1t, baseline hotel only": {
+     "no": 203,
+     "yes": 113,
+     "unclear": 98
+    },
+    "S1t, baseline no hotel": {
+     "no": 417,
+     "unclear": 159,
+     "yes": 1
+    },
+    "S2, baseline hotel and guesthouse": {
+     "no": 5,
+     "yes": 2
+    },
+    "S2, baseline hotel only": {
+     "unclear": 129,
+     "yes": 299,
+     "no": 61
+    },
+    "S2, baseline no hotel": {
+     "unclear": 20,
+     "no": 26,
+     "yes": 3
+    },
+    "S3, baseline hotel and guesthouse": {
+     "no": 16
+    },
+    "S3, baseline hotel only": {
+     "no": 41,
+     "unclear": 1,
+     "yes": 1
+    },
+    "S3, baseline no hotel": {
+     "no": 431
+    }
+   },
+   "random_deletion_ratio": 1.0420168067226891
+  },
+  "luna": {
+   "missing_folders": [],
+   "rates": {
+    "f0": {
+     "S1t": {
+      "k": 450,
+      "n": 1988,
+      "share": 0.22635814889336017
+     },
+     "S3": {
+      "k": 110,
+      "n": 980,
+      "share": 0.11224489795918367
+     },
+     "S2": {
+      "k": 741,
+      "n": 1090,
+      "share": 0.6798165137614679
+     }
+    },
+    "b_list": {
+     "S1t": {
+      "k": 291,
+      "n": 1988,
+      "share": 0.14637826961770622
+     },
+     "S3": {
+      "k": 24,
+      "n": 980,
+      "share": 0.024489795918367346
+     },
+     "S2": {
+      "k": 589,
+      "n": 1090,
+      "share": 0.5403669724770642
+     }
+    },
+    "b_shot": {
+     "S1t": {
+      "k": 435,
+      "n": 1988,
+      "share": 0.21881287726358148
+     },
+     "S3": {
+      "k": 81,
+      "n": 980,
+      "share": 0.0826530612244898
+     },
+     "S2": {
+      "k": 756,
+      "n": 1090,
+      "share": 0.6935779816513762
+     }
+    },
+    "b_evidence": {
+     "S1t": {
+      "k": 598,
+      "n": 1988,
+      "share": 0.3008048289738431
+     },
+     "S3": {
+      "k": 148,
+      "n": 980,
+      "share": 0.1510204081632653
+     },
+     "S2": {
+      "k": 777,
+      "n": 1090,
+      "share": 0.7128440366972477
+     }
+    },
+    "verify": {
+     "S1t": {
+      "k": 51,
+      "n": 1987,
+      "share": 0.025666834423754403
+     },
+     "S3": {
+      "k": 71,
+      "n": 978,
+      "share": 0.07259713701431493
+     },
+     "S2": {
+      "k": 238,
+      "n": 1090,
+      "share": 0.21834862385321102
+     }
+    },
+    "b_define": {
+     "S1t": {
+      "k": 0,
+      "n": 0,
+      "share": null
+     },
+     "S3": {
+      "k": 55,
+      "n": 980,
+      "share": 0.05612244897959184
+     },
+     "S2": {
+      "k": 582,
+      "n": 1090,
+      "share": 0.5339449541284403
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "S1t": {
+      "k": 263,
+      "n": 1987,
+      "share": 0.13236034222445897
+     },
+     "S3": {
+      "k": 73,
+      "n": 978,
+      "share": 0.07464212678936605
+     },
+     "S2": {
+      "k": 475,
+      "n": 1090,
+      "share": 0.43577981651376146
+     }
+    }
+   },
+   "trade": {
+    "b_list": {
+     "removed": 122.50000000000003,
+     "lost": 76.0,
+     "ratio": 0.620408163265306,
+     "ci": [
+      0.4696969696969697,
+      0.8038277511961721
+     ],
+     "f0_wrong": 280.0,
+     "removed_share": 0.4375000000000001,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_shot": {
+     "removed": 22.000000000000018,
+     "lost": -7.500000000000016,
+     "ratio": -0.3409090909090914,
+     "ci": [
+      -2.000000000000012,
+      0.21739130434782492
+     ],
+     "f0_wrong": 280.0,
+     "removed_share": 0.07857142857142864,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_evidence": {
+     "removed": -93.00000000000001,
+     "lost": -18.0,
+     "ratio": null,
+     "ci": [
+      null,
+      null
+     ],
+     "f0_wrong": 280.0,
+     "removed_share": -0.3321428571428572,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify": {
+     "removed": 218.91456944577382,
+     "lost": 251.5,
+     "ratio": 1.1488499858036985,
+     "ci": [
+      1.0002112250841004,
+      1.327897912086367
+     ],
+     "f0_wrong": 280.0,
+     "removed_share": 0.7818377480206208,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "b_define": null,
+    "verify_no_only (post hoc)": {
+     "removed": 111.85917770209844,
+     "lost": 133.0,
+     "ratio": 1.1889949732529186,
+     "ci": [
+      0.960877533159296,
+      1.4718023893469157
+     ],
+     "f0_wrong": 280.0,
+     "removed_share": 0.39949706322178014,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    }
+   },
+   "evidence": {
+    "wrong_hotel_raw": 765,
+    "stated": 746,
+    "quote_given": 765,
+    "quote_verbatim": 758
+   },
+   "verify_table": {
+    "S1t, baseline hotel and guesthouse": {
+     "no": 23
+    },
+    "S1t, baseline hotel only": {
+     "unclear": 212,
+     "no": 187,
+     "yes": 28
+    },
+    "S1t, baseline no hotel": {
+     "no": 912,
+     "unclear": 624,
+     "yes": 1
+    },
+    "S2, baseline hotel and guesthouse": {
+     "no": 31,
+     "unclear": 1
+    },
+    "S2, baseline hotel only": {
+     "unclear": 237,
+     "no": 266,
+     "yes": 206
+    },
+    "S2, baseline no hotel": {
+     "unclear": 231,
+     "no": 118
+    },
+    "S3, baseline hotel and guesthouse": {
+     "no": 71
+    },
+    "S3, baseline hotel only": {
+     "unclear": 2,
+     "no": 37
+    },
+    "S3, baseline no hotel": {
+     "no": 857,
+     "unclear": 9,
+     "yes": 2
+    }
+   },
+   "random_deletion_ratio": 1.3232142857142857
+  },
+  "opus": {
+   "missing_folders": [],
+   "rates": {
+    "f0": {
+     "S1t": {
+      "k": 199,
+      "n": 994,
+      "share": 0.20020120724346077
+     },
+     "S3": {
+      "k": 50,
+      "n": 490,
+      "share": 0.10204081632653061
+     },
+     "S2": {
+      "k": 433,
+      "n": 545,
+      "share": 0.7944954128440367
+     }
+    },
+    "b_list": {
+     "S1t": {
+      "k": 169,
+      "n": 994,
+      "share": 0.17002012072434608
+     },
+     "S3": {
+      "k": 5,
+      "n": 490,
+      "share": 0.01020408163265306
+     },
+     "S2": {
+      "k": 405,
+      "n": 545,
+      "share": 0.7431192660550459
+     }
+    },
+    "verify": {
+     "S1t": {
+      "k": 62,
+      "n": 994,
+      "share": 0.06237424547283702
+     },
+     "S3": {
+      "k": 39,
+      "n": 490,
+      "share": 0.07959183673469387
+     },
+     "S2": {
+      "k": 239,
+      "n": 545,
+      "share": 0.43853211009174314
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "S1t": {
+      "k": 137,
+      "n": 994,
+      "share": 0.13782696177062373
+     },
+     "S3": {
+      "k": 40,
+      "n": 490,
+      "share": 0.08163265306122448
+     },
+     "S2": {
+      "k": 384,
+      "n": 545,
+      "share": 0.7045871559633028
+     }
+    }
+   },
+   "trade": {
+    "b_list": {
+     "removed": 75.0,
+     "lost": 28.0,
+     "ratio": 0.37333333333333335,
+     "ci": [
+      0.15492957746478828,
+      0.6393442622950815
+     ],
+     "f0_wrong": 249.0,
+     "removed_share": 0.30120481927710846,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify": {
+     "removed": 148.00000000000003,
+     "lost": 193.99999999999997,
+     "ratio": 1.3108108108108103,
+     "ci": [
+      1.087431693989071,
+      1.5757575757575757
+     ],
+     "f0_wrong": 249.0,
+     "removed_share": 0.5943775100401607,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "removed": 72.00000000000003,
+     "lost": 48.99999999999997,
+     "ratio": 0.6805555555555549,
+     "ci": [
+      0.47142857142857103,
+      0.9661016949152538
+     ],
+     "f0_wrong": 249.0,
+     "removed_share": 0.2891566265060242,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    }
+   },
+   "verify_table": {
+    "S1t, baseline hotel and guesthouse": {
+     "no": 11
+    },
+    "S1t, baseline hotel only": {
+     "yes": 51,
+     "unclear": 75,
+     "no": 62
+    },
+    "S1t, baseline no hotel": {
+     "no": 715,
+     "unclear": 77,
+     "yes": 3
+    },
+    "S2, baseline hotel and guesthouse": {
+     "no": 17,
+     "yes": 2
+    },
+    "S2, baseline hotel only": {
+     "unclear": 145,
+     "yes": 220,
+     "no": 49
+    },
+    "S2, baseline no hotel": {
+     "no": 76,
+     "yes": 5,
+     "unclear": 31
+    },
+    "S3, baseline hotel and guesthouse": {
+     "no": 38
+    },
+    "S3, baseline hotel only": {
+     "yes": 1,
+     "no": 10,
+     "unclear": 1
+    },
+    "S3, baseline no hotel": {
+     "no": 440
+    }
+   },
+   "random_deletion_ratio": 1.7389558232931728
+  },
+  "astra": {
+   "missing_folders": [],
+   "rates": {
+    "f0": {
+     "S1t": {
+      "k": 421,
+      "n": 994,
+      "share": 0.42354124748490946
+     },
+     "S3": {
+      "k": 60,
+      "n": 490,
+      "share": 0.12244897959183673
+     },
+     "S2": {
+      "k": 496,
+      "n": 545,
+      "share": 0.9100917431192661
+     }
+    },
+    "b_list": {
+     "S1t": {
+      "k": 390,
+      "n": 994,
+      "share": 0.39235412474849096
+     },
+     "S3": {
+      "k": 26,
+      "n": 490,
+      "share": 0.053061224489795916
+     },
+     "S2": {
+      "k": 477,
+      "n": 545,
+      "share": 0.8752293577981651
+     }
+    },
+    "verify": {
+     "S1t": {
+      "k": 79,
+      "n": 994,
+      "share": 0.079476861167002
+     },
+     "S3": {
+      "k": 18,
+      "n": 490,
+      "share": 0.036734693877551024
+     },
+     "S2": {
+      "k": 238,
+      "n": 545,
+      "share": 0.43669724770642204
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "S1t": {
+      "k": 223,
+      "n": 994,
+      "share": 0.2243460764587525
+     },
+     "S3": {
+      "k": 19,
+      "n": 490,
+      "share": 0.03877551020408163
+     },
+     "S2": {
+      "k": 436,
+      "n": 545,
+      "share": 0.8
+     }
+    }
+   },
+   "trade": {
+    "b_list": {
+     "removed": 64.99999999999999,
+     "lost": 19.000000000000032,
+     "ratio": 0.2923076923076929,
+     "ci": [
+      0.14516129032258104,
+      0.4999999999999999
+     ],
+     "f0_wrong": 481.0,
+     "removed_share": 0.13513513513513511,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify": {
+     "removed": 384.00000000000006,
+     "lost": 258.0,
+     "ratio": 0.6718749999999999,
+     "ci": [
+      0.5893719806763285,
+      0.7573333333333333
+     ],
+     "f0_wrong": 481.0,
+     "removed_share": 0.7983367983367985,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    },
+    "verify_no_only (post hoc)": {
+     "removed": 239.0,
+     "lost": 60.0,
+     "ratio": 0.2510460251046025,
+     "ci": [
+      0.1875,
+      0.3217391304347826
+     ],
+     "f0_wrong": 481.0,
+     "removed_share": 0.4968814968814969,
+     "meets_rule": false,
+     "dialogues": {
+      "S1t": 994,
+      "S3": 490,
+      "S2": 545
+     }
+    }
+   },
+   "verify_table": {
+    "S1t, baseline hotel and guesthouse": {
+     "no": 3
+    },
+    "S1t, baseline hotel only": {
+     "no": 198,
+     "yes": 76,
+     "unclear": 144
+    },
+    "S1t, baseline no hotel": {
+     "no": 410,
+     "unclear": 161,
+     "yes": 2
+    },
+    "S2, baseline hotel and guesthouse": {
+     "no": 6,
+     "yes": 1
+    },
+    "S2, baseline hotel only": {
+     "unclear": 198,
+     "yes": 231,
+     "no": 60
+    },
+    "S2, baseline no hotel": {
+     "unclear": 17,
+     "no": 28,
+     "yes": 4
+    },
+    "S3, baseline hotel and guesthouse": {
+     "no": 17
+    },
+    "S3, baseline hotel only": {
+     "no": 41,
+     "unclear": 1,
+     "yes": 1
+    },
+    "S3, baseline no hotel": {
+     "no": 430
+    }
+   },
+   "random_deletion_ratio": 1.0311850311850312
+  }
+ },
+ "predictions": {
+  "B1": {
+   "words": "B-list meets the trade rule on at least 2 of the 4 models",
+   "value": [],
+   "held": false,
+   "models": [
+    "sonnet",
+    "haiku",
+    "sol",
+    "luna"
+   ]
+  },
+  "B2": {
+   "words": "B-evidence labels at least 80% of the wrong type = hotel values as stated requirement, so it does not meet the rule on Claude",
+   "value": {
+    "sonnet": 0.821917808219178,
+    "haiku": 0.7934272300469484,
+    "sol": 0.7466467958271237,
+    "luna": 0.9751633986928104
+   },
+   "held": false,
+   "models": [
+    "sonnet",
+    "haiku",
+    "sol",
+    "luna"
+   ]
+  },
+  "B3": {
+   "words": "B-verify meets the trade rule on at least 2 of the 4 models",
+   "value": [],
+   "held": false,
+   "models": [
+    "sonnet",
+    "haiku",
+    "sol",
+    "luna"
+   ]
+  },
+  "B5": {
+   "words": "B-shot removes at least 50% of the F0 wrong values on at least 2 of the 4 models, and it meets the full trade rule on 1 model or more",
+   "value": {
+    "removes_half": [],
+    "meets": []
+   },
+   "held": false,
+   "models": [
+    "sonnet",
+    "haiku",
+    "sol",
+    "luna"
+   ]
+  },
+  "B4": {
+   "words": "Sol's B-define loses 0.50 correct values or fewer per wrong value removed",
+   "value": "see b_define rows: S1t has no fresh b_define read, so the locked ratio needs the earlier S1 definition reads; reported separately",
+   "held": null
+  }
+ }
+}

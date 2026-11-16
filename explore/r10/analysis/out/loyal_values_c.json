@@ -1,0 +1,334 @@
+{
+ "exploratory": true,
+ "result": {
+  "rows": {
+   "haiku hotel-only t0": {
+    "first_rate": "2.0% (9/447)",
+    "first": "",
+    "last_rate": "1.1% (5/448)",
+    "last": "",
+    "category": ""
+   },
+   "haiku hotel-only h1": {
+    "first_rate": "19.4% (87/448)",
+    "first": "+17.2 [+13.6, +20.8]",
+    "last_rate": "12.3% (55/448)",
+    "last": "+11.2 [+8.3, +14.3]",
+    "category": "persists"
+   },
+   "haiku hotel-only g1": {
+    "first_rate": "15.2% (68/448)",
+    "first": "+13.0 [+9.8, +16.3]",
+    "last_rate": "15.0% (67/448)",
+    "last": "+13.8 [+10.5, +17.4]",
+    "category": "persists"
+   },
+   "haiku guesthouse-only t0": {
+    "first_rate": "0.0% (0/447)",
+    "first": "",
+    "last_rate": "0.0% (0/448)",
+    "last": "",
+    "category": ""
+   },
+   "haiku guesthouse-only h1": {
+    "first_rate": "0.0% (0/448)",
+    "first": "+0.0 [+0.0, +0.0]",
+    "last_rate": "0.0% (0/448)",
+    "last": "+0.0 [+0.0, +0.0]",
+    "category": "repaired"
+   },
+   "haiku guesthouse-only g1": {
+    "first_rate": "5.6% (25/448)",
+    "first": "+5.6 [+3.6, +7.8]",
+    "last_rate": "2.7% (12/448)",
+    "last": "+2.7 [+1.3, +4.2]",
+    "category": "unresolved"
+   },
+   "haiku either t0": {
+    "first_rate": "2.0% (9/447)",
+    "first": "",
+    "last_rate": "1.1% (5/448)",
+    "last": "",
+    "category": ""
+   },
+   "haiku either h1": {
+    "first_rate": "19.4% (87/448)",
+    "first": "+17.2 [+13.6, +20.8]",
+    "last_rate": "12.3% (55/448)",
+    "last": "+11.2 [+8.3, +14.3]",
+    "category": "persists"
+   },
+   "haiku either g1": {
+    "first_rate": "20.8% (93/448)",
+    "first": "+18.6 [+15.0, +22.1]",
+    "last_rate": "17.6% (79/448)",
+    "last": "+16.5 [+13.2, +20.3]",
+    "category": "persists"
+   },
+   "sol hotel-only t0": {
+    "first_rate": "17.2% (77/447)",
+    "first": "",
+    "last_rate": "17.0% (76/447)",
+    "last": "",
+    "category": ""
+   },
+   "sol hotel-only h1": {
+    "first_rate": "42.8% (190/444)",
+    "first": "+25.5 [+21.4, +29.6]",
+    "last_rate": "34.0% (151/444)",
+    "last": "+16.9 [+13.3, +20.5]",
+    "category": "persists"
+   },
+   "sol hotel-only g1": {
+    "first_rate": "46.4% (207/446)",
+    "first": "+29.2 [+25.2, +33.7]",
+    "last_rate": "46.2% (206/446)",
+    "last": "+29.2 [+25.2, +33.7]",
+    "category": "persists"
+   },
+   "sol guesthouse-only t0": {
+    "first_rate": "0.0% (0/447)",
+    "first": "",
+    "last_rate": "0.0% (0/447)",
+    "last": "",
+    "category": ""
+   },
+   "sol guesthouse-only h1": {
+    "first_rate": "0.0% (0/444)",
+    "first": "+0.0 [+0.0, +0.0]",
+    "last_rate": "0.0% (0/444)",
+    "last": "+0.0 [+0.0, +0.0]",
+    "category": "repaired"
+   },
+   "sol guesthouse-only g1": {
+    "first_rate": "6.1% (27/446)",
+    "first": "+6.1 [+4.0, +8.3]",
+    "last_rate": "0.2% (1/446)",
+    "last": "+0.2 [+0.0, +0.7]",
+    "category": "repaired"
+   },
+   "sol either t0": {
+    "first_rate": "17.2% (77/447)",
+    "first": "",
+    "last_rate": "17.0% (76/447)",
+    "last": "",
+    "category": ""
+   },
+   "sol either h1": {
+    "first_rate": "42.8% (190/444)",
+    "first": "+25.5 [+21.4, +29.6]",
+    "last_rate": "34.0% (151/444)",
+    "last": "+16.9 [+13.3, +20.5]",
+    "category": "persists"
+   },
+   "sol either g1": {
+    "first_rate": "52.5% (234/446)",
+    "first": "+35.3 [+30.8, +39.6]",
+    "last_rate": "46.4% (207/446)",
+    "last": "+29.4 [+25.4, +33.9]",
+    "category": "persists"
+   },
+   "luna hotel-only t0": {
+    "first_rate": "8.4% (75/895)",
+    "first": "",
+    "last_rate": "8.4% (75/895)",
+    "last": "",
+    "category": ""
+   },
+   "luna hotel-only h1": {
+    "first_rate": "35.1% (314/895)",
+    "first": "+26.7 [+22.8, +30.7]",
+    "last_rate": "30.9% (277/895)",
+    "last": "+22.5 [+19.0, +26.3]",
+    "category": "persists"
+   },
+   "luna hotel-only g1": {
+    "first_rate": "21.2% (190/896)",
+    "first": "+12.8 [+9.9, +15.8]",
+    "last_rate": "20.8% (186/896)",
+    "last": "+12.4 [+9.6, +15.4]",
+    "category": "persists"
+   },
+   "luna guesthouse-only t0": {
+    "first_rate": "0.0% (0/895)",
+    "first": "",
+    "last_rate": "0.0% (0/895)",
+    "last": "",
+    "category": ""
+   },
+   "luna guesthouse-only h1": {
+    "first_rate": "0.0% (0/895)",
+    "first": "+0.0 [+0.0, +0.0]",
+    "last_rate": "0.1% (1/895)",
+    "last": "+0.1 [+0.0, +0.3]",
+    "category": "repaired"
+   },
+   "luna guesthouse-only g1": {
+    "first_rate": "10.2% (91/896)",
+    "first": "+10.2 [+7.6, +12.8]",
+    "last_rate": "4.8% (43/896)",
+    "last": "+4.8 [+3.0, +6.8]",
+    "category": "persists"
+   },
+   "luna either t0": {
+    "first_rate": "8.4% (75/895)",
+    "first": "",
+    "last_rate": "8.4% (75/895)",
+    "last": "",
+    "category": ""
+   },
+   "luna either h1": {
+    "first_rate": "35.1% (314/895)",
+    "first": "+26.7 [+22.8, +30.7]",
+    "last_rate": "31.1% (278/895)",
+    "last": "+22.7 [+19.1, +26.5]",
+    "category": "persists"
+   },
+   "luna either g1": {
+    "first_rate": "31.4% (281/896)",
+    "first": "+23.0 [+19.4, +26.6]",
+    "last_rate": "25.6% (229/896)",
+    "last": "+17.2 [+14.0, +20.6]",
+    "category": "persists"
+   }
+  },
+  "panel": {
+   "hotel-only h1 first": "+23.0 [+20.3, +25.7]",
+   "hotel-only h1 last": "+16.8 [+14.4, +19.2]",
+   "hotel-only g1 first": "+18.3 [+16.0, +20.5]",
+   "hotel-only g1 last": "+18.4 [+16.2, +20.8]",
+   "either h1 first": "+23.0 [+20.3, +25.7]",
+   "either h1 last": "+16.9 [+14.5, +19.3]",
+   "either g1 first": "+25.5 [+23.2, +28.0]",
+   "either g1 last": "+21.0 [+18.7, +23.4]"
+  },
+  "predictions": {
+   "Q1": {
+    "haiku": "holds",
+    "sol": "holds",
+    "luna": "holds"
+   },
+   "Q2": {
+    "haiku": "holds",
+    "sol": "holds",
+    "luna": "holds"
+   },
+   "Q3": {
+    "haiku": "holds",
+    "sol": "holds",
+    "luna": "holds"
+   },
+   "Q4": {
+    "haiku": "holds",
+    "sol": "holds",
+    "luna": "holds"
+   },
+   "Q5": {
+    "haiku": "holds"
+   }
+  },
+  "q5": "-6.3 [-8.9, -3.8]",
+  "searched_again": {
+   "haiku t0": {
+    "again": [
+     6,
+     448
+    ],
+    "excl_n": 9,
+    "excl_again": 4
+   },
+   "haiku h1": {
+    "again": [
+     49,
+     448
+    ],
+    "excl_n": 87,
+    "excl_again": 34
+   },
+   "haiku g1": {
+    "again": [
+     38,
+     448
+    ],
+    "excl_n": 93,
+    "excl_again": 21
+   },
+   "sol t0": {
+    "again": [
+     2,
+     552
+    ],
+    "excl_n": 77,
+    "excl_again": 1
+   },
+   "sol h1": {
+    "again": [
+     44,
+     550
+    ],
+    "excl_n": 190,
+    "excl_again": 40
+   },
+   "sol g1": {
+    "again": [
+     32,
+     552
+    ],
+    "excl_n": 234,
+    "excl_again": 27
+   },
+   "luna t0": {
+    "again": [
+     3,
+     1107
+    ],
+    "excl_n": 75,
+    "excl_again": 0
+   },
+   "luna h1": {
+    "again": [
+     99,
+     1107
+    ],
+    "excl_n": 314,
+    "excl_again": 46
+   },
+   "luna g1": {
+    "again": [
+     184,
+     1108
+    ],
+    "excl_n": 281,
+    "excl_again": 87
+   }
+  },
+  "status": {
+   "haiku": {
+    "complete": 1344
+   },
+   "sol": {
+    "complete": 1654,
+    "failed": 8
+   },
+   "luna": {
+    "complete": 3322,
+    "failed": 2
+   }
+  }
+ },
+ "verified": {
+  "costs": {
+   "Haiku": 0.3934,
+   "Sol": 3.7064,
+   "Luna": 0.3706,
+   "All three": 4.4704
+  },
+  "max_points_failed": "0.89",
+  "quote_rule_calls": [
+   "118",
+   "1,298"
+  ],
+  "control_between_runs": "about 3 points",
+  "all_confirmed": true
+ }
+}

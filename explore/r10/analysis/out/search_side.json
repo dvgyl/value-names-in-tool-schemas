@@ -1,0 +1,598 @@
+{
+ "exploratory": true,
+ "post_hoc": true,
+ "relaxation_by_brief": {
+  "sonnet": {
+   "guesthouse": {
+    "searches": 141,
+    "flags": 30,
+    "flags_failure": 27
+   },
+   "no type": {
+    "searches": 1343,
+    "flags": 68,
+    "flags_failure": 63
+   },
+   "hotel": {
+    "searches": 175,
+    "flags": 0,
+    "flags_failure": 0
+   }
+  },
+  "haiku": {
+   "guesthouse": {
+    "searches": 92,
+    "flags": 10,
+    "flags_failure": 8
+   },
+   "no type": {
+    "searches": 865,
+    "flags": 22,
+    "flags_failure": 18
+   },
+   "hotel": {
+    "searches": 115,
+    "flags": 0,
+    "flags_failure": 0
+   }
+  },
+  "opus": {
+   "guesthouse": {
+    "searches": 94,
+    "flags": 21,
+    "flags_failure": 19
+   },
+   "no type": {
+    "searches": 896,
+    "flags": 36,
+    "flags_failure": 31
+   },
+   "hotel": {
+    "searches": 118,
+    "flags": 0,
+    "flags_failure": 0
+   }
+  },
+  "sol": {
+   "guesthouse": {
+    "searches": 141,
+    "flags": 39,
+    "flags_failure": 36
+   },
+   "no type": {
+    "searches": 1344,
+    "flags": 105,
+    "flags_failure": 94
+   },
+   "hotel": {
+    "searches": 177,
+    "flags": 3,
+    "flags_failure": 0
+   }
+  },
+  "luna": {
+   "guesthouse": {
+    "searches": 94,
+    "flags": 14,
+    "flags_failure": 12
+   },
+   "no type": {
+    "searches": 896,
+    "flags": 36,
+    "flags_failure": 35
+   },
+   "hotel": {
+    "searches": 118,
+    "flags": 2,
+    "flags_failure": 0
+   }
+  },
+  "astra": {
+   "guesthouse": {
+    "searches": 47,
+    "flags": 13,
+    "flags_failure": 12
+   },
+   "no type": {
+    "searches": 448,
+    "flags": 38,
+    "flags_failure": 35
+   },
+   "hotel": {
+    "searches": 59,
+    "flags": 1,
+    "flags_failure": 0
+   }
+  }
+ },
+ "repairs": {
+  "sonnet": {
+   "f0": {
+    "search_failure": [
+     50,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     193,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     13,
+     233
+    ]
+   },
+   "b_list": {
+    "search_failure": [
+     37,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     171,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     12,
+     233
+    ]
+   },
+   "b_shot": {
+    "search_failure": [
+     44,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     194,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     9,
+     233
+    ]
+   },
+   "b_evidence": {
+    "search_failure": [
+     70,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     201,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     7,
+     233
+    ]
+   },
+   "verify": {
+    "search_failure": [
+     1,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     89,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     32,
+     233
+    ]
+   },
+   "verify_no_only (post hoc)": {
+    "search_failure": [
+     16,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     156,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     18,
+     233
+    ]
+   }
+  },
+  "haiku": {
+   "f0": {
+    "search_failure": [
+     9,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     263,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     48,
+     466
+    ]
+   },
+   "b_list": {
+    "search_failure": [
+     18,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     287,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     35,
+     466
+    ]
+   },
+   "b_shot": {
+    "search_failure": [
+     7,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     283,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     45,
+     466
+    ]
+   },
+   "b_evidence": {
+    "search_failure": [
+     19,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     296,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     48,
+     466
+    ]
+   },
+   "verify": {
+    "search_failure": [
+     8,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     205,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     65,
+     466
+    ]
+   },
+   "verify_no_only (post hoc)": {
+    "search_failure": [
+     9,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     223,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     60,
+     466
+    ]
+   }
+  },
+  "sol": {
+   "f0": {
+    "search_failure": [
+     127,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     227,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     3,
+     233
+    ]
+   },
+   "b_list": {
+    "search_failure": [
+     130,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     221,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     3,
+     233
+    ]
+   },
+   "b_shot": {
+    "search_failure": [
+     56,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     195,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     12,
+     233
+    ]
+   },
+   "b_evidence": {
+    "search_failure": [
+     132,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     225,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     3,
+     233
+    ]
+   },
+   "verify": {
+    "search_failure": [
+     16,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     160,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     15,
+     233
+    ]
+   },
+   "b_define": {
+    "search_failure": [
+     0,
+     0
+    ],
+    "hotel_only_kept_brief_hotel": [
+     166,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     16,
+     233
+    ]
+   },
+   "verify_no_only (post hoc)": {
+    "search_failure": [
+     27,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     206,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     6,
+     233
+    ]
+   }
+  },
+  "luna": {
+   "f0": {
+    "search_failure": [
+     99,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     360,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     21,
+     466
+    ]
+   },
+   "b_list": {
+    "search_failure": [
+     54,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     317,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     37,
+     466
+    ]
+   },
+   "b_shot": {
+    "search_failure": [
+     99,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     377,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     23,
+     466
+    ]
+   },
+   "b_evidence": {
+    "search_failure": [
+     198,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     366,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     26,
+     466
+    ]
+   },
+   "verify": {
+    "search_failure": [
+     2,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     127,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     81,
+     466
+    ]
+   },
+   "b_define": {
+    "search_failure": [
+     0,
+     0
+    ],
+    "hotel_only_kept_brief_hotel": [
+     310,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     44,
+     466
+    ]
+   },
+   "verify_no_only (post hoc)": {
+    "search_failure": [
+     38,
+     1614
+    ],
+    "hotel_only_kept_brief_hotel": [
+     232,
+     466
+    ],
+    "visible_loss_brief_hotel": [
+     53,
+     466
+    ]
+   }
+  },
+  "opus": {
+   "f0": {
+    "search_failure": [
+     36,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     203,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     11,
+     233
+    ]
+   },
+   "b_list": {
+    "search_failure": [
+     26,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     197,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     9,
+     233
+    ]
+   },
+   "verify": {
+    "search_failure": [
+     4,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     135,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     17,
+     233
+    ]
+   },
+   "verify_no_only (post hoc)": {
+    "search_failure": [
+     15,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     183,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     11,
+     233
+    ]
+   }
+  },
+  "astra": {
+   "f0": {
+    "search_failure": [
+     128,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     227,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     3,
+     233
+    ]
+   },
+   "b_list": {
+    "search_failure": [
+     111,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     221,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     4,
+     233
+    ]
+   },
+   "verify": {
+    "search_failure": [
+     6,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     139,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     20,
+     233
+    ]
+   },
+   "verify_no_only (post hoc)": {
+    "search_failure": [
+     29,
+     807
+    ],
+    "hotel_only_kept_brief_hotel": [
+     206,
+     233
+    ],
+    "visible_loss_brief_hotel": [
+     7,
+     233
+    ]
+   }
+  }
+ }
+}

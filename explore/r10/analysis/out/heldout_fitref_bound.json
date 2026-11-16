@@ -1,0 +1,76 @@
+{
+ "post_hoc": true,
+ "exploratory": true,
+ "reads_answers": false,
+ "dialogues": 213,
+ "hotel_text_errors": [],
+ "no_values": {
+  "parking=no": 3
+ },
+ "b_statement": {
+  "area:reference": 9,
+  "area:value": 55,
+  "internet:value": 69,
+  "name:value": 113,
+  "parking:value": 63,
+  "pricerange:reference": 6,
+  "pricerange:value": 66,
+  "stars:value": 69
+ },
+ "b_briefs_with_a_dropped_requirement": 0,
+ "briefs_whose_fitting_set_grows": {
+  "a": 0,
+  "b": 0,
+  "ab": 0
+ },
+ "readings": {
+  "recorded": {
+   "F": 128,
+   "R": 85,
+   "N": 0,
+   "moves": {},
+   "leave_F": 0,
+   "enter_F": 0,
+   "max_fall_points_213": 0.0,
+   "max_fall_points_any_model": 0.0,
+   "max_rise_points_any_model": 0.0,
+   "moved_ids": []
+  },
+  "a": {
+   "F": 128,
+   "R": 85,
+   "N": 0,
+   "moves": {},
+   "leave_F": 0,
+   "enter_F": 0,
+   "max_fall_points_213": 0.0,
+   "max_fall_points_any_model": 0.0,
+   "max_rise_points_any_model": 0.0,
+   "moved_ids": []
+  },
+  "b": {
+   "F": 128,
+   "R": 85,
+   "N": 0,
+   "moves": {},
+   "leave_F": 0,
+   "enter_F": 0,
+   "max_fall_points_213": 0.0,
+   "max_fall_points_any_model": 0.0,
+   "max_rise_points_any_model": 0.0,
+   "moved_ids": []
+  },
+  "ab": {
+   "F": 128,
+   "R": 85,
+   "N": 0,
+   "moves": {},
+   "leave_F": 0,
+   "enter_F": 0,
+   "max_fall_points_213": 0.0,
+   "max_fall_points_any_model": 0.0,
+   "max_rise_points_any_model": 0.0,
+   "moved_ids": []
+  }
+ }
+}

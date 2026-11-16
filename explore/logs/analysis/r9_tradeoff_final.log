@@ -1,0 +1,20 @@
+sonnet: form, wrong, correct, wrong removed, correct lost, correct lost per wrong removed
+  f0   217.2   373.9     0.0     0.0  -
+  f1    63.4   236.0   153.7   137.9  0.90
+  f2    45.6   201.7   171.6   172.2  1.00
+  f4    15.8   100.3   201.3   273.6  1.36
+  f6    58.0   236.0   159.2   137.9  0.87
+haiku: form, wrong, correct, wrong removed, correct lost, correct lost per wrong removed
+  f0    71.8   217.5     0.0     0.0  -
+  f1    17.8   118.3    53.9    99.2  1.84
+  f2    22.8   132.4    49.0    85.0  1.74
+  f4    21.3   123.2    50.4    94.3  1.87
+  f6    51.0   195.1    20.7    22.3  1.08
+sol: form, wrong, correct, wrong removed, correct lost, correct lost per wrong removed
+  f0   469.4   499.8     0.0     0.0  -
+  f1   175.5   337.9   293.8   161.9  0.55
+  f4   115.0   274.7   354.4   225.1  0.64
+luna: form, wrong, correct, wrong removed, correct lost, correct lost per wrong removed
+  f0   282.5   370.6     0.0     0.0  -
+  f1    27.2   131.9   255.3   238.7  0.94
+  f4    15.8    76.3   266.7   294.3  1.10

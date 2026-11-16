@@ -1,0 +1,2338 @@
+{
+ "about": "The analyses that reproduce.py runs, in the order of README section 4. Paths are from the repository folder; each command runs with python3 -I from its folder (cwd).",
+ "parts": {
+  "1": "Part 1: the registered test, and searches that exclude what the brief allows",
+  "2": "Part 2: a release test for schema updates",
+  "3": "Part 3: neural and symbolic repairs"
+ },
+ "analyses": [
+  {
+   "name": "exp0",
+   "part": "1",
+   "topic": "The registered test on held-out dialogues (registration A, stage 1)",
+   "status": "registered",
+   "outputs": [
+    "explore/main/exp0/RESULT-STAGE1.md",
+    "explore/main/exp0/stage1.json"
+   ],
+   "runs": [],
+   "why": "needs the held-out answers, which stay encrypted (README, section 8)",
+   "kind": "sealed",
+   "steps": [
+    {
+     "cmd": [
+      "main/exp0/analysis.py",
+      "<folder of held-out answers>"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "clear_split",
+   "part": "1",
+   "topic": "Registered test: clear and unclear requests",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/clear_split.json",
+    "explore/r10/analysis/out/clear_split.md"
+   ],
+   "runs": [
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14",
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "why": "needs the held-out answers, which stay encrypted (README, section 8)",
+   "kind": "sealed",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/clear_split.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "r2_posthoc",
+   "part": "1",
+   "topic": "Registered test: random deletion, word or meaning, visibility",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/r2_posthoc.json",
+    "explore/r10/analysis/out/r2_posthoc.md"
+   ],
+   "runs": [
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "why": "needs the held-out answers, which stay encrypted (README, section 8)",
+   "kind": "sealed",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/r2_posthoc.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "heldout_fitref_bound",
+   "part": "1",
+   "topic": "Registered test: bound of the fit reference on held-out dialogues",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/heldout_fitref_bound.json",
+    "explore/r10/analysis/out/heldout_fitref_bound.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/heldout_fitref_bound.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_stored_counts",
+   "part": "1",
+   "topic": "Registered tests: stored validity counts and the types of the 77 hotel-sample dialogues",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_stored_counts.json",
+    "explore/r10/analysis/out/loyal_stored_counts.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_stored_counts.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_tracki_tables",
+   "part": "1",
+   "topic": "Registered test on constructed texts (registration B): tables from the aggregated output",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_tracki_tables.json",
+    "explore/r10/analysis/out/loyal_tracki_tables.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_tracki_tables.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_heldout_phrase",
+   "part": "1",
+   "topic": "Registered test: the phrase rule on held-out first requests",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_heldout_phrase.json",
+    "explore/r10/analysis/out/loyal_heldout_phrase.md"
+   ],
+   "runs": [],
+   "compare": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_heldout_phrase.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "a",
+   "part": "1",
+   "topic": "Tool calls at the first request (experiment A)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/a.json",
+    "explore/r10/analysis/out/a.md",
+    "explore/r10/analysis/out/fig_funnel.csv"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/a_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "tool_validity",
+   "part": "1",
+   "topic": "Full-schema check of the tool calls",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/tool_validity.json",
+    "explore/r10/analysis/out/tool_validity.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*",
+    "erp_*",
+    "ers_*",
+    "erc_haiku",
+    "erc2_haiku"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/tool_validity.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "tool_types",
+   "part": "1",
+   "topic": "The type values of the tool calls",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/tool_types.json",
+    "explore/r10/analysis/out/tool_types.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/tool_types.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "tool_ratio",
+   "part": "1",
+   "topic": "Trade of the tool calls (renamed tool)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/tool_ratio.json",
+    "explore/r10/analysis/out/tool_ratio.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/tool_ratio.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "tool_by_brief",
+   "part": "1",
+   "topic": "Tool calls by brief type",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/tool_by_brief.json"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "why": "no script: the post hoc script that wrote this file was not kept (README, section 4)",
+   "kind": "none"
+  },
+  {
+   "name": "loyal_first_request",
+   "part": "1",
+   "topic": "Exclusions at the first request in which the call without its type finds a venue",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_first_request.json",
+    "explore/r10/analysis/out/loyal_first_request.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_first_request.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_tool_classes",
+   "part": "1",
+   "topic": "Scorable and valid tool calls, the ask share, the second-step trials",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_tool_classes.json",
+    "explore/r10/analysis/out/loyal_tool_classes.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_tool_classes.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_validity_pairs",
+   "part": "1",
+   "topic": "Paired no-call transitions; second-step classes with invalid calls as missing",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_validity_pairs.json",
+    "explore/r10/analysis/out/loyal_validity_pairs.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_validity_pairs.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_unchecked_runs",
+   "part": "1",
+   "topic": "Full-schema check of the other tool-call runs",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_unchecked_runs.json",
+    "explore/r10/analysis/out/loyal_unchecked_runs.md"
+   ],
+   "runs": [
+    "ers_*",
+    "erp_sonnet",
+    "erm_haiku",
+    "erq*",
+    "ert_sonnet",
+    "ert1_sonnet",
+    "erl3_*"
+   ],
+   "why": "reads files that are not in this repository (README, section 8)",
+   "kind": "files",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_unchecked_runs.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_booked_sets",
+   "part": "1",
+   "topic": "The booked venues of the dialogues",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_booked_sets.json"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_booked_sets.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_cp_bounds",
+   "part": "1",
+   "topic": "Exact binomial bounds of small counts",
+   "status": "exploratory, post hoc",
+   "outputs": [],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_cp_bounds.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "printed": "explore/logs/analysis/loyal_cp_bounds.log"
+  },
+  {
+   "name": "loyal_hostel_check",
+   "part": "1",
+   "topic": "Venue names with the word hostel",
+   "status": "exploratory, post hoc",
+   "outputs": [],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_hostel_check.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "printed": "explore/logs/analysis/loyal_hostel_check.log"
+  },
+  {
+   "name": "loyal_values_a",
+   "part": "1",
+   "topic": "Values copied from check reports (a)",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_values_a.json",
+    "explore/r10/analysis/out/loyal_values_a.md"
+   ],
+   "runs": [],
+   "why": "reads files that are not in this repository (README, section 8)",
+   "kind": "files",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_values_a.py",
+      "compute"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_values_b",
+   "part": "1",
+   "topic": "Values copied from check reports (b)",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_values_b.json",
+    "explore/r10/analysis/out/loyal_values_b.md"
+   ],
+   "runs": [],
+   "why": "reads files that are not in this repository (README, section 8)",
+   "kind": "files",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_values_b.py",
+      "compute"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_values_c",
+   "part": "1",
+   "topic": "Values copied from check reports (c)",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_values_c.json",
+    "explore/r10/analysis/out/loyal_values_c.md"
+   ],
+   "runs": [],
+   "why": "reads files that are not in this repository (README, section 8)",
+   "kind": "files",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_values_c.py",
+      "compute"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "fitref_sensitivity",
+   "part": "1",
+   "topic": "Other readings of the fit reference",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/fitref_sensitivity.json",
+    "explore/r10/analysis/out/fitref_sensitivity.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*",
+    "ert_sonnet",
+    "ert1_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/fitref_sensitivity.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "human",
+   "part": "1",
+   "topic": "The people in the corpus",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/human.json",
+    "explore/r10/analysis/out/human.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/human_baseline.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "step2_links",
+   "part": "1",
+   "topic": "The second step after a hotel-only search",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/step2_links.json",
+    "explore/r10/analysis/out/step2_links.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/step2_links.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "turns",
+   "part": "1",
+   "topic": "Later turns with a simulated traveller (experiment T)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/turns.json",
+    "explore/r10/analysis/out/turns.md"
+   ],
+   "runs": [
+    "ert_sonnet",
+    "ert1_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/turns_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "turns_paired",
+   "part": "1",
+   "topic": "Later turns, paired",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/turns_paired.json",
+    "explore/r10/analysis/out/turns_paired.md"
+   ],
+   "runs": [
+    "ert_sonnet",
+    "ert1_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/turns_paired.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "turns_failinfo",
+   "part": "1",
+   "topic": "Later turns and the failure information",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/turns_failinfo.json",
+    "explore/r10/analysis/out/turns_failinfo.md"
+   ],
+   "runs": [
+    "ert_sonnet",
+    "ert1_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/turns_failinfo.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "loyal_final_recommendations",
+   "part": "1",
+   "topic": "Later turns: the final recommendation",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/loyal_final_recommendations.json",
+    "explore/r10/analysis/out/loyal_final_recommendations.md"
+   ],
+   "runs": [
+    "ert_sonnet",
+    "ert1_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/loyal_final_recommendations.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "remove_after": [
+    "explore/r10/analysis/out/loyal_final_recommendations_rows.json"
+   ]
+  },
+  {
+   "name": "r9_natural",
+   "part": "1",
+   "topic": "Round 9: renamed and other forms on full dialogues",
+   "status": "exploratory",
+   "outputs": [],
+   "runs": [
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r9/natural/natural_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "printed": "explore/logs/analysis/r9_natural_final.log"
+  },
+  {
+   "name": "r9_tradeoff",
+   "part": "1",
+   "topic": "Round 9: the trade of the forms",
+   "status": "exploratory",
+   "outputs": [],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r9/natural/tradeoff.py",
+      "logs/analysis/r9_natural_final.log"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "printed": "explore/logs/analysis/r9_tradeoff_final.log"
+  },
+  {
+   "name": "r9_z",
+   "part": "1",
+   "topic": "Round 9: text edits and instruction changes",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r9/additions/out/summary.json"
+   ],
+   "runs": [
+    "ez*",
+    "eb2_*",
+    "eb3_*",
+    "eb4_*",
+    "e13",
+    "ex2n_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r9/additions/zanalyze.py",
+      "ez1_claude",
+      "ez1_luna",
+      "ez2_claude",
+      "ez2_luna",
+      "ez3_haiku",
+      "ez3_sonnet",
+      "ez3_luna",
+      "eb2_sol",
+      "eb2_open",
+      "eb3_sol",
+      "eb3_open",
+      "eb4_sol",
+      "eb4_open",
+      "e13",
+      "ex2n_di",
+      "ex2n_sol",
+      "ex2n_luna",
+      "--alias",
+      "f0=orig_f0",
+      "--alias",
+      "f1=orig_f1"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "printed": "explore/logs/analysis/r9_z_final.log"
+  },
+  {
+   "name": "i",
+   "part": "1",
+   "topic": "The word \"hotel\" put into the traveller's turns (experiment I)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/i.json",
+    "explore/r10/analysis/out/i.md"
+   ],
+   "runs": [
+    "eri_*",
+    "erx_i3_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/i_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "note": "i_analyze.py reads its reference rates from explore/reference/harm_by_model.out"
+  },
+  {
+   "name": "efg",
+   "part": "1",
+   "topic": "More models and a high reasoning setting (experiments E, F, G)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/efg.json",
+    "explore/r10/analysis/out/efg.md",
+    "explore/r10/analysis/out/fig_effort.csv"
+   ],
+   "runs": [
+    "ere_opus",
+    "erg_astra",
+    "erf_*",
+    "erx_f*",
+    "erb_*",
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/efg_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "h",
+   "part": "1",
+   "topic": "Twelve other service words (experiment H)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/h.json",
+    "explore/r10/analysis/out/h.md",
+    "explore/r10/analysis/out/fig_pairs.csv"
+   ],
+   "runs": [
+    "erh_*",
+    "erx_h*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/h_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "clear_rule",
+   "part": "1",
+   "topic": "The word rule for clear requests",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/clear_rule.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/clear_rule.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "ignore_lines": "^- Written: "
+  },
+  {
+   "name": "label_test",
+   "part": "1",
+   "topic": "Label test: one definition under the labels hotel and category_A (R10-18)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/label_test.json",
+    "explore/r10/analysis/out/label_test.md"
+   ],
+   "runs": [
+    "erl_*",
+    "erb_*",
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/label_test.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "label_test2",
+   "part": "1",
+   "topic": "Label test: a third label, serviced_property (R10-19)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/label_test2.json",
+    "explore/r10/analysis/out/label_test2.md"
+   ],
+   "runs": [
+    "erl2_*",
+    "erl_*",
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/label_test2.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "label_test3",
+   "part": "1",
+   "topic": "Label test with tool calls (R10-21)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/label_test3.json",
+    "explore/r10/analysis/out/label_test3.md"
+   ],
+   "runs": [
+    "erl3_*",
+    "era1_sol",
+    "erx_a3_sol",
+    "era1_luna"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/label_test3.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer",
+   "part": "1",
+   "topic": "Tool texts that a model rewrote to steer the agents (experiment S)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer.json",
+    "explore/r10/analysis/out/steer.md"
+   ],
+   "runs": [
+    "ers_*",
+    "erp_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer_quote",
+   "part": "1",
+   "topic": "What the steering rewrites say",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer_quote.json",
+    "explore/r10/analysis/out/steer_quote.md"
+   ],
+   "runs": [
+    "ers_*",
+    "erp_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer_quote.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer_words",
+   "part": "1",
+   "topic": "The words of the steering rewrites",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer_words.json",
+    "explore/r10/analysis/out/steer_words.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer_words.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer_search",
+   "part": "1",
+   "topic": "The steered searches",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer_search.json",
+    "explore/r10/analysis/out/steer_search.md"
+   ],
+   "runs": [
+    "ers_*",
+    "erp_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer_search.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer2",
+   "part": "1",
+   "topic": "Three service rewrites for each interest, on Haiku (experiment M)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer2.json",
+    "explore/r10/analysis/out/steer2.md"
+   ],
+   "runs": [
+    "erm_haiku",
+    "ers_haiku"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer2_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer_search3",
+   "part": "1",
+   "topic": "Steering when the agent can search again (R10-23)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer_search3.json",
+    "explore/r10/analysis/out/steer_search3.md"
+   ],
+   "runs": [
+    "erq*",
+    "ers_haiku",
+    "erm_haiku",
+    "era1_sol",
+    "era1_luna"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer_search3.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "release",
+   "part": "2",
+   "topic": "Prospective release test of rewrite N1 (experiment R)",
+   "status": "exploratory, prospective",
+   "outputs": [
+    "explore/r10/analysis/out/release.json",
+    "explore/r10/analysis/out/release.md"
+   ],
+   "runs": [
+    "erp_sonnet",
+    "erp_sol"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/release_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "release_sensitivity",
+   "part": "2",
+   "topic": "Rewrite N1: sensitivity",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/release_sensitivity.json",
+    "explore/r10/analysis/out/release_sensitivity.md"
+   ],
+   "runs": [
+    "erp_sonnet",
+    "erp_sol"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/release_sensitivity.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "release_values",
+   "part": "2",
+   "topic": "Rewrite N1: the values",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/release_values.json",
+    "explore/r10/analysis/out/release_values.md"
+   ],
+   "runs": [
+    "erp_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/release_values.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "steer_sensitivity",
+   "part": "2",
+   "topic": "Release test of the steering rewrites: sensitivity",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/steer_sensitivity.json",
+    "explore/r10/analysis/out/steer_sensitivity.md"
+   ],
+   "runs": [
+    "ers_*",
+    "erp_sonnet"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/steer_sensitivity.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "control",
+   "part": "2",
+   "topic": "Two control updates (experiment C)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/control.json",
+    "explore/r10/analysis/out/control.md"
+   ],
+   "runs": [
+    "erc_haiku",
+    "erc2_haiku"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/control_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "control_spread",
+   "part": "2",
+   "topic": "Two control updates: spread",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/control_spread.json",
+    "explore/r10/analysis/out/control_spread.md"
+   ],
+   "runs": [
+    "erc_haiku",
+    "erc2_haiku"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/control_spread.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "release_test",
+   "part": "2",
+   "topic": "Release tests of harmless updates (R10-20)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/release_test.json",
+    "explore/r10/analysis/out/release_test.md"
+   ],
+   "runs": [
+    "erk_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/release_test.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "release_test2",
+   "part": "2",
+   "topic": "Release tests: field order and a second paraphrase (R10-22)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/release_test2.json",
+    "explore/r10/analysis/out/release_test2.md"
+   ],
+   "runs": [
+    "erk2_*",
+    "erk_sol",
+    "erk_luna"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/release_test2.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "release_test3",
+   "part": "2",
+   "topic": "Replication of the two paraphrase flags (R10-24)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/release_test3.json",
+    "explore/r10/analysis/out/release_test3.md"
+   ],
+   "runs": [
+    "erk3_*",
+    "erk_deepseek",
+    "erk2_luna"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/release_test3.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "rtest_c1",
+   "part": "2",
+   "topic": "Release test: per-request changes and the sign test",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/rtest_c1.json",
+    "explore/r10/analysis/out/rtest_c1.md",
+    "explore/r10/analysis/out/rtest_check_values.json"
+   ],
+   "runs": [
+    "erp_*",
+    "ers_*",
+    "erc_haiku",
+    "erc2_haiku",
+    "era1_*",
+    "erx_a*"
+   ],
+   "compare": [
+    "explore/r10/analysis/out/rtest_c1.json",
+    "explore/r10/analysis/out/rtest_c1.md"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/rtest_c1.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "rtest_levels",
+   "part": "2",
+   "topic": "Release test: the levels of the intervals",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/rtest_levels.json",
+    "explore/r10/analysis/out/rtest_levels.md"
+   ],
+   "runs": [
+    "erp_*",
+    "ers_*",
+    "erc_haiku",
+    "erc2_haiku",
+    "era1_*",
+    "erx_a*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/rtest_levels.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "rtest_symmetric",
+   "part": "2",
+   "topic": "Release test: every decision with a symmetric interval index",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/rtest_symmetric.json",
+    "explore/r10/analysis/out/rtest_symmetric.md"
+   ],
+   "runs": [
+    "erk_*",
+    "erk2_*",
+    "erp_*",
+    "ers_*",
+    "erm_haiku",
+    "erc_haiku",
+    "erc2_haiku",
+    "era1_*",
+    "erx_a*",
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/rtest_symmetric.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "rtest_final9",
+   "part": "2",
+   "topic": "Release test: the final rule",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/rtest_final9.json",
+    "explore/r10/analysis/out/rtest_final9.md"
+   ],
+   "runs": [
+    "erk_*",
+    "erk2_*",
+    "erp_*",
+    "ers_*",
+    "erm_haiku",
+    "erc_haiku",
+    "erc2_haiku",
+    "era1_*",
+    "erx_a*",
+    "ex1_*",
+    "ex2n_*",
+    "eb1_*",
+    "e13",
+    "e14"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/rtest_final9.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "rtest_validity",
+   "part": "2",
+   "topic": "Registered tests: first answers that fit the closed schema",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/rtest_validity.json",
+    "explore/r10/analysis/out/rtest_validity.md"
+   ],
+   "runs": [],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/rtest_validity.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "b",
+   "part": "3",
+   "topic": "Four repairs and the verifier (experiment B)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/b.json",
+    "explore/r10/analysis/out/b.md",
+    "explore/r10/analysis/out/fig_trade.csv"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/b_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "b_hotel_only",
+   "part": "3",
+   "topic": "Repairs: hotel-only count",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/b_hotel_only.json",
+    "explore/r10/analysis/out/b_hotel_only.md",
+    "explore/r10/analysis/out/fig_trade_hotel_only.csv"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/b_analyze.py",
+      "--hotel-only"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "b_brief",
+   "part": "3",
+   "topic": "Repairs: dialogues where the brief agrees with the label",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/b_brief.json",
+    "explore/r10/analysis/out/b_brief.md",
+    "explore/r10/analysis/out/fig_trade_brief.csv"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/b_analyze.py",
+      "--brief-groups"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "search_side",
+   "part": "3",
+   "topic": "Counting what the traveller sees",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/search_side.json",
+    "explore/r10/analysis/out/search_side.md"
+   ],
+   "runs": [
+    "era1_*",
+    "erx_a*",
+    "era2_*",
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/search_side.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "search_sym",
+   "part": "3",
+   "topic": "The repairs on the search",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/search_sym.json",
+    "explore/r10/analysis/out/search_sym.md"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/search_sym.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "search_transitions",
+   "part": "3",
+   "topic": "The repairs on the search: transitions",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/search_transitions.json",
+    "explore/r10/analysis/out/search_transitions.md"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/search_transitions.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "trade_prospective",
+   "part": "3",
+   "topic": "The search measure, fixed in advance, on three open models (experiment Y)",
+   "status": "exploratory, prospective",
+   "outputs": [
+    "explore/r10/analysis/out/trade_prospective.json",
+    "explore/r10/analysis/out/trade_prospective.md"
+   ],
+   "runs": [
+    "ery_*",
+    "erb_sonnet",
+    "erb_haiku"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/trade_prospective.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "sol_astra",
+   "part": "3",
+   "topic": "Sol and Astra answer alike",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/sol_astra_agreement.json",
+    "explore/r10/analysis/out/sol_astra_agreement.md"
+   ],
+   "runs": [
+    "erb_sol",
+    "erg_astra",
+    "erb_sonnet",
+    "ere_opus",
+    "erx_b*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/sol_astra_agreement.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "repair_refs",
+   "part": "3",
+   "topic": "Repairs: references and display results",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/repair_refs.json"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra",
+    "ery_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/repair_refs.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "repair_rule",
+   "part": "3",
+   "topic": "Repairs: the trade rule against the brief and the word rule",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/repair_rule.json"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra",
+    "ery_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/repair_rule.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "repair_limits",
+   "part": "3",
+   "topic": "Repairs: limits of the comparisons",
+   "status": "exploratory, post hoc",
+   "outputs": [
+    "explore/r10/analysis/out/repair_limits.json",
+    "explore/r10/analysis/out/repair_rename_check.json"
+   ],
+   "runs": [
+    "erb_*",
+    "erx_b*",
+    "ere_opus",
+    "erg_astra",
+    "ery_*"
+   ],
+   "compare": [
+    "explore/r10/analysis/out/repair_limits.json"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/repair_limits.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "heldout_confirm",
+   "part": "3",
+   "topic": "Held-out confirmation of the repair results (R10-25)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/heldout_confirm.json",
+    "explore/r10/analysis/out/heldout_confirm.md"
+   ],
+   "runs": [
+    "ern_*"
+   ],
+   "why": "needs the held-out answers, which stay encrypted (README, section 8)",
+   "kind": "sealed",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/heldout_confirm.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "flag",
+   "part": "3",
+   "topic": "The returned note and the one-search text (experiment W)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/flag.json",
+    "explore/r10/analysis/out/flag.md"
+   ],
+   "runs": [
+    "erw*",
+    "era1_*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/flag_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "flag_read1",
+   "part": "3",
+   "topic": "The returned note: first answers only",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/flag_read1.json",
+    "explore/r10/analysis/out/flag_read1.md"
+   ],
+   "runs": [
+    "erw*",
+    "era1_*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/flag_analyze.py",
+      "--read1"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "flag_audit",
+   "part": "3",
+   "topic": "The returned note: reading of the answers",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/flag_audit.json",
+    "explore/r10/analysis/out/flag_audit_numbers.md",
+    "explore/r10/analysis/out/flag_audit.md",
+    "explore/r10/analysis/out/flag_audit_labels.tsv"
+   ],
+   "runs": [
+    "erw*",
+    "era1_*",
+    "era2_*"
+   ],
+   "compare": [
+    "explore/r10/analysis/out/flag_audit.json",
+    "explore/r10/analysis/out/flag_audit_numbers.md"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/flag_audit.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "flag2",
+   "part": "3",
+   "topic": "The returned note with travellers who need a hotel (experiment U)",
+   "status": "exploratory",
+   "outputs": [
+    "explore/r10/analysis/out/flag2.json",
+    "explore/r10/analysis/out/flag2.md"
+   ],
+   "runs": [
+    "eru_*",
+    "era1_*",
+    "era2_*"
+   ],
+   "kind": "run",
+   "steps": [
+    {
+     "cmd": [
+      "r10/analysis/flag2_analyze.py"
+     ],
+     "cwd": "explore"
+    }
+   ]
+  },
+  {
+   "name": "harm_by_model",
+   "part": "1",
+   "topic": "Reference rates that analysis i reads",
+   "status": "exploratory",
+   "steps": [
+    {
+     "cmd": [
+      "reference/harm_by_model.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [],
+   "printed": "explore/reference/harm_by_model.out",
+   "kind": "run"
+  },
+  {
+   "name": "annotation",
+   "part": "1",
+   "topic": "The author's blind checks: the word rule, the agents' replies and the model's readings",
+   "status": "exploratory",
+   "steps": [
+    {
+     "cmd": [
+      "annotation/analyze_labels.py",
+      "--local",
+      "--out",
+      "annotation/labels_report.md"
+     ],
+     "cwd": "."
+    }
+   ],
+   "outputs": [
+    "annotation/labels_report.md"
+   ],
+   "kind": "private",
+   "why": "needs the private labels and the labelling key (README, section 8)"
+  },
+  {
+   "name": "sim_fit",
+   "part": "2",
+   "topic": "Simulation of the release rules (R10-26): fit of the base distributions",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/release-sim/stored.py",
+      "fit"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/release-sim/out/fit.json",
+    "explore/posthoc/release-sim/out/fit.md"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "sim_fidelity",
+   "part": "2",
+   "topic": "Simulation of the release rules: the rule code on the stored comparisons",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/release-sim/stored.py",
+      "fidelity"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/release-sim/out/fidelity.json",
+    "explore/posthoc/release-sim/out/fidelity.md"
+   ],
+   "kind": "files",
+   "why": "it parses tables of a manuscript that is not in this repository (README, section 8)"
+  },
+  {
+   "name": "sim_run",
+   "part": "2",
+   "topic": "Simulation of the release rules: every configuration (126 x 2,000 trials)",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/release-sim/sim.py",
+      "run",
+      "--workers",
+      "7"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/release-sim/out/sim.json",
+    "explore/posthoc/release-sim/out/sim.md"
+   ],
+   "kind": "slow",
+   "ignore_keys": [
+    "workers",
+    "run_seconds",
+    "cpu_seconds",
+    "seconds"
+   ],
+   "ignore_lines": "(?i).*(seconds|wall|workers|cpu).*",
+   "why": "slow: run it with --slow"
+  },
+  {
+   "name": "sim_tails",
+   "part": "2",
+   "topic": "Simulation of the release rules: the stored comparisons with other seeds and 20,000 draws",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/release-sim/stored.py",
+      "tails"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/release-sim/out/tails_stored.json",
+    "explore/posthoc/release-sim/out/tails_stored.md"
+   ],
+   "kind": "slow",
+   "ignore_keys": [
+    "workers",
+    "run_seconds",
+    "cpu_seconds",
+    "seconds"
+   ],
+   "ignore_lines": "(?i).*(seconds|wall|workers|cpu).*",
+   "why": "slow: run it with --slow"
+  },
+  {
+   "name": "sim_tables",
+   "part": "2",
+   "topic": "Simulation of the release rules: compact tables",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/release-sim/report_tables.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/release-sim/out/report_tables.md"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "fresh_test",
+   "part": "2",
+   "topic": "Fresh release test of the final rule (R10-27), and its bootstrap sensitivity",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/release-fresh/analyze.py"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/release-fresh/sensitivity.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/release-fresh/out/result.json",
+    "explore/posthoc/release-fresh/out/result.md",
+    "explore/posthoc/release-fresh/out/sensitivity.json",
+    "explore/posthoc/release-fresh/out/sensitivity.md"
+   ],
+   "kind": "run",
+   "ignore_keys": [
+    "sha256"
+   ],
+   "ignore_lines": "^- `[^`]+`: `?([0-9a-f]{64}|not in this repository)`?\\s*$"
+  },
+  {
+   "name": "rule_compare",
+   "part": "2",
+   "topic": "Release rules compared on the same simulated data (T1)",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t1_compare.py"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t1_derived.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/release-rule/out/t1_compare.json",
+    "explore/posthoc/checks/release-rule/out/t1_compare.md",
+    "explore/posthoc/checks/release-rule/out/t1_derived.json",
+    "explore/posthoc/checks/release-rule/out/t1_derived.md"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "sign_floor",
+   "part": "2",
+   "topic": "The floor of the sign condition (T2)",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t2_signfloor.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/release-rule/out/t2_signfloor.json",
+    "explore/posthoc/checks/release-rule/out/t2_signfloor.md"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "boot_collect",
+   "part": "2",
+   "topic": "Bootstrap precision (T3), step 1: the paired differences of every release decision",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t3_collect.py",
+      "stored"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t3_collect.py",
+      "fresh"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t3_collect.py",
+      "replication"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t3_collect.py",
+      "merge"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/release-rule/out/t3_diffs_stored.json",
+    "explore/posthoc/checks/release-rule/out/t3_diffs_fresh.json",
+    "explore/posthoc/checks/release-rule/out/t3_diffs_replication.json",
+    "explore/posthoc/checks/release-rule/out/t3_diffs.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "boot_precision",
+   "part": "2",
+   "topic": "Bootstrap precision (T3), step 2: 100,000 draws and 5 seeds",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/t3_boot.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/release-rule/out/t3_bootstrap.json",
+    "explore/posthoc/checks/release-rule/out/t3_bootstrap.md"
+   ],
+   "kind": "slow",
+   "ignore_keys": [
+    "workers",
+    "run_seconds",
+    "cpu_seconds",
+    "seconds"
+   ],
+   "ignore_lines": "(?i).*(seconds|wall|workers|cpu).*",
+   "why": "slow: run it with --slow"
+  },
+  {
+   "name": "rule_tables",
+   "part": "2",
+   "topic": "The tables of the rule comparison and the bootstrap precision",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/release-rule/paper/gen_tables.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/release-rule/paper/tables.md",
+    "explore/posthoc/checks/release-rule/paper/numbers.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "heldout_display",
+   "part": "3",
+   "topic": "Held-out display outcomes from the stored aggregate result (N1)",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-display/n1_heldout_stored.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-display/out/n1_heldout_stored.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "gated_soft",
+   "part": "3",
+   "topic": "A verifier-gated soft type filter on the development dialogues (N2)",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-display/n2_gated_soft.py"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/checks/repair-display/n2_added_types_check.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-display/out/n2_gated_soft.json",
+    "explore/posthoc/checks/repair-display/out/n2_added_types_check.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "d3_check",
+   "part": "3",
+   "topic": "The guesthouse group of the verifier table (N3)",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-display/n3_d3_check.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-display/out/n3_d3_check.json"
+   ],
+   "kind": "files",
+   "why": "it parses a table of a manuscript that is not in this repository (README, section 8)"
+  },
+  {
+   "name": "display_values",
+   "part": "3",
+   "topic": "The numbers of the display checks, as printed",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-display/make_paper_values.py"
+     ],
+     "cwd": "explore"
+    },
+    {
+     "cmd": [
+      "posthoc/checks/repair-display/make_review_values.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-display/out/paper_values.json",
+    "explore/posthoc/checks/repair-display/out/review_values.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "display_counts",
+   "part": "3",
+   "topic": "Displays of the policies on stated hotel briefs, base rates and raw trade values",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-counts/plan_counts.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-counts/out/plan_counts.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "display_bounds",
+   "part": "3",
+   "topic": "Bounds from stored results: the goal-hotel mean and zero losses",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-counts/plan_bounds.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-counts/out/plan_bounds.json"
+   ],
+   "kind": "run"
+  },
+  {
+   "name": "strict_check",
+   "part": "3",
+   "topic": "Can a call that does not fit the schema enter the returned-note experiment?",
+   "status": "exploratory, post hoc",
+   "steps": [
+    {
+     "cmd": [
+      "posthoc/checks/repair-counts/strict_check.py"
+     ],
+     "cwd": "explore"
+    }
+   ],
+   "outputs": [
+    "explore/posthoc/checks/repair-counts/out/strict_check.json"
+   ],
+   "kind": "run"
+  }
+ ],
+ "posthoc_tests": [
+  "posthoc/release-sim/test_sim.py",
+  "posthoc/checks/release-rule/test_t1.py",
+  "posthoc/checks/release-rule/test_t1b.py",
+  "posthoc/checks/release-rule/test_t2.py",
+  "posthoc/checks/release-rule/test_t3.py",
+  "posthoc/checks/repair-display/test_n1_heldout_stored.py",
+  "posthoc/checks/repair-display/test_n2_gated_soft.py",
+  "posthoc/checks/repair-display/test_n3_d3_check.py"
+ ],
+ "unit_tests_need_data": [
+  "test_confirm25.py",
+  "test_flag2_steer.py",
+  "test_flag_turns.py",
+  "test_fresh27.py",
+  "test_groups.py",
+  "test_labeltest.py",
+  "test_labeltest2_harmless.py",
+  "test_labeltest3_harmless2.py",
+  "test_r10.py",
+  "test_steer2_control.py",
+  "test_steer3_harmless3.py"
+ ]
+}

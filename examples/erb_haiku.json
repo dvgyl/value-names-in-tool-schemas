@@ -1,0 +1,1049 @@
+{
+ "run": "erb_haiku",
+ "experiment": "B",
+ "model": "haiku",
+ "cells": [
+  "f0",
+  "b_list",
+  "b_shot",
+  "b_evidence",
+  "verify"
+ ],
+ "pairs": [
+  {
+   "custom_id": "erb_haiku-MUL0001-f0-1",
+   "request": {
+    "custom_id": "erb_haiku-MUL0001-f0-1",
+    "params": {
+     "model": "claude-haiku-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "medium",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either.\nAssistant: The alpha-milton guest house is in the north and is moderately priced. It has 3 stars and no internet or parking. Would you like to book a room?\nTraveller: That sounds great. Please book that now.\nAssistant: May I ask how many people are in your group?\nTraveller: I have 6 people in my group.\nAssistant: How many days would you like to stay?\nTraveller: 2 nights, starting the same day as the reservation.\nAssistant: I'm sorry. It looks like they're full. Would you like me to look for something else?\nTraveller: Yes please. Is there something else available in that area?\nAssistant: I'm sorry, it looks like that is the only 3 star hotel in that area, would you like me to look somewhere else?\nTraveller: Can we try for 1 night instead of 2? I'll need the reference number please.\nAssistant: I was able to get one night, the reference number is 9XVT8M5T.\nTraveller: Thank you so much!\nAssistant: I'm glad to help, you're welcome!"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "disabled"
+     }
+    },
+    "cell": "f0"
+   },
+   "answer": {
+    "custom_id": "erb_haiku-MUL0001-f0-1",
+    "type": "succeeded",
+    "model": "claude-haiku-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1946,
+    "output_tokens": 47,
+    "text": "{\"name\":null,\"area\":\"any\",\"pricerange\":null,\"stars\":[\"3\"],\"type\":\"any\",\"parking\":\"any\",\"internet\":\"any\"}"
+   }
+  },
+  {
+   "custom_id": "erb_haiku-MUL0001-b_list-1",
+   "request": {
+    "custom_id": "erb_haiku-MUL0001-b_list-1",
+    "params": {
+     "model": "claude-haiku-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "medium",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "accepted_types": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "accepted_types",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either.\nAssistant: The alpha-milton guest house is in the north and is moderately priced. It has 3 stars and no internet or parking. Would you like to book a room?\nTraveller: That sounds great. Please book that now.\nAssistant: May I ask how many people are in your group?\nTraveller: I have 6 people in my group.\nAssistant: How many days would you like to stay?\nTraveller: 2 nights, starting the same day as the reservation.\nAssistant: I'm sorry. It looks like they're full. Would you like me to look for something else?\nTraveller: Yes please. Is there something else available in that area?\nAssistant: I'm sorry, it looks like that is the only 3 star hotel in that area, would you like me to look somewhere else?\nTraveller: Can we try for 1 night instead of 2? I'll need the reference number please.\nAssistant: I was able to get one night, the reference number is 9XVT8M5T.\nTraveller: Thank you so much!\nAssistant: I'm glad to help, you're welcome!"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, accepted_types, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. accepted_types: guesthouse, hotel. parking: yes, no. internet: yes, no. Give accepted_types as a list of every type that the traveller accepts, or null. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "disabled"
+     }
+    },
+    "cell": "b_list"
+   },
+   "answer": {
+    "custom_id": "erb_haiku-MUL0001-b_list-1",
+    "type": "succeeded",
+    "model": "claude-haiku-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1987,
+    "output_tokens": 62,
+    "text": "{\"name\": null, \"area\": [\"centre\"], \"pricerange\": [\"expensive\"], \"stars\": [\"3\"], \"accepted_types\": null, \"parking\": \"any\", \"internet\": \"any\"}"
+   }
+  },
+  {
+   "custom_id": "erb_haiku-MUL0001-b_shot-1",
+   "request": {
+    "custom_id": "erb_haiku-MUL0001-b_shot-1",
+    "params": {
+     "model": "claude-haiku-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "medium",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either.\nAssistant: The alpha-milton guest house is in the north and is moderately priced. It has 3 stars and no internet or parking. Would you like to book a room?\nTraveller: That sounds great. Please book that now.\nAssistant: May I ask how many people are in your group?\nTraveller: I have 6 people in my group.\nAssistant: How many days would you like to stay?\nTraveller: 2 nights, starting the same day as the reservation.\nAssistant: I'm sorry. It looks like they're full. Would you like me to look for something else?\nTraveller: Yes please. Is there something else available in that area?\nAssistant: I'm sorry, it looks like that is the only 3 star hotel in that area, would you like me to look somewhere else?\nTraveller: Can we try for 1 night instead of 2? I'll need the reference number please.\nAssistant: I was able to get one night, the reference number is 9XVT8M5T.\nTraveller: Thank you so much!\nAssistant: I'm glad to help, you're welcome!"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no.\n\nExample 1:\nTraveller: I have a job interview in Cambridge on Thursday morning, so I need a hotel for Wednesday night.\nAssistant: Good luck with the interview. Which area of Cambridge would be best for you?\nTraveller: Somewhere in the north, and it has to be cheap. I am driving there, so I also need parking.\nAnswer: {\"name\": null, \"area\": [\"north\"], \"pricerange\": [\"cheap\"], \"stars\": null, \"type\": null, \"parking\": [\"yes\"], \"internet\": null}\n\nExample 2:\nTraveller: My parents are coming to Cambridge for their anniversary, and they want a hotel for two nights. They will only stay in the west, because their friends live there.\nAssistant: What a nice plan. What else matters to them?\nTraveller: Please do not offer them a guesthouse, because they did not enjoy the last one. It must also have four stars.\nAnswer: {\"name\": null, \"area\": [\"west\"], \"pricerange\": null, \"stars\": [\"4\"], \"type\": [\"hotel\"], \"parking\": null, \"internet\": null}\n\nIf the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "disabled"
+     }
+    },
+    "cell": "b_shot"
+   },
+   "answer": {
+    "custom_id": "erb_haiku-MUL0001-b_shot-1",
+    "type": "succeeded",
+    "model": "claude-haiku-5-5",
+    "stop": "end_turn",
+    "input_tokens": 2297,
+    "output_tokens": 59,
+    "text": "{\"name\": null, \"area\": [\"centre\"], \"pricerange\": [\"expensive\"], \"stars\": [\"3\"], \"type\": null, \"parking\": null, \"internet\": [\"no\"]}"
+   }
+  },
+  {
+   "custom_id": "erb_haiku-MUL0001-b_evidence-1",
+   "request": {
+    "custom_id": "erb_haiku-MUL0001-b_evidence-1",
+    "params": {
+     "model": "claude-haiku-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "medium",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string"
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         },
+         "area": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string",
+              "enum": [
+               "any"
+              ]
+             },
+             {
+              "type": "array",
+              "items": {
+               "type": "string",
+               "enum": [
+                "centre",
+                "north",
+                "south",
+                "east",
+                "west"
+               ]
+              }
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         },
+         "pricerange": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string",
+              "enum": [
+               "any"
+              ]
+             },
+             {
+              "type": "array",
+              "items": {
+               "type": "string",
+               "enum": [
+                "cheap",
+                "moderate",
+                "expensive"
+               ]
+              }
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         },
+         "stars": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string",
+              "enum": [
+               "any"
+              ]
+             },
+             {
+              "type": "array",
+              "items": {
+               "type": "string",
+               "enum": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+               ]
+              }
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         },
+         "type": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string",
+              "enum": [
+               "any"
+              ]
+             },
+             {
+              "type": "array",
+              "items": {
+               "type": "string",
+               "enum": [
+                "guesthouse",
+                "hotel"
+               ]
+              }
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         },
+         "parking": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string",
+              "enum": [
+               "any"
+              ]
+             },
+             {
+              "type": "array",
+              "items": {
+               "type": "string",
+               "enum": [
+                "yes",
+                "no"
+               ]
+              }
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         },
+         "internet": {
+          "type": "object",
+          "properties": {
+           "value": {
+            "anyOf": [
+             {
+              "type": "null"
+             },
+             {
+              "type": "string",
+              "enum": [
+               "any"
+              ]
+             },
+             {
+              "type": "array",
+              "items": {
+               "type": "string",
+               "enum": [
+                "yes",
+                "no"
+               ]
+              }
+             }
+            ]
+           },
+           "quote": {
+            "type": "string"
+           },
+           "status": {
+            "type": "string",
+            "enum": [
+             "stated requirement",
+             "mention only",
+             "no value"
+            ]
+           }
+          },
+          "required": [
+           "value",
+           "quote",
+           "status"
+          ],
+          "additionalProperties": false
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either.\nAssistant: The alpha-milton guest house is in the north and is moderately priced. It has 3 stars and no internet or parking. Would you like to book a room?\nTraveller: That sounds great. Please book that now.\nAssistant: May I ask how many people are in your group?\nTraveller: I have 6 people in my group.\nAssistant: How many days would you like to stay?\nTraveller: 2 nights, starting the same day as the reservation.\nAssistant: I'm sorry. It looks like they're full. Would you like me to look for something else?\nTraveller: Yes please. Is there something else available in that area?\nAssistant: I'm sorry, it looks like that is the only 3 star hotel in that area, would you like me to look somewhere else?\nTraveller: Can we try for 1 night instead of 2? I'll need the reference number please.\nAssistant: I was able to get one night, the reference number is 9XVT8M5T.\nTraveller: Thank you so much!\nAssistant: I'm glad to help, you're welcome!"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. Give each field as an object with the keys \"value\", \"quote\" and \"status\". In \"value\", give the field value as described above. In \"quote\", copy the exact words of one traveller turn that support the value. In \"status\", give \"stated requirement\" if the traveller requires the value, or \"mention only\" if the traveller only mentions the value. If the value is null, give \"\" for \"quote\" and \"no value\" for \"status\". If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "disabled"
+     }
+    },
+    "cell": "b_evidence"
+   },
+   "answer": {
+    "custom_id": "erb_haiku-MUL0001-b_evidence-1",
+    "type": "succeeded",
+    "model": "claude-haiku-5-5",
+    "stop": "end_turn",
+    "input_tokens": 3010,
+    "output_tokens": 258,
+    "text": "{\"name\":{\"value\":null,\"quote\":\"\",\"status\":\"no value\"},\"area\":{\"value\":[\"centre\"],\"quote\":\"I am looking for an expensive indian restaurant in the area of centre.\",\"status\":\"stated requirement\"},\"pricerange\":{\"value\":[\"expensive\"],\"quote\":\"I am looking for an expensive indian restaurant in the area of centre.\",\"status\":\"stated requirement\"},\"stars\":{\"value\":[\"3\"],\"quote\":\"Could you also help me find a 3 star hotel in the area.\",\"status\":\"stated requirement\"},\"type\":{\"value\":null,\"quote\":\"\",\"status\":\"no value\"},\"parking\":{\"value\":null,\"quote\":\"\",\"status\":\"no value\"},\"internet\":{\"value\":[\"no\"],\"quote\":\"I don't need wifi either.\",\"status\":\"stated requirement\"}}"
+   }
+  },
+  {
+   "custom_id": "erb_haiku-MUL0001-verify-1",
+   "request": {
+    "custom_id": "erb_haiku-MUL0001-verify-1",
+    "params": {
+     "model": "claude-haiku-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "medium",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "answer": {
+          "type": "string",
+          "enum": [
+           "yes",
+           "no",
+           "unclear"
+          ]
+         }
+        },
+        "required": [
+         "answer"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either.\nAssistant: The alpha-milton guest house is in the north and is moderately priced. It has 3 stars and no internet or parking. Would you like to book a room?\nTraveller: That sounds great. Please book that now.\nAssistant: May I ask how many people are in your group?\nTraveller: I have 6 people in my group.\nAssistant: How many days would you like to stay?\nTraveller: 2 nights, starting the same day as the reservation.\nAssistant: I'm sorry. It looks like they're full. Would you like me to look for something else?\nTraveller: Yes please. Is there something else available in that area?\nAssistant: I'm sorry, it looks like that is the only 3 star hotel in that area, would you like me to look somewhere else?\nTraveller: Can we try for 1 night instead of 2? I'll need the reference number please.\nAssistant: I was able to get one night, the reference number is 9XVT8M5T.\nTraveller: Thank you so much!\nAssistant: I'm glad to help, you're welcome!"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Does the traveller exclude guesthouses? Answer yes, no, or unclear.",
+     "thinking": {
+      "type": "disabled"
+     }
+    },
+    "cell": "verify"
+   },
+   "answer": {
+    "custom_id": "erb_haiku-MUL0001-verify-1",
+    "type": "succeeded",
+    "model": "claude-haiku-5-5",
+    "stop": "end_turn",
+    "input_tokens": 880,
+    "output_tokens": 12,
+    "text": "{\"answer\":\"unclear\"}"
+   }
+  }
+ ]
+}

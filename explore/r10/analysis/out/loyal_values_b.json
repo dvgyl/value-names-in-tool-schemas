@@ -1,0 +1,150 @@
+{
+ "post_hoc": true,
+ "chapter3": {
+  "interest": [
+   3,
+   8,
+   38,
+   -0.11
+  ],
+  "interest_not_sure": 1,
+  "claim": [
+   8,
+   9,
+   89,
+   0.73
+  ],
+  "steer": [
+   9,
+   9,
+   100,
+   1.0
+  ],
+  "rewrites": 9,
+  "interest_person_yes_model_no": [
+   "G1",
+   "H1",
+   "H2",
+   "N2"
+  ],
+  "interest_person_no_model_yes": [
+   "H3"
+  ],
+  "interest_unsure": [
+   "N3"
+  ],
+  "claim_disagree": [
+   "N3"
+  ],
+  "f6": {
+   "sampled": 12,
+   "agree": 10,
+   "pct": 83,
+   "other": 2
+  },
+  "controls": {
+   "other": 3,
+   "n": 3
+  }
+ },
+ "r10_24": {
+  "levels": [
+   "99.17",
+   "98.75"
+  ],
+  "specific": {
+   "deepseek": [
+    "+1.1",
+    "-1.9, +4.1"
+   ],
+   "luna": [
+    "+0.5",
+    "-2.9, +3.9"
+   ]
+  },
+  "model_decisions": {
+   "deepseek": [
+    "pass",
+    "pass"
+   ],
+   "luna": [
+    "pass",
+    "pass"
+   ]
+  },
+  "luna_paraphrase_between_batches": [
+   "+5.1",
+   "+2.2, +8.3"
+  ],
+  "deepseek_control_between_runs": [
+   "+2.2",
+   "+0.5, +4.2"
+  ],
+  "deepseek_pooled_specific": [
+   "+3.5",
+   "+0.6, +6.6"
+  ],
+  "luna_guesthouse_replication_found": true,
+  "pilot_usd": [
+   0.0004,
+   0.0003
+  ],
+  "cost_usd": {
+   "deepseek": 0.226,
+   "luna": 0.0956
+  },
+  "requests_per_run": [
+   "2,170",
+   "2,170"
+  ],
+  "deepseek_cut": 3,
+  "verdicts": {
+   "deepseek": "wrong flag / wrong flag",
+   "luna": "wrong flag / no flag to judge"
+  }
+ },
+ "refs": {
+  "42": {
+   "entry": "McCoy, R. T.; Pavlick, E.; and Linzen, T. 2019. Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference. In *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 3428–3448. DOI 10.18653/v1/P19-1334.",
+   "safe_claim": "Models that learn natural language inference can use a shortcut. The shortcut treats a hypothesis that shares many words with the premise as entailed. The authors build HANS to test this shortcut."
+  },
+  "45": {
+   "entry": "Mottin, D.; Marascu, A.; Basu Roy, S.; Das, G.; Palpanas, T.; and Velegrakis, Y. 2013. A Probabilistic Optimization Framework for the Empty-Answer Problem. *Proceedings of the VLDB Endowment* 6(14): 1762–1773. DOI 10.14778/2556549.2556560.",
+   "safe_claim": "When a query returns no answer, a system can suggest new queries that have fewer conditions. The paper gives a framework to choose these relaxations."
+  },
+  "46": {
+   "entry": "Shi, J.; Yuan, Z.; Tie, G.; Zhou, P.; Gong, N. Z.; and Sun, L. 2025. Prompt Injection Attack to Tool Selection in LLM Agents. arXiv:2504.19793.",
+   "safe_claim": "An attacker can add a malicious tool document to a tool library. The agent then picks that tool for a task that the attacker chose."
+  },
+  "49": {
+   "entry": "Ribeiro, M. T.; Wu, T.; Guestrin, C.; and Singh, S. 2020. Beyond Accuracy: Behavioral Testing of NLP Models with CheckList. In *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics*, 4902–4912. DOI 10.18653/v1/2020.acl-main.442.",
+   "safe_claim": "Held-out accuracy can overstate model quality. The authors give CheckList, a method of behavioral tests that comes from software engineering, and a tool that makes many test cases."
+  },
+  "51": {
+   "entry": "Feng, Y.; Lu, Z.; Liu, B.; Zhan, L.; and Wu, X.-M. 2023. Towards LLM-driven Dialogue State Tracking. In *Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing*, 739–755. DOI 10.18653/v1/2023.emnlp-main.48.",
+   "safe_claim": "In the error analysis of the model of Feng et al. on MultiWOZ 2.4, the hotel-type slot has the most errors (338 of 2,835). 78.10 percent of these errors confuse \"not mentioned\" with \"hotel\"."
+  }
+ },
+ "step_c": {
+  "chapter2_missed": [
+   "c01",
+   "c08",
+   "c16",
+   "c17",
+   "c24",
+   "c27",
+   "c28"
+  ],
+  "missed_widen_silent": [
+   "c08",
+   "c17",
+   "c28"
+  ],
+  "widen_groups": [
+   "hotel brief"
+  ],
+  "chapter2_models": "Claude models, Sol and Astra",
+  "size_described_original": false,
+  "size_described_c": true
+ }
+}

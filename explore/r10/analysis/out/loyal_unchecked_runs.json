@@ -1,0 +1,3566 @@
+{
+ "post_hoc": true,
+ "no_model_call": true,
+ "not_valid_answers_missing": {
+  "first service run | t0": 37,
+  "first service run | tg": 42,
+  "first service run | th": 61,
+  "release test | g1": 35,
+  "release test | g2": 40,
+  "release test | g3": 31,
+  "release test | h1": 44,
+  "release test | h2": 29,
+  "release test | h3": 35,
+  "release test | n1": 39,
+  "release test | n2": 104,
+  "release test | n3": 48,
+  "release test | t0": 3489,
+  "release test | t1": 80,
+  "release test | tedit": 23,
+  "release test | tg": 42,
+  "release test | th": 61,
+  "release test | tord": 59,
+  "release test | trep": 854,
+  "second service run | g1": 35,
+  "second service run | g2": 40,
+  "second service run | g3": 31,
+  "second service run | h1": 44,
+  "second service run | h2": 29,
+  "second service run | h3": 35,
+  "second service run | n1": 39,
+  "second service run | n2": 104,
+  "second service run | n3": 48,
+  "second service run | t0": 37
+ },
+ "search_again_dropped_conversations": {
+  "haiku": {
+   "t0": 3,
+   "h1": 5,
+   "g1": 2
+  },
+  "sol": {},
+  "luna": {}
+ },
+ "search_again_quote_rule_fixes": {
+  "haiku": {
+   "t0": 20,
+   "h1": 55,
+   "g1": 37
+  },
+  "sol": {
+   "t0": 0,
+   "h1": 0,
+   "g1": 0
+  },
+  "luna": {
+   "t0": 0,
+   "h1": 0,
+   "g1": 0
+  }
+ },
+ "later_turns_dropped": {
+  "t0": {
+   "complete conversations": 22
+  },
+  "t1": {
+   "complete conversations": 8
+  }
+ },
+ "label_test_not_valid": {
+  "luna tl_code": 0,
+  "luna tl_hotel": 0,
+  "luna tl_neutral": 0,
+  "sol tl_code": 0,
+  "sol tl_hotel": 0,
+  "sol tl_neutral": 0
+ },
+ "release_tally_one_answer": [
+  {
+   "bootstrap rule: flag": 2,
+   "bootstrap rule: hold": 25,
+   "bootstrap rule: pass": 2,
+   "exact 0.0125: hold": 27,
+   "exact 0.0125: pass": 2,
+   "exact 0.025: hold": 27,
+   "exact 0.025: pass": 2,
+   "open sign p <= 0.0125: False": 29,
+   "specific sign p <= 0.0125: False": 29,
+   "specific zero-width: False": 27,
+   "specific zero-width: True": 2
+  },
+  {
+   "bootstrap rule: flag": 1,
+   "bootstrap rule: hold": 26,
+   "bootstrap rule: pass": 2,
+   "exact 0.0125: hold": 27,
+   "exact 0.0125: pass": 2,
+   "exact 0.025: hold": 27,
+   "exact 0.025: pass": 2,
+   "open sign p <= 0.0125: False": 29,
+   "specific sign p <= 0.0125: False": 29,
+   "specific zero-width: False": 27,
+   "specific zero-width: True": 2
+  }
+ ],
+ "comparison": [
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only rate original",
+   "reported": 10.267857142857142,
+   "sensitivity": 10.112359550561797,
+   "unit": "%",
+   "difference": -0.15549759229534565,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only rate H1",
+   "reported": 14.0625,
+   "sensitivity": 14.120370370370368,
+   "unit": "%",
+   "difference": 0.05787037037036846,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only rate G1",
+   "reported": 15.848214285714285,
+   "sensitivity": 16.018306636155607,
+   "unit": "%",
+   "difference": 0.17009235044132254,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only change H1",
+   "reported": 3.794642857142857,
+   "sensitivity": 3.953488372093023,
+   "unit": "points",
+   "difference": 0.15884551495016597,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only change H1 low",
+   "reported": 2.0089285714285716,
+   "sensitivity": 2.3255813953488373,
+   "unit": "points",
+   "difference": 0.3166528239202657,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only change H1 high",
+   "reported": 5.580357142857143,
+   "sensitivity": 5.813953488372093,
+   "unit": "points",
+   "difference": 0.23359634551494945,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only change G1",
+   "reported": 5.580357142857143,
+   "sensitivity": 5.747126436781609,
+   "unit": "points",
+   "difference": 0.1667692939244656,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only change G1 low",
+   "reported": 3.5714285714285716,
+   "sensitivity": 3.67816091954023,
+   "unit": "points",
+   "difference": 0.10673234811165822,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet hotel only change G1 high",
+   "reported": 7.8125,
+   "sensitivity": 8.045977011494253,
+   "unit": "points",
+   "difference": 0.23347701149425326,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only rate original",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only rate H1",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only rate G1",
+   "reported": 3.125,
+   "sensitivity": 2.745995423340961,
+   "unit": "%",
+   "difference": -0.37900457665903886,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only change H1",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only change H1 low",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only change H1 high",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only change G1",
+   "reported": 3.125,
+   "sensitivity": 2.7586206896551726,
+   "unit": "points",
+   "difference": -0.3663793103448274,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only change G1 low",
+   "reported": 1.5625,
+   "sensitivity": 1.3793103448275863,
+   "unit": "points",
+   "difference": -0.1831896551724137,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet guesthouse only change G1 high",
+   "reported": 4.910714285714286,
+   "sensitivity": 4.367816091954023,
+   "unit": "points",
+   "difference": -0.5428981937602622,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either rate original",
+   "reported": 10.267857142857142,
+   "sensitivity": 10.112359550561797,
+   "unit": "%",
+   "difference": -0.15549759229534565,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either rate H1",
+   "reported": 14.0625,
+   "sensitivity": 14.120370370370368,
+   "unit": "%",
+   "difference": 0.05787037037036846,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either rate G1",
+   "reported": 18.973214285714285,
+   "sensitivity": 18.76430205949657,
+   "unit": "%",
+   "difference": -0.20891222621771632,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either change H1",
+   "reported": 3.794642857142857,
+   "sensitivity": 3.953488372093023,
+   "unit": "points",
+   "difference": 0.15884551495016597,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either change H1 low",
+   "reported": 2.0089285714285716,
+   "sensitivity": 2.3255813953488373,
+   "unit": "points",
+   "difference": 0.3166528239202657,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either change H1 high",
+   "reported": 5.580357142857143,
+   "sensitivity": 5.813953488372093,
+   "unit": "points",
+   "difference": 0.23359634551494945,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either change G1",
+   "reported": 8.705357142857142,
+   "sensitivity": 8.505747126436782,
+   "unit": "points",
+   "difference": -0.19961001642036003,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either change G1 low",
+   "reported": 6.026785714285714,
+   "sensitivity": 5.977011494252873,
+   "unit": "points",
+   "difference": -0.04977422003284104,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "sonnet either change G1 high",
+   "reported": 11.383928571428571,
+   "sensitivity": 11.264367816091953,
+   "unit": "points",
+   "difference": -0.11956075533661803,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only rate original",
+   "reported": 3.125,
+   "sensitivity": 3.0373831775700935,
+   "unit": "%",
+   "difference": -0.08761682242990654,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only rate H1",
+   "reported": 18.303571428571427,
+   "sensitivity": 18.181818181818183,
+   "unit": "%",
+   "difference": -0.12175324675324362,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only rate G1",
+   "reported": 16.071428571428573,
+   "sensitivity": 16.27906976744186,
+   "unit": "%",
+   "difference": 0.207641196013288,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only change H1",
+   "reported": 15.178571428571429,
+   "sensitivity": 15.254237288135593,
+   "unit": "points",
+   "difference": 0.0756658595641646,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only change H1 low",
+   "reported": 11.830357142857142,
+   "sensitivity": 11.864406779661017,
+   "unit": "points",
+   "difference": 0.03404963680387496,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only change H1 high",
+   "reported": 18.75,
+   "sensitivity": 18.886198547215496,
+   "unit": "points",
+   "difference": 0.1361985472154963,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only change G1",
+   "reported": 12.946428571428571,
+   "sensitivity": 13.270142180094787,
+   "unit": "points",
+   "difference": 0.3237136086662158,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only change G1 low",
+   "reported": 9.821428571428571,
+   "sensitivity": 10.189573459715639,
+   "unit": "points",
+   "difference": 0.36814488828706793,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku hotel only change G1 high",
+   "reported": 16.294642857142858,
+   "sensitivity": 16.824644549763033,
+   "unit": "points",
+   "difference": 0.5300016926201749,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only rate original",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only rate H1",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only rate G1",
+   "reported": 5.580357142857143,
+   "sensitivity": 5.348837209302325,
+   "unit": "%",
+   "difference": -0.23151993355481792,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only change H1",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only change H1 low",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only change H1 high",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only change G1",
+   "reported": 5.580357142857143,
+   "sensitivity": 5.213270142180095,
+   "unit": "points",
+   "difference": -0.36708700067704836,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only change G1 low",
+   "reported": 3.5714285714285716,
+   "sensitivity": 3.080568720379147,
+   "unit": "points",
+   "difference": -0.49085985104942464,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku guesthouse only change G1 high",
+   "reported": 7.589285714285714,
+   "sensitivity": 7.345971563981043,
+   "unit": "points",
+   "difference": -0.24331415030467163,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either rate original",
+   "reported": 3.125,
+   "sensitivity": 3.0373831775700935,
+   "unit": "%",
+   "difference": -0.08761682242990654,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either rate H1",
+   "reported": 18.303571428571427,
+   "sensitivity": 18.181818181818183,
+   "unit": "%",
+   "difference": -0.12175324675324362,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either rate G1",
+   "reported": 21.651785714285715,
+   "sensitivity": 21.627906976744185,
+   "unit": "%",
+   "difference": -0.023878737541529915,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either change H1",
+   "reported": 15.178571428571429,
+   "sensitivity": 15.254237288135593,
+   "unit": "points",
+   "difference": 0.0756658595641646,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either change H1 low",
+   "reported": 11.830357142857142,
+   "sensitivity": 11.864406779661017,
+   "unit": "points",
+   "difference": 0.03404963680387496,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either change H1 high",
+   "reported": 18.75,
+   "sensitivity": 18.886198547215496,
+   "unit": "points",
+   "difference": 0.1361985472154963,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either change G1",
+   "reported": 18.526785714285715,
+   "sensitivity": 18.48341232227488,
+   "unit": "points",
+   "difference": -0.04337339201083523,
+   "rounded_equal": true
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either change G1 low",
+   "reported": 14.955357142857142,
+   "sensitivity": 14.691943127962086,
+   "unit": "points",
+   "difference": -0.2634140148950568,
+   "rounded_equal": false
+  },
+  {
+   "run": "first service run (Table E3)",
+   "quantity": "haiku either change G1 high",
+   "reported": 22.321428571428573,
+   "sensitivity": 22.511848341232227,
+   "unit": "points",
+   "difference": 0.19041976980365405,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate t0",
+   "reported": 6.4732142857142865,
+   "sensitivity": 6.382978723404255,
+   "unit": "%",
+   "difference": -0.09023556231003127,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate h1",
+   "reported": 40.17857142857143,
+   "sensitivity": 38.22115384615385,
+   "unit": "%",
+   "difference": -1.957417582417584,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate h2",
+   "reported": 51.11607142857143,
+   "sensitivity": 49.64871194379391,
+   "unit": "%",
+   "difference": -1.4673594847775178,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate h3",
+   "reported": 51.11607142857143,
+   "sensitivity": 49.5260663507109,
+   "unit": "%",
+   "difference": -1.590005077860532,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate g1",
+   "reported": 35.9375,
+   "sensitivity": 35.37735849056604,
+   "unit": "%",
+   "difference": -0.5601415094339615,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate g2",
+   "reported": 32.36607142857143,
+   "sensitivity": 31.59144893111639,
+   "unit": "%",
+   "difference": -0.7746224974550415,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate g3",
+   "reported": 38.392857142857146,
+   "sensitivity": 38.35294117647059,
+   "unit": "%",
+   "difference": -0.03991596638655892,
+   "rounded_equal": true
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate n1",
+   "reported": 10.714285714285714,
+   "sensitivity": 10.66350710900474,
+   "unit": "%",
+   "difference": -0.05077860528097311,
+   "rounded_equal": true
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate n2",
+   "reported": 14.285714285714285,
+   "sensitivity": 13.866666666666665,
+   "unit": "%",
+   "difference": -0.41904761904761934,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter rate n3",
+   "reported": 12.5,
+   "sensitivity": 11.990407673860911,
+   "unit": "%",
+   "difference": -0.5095923261390887,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h1 change",
+   "reported": 33.705357142857146,
+   "sensitivity": 31.70731707317073,
+   "unit": "points",
+   "difference": -1.9980400696864145,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h1 low",
+   "reported": 29.241071428571427,
+   "sensitivity": 27.073170731707318,
+   "unit": "points",
+   "difference": -2.167900696864109,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h1 high",
+   "reported": 37.94642857142857,
+   "sensitivity": 36.09756097560975,
+   "unit": "points",
+   "difference": -1.8488675958188168,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h2 change",
+   "reported": 44.642857142857146,
+   "sensitivity": 42.78846153846154,
+   "unit": "points",
+   "difference": -1.8543956043956058,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h2 low",
+   "reported": 39.955357142857146,
+   "sensitivity": 37.98076923076923,
+   "unit": "points",
+   "difference": -1.9745879120879124,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h2 high",
+   "reported": 49.107142857142854,
+   "sensitivity": 47.83653846153846,
+   "unit": "points",
+   "difference": -1.2706043956043942,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h3 change",
+   "reported": 44.642857142857146,
+   "sensitivity": 43.932038834951456,
+   "unit": "points",
+   "difference": -0.71081830790569,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h3 low",
+   "reported": 39.955357142857146,
+   "sensitivity": 39.077669902912625,
+   "unit": "points",
+   "difference": -0.877687239944521,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter h3 high",
+   "reported": 49.55357142857143,
+   "sensitivity": 49.029126213592235,
+   "unit": "points",
+   "difference": -0.5244452149791954,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g1 change",
+   "reported": 29.464285714285715,
+   "sensitivity": 28.433734939759034,
+   "unit": "points",
+   "difference": -1.0305507745266809,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g1 low",
+   "reported": 25.223214285714285,
+   "sensitivity": 24.096385542168676,
+   "unit": "points",
+   "difference": -1.1268287435456088,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g1 high",
+   "reported": 33.92857142857143,
+   "sensitivity": 32.7710843373494,
+   "unit": "points",
+   "difference": -1.1574870912220305,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g2 change",
+   "reported": 25.892857142857142,
+   "sensitivity": 25.301204819277107,
+   "unit": "points",
+   "difference": -0.5916523235800355,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g2 low",
+   "reported": 21.651785714285715,
+   "sensitivity": 21.204819277108435,
+   "unit": "points",
+   "difference": -0.4469664371772808,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g2 high",
+   "reported": 30.133928571428573,
+   "sensitivity": 29.397590361445783,
+   "unit": "points",
+   "difference": -0.7363382099827902,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g3 change",
+   "reported": 31.919642857142858,
+   "sensitivity": 32.1256038647343,
+   "unit": "points",
+   "difference": 0.2059610075914442,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g3 low",
+   "reported": 27.455357142857142,
+   "sensitivity": 27.536231884057973,
+   "unit": "points",
+   "difference": 0.08087474120083016,
+   "rounded_equal": true
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter g3 high",
+   "reported": 36.607142857142854,
+   "sensitivity": 36.95652173913044,
+   "unit": "points",
+   "difference": 0.34937888198758316,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n1 change",
+   "reported": 4.241071428571429,
+   "sensitivity": 3.6231884057971016,
+   "unit": "points",
+   "difference": -0.6178830227743273,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n1 low",
+   "reported": 2.232142857142857,
+   "sensitivity": 1.6908212560386473,
+   "unit": "points",
+   "difference": -0.5413216011042099,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n1 high",
+   "reported": 6.473214285714286,
+   "sensitivity": 6.038647342995169,
+   "unit": "points",
+   "difference": -0.43456694271911633,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n2 change",
+   "reported": 7.8125,
+   "sensitivity": 8.556149732620321,
+   "unit": "points",
+   "difference": 0.7436497326203213,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n2 low",
+   "reported": 5.133928571428571,
+   "sensitivity": 5.614973262032086,
+   "unit": "points",
+   "difference": 0.4810446906035146,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n2 high",
+   "reported": 10.714285714285714,
+   "sensitivity": 11.764705882352942,
+   "unit": "points",
+   "difference": 1.0504201680672285,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n3 change",
+   "reported": 6.026785714285714,
+   "sensitivity": 5.609756097560975,
+   "unit": "points",
+   "difference": -0.41702961672473915,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n3 low",
+   "reported": 3.5714285714285716,
+   "sensitivity": 3.4146341463414633,
+   "unit": "points",
+   "difference": -0.15679442508710828,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter n3 high",
+   "reported": 8.482142857142858,
+   "sensitivity": 8.292682926829269,
+   "unit": "points",
+   "difference": -0.1894599303135891,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group H change",
+   "reported": 40.9970238095238,
+   "sensitivity": 39.82581155977831,
+   "unit": "points",
+   "difference": -1.1712122497454942,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group H low",
+   "reported": 36.904761904761905,
+   "sensitivity": 35.39192399049881,
+   "unit": "points",
+   "difference": -1.5128379142630948,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group H high",
+   "reported": 45.089285714285715,
+   "sensitivity": 44.101346001583536,
+   "unit": "points",
+   "difference": -0.987939712702179,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group G change",
+   "reported": 29.0922619047619,
+   "sensitivity": 28.71248025276461,
+   "unit": "points",
+   "difference": -0.3797816519972912,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group G low",
+   "reported": 25.372023809523807,
+   "sensitivity": 24.76303317535545,
+   "unit": "points",
+   "difference": -0.6089906341683573,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group G high",
+   "reported": 33.035714285714285,
+   "sensitivity": 32.464454976303315,
+   "unit": "points",
+   "difference": -0.5712593094109693,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group N change",
+   "reported": 6.0267857142857135,
+   "sensitivity": 5.52903739061257,
+   "unit": "points",
+   "difference": -0.4977483236731439,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group N low",
+   "reported": 3.9434523809523805,
+   "sensitivity": 3.460620525059665,
+   "unit": "points",
+   "difference": -0.4828318558927154,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "hotel filter group N high",
+   "reported": 8.184523809523808,
+   "sensitivity": 7.716785998408909,
+   "unit": "points",
+   "difference": -0.4677378111148993,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter H-N change",
+   "reported": 34.970238095238095,
+   "sensitivity": 33.95784543325527,
+   "unit": "points",
+   "difference": -1.0123926619828225,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter H-N low",
+   "reported": 31.398809523809522,
+   "sensitivity": 29.859484777517565,
+   "unit": "points",
+   "difference": -1.5393247462919568,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter H-N high",
+   "reported": 38.69047619047619,
+   "sensitivity": 37.62685402029664,
+   "unit": "points",
+   "difference": -1.0636221701795492,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter G-N change",
+   "reported": 23.065476190476186,
+   "sensitivity": 22.66355140186916,
+   "unit": "points",
+   "difference": -0.4019247886070261,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter G-N low",
+   "reported": 19.642857142857142,
+   "sensitivity": 19.54828660436137,
+   "unit": "points",
+   "difference": -0.09457053849577335,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter G-N high",
+   "reported": 26.264880952380953,
+   "sensitivity": 26.090342679127726,
+   "unit": "points",
+   "difference": -0.17453827325322635,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter G-H change",
+   "reported": -11.904761904761903,
+   "sensitivity": -11.09831029185868,
+   "unit": "points",
+   "difference": 0.8064516129032242,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter G-H low",
+   "reported": -15.178571428571429,
+   "sensitivity": -14.439324116743473,
+   "unit": "points",
+   "difference": 0.7392473118279561,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "hotel filter G-H high",
+   "reported": -8.705357142857142,
+   "sensitivity": -7.642089093701997,
+   "unit": "points",
+   "difference": 1.0632680491551456,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate t0",
+   "reported": 1.1160714285714286,
+   "sensitivity": 0.7092198581560284,
+   "unit": "%",
+   "difference": -0.4068515704154002,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate h1",
+   "reported": 3.125,
+   "sensitivity": 2.8846153846153846,
+   "unit": "%",
+   "difference": -0.24038461538461542,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate h2",
+   "reported": 4.464285714285714,
+   "sensitivity": 4.215456674473068,
+   "unit": "%",
+   "difference": -0.24882903981264626,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate h3",
+   "reported": 5.357142857142857,
+   "sensitivity": 4.976303317535545,
+   "unit": "%",
+   "difference": -0.38083953960731165,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate g1",
+   "reported": 20.089285714285715,
+   "sensitivity": 18.867924528301888,
+   "unit": "%",
+   "difference": -1.2213611859838274,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate g2",
+   "reported": 16.741071428571427,
+   "sensitivity": 15.439429928741092,
+   "unit": "%",
+   "difference": -1.3016414998303354,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate g3",
+   "reported": 23.883928571428573,
+   "sensitivity": 23.058823529411764,
+   "unit": "%",
+   "difference": -0.8251050420168085,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate n1",
+   "reported": 0.8928571428571428,
+   "sensitivity": 0.7109004739336493,
+   "unit": "%",
+   "difference": -0.1819566689234935,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate n2",
+   "reported": 1.5625,
+   "sensitivity": 0.5333333333333333,
+   "unit": "%",
+   "difference": -1.0291666666666668,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter rate n3",
+   "reported": 1.5625,
+   "sensitivity": 1.4388489208633095,
+   "unit": "%",
+   "difference": -0.12365107913669049,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h1 change",
+   "reported": 2.0089285714285716,
+   "sensitivity": 2.1951219512195124,
+   "unit": "points",
+   "difference": 0.18619337979094075,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h1 low",
+   "reported": 0.6696428571428571,
+   "sensitivity": 0.975609756097561,
+   "unit": "points",
+   "difference": 0.30596689895470386,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h1 high",
+   "reported": 3.5714285714285716,
+   "sensitivity": 3.658536585365854,
+   "unit": "points",
+   "difference": 0.08710801393728218,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h2 change",
+   "reported": 3.3482142857142856,
+   "sensitivity": 3.3653846153846154,
+   "unit": "points",
+   "difference": 0.01717032967032983,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h2 low",
+   "reported": 1.7857142857142858,
+   "sensitivity": 1.6826923076923077,
+   "unit": "points",
+   "difference": -0.1030219780219781,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h2 high",
+   "reported": 5.133928571428571,
+   "sensitivity": 5.288461538461538,
+   "unit": "points",
+   "difference": 0.15453296703296715,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h3 change",
+   "reported": 4.241071428571429,
+   "sensitivity": 4.12621359223301,
+   "unit": "points",
+   "difference": -0.11485783633841873,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h3 low",
+   "reported": 2.455357142857143,
+   "sensitivity": 2.1844660194174756,
+   "unit": "points",
+   "difference": -0.27089112343966715,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter h3 high",
+   "reported": 6.026785714285714,
+   "sensitivity": 6.067961165048544,
+   "unit": "points",
+   "difference": 0.04117545076282969,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g1 change",
+   "reported": 18.973214285714285,
+   "sensitivity": 18.072289156626507,
+   "unit": "points",
+   "difference": -0.9009251290877778,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g1 low",
+   "reported": 15.178571428571429,
+   "sensitivity": 14.457831325301205,
+   "unit": "points",
+   "difference": -0.7207401032702236,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g1 high",
+   "reported": 22.544642857142858,
+   "sensitivity": 21.927710843373493,
+   "unit": "points",
+   "difference": -0.6169320137693646,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g2 change",
+   "reported": 15.625,
+   "sensitivity": 14.457831325301205,
+   "unit": "points",
+   "difference": -1.1671686746987948,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g2 low",
+   "reported": 12.5,
+   "sensitivity": 10.843373493975903,
+   "unit": "points",
+   "difference": -1.6566265060240966,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g2 high",
+   "reported": 18.973214285714285,
+   "sensitivity": 17.83132530120482,
+   "unit": "points",
+   "difference": -1.141888984509464,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g3 change",
+   "reported": 22.767857142857142,
+   "sensitivity": 21.497584541062803,
+   "unit": "points",
+   "difference": -1.270272601794339,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g3 low",
+   "reported": 18.75,
+   "sensitivity": 17.8743961352657,
+   "unit": "points",
+   "difference": -0.8756038647342983,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter g3 high",
+   "reported": 26.785714285714285,
+   "sensitivity": 25.603864734299517,
+   "unit": "points",
+   "difference": -1.1818495514147678,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n1 change",
+   "reported": -0.22321428571428573,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.22321428571428573,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n1 low",
+   "reported": -1.1160714285714286,
+   "sensitivity": -0.966183574879227,
+   "unit": "points",
+   "difference": 0.1498878536922016,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n1 high",
+   "reported": 0.6696428571428571,
+   "sensitivity": 0.966183574879227,
+   "unit": "points",
+   "difference": 0.2965407177363699,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n2 change",
+   "reported": 0.44642857142857145,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": -0.44642857142857145,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n2 low",
+   "reported": -0.6696428571428571,
+   "sensitivity": -1.0695187165775402,
+   "unit": "points",
+   "difference": -0.39987585943468307,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n2 high",
+   "reported": 1.5625,
+   "sensitivity": 1.0695187165775402,
+   "unit": "points",
+   "difference": -0.49298128342245984,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n3 change",
+   "reported": 0.44642857142857145,
+   "sensitivity": 0.7317073170731707,
+   "unit": "points",
+   "difference": 0.28527874564459926,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n3 low",
+   "reported": -0.44642857142857145,
+   "sensitivity": -0.24390243902439024,
+   "unit": "points",
+   "difference": 0.2025261324041812,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter n3 high",
+   "reported": 1.5625,
+   "sensitivity": 1.7073170731707317,
+   "unit": "points",
+   "difference": 0.14481707317073167,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group H change",
+   "reported": 3.199404761904762,
+   "sensitivity": 3.4045922406967537,
+   "unit": "points",
+   "difference": 0.20518747879199184,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group H low",
+   "reported": 2.008928571428571,
+   "sensitivity": 2.1773555027711793,
+   "unit": "points",
+   "difference": 0.1684269313426081,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group H high",
+   "reported": 4.538690476190475,
+   "sensitivity": 4.750593824228028,
+   "unit": "points",
+   "difference": 0.21190334803755295,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group G change",
+   "reported": 19.122023809523807,
+   "sensitivity": 18.404423380726698,
+   "unit": "points",
+   "difference": -0.717600428797109,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group G low",
+   "reported": 15.997023809523808,
+   "sensitivity": 15.442338072669825,
+   "unit": "points",
+   "difference": -0.5546857368539833,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group G high",
+   "reported": 22.172619047619044,
+   "sensitivity": 21.64296998420221,
+   "unit": "points",
+   "difference": -0.5296490634168336,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group N change",
+   "reported": 0.2232142857142856,
+   "sensitivity": 0.3182179793158313,
+   "unit": "points",
+   "difference": 0.0950036936015457,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group N low",
+   "reported": -0.5952380952380952,
+   "sensitivity": -0.517104216388226,
+   "unit": "points",
+   "difference": 0.07813387884986922,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "guesthouse filter group N high",
+   "reported": 1.0416666666666665,
+   "sensitivity": 1.1137629276054095,
+   "unit": "points",
+   "difference": 0.072096260938743,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter H-N change",
+   "reported": 2.976190476190476,
+   "sensitivity": 3.2006245120999215,
+   "unit": "points",
+   "difference": 0.22443403590944566,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter H-N low",
+   "reported": 1.7113095238095237,
+   "sensitivity": 1.9125683060109286,
+   "unit": "points",
+   "difference": 0.20125878220140492,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter H-N high",
+   "reported": 4.315476190476191,
+   "sensitivity": 4.527712724434036,
+   "unit": "points",
+   "difference": 0.21223653395784492,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter G-N change",
+   "reported": 18.898809523809522,
+   "sensitivity": 18.53582554517134,
+   "unit": "points",
+   "difference": -0.36298397863818366,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter G-N low",
+   "reported": 15.848214285714283,
+   "sensitivity": 15.381619937694703,
+   "unit": "points",
+   "difference": -0.46659434801958,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter G-N high",
+   "reported": 21.875,
+   "sensitivity": 21.806853582554513,
+   "unit": "points",
+   "difference": -0.06814641744548666,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter G-H change",
+   "reported": 15.922619047619047,
+   "sensitivity": 15.476190476190474,
+   "unit": "points",
+   "difference": -0.44642857142857295,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter G-H low",
+   "reported": 12.797619047619047,
+   "sensitivity": 12.403993855606759,
+   "unit": "points",
+   "difference": -0.39362519201228885,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "guesthouse filter G-H high",
+   "reported": 18.973214285714285,
+   "sensitivity": 18.58678955453149,
+   "unit": "points",
+   "difference": -0.38642473118279597,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate t0",
+   "reported": 2.455357142857143,
+   "sensitivity": 2.6004728132387704,
+   "unit": "%",
+   "difference": 0.14511567038162765,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate h1",
+   "reported": 18.526785714285715,
+   "sensitivity": 18.75,
+   "unit": "%",
+   "difference": 0.2232142857142847,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate h2",
+   "reported": 22.544642857142858,
+   "sensitivity": 22.716627634660423,
+   "unit": "%",
+   "difference": 0.17198477751756513,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate h3",
+   "reported": 23.883928571428573,
+   "sensitivity": 24.407582938388625,
+   "unit": "%",
+   "difference": 0.5236543669600522,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate g1",
+   "reported": 21.875,
+   "sensitivity": 21.462264150943398,
+   "unit": "%",
+   "difference": -0.41273584905660243,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate g2",
+   "reported": 20.089285714285715,
+   "sensitivity": 19.71496437054632,
+   "unit": "%",
+   "difference": -0.3743213437393962,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate g3",
+   "reported": 22.767857142857142,
+   "sensitivity": 22.35294117647059,
+   "unit": "%",
+   "difference": -0.4149159663865518,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate n1",
+   "reported": 5.803571428571429,
+   "sensitivity": 5.687203791469194,
+   "unit": "%",
+   "difference": -0.11636763710223441,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate n2",
+   "reported": 7.366071428571429,
+   "sensitivity": 7.466666666666668,
+   "unit": "%",
+   "difference": 0.10059523809523885,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) rate n3",
+   "reported": 5.580357142857143,
+   "sensitivity": 5.275779376498801,
+   "unit": "%",
+   "difference": -0.3045777663583422,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h1 change",
+   "reported": 16.071428571428573,
+   "sensitivity": 16.097560975609756,
+   "unit": "points",
+   "difference": 0.026132404181183233,
+   "rounded_equal": true
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h1 low",
+   "reported": 12.723214285714286,
+   "sensitivity": 12.682926829268293,
+   "unit": "points",
+   "difference": -0.040287456445993186,
+   "rounded_equal": true
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h1 high",
+   "reported": 19.642857142857142,
+   "sensitivity": 19.51219512195122,
+   "unit": "points",
+   "difference": -0.13066202090592327,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h2 change",
+   "reported": 20.089285714285715,
+   "sensitivity": 19.951923076923077,
+   "unit": "points",
+   "difference": -0.13736263736263865,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h2 low",
+   "reported": 16.294642857142858,
+   "sensitivity": 16.10576923076923,
+   "unit": "points",
+   "difference": -0.1888736263736277,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h2 high",
+   "reported": 24.107142857142858,
+   "sensitivity": 23.798076923076923,
+   "unit": "points",
+   "difference": -0.3090659340659343,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h3 change",
+   "reported": 21.428571428571427,
+   "sensitivity": 21.844660194174757,
+   "unit": "points",
+   "difference": 0.4160887656033303,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h3 low",
+   "reported": 17.633928571428573,
+   "sensitivity": 17.961165048543688,
+   "unit": "points",
+   "difference": 0.3272364771151146,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) h3 high",
+   "reported": 25.669642857142858,
+   "sensitivity": 25.97087378640777,
+   "unit": "points",
+   "difference": 0.3012309292649107,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g1 change",
+   "reported": 19.419642857142858,
+   "sensitivity": 18.313253012048193,
+   "unit": "points",
+   "difference": -1.1063898450946645,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g1 low",
+   "reported": 15.848214285714286,
+   "sensitivity": 14.698795180722891,
+   "unit": "points",
+   "difference": -1.149419104991395,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g1 high",
+   "reported": 23.4375,
+   "sensitivity": 22.16867469879518,
+   "unit": "points",
+   "difference": -1.2688253012048207,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g2 change",
+   "reported": 17.633928571428573,
+   "sensitivity": 16.867469879518072,
+   "unit": "points",
+   "difference": -0.7664586919105005,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g2 low",
+   "reported": 14.285714285714286,
+   "sensitivity": 13.25301204819277,
+   "unit": "points",
+   "difference": -1.0327022375215158,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g2 high",
+   "reported": 21.205357142857142,
+   "sensitivity": 20.72289156626506,
+   "unit": "points",
+   "difference": -0.4824655765920838,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g3 change",
+   "reported": 20.3125,
+   "sensitivity": 19.806763285024154,
+   "unit": "points",
+   "difference": -0.5057367149758463,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g3 low",
+   "reported": 16.741071428571427,
+   "sensitivity": 15.942028985507246,
+   "unit": "points",
+   "difference": -0.7990424430641809,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) g3 high",
+   "reported": 24.330357142857142,
+   "sensitivity": 24.154589371980677,
+   "unit": "points",
+   "difference": -0.17576777087646533,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n1 change",
+   "reported": 3.3482142857142856,
+   "sensitivity": 2.898550724637681,
+   "unit": "points",
+   "difference": -0.44966356107660443,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n1 low",
+   "reported": 1.7857142857142858,
+   "sensitivity": 1.4492753623188406,
+   "unit": "points",
+   "difference": -0.33643892339544523,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n1 high",
+   "reported": 5.133928571428571,
+   "sensitivity": 4.5893719806763285,
+   "unit": "points",
+   "difference": -0.5445565907522427,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n2 change",
+   "reported": 4.910714285714286,
+   "sensitivity": 4.81283422459893,
+   "unit": "points",
+   "difference": -0.09788006111535541,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n2 low",
+   "reported": 3.125,
+   "sensitivity": 2.6737967914438503,
+   "unit": "points",
+   "difference": -0.4512032085561497,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n2 high",
+   "reported": 7.142857142857143,
+   "sensitivity": 7.219251336898396,
+   "unit": "points",
+   "difference": 0.07639419404125292,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n3 change",
+   "reported": 3.125,
+   "sensitivity": 2.682926829268293,
+   "unit": "points",
+   "difference": -0.44207317073170715,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n3 low",
+   "reported": 1.5625,
+   "sensitivity": 0.975609756097561,
+   "unit": "points",
+   "difference": -0.586890243902439,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) n3 high",
+   "reported": 5.133928571428571,
+   "sensitivity": 4.390243902439025,
+   "unit": "points",
+   "difference": -0.7436846689895464,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group H change",
+   "reported": 19.196428571428573,
+   "sensitivity": 19.27949326999208,
+   "unit": "points",
+   "difference": 0.08306469856350773,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group H low",
+   "reported": 15.773809523809522,
+   "sensitivity": 15.795724465558195,
+   "unit": "points",
+   "difference": 0.02191494174867259,
+   "rounded_equal": true
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group H high",
+   "reported": 22.8422619047619,
+   "sensitivity": 23.119556611243073,
+   "unit": "points",
+   "difference": 0.2772947064811717,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group G change",
+   "reported": 19.122023809523807,
+   "sensitivity": 18.246445497630333,
+   "unit": "points",
+   "difference": -0.8755783118934737,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group G low",
+   "reported": 15.997023809523808,
+   "sensitivity": 14.84992101105845,
+   "unit": "points",
+   "difference": -1.1471027984653581,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group G high",
+   "reported": 22.619047619047617,
+   "sensitivity": 21.721958925750393,
+   "unit": "points",
+   "difference": -0.8970886932972242,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group N change",
+   "reported": 3.7946428571428568,
+   "sensitivity": 3.30151153540175,
+   "unit": "points",
+   "difference": -0.49313132174110663,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group N low",
+   "reported": 2.3809523809523805,
+   "sensitivity": 1.9490851233094668,
+   "unit": "points",
+   "difference": -0.43186725764291367,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1, Figure 2)",
+   "quantity": "exclusion (either) group N high",
+   "reported": 5.5059523809523805,
+   "sensitivity": 4.932378679395385,
+   "unit": "points",
+   "difference": -0.5735737015569953,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) H-N change",
+   "reported": 15.401785714285714,
+   "sensitivity": 15.768930523028883,
+   "unit": "points",
+   "difference": 0.3671448087431699,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) H-N low",
+   "reported": 12.5,
+   "sensitivity": 12.685402029664326,
+   "unit": "points",
+   "difference": 0.18540202966432595,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) H-N high",
+   "reported": 18.452380952380953,
+   "sensitivity": 19.008587041373925,
+   "unit": "points",
+   "difference": 0.5562060889929725,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) G-N change",
+   "reported": 15.32738095238095,
+   "sensitivity": 14.992211838006229,
+   "unit": "points",
+   "difference": -0.33516911437472174,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) G-N low",
+   "reported": 12.574404761904761,
+   "sensitivity": 12.071651090342678,
+   "unit": "points",
+   "difference": -0.5027536715620826,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) G-N high",
+   "reported": 18.303571428571427,
+   "sensitivity": 17.834890965732086,
+   "unit": "points",
+   "difference": -0.46868046283934106,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) G-H change",
+   "reported": -0.07440476190476213,
+   "sensitivity": -0.960061443932412,
+   "unit": "points",
+   "difference": -0.8856566820276499,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) G-H low",
+   "reported": -3.125,
+   "sensitivity": -3.686635944700461,
+   "unit": "points",
+   "difference": -0.5616359447004609,
+   "rounded_equal": false
+  },
+  {
+   "run": "second service run (Table E1)",
+   "quantity": "exclusion (either) G-H high",
+   "reported": 2.827380952380952,
+   "sensitivity": 2.073732718894009,
+   "unit": "points",
+   "difference": -0.7536482334869432,
+   "rounded_equal": false
+  },
+  {
+   "run": "release test (Appendix E.3)",
+   "quantity": "N1 hotel-brief set change",
+   "reported": 11.864406779661017,
+   "sensitivity": 10.204081632653061,
+   "unit": "points",
+   "difference": -1.6603251470079563,
+   "rounded_equal": false
+  },
+  {
+   "run": "release test (Appendix E.3)",
+   "quantity": "N1 hotel-brief set low",
+   "reported": 1.694915254237288,
+   "sensitivity": 2.0408163265306123,
+   "unit": "points",
+   "difference": 0.34590107229332423,
+   "rounded_equal": false
+  },
+  {
+   "run": "release test (Appendix E.3)",
+   "quantity": "N1 hotel-brief set high",
+   "reported": 22.033898305084747,
+   "sensitivity": 22.448979591836736,
+   "unit": "points",
+   "difference": 0.4150812867519882,
+   "rounded_equal": false
+  },
+  {
+   "run": "release test (Appendix E.3)",
+   "quantity": "N1 no-type set change",
+   "reported": 4.241071428571429,
+   "sensitivity": 3.6231884057971016,
+   "unit": "points",
+   "difference": -0.6178830227743273,
+   "rounded_equal": false
+  },
+  {
+   "run": "release test (Appendix E.3)",
+   "quantity": "N1 no-type set low",
+   "reported": 1.5625,
+   "sensitivity": 1.2077294685990339,
+   "unit": "points",
+   "difference": -0.35477053140096615,
+   "rounded_equal": false
+  },
+  {
+   "run": "release test (Appendix E.3)",
+   "quantity": "N1 no-type set high",
+   "reported": 7.142857142857143,
+   "sensitivity": 6.521739130434782,
+   "unit": "points",
+   "difference": -0.621118012422361,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only first search change",
+   "reported": 17.225950782997764,
+   "sensitivity": 17.420814479638008,
+   "unit": "points",
+   "difference": 0.19486369664024394,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only first search low",
+   "reported": 13.646532438478747,
+   "sensitivity": 13.800904977375566,
+   "unit": "points",
+   "difference": 0.15437253889681912,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only first search high",
+   "reported": 20.80536912751678,
+   "sensitivity": 21.040723981900452,
+   "unit": "points",
+   "difference": 0.23535485438367232,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only last search change",
+   "reported": 11.160714285714286,
+   "sensitivity": 11.085972850678733,
+   "unit": "points",
+   "difference": -0.07474143503555375,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only last search low",
+   "reported": 8.258928571428571,
+   "sensitivity": 8.144796380090497,
+   "unit": "points",
+   "difference": -0.11413219133807395,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only last search high",
+   "reported": 14.285714285714286,
+   "sensitivity": 14.253393665158372,
+   "unit": "points",
+   "difference": -0.03232062055591456,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only original-tool first rate",
+   "reported": 2.013422818791946,
+   "sensitivity": 1.7977528089887642,
+   "unit": "%",
+   "difference": -0.21567000980318185,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku H1 hotel only original-tool last rate",
+   "reported": 1.1160714285714286,
+   "sensitivity": 1.1235955056179776,
+   "unit": "%",
+   "difference": 0.007524077046549005,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either first search change",
+   "reported": 18.568232662192393,
+   "sensitivity": 18.510158013544018,
+   "unit": "points",
+   "difference": -0.058074648648375415,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either first search low",
+   "reported": 14.988814317673379,
+   "sensitivity": 15.124153498871332,
+   "unit": "points",
+   "difference": 0.13533918119795274,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either first search high",
+   "reported": 22.14765100671141,
+   "sensitivity": 21.896162528216703,
+   "unit": "points",
+   "difference": -0.2514884784947071,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either last search change",
+   "reported": 16.517857142857142,
+   "sensitivity": 16.252821670428894,
+   "unit": "points",
+   "difference": -0.26503547242824865,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either last search low",
+   "reported": 13.169642857142858,
+   "sensitivity": 12.866817155756207,
+   "unit": "points",
+   "difference": -0.30282570138665044,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either last search high",
+   "reported": 20.3125,
+   "sensitivity": 19.63882618510158,
+   "unit": "points",
+   "difference": -0.6736738148984216,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either original-tool first rate",
+   "reported": 2.013422818791946,
+   "sensitivity": 1.7977528089887642,
+   "unit": "%",
+   "difference": -0.21567000980318185,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku G1 either original-tool last rate",
+   "reported": 1.1160714285714286,
+   "sensitivity": 1.1235955056179776,
+   "unit": "%",
+   "difference": 0.007524077046549005,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku searched again t0",
+   "reported": 1.3392857142857142,
+   "sensitivity": 0.898876404494382,
+   "unit": "%",
+   "difference": -0.4404093097913322,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku searched again h1",
+   "reported": 10.9375,
+   "sensitivity": 10.15801354401806,
+   "unit": "%",
+   "difference": -0.7794864559819406,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "haiku searched again g1",
+   "reported": 8.482142857142858,
+   "sensitivity": 8.071748878923767,
+   "unit": "%",
+   "difference": -0.4103939782190906,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only first search change",
+   "reported": 25.507900677200904,
+   "sensitivity": 25.507900677200904,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only first search low",
+   "reported": 21.44469525959368,
+   "sensitivity": 21.44469525959368,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only first search high",
+   "reported": 29.571106094808126,
+   "sensitivity": 29.571106094808126,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only last search change",
+   "reported": 16.93002257336343,
+   "sensitivity": 16.93002257336343,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only last search low",
+   "reported": 13.318284424379232,
+   "sensitivity": 13.318284424379232,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only last search high",
+   "reported": 20.54176072234763,
+   "sensitivity": 20.54176072234763,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only original-tool first rate",
+   "reported": 17.225950782997764,
+   "sensitivity": 17.225950782997764,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol H1 hotel only original-tool last rate",
+   "reported": 17.002237136465325,
+   "sensitivity": 17.002237136465325,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either first search change",
+   "reported": 35.28089887640449,
+   "sensitivity": 35.28089887640449,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either first search low",
+   "reported": 30.786516853932586,
+   "sensitivity": 30.786516853932586,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either first search high",
+   "reported": 39.550561797752806,
+   "sensitivity": 39.550561797752806,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either last search change",
+   "reported": 29.43820224719101,
+   "sensitivity": 29.43820224719101,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either last search low",
+   "reported": 25.39325842696629,
+   "sensitivity": 25.39325842696629,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either last search high",
+   "reported": 33.93258426966292,
+   "sensitivity": 33.93258426966292,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either original-tool first rate",
+   "reported": 17.225950782997764,
+   "sensitivity": 17.225950782997764,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol G1 either original-tool last rate",
+   "reported": 17.002237136465325,
+   "sensitivity": 17.002237136465325,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol searched again t0",
+   "reported": 0.36231884057971014,
+   "sensitivity": 0.36231884057971014,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol searched again h1",
+   "reported": 8.0,
+   "sensitivity": 8.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "sol searched again g1",
+   "reported": 5.797101449275362,
+   "sensitivity": 5.797101449275362,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only first search change",
+   "reported": 26.674107142857142,
+   "sensitivity": 26.674107142857142,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only first search low",
+   "reported": 22.767857142857142,
+   "sensitivity": 22.767857142857142,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only first search high",
+   "reported": 30.691964285714285,
+   "sensitivity": 30.691964285714285,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only last search change",
+   "reported": 22.544642857142858,
+   "sensitivity": 22.544642857142858,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only last search low",
+   "reported": 18.973214285714285,
+   "sensitivity": 18.973214285714285,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only last search high",
+   "reported": 26.339285714285715,
+   "sensitivity": 26.339285714285715,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only original-tool first rate",
+   "reported": 8.379888268156424,
+   "sensitivity": 8.379888268156424,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna H1 hotel only original-tool last rate",
+   "reported": 8.379888268156424,
+   "sensitivity": 8.379888268156424,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either first search change",
+   "reported": 22.991071428571427,
+   "sensitivity": 22.991071428571427,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either first search low",
+   "reported": 19.419642857142858,
+   "sensitivity": 19.419642857142858,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either first search high",
+   "reported": 26.5625,
+   "sensitivity": 26.5625,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either last search change",
+   "reported": 17.1875,
+   "sensitivity": 17.1875,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either last search low",
+   "reported": 13.950892857142858,
+   "sensitivity": 13.950892857142858,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either last search high",
+   "reported": 20.647321428571427,
+   "sensitivity": 20.647321428571427,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either original-tool first rate",
+   "reported": 8.379888268156424,
+   "sensitivity": 8.379888268156424,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna G1 either original-tool last rate",
+   "reported": 8.379888268156424,
+   "sensitivity": 8.379888268156424,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna searched again t0",
+   "reported": 0.27100271002710025,
+   "sensitivity": 0.27100271002710025,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna searched again h1",
+   "reported": 8.94308943089431,
+   "sensitivity": 8.94308943089431,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2)",
+   "quantity": "luna searched again g1",
+   "reported": 16.60649819494585,
+   "sensitivity": 16.60649819494585,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Section 5)",
+   "quantity": "haiku H1 later searches removed part change",
+   "reported": -6.263982102908278,
+   "sensitivity": -6.334841628959276,
+   "unit": "points",
+   "difference": -0.07085952605099788,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Section 5)",
+   "quantity": "haiku H1 later searches removed part low",
+   "reported": -8.94854586129754,
+   "sensitivity": -9.049773755656108,
+   "unit": "points",
+   "difference": -0.10122789435856916,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Section 5)",
+   "quantity": "haiku H1 later searches removed part high",
+   "reported": -3.8031319910514543,
+   "sensitivity": -3.8461538461538463,
+   "unit": "points",
+   "difference": -0.04302185510239198,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel hotel-only | h1 | first change",
+   "reported": 23.028273809523814,
+   "sensitivity": 23.065476190476193,
+   "unit": "points",
+   "difference": 0.0372023809523796,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel hotel-only | h1 | first low",
+   "reported": 20.3125,
+   "sensitivity": 20.386904761904763,
+   "unit": "points",
+   "difference": 0.07440476190476275,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel hotel-only | h1 | first high",
+   "reported": 25.74404761904762,
+   "sensitivity": 25.78125,
+   "unit": "points",
+   "difference": 0.0372023809523796,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel hotel-only | h1 | last change",
+   "reported": 16.815476190476193,
+   "sensitivity": 16.77827380952381,
+   "unit": "points",
+   "difference": -0.03720238095238315,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel hotel-only | h1 | last low",
+   "reported": 14.43452380952381,
+   "sensitivity": 14.43452380952381,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel hotel-only | h1 | last high",
+   "reported": 19.233630952380956,
+   "sensitivity": 19.196428571428573,
+   "unit": "points",
+   "difference": -0.03720238095238315,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel either | g1 | first change",
+   "reported": 25.520833333333336,
+   "sensitivity": 25.558035714285715,
+   "unit": "points",
+   "difference": 0.0372023809523796,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel either | g1 | first low",
+   "reported": 23.177083333333336,
+   "sensitivity": 23.177083333333336,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel either | g1 | first high",
+   "reported": 28.013392857142858,
+   "sensitivity": 28.05059523809524,
+   "unit": "points",
+   "difference": 0.03720238095238315,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel either | g1 | last change",
+   "reported": 20.982142857142858,
+   "sensitivity": 20.870535714285715,
+   "unit": "points",
+   "difference": -0.11160714285714235,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel either | g1 | last low",
+   "reported": 18.71279761904762,
+   "sensitivity": 18.601190476190478,
+   "unit": "points",
+   "difference": -0.11160714285714235,
+   "rounded_equal": false
+  },
+  {
+   "run": "search-again run (Table E2, panel)",
+   "quantity": "panel either | g1 | last high",
+   "reported": 23.4375,
+   "sensitivity": 23.288690476190478,
+   "unit": "points",
+   "difference": -0.14880952380952195,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 only guesthouses fit initial_failure (20/130 -> 18/118)",
+   "reported": 15.384615384615385,
+   "sensitivity": 15.254237288135593,
+   "unit": "%",
+   "difference": -0.1303780964797916,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 only guesthouses fit fit_shown (123/130 -> 112/118)",
+   "reported": 94.61538461538461,
+   "sensitivity": 94.91525423728814,
+   "unit": "%",
+   "difference": 0.2998696219035253,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 only guesthouses fit never_fit (7/130 -> 6/118)",
+   "reported": 5.384615384615385,
+   "sensitivity": 5.084745762711865,
+   "unit": "%",
+   "difference": -0.29986962190351996,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 only guesthouses fit hotel_only_end (15/130 -> 13/118)",
+   "reported": 11.538461538461538,
+   "sensitivity": 11.016949152542372,
+   "unit": "%",
+   "difference": -0.5215123859191664,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 only guesthouses fit relapse (17/130 -> 15/118)",
+   "reported": 13.076923076923078,
+   "sensitivity": 12.711864406779661,
+   "unit": "%",
+   "difference": -0.36505867014341753,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 only guesthouses fit mean searches",
+   "reported": 2.546153846153846,
+   "sensitivity": 2.4237288135593222,
+   "unit": "searches",
+   "difference": -0.12242503259452375,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 after an initial exclusion initial_failure (20/20 -> 18/18)",
+   "reported": 100.0,
+   "sensitivity": 100.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 after an initial exclusion fit_shown (17/20 -> 15/18)",
+   "reported": 85.0,
+   "sensitivity": 83.33333333333334,
+   "unit": "%",
+   "difference": -1.6666666666666572,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 after an initial exclusion never_fit (3/20 -> 3/18)",
+   "reported": 15.0,
+   "sensitivity": 16.666666666666664,
+   "unit": "%",
+   "difference": 1.6666666666666643,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 after an initial exclusion hotel_only_end (11/20 -> 10/18)",
+   "reported": 55.00000000000001,
+   "sensitivity": 55.55555555555556,
+   "unit": "%",
+   "difference": 0.55555555555555,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 after an initial exclusion relapse (9/20 -> 8/18)",
+   "reported": 45.0,
+   "sensitivity": 44.44444444444444,
+   "unit": "%",
+   "difference": -0.5555555555555571,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 after an initial exclusion mean searches",
+   "reported": 4.7,
+   "sensitivity": 4.444444444444445,
+   "unit": "searches",
+   "difference": -0.25555555555555554,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 without one initial_failure (0/110 -> 0/100)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 without one fit_shown (106/110 -> 97/100)",
+   "reported": 96.36363636363636,
+   "sensitivity": 97.0,
+   "unit": "%",
+   "difference": 0.6363636363636402,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 without one never_fit (4/110 -> 3/100)",
+   "reported": 3.6363636363636362,
+   "sensitivity": 3.0,
+   "unit": "%",
+   "difference": -0.6363636363636362,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 without one hotel_only_end (4/110 -> 3/100)",
+   "reported": 3.6363636363636362,
+   "sensitivity": 3.0,
+   "unit": "%",
+   "difference": -0.6363636363636362,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 without one relapse (8/110 -> 7/100)",
+   "reported": 7.2727272727272725,
+   "sensitivity": 7.000000000000001,
+   "unit": "%",
+   "difference": -0.2727272727272716,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 without one mean searches",
+   "reported": 2.1545454545454548,
+   "sensitivity": 2.06,
+   "unit": "searches",
+   "difference": -0.09454545454545471,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 a hotel fits initial_failure (0/130 -> 0/120)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 a hotel fits fit_shown (120/130 -> 111/120)",
+   "reported": 92.3076923076923,
+   "sensitivity": 92.5,
+   "unit": "%",
+   "difference": 0.1923076923076934,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 a hotel fits never_fit (10/130 -> 9/120)",
+   "reported": 7.6923076923076925,
+   "sensitivity": 7.5,
+   "unit": "%",
+   "difference": -0.1923076923076925,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 a hotel fits hotel_only_end (23/130 -> 22/120)",
+   "reported": 17.692307692307693,
+   "sensitivity": 18.333333333333332,
+   "unit": "%",
+   "difference": 0.6410256410256387,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 a hotel fits relapse (13/130 -> 13/120)",
+   "reported": 10.0,
+   "sensitivity": 10.833333333333334,
+   "unit": "%",
+   "difference": 0.8333333333333339,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t0 a hotel fits mean searches",
+   "reported": 2.3,
+   "sensitivity": 2.25,
+   "unit": "searches",
+   "difference": -0.04999999999999982,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 only guesthouses fit initial_failure (1/130 -> 1/126)",
+   "reported": 0.7692307692307693,
+   "sensitivity": 0.7936507936507936,
+   "unit": "%",
+   "difference": 0.024420024420024333,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 only guesthouses fit fit_shown (121/130 -> 119/126)",
+   "reported": 93.07692307692308,
+   "sensitivity": 94.44444444444444,
+   "unit": "%",
+   "difference": 1.3675213675213627,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 only guesthouses fit never_fit (9/130 -> 7/126)",
+   "reported": 6.923076923076923,
+   "sensitivity": 5.555555555555555,
+   "unit": "%",
+   "difference": -1.367521367521368,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 only guesthouses fit hotel_only_end (1/130 -> 1/126)",
+   "reported": 0.7692307692307693,
+   "sensitivity": 0.7936507936507936,
+   "unit": "%",
+   "difference": 0.024420024420024333,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 only guesthouses fit relapse (1/130 -> 1/126)",
+   "reported": 0.7692307692307693,
+   "sensitivity": 0.7936507936507936,
+   "unit": "%",
+   "difference": 0.024420024420024333,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 only guesthouses fit mean searches",
+   "reported": 2.0692307692307694,
+   "sensitivity": 1.9444444444444444,
+   "unit": "searches",
+   "difference": -0.12478632478632501,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 after an initial exclusion initial_failure (1/1 -> 1/1)",
+   "reported": 100.0,
+   "sensitivity": 100.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 after an initial exclusion fit_shown (1/1 -> 1/1)",
+   "reported": 100.0,
+   "sensitivity": 100.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 after an initial exclusion never_fit (0/1 -> 0/1)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 after an initial exclusion hotel_only_end (0/1 -> 0/1)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 after an initial exclusion relapse (0/1 -> 0/1)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 after an initial exclusion mean searches",
+   "reported": 4.0,
+   "sensitivity": 4.0,
+   "unit": "searches",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 without one initial_failure (0/129 -> 0/125)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 without one fit_shown (120/129 -> 118/125)",
+   "reported": 93.02325581395348,
+   "sensitivity": 94.39999999999999,
+   "unit": "%",
+   "difference": 1.3767441860465084,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 without one never_fit (9/129 -> 7/125)",
+   "reported": 6.976744186046512,
+   "sensitivity": 5.6000000000000005,
+   "unit": "%",
+   "difference": -1.376744186046511,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 without one hotel_only_end (1/129 -> 1/125)",
+   "reported": 0.7751937984496124,
+   "sensitivity": 0.8,
+   "unit": "%",
+   "difference": 0.024806201550387597,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 without one relapse (1/129 -> 1/125)",
+   "reported": 0.7751937984496124,
+   "sensitivity": 0.8,
+   "unit": "%",
+   "difference": 0.024806201550387597,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 without one mean searches",
+   "reported": 2.054263565891473,
+   "sensitivity": 1.928,
+   "unit": "searches",
+   "difference": -0.12626356589147303,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 a hotel fits initial_failure (0/130 -> 0/126)",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "%",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 a hotel fits fit_shown (117/130 -> 115/126)",
+   "reported": 90.0,
+   "sensitivity": 91.26984126984127,
+   "unit": "%",
+   "difference": 1.2698412698412653,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 a hotel fits never_fit (13/130 -> 11/126)",
+   "reported": 10.0,
+   "sensitivity": 8.73015873015873,
+   "unit": "%",
+   "difference": -1.2698412698412707,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 a hotel fits hotel_only_end (2/130 -> 2/126)",
+   "reported": 1.5384615384615385,
+   "sensitivity": 1.5873015873015872,
+   "unit": "%",
+   "difference": 0.04884004884004867,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 a hotel fits relapse (2/130 -> 2/126)",
+   "reported": 1.5384615384615385,
+   "sensitivity": 1.5873015873015872,
+   "unit": "%",
+   "difference": 0.04884004884004867,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Table D1)",
+   "quantity": "t1 a hotel fits mean searches",
+   "reported": 2.223076923076923,
+   "sensitivity": 2.1587301587301586,
+   "unit": "searches",
+   "difference": -0.06434676434676456,
+   "rounded_equal": true
+  },
+  {
+   "run": "later turns (Section 6)",
+   "quantity": "t0 never fit: initial exclusion minus none, difference",
+   "reported": 11.363636363636363,
+   "sensitivity": 13.666666666666666,
+   "unit": "points",
+   "difference": 2.3030303030303028,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Section 6)",
+   "quantity": "t0 never fit: initial exclusion minus none, low",
+   "reported": -3.6363636363636362,
+   "sensitivity": -3.0,
+   "unit": "points",
+   "difference": 0.6363636363636362,
+   "rounded_equal": false
+  },
+  {
+   "run": "later turns (Section 6)",
+   "quantity": "t0 never fit: initial exclusion minus none, high",
+   "reported": 28.18181818181818,
+   "sensitivity": 31.33333333333333,
+   "unit": "points",
+   "difference": 3.1515151515151487,
+   "rounded_equal": false
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_c no_type change",
+   "reported": -6.175595238095238,
+   "sensitivity": -6.175595238095238,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_c no_type low",
+   "reported": -7.645089285714286,
+   "sensitivity": -7.645089285714286,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_c no_type high",
+   "reported": -4.761904761904762,
+   "sensitivity": -4.761904761904762,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_c hotel_brief change",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_c hotel_brief low",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_c hotel_brief high",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_n no_type change",
+   "reported": -7.2265625,
+   "sensitivity": -7.2265625,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_n no_type low",
+   "reported": -8.928571428571429,
+   "sensitivity": -8.928571428571429,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_n no_type high",
+   "reported": -5.598958333333334,
+   "sensitivity": -5.598958333333334,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_n hotel_brief change",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_n hotel_brief low",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_n hotel_brief high",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_nc no_type change",
+   "reported": -1.0509672619047619,
+   "sensitivity": -1.0509672619047619,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_nc no_type low",
+   "reported": -1.599702380952381,
+   "sensitivity": -1.599702380952381,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_nc no_type high",
+   "reported": -0.5673363095238095,
+   "sensitivity": -0.5673363095238095,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_nc hotel_brief change",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_nc hotel_brief low",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "exclusion D_nc hotel_brief high",
+   "reported": 0.0,
+   "sensitivity": 0.0,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_c no_type change",
+   "reported": -11.93266369047619,
+   "sensitivity": -11.93266369047619,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_c no_type low",
+   "reported": -13.820684523809524,
+   "sensitivity": -13.820684523809524,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_c no_type high",
+   "reported": -10.165550595238097,
+   "sensitivity": -10.165550595238097,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_c hotel_brief change",
+   "reported": -26.977401129943505,
+   "sensitivity": -26.977401129943505,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_c hotel_brief low",
+   "reported": -32.20338983050848,
+   "sensitivity": -32.20338983050848,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_c hotel_brief high",
+   "reported": -21.75141242937853,
+   "sensitivity": -21.75141242937853,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_n no_type change",
+   "reported": -14.174107142857142,
+   "sensitivity": -14.174107142857142,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_n no_type low",
+   "reported": -16.276041666666668,
+   "sensitivity": -16.276041666666668,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_n no_type high",
+   "reported": -12.146577380952381,
+   "sensitivity": -12.146577380952381,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_n hotel_brief change",
+   "reported": -32.27401129943503,
+   "sensitivity": -32.27401129943503,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_n hotel_brief low",
+   "reported": -37.570621468926554,
+   "sensitivity": -37.570621468926554,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_n hotel_brief high",
+   "reported": -26.906779661016948,
+   "sensitivity": -26.906779661016948,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_nc no_type change",
+   "reported": -2.241443452380952,
+   "sensitivity": -2.241443452380952,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_nc no_type low",
+   "reported": -3.0505952380952377,
+   "sensitivity": -3.0505952380952377,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_nc no_type high",
+   "reported": -1.5159970238095237,
+   "sensitivity": -1.5159970238095237,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_nc hotel_brief change",
+   "reported": -5.296610169491525,
+   "sensitivity": -5.296610169491525,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_nc hotel_brief low",
+   "reported": -9.180790960451978,
+   "sensitivity": -9.180790960451978,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  },
+  {
+   "run": "label-test tool calls (Section 7, Appendix G)",
+   "quantity": "hotel filter D_nc hotel_brief high",
+   "reported": -1.694915254237288,
+   "sensitivity": -1.694915254237288,
+   "unit": "points",
+   "difference": 0.0,
+   "rounded_equal": true
+  }
+ ],
+ "decision_changes": [
+  "29 pairs: sonnet era1 read 1 vs erp, first rule: flag -> hold"
+ ]
+}

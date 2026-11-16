@@ -1,0 +1,481 @@
+{
+ "post_hoc": true,
+ "exploratory": true,
+ "groups": {
+  "open": {
+   "n": 448,
+   "only_guesthouses_fit": 254,
+   "only_hotels_fit": 136,
+   "both_fit": 58,
+   "none_fits": 0
+  },
+  "guesthouse": {
+   "n": 47,
+   "a_guesthouse_fits": 47
+  },
+  "specific": {
+   "n": 59,
+   "a_hotel_fits": 59
+  }
+ },
+ "agents": {
+  "sonnet": {
+   "rates": {
+    "open | hotel-only failure": {
+     "t0": {
+      "k": 46,
+      "n": 448,
+      "share": 0.10267857142857142
+     },
+     "th": {
+      "k": 63,
+      "n": 448,
+      "share": 0.140625
+     },
+     "tg": {
+      "k": 71,
+      "n": 448,
+      "share": 0.15848214285714285
+     }
+    },
+    "open | guesthouse-only failure": {
+     "t0": {
+      "k": 0,
+      "n": 448,
+      "share": 0.0
+     },
+     "th": {
+      "k": 0,
+      "n": 448,
+      "share": 0.0
+     },
+     "tg": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125
+     }
+    },
+    "open | any failure": {
+     "t0": {
+      "k": 46,
+      "n": 448,
+      "share": 0.10267857142857142
+     },
+     "th": {
+      "k": 63,
+      "n": 448,
+      "share": 0.140625
+     },
+     "tg": {
+      "k": 85,
+      "n": 448,
+      "share": 0.18973214285714285
+     }
+    },
+    "guesthouse | hotel-only failure": {
+     "t0": {
+      "k": 23,
+      "n": 47,
+      "share": 0.48936170212765956
+     },
+     "th": {
+      "k": 28,
+      "n": 47,
+      "share": 0.5957446808510638
+     },
+     "tg": {
+      "k": 32,
+      "n": 47,
+      "share": 0.6808510638297872
+     }
+    },
+    "specific | guesthouse-only failure": {
+     "t0": {
+      "k": 0,
+      "n": 59,
+      "share": 0.0
+     },
+     "th": {
+      "k": 0,
+      "n": 59,
+      "share": 0.0
+     },
+     "tg": {
+      "k": 3,
+      "n": 59,
+      "share": 0.05084745762711865
+     }
+    }
+   },
+   "changes": {
+    "open | hotel-only failure": {
+     "th": {
+      "pairs": 448,
+      "mean": 3.794642857142857,
+      "ci": [
+       2.0089285714285716,
+       5.580357142857143
+      ],
+      "higher": 17,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 448,
+      "mean": 5.580357142857143,
+      "ci": [
+       3.5714285714285716,
+       7.8125
+      ],
+      "higher": 25,
+      "lower": 0
+     }
+    },
+    "open | guesthouse-only failure": {
+     "th": {
+      "pairs": 448,
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 448,
+      "mean": 3.125,
+      "ci": [
+       1.5625,
+       4.910714285714286
+      ],
+      "higher": 14,
+      "lower": 0
+     }
+    },
+    "open | any failure": {
+     "th": {
+      "pairs": 448,
+      "mean": 3.794642857142857,
+      "ci": [
+       2.0089285714285716,
+       5.580357142857143
+      ],
+      "higher": 17,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 448,
+      "mean": 8.705357142857142,
+      "ci": [
+       6.026785714285714,
+       11.383928571428571
+      ],
+      "higher": 39,
+      "lower": 0
+     }
+    },
+    "guesthouse | hotel-only failure": {
+     "th": {
+      "pairs": 47,
+      "mean": 10.638297872340425,
+      "ci": [
+       2.127659574468085,
+       21.27659574468085
+      ],
+      "higher": 5,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 47,
+      "mean": 19.148936170212767,
+      "ci": [
+       8.51063829787234,
+       31.914893617021278
+      ],
+      "higher": 9,
+      "lower": 0
+     }
+    },
+    "specific | guesthouse-only failure": {
+     "th": {
+      "pairs": 59,
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 59,
+      "mean": 5.084745762711864,
+      "ci": [
+       0.0,
+       11.864406779661017
+      ],
+      "higher": 3,
+      "lower": 0
+     }
+    }
+   },
+   "later_search_text": {
+    "reads": 554,
+    "with_text": 83,
+    "mentions_later_search": 2,
+    "examples": [
+     {
+      "id": "ers_sonnet-MUL2552-th-1",
+      "text": "Since the traveller has not stated any preferences yet, I'll search with no constraints. The type is also unspecified, so I'll start with hotels as suggested."
+     },
+     {
+      "id": "ers_sonnet-MUL2286-th-1",
+      "text": "Unlike when the traveller states a type, no accommodation type was mentioned here, so I'll search hotels first as suggested."
+     }
+    ],
+    "invalid_reads": 0
+   }
+  },
+  "haiku": {
+   "rates": {
+    "open | hotel-only failure": {
+     "t0": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125
+     },
+     "th": {
+      "k": 82,
+      "n": 448,
+      "share": 0.18303571428571427
+     },
+     "tg": {
+      "k": 72,
+      "n": 448,
+      "share": 0.16071428571428573
+     }
+    },
+    "open | guesthouse-only failure": {
+     "t0": {
+      "k": 0,
+      "n": 448,
+      "share": 0.0
+     },
+     "th": {
+      "k": 0,
+      "n": 448,
+      "share": 0.0
+     },
+     "tg": {
+      "k": 25,
+      "n": 448,
+      "share": 0.05580357142857143
+     }
+    },
+    "open | any failure": {
+     "t0": {
+      "k": 14,
+      "n": 448,
+      "share": 0.03125
+     },
+     "th": {
+      "k": 82,
+      "n": 448,
+      "share": 0.18303571428571427
+     },
+     "tg": {
+      "k": 97,
+      "n": 448,
+      "share": 0.21651785714285715
+     }
+    },
+    "guesthouse | hotel-only failure": {
+     "t0": {
+      "k": 6,
+      "n": 47,
+      "share": 0.1276595744680851
+     },
+     "th": {
+      "k": 35,
+      "n": 47,
+      "share": 0.7446808510638298
+     },
+     "tg": {
+      "k": 31,
+      "n": 47,
+      "share": 0.6595744680851063
+     }
+    },
+    "specific | guesthouse-only failure": {
+     "t0": {
+      "k": 0,
+      "n": 59,
+      "share": 0.0
+     },
+     "th": {
+      "k": 0,
+      "n": 59,
+      "share": 0.0
+     },
+     "tg": {
+      "k": 20,
+      "n": 59,
+      "share": 0.3389830508474576
+     }
+    }
+   },
+   "changes": {
+    "open | hotel-only failure": {
+     "th": {
+      "pairs": 448,
+      "mean": 15.178571428571429,
+      "ci": [
+       11.830357142857142,
+       18.75
+      ],
+      "higher": 68,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 448,
+      "mean": 12.946428571428571,
+      "ci": [
+       9.821428571428571,
+       16.294642857142858
+      ],
+      "higher": 58,
+      "lower": 0
+     }
+    },
+    "open | guesthouse-only failure": {
+     "th": {
+      "pairs": 448,
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 448,
+      "mean": 5.580357142857143,
+      "ci": [
+       3.5714285714285716,
+       7.589285714285714
+      ],
+      "higher": 25,
+      "lower": 0
+     }
+    },
+    "open | any failure": {
+     "th": {
+      "pairs": 448,
+      "mean": 15.178571428571429,
+      "ci": [
+       11.830357142857142,
+       18.75
+      ],
+      "higher": 68,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 448,
+      "mean": 18.526785714285715,
+      "ci": [
+       14.955357142857142,
+       22.321428571428573
+      ],
+      "higher": 83,
+      "lower": 0
+     }
+    },
+    "guesthouse | hotel-only failure": {
+     "th": {
+      "pairs": 47,
+      "mean": 61.702127659574465,
+      "ci": [
+       46.808510638297875,
+       74.46808510638297
+      ],
+      "higher": 29,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 47,
+      "mean": 53.191489361702125,
+      "ci": [
+       38.297872340425535,
+       65.95744680851064
+      ],
+      "higher": 25,
+      "lower": 0
+     }
+    },
+    "specific | guesthouse-only failure": {
+     "th": {
+      "pairs": 59,
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 0
+     },
+     "tg": {
+      "pairs": 59,
+      "mean": 33.898305084745765,
+      "ci": [
+       22.033898305084747,
+       45.76271186440678
+      ],
+      "higher": 20,
+      "lower": 0
+     }
+    }
+   },
+   "later_search_text": {
+    "reads": 554,
+    "with_text": 254,
+    "mentions_later_search": 43,
+    "examples": [
+     {
+      "id": "ers_haiku-PMUL0245-th-1",
+      "text": "Let me work through the traveller's final requirements for the hotel search.\n\n- Internet: they need free wifi, so \"yes\".\n- Price range: cheap.\n- Stars: 4.\n- Parking: the traveller first said they didn't need parking, then later asked for free parking with the suggested hotel. The final stated prefer"
+     },
+     {
+      "id": "ers_haiku-PMUL0424-th-1",
+      "text": "Looking at the request: moderately priced, free parking required. \"Condo style hotel\" is not one of the accommodation types (hotel or guesthouse), and the traveller did not explicitly say hotel or guesthouse, so type is left unrestricted in the sense of no stated preference. Per the guidance, I'll s"
+     },
+     {
+      "id": "ers_haiku-PMUL0391-th-1",
+      "text": "Traveller wants a hotel in the north, no specific requirements otherwise. Price, stars, parking, internet not stated, so null. Type not stated: search hotels first."
+     },
+     {
+      "id": "ers_haiku-MUL2288-th-1",
+      "text": "I'd be happy to help find a hotel. Since you haven't mentioned your hotel requirements (area, price range, stars, type, parking, or internet), I'll search with those open, but first I need to confirm: do you have any preferences for the hotel's area, price range, star rating, accommodation type, par"
+     },
+     {
+      "id": "ers_haiku-PMUL1757-th-1",
+      "text": "No conversation context beyond this request, so only internet is stated: free wifi required. Everything else is unspecified (null), and accommodation type is unstated so I'll search hotels first."
+     },
+     {
+      "id": "ers_haiku-PMUL2842-th-1",
+      "text": "No requirements were given beyond wanting a hotel quickly, so I'll leave everything open except the accommodation type, which I'll set to hotel as the first search."
+     },
+     {
+      "id": "ers_haiku-PMUL0309-th-1",
+      "text": "The traveller wants a hotel near the restaurant in the centre. No price range, stars, parking, or internet requirements were stated, so those are null. Accommodation type was not specified, so I'll search hotels first."
+     },
+     {
+      "id": "ers_haiku-PMUL1885-th-1",
+      "text": "Searching for cheap hotels in the north of Cambridge. The traveller did not state an accommodation type, stars, parking, or internet requirements, so those are null, and I'll start with hotels as the suggested first search."
+     }
+    ],
+    "invalid_reads": 0
+   }
+  }
+ }
+}

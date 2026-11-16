@@ -1,0 +1,122 @@
+{
+ "post_hoc": true,
+ "F_initial_failure_t0": 20,
+ "in_both_arms": 20,
+ "t0_initial_failure": 20,
+ "t0_never_fit": 3,
+ "t0_hotel_only_end": 11,
+ "t1_initial_failure": 1,
+ "t1_never_fit": 3,
+ "t1_hotel_only_end": 0,
+ "never_fit_both_arms": 2,
+ "never_fit_t0_only": 1,
+ "never_fit_t1_only": 1,
+ "named_in_text": {
+  "t0_F": {
+   "shown": 123,
+   "named": 122
+  },
+  "t0_R": {
+   "shown": 120,
+   "named": 119
+  },
+  "t0_F_initial_failure": {
+   "shown": 17,
+   "named": 17
+  },
+  "t1_F": {
+   "shown": 121,
+   "named": 121
+  },
+  "t1_R": {
+   "shown": 117,
+   "named": 117
+  },
+  "t1_F_initial_failure": {
+   "shown": 1,
+   "named": 1
+  }
+ },
+ "never_fit_after_failure_last_search": [
+  {
+   "dialogue": "MUL0085.json",
+   "searches": 4,
+   "hotel_only_last": false,
+   "fields_not_in_brief": [],
+   "brief_fields": [
+    "area",
+    "internet",
+    "pricerange",
+    "stars"
+   ]
+  },
+  {
+   "dialogue": "MUL1097.json",
+   "searches": 4,
+   "hotel_only_last": true,
+   "fields_not_in_brief": [],
+   "brief_fields": [
+    "internet",
+    "pricerange",
+    "stars"
+   ]
+  },
+  {
+   "dialogue": "PMUL0123.json",
+   "searches": 3,
+   "hotel_only_last": true,
+   "fields_not_in_brief": [],
+   "brief_fields": [
+    "area",
+    "internet",
+    "parking"
+   ]
+  }
+ ],
+ "first_choice_t0": {
+  "F": {
+   "n": 130,
+   "first_choice": 47,
+   "never_fit": 7,
+   "never_fit_first_choice": 6,
+   "never_fit_dialogues": [
+    "MUL0085.json",
+    "MUL0606.json",
+    "MUL1087.json",
+    "MUL1097.json",
+    "PMUL0123.json",
+    "PMUL0371.json",
+    "PMUL2698.json"
+   ]
+  },
+  "R": {
+   "n": 130,
+   "first_choice": 46,
+   "never_fit": 10,
+   "never_fit_first_choice": 8,
+   "never_fit_dialogues": [
+    "MUL0709.json",
+    "MUL1075.json",
+    "MUL1142.json",
+    "MUL2131.json",
+    "PMUL0035.json",
+    "PMUL0388.json",
+    "PMUL2982.json",
+    "PMUL3693.json",
+    "PMUL4111.json",
+    "PMUL4661.json"
+   ]
+  },
+  "F_initial_failure": {
+   "n": 20,
+   "first_choice": 7,
+   "never_fit": 3,
+   "never_fit_first_choice": 2,
+   "never_fit_dialogues": [
+    "MUL0085.json",
+    "MUL1097.json",
+    "PMUL0123.json"
+   ]
+  }
+ }
+}

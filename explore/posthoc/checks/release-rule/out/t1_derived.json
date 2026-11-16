@@ -1,0 +1,64 @@
+{
+ "pass_equal": {
+  "4": {
+   "final_vs_nosign_differ": [],
+   "original_vs_revised_differ": [],
+   "configurations": 126
+  },
+  "10": {
+   "final_vs_nosign_differ": [],
+   "original_vs_revised_differ": [],
+   "configurations": 126
+  }
+ },
+ "flag_diff": {
+  "shifts A-both and B-spec, paper design, C=4": {
+   "largest_points": 0.95,
+   "id": "A-both|deepseek|shift -5 both|n59m10"
+  },
+  "shifts A-both and B-spec, paper design, C=10": {
+   "largest_points": 2.8,
+   "id": "B-spec|sol|shift +6 specific|n59m10"
+  },
+  "S-sparse, paper design, C=4": {
+   "largest_points": 72.45,
+   "id": "S-sparse|deepseek|sparse +15 specific|n59m10"
+  },
+  "X-cancel, paper design, C=4": {
+   "largest_points": 0.0,
+   "id": "X-cancel|haiku|cancel 2 down 2 up specific|n59m10"
+  },
+  "Z-drift, paper design, C=4": {
+   "largest_points": 4.65,
+   "id": "Z-drift|sol|shift +6 both, drift -3|n59m10"
+  },
+  "N-size, other designs, C=4": {
+   "largest_points": 21.4,
+   "id": "N-size|haiku|shift +8 specific|n59m1"
+  }
+ },
+ "zero_change_flags_C4": {
+  "final": 4,
+  "strat_nosign": 5,
+  "original": 5
+ },
+ "zero_change_trials": 6000,
+ "zero_59x1_flag_range_C4": {
+  "original": [
+   0.003,
+   0.019
+  ],
+  "final": [
+   0.0,
+   0.0045
+  ],
+  "strat_nosign": [
+   0.003,
+   0.019
+  ]
+ },
+ "drift3_flag_range_C4_four_rules": [
+  0.0565,
+  0.155
+ ]
+}

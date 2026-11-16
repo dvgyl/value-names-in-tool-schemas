@@ -1,0 +1,7339 @@
+{
+ "post_hoc": true,
+ "exploratory": true,
+ "L": 5.0,
+ "seed": 20261112,
+ "draws": 2000,
+ "A1": {
+  "definition": "C = models x 2 sets x 1 look for the models of the row; level 1 - 0.05/C. One-model rows: C = 2 (97.5%). The prospective rows keep the level fixed in their protocols.",
+  "unchanged_pairs": [
+   {
+    "model": "sonnet",
+    "a": "era1 read 1",
+    "b": "era1 read 2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.2232,
+      "low": -1.5625,
+      "high": 1.1161,
+      "up": 2,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": 1.6949,
+      "high": 18.6441,
+      "up": 5,
+      "down": 0,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -7.64,
+      23.12
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.2232,
+      "low": -1.7857,
+      "high": 1.1161,
+      "up": 2,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": 0.0,
+      "high": 18.6441,
+      "up": 5,
+      "down": 0,
+      "sign_p": 0.0625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -9.36,
+      24.88
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.2232,
+      "low": -1.3393,
+      "high": 0.8929,
+      "up": 2,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": 1.6949,
+      "high": 16.9492,
+      "up": 5,
+      "down": 0,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -6.26,
+      21.72
+     ]
+    }
+   },
+   {
+    "model": "sonnet",
+    "a": "era1 read 1",
+    "b": "fill read 3",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.2232,
+      "low": -1.7857,
+      "high": 1.3393,
+      "up": 3,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -5.0847,
+      "high": 11.8644,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.23,
+      18.27
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.2232,
+      "low": -2.0089,
+      "high": 1.5625,
+      "up": 3,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -6.7797,
+      "high": 13.5593,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -13.89,
+      19.94
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.2232,
+      "low": -1.5625,
+      "high": 1.1161,
+      "up": 3,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -3.3898,
+      "high": 11.8644,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.92,
+      16.95
+     ]
+    }
+   },
+   {
+    "model": "sonnet",
+    "a": "era1 read 1",
+    "b": "erp",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -1.3393,
+      "low": -3.5714,
+      "high": 0.8929,
+      "up": 4,
+      "down": 10,
+      "sign_p": 0.1796
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": 1.6949,
+      "high": 18.6441,
+      "up": 5,
+      "down": 0,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -7.64,
+      23.12
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.3393,
+      "low": -3.7946,
+      "high": 1.1161,
+      "up": 4,
+      "down": 10,
+      "sign_p": 0.1796
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": 0.0,
+      "high": 18.6441,
+      "up": 5,
+      "down": 0,
+      "sign_p": 0.0625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -9.36,
+      24.88
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.3393,
+      "low": -3.3482,
+      "high": 0.4464,
+      "up": 4,
+      "down": 10,
+      "sign_p": 0.1796
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": 1.6949,
+      "high": 16.9492,
+      "up": 5,
+      "down": 0,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -6.26,
+      21.72
+     ]
+    }
+   },
+   {
+    "model": "sonnet",
+    "a": "era1 read 2",
+    "b": "fill read 3",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.0,
+      "low": -1.7857,
+      "high": 1.7857,
+      "up": 6,
+      "down": 6,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -5.0847,
+      "low": -13.5593,
+      "high": 0.0,
+      "up": 0,
+      "down": 3,
+      "sign_p": 0.25
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -18.27,
+      8.82
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.0,
+      "low": -2.0089,
+      "high": 2.0089,
+      "up": 6,
+      "down": 6,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -5.0847,
+      "low": -13.5593,
+      "high": 0.0,
+      "up": 0,
+      "down": 3,
+      "sign_p": 0.25
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -19.94,
+      10.36
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.0,
+      "low": -1.5625,
+      "high": 1.7857,
+      "up": 6,
+      "down": 6,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -5.0847,
+      "low": -11.8644,
+      "high": 0.0,
+      "up": 0,
+      "down": 3,
+      "sign_p": 0.25
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -16.96,
+      7.61
+     ]
+    }
+   },
+   {
+    "model": "sonnet",
+    "a": "era1 read 2",
+    "b": "erp",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.3482,
+      "high": 1.1161,
+      "up": 5,
+      "down": 10,
+      "sign_p": 0.3018
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "up": 0,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": true,
+     "exact_specific": [
+      -9.31,
+      9.31
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.7946,
+      "high": 1.1161,
+      "up": 5,
+      "down": 10,
+      "sign_p": 0.3018
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "up": 0,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": true,
+     "exact_specific": [
+      -10.71,
+      10.71
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.125,
+      "high": 0.6696,
+      "up": 5,
+      "down": 10,
+      "sign_p": 0.3018
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "up": 0,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": true,
+     "exact_specific": [
+      -8.24,
+      8.24
+     ]
+    }
+   },
+   {
+    "model": "sonnet",
+    "a": "fill read 3",
+    "b": "erp",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.3482,
+      "high": 0.8929,
+      "up": 5,
+      "down": 10,
+      "sign_p": 0.3018
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 5.0847,
+      "low": 0.0,
+      "high": 11.8644,
+      "up": 3,
+      "down": 0,
+      "sign_p": 0.25
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -8.82,
+      18.27
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.7946,
+      "high": 1.1161,
+      "up": 5,
+      "down": 10,
+      "sign_p": 0.3018
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 5.0847,
+      "low": 0.0,
+      "high": 13.5593,
+      "up": 3,
+      "down": 0,
+      "sign_p": 0.25
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.36,
+      19.94
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.125,
+      "high": 0.8929,
+      "up": 5,
+      "down": 10,
+      "sign_p": 0.3018
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 5.0847,
+      "low": 0.0,
+      "high": 11.8644,
+      "up": 3,
+      "down": 0,
+      "sign_p": 0.25
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -7.61,
+      16.96
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 1",
+    "b": "era1 read 2",
+    "98.75": {
+     "open": {
+      "pairs": 446,
+      "change": 0.8969,
+      "low": -0.6726,
+      "high": 2.6906,
+      "up": 7,
+      "down": 3,
+      "sign_p": 0.3438
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -1.7241,
+      "low": -6.8966,
+      "high": 0.0,
+      "up": 0,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.93,
+      9.46
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 446,
+      "change": 0.8969,
+      "low": -0.8969,
+      "high": 2.9148,
+      "up": 7,
+      "down": 3,
+      "sign_p": 0.3438
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -1.7241,
+      "low": -8.6207,
+      "high": 0.0,
+      "up": 0,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.47,
+      10.88
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 446,
+      "change": 0.8969,
+      "low": -0.6726,
+      "high": 2.6906,
+      "up": 7,
+      "down": 3,
+      "sign_p": 0.3438
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -1.7241,
+      "low": -6.8966,
+      "high": 0.0,
+      "up": 0,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.73,
+      8.37
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 1",
+    "b": "erm",
+    "98.75": {
+     "open": {
+      "pairs": 446,
+      "change": -0.4484,
+      "low": -1.7937,
+      "high": 0.6726,
+      "up": 1,
+      "down": 3,
+      "sign_p": 0.625
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": -5.1724,
+      "high": 10.3448,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.79,
+      15.87
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 446,
+      "change": -0.4484,
+      "low": -1.7937,
+      "high": 0.6726,
+      "up": 1,
+      "down": 3,
+      "sign_p": 0.625
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": -6.8966,
+      "high": 10.3448,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.38,
+      17.5
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 446,
+      "change": -0.4484,
+      "low": -1.5695,
+      "high": 0.4484,
+      "up": 1,
+      "down": 3,
+      "sign_p": 0.625
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": -5.1724,
+      "high": 8.6207,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.53,
+      14.59
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 1",
+    "b": "ers",
+    "98.75": {
+     "open": {
+      "pairs": 446,
+      "change": -0.2242,
+      "low": -1.7937,
+      "high": 1.5695,
+      "up": 4,
+      "down": 5,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -5.1724,
+      "high": 12.069,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.43,
+      18.56
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 446,
+      "change": -0.2242,
+      "low": -2.2422,
+      "high": 1.7937,
+      "up": 4,
+      "down": 5,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -5.1724,
+      "high": 13.7931,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.11,
+      20.25
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 446,
+      "change": -0.2242,
+      "low": -1.7937,
+      "high": 1.3453,
+      "up": 4,
+      "down": 5,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -3.4483,
+      "high": 12.069,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.09,
+      17.22
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 1",
+    "b": "erc",
+    "98.75": {
+     "open": {
+      "pairs": 446,
+      "change": 0.0,
+      "low": -1.5695,
+      "high": 1.5695,
+      "up": 3,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": 0.0,
+      "high": 6.8966,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -9.46,
+      12.93
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 446,
+      "change": 0.0,
+      "low": -1.5695,
+      "high": 1.5695,
+      "up": 3,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": 0.0,
+      "high": 8.6207,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.88,
+      14.47
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 446,
+      "change": 0.0,
+      "low": -1.3453,
+      "high": 1.3453,
+      "up": 3,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": 0.0,
+      "high": 6.8966,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -8.37,
+      11.73
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 1",
+    "b": "erc2",
+    "98.75": {
+     "open": {
+      "pairs": 446,
+      "change": 0.2242,
+      "low": -1.5695,
+      "high": 2.0179,
+      "up": 5,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": -5.1724,
+      "high": 10.3448,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.79,
+      15.87
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 446,
+      "change": 0.2242,
+      "low": -1.7937,
+      "high": 2.0179,
+      "up": 5,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": -6.8966,
+      "high": 10.3448,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.38,
+      17.5
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 446,
+      "change": 0.2242,
+      "low": -1.3453,
+      "high": 1.7937,
+      "up": 5,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 1.7241,
+      "low": -5.1724,
+      "high": 8.6207,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.53,
+      14.59
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 2",
+    "b": "erm",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.125,
+      "high": 0.6696,
+      "up": 3,
+      "down": 8,
+      "sign_p": 0.2266
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -3.4483,
+      "high": 12.069,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.43,
+      18.56
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -3.7946,
+      "high": 0.8929,
+      "up": 3,
+      "down": 8,
+      "sign_p": 0.2266
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -5.1724,
+      "high": 13.7931,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.11,
+      20.25
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.1161,
+      "low": -2.9018,
+      "high": 0.4464,
+      "up": 3,
+      "down": 8,
+      "sign_p": 0.2266
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -3.4483,
+      "high": 12.069,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.09,
+      17.22
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 2",
+    "b": "ers",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.8929,
+      "low": -2.9018,
+      "high": 1.1161,
+      "up": 4,
+      "down": 8,
+      "sign_p": 0.3877
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 5.1724,
+      "low": -3.4483,
+      "high": 15.5172,
+      "up": 4,
+      "down": 1,
+      "sign_p": 0.375
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.9,
+      21.08
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.8929,
+      "low": -3.125,
+      "high": 1.1161,
+      "up": 4,
+      "down": 8,
+      "sign_p": 0.3877
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 5.1724,
+      "low": -5.1724,
+      "high": 17.2414,
+      "up": 4,
+      "down": 1,
+      "sign_p": 0.375
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -13.67,
+      22.83
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.8929,
+      "low": -2.6786,
+      "high": 0.6696,
+      "up": 4,
+      "down": 8,
+      "sign_p": 0.3877
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 5.1724,
+      "low": -3.4483,
+      "high": 13.7931,
+      "up": 4,
+      "down": 1,
+      "sign_p": 0.375
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.47,
+      19.7
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 2",
+    "b": "erc",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.6696,
+      "low": -2.4554,
+      "high": 1.1161,
+      "up": 3,
+      "down": 6,
+      "sign_p": 0.5078
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": 0.0,
+      "high": 10.3448,
+      "up": 2,
+      "down": 0,
+      "sign_p": 0.5
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -9.33,
+      15.88
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.6696,
+      "low": -2.9018,
+      "high": 1.1161,
+      "up": 3,
+      "down": 6,
+      "sign_p": 0.5078
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": 0.0,
+      "high": 12.069,
+      "up": 2,
+      "down": 0,
+      "sign_p": 0.5
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.8,
+      17.5
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.6696,
+      "low": -2.2321,
+      "high": 0.8929,
+      "up": 3,
+      "down": 6,
+      "sign_p": 0.5078
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": 0.0,
+      "high": 10.3448,
+      "up": 2,
+      "down": 0,
+      "sign_p": 0.5
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -8.18,
+      14.61
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "era1 read 2",
+    "b": "erc2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.4464,
+      "low": -2.2321,
+      "high": 1.1161,
+      "up": 3,
+      "down": 5,
+      "sign_p": 0.7266
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -3.4483,
+      "high": 12.069,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.43,
+      18.56
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.4464,
+      "low": -2.4554,
+      "high": 1.3393,
+      "up": 3,
+      "down": 5,
+      "sign_p": 0.7266
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -5.1724,
+      "high": 13.7931,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.11,
+      20.25
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.4464,
+      "low": -2.0089,
+      "high": 0.8929,
+      "up": 3,
+      "down": 5,
+      "sign_p": 0.7266
+     },
+     "specific": {
+      "pairs": 58,
+      "change": 3.4483,
+      "low": -3.4483,
+      "high": 12.069,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.09,
+      17.22
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "erm",
+    "b": "ers",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.3393,
+      "high": 1.7857,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": 0.0,
+      "high": 6.7797,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -9.31,
+      12.73
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.3393,
+      "high": 2.0089,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": 0.0,
+      "high": 8.4746,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.71,
+      14.24
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.1161,
+      "high": 1.5625,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": 0.0,
+      "high": 6.7797,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -8.23,
+      11.55
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "erm",
+    "b": "erc",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.4464,
+      "low": -0.8929,
+      "high": 2.0089,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -5.0847,
+      "high": 10.1695,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.59,
+      15.62
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.4464,
+      "low": -1.1161,
+      "high": 2.0089,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -6.7797,
+      "high": 11.8644,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.15,
+      17.22
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.4464,
+      "low": -0.6696,
+      "high": 1.7857,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -5.0847,
+      "high": 8.4746,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.35,
+      14.36
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "erm",
+    "b": "erc2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.6696,
+      "low": -0.8929,
+      "high": 2.2321,
+      "up": 5,
+      "down": 2,
+      "sign_p": 0.4531
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "up": 0,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": true,
+     "exact_specific": [
+      -9.31,
+      9.31
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.6696,
+      "low": -0.8929,
+      "high": 2.4554,
+      "up": 5,
+      "down": 2,
+      "sign_p": 0.4531
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "up": 0,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": true,
+     "exact_specific": [
+      -10.71,
+      10.71
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.6696,
+      "low": -0.6696,
+      "high": 2.0089,
+      "up": 5,
+      "down": 2,
+      "sign_p": 0.4531
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "up": 0,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": true,
+     "exact_specific": [
+      -8.24,
+      8.24
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "ers",
+    "b": "erc",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.1161,
+      "high": 1.7857,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -10.1695,
+      "high": 8.4746,
+      "up": 2,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -15.49,
+      15.49
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.3393,
+      "high": 2.0089,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -10.1695,
+      "high": 10.1695,
+      "up": 2,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -17.14,
+      17.14
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.1161,
+      "high": 1.5625,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -8.4746,
+      "high": 8.4746,
+      "up": 2,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.17,
+      14.17
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "ers",
+    "b": "erc2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.4464,
+      "low": -0.8929,
+      "high": 1.7857,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -6.7797,
+      "high": 0.0,
+      "up": 0,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.73,
+      9.31
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.4464,
+      "low": -1.1161,
+      "high": 2.0089,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -8.4746,
+      "high": 0.0,
+      "up": 0,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.24,
+      10.71
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.4464,
+      "low": -0.6696,
+      "high": 1.7857,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -6.7797,
+      "high": 0.0,
+      "up": 0,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.55,
+      8.23
+     ]
+    }
+   },
+   {
+    "model": "haiku",
+    "a": "erc",
+    "b": "erc2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -0.8929,
+      "high": 1.5625,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -10.1695,
+      "high": 5.0847,
+      "up": 1,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -15.62,
+      12.59
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.1161,
+      "high": 1.7857,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -11.8644,
+      "high": 5.0847,
+      "up": 1,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -17.22,
+      14.15
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -0.8929,
+      "high": 1.3393,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -8.4746,
+      "high": 5.0847,
+      "up": 1,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.36,
+      11.35
+     ]
+    }
+   },
+   {
+    "model": "sol",
+    "a": "era1 read 1",
+    "b": "era1 read 2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 1.5625,
+      "low": -0.6696,
+      "high": 3.7946,
+      "up": 12,
+      "down": 5,
+      "sign_p": 0.1435
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -11.8644,
+      "high": 8.4746,
+      "up": 2,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -18.14,
+      15.14
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 1.5625,
+      "low": -0.8929,
+      "high": 4.0179,
+      "up": 12,
+      "down": 5,
+      "sign_p": 0.1435
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -13.5593,
+      "high": 8.4746,
+      "up": 2,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -19.85,
+      16.87
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 1.5625,
+      "low": -0.4464,
+      "high": 3.5714,
+      "up": 12,
+      "down": 5,
+      "sign_p": 0.1435
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -1.6949,
+      "low": -10.1695,
+      "high": 6.7797,
+      "up": 2,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -16.76,
+      13.74
+     ]
+    }
+   },
+   {
+    "model": "sol",
+    "a": "era1 read 1",
+    "b": "fill read 3",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.8929,
+      "low": -1.1161,
+      "high": 2.9018,
+      "up": 8,
+      "down": 4,
+      "sign_p": 0.3877
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -6.7797,
+      "high": 5.0847,
+      "up": 1,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.72,
+      12.72
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.8929,
+      "low": -1.3393,
+      "high": 3.125,
+      "up": 8,
+      "down": 4,
+      "sign_p": 0.3877
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -6.7797,
+      "high": 6.7797,
+      "up": 1,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.24,
+      14.24
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.8929,
+      "low": -0.8929,
+      "high": 2.6786,
+      "up": 8,
+      "down": 4,
+      "sign_p": 0.3877
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -5.0847,
+      "high": 5.0847,
+      "up": 1,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.54,
+      11.54
+     ]
+    }
+   },
+   {
+    "model": "sol",
+    "a": "era1 read 1",
+    "b": "erp",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.4464,
+      "low": -2.4554,
+      "high": 1.5625,
+      "up": 6,
+      "down": 8,
+      "sign_p": 0.7905
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -11.8644,
+      "high": 11.8644,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -17.26,
+      20.27
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.4464,
+      "low": -2.9018,
+      "high": 1.7857,
+      "up": 6,
+      "down": 8,
+      "sign_p": 0.7905
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -11.8644,
+      "high": 13.5593,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -19.15,
+      22.12
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.4464,
+      "low": -2.2321,
+      "high": 1.3393,
+      "up": 6,
+      "down": 8,
+      "sign_p": 0.7905
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -8.4746,
+      "high": 11.8644,
+      "up": 4,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -15.72,
+      18.77
+     ]
+    }
+   },
+   {
+    "model": "sol",
+    "a": "era1 read 2",
+    "b": "fill read 3",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -0.6696,
+      "low": -2.9018,
+      "high": 1.5625,
+      "up": 6,
+      "down": 9,
+      "sign_p": 0.6072
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -5.0847,
+      "high": 10.1695,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.59,
+      15.62
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.6696,
+      "low": -3.125,
+      "high": 2.0089,
+      "up": 6,
+      "down": 9,
+      "sign_p": 0.6072
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -6.7797,
+      "high": 10.1695,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.15,
+      17.22
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -0.6696,
+      "low": -2.6786,
+      "high": 1.1161,
+      "up": 6,
+      "down": 9,
+      "sign_p": 0.6072
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -5.0847,
+      "high": 8.4746,
+      "up": 2,
+      "down": 1,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -11.35,
+      14.36
+     ]
+    }
+   },
+   {
+    "model": "sol",
+    "a": "era1 read 2",
+    "b": "erp",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -2.0089,
+      "low": -4.4643,
+      "high": 0.0,
+      "up": 3,
+      "down": 12,
+      "sign_p": 0.0352
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -6.7797,
+      "high": 13.5593,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -14.61,
+      20.62
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -2.0089,
+      "low": -4.6875,
+      "high": 0.2232,
+      "up": 3,
+      "down": 12,
+      "sign_p": 0.0352
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -8.4746,
+      "high": 15.2542,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -16.44,
+      22.39
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -2.0089,
+      "low": -4.0179,
+      "high": -0.2232,
+      "up": 3,
+      "down": 12,
+      "sign_p": 0.0352
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -6.7797,
+      "high": 11.8644,
+      "up": 4,
+      "down": 2,
+      "sign_p": 0.6875
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -13.13,
+      19.2
+     ]
+    }
+   },
+   {
+    "model": "sol",
+    "a": "fill read 3",
+    "b": "erp",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -1.3393,
+      "low": -3.3482,
+      "high": 0.4464,
+      "up": 3,
+      "down": 9,
+      "sign_p": 0.146
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -10.1695,
+      "high": 11.8644,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -15.14,
+      18.14
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.3393,
+      "low": -3.7946,
+      "high": 0.6696,
+      "up": 3,
+      "down": 9,
+      "sign_p": 0.146
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -10.1695,
+      "high": 11.8644,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -16.87,
+      19.85
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -1.3393,
+      "low": -3.125,
+      "high": 0.2232,
+      "up": 3,
+      "down": 9,
+      "sign_p": 0.146
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": -6.7797,
+      "high": 10.1695,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -13.74,
+      16.76
+     ]
+    }
+   },
+   {
+    "model": "opus",
+    "a": "era1 read 1",
+    "b": "fill read 2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 1.3393,
+      "low": -1.3393,
+      "high": 4.4643,
+      "up": 16,
+      "down": 10,
+      "sign_p": 0.3269
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -5.0847,
+      "high": 13.5593,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -12.23,
+      18.27
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 1.3393,
+      "low": -1.7857,
+      "high": 4.9107,
+      "up": 16,
+      "down": 10,
+      "sign_p": 0.3269
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -6.7797,
+      "high": 13.5593,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -13.89,
+      19.94
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 1.3393,
+      "low": -1.1161,
+      "high": 4.0179,
+      "up": 16,
+      "down": 10,
+      "sign_p": 0.3269
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 3.3898,
+      "low": -3.3898,
+      "high": 11.8644,
+      "up": 3,
+      "down": 1,
+      "sign_p": 0.625
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -10.92,
+      16.95
+     ]
+    }
+   },
+   {
+    "model": "luna",
+    "a": "era1 read 1",
+    "b": "era1 read 2",
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.8929,
+      "low": -1.5625,
+      "high": 3.3482,
+      "up": 11,
+      "down": 7,
+      "sign_p": 0.4807
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -10.1695,
+      "high": 10.1695,
+      "up": 3,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -17.78,
+      17.78
+     ]
+    },
+    "99.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.8929,
+      "low": -1.7857,
+      "high": 3.7946,
+      "up": 11,
+      "down": 7,
+      "sign_p": 0.4807
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -10.1695,
+      "high": 10.1695,
+      "up": 3,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -19.58,
+      19.58
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.8929,
+      "low": -1.1161,
+      "high": 3.125,
+      "up": 11,
+      "down": 7,
+      "sign_p": 0.4807
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0,
+      "low": -8.4746,
+      "high": 8.4746,
+      "up": 3,
+      "down": 3,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_zero_width": false,
+     "exact_specific": [
+      -16.33,
+      16.33
+     ]
+    }
+   }
+  ],
+  "unchanged_tally": {
+   "97.5 exact_first: hold": 29,
+   "97.5 exact_revised: hold": 29,
+   "97.5 first: flag": 2,
+   "97.5 first: hold": 25,
+   "97.5 first: pass": 2,
+   "97.5 revised: hold": 27,
+   "97.5 revised: pass": 2,
+   "98.75 exact_first: hold": 29,
+   "98.75 exact_revised: hold": 29,
+   "98.75 first: flag": 2,
+   "98.75 first: hold": 25,
+   "98.75 first: pass": 2,
+   "98.75 revised: hold": 27,
+   "98.75 revised: pass": 2,
+   "99.5 exact_first: hold": 29,
+   "99.5 exact_revised: hold": 29,
+   "99.5 first: hold": 27,
+   "99.5 first: pass": 2,
+   "99.5 revised: hold": 27,
+   "99.5 revised: pass": 2
+  },
+  "edits": {
+   "full rename, sonnet": {
+    "status": "post hoc, 6 models",
+    "C": 12,
+    "stated_level": 0.995833,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -19.1964,
+      "low": -23.6607,
+      "high": -14.7321,
+      "up": 0,
+      "down": 86,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -44.0678,
+      "low": -61.0169,
+      "high": -28.8136,
+      "up": 0,
+      "down": 26,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -24.75,
+      -13.11
+     ],
+     "exact_specific": [
+      -62.45,
+      -17.46
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": -19.1964,
+      "low": -24.7768,
+      "high": -14.0625,
+      "up": 0,
+      "down": 86,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -44.0678,
+      "low": -62.7119,
+      "high": -25.4237,
+      "up": 0,
+      "down": 26,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -25.48,
+      -12.33
+     ],
+     "exact_specific": [
+      -64.54,
+      -13.94
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -19.1964,
+      "low": -23.4375,
+      "high": -14.9554,
+      "up": 0,
+      "down": 86,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -44.0678,
+      "low": -59.322,
+      "high": -28.8136,
+      "up": 0,
+      "down": 26,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -24.26,
+      -13.64
+     ],
+     "exact_specific": [
+      -60.98,
+      -19.84
+     ]
+    }
+   },
+   "full rename, haiku": {
+    "status": "post hoc, 6 models",
+    "C": 12,
+    "stated_level": 0.995833,
+    "98.75": {
+     "open": {
+      "pairs": 446,
+      "change": -5.3812,
+      "low": -8.296,
+      "high": -2.9148,
+      "up": 0,
+      "down": 24,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -8.6207,
+      "low": -18.9655,
+      "high": -1.7241,
+      "up": 0,
+      "down": 5,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -8.98,
+      -1.61
+     ],
+     "exact_specific": [
+      -23.49,
+      7.76
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 446,
+      "change": -5.3812,
+      "low": -8.7444,
+      "high": -2.6906,
+      "up": 0,
+      "down": 24,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -8.6207,
+      "low": -20.6897,
+      "high": 0.0,
+      "up": 0,
+      "down": 5,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -9.49,
+      -1.13
+     ],
+     "exact_specific": [
+      -25.62,
+      9.84
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 446,
+      "change": -5.3812,
+      "low": -7.8475,
+      "high": -3.139,
+      "up": 0,
+      "down": 24,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -8.6207,
+      "low": -17.2414,
+      "high": -1.7241,
+      "up": 0,
+      "down": 5,
+      "sign_p": 0.0625
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -8.64,
+      -1.93
+     ],
+     "exact_specific": [
+      -22.07,
+      6.37
+     ]
+    }
+   },
+   "full rename, opus": {
+    "status": "post hoc, 6 models",
+    "C": 12,
+    "stated_level": 0.995833,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -20.7589,
+      "low": -25.6696,
+      "high": -15.8482,
+      "up": 2,
+      "down": 95,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -49.1525,
+      "low": -66.1017,
+      "high": -33.8983,
+      "up": 0,
+      "down": 29,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -26.91,
+      -14.0
+     ],
+     "exact_specific": [
+      -67.18,
+      -21.97
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": -20.7589,
+      "low": -26.7857,
+      "high": -14.7321,
+      "up": 2,
+      "down": 95,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -49.1525,
+      "low": -67.7966,
+      "high": -32.2034,
+      "up": 0,
+      "down": 29,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -27.66,
+      -13.14
+     ],
+     "exact_specific": [
+      -69.18,
+      -18.33
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -20.7589,
+      "low": -25.2232,
+      "high": -16.2946,
+      "up": 2,
+      "down": 95,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -49.1525,
+      "low": -64.4068,
+      "high": -35.5932,
+      "up": 0,
+      "down": 29,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -26.4,
+      -14.59
+     ],
+     "exact_specific": [
+      -65.77,
+      -24.42
+     ]
+    }
+   },
+   "full rename, sol": {
+    "status": "post hoc, 6 models",
+    "C": 12,
+    "stated_level": 0.995833,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -22.9911,
+      "low": -27.9018,
+      "high": -18.0804,
+      "up": 0,
+      "down": 103,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -57.6271,
+      "low": -72.8814,
+      "high": -42.3729,
+      "up": 0,
+      "down": 34,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -28.84,
+      -16.51
+     ],
+     "exact_specific": [
+      -74.69,
+      -29.85
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": -22.9911,
+      "low": -29.0179,
+      "high": -17.1875,
+      "up": 0,
+      "down": 103,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -57.6271,
+      "low": -76.2712,
+      "high": -38.9831,
+      "up": 0,
+      "down": 34,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -29.6,
+      -15.68
+     ],
+     "exact_specific": [
+      -76.49,
+      -26.06
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -22.9911,
+      "low": -27.4554,
+      "high": -18.5268,
+      "up": 0,
+      "down": 103,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -57.6271,
+      "low": -71.1864,
+      "high": -44.0678,
+      "up": 0,
+      "down": 34,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -28.33,
+      -17.08
+     ],
+     "exact_specific": [
+      -73.41,
+      -32.41
+     ]
+    }
+   },
+   "full rename, astra": {
+    "status": "post hoc, 6 models",
+    "C": 12,
+    "stated_level": 0.995833,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -31.0268,
+      "low": -36.3839,
+      "high": -25.6696,
+      "up": 0,
+      "down": 139,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -79.661,
+      "low": -91.5254,
+      "high": -66.1017,
+      "up": 0,
+      "down": 47,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -37.32,
+      -23.92
+     ],
+     "exact_specific": [
+      -91.65,
+      -52.86
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": -31.0268,
+      "low": -37.5,
+      "high": -25.0,
+      "up": 0,
+      "down": 139,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -79.661,
+      "low": -93.2203,
+      "high": -64.4068,
+      "up": 0,
+      "down": 47,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -38.11,
+      -22.99
+     ],
+     "exact_specific": [
+      -92.67,
+      -48.92
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -31.0268,
+      "low": -35.9375,
+      "high": -26.3393,
+      "up": 0,
+      "down": 139,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -79.661,
+      "low": -91.5254,
+      "high": -67.7966,
+      "up": 0,
+      "down": 47,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -36.77,
+      -24.55
+     ],
+     "exact_specific": [
+      -90.9,
+      -55.48
+     ]
+    }
+   },
+   "full rename, luna": {
+    "status": "post hoc, 6 models",
+    "C": 12,
+    "stated_level": 0.995833,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": -17.6339,
+      "low": -22.0982,
+      "high": -13.3929,
+      "up": 0,
+      "down": 79,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -33.8983,
+      "low": -50.8475,
+      "high": -20.339,
+      "up": 0,
+      "down": 20,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -23.05,
+      -11.73
+     ],
+     "exact_specific": [
+      -52.45,
+      -8.99
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": -17.6339,
+      "low": -22.7679,
+      "high": -12.9464,
+      "up": 0,
+      "down": 79,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -33.8983,
+      "low": -54.2373,
+      "high": -18.6441,
+      "up": 0,
+      "down": 20,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -23.76,
+      -10.97
+     ],
+     "exact_specific": [
+      -54.68,
+      -5.77
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": -17.6339,
+      "low": -21.875,
+      "high": -13.6161,
+      "up": 0,
+      "down": 79,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -33.8983,
+      "low": -49.1525,
+      "high": -20.339,
+      "up": 0,
+      "down": 20,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      -22.56,
+      -12.24
+     ],
+     "exact_specific": [
+      -50.91,
+      -11.18
+     ]
+    }
+   },
+   "broad rewrite, sonnet": {
+    "status": "prospective, 2 models",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 3.5714,
+      "low": 0.8929,
+      "high": 6.0268,
+      "up": 19,
+      "down": 3,
+      "sign_p": 0.0009
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": 0.0,
+      "high": 6.7797,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": true,
+     "exact_open": [
+      -0.49,
+      7.48
+     ],
+     "exact_specific": [
+      -9.31,
+      12.73
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 3.5714,
+      "low": 0.8929,
+      "high": 6.0268,
+      "up": 19,
+      "down": 3,
+      "sign_p": 0.0009
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": 0.0,
+      "high": 6.7797,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": true,
+     "exact_open": [
+      -0.49,
+      7.48
+     ],
+     "exact_specific": [
+      -9.31,
+      12.73
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 3.5714,
+      "low": 1.1161,
+      "high": 5.8036,
+      "up": 19,
+      "down": 3,
+      "sign_p": 0.0009
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.6949,
+      "low": 0.0,
+      "high": 6.7797,
+      "up": 1,
+      "down": 0,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": true,
+     "exact_open": [
+      -0.14,
+      7.15
+     ],
+     "exact_specific": [
+      -8.23,
+      11.55
+     ]
+    }
+   },
+   "broad rewrite, sol": {
+    "status": "prospective, 2 models",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 5.3571,
+      "low": 2.6786,
+      "high": 8.2589,
+      "up": 26,
+      "down": 2,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": -3.3898,
+      "high": 20.339,
+      "up": 7,
+      "down": 2,
+      "sign_p": 0.1797
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      1.03,
+      9.47
+     ],
+     "exact_specific": [
+      -12.35,
+      27.46
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 5.3571,
+      "low": 2.6786,
+      "high": 8.2589,
+      "up": 26,
+      "down": 2,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": -3.3898,
+      "high": 20.339,
+      "up": 7,
+      "down": 2,
+      "sign_p": 0.1797
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      1.03,
+      9.47
+     ],
+     "exact_specific": [
+      -12.35,
+      27.46
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 5.3571,
+      "low": 2.9018,
+      "high": 8.0357,
+      "up": 26,
+      "down": 2,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": -1.6949,
+      "high": 20.339,
+      "up": 7,
+      "down": 2,
+      "sign_p": 0.1797
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      1.4,
+      9.12
+     ],
+     "exact_specific": [
+      -10.64,
+      25.94
+     ]
+    }
+   },
+   "steered th, sonnet": {
+    "status": "prospective, 2 models",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 8.2589,
+      "low": 5.1339,
+      "high": 11.8304,
+      "up": 37,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 11.8644,
+      "low": 1.6949,
+      "high": 23.7288,
+      "up": 7,
+      "down": 0,
+      "sign_p": 0.0156
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      3.82,
+      12.44
+     ],
+     "exact_specific": [
+      -6.03,
+      27.6
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 8.2589,
+      "low": 5.1339,
+      "high": 11.8304,
+      "up": 37,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 11.8644,
+      "low": 1.6949,
+      "high": 23.7288,
+      "up": 7,
+      "down": 0,
+      "sign_p": 0.0156
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      3.82,
+      12.44
+     ],
+     "exact_specific": [
+      -6.03,
+      27.6
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 8.2589,
+      "low": 5.3571,
+      "high": 11.3839,
+      "up": 37,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 11.8644,
+      "low": 3.3898,
+      "high": 22.0339,
+      "up": 7,
+      "down": 0,
+      "sign_p": 0.0156
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      4.21,
+      12.06
+     ],
+     "exact_specific": [
+      -4.51,
+      26.14
+     ]
+    }
+   },
+   "steered th, haiku": {
+    "status": "prospective, 2 models",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 34.1518,
+      "low": 28.5714,
+      "high": 39.9554,
+      "up": 154,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 69.4915,
+      "low": 54.2373,
+      "high": 84.7458,
+      "up": 41,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      26.58,
+      40.78
+     ],
+     "exact_specific": [
+      41.74,
+      84.34
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 34.1518,
+      "low": 28.5714,
+      "high": 39.9554,
+      "up": 154,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 69.4915,
+      "low": 54.2373,
+      "high": 84.7458,
+      "up": 41,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      26.58,
+      40.78
+     ],
+     "exact_specific": [
+      41.74,
+      84.34
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 34.1518,
+      "low": 29.2411,
+      "high": 39.5089,
+      "up": 154,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 69.4915,
+      "low": 55.9322,
+      "high": 83.0508,
+      "up": 41,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      27.25,
+      40.23
+     ],
+     "exact_specific": [
+      44.37,
+      83.31
+     ]
+    }
+   },
+   "steered tg, sonnet": {
+    "status": "prospective, 2 models",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 11.6071,
+      "low": 7.8125,
+      "high": 15.625,
+      "up": 53,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 25.4237,
+      "low": 11.8644,
+      "high": 40.678,
+      "up": 15,
+      "down": 0,
+      "sign_p": 0.0001
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      6.26,
+      16.57
+     ],
+     "exact_specific": [
+      2.56,
+      43.51
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 11.6071,
+      "low": 7.8125,
+      "high": 15.625,
+      "up": 53,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 25.4237,
+      "low": 11.8644,
+      "high": 40.678,
+      "up": 15,
+      "down": 0,
+      "sign_p": 0.0001
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      6.26,
+      16.57
+     ],
+     "exact_specific": [
+      2.56,
+      43.51
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 11.6071,
+      "low": 8.2589,
+      "high": 15.1786,
+      "up": 53,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 25.4237,
+      "low": 13.5593,
+      "high": 37.2881,
+      "up": 15,
+      "down": 0,
+      "sign_p": 0.0001
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      6.72,
+      16.14
+     ],
+     "exact_specific": [
+      4.53,
+      41.95
+     ]
+    }
+   },
+   "steered tg, haiku": {
+    "status": "prospective, 2 models",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 29.4643,
+      "low": 24.1071,
+      "high": 35.2679,
+      "up": 133,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 49.1525,
+      "low": 30.5085,
+      "high": 64.4068,
+      "up": 29,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      22.18,
+      35.92
+     ],
+     "exact_specific": [
+      21.97,
+      67.18
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 29.4643,
+      "low": 24.1071,
+      "high": 35.2679,
+      "up": 133,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 49.1525,
+      "low": 30.5085,
+      "high": 64.4068,
+      "up": 29,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      22.18,
+      35.92
+     ],
+     "exact_specific": [
+      21.97,
+      67.18
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 29.4643,
+      "low": 24.5536,
+      "high": 34.5982,
+      "up": 133,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 49.1525,
+      "low": 33.8983,
+      "high": 62.7119,
+      "up": 29,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      22.82,
+      35.38
+     ],
+     "exact_specific": [
+      24.42,
+      65.77
+     ]
+    }
+   },
+   "rewrite h1, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 33.7054,
+      "low": 28.3482,
+      "high": 39.5089,
+      "up": 151,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 74.5763,
+      "low": 57.6271,
+      "high": 88.1356,
+      "up": 44,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      26.43,
+      40.09
+     ],
+     "exact_specific": [
+      47.17,
+      88.13
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 33.7054,
+      "low": 28.7946,
+      "high": 39.0625,
+      "up": 151,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 74.5763,
+      "low": 61.0169,
+      "high": 86.4407,
+      "up": 44,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      27.08,
+      39.54
+     ],
+     "exact_specific": [
+      49.81,
+      87.22
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 33.7054,
+      "low": 28.7946,
+      "high": 39.0625,
+      "up": 151,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 74.5763,
+      "low": 61.0169,
+      "high": 86.4407,
+      "up": 44,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      27.08,
+      39.54
+     ],
+     "exact_specific": [
+      49.81,
+      87.22
+     ]
+    }
+   },
+   "rewrite h2, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 44.6429,
+      "low": 39.0625,
+      "high": 50.6696,
+      "up": 200,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 84.7458,
+      "low": 72.8814,
+      "high": 94.9153,
+      "up": 50,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      36.93,
+      51.21
+     ],
+     "exact_specific": [
+      58.86,
+      94.84
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 44.6429,
+      "low": 39.2857,
+      "high": 50.0,
+      "up": 200,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 84.7458,
+      "low": 74.5763,
+      "high": 94.9153,
+      "up": 50,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      37.62,
+      50.65
+     ],
+     "exact_specific": [
+      61.44,
+      94.26
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 44.6429,
+      "low": 39.2857,
+      "high": 50.0,
+      "up": 200,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 84.7458,
+      "low": 74.5763,
+      "high": 94.9153,
+      "up": 50,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      37.62,
+      50.65
+     ],
+     "exact_specific": [
+      61.44,
+      94.26
+     ]
+    }
+   },
+   "rewrite h3, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 44.6429,
+      "low": 38.6161,
+      "high": 50.8929,
+      "up": 200,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 83.0508,
+      "low": 69.4915,
+      "high": 94.9153,
+      "up": 49,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      36.93,
+      51.21
+     ],
+     "exact_specific": [
+      56.82,
+      93.82
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 44.6429,
+      "low": 39.0625,
+      "high": 50.0,
+      "up": 200,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 83.0508,
+      "low": 71.1864,
+      "high": 93.2203,
+      "up": 49,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      37.62,
+      50.65
+     ],
+     "exact_specific": [
+      59.41,
+      93.18
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 44.6429,
+      "low": 39.0625,
+      "high": 50.0,
+      "up": 200,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 83.0508,
+      "low": 71.1864,
+      "high": 93.2203,
+      "up": 49,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      37.62,
+      50.65
+     ],
+     "exact_specific": [
+      59.41,
+      93.18
+     ]
+    }
+   },
+   "rewrite g1, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 29.4643,
+      "low": 24.1071,
+      "high": 34.8214,
+      "up": 132,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 44.0678,
+      "low": 28.8136,
+      "high": 61.0169,
+      "up": 26,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      22.46,
+      35.69
+     ],
+     "exact_specific": [
+      17.46,
+      62.45
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 29.4643,
+      "low": 24.7768,
+      "high": 34.375,
+      "up": 132,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 44.0678,
+      "low": 30.5085,
+      "high": 59.322,
+      "up": 26,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      23.08,
+      35.15
+     ],
+     "exact_specific": [
+      19.84,
+      60.98
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 29.4643,
+      "low": 24.7768,
+      "high": 34.375,
+      "up": 132,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 44.0678,
+      "low": 30.5085,
+      "high": 59.322,
+      "up": 26,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      23.08,
+      35.15
+     ],
+     "exact_specific": [
+      19.84,
+      60.98
+     ]
+    }
+   },
+   "rewrite g2, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 25.8929,
+      "low": 20.5357,
+      "high": 31.9196,
+      "up": 117,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 52.5424,
+      "low": 35.5932,
+      "high": 69.4915,
+      "up": 31,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      18.88,
+      32.17
+     ],
+     "exact_specific": [
+      25.06,
+      70.24
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 25.8929,
+      "low": 21.2054,
+      "high": 30.8036,
+      "up": 117,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 52.5424,
+      "low": 38.9831,
+      "high": 67.7966,
+      "up": 31,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      19.49,
+      31.64
+     ],
+     "exact_specific": [
+      27.56,
+      68.88
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 25.8929,
+      "low": 21.2054,
+      "high": 30.8036,
+      "up": 117,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 52.5424,
+      "low": 38.9831,
+      "high": 67.7966,
+      "up": 31,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      19.49,
+      31.64
+     ],
+     "exact_specific": [
+      27.56,
+      68.88
+     ]
+    }
+   },
+   "rewrite g3, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 31.9196,
+      "low": 26.3393,
+      "high": 37.9464,
+      "up": 144,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 50.8475,
+      "low": 35.5932,
+      "high": 66.1017,
+      "up": 30,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      24.48,
+      38.48
+     ],
+     "exact_specific": [
+      23.51,
+      68.72
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 31.9196,
+      "low": 26.7857,
+      "high": 37.2768,
+      "up": 144,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 50.8475,
+      "low": 37.2881,
+      "high": 64.4068,
+      "up": 30,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      25.13,
+      37.93
+     ],
+     "exact_specific": [
+      25.98,
+      67.34
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 31.9196,
+      "low": 26.7857,
+      "high": 37.2768,
+      "up": 144,
+      "down": 1,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 50.8475,
+      "low": 37.2881,
+      "high": 64.4068,
+      "up": 30,
+      "down": 0,
+      "sign_p": 0.0
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      25.13,
+      37.93
+     ],
+     "exact_specific": [
+      25.98,
+      67.34
+     ]
+    }
+   },
+   "rewrite n1, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 4.2411,
+      "low": 1.5625,
+      "high": 7.1429,
+      "up": 22,
+      "down": 3,
+      "sign_p": 0.0002
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 11.8644,
+      "low": 1.6949,
+      "high": 22.0339,
+      "up": 7,
+      "down": 0,
+      "sign_p": 0.0156
+     },
+     "first": "flag",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": true,
+     "exact_open": [
+      -0.01,
+      8.32
+     ],
+     "exact_specific": [
+      -6.03,
+      27.6
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 4.2411,
+      "low": 2.0089,
+      "high": 6.9196,
+      "up": 22,
+      "down": 3,
+      "sign_p": 0.0002
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 11.8644,
+      "low": 3.3898,
+      "high": 22.0339,
+      "up": 7,
+      "down": 0,
+      "sign_p": 0.0156
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": true,
+     "exact_open": [
+      0.35,
+      7.98
+     ],
+     "exact_specific": [
+      -4.51,
+      26.14
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 4.2411,
+      "low": 2.0089,
+      "high": 6.9196,
+      "up": 22,
+      "down": 3,
+      "sign_p": 0.0002
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 11.8644,
+      "low": 3.3898,
+      "high": 22.0339,
+      "up": 7,
+      "down": 0,
+      "sign_p": 0.0156
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": true,
+     "exact_open": [
+      0.35,
+      7.98
+     ],
+     "exact_specific": [
+      -4.51,
+      26.14
+     ]
+    }
+   },
+   "rewrite n2, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 7.8125,
+      "low": 4.6875,
+      "high": 11.3839,
+      "up": 39,
+      "down": 4,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 13.5593,
+      "low": 1.6949,
+      "high": 27.1186,
+      "up": 9,
+      "down": 1,
+      "sign_p": 0.0215
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      2.53,
+      12.83
+     ],
+     "exact_specific": [
+      -7.57,
+      31.82
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 7.8125,
+      "low": 4.9107,
+      "high": 11.1607,
+      "up": 39,
+      "down": 4,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 13.5593,
+      "low": 3.3898,
+      "high": 25.4237,
+      "up": 9,
+      "down": 1,
+      "sign_p": 0.0215
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      2.98,
+      12.41
+     ],
+     "exact_specific": [
+      -5.81,
+      30.31
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 7.8125,
+      "low": 4.9107,
+      "high": 11.1607,
+      "up": 39,
+      "down": 4,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 13.5593,
+      "low": 3.3898,
+      "high": 25.4237,
+      "up": 9,
+      "down": 1,
+      "sign_p": 0.0215
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      2.98,
+      12.41
+     ],
+     "exact_specific": [
+      -5.81,
+      30.31
+     ]
+    }
+   },
+   "rewrite n3, haiku": {
+    "status": "post hoc, 1 model",
+    "C": 2,
+    "stated_level": 0.975,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 6.0268,
+      "low": 2.9018,
+      "high": 9.375,
+      "up": 31,
+      "down": 4,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": -5.0847,
+      "high": 22.0339,
+      "up": 7,
+      "down": 2,
+      "sign_p": 0.1797
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      1.13,
+      10.71
+     ],
+     "exact_specific": [
+      -12.35,
+      27.46
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 6.0268,
+      "low": 3.125,
+      "high": 8.9286,
+      "up": 31,
+      "down": 4,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": -3.3898,
+      "high": 20.339,
+      "up": 7,
+      "down": 2,
+      "sign_p": 0.1797
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      1.54,
+      10.32
+     ],
+     "exact_specific": [
+      -10.64,
+      25.94
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 6.0268,
+      "low": 3.125,
+      "high": 8.9286,
+      "up": 31,
+      "down": 4,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 8.4746,
+      "low": -3.3898,
+      "high": 20.339,
+      "up": 7,
+      "down": 2,
+      "sign_p": 0.1797
+     },
+     "first": "flag",
+     "revised": "flag",
+     "exact_first": "flag",
+     "exact_revised": "flag",
+     "specific_exact_used": true,
+     "exact_open": [
+      1.54,
+      10.32
+     ],
+     "exact_specific": [
+      -10.64,
+      25.94
+     ]
+    }
+   },
+   "field order (10 answers), haiku": {
+    "status": "prospective, 1 model, 2 updates",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.7857,
+      "high": 2.2321,
+      "up": 7,
+      "down": 6,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.1864,
+      "low": -3.5593,
+      "high": 6.6102,
+      "up": 4,
+      "down": 5,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": false,
+     "exact_open": [
+      -3.2,
+      3.63
+     ],
+     "exact_specific": [
+      -3.56,
+      6.61
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.7857,
+      "high": 2.2321,
+      "up": 7,
+      "down": 6,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.1864,
+      "low": -3.5593,
+      "high": 6.6102,
+      "up": 4,
+      "down": 5,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": false,
+     "exact_open": [
+      -3.2,
+      3.63
+     ],
+     "exact_specific": [
+      -3.56,
+      6.61
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -1.5625,
+      "high": 2.0089,
+      "up": 7,
+      "down": 6,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 1.1864,
+      "low": -3.2203,
+      "high": 5.9322,
+      "up": 4,
+      "down": 5,
+      "sign_p": 1.0
+     },
+     "first": "hold",
+     "revised": "hold",
+     "exact_first": "hold",
+     "exact_revised": "hold",
+     "specific_exact_used": false,
+     "exact_open": [
+      -2.91,
+      3.34
+     ],
+     "exact_specific": [
+      -3.22,
+      5.93
+     ]
+    }
+   },
+   "repeat (10 answers), haiku": {
+    "status": "prospective, 1 model, 2 updates",
+    "C": 4,
+    "stated_level": 0.9875,
+    "98.75": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -0.8929,
+      "high": 1.5625,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0942,
+      "low": -1.7514,
+      "high": 2.2034,
+      "up": 4,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "pass",
+     "exact_revised": "pass",
+     "specific_exact_used": false,
+     "exact_open": [
+      -2.12,
+      2.55
+     ],
+     "exact_specific": [
+      -1.75,
+      2.2
+     ]
+    },
+    "stated": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -0.8929,
+      "high": 1.5625,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0942,
+      "low": -1.7514,
+      "high": 2.2034,
+      "up": 4,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "pass",
+     "exact_revised": "pass",
+     "specific_exact_used": false,
+     "exact_open": [
+      -2.12,
+      2.55
+     ],
+     "exact_specific": [
+      -1.75,
+      2.2
+     ]
+    },
+    "97.5": {
+     "open": {
+      "pairs": 448,
+      "change": 0.2232,
+      "low": -0.8929,
+      "high": 1.3393,
+      "up": 3,
+      "down": 2,
+      "sign_p": 1.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": 0.0942,
+      "low": -1.5066,
+      "high": 1.8644,
+      "up": 4,
+      "down": 4,
+      "sign_p": 1.0
+     },
+     "first": "pass",
+     "revised": "pass",
+     "exact_first": "pass",
+     "exact_revised": "pass",
+     "specific_exact_used": false,
+     "exact_open": [
+      -1.91,
+      2.34
+     ],
+     "exact_specific": [
+      -1.51,
+      1.86
+     ]
+    }
+   }
+  }
+ },
+ "A2": {
+  "forms": {
+   "value-only rename": {
+    "sonnet": {
+     "95": {
+      "open": {
+       "pairs": 807,
+       "change": -12.3503,
+       "low": -14.6634,
+       "high": -10.2437,
+       "up": 0,
+       "down": 113,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -31.3305,
+       "low": -37.3391,
+       "high": -25.5365,
+       "up": 0,
+       "down": 79,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 807,
+       "change": -12.3503,
+       "low": -15.4895,
+       "high": -8.8806,
+       "up": 0,
+       "down": 113,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -31.3305,
+       "low": -39.485,
+       "high": -22.9614,
+       "up": 0,
+       "down": 79,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "haiku": {
+     "95": {
+      "open": {
+       "pairs": 807,
+       "change": -2.2305,
+       "low": -3.2218,
+       "high": -1.3631,
+       "up": 0,
+       "down": 26,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -21.6023,
+       "low": -27.0386,
+       "high": -16.7382,
+       "up": 4,
+       "down": 73,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 807,
+       "change": -2.2305,
+       "low": -3.6349,
+       "high": -1.0739,
+       "up": 0,
+       "down": 26,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -21.6023,
+       "low": -28.4692,
+       "high": -14.4492,
+       "up": 4,
+       "down": 73,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "sol": {
+     "95": {
+      "open": {
+       "pairs": 804,
+       "change": -18.408,
+       "low": -21.393,
+       "high": -15.796,
+       "up": 1,
+       "down": 149,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 804,
+       "change": -18.408,
+       "low": -22.5124,
+       "high": -15.0498,
+       "up": 1,
+       "down": 149,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "luna": {
+     "95": {
+      "open": {
+       "pairs": 807,
+       "change": -16.8938,
+       "low": -19.4135,
+       "high": -14.5394,
+       "up": 1,
+       "down": 173,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -43.6338,
+       "low": -49.7854,
+       "high": -37.9113,
+       "up": 1,
+       "down": 120,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 807,
+       "change": -16.8938,
+       "low": -20.4874,
+       "high": -13.5894,
+       "up": 1,
+       "down": 173,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -43.6338,
+       "low": -52.2175,
+       "high": -34.6209,
+       "up": 1,
+       "down": 120,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "deepseek": {
+     "95": {
+      "open": {
+       "pairs": 806,
+       "change": -10.2978,
+       "low": -12.4069,
+       "high": -8.3127,
+       "up": 2,
+       "down": 85,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 806,
+       "change": -10.2978,
+       "low": -13.8958,
+       "high": -7.3201,
+       "up": 2,
+       "down": 85,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "qwen": {
+     "95": {
+      "open": {
+       "pairs": 722,
+       "change": -8.7258,
+       "low": -10.9418,
+       "high": -6.5097,
+       "up": 6,
+       "down": 69,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 722,
+       "change": -8.7258,
+       "low": -11.9114,
+       "high": -5.5402,
+       "up": 6,
+       "down": 69,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     }
+    },
+    "gemma": {
+     "95": {
+      "open": {
+       "pairs": 802,
+       "change": -17.581,
+       "low": -20.4489,
+       "high": -14.9626,
+       "up": 0,
+       "down": 141,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 802,
+       "change": -17.581,
+       "low": -21.6958,
+       "high": -14.2145,
+       "up": 0,
+       "down": 141,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    }
+   },
+   "opaque code": {
+    "sonnet": {
+     "95": {
+      "open": {
+       "pairs": 807,
+       "change": -11.6068,
+       "low": -13.796,
+       "high": -9.5415,
+       "up": 0,
+       "down": 108,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -23.3906,
+       "low": -28.7554,
+       "high": -18.4549,
+       "up": 0,
+       "down": 59,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 807,
+       "change": -11.6068,
+       "low": -14.7873,
+       "high": -8.385,
+       "up": 0,
+       "down": 108,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -23.3906,
+       "low": -31.1159,
+       "high": -15.4506,
+       "up": 0,
+       "down": 59,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "haiku": {
+     "95": {
+      "open": {
+       "pairs": 807,
+       "change": -0.8674,
+       "low": -1.7348,
+       "high": -0.0413,
+       "up": 7,
+       "down": 20,
+       "sign_p": 0.0192
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -7.5823,
+       "low": -11.588,
+       "high": -3.5765,
+       "up": 10,
+       "down": 34,
+       "sign_p": 0.0004
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 807,
+       "change": -0.8674,
+       "low": -2.0653,
+       "high": 0.2891,
+       "up": 7,
+       "down": 20,
+       "sign_p": 0.0192
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -7.5823,
+       "low": -13.1617,
+       "high": -2.0029,
+       "up": 10,
+       "down": 34,
+       "sign_p": 0.0004
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     }
+    },
+    "sol": {
+     "95": {
+      "open": {
+       "pairs": 805,
+       "change": -5.9627,
+       "low": -7.8261,
+       "high": -4.3478,
+       "up": 3,
+       "down": 51,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 805,
+       "change": -5.9627,
+       "low": -8.5714,
+       "high": -3.7267,
+       "up": 3,
+       "down": 51,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     }
+    },
+    "luna": {
+     "95": {
+      "open": {
+       "pairs": 807,
+       "change": -15.0351,
+       "low": -17.4308,
+       "high": -12.8046,
+       "up": 5,
+       "down": 162,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -22.3176,
+       "low": -27.4678,
+       "high": -17.4535,
+       "up": 2,
+       "down": 65,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 807,
+       "change": -15.0351,
+       "low": -18.5048,
+       "high": -11.8959,
+       "up": 5,
+       "down": 162,
+       "sign_p": 0.0
+      },
+      "specific": {
+       "pairs": 233,
+       "change": -22.3176,
+       "low": -30.0429,
+       "high": -15.3076,
+       "up": 2,
+       "down": 65,
+       "sign_p": 0.0
+      },
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    },
+    "deepseek": {
+     "95": {
+      "open": {
+       "pairs": 806,
+       "change": -7.4442,
+       "low": -9.8015,
+       "high": -5.335,
+       "up": 12,
+       "down": 72,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 806,
+       "change": -7.4442,
+       "low": -10.794,
+       "high": -4.3424,
+       "up": 12,
+       "down": 72,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     }
+    },
+    "qwen": {
+     "95": {
+      "open": {
+       "pairs": 723,
+       "change": -5.2559,
+       "low": -7.8838,
+       "high": -2.7663,
+       "up": 24,
+       "down": 62,
+       "sign_p": 0.0001
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 723,
+       "change": -5.2559,
+       "low": -8.852,
+       "high": -1.7981,
+       "up": 24,
+       "down": 62,
+       "sign_p": 0.0001
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "hold",
+       "revised": "hold"
+      }
+     }
+    },
+    "gemma": {
+     "95": {
+      "open": {
+       "pairs": 800,
+       "change": -16.75,
+       "low": -19.5,
+       "high": -14.125,
+       "up": 0,
+       "down": 134,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     },
+     "99.5": {
+      "open": {
+       "pairs": 800,
+       "change": -16.75,
+       "low": -20.5,
+       "high": -13.375,
+       "up": 0,
+       "down": 134,
+       "sign_p": 0.0
+      },
+      "specific": null,
+      "L3": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L5": {
+       "first": "flag",
+       "revised": "flag"
+      },
+      "L10": {
+       "first": "flag",
+       "revised": "flag"
+      }
+     }
+    }
+   }
+  },
+  "tool_call_full_rename_all_answers": {
+   "sonnet": {
+    "95": {
+     "open": {
+      "pairs": 448,
+      "change": -19.0848,
+      "low": -22.7679,
+      "high": -15.5134,
+      "up": 1,
+      "down": 89,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -47.4576,
+      "low": -60.1695,
+      "high": -35.5932,
+      "up": 0,
+      "down": 31,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    },
+    "99.58": {
+     "open": {
+      "pairs": 448,
+      "change": -19.0848,
+      "low": -24.442,
+      "high": -13.8393,
+      "up": 1,
+      "down": 89,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -47.4576,
+      "low": -65.2542,
+      "high": -28.8136,
+      "up": 0,
+      "down": 31,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    }
+   },
+   "haiku": {
+    "95": {
+     "open": {
+      "pairs": 448,
+      "change": -5.8036,
+      "low": -7.9241,
+      "high": -3.9062,
+      "up": 0,
+      "down": 32,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -8.6207,
+      "low": -16.3793,
+      "high": -2.5862,
+      "up": 0,
+      "down": 6,
+      "sign_p": 0.0312
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "hold",
+      "revised": "hold"
+     }
+    },
+    "99.58": {
+     "open": {
+      "pairs": 448,
+      "change": -5.8036,
+      "low": -8.9286,
+      "high": -3.2366,
+      "up": 0,
+      "down": 32,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 58,
+      "change": -8.6207,
+      "low": -19.8276,
+      "high": -0.8621,
+      "up": 0,
+      "down": 6,
+      "sign_p": 0.0312
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "hold",
+      "revised": "hold"
+     }
+    }
+   },
+   "opus": {
+    "95": {
+     "open": {
+      "pairs": 448,
+      "change": -20.7589,
+      "low": -24.7768,
+      "high": -16.9643,
+      "up": 2,
+      "down": 95,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -49.1525,
+      "low": -62.7119,
+      "high": -37.2881,
+      "up": 0,
+      "down": 29,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    },
+    "99.58": {
+     "open": {
+      "pairs": 448,
+      "change": -20.7589,
+      "low": -26.7857,
+      "high": -14.7321,
+      "up": 2,
+      "down": 95,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -49.1525,
+      "low": -67.7966,
+      "high": -32.2034,
+      "up": 0,
+      "down": 29,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    }
+   },
+   "sol": {
+    "95": {
+     "open": {
+      "pairs": 448,
+      "change": -23.5491,
+      "low": -27.4554,
+      "high": -19.7545,
+      "up": 0,
+      "down": 118,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -57.6271,
+      "low": -69.4915,
+      "high": -45.7627,
+      "up": 0,
+      "down": 38,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    },
+    "99.58": {
+     "open": {
+      "pairs": 448,
+      "change": -23.5491,
+      "low": -29.1295,
+      "high": -17.8571,
+      "up": 0,
+      "down": 118,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -57.6271,
+      "low": -74.5763,
+      "high": -40.678,
+      "up": 0,
+      "down": 38,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    }
+   },
+   "astra": {
+    "95": {
+     "open": {
+      "pairs": 448,
+      "change": -31.0268,
+      "low": -35.2679,
+      "high": -27.0089,
+      "up": 0,
+      "down": 139,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -79.661,
+      "low": -89.8305,
+      "high": -69.4915,
+      "up": 0,
+      "down": 47,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    },
+    "99.58": {
+     "open": {
+      "pairs": 448,
+      "change": -31.0268,
+      "low": -37.5,
+      "high": -25.0,
+      "up": 0,
+      "down": 139,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -79.661,
+      "low": -93.2203,
+      "high": -64.4068,
+      "up": 0,
+      "down": 47,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    }
+   },
+   "luna": {
+    "95": {
+     "open": {
+      "pairs": 448,
+      "change": -18.192,
+      "low": -21.6518,
+      "high": -14.8438,
+      "up": 0,
+      "down": 91,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -33.8983,
+      "low": -46.6102,
+      "high": -22.0339,
+      "up": 0,
+      "down": 23,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    },
+    "99.58": {
+     "open": {
+      "pairs": 448,
+      "change": -18.192,
+      "low": -23.2143,
+      "high": -13.2812,
+      "up": 0,
+      "down": 91,
+      "sign_p": 0.0
+     },
+     "specific": {
+      "pairs": 59,
+      "change": -33.8983,
+      "low": -52.5424,
+      "high": -18.6441,
+      "up": 0,
+      "down": 23,
+      "sign_p": 0.0
+     },
+     "L3": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L5": {
+      "first": "flag",
+      "revised": "flag"
+     },
+     "L10": {
+      "first": "flag",
+      "revised": "flag"
+     }
+    }
+   }
+  }
+ },
+ "A3": {
+  "note": "approximate: normal approximation from the stored 95% intervals; the sign condition is not applied (no stored sign counts for most rows)",
+  "full rename": {
+   "C": 14,
+   "level": 0.996429,
+   "95": {
+    "panel": {
+     "decision": "flag",
+     "sets": [
+      [
+       -12.95,
+       -15.88,
+       -10.02
+      ],
+      [
+       -29.13,
+       -34.74,
+       -23.52
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "flag",
+     "sets": [
+      [
+       -11.74,
+       -15.96,
+       -7.51
+      ],
+      [
+       -19.48,
+       -28.57,
+       -10.39
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "flag",
+     "sets": [
+      [
+       -4.69,
+       -7.51,
+       -1.88
+      ],
+      [
+       -23.38,
+       -32.47,
+       -14.29
+      ]
+     ]
+    },
+    "sol": {
+     "decision": "flag",
+     "sets": [
+      [
+       -17.37,
+       -22.54,
+       -12.21
+      ],
+      [
+       -25.97,
+       -35.71,
+       -16.23
+      ]
+     ]
+    },
+    "luna": {
+     "decision": "flag",
+     "sets": [
+      [
+       -17.37,
+       -22.54,
+       -12.21
+      ],
+      [
+       -57.14,
+       -67.53,
+       -46.75
+      ]
+     ]
+    },
+    "deepseek": {
+     "decision": "flag",
+     "sets": [
+      [
+       -11.74,
+       -16.2,
+       -7.28
+      ],
+      [
+       -20.78,
+       -30.52,
+       -11.04
+      ]
+     ]
+    },
+    "qwen": {
+     "decision": "flag",
+     "sets": [
+      [
+       -7.49,
+       -12.03,
+       -2.94
+      ],
+      [
+       -23.33,
+       -36.67,
+       -10.0
+      ]
+     ]
+    },
+    "gemma": {
+     "decision": "flag",
+     "sets": [
+      [
+       -17.92,
+       -23.11,
+       -12.74
+      ],
+      [
+       -33.77,
+       -44.81,
+       -22.73
+      ]
+     ]
+    },
+    "tally_models": {
+     "flag": 7
+    }
+   },
+   "stated": {
+    "panel": {
+     "decision": "flag",
+     "sets": [
+      [
+       -12.95,
+       -17.31,
+       -8.6
+      ],
+      [
+       -29.13,
+       -37.47,
+       -20.78
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "flag",
+     "sets": [
+      [
+       -11.74,
+       -18.02,
+       -5.46
+      ],
+      [
+       -19.48,
+       -33.0,
+       -5.97
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "flag",
+     "sets": [
+      [
+       -4.69,
+       -8.88,
+       -0.51
+      ],
+      [
+       -23.38,
+       -36.89,
+       -9.86
+      ]
+     ]
+    },
+    "sol": {
+     "decision": "flag",
+     "sets": [
+      [
+       -17.37,
+       -25.05,
+       -9.69
+      ],
+      [
+       -25.97,
+       -40.45,
+       -11.49
+      ]
+     ]
+    },
+    "luna": {
+     "decision": "flag",
+     "sets": [
+      [
+       -17.37,
+       -25.05,
+       -9.69
+      ],
+      [
+       -57.14,
+       -72.59,
+       -41.7
+      ]
+     ]
+    },
+    "deepseek": {
+     "decision": "flag",
+     "sets": [
+      [
+       -11.74,
+       -18.37,
+       -5.11
+      ],
+      [
+       -20.78,
+       -35.26,
+       -6.3
+      ]
+     ]
+    },
+    "qwen": {
+     "decision": "flag",
+     "sets": [
+      [
+       -7.49,
+       -14.24,
+       -0.73
+      ],
+      [
+       -23.33,
+       -43.15,
+       -3.51
+      ]
+     ]
+    },
+    "gemma": {
+     "decision": "flag",
+     "sets": [
+      [
+       -17.92,
+       -25.64,
+       -10.21
+      ],
+      [
+       -33.77,
+       -50.18,
+       -17.36
+      ]
+     ]
+    },
+    "tally_models": {
+     "flag": 7
+    }
+   }
+  },
+  "neutral value": {
+   "C": 14,
+   "level": 0.996429,
+   "95": {
+    "panel": {
+     "decision": "flag",
+     "sets": [
+      [
+       -16.12,
+       -19.71,
+       -12.53
+      ],
+      [
+       -41.5,
+       -47.65,
+       -35.34
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "flag",
+     "sets": [
+      [
+       -14.55,
+       -19.25,
+       -9.86
+      ],
+      [
+       -46.75,
+       -57.79,
+       -35.71
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "flag",
+     "sets": [
+      [
+       -2.82,
+       -4.93,
+       -0.7
+      ],
+      [
+       -23.38,
+       -33.12,
+       -13.64
+      ]
+     ]
+    },
+    "sol": {
+     "decision": "flag",
+     "sets": [
+      [
+       -27.7,
+       -33.57,
+       -21.83
+      ],
+      [
+       -33.77,
+       -44.81,
+       -22.73
+      ]
+     ]
+    },
+    "luna": {
+     "decision": "flag",
+     "sets": [
+      [
+       -18.31,
+       -23.71,
+       -12.91
+      ],
+      [
+       -58.44,
+       -69.48,
+       -47.4
+      ]
+     ]
+    },
+    "deepseek": {
+     "decision": "flag",
+     "sets": [
+      [
+       -15.49,
+       -20.42,
+       -10.56
+      ],
+      [
+       -44.16,
+       -55.84,
+       -32.47
+      ]
+     ]
+    },
+    "qwen": {
+     "decision": "flag",
+     "sets": [
+      [
+       -8.38,
+       -12.3,
+       -4.45
+      ],
+      [
+       -22.22,
+       -34.92,
+       -9.52
+      ]
+     ]
+    },
+    "gemma": {
+     "decision": "flag",
+     "sets": [
+      [
+       -21.43,
+       -26.9,
+       -15.95
+      ],
+      [
+       -58.44,
+       -68.83,
+       -48.05
+      ]
+     ]
+    },
+    "tally_models": {
+     "flag": 7
+    }
+   },
+   "stated": {
+    "panel": {
+     "decision": "flag",
+     "sets": [
+      [
+       -16.12,
+       -21.45,
+       -10.78
+      ],
+      [
+       -41.5,
+       -50.64,
+       -32.35
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "flag",
+     "sets": [
+      [
+       -14.55,
+       -21.53,
+       -7.57
+      ],
+      [
+       -46.75,
+       -63.16,
+       -30.34
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "flag",
+     "sets": [
+      [
+       -2.82,
+       -5.96,
+       0.32
+      ],
+      [
+       -23.38,
+       -37.86,
+       -8.9
+      ]
+     ]
+    },
+    "sol": {
+     "decision": "flag",
+     "sets": [
+      [
+       -27.7,
+       -36.42,
+       -18.98
+      ],
+      [
+       -33.77,
+       -50.18,
+       -17.36
+      ]
+     ]
+    },
+    "luna": {
+     "decision": "flag",
+     "sets": [
+      [
+       -18.31,
+       -26.34,
+       -10.28
+      ],
+      [
+       -58.44,
+       -74.85,
+       -42.03
+      ]
+     ]
+    },
+    "deepseek": {
+     "decision": "flag",
+     "sets": [
+      [
+       -15.49,
+       -22.82,
+       -8.16
+      ],
+      [
+       -44.16,
+       -61.53,
+       -26.78
+      ]
+     ]
+    },
+    "qwen": {
+     "decision": "flag",
+     "sets": [
+      [
+       -8.38,
+       -14.21,
+       -2.54
+      ],
+      [
+       -22.22,
+       -41.1,
+       -3.34
+      ]
+     ]
+    },
+    "gemma": {
+     "decision": "flag",
+     "sets": [
+      [
+       -21.43,
+       -29.57,
+       -13.29
+      ],
+      [
+       -58.44,
+       -73.89,
+       -43.0
+      ]
+     ]
+    },
+    "tally_models": {
+     "flag": 7
+    }
+   }
+  },
+  "description edit": {
+   "C": 14,
+   "level": 0.996429,
+   "95": {
+    "panel": {
+     "decision": "pass",
+     "sets": [
+      [
+       0.88,
+       -0.32,
+       2.07
+      ],
+      [
+       0.74,
+       -2.61,
+       4.1
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "more data",
+     "sets": [
+      [
+       1.88,
+       -0.94,
+       4.69
+      ],
+      [
+       2.6,
+       -5.19,
+       10.39
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "more data",
+     "sets": [
+      [
+       -0.94,
+       -3.29,
+       1.41
+      ],
+      [
+       -5.19,
+       -11.69,
+       1.3
+      ]
+     ]
+    },
+    "sol": {
+     "decision": "pass",
+     "sets": [
+      [
+       -0.94,
+       -3.76,
+       1.88
+      ],
+      [
+       1.3,
+       -0.65,
+       3.25
+      ]
+     ]
+    },
+    "luna": {
+     "decision": "more data",
+     "sets": [
+      [
+       2.82,
+       -0.23,
+       5.87
+      ],
+      [
+       0.0,
+       -6.49,
+       6.49
+      ]
+     ]
+    },
+    "deepseek": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.94,
+       -3.3,
+       5.19
+      ],
+      [
+       5.19,
+       -5.19,
+       15.58
+      ]
+     ]
+    },
+    "qwen": {
+     "decision": "more data",
+     "sets": [
+      [
+       2.13,
+       -2.13,
+       6.38
+      ],
+      [
+       0.0,
+       -12.1,
+       12.1
+      ]
+     ]
+    },
+    "gemma": {
+     "decision": "pass",
+     "sets": [
+      [
+       0.47,
+       -1.9,
+       2.84
+      ],
+      [
+       1.32,
+       -0.66,
+       3.29
+      ]
+     ]
+    },
+    "tally_models": {
+     "more data": 5,
+     "pass": 2
+    }
+   },
+   "stated": {
+    "panel": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.88,
+       -0.9,
+       2.65
+      ],
+      [
+       0.74,
+       -4.25,
+       5.73
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "more data",
+     "sets": [
+      [
+       1.88,
+       -2.31,
+       6.07
+      ],
+      [
+       2.6,
+       -8.99,
+       14.18
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "more data",
+     "sets": [
+      [
+       -0.94,
+       -4.43,
+       2.55
+      ],
+      [
+       -5.19,
+       -14.85,
+       4.46
+      ]
+     ]
+    },
+    "sol": {
+     "decision": "more data",
+     "sets": [
+      [
+       -0.94,
+       -5.13,
+       3.25
+      ],
+      [
+       1.3,
+       -1.6,
+       4.19
+      ]
+     ]
+    },
+    "luna": {
+     "decision": "more data",
+     "sets": [
+      [
+       2.82,
+       -1.72,
+       7.35
+      ],
+      [
+       0.0,
+       -9.65,
+       9.65
+      ]
+     ]
+    },
+    "deepseek": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.94,
+       -5.37,
+       7.25
+      ],
+      [
+       5.19,
+       -10.25,
+       20.64
+      ]
+     ]
+    },
+    "qwen": {
+     "decision": "more data",
+     "sets": [
+      [
+       2.13,
+       -4.2,
+       8.45
+      ],
+      [
+       0.0,
+       -17.98,
+       17.98
+      ]
+     ]
+    },
+    "gemma": {
+     "decision": "pass",
+     "sets": [
+      [
+       0.47,
+       -3.05,
+       4.0
+      ],
+      [
+       1.32,
+       -1.62,
+       4.25
+      ]
+     ]
+    },
+    "tally_models": {
+     "more data": 6,
+     "pass": 1
+    }
+   }
+  },
+  "unrelated rename": {
+   "C": 2,
+   "level": 0.975,
+   "95": {
+    "panel": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.23,
+       -1.64,
+       2.11
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.94,
+       -1.88,
+       3.76
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "more data",
+     "sets": [
+      [
+       -0.47,
+       -3.05,
+       2.11
+      ]
+     ]
+    },
+    "tally_models": {
+     "more data": 2
+    }
+   },
+   "stated": {
+    "panel": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.23,
+       -1.91,
+       2.38
+      ]
+     ]
+    },
+    "sonnet": {
+     "decision": "more data",
+     "sets": [
+      [
+       0.94,
+       -2.28,
+       4.16
+      ]
+     ]
+    },
+    "haiku": {
+     "decision": "more data",
+     "sets": [
+      [
+       -0.47,
+       -3.42,
+       2.48
+      ]
+     ]
+    },
+    "tally_models": {
+     "more data": 2
+    }
+   }
+  }
+ },
+ "C": {
+  "n": 59,
+  "level": 0.9875,
+  "nominal_error_one_tail": 0.00625,
+  "exact_interval_no_change": [
+   -9.314,
+   9.314
+  ],
+  "exact_within_limits_counts": [],
+  "true_change_above_L": [
+   {
+    "p_up": 0.051,
+    "p_down": 0.0,
+    "true_change": 5.1,
+    "no_request_changes": 0.04557,
+    "within_limits_percentile": 0.04557,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.18178,
+    "meets_flag_revised_percentile": 0.00992,
+    "meets_flag_exact": 1e-05
+   },
+   {
+    "p_up": 0.06,
+    "p_down": 0.0,
+    "true_change": 6.0,
+    "no_request_changes": 0.02597,
+    "within_limits_percentile": 0.02597,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.27932,
+    "meets_flag_revised_percentile": 0.02414,
+    "meets_flag_exact": 4e-05
+   },
+   {
+    "p_up": 0.08,
+    "p_down": 0.0,
+    "true_change": 8.0,
+    "no_request_changes": 0.0073,
+    "within_limits_percentile": 0.0073,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.51463,
+    "meets_flag_revised_percentile": 0.09695,
+    "meets_flag_exact": 0.00066
+   },
+   {
+    "p_up": 0.07,
+    "p_down": 0.01,
+    "true_change": 6.0,
+    "no_request_changes": 0.0073,
+    "within_limits_percentile": 0.0073,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.23109,
+    "meets_flag_revised_percentile": 0.03279,
+    "meets_flag_exact": 0.00011
+   },
+   {
+    "p_up": 0.08,
+    "p_down": 0.02,
+    "true_change": 6.0,
+    "no_request_changes": 0.002,
+    "within_limits_percentile": 0.002,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.17953,
+    "meets_flag_revised_percentile": 0.03891,
+    "meets_flag_exact": 0.00025
+   },
+   {
+    "p_up": 0.1,
+    "p_down": 0.04,
+    "true_change": 6.0,
+    "no_request_changes": 0.00014,
+    "within_limits_percentile": 0.00014,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.10921,
+    "meets_flag_revised_percentile": 0.04238,
+    "meets_flag_exact": 0.00067
+   }
+  ],
+  "true_change_zero": [
+   {
+    "p_up": 0.01,
+    "p_down": 0.01,
+    "true_change": 0.0,
+    "no_request_changes": 0.30363,
+    "within_limits_percentile": 0.30363,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.00037,
+    "meets_flag_revised_percentile": 0.0,
+    "meets_flag_exact": 0.0
+   },
+   {
+    "p_up": 0.02,
+    "p_down": 0.02,
+    "true_change": 0.0,
+    "no_request_changes": 0.08995,
+    "within_limits_percentile": 0.08995,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.00432,
+    "meets_flag_revised_percentile": 2e-05,
+    "meets_flag_exact": 0.0
+   },
+   {
+    "p_up": 0.04,
+    "p_down": 0.04,
+    "true_change": 0.0,
+    "no_request_changes": 0.0073,
+    "within_limits_percentile": 0.0073,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.0181,
+    "meets_flag_revised_percentile": 0.0006,
+    "meets_flag_exact": 0.0
+   },
+   {
+    "p_up": 0.06,
+    "p_down": 0.06,
+    "true_change": 0.0,
+    "no_request_changes": 0.00053,
+    "within_limits_percentile": 0.00053,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.01916,
+    "meets_flag_revised_percentile": 0.00242,
+    "meets_flag_exact": 0.0
+   },
+   {
+    "p_up": 0.1,
+    "p_down": 0.1,
+    "true_change": 0.0,
+    "no_request_changes": 0.0,
+    "within_limits_percentile": 0.0,
+    "within_limits_exact": 0.0,
+    "meets_flag_first_percentile": 0.01266,
+    "meets_flag_revised_percentile": 0.00503,
+    "meets_flag_exact": 6e-05
+   }
+  ],
+  "note": "within limits with a true change above L is a wrong pass of this set; meets flag rule with a true change of 0 is a wrong flag of this set. The percentile bootstrap for each count uses 2,000 binomial draws (the same distribution as resampling requests)."
+ },
+ "D": [
+  {
+   "case": "haiku: era1 read 1 against erc2 (all_answers)",
+   "original index rule": {
+    "forward": "pass",
+    "reverse": "hold",
+    "forward_specific": [
+     0.69,
+     -3.276,
+     5.0
+    ],
+    "reverse_specific": [
+     -0.69,
+     -5.172,
+     3.103
+    ]
+   },
+   "symmetric index rule": {
+    "forward": "hold",
+    "reverse": "hold",
+    "forward_specific": [
+     0.69,
+     -3.276,
+     5.172
+    ],
+    "reverse_specific": [
+     -0.69,
+     -5.172,
+     3.276
+    ]
+   }
+  },
+  {
+   "case": "haiku: erm against erc (all_answers)",
+   "original index rule": {
+    "forward": "hold",
+    "reverse": "pass",
+    "forward_specific": [
+     -0.169,
+     -5.085,
+     4.576
+    ],
+    "reverse_specific": [
+     0.169,
+     -4.576,
+     4.915
+    ]
+   },
+   "symmetric index rule": {
+    "forward": "hold",
+    "reverse": "hold",
+    "forward_specific": [
+     -0.169,
+     -5.085,
+     4.576
+    ],
+    "reverse_specific": [
+     0.169,
+     -4.576,
+     5.085
+    ]
+   }
+  }
+ ]
+}

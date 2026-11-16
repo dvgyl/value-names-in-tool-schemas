@@ -1,0 +1,186 @@
+{
+ "post_hoc": true,
+ "no_model_call": true,
+ "level": 0.9875,
+ "L": 5,
+ "draws": 20000,
+ "registered_draws": 2000,
+ "seeds": [
+  20261112,
+  20261113,
+  20261114,
+  20261115,
+  20261116,
+  20261117,
+  20261118,
+  20261119,
+  20261120,
+  20261121,
+  20261122
+ ],
+ "models": {
+  "sonnet": {
+   "open": {
+    "pairs": 448,
+    "registered": {
+     "change": 3.5714285714285716,
+     "interval": [
+      0.8928571428571429,
+      6.026785714285714
+     ],
+     "decision": "unresolved"
+    },
+    "draws_20000": {
+     "change": 3.5714285714285716,
+     "interval": [
+      1.1160714285714286,
+      6.25
+     ],
+     "decision": "unresolved"
+    },
+    "seeds_20000": {
+     "low_range": [
+      1.1160714285714286,
+      1.1160714285714286
+     ],
+     "high_range": [
+      6.25,
+      6.25
+     ],
+     "decisions": [
+      "unresolved"
+     ]
+    },
+    "approx_requests_to_resolve": {
+     "from_registered": 1323.4375000000005,
+     "from_20000": 1575.0000000000005
+    }
+   },
+   "specific": {
+    "pairs": 59,
+    "registered": {
+     "change": 1.694915254237288,
+     "interval": [
+      0.0,
+      6.779661016949152
+     ],
+     "decision": "unresolved"
+    },
+    "draws_20000": {
+     "change": 1.694915254237288,
+     "interval": [
+      0.0,
+      6.779661016949152
+     ],
+     "decision": "unresolved"
+    },
+    "seeds_20000": {
+     "low_range": [
+      0.0,
+      0.0
+     ],
+     "high_range": [
+      6.779661016949152,
+      6.779661016949152
+     ],
+     "decisions": [
+      "unresolved"
+     ]
+    },
+    "approx_requests_to_resolve": {
+     "from_registered": 139.64497041420117,
+     "from_20000": 139.64497041420117
+    }
+   },
+   "release": {
+    "registered": "hold",
+    "draws_20000": "hold",
+    "seeds_20000": [
+     "hold"
+    ]
+   }
+  },
+  "sol": {
+   "open": {
+    "pairs": 448,
+    "registered": {
+     "change": 5.357142857142857,
+     "interval": [
+      2.6785714285714284,
+      8.258928571428571
+     ],
+     "decision": "flag-worthy"
+    },
+    "draws_20000": {
+     "change": 5.357142857142857,
+     "interval": [
+      2.6785714285714284,
+      8.258928571428571
+     ],
+     "decision": "flag-worthy"
+    },
+    "seeds_20000": {
+     "low_range": [
+      2.455357142857143,
+      2.6785714285714284
+     ],
+     "high_range": [
+      8.258928571428571,
+      8.482142857142858
+     ],
+     "decisions": [
+      "flag-worthy"
+     ]
+    },
+    "approx_requests_to_resolve": {
+     "from_registered": null,
+     "from_20000": null
+    }
+   },
+   "specific": {
+    "pairs": 59,
+    "registered": {
+     "change": 8.474576271186441,
+     "interval": [
+      -3.389830508474576,
+      20.338983050847457
+     ],
+     "decision": "unresolved"
+    },
+    "draws_20000": {
+     "change": 8.474576271186441,
+     "interval": [
+      -3.389830508474576,
+      20.338983050847457
+     ],
+     "decision": "unresolved"
+    },
+    "seeds_20000": {
+     "low_range": [
+      -3.389830508474576,
+      -3.389830508474576
+     ],
+     "high_range": [
+      20.338983050847457,
+      22.033898305084747
+     ],
+     "decisions": [
+      "unresolved"
+     ]
+    },
+    "approx_requests_to_resolve": {
+     "from_registered": null,
+     "from_20000": null
+    }
+   },
+   "release": {
+    "registered": "flag",
+    "draws_20000": "flag",
+    "seeds_20000": [
+     "flag"
+    ]
+   }
+  }
+ },
+ "missing": []
+}

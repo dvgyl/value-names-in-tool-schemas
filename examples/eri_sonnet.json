@@ -1,0 +1,841 @@
+{
+ "run": "eri_sonnet",
+ "experiment": "I",
+ "model": "sonnet",
+ "cells": [
+  "orig_f0",
+  "orig_f1",
+  "ins_f0",
+  "ins_f1"
+ ],
+ "pairs": [
+  {
+   "custom_id": "eri_sonnet-MUL0030-orig_f0-1",
+   "request": {
+    "custom_id": "eri_sonnet-MUL0030-orig_f0-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I am looking to try a local restaurant that serves modern European cuisine and has a moderate price range\nAssistant: There is restaurant almentum that serves modern european food in the south part of town.\nTraveller: Book a table for 1 person at 17:30 on Saturday. Give me the reference number.\nAssistant: Booking was successful. The table will be reserved for 15 minutes.\nReference number is : 5U78RXDV.\nTraveller: I am also looking for a place to stay in the north\nAssistant: Okay I have many choices for you. Could we narrow it down by price and star rating? Will you be looking for parking and wifi amenities/\nTraveller: I don't care about wifi but I definitely need free parking.\nAssistant: Acorn guest house has parking. Would you like me to book that?"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "between_tools"
+     }
+    },
+    "cell": "orig_f0"
+   },
+   "answer": {
+    "custom_id": "eri_sonnet-MUL0030-orig_f0-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1607,
+    "output_tokens": 50,
+    "text": "{\"name\":null,\"area\":[\"north\"],\"pricerange\":null,\"stars\":null,\"type\":null,\"parking\":[\"yes\"],\"internet\":\"any\"}"
+   }
+  },
+  {
+   "custom_id": "eri_sonnet-MUL0030-orig_f1-1",
+   "request": {
+    "custom_id": "eri_sonnet-MUL0030-orig_f1-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "property_kind": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "large_property"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "property_kind",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I am looking to try a local restaurant that serves modern European cuisine and has a moderate price range\nAssistant: There is restaurant almentum that serves modern european food in the south part of town.\nTraveller: Book a table for 1 person at 17:30 on Saturday. Give me the reference number.\nAssistant: Booking was successful. The table will be reserved for 15 minutes.\nReference number is : 5U78RXDV.\nTraveller: I am also looking for a place to stay in the north\nAssistant: Okay I have many choices for you. Could we narrow it down by price and star rating? Will you be looking for parking and wifi amenities/\nTraveller: I don't care about wifi but I definitely need free parking.\nAssistant: Acorn guest house has parking. Would you like me to book that?"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, property_kind, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. property_kind: guesthouse, large_property. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "between_tools"
+     }
+    },
+    "cell": "orig_f1"
+   },
+   "answer": {
+    "custom_id": "eri_sonnet-MUL0030-orig_f1-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1619,
+    "output_tokens": 53,
+    "text": "{\"name\":null,\"area\":[\"north\"],\"pricerange\":null,\"stars\":null,\"property_kind\":null,\"parking\":[\"yes\"],\"internet\":\"any\"}"
+   }
+  },
+  {
+   "custom_id": "eri_sonnet-MUL0030-ins_f0-1",
+   "request": {
+    "custom_id": "eri_sonnet-MUL0030-ins_f0-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I am looking to try a local restaurant that serves modern European cuisine and has a moderate price range\nAssistant: There is restaurant almentum that serves modern european food in the south part of town.\nTraveller: Book a table for 1 person at 17:30 on Saturday. Give me the reference number.\nAssistant: Booking was successful. The table will be reserved for 15 minutes.\nReference number is : 5U78RXDV.\nTraveller: I am also looking for a hotel in the north\nAssistant: Okay I have many choices for you. Could we narrow it down by price and star rating? Will you be looking for parking and wifi amenities/\nTraveller: I don't care about wifi but I definitely need free parking.\nAssistant: Acorn guest house has parking. Would you like me to book that?"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "between_tools"
+     }
+    },
+    "cell": "ins_f0"
+   },
+   "answer": {
+    "custom_id": "eri_sonnet-MUL0030-ins_f0-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1606,
+    "output_tokens": 50,
+    "text": "{\"name\":null,\"area\":[\"north\"],\"pricerange\":null,\"stars\":null,\"type\":null,\"parking\":[\"yes\"],\"internet\":\"any\"}"
+   }
+  },
+  {
+   "custom_id": "eri_sonnet-MUL0030-ins_f1-1",
+   "request": {
+    "custom_id": "eri_sonnet-MUL0030-ins_f1-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "property_kind": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "large_property"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "property_kind",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I am looking to try a local restaurant that serves modern European cuisine and has a moderate price range\nAssistant: There is restaurant almentum that serves modern european food in the south part of town.\nTraveller: Book a table for 1 person at 17:30 on Saturday. Give me the reference number.\nAssistant: Booking was successful. The table will be reserved for 15 minutes.\nReference number is : 5U78RXDV.\nTraveller: I am also looking for a hotel in the north\nAssistant: Okay I have many choices for you. Could we narrow it down by price and star rating? Will you be looking for parking and wifi amenities/\nTraveller: I don't care about wifi but I definitely need free parking.\nAssistant: Acorn guest house has parking. Would you like me to book that?"
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Write down the traveller's requirements for the hotel as one JSON object. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, property_kind, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. property_kind: guesthouse, large_property. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "between_tools"
+     }
+    },
+    "cell": "ins_f1"
+   },
+   "answer": {
+    "custom_id": "eri_sonnet-MUL0030-ins_f1-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1618,
+    "output_tokens": 53,
+    "text": "{\"name\":null,\"area\":[\"north\"],\"pricerange\":null,\"stars\":null,\"property_kind\":null,\"parking\":[\"yes\"],\"internet\":\"any\"}"
+   }
+  }
+ ]
+}

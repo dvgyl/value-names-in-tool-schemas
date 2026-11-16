@@ -1,0 +1,4848 @@
+{
+ "experiments": [
+  "ez1_claude",
+  "ez1_luna",
+  "ez2_claude",
+  "ez2_luna",
+  "ez3_haiku",
+  "ez3_sonnet",
+  "ez3_luna",
+  "eb2_sol",
+  "eb2_open",
+  "eb3_sol",
+  "eb3_open",
+  "eb4_sol",
+  "eb4_open",
+  "e13",
+  "ex2n_di",
+  "ex2n_sol",
+  "ex2n_luna"
+ ],
+ "aliases": {
+  "p_main": "orig_f0",
+  "p_main_renamed": "orig_f1",
+  "f0": "orig_f0",
+  "f1": "orig_f1"
+ },
+ "missing": {
+  "deepseek|edit_f1": {
+   "max_tokens": 1
+  },
+  "deepseek|orig_f1": {
+   "max_tokens": 4
+  },
+  "deepseek|p_define": {
+   "max_tokens": 2
+  },
+  "deepseek|p_null_nat": {
+   "max_tokens": 4
+  },
+  "deepseek|p_split": {
+   "max_tokens": 2
+  },
+  "deepseek|p_unclear_nat": {
+   "max_tokens": 1
+  },
+  "deepseek|pre_f1": {
+   "max_tokens": 1
+  },
+  "deepseek|pre_unclear": {
+   "max_tokens": 1
+  },
+  "gemma|edit_f0": {
+   "max_tokens": 7
+  },
+  "gemma|edit_f1": {
+   "max_tokens": 3
+  },
+  "gemma|orig_f0": {
+   "max_tokens": 6
+  },
+  "gemma|orig_f1": {
+   "max_tokens": 2
+  },
+  "gemma|p_define": {
+   "max_tokens": 10
+  },
+  "gemma|p_null_nat": {
+   "max_tokens": 14
+  },
+  "gemma|p_split": {
+   "max_tokens": 5
+  },
+  "gemma|p_unclear_nat": {
+   "max_tokens": 6
+  },
+  "gemma|pre_f0": {
+   "max_tokens": 3
+  },
+  "gemma|pre_f1": {
+   "max_tokens": 3
+  },
+  "gemma|pre_unclear": {
+   "max_tokens": 3
+  },
+  "luna|f4": {
+   "unknown cell": 8622
+  },
+  "luna|p_null_nat": {
+   "errored": 2
+  },
+  "qwen|edit_f0": {
+   "max_tokens": 64
+  },
+  "qwen|edit_f1": {
+   "max_tokens": 68
+  },
+  "qwen|orig_f0": {
+   "max_tokens": 70
+  },
+  "qwen|orig_f1": {
+   "max_tokens": 74
+  },
+  "qwen|p_define": {
+   "max_tokens": 125
+  },
+  "qwen|p_null_nat": {
+   "max_tokens": 115
+  },
+  "qwen|p_split": {
+   "max_tokens": 138
+  },
+  "qwen|p_unclear_nat": {
+   "max_tokens": 129
+  },
+  "qwen|pre_f0": {
+   "max_tokens": 29
+  },
+  "qwen|pre_f1": {
+   "max_tokens": 40
+  },
+  "qwen|pre_unclear": {
+   "max_tokens": 27
+  },
+  "sol|orig_f0": {
+   "errored": 3
+  },
+  "sol|orig_f1": {
+   "errored": 1
+  },
+  "sol|p_define": {
+   "errored": 1
+  }
+ },
+ "z1_b2": {
+  "haiku": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 2982,
+     "share": 0.0506
+    },
+    "orig_f1": {
+     "reads": 2982,
+     "share": 0.0127
+    },
+    "edit_f0": {
+     "reads": 2982,
+     "share": 0.0241
+    },
+    "edit_f1": {
+     "reads": 2982,
+     "share": 0.0044
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 994,
+    "mean": 0.0379,
+    "ci95": [
+     0.0268,
+     0.0503
+    ],
+    "sign_test": {
+     "positive": 48,
+     "negative": 2,
+     "p_exact": 2.2666313270747196e-12
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 994,
+    "mean": 0.0198,
+    "ci95": [
+     0.0124,
+     0.0285
+    ],
+    "sign_test": {
+     "positive": 26,
+     "negative": 0,
+     "p_exact": 2.9802322387695312e-08
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 994,
+    "mean": 0.0265,
+    "ci95": [
+     0.0151,
+     0.0376
+    ],
+    "sign_test": {
+     "positive": 40,
+     "negative": 12,
+     "p_exact": 0.0001275387838557407
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 994,
+    "mean": 0.0084,
+    "ci95": [
+     0.0034,
+     0.0141
+    ],
+    "sign_test": {
+     "positive": 11,
+     "negative": 0,
+     "p_exact": 0.0009765625
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 994,
+    "mean": 0.0181,
+    "ci95": [
+     0.008,
+     0.0285
+    ],
+    "sign_test": {
+     "positive": 35,
+     "negative": 15,
+     "p_exact": 0.006600447966810918
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 0.6992,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 1500,
+     "share": 0.0493
+    },
+    "orig_f1": {
+     "reads": 1500,
+     "share": 0.0167
+    },
+    "edit_f0": {
+     "reads": 1500,
+     "share": 0.0227
+    },
+    "edit_f1": {
+     "reads": 1500,
+     "share": 0.006
+    },
+    "acc_orig_f0": {
+     "reads": 1500,
+     "share": 0.0607
+    },
+    "acc_orig_f1": {
+     "reads": 1500,
+     "share": 0.02
+    },
+    "acc_edit_f0": {
+     "reads": 1500,
+     "share": 0.0213
+    },
+    "acc_edit_f1": {
+     "reads": 1500,
+     "share": 0.006
+    }
+   },
+   "frame_effect_under_f0_original_text": {
+    "dialogues": 500,
+    "mean": -0.0113,
+    "ci95": [
+     -0.024,
+     -0.0007
+    ],
+    "sign_test": {
+     "positive": 8,
+     "negative": 16,
+     "p_exact": 0.15158963203430176
+    }
+   },
+   "frame_effect_under_f0_edited_text": {
+    "dialogues": 500,
+    "mean": 0.0013,
+    "ci95": [
+     -0.0047,
+     0.0073
+    ],
+    "sign_test": {
+     "positive": 8,
+     "negative": 5,
+     "p_exact": 0.5810546875
+    }
+   },
+   "did_frame_x_rename_original_text": {
+    "dialogues": 500,
+    "mean": -0.008,
+    "ci95": [
+     -0.0213,
+     0.0047
+    ],
+    "sign_test": {
+     "positive": 12,
+     "negative": 18,
+     "p_exact": 0.361594608053565
+    }
+   }
+  },
+  "sonnet": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 2982,
+     "share": 0.1844
+    },
+    "orig_f1": {
+     "reads": 2982,
+     "share": 0.0516
+    },
+    "edit_f0": {
+     "reads": 2982,
+     "share": 0.0131
+    },
+    "edit_f1": {
+     "reads": 2982,
+     "share": 0.0091
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 994,
+    "mean": 0.1328,
+    "ci95": [
+     0.112,
+     0.1553
+    ],
+    "sign_test": {
+     "positive": 150,
+     "negative": 1,
+     "p_exact": 1.064986832886861e-43
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 994,
+    "mean": 0.004,
+    "ci95": [
+     -0.001,
+     0.0094
+    ],
+    "sign_test": {
+     "positive": 6,
+     "negative": 2,
+     "p_exact": 0.2890625
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 994,
+    "mean": 0.1714,
+    "ci95": [
+     0.1482,
+     0.1968
+    ],
+    "sign_test": {
+     "positive": 185,
+     "negative": 1,
+     "p_exact": 3.813224798486638e-54
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 994,
+    "mean": 0.0426,
+    "ci95": [
+     0.0305,
+     0.0557
+    ],
+    "sign_test": {
+     "positive": 49,
+     "negative": 1,
+     "p_exact": 9.059419880941277e-14
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 994,
+    "mean": 0.1288,
+    "ci95": [
+     0.1076,
+     0.1512
+    ],
+    "sign_test": {
+     "positive": 148,
+     "negative": 4,
+     "p_exact": 7.692946050018267e-39
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 1.2899,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 1500,
+     "share": 0.1847
+    },
+    "orig_f1": {
+     "reads": 1500,
+     "share": 0.056
+    },
+    "edit_f0": {
+     "reads": 1500,
+     "share": 0.0153
+    },
+    "edit_f1": {
+     "reads": 1500,
+     "share": 0.008
+    },
+    "acc_orig_f0": {
+     "reads": 1500,
+     "share": 0.22
+    },
+    "acc_orig_f1": {
+     "reads": 1500,
+     "share": 0.0533
+    },
+    "acc_edit_f0": {
+     "reads": 1500,
+     "share": 0.014
+    },
+    "acc_edit_f1": {
+     "reads": 1500,
+     "share": 0.0087
+    }
+   },
+   "frame_effect_under_f0_original_text": {
+    "dialogues": 500,
+    "mean": -0.0353,
+    "ci95": [
+     -0.0547,
+     -0.0167
+    ],
+    "sign_test": {
+     "positive": 9,
+     "negative": 31,
+     "p_exact": 0.0006795482549932785
+    }
+   },
+   "frame_effect_under_f0_edited_text": {
+    "dialogues": 500,
+    "mean": 0.0013,
+    "ci95": [
+     0.0,
+     0.004
+    ],
+    "sign_test": {
+     "positive": 1,
+     "negative": 0,
+     "p_exact": 1.0
+    }
+   },
+   "did_frame_x_rename_original_text": {
+    "dialogues": 500,
+    "mean": -0.038,
+    "ci95": [
+     -0.0593,
+     -0.0167
+    ],
+    "sign_test": {
+     "positive": 14,
+     "negative": 37,
+     "p_exact": 0.0017691971837869858
+    }
+   }
+  },
+  "luna": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 2982,
+     "share": 0.228
+    },
+    "orig_f1": {
+     "reads": 2982,
+     "share": 0.0178
+    },
+    "edit_f0": {
+     "reads": 2982,
+     "share": 0.0369
+    },
+    "edit_f1": {
+     "reads": 2982,
+     "share": 0.008
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 994,
+    "mean": 0.2103,
+    "ci95": [
+     0.1858,
+     0.2351
+    ],
+    "sign_test": {
+     "positive": 261,
+     "negative": 0,
+     "p_exact": 5.397605346934028e-79
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 994,
+    "mean": 0.0288,
+    "ci95": [
+     0.0201,
+     0.0382
+    ],
+    "sign_test": {
+     "positive": 51,
+     "negative": 1,
+     "p_exact": 2.353672812205332e-14
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 994,
+    "mean": 0.1911,
+    "ci95": [
+     0.1663,
+     0.2163
+    ],
+    "sign_test": {
+     "positive": 242,
+     "negative": 16,
+     "p_exact": 5.294891442925802e-53
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 994,
+    "mean": 0.0097,
+    "ci95": [
+     0.0037,
+     0.0164
+    ],
+    "sign_test": {
+     "positive": 17,
+     "negative": 4,
+     "p_exact": 0.007197380065917969
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 994,
+    "mean": 0.1814,
+    "ci95": [
+     0.1576,
+     0.2062
+    ],
+    "sign_test": {
+     "positive": 236,
+     "negative": 17,
+     "p_exact": 1.721409373771095e-50
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 0.9091,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 1500,
+     "share": 0.2267
+    },
+    "orig_f1": {
+     "reads": 1500,
+     "share": 0.016
+    },
+    "edit_f0": {
+     "reads": 1500,
+     "share": 0.0353
+    },
+    "edit_f1": {
+     "reads": 1500,
+     "share": 0.0067
+    },
+    "acc_orig_f0": {
+     "reads": 1500,
+     "share": 0.2453
+    },
+    "acc_orig_f1": {
+     "reads": 1500,
+     "share": 0.0153
+    },
+    "acc_edit_f0": {
+     "reads": 1500,
+     "share": 0.0347
+    },
+    "acc_edit_f1": {
+     "reads": 1500,
+     "share": 0.006
+    }
+   },
+   "frame_effect_under_f0_original_text": {
+    "dialogues": 500,
+    "mean": -0.0187,
+    "ci95": [
+     -0.0347,
+     -0.0033
+    ],
+    "sign_test": {
+     "positive": 23,
+     "negative": 40,
+     "p_exact": 0.04295654552438921
+    }
+   },
+   "frame_effect_under_f0_edited_text": {
+    "dialogues": 500,
+    "mean": 0.0007,
+    "ci95": [
+     -0.0067,
+     0.0073
+    ],
+    "sign_test": {
+     "positive": 11,
+     "negative": 9,
+     "p_exact": 0.8238029479980469
+    }
+   },
+   "did_frame_x_rename_original_text": {
+    "dialogues": 500,
+    "mean": -0.0193,
+    "ci95": [
+     -0.036,
+     -0.0033
+    ],
+    "sign_test": {
+     "positive": 25,
+     "negative": 42,
+     "p_exact": 0.049800114294728665
+    }
+   }
+  },
+  "sol": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 992,
+     "share": 0.4163
+    },
+    "orig_f1": {
+     "reads": 994,
+     "share": 0.1469
+    },
+    "edit_f0": {
+     "reads": 994,
+     "share": 0.0131
+    },
+    "edit_f1": {
+     "reads": 994,
+     "share": 0.0131
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 992,
+    "mean": 0.2692,
+    "ci95": [
+     0.244,
+     0.2964
+    ],
+    "sign_test": {
+     "positive": 267,
+     "negative": 0,
+     "p_exact": 8.433758354584419e-81
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 994,
+    "mean": 0.0,
+    "ci95": [
+     -0.003,
+     0.003
+    ],
+    "sign_test": {
+     "positive": 1,
+     "negative": 1,
+     "p_exact": 1.0
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 992,
+    "mean": 0.4032,
+    "ci95": [
+     0.373,
+     0.4355
+    ],
+    "sign_test": {
+     "positive": 400,
+     "negative": 0,
+     "p_exact": 7.745183829698637e-121
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 994,
+    "mean": 0.1338,
+    "ci95": [
+     0.1127,
+     0.1549
+    ],
+    "sign_test": {
+     "positive": 134,
+     "negative": 1,
+     "p_exact": 6.244813738743402e-39
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 992,
+    "mean": 0.2692,
+    "ci95": [
+     0.244,
+     0.2964
+    ],
+    "sign_test": {
+     "positive": 267,
+     "negative": 0,
+     "p_exact": 8.433758354584419e-81
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 1.4967,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 499,
+     "share": 0.4008
+    },
+    "orig_f1": {
+     "reads": 500,
+     "share": 0.148
+    },
+    "edit_f0": {
+     "reads": 500,
+     "share": 0.012
+    },
+    "edit_f1": {
+     "reads": 500,
+     "share": 0.012
+    },
+    "acc_orig_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_orig_f1": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f1": {
+     "reads": 0,
+     "share": null
+    }
+   },
+   "frame_effect_under_f0_original_text": null,
+   "frame_effect_under_f0_edited_text": null,
+   "did_frame_x_rename_original_text": null
+  },
+  "deepseek": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 994,
+     "share": 0.166
+    },
+    "orig_f1": {
+     "reads": 990,
+     "share": 0.0303
+    },
+    "edit_f0": {
+     "reads": 994,
+     "share": 0.0412
+    },
+    "edit_f1": {
+     "reads": 993,
+     "share": 0.0101
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 990,
+    "mean": 0.1364,
+    "ci95": [
+     0.1152,
+     0.1596
+    ],
+    "sign_test": {
+     "positive": 139,
+     "negative": 4,
+     "p_exact": 3.083156701172942e-36
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 993,
+    "mean": 0.0312,
+    "ci95": [
+     0.0201,
+     0.0423
+    ],
+    "sign_test": {
+     "positive": 33,
+     "negative": 2,
+     "p_exact": 3.6729034036397934e-08
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 994,
+    "mean": 0.1247,
+    "ci95": [
+     0.1006,
+     0.1489
+    ],
+    "sign_test": {
+     "positive": 145,
+     "negative": 21,
+     "p_exact": 5.460577433279237e-24
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 989,
+    "mean": 0.0192,
+    "ci95": [
+     0.0091,
+     0.0293
+    ],
+    "sign_test": {
+     "positive": 23,
+     "negative": 4,
+     "p_exact": 0.000310748815536499
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 989,
+    "mean": 0.1062,
+    "ci95": [
+     0.0839,
+     0.1304
+    ],
+    "sign_test": {
+     "positive": 133,
+     "negative": 27,
+     "p_exact": 4.975671827475712e-18
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 0.9197,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 500,
+     "share": 0.166
+    },
+    "orig_f1": {
+     "reads": 496,
+     "share": 0.0343
+    },
+    "edit_f0": {
+     "reads": 500,
+     "share": 0.048
+    },
+    "edit_f1": {
+     "reads": 499,
+     "share": 0.008
+    },
+    "acc_orig_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_orig_f1": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f1": {
+     "reads": 0,
+     "share": null
+    }
+   },
+   "frame_effect_under_f0_original_text": null,
+   "frame_effect_under_f0_edited_text": null,
+   "did_frame_x_rename_original_text": null
+  },
+  "qwen": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 932,
+     "share": 0.1513
+    },
+    "orig_f1": {
+     "reads": 930,
+     "share": 0.0366
+    },
+    "edit_f0": {
+     "reads": 930,
+     "share": 0.0473
+    },
+    "edit_f1": {
+     "reads": 926,
+     "share": 0.014
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 882,
+    "mean": 0.1088,
+    "ci95": [
+     0.085,
+     0.1338
+    ],
+    "sign_test": {
+     "positive": 108,
+     "negative": 12,
+     "p_exact": 1.780126472841153e-20
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 874,
+    "mean": 0.0378,
+    "ci95": [
+     0.0252,
+     0.0538
+    ],
+    "sign_test": {
+     "positive": 37,
+     "negative": 4,
+     "p_exact": 1.0258372640237212e-07
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 882,
+    "mean": 0.093,
+    "ci95": [
+     0.0714,
+     0.119
+    ],
+    "sign_test": {
+     "positive": 102,
+     "negative": 20,
+     "p_exact": 1.9641987858977157e-14
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 874,
+    "mean": 0.0252,
+    "ci95": [
+     0.0137,
+     0.0366
+    ],
+    "sign_test": {
+     "positive": 26,
+     "negative": 4,
+     "p_exact": 5.947612226009369e-05
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 804,
+    "mean": 0.0609,
+    "ci95": [
+     0.0361,
+     0.0883
+    ],
+    "sign_test": {
+     "positive": 78,
+     "negative": 28,
+     "p_exact": 1.251224275151152e-06
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 0.9067,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 466,
+     "share": 0.1545
+    },
+    "orig_f1": {
+     "reads": 468,
+     "share": 0.0406
+    },
+    "edit_f0": {
+     "reads": 466,
+     "share": 0.0429
+    },
+    "edit_f1": {
+     "reads": 467,
+     "share": 0.0128
+    },
+    "acc_orig_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_orig_f1": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f1": {
+     "reads": 0,
+     "share": null
+    }
+   },
+   "frame_effect_under_f0_original_text": null,
+   "frame_effect_under_f0_edited_text": null,
+   "did_frame_x_rename_original_text": null
+  },
+  "gemma": {
+   "t994_type_hotel": {
+    "orig_f0": {
+     "reads": 989,
+     "share": 0.2508
+    },
+    "orig_f1": {
+     "reads": 993,
+     "share": 0.0312
+    },
+    "edit_f0": {
+     "reads": 987,
+     "share": 0.0203
+    },
+    "edit_f1": {
+     "reads": 991,
+     "share": 0.0081
+    }
+   },
+   "rename_effect_original_text": {
+    "dialogues": 988,
+    "mean": 0.2196,
+    "ci95": [
+     0.1933,
+     0.246
+    ],
+    "sign_test": {
+     "positive": 217,
+     "negative": 0,
+     "p_exact": 9.495567745759799e-66
+    }
+   },
+   "rename_effect_edited_text": {
+    "dialogues": 984,
+    "mean": 0.0122,
+    "ci95": [
+     0.0061,
+     0.0203
+    ],
+    "sign_test": {
+     "positive": 12,
+     "negative": 0,
+     "p_exact": 0.00048828125
+    }
+   },
+   "edit_effect_under_f0": {
+    "dialogues": 982,
+    "mean": 0.2291,
+    "ci95": [
+     0.2026,
+     0.2546
+    ],
+    "sign_test": {
+     "positive": 227,
+     "negative": 2,
+     "p_exact": 6.105353324031496e-65
+    }
+   },
+   "edit_effect_under_f1": {
+    "dialogues": 990,
+    "mean": 0.0232,
+    "ci95": [
+     0.0141,
+     0.0323
+    ],
+    "sign_test": {
+     "positive": 23,
+     "negative": 0,
+     "p_exact": 2.384185791015625e-07
+    }
+   },
+   "did_text_x_rename": {
+    "dialogues": 978,
+    "mean": 0.2035,
+    "ci95": [
+     0.1769,
+     0.2311
+    ],
+    "sign_test": {
+     "positive": 206,
+     "negative": 7,
+     "p_exact": 5.61656212731833e-52
+    }
+   },
+   "share_of_rename_gap_removed_by_edit": 1.0496,
+   "frame500_type_hotel": {
+    "orig_f0": {
+     "reads": 497,
+     "share": 0.2596
+    },
+    "orig_f1": {
+     "reads": 499,
+     "share": 0.0321
+    },
+    "edit_f0": {
+     "reads": 496,
+     "share": 0.0181
+    },
+    "edit_f1": {
+     "reads": 498,
+     "share": 0.012
+    },
+    "acc_orig_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_orig_f1": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f0": {
+     "reads": 0,
+     "share": null
+    },
+    "acc_edit_f1": {
+     "reads": 0,
+     "share": null
+    }
+   },
+   "frame_effect_under_f0_original_text": null,
+   "frame_effect_under_f0_edited_text": null,
+   "did_frame_x_rename_original_text": null
+  }
+ },
+ "z2_b3": {
+  "haiku": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.062
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0295
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.046
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1059
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.1268
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0687
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 103,
+      "share": 0.4951
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0144
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.009
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0113
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.005
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0884
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0995
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0687
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 24,
+      "share": 0.4167
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0692
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0969
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0385
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0601
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1131
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.1399
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0653
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 115,
+      "share": 0.4174
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0367
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0066
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0094
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0017
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0415
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0451
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0352
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 61,
+      "share": 0.7705
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0132
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0024
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0019
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0034
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0529
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0638
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0335
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 22,
+      "share": 0.8636
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 554,
+    "mean": 0.0253,
+    "ci95": [
+     0.0066,
+     0.0457
+    ],
+    "sign_test": {
+     "positive": 29,
+     "negative": 13,
+     "p_exact": 0.019520472782460274
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 554,
+    "mean": 0.0229,
+    "ci95": [
+     0.0102,
+     0.0373
+    ],
+    "sign_test": {
+     "positive": 17,
+     "negative": 3,
+     "p_exact": 0.0025768280029296875
+    }
+   },
+   "recognition_by_commitment": {
+    "fixes": {
+     "dialogues": 328,
+     "pre_f0_type_hotel": {
+      "reads": 984,
+      "share": 0.0722
+     },
+     "pre_f1_type_hotel": {
+      "reads": 984,
+      "share": 0.0193
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 984,
+      "share": 0.0813
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 984,
+      "share": 0.0803
+     }
+    },
+    "does not fix": {
+     "dialogues": 204,
+     "pre_f0_type_hotel": {
+      "reads": 612,
+      "share": 0.0523
+     },
+     "pre_f1_type_hotel": {
+      "reads": 612,
+      "share": 0.0082
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 612,
+      "share": 0.0572
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 612,
+      "share": 0.1291
+     }
+    },
+    "cannot tell": {
+     "dialogues": 21,
+     "pre_f0_type_hotel": {
+      "reads": 63,
+      "share": 0.0
+     },
+     "pre_f1_type_hotel": {
+      "reads": 63,
+      "share": 0.0
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 63,
+      "share": 0.0
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 63,
+      "share": 0.0476
+     }
+    },
+    "split": {
+     "dialogues": 1,
+     "pre_f0_type_hotel": {
+      "reads": 3,
+      "share": 0.0
+     },
+     "pre_f1_type_hotel": {
+      "reads": 3,
+      "share": 0.0
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 3,
+      "share": 0.0
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 3,
+      "share": 0.0
+     }
+    }
+   }
+  },
+  "sonnet": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.3225
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1943
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.3033
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.2377
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.3333
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.067
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 536,
+      "share": 0.3918
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0457
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0187
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0291
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0921
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.107
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0653
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 76,
+      "share": 0.5132
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.2738
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0102
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1679
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.262
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.2136
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.2995
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0603
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 455,
+      "share": 0.3802
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.1787
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0848
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.1324
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1179
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.1624
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0385
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 297,
+      "share": 0.5084
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0487
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0132
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0207
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0554
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0667
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0352
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 81,
+      "share": 0.6543
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 554,
+    "mean": 0.1438,
+    "ci95": [
+     0.1107,
+     0.1781
+    ],
+    "sign_test": {
+     "positive": 108,
+     "negative": 13,
+     "p_exact": 8.369427446252163e-20
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 554,
+    "mean": 0.1095,
+    "ci95": [
+     0.0836,
+     0.1354
+    ],
+    "sign_test": {
+     "positive": 75,
+     "negative": 3,
+     "p_exact": 5.238237034277805e-19
+    }
+   },
+   "recognition_by_commitment": {
+    "fixes": {
+     "dialogues": 448,
+     "pre_f0_type_hotel": {
+      "reads": 1344,
+      "share": 0.3854
+     },
+     "pre_f1_type_hotel": {
+      "reads": 1344,
+      "share": 0.0543
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 1344,
+      "share": 0.3259
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 1344,
+      "share": 0.0126
+     }
+    },
+    "does not fix": {
+     "dialogues": 101,
+     "pre_f0_type_hotel": {
+      "reads": 303,
+      "share": 0.0561
+     },
+     "pre_f1_type_hotel": {
+      "reads": 303,
+      "share": 0.0099
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 303,
+      "share": 0.0462
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 303,
+      "share": 0.0
+     }
+    },
+    "cannot tell": {
+     "dialogues": 5,
+     "pre_f0_type_hotel": {
+      "reads": 15,
+      "share": 0.0667
+     },
+     "pre_f1_type_hotel": {
+      "reads": 15,
+      "share": 0.0
+     },
+     "pre_unclear_type_hotel": {
+      "reads": 15,
+      "share": 0.2
+     },
+     "pre_unclear_type_unclear": {
+      "reads": 15,
+      "share": 0.0
+     }
+    }
+   }
+  },
+  "luna": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.2635
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1588
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.2479
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.228
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.3061
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0888
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 438,
+      "share": 0.3881
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.0156
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0054
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0085
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1005
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.1052
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0921
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 26,
+      "share": 0.5385
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.2611
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0012
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1631
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.2545
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.2383
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.3202
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0921
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 434,
+      "share": 0.3687
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.2244
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1005
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.1568
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.1546
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.2113
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0536
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 373,
+      "share": 0.5147
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 1662,
+      "share": 0.015
+     },
+     "type_unclear": {
+      "reads": 1662,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0012
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0019
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 1662,
+       "share": 0.0722
+      },
+      "guesthouse": {
+       "reads": 1065,
+       "share": 0.0798
+      },
+      "hotel": {
+       "reads": 597,
+       "share": 0.0586
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 25,
+      "share": 0.8
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 554,
+    "mean": 0.0391,
+    "ci95": [
+     0.0108,
+     0.0662
+    ],
+    "sign_test": {
+     "positive": 74,
+     "negative": 43,
+     "p_exact": 0.005319279348701672
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 554,
+    "mean": 0.0584,
+    "ci95": [
+     0.0349,
+     0.0812
+    ],
+    "sign_test": {
+     "positive": 62,
+     "negative": 16,
+     "p_exact": 1.5129781377543385e-07
+    }
+   },
+   "recognition_by_commitment": {}
+  },
+  "sol": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 554,
+      "share": 0.4188
+     },
+     "type_unclear": {
+      "reads": 554,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 554,
+       "share": 0.2581
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.4028
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 554,
+       "share": 0.2942
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.4197
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0704
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 232,
+      "share": 0.3793
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 554,
+      "share": 0.1498
+     },
+     "type_unclear": {
+      "reads": 554,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 554,
+       "share": 0.0957
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.1493
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 554,
+       "share": 0.1534
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.1972
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0754
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 83,
+      "share": 0.3494
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 554,
+      "share": 0.4332
+     },
+     "type_unclear": {
+      "reads": 554,
+      "share": 0.0036
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 554,
+       "share": 0.2708
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.4225
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 554,
+       "share": 0.2996
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.4338
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0603
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 240,
+      "share": 0.3708
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 552,
+      "share": 0.4312
+     },
+     "type_unclear": {
+      "reads": 552,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 552,
+       "share": 0.2373
+      },
+      "guesthouse": {
+       "reads": 353,
+       "share": 0.3711
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 552,
+       "share": 0.2681
+      },
+      "guesthouse": {
+       "reads": 353,
+       "share": 0.3909
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0503
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 238,
+      "share": 0.4454
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 554,
+      "share": 0.1444
+     },
+     "type_unclear": {
+      "reads": 554,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 554,
+       "share": 0.0542
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.0845
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 554,
+       "share": 0.1011
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.1296
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0503
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 80,
+      "share": 0.6125
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 552,
+    "mean": -0.0127,
+    "ci95": [
+     -0.038,
+     0.0109
+    ],
+    "sign_test": {
+     "positive": 23,
+     "negative": 30,
+     "p_exact": 0.4101027163746913
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 552,
+    "mean": 0.0199,
+    "ci95": [
+     0.0,
+     0.0399
+    ],
+    "sign_test": {
+     "positive": 22,
+     "negative": 11,
+     "p_exact": 0.08014331245794892
+    }
+   },
+   "recognition_by_commitment": {}
+  },
+  "deepseek": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 554,
+      "share": 0.231
+     },
+     "type_unclear": {
+      "reads": 554,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 554,
+       "share": 0.1372
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.2141
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 554,
+       "share": 0.1805
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.2479
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0603
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 128,
+      "share": 0.3984
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 553,
+      "share": 0.0289
+     },
+     "type_unclear": {
+      "reads": 553,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 553,
+       "share": 0.0127
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0198
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 553,
+       "share": 0.085
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0932
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0704
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 16,
+      "share": 0.5
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 553,
+      "share": 0.2387
+     },
+     "type_unclear": {
+      "reads": 553,
+      "share": 0.009
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 553,
+       "share": 0.141
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.2203
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 553,
+       "share": 0.1953
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.2599
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0804
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 132,
+      "share": 0.3864
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 554,
+      "share": 0.1516
+     },
+     "type_unclear": {
+      "reads": 554,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 554,
+       "share": 0.0578
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.0901
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 554,
+       "share": 0.0812
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.107
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0352
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 84,
+      "share": 0.5238
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 551,
+      "share": 0.0254
+     },
+     "type_unclear": {
+      "reads": 551,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 551,
+       "share": 0.0109
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0085
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0152
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 551,
+       "share": 0.0454
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0395
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0558
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 14,
+      "share": 0.7143
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 554,
+    "mean": 0.0794,
+    "ci95": [
+     0.0433,
+     0.1137
+    ],
+    "sign_test": {
+     "positive": 69,
+     "negative": 25,
+     "p_exact": 6.339264707376484e-06
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 554,
+    "mean": 0.0794,
+    "ci95": [
+     0.0523,
+     0.1065
+    ],
+    "sign_test": {
+     "positive": 51,
+     "negative": 7,
+     "p_exact": 2.402164578363397e-09
+    }
+   },
+   "recognition_by_commitment": {}
+  },
+  "qwen": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 525,
+      "share": 0.1848
+     },
+     "type_unclear": {
+      "reads": 525,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 525,
+       "share": 0.1048
+      },
+      "guesthouse": {
+       "reads": 339,
+       "share": 0.1622
+      },
+      "hotel": {
+       "reads": 186,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 525,
+       "share": 0.1448
+      },
+      "guesthouse": {
+       "reads": 339,
+       "share": 0.1917
+      },
+      "hotel": {
+       "reads": 186,
+       "share": 0.0591
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 97,
+      "share": 0.3918
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 514,
+      "share": 0.0233
+     },
+     "type_unclear": {
+      "reads": 514,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 514,
+       "share": 0.0078
+      },
+      "guesthouse": {
+       "reads": 327,
+       "share": 0.0122
+      },
+      "hotel": {
+       "reads": 187,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 514,
+       "share": 0.0817
+      },
+      "guesthouse": {
+       "reads": 327,
+       "share": 0.0795
+      },
+      "hotel": {
+       "reads": 187,
+       "share": 0.0856
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 12,
+      "share": 0.5
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 527,
+      "share": 0.1822
+     },
+     "type_unclear": {
+      "reads": 527,
+      "share": 0.0095
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 527,
+       "share": 0.1063
+      },
+      "guesthouse": {
+       "reads": 339,
+       "share": 0.1652
+      },
+      "hotel": {
+       "reads": 188,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 527,
+       "share": 0.1404
+      },
+      "guesthouse": {
+       "reads": 339,
+       "share": 0.1917
+      },
+      "hotel": {
+       "reads": 188,
+       "share": 0.0479
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 96,
+      "share": 0.3854
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 520,
+      "share": 0.15
+     },
+     "type_unclear": {
+      "reads": 520,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 520,
+       "share": 0.0442
+      },
+      "guesthouse": {
+       "reads": 336,
+       "share": 0.0685
+      },
+      "hotel": {
+       "reads": 184,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 520,
+       "share": 0.0654
+      },
+      "guesthouse": {
+       "reads": 336,
+       "share": 0.0923
+      },
+      "hotel": {
+       "reads": 184,
+       "share": 0.0163
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 78,
+      "share": 0.5385
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 521,
+      "share": 0.0307
+     },
+     "type_unclear": {
+      "reads": 521,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 521,
+       "share": 0.0077
+      },
+      "guesthouse": {
+       "reads": 336,
+       "share": 0.0089
+      },
+      "hotel": {
+       "reads": 185,
+       "share": 0.0054
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 521,
+       "share": 0.0345
+      },
+      "guesthouse": {
+       "reads": 336,
+       "share": 0.0327
+      },
+      "hotel": {
+       "reads": 185,
+       "share": 0.0378
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 16,
+      "share": 0.5
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 494,
+    "mean": 0.0425,
+    "ci95": [
+     0.0081,
+     0.0769
+    ],
+    "sign_test": {
+     "positive": 48,
+     "negative": 27,
+     "p_exact": 0.020298406990107445
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 494,
+    "mean": 0.0607,
+    "ci95": [
+     0.0385,
+     0.087
+    ],
+    "sign_test": {
+     "positive": 35,
+     "negative": 5,
+     "p_exact": 1.382612026645802e-06
+    }
+   },
+   "recognition_by_commitment": {}
+  },
+  "gemma": {
+   "booked554": {
+    "pre_f0": {
+     "type_hotel": {
+      "reads": 551,
+      "share": 0.2868
+     },
+     "type_unclear": {
+      "reads": 551,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 551,
+       "share": 0.176
+      },
+      "guesthouse": {
+       "reads": 352,
+       "share": 0.2756
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 551,
+       "share": 0.2341
+      },
+      "guesthouse": {
+       "reads": 352,
+       "share": 0.3239
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0754
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 158,
+      "share": 0.3797
+     }
+    },
+    "pre_f1": {
+     "type_hotel": {
+      "reads": 551,
+      "share": 0.0236
+     },
+     "type_unclear": {
+      "reads": 551,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 551,
+       "share": 0.0073
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0113
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 551,
+       "share": 0.098
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.1102
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0761
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 13,
+      "share": 0.6154
+     }
+    },
+    "pre_unclear": {
+     "type_hotel": {
+      "reads": 551,
+      "share": 0.2958
+     },
+     "type_unclear": {
+      "reads": 551,
+      "share": 0.02
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 551,
+       "share": 0.1797
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.2797
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 551,
+       "share": 0.2341
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.3192
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0812
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 163,
+      "share": 0.3865
+     }
+    },
+    "orig_f0": {
+     "type_hotel": {
+      "reads": 552,
+      "share": 0.2591
+     },
+     "type_unclear": {
+      "reads": 552,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 552,
+       "share": 0.1286
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.2
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 552,
+       "share": 0.1594
+      },
+      "guesthouse": {
+       "reads": 355,
+       "share": 0.2282
+      },
+      "hotel": {
+       "reads": 197,
+       "share": 0.0355
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 143,
+      "share": 0.4615
+     }
+    },
+    "orig_f1": {
+     "type_hotel": {
+      "reads": 553,
+      "share": 0.0271
+     },
+     "type_unclear": {
+      "reads": 553,
+      "share": 0.0
+     },
+     "excludes_booked_type": {
+      "all": {
+       "reads": 553,
+       "share": 0.0054
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0085
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0
+      }
+     },
+     "excludes_booked_venue_all_fields": {
+      "all": {
+       "reads": 553,
+       "share": 0.0542
+      },
+      "guesthouse": {
+       "reads": 354,
+       "share": 0.0565
+      },
+      "hotel": {
+       "reads": 199,
+       "share": 0.0503
+      }
+     },
+     "precision_of_type_hotel": {
+      "reads": 15,
+      "share": 0.6667
+     }
+    }
+   },
+   "prefix_minus_full_f0_type_hotel": {
+    "dialogues": 549,
+    "mean": 0.0273,
+    "ci95": [
+     -0.0018,
+     0.051
+    ],
+    "sign_test": {
+     "positive": 34,
+     "negative": 19,
+     "p_exact": 0.053438810537711046
+    }
+   },
+   "prefix_minus_full_f0_excludes_booked_type": {
+    "dialogues": 549,
+    "mean": 0.0492,
+    "ci95": [
+     0.0273,
+     0.071
+    ],
+    "sign_test": {
+     "positive": 34,
+     "negative": 7,
+     "p_exact": 2.532080361561384e-05
+    }
+   },
+   "recognition_by_commitment": {}
+  }
+ },
+ "z3_b4": {
+  "haiku": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0452
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0506
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0057
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0454
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.012
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0127
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0037
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0584
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0631
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0711
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.4373
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0162
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0584
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.4699
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.6037
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0349
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0389
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.3468
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0042
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0433
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.3879
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.5079
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 3408,
+      "share": 0.0091
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 1635,
+      "share": 0.4098
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.438
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.5565
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 59,
+      "share": 0.1356
+     }
+    },
+    "p_null_nat": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0461
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0516
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.4012
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0078
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0589
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.4369
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.5665
+     }
+    },
+    "p_unclear_nat": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0455
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0503
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.3969
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0047
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0501
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.4289
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.5579
+     },
+     "s1_type_unclear": {
+      "reads": 3408,
+      "share": 0.1253
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1136,
+     "mean": 0.0332,
+     "ci95": [
+      0.0229,
+      0.0437
+     ],
+     "sign_test": {
+      "positive": 49,
+      "negative": 3,
+      "p_exact": 1.042677055806962e-11
+     }
+    },
+    "p_define": {
+     "dialogues": 1136,
+     "mean": -0.0179,
+     "ci95": [
+      -0.0279,
+      -0.0094
+     ],
+     "sign_test": {
+      "positive": 11,
+      "negative": 40,
+      "p_exact": 5.703811637403078e-05
+     }
+    },
+    "p_split": {
+     "dialogues": 1136,
+     "mean": 0.0103,
+     "ci95": [
+      0.0021,
+      0.0185
+     ],
+     "sign_test": {
+      "positive": 33,
+      "negative": 15,
+      "p_exact": 0.013283281562245008
+     }
+    },
+    "p_null_nat": {
+     "dialogues": 1136,
+     "mean": -0.0009,
+     "ci95": [
+      -0.0073,
+      0.0053
+     ],
+     "sign_test": {
+      "positive": 17,
+      "negative": 16,
+      "p_exact": 1.0
+     }
+    },
+    "p_unclear_nat": {
+     "dialogues": 1136,
+     "mean": -0.0003,
+     "ci95": [
+      -0.0067,
+      0.0062
+     ],
+     "sign_test": {
+      "positive": 18,
+      "negative": 23,
+      "p_exact": 0.5327092552361137
+     }
+    }
+   },
+   "s1_type_hotel_unclear_minus_null": {
+    "dialogues": 1136,
+    "mean": -0.0006,
+    "ci95": [
+     -0.0076,
+     0.0067
+    ],
+    "sign_test": {
+     "positive": 18,
+     "negative": 19,
+     "p_exact": 1.0
+    }
+   }
+  },
+  "sonnet": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1614
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1844
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0751
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1132
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0452
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0516
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.013
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0589
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1617
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1848
+     },
+     "s2_type_hotel": {
+      "reads": 1090,
+      "share": 0.6716
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0746
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1054
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 586,
+      "share": 0.756
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 466,
+      "share": 0.8283
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1385
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1583
+     },
+     "s2_type_hotel": {
+      "reads": 1090,
+      "share": 0.5982
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0595
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0929
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 586,
+      "share": 0.6553
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 466,
+      "share": 0.7382
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 3408,
+      "share": 0.029
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 1090,
+      "share": 0.6789
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 586,
+      "share": 0.7474
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 466,
+      "share": 0.8305
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 197,
+      "share": 0.1472
+     }
+    },
+    "p_null_nat": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1485
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1697
+     },
+     "s2_type_hotel": {
+      "reads": 1090,
+      "share": 0.6661
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0673
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1007
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 586,
+      "share": 0.756
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 466,
+      "share": 0.824
+     }
+    },
+    "p_unclear_nat": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1467
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1677
+     },
+     "s2_type_hotel": {
+      "reads": 1090,
+      "share": 0.6697
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0652
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0949
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 586,
+      "share": 0.7679
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 466,
+      "share": 0.8219
+     },
+     "s1_type_unclear": {
+      "reads": 3408,
+      "share": 0.029
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1136,
+     "mean": 0.1162,
+     "ci95": [
+      0.0977,
+      0.1335
+     ],
+     "sign_test": {
+      "positive": 150,
+      "negative": 1,
+      "p_exact": 1.064986832886861e-43
+     }
+    },
+    "p_define": {
+     "dialogues": 1136,
+     "mean": -0.0003,
+     "ci95": [
+      -0.0129,
+      0.0129
+     ],
+     "sign_test": {
+      "positive": 50,
+      "negative": 47,
+      "p_exact": 0.8392136618440833
+     }
+    },
+    "p_split": {
+     "dialogues": 1136,
+     "mean": 0.0229,
+     "ci95": [
+      0.0091,
+      0.0364
+     ],
+     "sign_test": {
+      "positive": 64,
+      "negative": 38,
+      "p_exact": 0.0129204519111262
+     }
+    },
+    "p_null_nat": {
+     "dialogues": 1136,
+     "mean": 0.0129,
+     "ci95": [
+      0.0023,
+      0.0244
+     ],
+     "sign_test": {
+      "positive": 51,
+      "negative": 33,
+      "p_exact": 0.06297225703616971
+     }
+    },
+    "p_unclear_nat": {
+     "dialogues": 1136,
+     "mean": 0.0147,
+     "ci95": [
+      0.0032,
+      0.0258
+     ],
+     "sign_test": {
+      "positive": 55,
+      "negative": 29,
+      "p_exact": 0.006037957632263206
+     }
+    }
+   },
+   "s1_type_hotel_unclear_minus_null": {
+    "dialogues": 1136,
+    "mean": -0.0018,
+    "ci95": [
+     -0.0117,
+     0.0079
+    ],
+    "sign_test": {
+     "positive": 38,
+     "negative": 41,
+     "p_exact": 0.8221442424521855
+    }
+   }
+  },
+  "luna": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.2048
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.228
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.6795
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0871
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1445
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.7429
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.7969
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.0167
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.0178
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.2416
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0026
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.0751
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.2651
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.3419
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1197
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1345
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.5498
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0391
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1054
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.5995
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.6896
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1367
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.1563
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.4991
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.06
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1262
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.5506
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.6166
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 3408,
+      "share": 0.027
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 1635,
+      "share": 0.6324
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.6928
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.7639
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 284,
+      "share": 0.1655
+     },
+     "s2_kept_share_of_f0": 0.9307
+    },
+    "p_null_nat": {
+     "s1_type_hotel": {
+      "reads": 3407,
+      "share": 0.204
+     },
+     "t994_type_hotel": {
+      "reads": 2981,
+      "share": 0.2288
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.6795
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0897
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1435
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.7497
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.8069
+     }
+    },
+    "p_unclear_nat": {
+     "s1_type_hotel": {
+      "reads": 3408,
+      "share": 0.1945
+     },
+     "t994_type_hotel": {
+      "reads": 2982,
+      "share": 0.2203
+     },
+     "s2_type_hotel": {
+      "reads": 1635,
+      "share": 0.6746
+     },
+     "s1_booked_excludes_type": {
+      "reads": 1917,
+      "share": 0.0809
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 1917,
+      "share": 0.1414
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 879,
+      "share": 0.7509
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 699,
+      "share": 0.804
+     },
+     "s1_type_unclear": {
+      "reads": 3408,
+      "share": 0.0006
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1136,
+     "mean": 0.1881,
+     "ci95": [
+      0.1673,
+      0.2092
+     ],
+     "sign_test": {
+      "positive": 270,
+      "negative": 2,
+      "p_exact": 9.785531685855152e-78
+     }
+    },
+    "p_define": {
+     "dialogues": 1136,
+     "mean": 0.0851,
+     "ci95": [
+      0.0695,
+      0.1001
+     ],
+     "sign_test": {
+      "positive": 171,
+      "negative": 24,
+      "p_exact": 1.556156575732786e-28
+     }
+    },
+    "p_split": {
+     "dialogues": 1136,
+     "mean": 0.0681,
+     "ci95": [
+      0.0531,
+      0.0819
+     ],
+     "sign_test": {
+      "positive": 152,
+      "negative": 28,
+      "p_exact": 8.010094388940227e-22
+     }
+    },
+    "p_null_nat": {
+     "dialogues": 1136,
+     "mean": 0.0009,
+     "ci95": [
+      -0.0097,
+      0.0109
+     ],
+     "sign_test": {
+      "positive": 67,
+      "negative": 64,
+      "p_exact": 0.8613689310511555
+     }
+    },
+    "p_unclear_nat": {
+     "dialogues": 1136,
+     "mean": 0.0103,
+     "ci95": [
+      -0.0015,
+      0.0208
+     ],
+     "sign_test": {
+      "positive": 79,
+      "negative": 58,
+      "p_exact": 0.08713322647534709
+     }
+    }
+   },
+   "s1_type_hotel_unclear_minus_null": {
+    "dialogues": 1136,
+    "mean": -0.0094,
+    "ci95": [
+     -0.0191,
+     0.0012
+    ],
+    "sign_test": {
+     "positive": 65,
+     "negative": 77,
+     "p_exact": 0.3559998259151084
+    }
+   }
+  },
+  "sol": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 1133,
+      "share": 0.3645
+     },
+     "t994_type_hotel": {
+      "reads": 992,
+      "share": 0.4163
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 636,
+      "share": 0.2075
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 636,
+      "share": 0.2421
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 1135,
+      "share": 0.1286
+     },
+     "t994_type_hotel": {
+      "reads": 994,
+      "share": 0.1469
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 639,
+      "share": 0.0485
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 639,
+      "share": 0.097
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 1135,
+      "share": 0.1066
+     },
+     "t994_type_hotel": {
+      "reads": 993,
+      "share": 0.1219
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 639,
+      "share": 0.036
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 639,
+      "share": 0.0908
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 1136,
+      "share": 0.2509
+     },
+     "t994_type_hotel": {
+      "reads": 994,
+      "share": 0.2867
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 639,
+      "share": 0.1174
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 639,
+      "share": 0.1487
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 1136,
+      "share": 0.0194
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 413,
+      "share": 0.0484
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1132,
+     "mean": 0.2359,
+     "ci95": [
+      0.212,
+      0.2597
+     ],
+     "sign_test": {
+      "positive": 267,
+      "negative": 0,
+      "p_exact": 8.433758354584419e-81
+     }
+    },
+    "p_define": {
+     "dialogues": 1132,
+     "mean": 0.258,
+     "ci95": [
+      0.2332,
+      0.2818
+     ],
+     "sign_test": {
+      "positive": 292,
+      "negative": 0,
+      "p_exact": 2.513455854232436e-88
+     }
+    },
+    "p_split": {
+     "dialogues": 1133,
+     "mean": 0.113,
+     "ci95": [
+      0.0944,
+      0.1306
+     ],
+     "sign_test": {
+      "positive": 128,
+      "negative": 0,
+      "p_exact": 5.877471754111438e-39
+     }
+    },
+    "p_null_nat": null,
+    "p_unclear_nat": null
+   },
+   "s1_type_hotel_unclear_minus_null": null
+  },
+  "deepseek": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 1136,
+      "share": 0.1496
+     },
+     "t994_type_hotel": {
+      "reads": 994,
+      "share": 0.166
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 639,
+      "share": 0.0516
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 639,
+      "share": 0.0751
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 1132,
+      "share": 0.0274
+     },
+     "t994_type_hotel": {
+      "reads": 990,
+      "share": 0.0303
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 636,
+      "share": 0.011
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 636,
+      "share": 0.0487
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 1134,
+      "share": 0.134
+     },
+     "t994_type_hotel": {
+      "reads": 992,
+      "share": 0.1472
+     },
+     "s2_type_hotel": {
+      "reads": 545,
+      "share": 0.5229
+     },
+     "s1_booked_excludes_type": {
+      "reads": 638,
+      "share": 0.0455
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 638,
+      "share": 0.0737
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.5597
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 233,
+      "share": 0.6524
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 1135,
+      "share": 0.2273
+     },
+     "t994_type_hotel": {
+      "reads": 993,
+      "share": 0.2477
+     },
+     "s2_type_hotel": {
+      "reads": 544,
+      "share": 0.6654
+     },
+     "s1_booked_excludes_type": {
+      "reads": 638,
+      "share": 0.0909
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 638,
+      "share": 0.1223
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.6792
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 233,
+      "share": 0.794
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 1135,
+      "share": 0.0335
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 544,
+      "share": 0.7335
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.7611
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 233,
+      "share": 0.8498
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 169,
+      "share": 0.0947
+     }
+    },
+    "p_null_nat": {
+     "s1_type_hotel": {
+      "reads": 1135,
+      "share": 0.1797
+     },
+     "t994_type_hotel": {
+      "reads": 993,
+      "share": 0.1974
+     },
+     "s2_type_hotel": {
+      "reads": 542,
+      "share": 0.6181
+     },
+     "s1_booked_excludes_type": {
+      "reads": 639,
+      "share": 0.0767
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 639,
+      "share": 0.1174
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 292,
+      "share": 0.6849
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 231,
+      "share": 0.7229
+     }
+    },
+    "p_unclear_nat": {
+     "s1_type_hotel": {
+      "reads": 1135,
+      "share": 0.1392
+     },
+     "t994_type_hotel": {
+      "reads": 993,
+      "share": 0.1551
+     },
+     "s2_type_hotel": {
+      "reads": 545,
+      "share": 0.6073
+     },
+     "s1_booked_excludes_type": {
+      "reads": 639,
+      "share": 0.0532
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 639,
+      "share": 0.0751
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.6519
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 233,
+      "share": 0.7296
+     },
+     "s1_type_unclear": {
+      "reads": 1135,
+      "share": 0.0273
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1132,
+     "mean": 0.1228,
+     "ci95": [
+      0.1042,
+      0.1431
+     ],
+     "sign_test": {
+      "positive": 144,
+      "negative": 5,
+      "p_exact": 1.6595619191433353e-36
+     }
+    },
+    "p_define": {
+     "dialogues": 1134,
+     "mean": 0.0141,
+     "ci95": [
+      -0.0044,
+      0.0326
+     ],
+     "sign_test": {
+      "positive": 66,
+      "negative": 50,
+      "p_exact": 0.16342317247754873
+     }
+    },
+    "p_split": {
+     "dialogues": 1135,
+     "mean": -0.0784,
+     "ci95": [
+      -0.0996,
+      -0.0564
+     ],
+     "sign_test": {
+      "positive": 39,
+      "negative": 128,
+      "p_exact": 2.9119474268643193e-12
+     }
+    },
+    "p_null_nat": {
+     "dialogues": 1135,
+     "mean": -0.03,
+     "ci95": [
+      -0.0476,
+      -0.0115
+     ],
+     "sign_test": {
+      "positive": 42,
+      "negative": 76,
+      "p_exact": 0.0022426650517358795
+     }
+    },
+    "p_unclear_nat": {
+     "dialogues": 1135,
+     "mean": 0.0106,
+     "ci95": [
+      -0.007,
+      0.0291
+     ],
+     "sign_test": {
+      "positive": 60,
+      "negative": 48,
+      "p_exact": 0.28979821540506145
+     }
+    }
+   },
+   "s1_type_hotel_unclear_minus_null": {
+    "dialogues": 1134,
+    "mean": -0.0397,
+    "ci95": [
+     -0.0582,
+     -0.0212
+    ],
+    "sign_test": {
+     "positive": 38,
+     "negative": 83,
+     "p_exact": 5.2673309370660385e-05
+    }
+   }
+  },
+  "qwen": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 1066,
+      "share": 0.1379
+     },
+     "t994_type_hotel": {
+      "reads": 932,
+      "share": 0.1513
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 600,
+      "share": 0.04
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 600,
+      "share": 0.0667
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 1062,
+      "share": 0.0339
+     },
+     "t994_type_hotel": {
+      "reads": 930,
+      "share": 0.0366
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 601,
+      "share": 0.0067
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 601,
+      "share": 0.0399
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 1055,
+      "share": 0.1204
+     },
+     "t994_type_hotel": {
+      "reads": 928,
+      "share": 0.1282
+     },
+     "s2_type_hotel": {
+      "reads": 501,
+      "share": 0.481
+     },
+     "s1_booked_excludes_type": {
+      "reads": 593,
+      "share": 0.0438
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 593,
+      "share": 0.0708
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 272,
+      "share": 0.5184
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 214,
+      "share": 0.5794
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 1049,
+      "share": 0.1392
+     },
+     "t994_type_hotel": {
+      "reads": 924,
+      "share": 0.1439
+     },
+     "s2_type_hotel": {
+      "reads": 494,
+      "share": 0.4433
+     },
+     "s1_booked_excludes_type": {
+      "reads": 589,
+      "share": 0.0323
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 589,
+      "share": 0.0594
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 266,
+      "share": 0.485
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 219,
+      "share": 0.5845
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 1049,
+      "share": 0.0353
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 494,
+      "share": 0.5789
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 266,
+      "share": 0.6165
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 219,
+      "share": 0.7078
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 131,
+      "share": 0.084
+     }
+    },
+    "p_null_nat": {
+     "s1_type_hotel": {
+      "reads": 1063,
+      "share": 0.1308
+     },
+     "t994_type_hotel": {
+      "reads": 933,
+      "share": 0.1479
+     },
+     "s2_type_hotel": {
+      "reads": 503,
+      "share": 0.495
+     },
+     "s1_booked_excludes_type": {
+      "reads": 600,
+      "share": 0.0367
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 600,
+      "share": 0.0633
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 269,
+      "share": 0.5316
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 218,
+      "share": 0.6147
+     }
+    },
+    "p_unclear_nat": {
+     "s1_type_hotel": {
+      "reads": 1065,
+      "share": 0.1371
+     },
+     "t994_type_hotel": {
+      "reads": 933,
+      "share": 0.1479
+     },
+     "s2_type_hotel": {
+      "reads": 487,
+      "share": 0.501
+     },
+     "s1_booked_excludes_type": {
+      "reads": 606,
+      "share": 0.0413
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 606,
+      "share": 0.0743
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 259,
+      "share": 0.5135
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 211,
+      "share": 0.6209
+     },
+     "s1_type_unclear": {
+      "reads": 1065,
+      "share": 0.016
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1009,
+     "mean": 0.0991,
+     "ci95": [
+      0.0793,
+      0.1209
+     ],
+     "sign_test": {
+      "positive": 113,
+      "negative": 13,
+      "p_exact": 4.524471384904378e-21
+     }
+    },
+    "p_define": {
+     "dialogues": 997,
+     "mean": 0.0201,
+     "ci95": [
+      -0.003,
+      0.0411
+     ],
+     "sign_test": {
+      "positive": 76,
+      "negative": 56,
+      "p_exact": 0.09781221450141868
+     }
+    },
+    "p_split": {
+     "dialogues": 993,
+     "mean": -0.002,
+     "ci95": [
+      -0.0262,
+      0.0211
+     ],
+     "sign_test": {
+      "positive": 71,
+      "negative": 73,
+      "p_exact": 0.9336249535488027
+     }
+    },
+    "p_null_nat": {
+     "dialogues": 1004,
+     "mean": 0.008,
+     "ci95": [
+      -0.0129,
+      0.0279
+     ],
+     "sign_test": {
+      "positive": 57,
+      "negative": 49,
+      "p_exact": 0.49675439302894575
+     }
+    },
+    "p_unclear_nat": {
+     "dialogues": 1008,
+     "mean": 0.0159,
+     "ci95": [
+      -0.006,
+      0.0377
+     ],
+     "sign_test": {
+      "positive": 72,
+      "negative": 56,
+      "p_exact": 0.18468262705966285
+     }
+    }
+   },
+   "s1_type_hotel_unclear_minus_null": {
+    "dialogues": 1012,
+    "mean": -0.001,
+    "ci95": [
+     -0.0217,
+     0.0208
+    ],
+    "sign_test": {
+     "positive": 61,
+     "negative": 62,
+     "p_exact": 1.0
+    }
+   }
+  },
+  "gemma": {
+   "forms": {
+    "orig_f0": {
+     "s1_type_hotel": {
+      "reads": 1130,
+      "share": 0.2204
+     },
+     "t994_type_hotel": {
+      "reads": 989,
+      "share": 0.2508
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 636,
+      "share": 0.1132
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 636,
+      "share": 0.1509
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "orig_f1": {
+     "s1_type_hotel": {
+      "reads": 1134,
+      "share": 0.0273
+     },
+     "t994_type_hotel": {
+      "reads": 993,
+      "share": 0.0312
+     },
+     "s2_type_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "s1_booked_excludes_type": {
+      "reads": 638,
+      "share": 0.0063
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 638,
+      "share": 0.058
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 0,
+      "share": null
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 0,
+      "share": null
+     }
+    },
+    "p_define": {
+     "s1_type_hotel": {
+      "reads": 1128,
+      "share": 0.2411
+     },
+     "t994_type_hotel": {
+      "reads": 986,
+      "share": 0.2738
+     },
+     "s2_type_hotel": {
+      "reads": 543,
+      "share": 0.7643
+     },
+     "s1_booked_excludes_type": {
+      "reads": 635,
+      "share": 0.1276
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 635,
+      "share": 0.1654
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 291,
+      "share": 0.8351
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 232,
+      "share": 0.8707
+     }
+    },
+    "p_split": {
+     "s1_type_hotel": {
+      "reads": 1131,
+      "share": 0.252
+     },
+     "t994_type_hotel": {
+      "reads": 991,
+      "share": 0.2876
+     },
+     "s2_type_hotel": {
+      "reads": 545,
+      "share": 0.7486
+     },
+     "s1_booked_excludes_type": {
+      "reads": 636,
+      "share": 0.1321
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 636,
+      "share": 0.1682
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.802
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 233,
+      "share": 0.8326
+     },
+     "s1_type_preferred_hotel": {
+      "reads": 1131,
+      "share": 0.0097
+     },
+     "s2_required_or_preferred_hotel": {
+      "reads": 545,
+      "share": 0.811
+     },
+     "kept_required_or_preferred_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.8771
+     },
+     "kept_required_or_preferred_gold_and_brief_hotel": {
+      "reads": 233,
+      "share": 0.9099
+     },
+     "dialogues_preferred_hotel_where_f0_hotel": {
+      "dialogues": 247,
+      "share": 0.0283
+     }
+    },
+    "p_null_nat": {
+     "s1_type_hotel": {
+      "reads": 1129,
+      "share": 0.2161
+     },
+     "t994_type_hotel": {
+      "reads": 987,
+      "share": 0.2462
+     },
+     "s2_type_hotel": {
+      "reads": 538,
+      "share": 0.7156
+     },
+     "s1_booked_excludes_type": {
+      "reads": 635,
+      "share": 0.1008
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 635,
+      "share": 0.1354
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 287,
+      "share": 0.7944
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 229,
+      "share": 0.8603
+     }
+    },
+    "p_unclear_nat": {
+     "s1_type_hotel": {
+      "reads": 1131,
+      "share": 0.2255
+     },
+     "t994_type_hotel": {
+      "reads": 990,
+      "share": 0.2576
+     },
+     "s2_type_hotel": {
+      "reads": 544,
+      "share": 0.739
+     },
+     "s1_booked_excludes_type": {
+      "reads": 637,
+      "share": 0.113
+     },
+     "s1_booked_excludes_venue_all_fields": {
+      "reads": 637,
+      "share": 0.1429
+     },
+     "kept_gold_and_booked_hotel": {
+      "reads": 293,
+      "share": 0.8259
+     },
+     "kept_gold_and_brief_hotel": {
+      "reads": 232,
+      "share": 0.8707
+     },
+     "s1_type_unclear": {
+      "reads": 1131,
+      "share": 0.0292
+     }
+    }
+   },
+   "s1_type_hotel_f0_minus_form": {
+    "orig_f1": {
+     "dialogues": 1128,
+     "mean": 0.1933,
+     "ci95": [
+      0.172,
+      0.2145
+     ],
+     "sign_test": {
+      "positive": 218,
+      "negative": 0,
+      "p_exact": 4.7477838728798994e-66
+     }
+    },
+    "p_define": {
+     "dialogues": 1122,
+     "mean": -0.0223,
+     "ci95": [
+      -0.0339,
+      -0.0116
+     ],
+     "sign_test": {
+      "positive": 5,
+      "negative": 30,
+      "p_exact": 2.2361520677804947e-05
+     }
+    },
+    "p_split": {
+     "dialogues": 1125,
+     "mean": -0.032,
+     "ci95": [
+      -0.0462,
+      -0.0187
+     ],
+     "sign_test": {
+      "positive": 16,
+      "negative": 52,
+      "p_exact": 1.4074155775977473e-05
+     }
+    },
+    "p_null_nat": {
+     "dialogues": 1125,
+     "mean": 0.0044,
+     "ci95": [
+      -0.0044,
+      0.0133
+     ],
+     "sign_test": {
+      "positive": 16,
+      "negative": 11,
+      "p_exact": 0.44206833839416504
+     }
+    },
+    "p_unclear_nat": {
+     "dialogues": 1125,
+     "mean": -0.0053,
+     "ci95": [
+      -0.0151,
+      0.0044
+     ],
+     "sign_test": {
+      "positive": 14,
+      "negative": 20,
+      "p_exact": 0.39152830513194203
+     }
+    }
+   },
+   "s1_type_hotel_unclear_minus_null": {
+    "dialogues": 1124,
+    "mean": 0.0089,
+    "ci95": [
+     0.0009,
+     0.0178
+    ],
+    "sign_test": {
+     "positive": 16,
+     "negative": 6,
+     "p_exact": 0.052478790283203125
+    }
+   }
+  }
+ }
+}

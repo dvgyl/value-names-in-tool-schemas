@@ -1,0 +1,68 @@
+{
+ "post_hoc": true,
+ "rewrites": {
+  "h1": {
+   "file": "steer/edit_h.json",
+   "chars": 2410,
+   "interest_words": [],
+   "preference_words": []
+  },
+  "g1": {
+   "file": "steer/edit_g.json",
+   "chars": 2771,
+   "interest_words": [],
+   "preference_words": [
+    "recommended"
+   ]
+  },
+  "n1": {
+   "file": "release/edit.json",
+   "chars": 3795,
+   "interest_words": [],
+   "preference_words": []
+  },
+  "h2": {
+   "file": "steer2/edit_h2.json",
+   "chars": 3007,
+   "interest_words": [],
+   "preference_words": []
+  },
+  "h3": {
+   "file": "steer2/edit_h3.json",
+   "chars": 2833,
+   "interest_words": [],
+   "preference_words": [
+    "featured",
+    "featured"
+   ]
+  },
+  "g2": {
+   "file": "steer2/edit_g2.json",
+   "chars": 2734,
+   "interest_words": [],
+   "preference_words": []
+  },
+  "g3": {
+   "file": "steer2/edit_g3.json",
+   "chars": 3410,
+   "interest_words": [],
+   "preference_words": [
+    "featured",
+    "featured"
+   ]
+  },
+  "n2": {
+   "file": "steer2/edit_n2.json",
+   "chars": 3586,
+   "interest_words": [],
+   "preference_words": []
+  },
+  "n3": {
+   "file": "steer2/edit_n3.json",
+   "chars": 3916,
+   "interest_words": [],
+   "preference_words": []
+  }
+ },
+ "rewrites_with_an_interest_word": []
+}

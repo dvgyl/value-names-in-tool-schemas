@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code or these data, please cite the preprint."
+title: "How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid"
+type: software
+authors:
+  - family-names: Goyal
+    given-names: Dev D.
+    affiliation: Independent Researcher
+repository-code: "https://github.com/dvgyl/value-names-in-tool-schemas"
+url: "https://github.com/dvgyl/value-names-in-tool-schemas"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >-
+  Code, answer data, result files and the study protocol of a study of AI agents
+  that call tools with closed lists of allowed values. A traveller who asks for
+  "a hotel" can mean any place to stay, but the search tool accepts only the
+  values hotel and guesthouse. The study measures how the name of an allowed
+  value changes what the agent searches for, while every call stays valid. It
+  reports a registered test, a release test for schema updates, and an
+  evaluation of neural and symbolic repairs.
+keywords:
+  - AI agents
+  - tool use
+  - tool schemas
+  - large language models
+  - preregistration
+  - MultiWOZ
+identifiers:
+  - type: url
+    value: "https://osf.io/bv8q9"
+    description: "Registration A (the registered test)"
+  - type: url
+    value: "https://osf.io/jy3pd"
+    description: "Registration B (further registered tests)"
+preferred-citation:
+  type: article
+  status: preprint
+  title: "How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid"
+  authors:
+    - family-names: Goyal
+      given-names: Dev D.
+      affiliation: Independent Researcher
+  year: 2026
+  url: "https://github.com/dvgyl/value-names-in-tool-schemas"

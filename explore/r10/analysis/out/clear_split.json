@@ -1,0 +1,8033 @@
+{
+ "meta": {
+  "post_hoc": true,
+  "rule_sha256": "e8cd2490a137a888a3463420f7da4349f29b645fb780a72288400cbaa7291794",
+  "time": "2026-11-12T16:32:42+00:00",
+  "bootstrap": {
+   "draws": 2000,
+   "seed": 20261112
+  },
+  "min_n_for_interval": 5,
+  "clear": "hotel_only",
+  "unclear": "unclear",
+  "source1_folders": {
+   "sonnet": [
+    "era1_sonnet",
+    "erx_a1_sonnet",
+    "erx_a2_sonnet"
+   ],
+   "haiku": [
+    "era1_haiku"
+   ],
+   "opus": [
+    "era1_opus",
+    "erx_a2_opus"
+   ],
+   "sol": [
+    "era1_sol",
+    "erx_a3_sol"
+   ],
+   "luna": [
+    "era1_luna"
+   ],
+   "astra": [
+    "era1_astra"
+   ]
+  },
+  "source3_rows": {
+   "sonnet": 3103,
+   "haiku": 3103,
+   "sol": 2804,
+   "luna": 2804,
+   "deepseek": 2804,
+   "qwen": 2804,
+   "gemma": 2804
+  },
+  "sets": {
+   "a_hotel": "Source 1, tool calls at the first request: prefixes whose brief sets `type` = hotel",
+   "a_no_type": "Source 1, tool calls at the first request: prefixes whose brief sets no type",
+   "b_hotel": "Source 2, round-9 form runs: S2 full dialogues whose brief sets `type` = hotel",
+   "b_no_type": "Source 2, round-9 form runs: S1t full dialogues whose brief sets no type",
+   "c_hotel": "Source 3, held-out test stage 1: goal-hotel sample, full dialogues",
+   "c_no_type": "Source 3, held-out test stage 1: natural sample (the goal sets no type), full dialogues"
+  }
+ },
+ "counts": {
+  "a_hotel": {
+   "main": {
+    "unclear": 58,
+    "hotel_only": 1
+   },
+   "strict": {
+    "unclear": 58,
+    "hotel_only": 1
+   },
+   "dialogues": 59
+  },
+  "a_no_type": {
+   "main": {
+    "unclear": 448
+   },
+   "strict": {
+    "unclear": 448
+   },
+   "dialogues": 448
+  },
+  "b_hotel": {
+   "main": {
+    "unclear": 140,
+    "hotel_only": 89,
+    "guesthouse_only": 3,
+    "mixed": 1
+   },
+   "strict": {
+    "unclear": 179,
+    "hotel_only": 54
+   },
+   "dialogues": 233
+  },
+  "b_no_type": {
+   "main": {
+    "unclear": 802,
+    "hotel_only": 4,
+    "guesthouse_only": 1
+   },
+   "strict": {
+    "unclear": 802,
+    "hotel_only": 4,
+    "guesthouse_only": 1
+   },
+   "dialogues": 807
+  },
+  "c_hotel": {
+   "main": {
+    "unclear": 57,
+    "hotel_only": 20
+   },
+   "strict": {
+    "unclear": 67,
+    "hotel_only": 10
+   },
+   "dialogues": 77
+  },
+  "c_no_type": {
+   "main": {
+    "unclear": 210,
+    "hotel_only": 3
+   },
+   "strict": {
+    "unclear": 211,
+    "hotel_only": 2
+   },
+   "dialogues": 213
+  }
+ },
+ "clear_ids": {
+  "a_hotel": [
+   "PMUL4655"
+  ],
+  "a_no_type": [],
+  "b_hotel": [
+   "MUL0045",
+   "MUL0132",
+   "MUL0139",
+   "MUL0141",
+   "MUL0196",
+   "MUL0604",
+   "MUL0658",
+   "MUL0697",
+   "MUL1083",
+   "MUL1151",
+   "MUL1182",
+   "MUL1236",
+   "MUL1265",
+   "MUL1281",
+   "MUL1284",
+   "MUL1331",
+   "MUL1343",
+   "MUL1344",
+   "MUL1345",
+   "MUL1386",
+   "MUL2033",
+   "MUL2075",
+   "MUL2123",
+   "MUL2171",
+   "MUL2196",
+   "MUL2215",
+   "MUL2571",
+   "MUL2578",
+   "MUL2652",
+   "MUL2691",
+   "PMUL0016",
+   "PMUL0028",
+   "PMUL0103",
+   "PMUL0140",
+   "PMUL0255",
+   "PMUL0359",
+   "PMUL0409",
+   "PMUL0436",
+   "PMUL0472",
+   "PMUL1532",
+   "PMUL1655",
+   "PMUL1723",
+   "PMUL1728",
+   "PMUL1734",
+   "PMUL1866",
+   "PMUL1904",
+   "PMUL1986",
+   "PMUL1995",
+   "PMUL2616",
+   "PMUL2680",
+   "PMUL2714",
+   "PMUL2734",
+   "PMUL2767",
+   "PMUL2790",
+   "PMUL2890",
+   "PMUL2891",
+   "PMUL2892",
+   "PMUL2896",
+   "PMUL2916",
+   "PMUL2922",
+   "PMUL2927",
+   "PMUL3047",
+   "PMUL3114",
+   "PMUL3173",
+   "PMUL3175",
+   "PMUL3219",
+   "PMUL3312",
+   "PMUL3539",
+   "PMUL3571",
+   "PMUL3704",
+   "PMUL3736",
+   "PMUL3770",
+   "PMUL3811",
+   "PMUL3832",
+   "PMUL3936",
+   "PMUL3944",
+   "PMUL3965",
+   "PMUL4418",
+   "PMUL4427",
+   "PMUL4499",
+   "PMUL4652",
+   "PMUL4663",
+   "PMUL4704",
+   "PMUL4734",
+   "PMUL4794",
+   "PMUL4803",
+   "PMUL4816",
+   "PMUL4829",
+   "PMUL4904"
+  ],
+  "b_no_type": [
+   "MUL2528",
+   "MUL2632",
+   "PMUL1527",
+   "PMUL4817"
+  ],
+  "c_hotel": [
+   "MUL0012",
+   "MUL0032",
+   "MUL0113",
+   "MUL0148",
+   "MUL0706",
+   "MUL0707",
+   "MUL0731",
+   "MUL1045",
+   "MUL1117",
+   "MUL1379",
+   "MUL2065",
+   "MUL2177",
+   "PMUL1879",
+   "PMUL1949",
+   "PMUL2953",
+   "PMUL3883",
+   "PMUL3979",
+   "PMUL4446",
+   "PMUL4522",
+   "PMUL4643"
+  ],
+  "c_no_type": [
+   "MUL2086",
+   "MUL2526",
+   "PMUL1779"
+  ]
+ },
+ "checks": {
+  "source3_panel_mean_all_dialogues": {
+   "correct_values_kept": -0.29128,
+   "wrong_values": -0.129533
+  },
+  "source3_stage1_report": {
+   "wrong_values": -0.13,
+   "correct_values_kept": -0.291
+  }
+ },
+ "results": {
+  "1": {
+   "correct": {
+    "t1": {
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.514124,
+        "renamed": 0.045198,
+        "effect": -0.468927,
+        "effect_ci": [
+         -0.59887,
+         -0.350282
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 31,
+        "sign_p": 0.0,
+        "relative": -0.912088,
+        "relative_ci": [
+         -1.0,
+         -0.797872
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.505747,
+        "renamed": 0.028736,
+        "effect": -0.477011,
+        "effect_ci": [
+         -0.603448,
+         -0.362069
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 31,
+        "sign_p": 0.0,
+        "relative": -0.943182,
+        "relative_ci": [
+         -1.0,
+         -0.851064
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.514124,
+        "renamed": 0.045198,
+        "effect": -0.468927,
+        "effect_ci": [
+         -0.59887,
+         -0.350282
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 31,
+        "sign_p": 0.0,
+        "relative": -0.912088,
+        "relative_ci": [
+         -1.0,
+         -0.797872
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.505747,
+        "renamed": 0.028736,
+        "effect": -0.477011,
+        "effect_ci": [
+         -0.603448,
+         -0.362069
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 31,
+        "sign_p": 0.0,
+        "relative": -0.943182,
+        "relative_ci": [
+         -1.0,
+         -0.851064
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 58,
+        "legacy": 0.112069,
+        "renamed": 0.025862,
+        "effect": -0.086207,
+        "effect_ci": [
+         -0.163793,
+         -0.025862
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 6,
+        "sign_p": 0.03125,
+        "relative": -0.769231,
+        "relative_ci": [
+         -1.0,
+         -0.4
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.096491,
+        "renamed": 0.008772,
+        "effect": -0.087719,
+        "effect_ci": [
+         -0.166667,
+         -0.026316
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 6,
+        "sign_p": 0.03125,
+        "relative": -0.909091,
+        "relative_ci": null
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 58,
+        "legacy": 0.112069,
+        "renamed": 0.025862,
+        "effect": -0.086207,
+        "effect_ci": [
+         -0.163793,
+         -0.025862
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 6,
+        "sign_p": 0.03125,
+        "relative": -0.769231,
+        "relative_ci": [
+         -1.0,
+         -0.4
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.096491,
+        "renamed": 0.008772,
+        "effect": -0.087719,
+        "effect_ci": [
+         -0.166667,
+         -0.026316
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 6,
+        "sign_p": 0.03125,
+        "relative": -0.909091,
+        "relative_ci": null
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "opus": {
+      "main": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.711864,
+        "renamed": 0.20339,
+        "effect": -0.508475,
+        "effect_ci": [
+         -0.627119,
+         -0.389831
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 35,
+        "sign_p": 0.0,
+        "relative": -0.714286,
+        "relative_ci": [
+         -0.835616,
+         -0.582278
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.706897,
+        "renamed": 0.189655,
+        "effect": -0.517241,
+        "effect_ci": [
+         -0.62931,
+         -0.396552
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 35,
+        "sign_p": 0.0,
+        "relative": -0.731707,
+        "relative_ci": [
+         -0.853659,
+         -0.6
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.711864,
+        "renamed": 0.20339,
+        "effect": -0.508475,
+        "effect_ci": [
+         -0.627119,
+         -0.389831
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 35,
+        "sign_p": 0.0,
+        "relative": -0.714286,
+        "relative_ci": [
+         -0.835616,
+         -0.582278
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.706897,
+        "renamed": 0.189655,
+        "effect": -0.517241,
+        "effect_ci": [
+         -0.62931,
+         -0.396552
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 35,
+        "sign_p": 0.0,
+        "relative": -0.731707,
+        "relative_ci": [
+         -0.853659,
+         -0.6
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.80791,
+        "renamed": 0.237288,
+        "effect": -0.570621,
+        "effect_ci": [
+         -0.683616,
+         -0.451977
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.706294,
+        "relative_ci": [
+         -0.829457,
+         -0.570552
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.804598,
+        "renamed": 0.224138,
+        "effect": -0.58046,
+        "effect_ci": [
+         -0.695402,
+         -0.45977
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.721429,
+        "relative_ci": [
+         -0.833333,
+         -0.592593
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.80791,
+        "renamed": 0.237288,
+        "effect": -0.570621,
+        "effect_ci": [
+         -0.683616,
+         -0.451977
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.706294,
+        "relative_ci": [
+         -0.829457,
+         -0.570552
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.804598,
+        "renamed": 0.224138,
+        "effect": -0.58046,
+        "effect_ci": [
+         -0.695402,
+         -0.45977
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.721429,
+        "relative_ci": [
+         -0.833333,
+         -0.592593
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.355932,
+        "renamed": 0.016949,
+        "effect": -0.338983,
+        "effect_ci": [
+         -0.466102,
+         -0.220339
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 23,
+        "sign_p": 0.0,
+        "relative": -0.952381,
+        "relative_ci": [
+         -1.0,
+         -0.837838
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.344828,
+        "renamed": 0.0,
+        "effect": -0.344828,
+        "effect_ci": [
+         -0.465517,
+         -0.232759
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 23,
+        "sign_p": 0.0,
+        "relative": -1.0,
+        "relative_ci": [
+         -1.0,
+         -1.0
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.355932,
+        "renamed": 0.016949,
+        "effect": -0.338983,
+        "effect_ci": [
+         -0.466102,
+         -0.220339
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 23,
+        "sign_p": 0.0,
+        "relative": -0.952381,
+        "relative_ci": [
+         -1.0,
+         -0.837838
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.344828,
+        "renamed": 0.0,
+        "effect": -0.344828,
+        "effect_ci": [
+         -0.465517,
+         -0.232759
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 23,
+        "sign_p": 0.0,
+        "relative": -1.0,
+        "relative_ci": [
+         -1.0,
+         -1.0
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "astra": {
+      "main": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.915254,
+        "renamed": 0.118644,
+        "effect": -0.79661,
+        "effect_ci": [
+         -0.898305,
+         -0.694915
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 47,
+        "sign_p": 0.0,
+        "relative": -0.87037,
+        "relative_ci": [
+         -0.96,
+         -0.775862
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.913793,
+        "renamed": 0.103448,
+        "effect": -0.810345,
+        "effect_ci": [
+         -0.913793,
+         -0.706897
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 47,
+        "sign_p": 0.0,
+        "relative": -0.886792,
+        "relative_ci": [
+         -0.962963,
+         -0.792453
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.915254,
+        "renamed": 0.118644,
+        "effect": -0.79661,
+        "effect_ci": [
+         -0.898305,
+         -0.694915
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 47,
+        "sign_p": 0.0,
+        "relative": -0.87037,
+        "relative_ci": [
+         -0.96,
+         -0.775862
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.913793,
+        "renamed": 0.103448,
+        "effect": -0.810345,
+        "effect_ci": [
+         -0.913793,
+         -0.706897
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 47,
+        "sign_p": 0.0,
+        "relative": -0.886792,
+        "relative_ci": [
+         -0.962963,
+         -0.792453
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "pooled": {
+      "main": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.572034,
+        "renamed": 0.10951,
+        "effect": -0.462524,
+        "effect_ci": [
+         -0.518079,
+         -0.408663
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 55,
+        "sign_p": 0.0,
+        "relative": -0.80856,
+        "relative_ci": [
+         -0.886809,
+         -0.726721
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.564655,
+        "renamed": 0.094157,
+        "effect": -0.470498,
+        "effect_ci": [
+         -0.525287,
+         -0.414751
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 55,
+        "sign_p": 0.0,
+        "relative": -0.833249,
+        "relative_ci": [
+         -0.896128,
+         -0.765465
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 59,
+        "legacy": 0.572034,
+        "renamed": 0.10951,
+        "effect": -0.462524,
+        "effect_ci": [
+         -0.518079,
+         -0.408663
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 55,
+        "sign_p": 0.0,
+        "relative": -0.80856,
+        "relative_ci": [
+         -0.886809,
+         -0.726721
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 58,
+        "legacy": 0.564655,
+        "renamed": 0.094157,
+        "effect": -0.470498,
+        "effect_ci": [
+         -0.525287,
+         -0.414751
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 55,
+        "sign_p": 0.0,
+        "relative": -0.833249,
+        "relative_ci": [
+         -0.896128,
+         -0.765465
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     }
+    }
+   },
+   "unsupported": {
+    "t1": {
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.221726,
+        "renamed": 0.030506,
+        "effect": -0.19122,
+        "effect_ci": [
+         -0.228423,
+         -0.15625
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 92,
+        "sign_p": 0.0,
+        "relative": -0.862416,
+        "relative_ci": [
+         -0.925764,
+         -0.797571
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.221726,
+        "renamed": 0.030506,
+        "effect": -0.19122,
+        "effect_ci": [
+         -0.228423,
+         -0.15625
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 92,
+        "sign_p": 0.0,
+        "relative": -0.862416,
+        "relative_ci": [
+         -0.925764,
+         -0.797571
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.221726,
+        "renamed": 0.030506,
+        "effect": -0.19122,
+        "effect_ci": [
+         -0.228423,
+         -0.15625
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 92,
+        "sign_p": 0.0,
+        "relative": -0.862416,
+        "relative_ci": [
+         -0.925764,
+         -0.797571
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.221726,
+        "renamed": 0.030506,
+        "effect": -0.19122,
+        "effect_ci": [
+         -0.228423,
+         -0.15625
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 92,
+        "sign_p": 0.0,
+        "relative": -0.862416,
+        "relative_ci": [
+         -0.925764,
+         -0.797571
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.071429,
+        "renamed": 0.013393,
+        "effect": -0.058036,
+        "effect_ci": [
+         -0.079241,
+         -0.039062
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 32,
+        "sign_p": 0.0,
+        "relative": -0.8125,
+        "relative_ci": [
+         -0.9375,
+         -0.679245
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.071429,
+        "renamed": 0.013393,
+        "effect": -0.058036,
+        "effect_ci": [
+         -0.079241,
+         -0.039062
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 32,
+        "sign_p": 0.0,
+        "relative": -0.8125,
+        "relative_ci": [
+         -0.9375,
+         -0.679245
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.071429,
+        "renamed": 0.013393,
+        "effect": -0.058036,
+        "effect_ci": [
+         -0.079241,
+         -0.039062
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 32,
+        "sign_p": 0.0,
+        "relative": -0.8125,
+        "relative_ci": [
+         -0.9375,
+         -0.679245
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.071429,
+        "renamed": 0.013393,
+        "effect": -0.058036,
+        "effect_ci": [
+         -0.079241,
+         -0.039062
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 32,
+        "sign_p": 0.0,
+        "relative": -0.8125,
+        "relative_ci": [
+         -0.9375,
+         -0.679245
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "opus": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.258929,
+        "renamed": 0.040179,
+        "effect": -0.21875,
+        "effect_ci": [
+         -0.256696,
+         -0.183036
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 115,
+        "sign_p": 0.0,
+        "relative": -0.844828,
+        "relative_ci": [
+         -0.903382,
+         -0.783186
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.258929,
+        "renamed": 0.040179,
+        "effect": -0.21875,
+        "effect_ci": [
+         -0.256696,
+         -0.183036
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 115,
+        "sign_p": 0.0,
+        "relative": -0.844828,
+        "relative_ci": [
+         -0.903382,
+         -0.783186
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.258929,
+        "renamed": 0.040179,
+        "effect": -0.21875,
+        "effect_ci": [
+         -0.256696,
+         -0.183036
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 115,
+        "sign_p": 0.0,
+        "relative": -0.844828,
+        "relative_ci": [
+         -0.903382,
+         -0.783186
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.258929,
+        "renamed": 0.040179,
+        "effect": -0.21875,
+        "effect_ci": [
+         -0.256696,
+         -0.183036
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 115,
+        "sign_p": 0.0,
+        "relative": -0.844828,
+        "relative_ci": [
+         -0.903382,
+         -0.783186
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.356399,
+        "renamed": 0.116815,
+        "effect": -0.239583,
+        "effect_ci": [
+         -0.27753,
+         -0.203125
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 129,
+        "sign_p": 0.0,
+        "relative": -0.672234,
+        "relative_ci": [
+         -0.739623,
+         -0.602362
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.356399,
+        "renamed": 0.116815,
+        "effect": -0.239583,
+        "effect_ci": [
+         -0.27753,
+         -0.203125
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 129,
+        "sign_p": 0.0,
+        "relative": -0.672234,
+        "relative_ci": [
+         -0.739623,
+         -0.602362
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.356399,
+        "renamed": 0.116815,
+        "effect": -0.239583,
+        "effect_ci": [
+         -0.27753,
+         -0.203125
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 129,
+        "sign_p": 0.0,
+        "relative": -0.672234,
+        "relative_ci": [
+         -0.739623,
+         -0.602362
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.356399,
+        "renamed": 0.116815,
+        "effect": -0.239583,
+        "effect_ci": [
+         -0.27753,
+         -0.203125
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 129,
+        "sign_p": 0.0,
+        "relative": -0.672234,
+        "relative_ci": [
+         -0.739623,
+         -0.602362
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.1875,
+        "renamed": 0.00558,
+        "effect": -0.18192,
+        "effect_ci": [
+         -0.216518,
+         -0.148438
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 91,
+        "sign_p": 0.0,
+        "relative": -0.970238,
+        "relative_ci": [
+         -1.0,
+         -0.931818
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.1875,
+        "renamed": 0.00558,
+        "effect": -0.18192,
+        "effect_ci": [
+         -0.216518,
+         -0.148438
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 91,
+        "sign_p": 0.0,
+        "relative": -0.970238,
+        "relative_ci": [
+         -1.0,
+         -0.931818
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.1875,
+        "renamed": 0.00558,
+        "effect": -0.18192,
+        "effect_ci": [
+         -0.216518,
+         -0.148438
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 91,
+        "sign_p": 0.0,
+        "relative": -0.970238,
+        "relative_ci": [
+         -1.0,
+         -0.931818
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.1875,
+        "renamed": 0.00558,
+        "effect": -0.18192,
+        "effect_ci": [
+         -0.216518,
+         -0.148438
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 91,
+        "sign_p": 0.0,
+        "relative": -0.970238,
+        "relative_ci": [
+         -1.0,
+         -0.931818
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "astra": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.363839,
+        "renamed": 0.053571,
+        "effect": -0.310268,
+        "effect_ci": [
+         -0.352679,
+         -0.270089
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 139,
+        "sign_p": 0.0,
+        "relative": -0.852761,
+        "relative_ci": [
+         -0.904192,
+         -0.796407
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.363839,
+        "renamed": 0.053571,
+        "effect": -0.310268,
+        "effect_ci": [
+         -0.352679,
+         -0.270089
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 139,
+        "sign_p": 0.0,
+        "relative": -0.852761,
+        "relative_ci": [
+         -0.904192,
+         -0.796407
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.363839,
+        "renamed": 0.053571,
+        "effect": -0.310268,
+        "effect_ci": [
+         -0.352679,
+         -0.270089
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 139,
+        "sign_p": 0.0,
+        "relative": -0.852761,
+        "relative_ci": [
+         -0.904192,
+         -0.796407
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.363839,
+        "renamed": 0.053571,
+        "effect": -0.310268,
+        "effect_ci": [
+         -0.352679,
+         -0.270089
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 139,
+        "sign_p": 0.0,
+        "relative": -0.852761,
+        "relative_ci": [
+         -0.904192,
+         -0.796407
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "pooled": {
+      "main": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.243304,
+        "renamed": 0.043341,
+        "effect": -0.199963,
+        "effect_ci": [
+         -0.225322,
+         -0.174355
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 192,
+        "sign_p": 0.0,
+        "relative": -0.821865,
+        "relative_ci": [
+         -0.861232,
+         -0.781058
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.243304,
+        "renamed": 0.043341,
+        "effect": -0.199963,
+        "effect_ci": [
+         -0.225322,
+         -0.174355
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 192,
+        "sign_p": 0.0,
+        "relative": -0.821865,
+        "relative_ci": [
+         -0.861232,
+         -0.781058
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 448,
+        "legacy": 0.243304,
+        "renamed": 0.043341,
+        "effect": -0.199963,
+        "effect_ci": [
+         -0.225322,
+         -0.174355
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 192,
+        "sign_p": 0.0,
+        "relative": -0.821865,
+        "relative_ci": [
+         -0.861232,
+         -0.781058
+        ]
+       },
+       "unclear": {
+        "dialogues": 448,
+        "legacy": 0.243304,
+        "renamed": 0.043341,
+        "effect": -0.199963,
+        "effect_ci": [
+         -0.225322,
+         -0.174355
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 192,
+        "sign_p": 0.0,
+        "relative": -0.821865,
+        "relative_ci": [
+         -0.861232,
+         -0.781058
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     }
+    }
+   }
+  },
+  "2": {
+   "correct": {
+    "f1": {
+     "deepseek": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.656652,
+        "renamed": 0.369099,
+        "effect": -0.287554,
+        "effect_ci": [
+         -0.356223,
+         -0.218884
+        ],
+        "renamed_higher": 9,
+        "renamed_lower": 76,
+        "sign_p": 0.0,
+        "relative": -0.437908,
+        "relative_ci": [
+         -0.527027,
+         -0.346939
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.808989,
+        "renamed": 0.606742,
+        "effect": -0.202247,
+        "effect_ci": [
+         -0.314607,
+         -0.078652
+        ],
+        "renamed_higher": 7,
+        "renamed_lower": 25,
+        "sign_p": 0.002102,
+        "relative": -0.25,
+        "relative_ci": [
+         -0.382353,
+         -0.107692
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 0.666667,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.333333,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.55,
+        "renamed": 0.207143,
+        "effect": -0.342857,
+        "effect_ci": [
+         -0.428571,
+         -0.257143
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 50,
+        "sign_p": 0.0,
+        "relative": -0.623377,
+        "relative_ci": [
+         -0.74026,
+         -0.506667
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.14061,
+        "effect_ci": [
+         0.000722,
+         0.285634
+        ],
+        "relative": 0.373377,
+        "relative_ci": [
+         0.197149,
+         0.549617
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.656652,
+        "renamed": 0.369099,
+        "effect": -0.287554,
+        "effect_ci": [
+         -0.356223,
+         -0.218884
+        ],
+        "renamed_higher": 9,
+        "renamed_lower": 76,
+        "sign_p": 0.0,
+        "relative": -0.437908,
+        "relative_ci": [
+         -0.527027,
+         -0.346939
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.851852,
+        "renamed": 0.796296,
+        "effect": -0.055556,
+        "effect_ci": [
+         -0.185185,
+         0.074074
+        ],
+        "renamed_higher": 5,
+        "renamed_lower": 8,
+        "sign_p": 0.581055,
+        "relative": -0.065217,
+        "relative_ci": [
+         -0.208333,
+         0.095238
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.597765,
+        "renamed": 0.240223,
+        "effect": -0.357542,
+        "effect_ci": [
+         -0.435754,
+         -0.27933
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 68,
+        "sign_p": 0.0,
+        "relative": -0.598131,
+        "relative_ci": [
+         -0.692308,
+         -0.491667
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.301986,
+        "effect_ci": [
+         0.144424,
+         0.450134
+        ],
+        "relative": 0.532913,
+        "relative_ci": [
+         0.357618,
+         0.72266
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.75,
+       "renamed": 0.333333,
+       "effect": -0.416667,
+       "effect_ci": [
+        -0.611111,
+        -0.222222
+       ],
+       "renamed_higher": 2,
+       "renamed_lower": 17,
+       "sign_p": 0.000729,
+       "relative": -0.555556,
+       "relative_ci": [
+        -0.76,
+        -0.321429
+       ]
+      }
+     },
+     "gemma": {
+      "main": {
+       "all": {
+        "dialogues": 232,
+        "legacy": 0.857759,
+        "renamed": 0.491379,
+        "effect": -0.366379,
+        "effect_ci": [
+         -0.426724,
+         -0.310345
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 85,
+        "sign_p": 0.0,
+        "relative": -0.427136,
+        "relative_ci": [
+         -0.495098,
+         -0.358974
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 1.0,
+        "renamed": 0.898876,
+        "effect": -0.101124,
+        "effect_ci": [
+         -0.168539,
+         -0.044944
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 9,
+        "sign_p": 0.003906,
+        "relative": -0.101124,
+        "relative_ci": [
+         -0.168539,
+         -0.044944
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 0.666667,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.333333,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 139,
+        "legacy": 0.76259,
+        "renamed": 0.223022,
+        "effect": -0.539568,
+        "effect_ci": [
+         -0.625899,
+         -0.460432
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 75,
+        "sign_p": 0.0,
+        "relative": -0.707547,
+        "relative_ci": [
+         -0.798077,
+         -0.62037
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.438445,
+        "effect_ci": [
+         0.333684,
+         0.540943
+        ],
+        "relative": 0.606424,
+        "relative_ci": [
+         0.504452,
+         0.711999
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 232,
+        "legacy": 0.857759,
+        "renamed": 0.491379,
+        "effect": -0.366379,
+        "effect_ci": [
+         -0.426724,
+         -0.310345
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 85,
+        "sign_p": 0.0,
+        "relative": -0.427136,
+        "relative_ci": [
+         -0.495098,
+         -0.358974
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 178,
+        "legacy": 0.814607,
+        "renamed": 0.337079,
+        "effect": -0.477528,
+        "effect_ci": [
+         -0.550562,
+         -0.404494
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 85,
+        "sign_p": 0.0,
+        "relative": -0.586207,
+        "relative_ci": [
+         -0.666667,
+         -0.503497
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.477528,
+        "effect_ci": [
+         0.404494,
+         0.550562
+        ],
+        "relative": 0.586207,
+        "relative_ci": [
+         0.503546,
+         0.666667
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 1.0,
+       "renamed": 0.75,
+       "effect": -0.25,
+       "effect_ci": [
+        -0.388889,
+        -0.111111
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 9,
+       "sign_p": 0.003906,
+       "relative": -0.25,
+       "relative_ci": [
+        -0.388889,
+        -0.111111
+       ]
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.559371,
+        "renamed": 0.30186,
+        "effect": -0.257511,
+        "effect_ci": [
+         -0.311874,
+         -0.204578
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 76,
+        "sign_p": 0.0,
+        "relative": -0.460358,
+        "relative_ci": [
+         -0.541353,
+         -0.375598
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.895131,
+        "renamed": 0.561798,
+        "effect": -0.333333,
+        "effect_ci": [
+         -0.430712,
+         -0.235955
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.372385,
+        "relative_ci": [
+         -0.478261,
+         -0.267782
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 0.555556,
+        "effect": -0.444444,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -0.444444,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.333333,
+        "renamed": 0.12619,
+        "effect": -0.207143,
+        "effect_ci": [
+         -0.27381,
+         -0.140476
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 36,
+        "sign_p": 0.0,
+        "relative": -0.621429,
+        "relative_ci": [
+         -0.754386,
+         -0.488889
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": -0.12619,
+        "effect_ci": [
+         -0.242616,
+         -0.011129
+        ],
+        "relative": 0.249044,
+        "relative_ci": [
+         0.077024,
+         0.415822
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.559371,
+        "renamed": 0.30186,
+        "effect": -0.257511,
+        "effect_ci": [
+         -0.311874,
+         -0.204578
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 76,
+        "sign_p": 0.0,
+        "relative": -0.460358,
+        "relative_ci": [
+         -0.541353,
+         -0.375598
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.919753,
+        "renamed": 0.796296,
+        "effect": -0.123457,
+        "effect_ci": [
+         -0.216049,
+         -0.024691
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 12,
+        "sign_p": 0.012939,
+        "relative": -0.134228,
+        "relative_ci": [
+         -0.23741,
+         -0.028571
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.450652,
+        "renamed": 0.1527,
+        "effect": -0.297952,
+        "effect_ci": [
+         -0.359404,
+         -0.232775
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 64,
+        "sign_p": 0.0,
+        "relative": -0.661157,
+        "relative_ci": [
+         -0.753086,
+         -0.559633
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.174495,
+        "effect_ci": [
+         0.060246,
+         0.282088
+        ],
+        "relative": 0.526929,
+        "relative_ci": [
+         0.383493,
+         0.658342
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.861111,
+       "renamed": 0.222222,
+       "effect": -0.638889,
+       "effect_ci": [
+        -0.777778,
+        -0.490741
+       ],
+       "renamed_higher": 1,
+       "renamed_lower": 26,
+       "sign_p": 0.0,
+       "relative": -0.741935,
+       "relative_ci": [
+        -0.866667,
+        -0.6
+       ]
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.796853,
+        "renamed": 0.341917,
+        "effect": -0.454936,
+        "effect_ci": [
+         -0.513591,
+         -0.39485
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 128,
+        "sign_p": 0.0,
+        "relative": -0.570916,
+        "relative_ci": [
+         -0.636029,
+         -0.505576
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.992509,
+        "renamed": 0.614232,
+        "effect": -0.378277,
+        "effect_ci": [
+         -0.475655,
+         -0.284644
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 40,
+        "sign_p": 0.0,
+        "relative": -0.381132,
+        "relative_ci": [
+         -0.477444,
+         -0.28839
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 0.333333,
+        "effect": -0.666667,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -0.666667,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.666667,
+        "renamed": 0.164286,
+        "effect": -0.502381,
+        "effect_ci": [
+         -0.578571,
+         -0.42619
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 85,
+        "sign_p": 0.0,
+        "relative": -0.753571,
+        "relative_ci": [
+         -0.83,
+         -0.669388
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.124104,
+        "effect_ci": [
+         0.007009,
+         0.237801
+        ],
+        "relative": 0.372439,
+        "relative_ci": [
+         0.251968,
+         0.49434
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.796853,
+        "renamed": 0.341917,
+        "effect": -0.454936,
+        "effect_ci": [
+         -0.513591,
+         -0.39485
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 128,
+        "sign_p": 0.0,
+        "relative": -0.570916,
+        "relative_ci": [
+         -0.636029,
+         -0.505576
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.993827,
+        "renamed": 0.87037,
+        "effect": -0.123457,
+        "effect_ci": [
+         -0.216049,
+         -0.04321
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 9,
+        "sign_p": 0.021484,
+        "relative": -0.124224,
+        "relative_ci": [
+         -0.216049,
+         -0.045161
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.73743,
+        "renamed": 0.182495,
+        "effect": -0.554935,
+        "effect_ci": [
+         -0.61825,
+         -0.486034
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 119,
+        "sign_p": 0.0,
+        "relative": -0.752525,
+        "relative_ci": [
+         -0.817232,
+         -0.682809
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.431478,
+        "effect_ci": [
+         0.325436,
+         0.53045
+        ],
+        "relative": 0.628302,
+        "relative_ci": [
+         0.518364,
+         0.731436
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.990741,
+       "renamed": 0.240741,
+       "effect": -0.75,
+       "effect_ci": [
+        -0.861111,
+        -0.62037
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 31,
+       "sign_p": 0.0,
+       "relative": -0.757009,
+       "relative_ci": [
+        -0.869159,
+        -0.62963
+       ]
+      }
+     },
+     "qwen": {
+      "main": {
+       "all": {
+        "dialogues": 198,
+        "legacy": 0.651515,
+        "renamed": 0.277778,
+        "effect": -0.373737,
+        "effect_ci": [
+         -0.454545,
+         -0.292929
+        ],
+        "renamed_higher": 8,
+        "renamed_lower": 82,
+        "sign_p": 0.0,
+        "relative": -0.573643,
+        "relative_ci": [
+         -0.664286,
+         -0.478261
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 73,
+        "legacy": 0.835616,
+        "renamed": 0.479452,
+        "effect": -0.356164,
+        "effect_ci": [
+         -0.493151,
+         -0.219178
+        ],
+        "renamed_higher": 5,
+        "renamed_lower": 31,
+        "sign_p": 1.3e-05,
+        "relative": -0.42623,
+        "relative_ci": [
+         -0.564516,
+         -0.280702
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 0.666667,
+        "renamed": 0.0,
+        "effect": -0.666667,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 0.0,
+        "effect": -1.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 121,
+        "legacy": 0.53719,
+        "renamed": 0.165289,
+        "effect": -0.371901,
+        "effect_ci": [
+         -0.471074,
+         -0.272727
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 48,
+        "sign_p": 0.0,
+        "relative": -0.692308,
+        "relative_ci": [
+         -0.810345,
+         -0.560606
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.015736,
+        "effect_ci": [
+         -0.1491,
+         0.194271
+        ],
+        "relative": 0.266078,
+        "relative_ci": [
+         0.07957,
+         0.459216
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 198,
+        "legacy": 0.651515,
+        "renamed": 0.277778,
+        "effect": -0.373737,
+        "effect_ci": [
+         -0.454545,
+         -0.292929
+        ],
+        "renamed_higher": 8,
+        "renamed_lower": 82,
+        "sign_p": 0.0,
+        "relative": -0.573643,
+        "relative_ci": [
+         -0.664286,
+         -0.478261
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 42,
+        "legacy": 0.857143,
+        "renamed": 0.714286,
+        "effect": -0.142857,
+        "effect_ci": [
+         -0.309524,
+         0.02381
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 10,
+        "sign_p": 0.179565,
+        "relative": -0.166667,
+        "relative_ci": [
+         -0.342105,
+         0.030303
+        ]
+       },
+       "unclear": {
+        "dialogues": 156,
+        "legacy": 0.596154,
+        "renamed": 0.160256,
+        "effect": -0.435897,
+        "effect_ci": [
+         -0.519231,
+         -0.346154
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 72,
+        "sign_p": 0.0,
+        "relative": -0.731183,
+        "relative_ci": [
+         -0.822917,
+         -0.628571
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.29304,
+        "effect_ci": [
+         0.097985,
+         0.47619
+        ],
+        "relative": 0.564516,
+        "relative_ci": [
+         0.349673,
+         0.7691
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 32,
+       "legacy": 0.8125,
+       "renamed": 0.15625,
+       "effect": -0.65625,
+       "effect_ci": [
+        -0.84375,
+        -0.4375
+       ],
+       "renamed_higher": 1,
+       "renamed_lower": 22,
+       "sign_p": 6e-06,
+       "relative": -0.807692,
+       "relative_ci": [
+        -0.961538,
+        -0.625
+       ]
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 103,
+        "legacy": 0.980583,
+        "renamed": 0.796117,
+        "effect": -0.184466,
+        "effect_ci": [
+         -0.271845,
+         -0.116505
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 19,
+        "sign_p": 4e-06,
+        "relative": -0.188119,
+        "relative_ci": [
+         -0.271845,
+         -0.117647
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 46,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.964912,
+        "renamed": 0.631579,
+        "effect": -0.333333,
+        "effect_ci": [
+         -0.45614,
+         -0.210526
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 19,
+        "sign_p": 4e-06,
+        "relative": -0.345455,
+        "relative_ci": [
+         -0.472727,
+         -0.222222
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.333333,
+        "effect_ci": [
+         0.210526,
+         0.45614
+        ],
+        "relative": 0.345455,
+        "relative_ci": [
+         0.222222,
+         0.472727
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 103,
+        "legacy": 0.980583,
+        "renamed": 0.796117,
+        "effect": -0.184466,
+        "effect_ci": [
+         -0.271845,
+         -0.116505
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 19,
+        "sign_p": 4e-06,
+        "relative": -0.188119,
+        "relative_ci": [
+         -0.271845,
+         -0.117647
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 27,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 76,
+        "legacy": 0.973684,
+        "renamed": 0.723684,
+        "effect": -0.25,
+        "effect_ci": [
+         -0.355263,
+         -0.157895
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 19,
+        "sign_p": 4e-06,
+        "relative": -0.256757,
+        "relative_ci": [
+         -0.364865,
+         -0.16
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.25,
+        "effect_ci": [
+         0.157895,
+         0.342105
+        ],
+        "relative": 0.256757,
+        "relative_ci": [
+         0.16,
+         0.355263
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 19,
+       "legacy": 1.0,
+       "renamed": 1.0,
+       "effect": 0.0,
+       "effect_ci": [
+        0.0,
+        0.0
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 0,
+       "sign_p": 1.0,
+       "relative": 0.0,
+       "relative_ci": [
+        0.0,
+        0.0
+       ]
+      }
+     },
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.839056,
+        "renamed": 0.587983,
+        "effect": -0.251073,
+        "effect_ci": [
+         -0.306867,
+         -0.195279
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 63,
+        "sign_p": 0.0,
+        "relative": -0.299233,
+        "relative_ci": [
+         -0.361979,
+         -0.235589
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 1.0,
+        "renamed": 0.94382,
+        "effect": -0.05618,
+        "effect_ci": [
+         -0.106742,
+         -0.016854
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 6,
+        "sign_p": 0.03125,
+        "relative": -0.05618,
+        "relative_ci": [
+         -0.106742,
+         -0.016854
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.732143,
+        "renamed": 0.35,
+        "effect": -0.382143,
+        "effect_ci": [
+         -0.471429,
+         -0.303571
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 57,
+        "sign_p": 0.0,
+        "relative": -0.521951,
+        "relative_ci": [
+         -0.623656,
+         -0.427861
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.325963,
+        "effect_ci": [
+         0.235634,
+         0.421388
+        ],
+        "relative": 0.465771,
+        "relative_ci": [
+         0.362645,
+         0.574988
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.839056,
+        "renamed": 0.587983,
+        "effect": -0.251073,
+        "effect_ci": [
+         -0.306867,
+         -0.195279
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 63,
+        "sign_p": 0.0,
+        "relative": -0.299233,
+        "relative_ci": [
+         -0.361979,
+         -0.235589
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.790503,
+        "renamed": 0.463687,
+        "effect": -0.326816,
+        "effect_ci": [
+         -0.396648,
+         -0.259777
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 63,
+        "sign_p": 0.0,
+        "relative": -0.413428,
+        "relative_ci": [
+         -0.491409,
+         -0.335793
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.326816,
+        "effect_ci": [
+         0.26257,
+         0.396648
+        ],
+        "relative": 0.413428,
+        "relative_ci": [
+         0.335664,
+         0.496644
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 1.0,
+       "renamed": 0.861111,
+       "effect": -0.138889,
+       "effect_ci": [
+        -0.25,
+        -0.041667
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 6,
+       "sign_p": 0.03125,
+       "relative": -0.138889,
+       "relative_ci": [
+        -0.25,
+        -0.041667
+       ]
+      }
+     },
+     "pooled": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.744785,
+        "renamed": 0.423789,
+        "effect": -0.320996,
+        "effect_ci": [
+         -0.356349,
+         -0.285377
+        ],
+        "renamed_higher": 8,
+        "renamed_lower": 180,
+        "sign_p": 0.0,
+        "relative": -0.430991,
+        "relative_ci": [
+         -0.481412,
+         -0.383335
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.929945,
+        "renamed": 0.715775,
+        "effect": -0.21417,
+        "effect_ci": [
+         -0.269074,
+         -0.166381
+        ],
+        "renamed_higher": 7,
+        "renamed_lower": 59,
+        "sign_p": 0.0,
+        "relative": -0.230304,
+        "relative_ci": [
+         -0.288097,
+         -0.179501
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 0.944444,
+        "renamed": 0.537037,
+        "effect": -0.407407,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -0.431373,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 0.833333,
+        "effect": -0.166667,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.166667,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.620975,
+        "renamed": 0.232817,
+        "effect": -0.388158,
+        "effect_ci": [
+         -0.431049,
+         -0.345329
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 117,
+        "sign_p": 0.0,
+        "relative": -0.625078,
+        "relative_ci": [
+         -0.696099,
+         -0.560513
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.173988,
+        "effect_ci": [
+         0.107529,
+         0.241493
+        ],
+        "relative": 0.394774,
+        "relative_ci": [
+         0.313003,
+         0.483125
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.744785,
+        "renamed": 0.423789,
+        "effect": -0.320996,
+        "effect_ci": [
+         -0.356349,
+         -0.285377
+        ],
+        "renamed_higher": 8,
+        "renamed_lower": 180,
+        "sign_p": 0.0,
+        "relative": -0.430991,
+        "relative_ci": [
+         -0.481412,
+         -0.383335
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.943621,
+        "renamed": 0.875691,
+        "effect": -0.067931,
+        "effect_ci": [
+         -0.111434,
+         -0.02572
+        ],
+        "renamed_higher": 7,
+        "renamed_lower": 25,
+        "sign_p": 0.002102,
+        "relative": -0.071989,
+        "relative_ci": [
+         -0.116959,
+         -0.027546
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.684801,
+        "renamed": 0.287461,
+        "effect": -0.39734,
+        "effect_ci": [
+         -0.434162,
+         -0.35959
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 155,
+        "sign_p": 0.0,
+        "relative": -0.580227,
+        "relative_ci": [
+         -0.633507,
+         -0.528221
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.329409,
+        "effect_ci": [
+         0.273836,
+         0.383779
+        ],
+        "relative": 0.508237,
+        "relative_ci": [
+         0.44301,
+         0.576373
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.911376,
+       "renamed": 0.479167,
+       "effect": -0.432209,
+       "effect_ci": [
+        -0.492615,
+        -0.371032
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 35,
+       "sign_p": 0.0,
+       "relative": -0.474238,
+       "relative_ci": [
+        -0.539112,
+        -0.407462
+       ]
+      }
+     }
+    },
+    "f6": {
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.559371,
+        "renamed": 0.483548,
+        "effect": -0.075823,
+        "effect_ci": [
+         -0.11588,
+         -0.035765
+        ],
+        "renamed_higher": 10,
+        "renamed_lower": 34,
+        "sign_p": 0.000388,
+        "relative": -0.13555,
+        "relative_ci": [
+         -0.201493,
+         -0.065445
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.895131,
+        "renamed": 0.801498,
+        "effect": -0.093633,
+        "effect_ci": [
+         -0.168539,
+         -0.022472
+        ],
+        "renamed_higher": 6,
+        "renamed_lower": 18,
+        "sign_p": 0.022656,
+        "relative": -0.104603,
+        "relative_ci": [
+         -0.185185,
+         -0.025105
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.333333,
+        "renamed": 0.266667,
+        "effect": -0.066667,
+        "effect_ci": [
+         -0.114286,
+         -0.021429
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 16,
+        "sign_p": 0.011818,
+        "relative": -0.2,
+        "relative_ci": [
+         -0.331288,
+         -0.068323
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": -0.026966,
+        "effect_ci": [
+         -0.120546,
+         0.058186
+        ],
+        "relative": 0.095397,
+        "relative_ci": [
+         -0.062298,
+         0.244853
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.559371,
+        "renamed": 0.483548,
+        "effect": -0.075823,
+        "effect_ci": [
+         -0.11588,
+         -0.035765
+        ],
+        "renamed_higher": 10,
+        "renamed_lower": 34,
+        "sign_p": 0.000388,
+        "relative": -0.13555,
+        "relative_ci": [
+         -0.201493,
+         -0.065445
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.919753,
+        "renamed": 0.950617,
+        "effect": 0.030864,
+        "effect_ci": [
+         -0.030864,
+         0.104938
+        ],
+        "renamed_higher": 5,
+        "renamed_lower": 4,
+        "sign_p": 1.0,
+        "relative": 0.033557,
+        "relative_ci": [
+         -0.03268,
+         0.118881
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.450652,
+        "renamed": 0.342644,
+        "effect": -0.108007,
+        "effect_ci": [
+         -0.154562,
+         -0.061453
+        ],
+        "renamed_higher": 5,
+        "renamed_lower": 30,
+        "sign_p": 2.2e-05,
+        "relative": -0.239669,
+        "relative_ci": [
+         -0.336207,
+         -0.138889
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.138872,
+        "effect_ci": [
+         0.058625,
+         0.218532
+        ],
+        "relative": 0.273226,
+        "relative_ci": [
+         0.15023,
+         0.39356
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.861111,
+       "renamed": 0.583333,
+       "effect": -0.277778,
+       "effect_ci": [
+        -0.407407,
+        -0.148148
+       ],
+       "renamed_higher": 1,
+       "renamed_lower": 14,
+       "sign_p": 0.000977,
+       "relative": -0.322581,
+       "relative_ci": [
+        -0.474227,
+        -0.166667
+       ]
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.796853,
+        "renamed": 0.573677,
+        "effect": -0.223176,
+        "effect_ci": [
+         -0.274678,
+         -0.174535
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 65,
+        "sign_p": 0.0,
+        "relative": -0.280072,
+        "relative_ci": [
+         -0.344622,
+         -0.219858
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.992509,
+        "renamed": 0.947566,
+        "effect": -0.044944,
+        "effect_ci": [
+         -0.089888,
+         -0.011236
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 7,
+        "sign_p": 0.070312,
+        "relative": -0.045283,
+        "relative_ci": [
+         -0.090566,
+         -0.011321
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.666667,
+        "renamed": 0.32381,
+        "effect": -0.342857,
+        "effect_ci": [
+         -0.414286,
+         -0.271429
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 58,
+        "sign_p": 0.0,
+        "relative": -0.514286,
+        "relative_ci": [
+         -0.6121,
+         -0.417544
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.297913,
+        "effect_ci": [
+         0.218994,
+         0.379213
+        ],
+        "relative": 0.469003,
+        "relative_ci": [
+         0.367327,
+         0.570688
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.796853,
+        "renamed": 0.573677,
+        "effect": -0.223176,
+        "effect_ci": [
+         -0.274678,
+         -0.174535
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 65,
+        "sign_p": 0.0,
+        "relative": -0.280072,
+        "relative_ci": [
+         -0.344622,
+         -0.219858
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.993827,
+        "renamed": 1.0,
+        "effect": 0.006173,
+        "effect_ci": [
+         0.0,
+         0.018519
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.006211,
+        "relative_ci": [
+         0.0,
+         0.018868
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.73743,
+        "renamed": 0.445065,
+        "effect": -0.292365,
+        "effect_ci": [
+         -0.357542,
+         -0.230912
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 65,
+        "sign_p": 0.0,
+        "relative": -0.396465,
+        "relative_ci": [
+         -0.478372,
+         -0.318066
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.298538,
+        "effect_ci": [
+         0.237085,
+         0.361853
+        ],
+        "relative": 0.402676,
+        "relative_ci": [
+         0.322996,
+         0.484536
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.990741,
+       "renamed": 0.87037,
+       "effect": -0.12037,
+       "effect_ci": [
+        -0.222222,
+        -0.037037
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 7,
+       "sign_p": 0.015625,
+       "relative": -0.121495,
+       "relative_ci": [
+        -0.224299,
+        -0.037037
+       ]
+      }
+     },
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.839056,
+        "renamed": 0.60515,
+        "effect": -0.233906,
+        "effect_ci": [
+         -0.287554,
+         -0.184549
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 59,
+        "sign_p": 0.0,
+        "relative": -0.278772,
+        "relative_ci": [
+         -0.341207,
+         -0.222222
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 1.0,
+        "renamed": 0.960674,
+        "effect": -0.039326,
+        "effect_ci": [
+         -0.08427,
+         -0.005618
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 4,
+        "sign_p": 0.125,
+        "relative": -0.039326,
+        "relative_ci": [
+         -0.08427,
+         -0.005618
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.732143,
+        "renamed": 0.367857,
+        "effect": -0.364286,
+        "effect_ci": [
+         -0.442857,
+         -0.289286
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 55,
+        "sign_p": 0.0,
+        "relative": -0.497561,
+        "relative_ci": [
+         -0.594059,
+         -0.402913
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.32496,
+        "effect_ci": [
+         0.243299,
+         0.409671
+        ],
+        "relative": 0.458235,
+        "relative_ci": [
+         0.360674,
+         0.562189
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.839056,
+        "renamed": 0.60515,
+        "effect": -0.233906,
+        "effect_ci": [
+         -0.287554,
+         -0.184549
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 59,
+        "sign_p": 0.0,
+        "relative": -0.278772,
+        "relative_ci": [
+         -0.341207,
+         -0.222222
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.790503,
+        "renamed": 0.486034,
+        "effect": -0.304469,
+        "effect_ci": [
+         -0.374302,
+         -0.240223
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 59,
+        "sign_p": 0.0,
+        "relative": -0.385159,
+        "relative_ci": [
+         -0.468085,
+         -0.309278
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.304469,
+        "effect_ci": [
+         0.243017,
+         0.374302
+        ],
+        "relative": 0.385159,
+        "relative_ci": [
+         0.312057,
+         0.466418
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 1.0,
+       "renamed": 0.902778,
+       "effect": -0.097222,
+       "effect_ci": [
+        -0.194444,
+        -0.013889
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 4,
+       "sign_p": 0.125,
+       "relative": -0.097222,
+       "relative_ci": [
+        -0.194444,
+        -0.013889
+       ]
+      }
+     },
+     "pooled": {
+      "main": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.73176,
+        "renamed": 0.554125,
+        "effect": -0.177635,
+        "effect_ci": [
+         -0.213639,
+         -0.144015
+        ],
+        "renamed_higher": 9,
+        "renamed_lower": 104,
+        "sign_p": 0.0,
+        "relative": -0.24275,
+        "relative_ci": [
+         -0.292828,
+         -0.197064
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 89,
+        "legacy": 0.962547,
+        "renamed": 0.903246,
+        "effect": -0.059301,
+        "effect_ci": [
+         -0.097378,
+         -0.025593
+        ],
+        "renamed_higher": 7,
+        "renamed_lower": 24,
+        "sign_p": 0.003327,
+        "relative": -0.061608,
+        "relative_ci": [
+         -0.100515,
+         -0.026384
+        ]
+       },
+       "guesthouse_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "mixed": {
+        "dialogues": 1,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 140,
+        "legacy": 0.577381,
+        "renamed": 0.319444,
+        "effect": -0.257937,
+        "effect_ci": [
+         -0.303968,
+         -0.211905
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 80,
+        "sign_p": 0.0,
+        "relative": -0.446735,
+        "relative_ci": [
+         -0.535008,
+         -0.360773
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.198636,
+        "effect_ci": [
+         0.139865,
+         0.25498
+        ],
+        "relative": 0.385127,
+        "relative_ci": [
+         0.2959,
+         0.477691
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 233,
+        "legacy": 0.73176,
+        "renamed": 0.554125,
+        "effect": -0.177635,
+        "effect_ci": [
+         -0.213639,
+         -0.144015
+        ],
+        "renamed_higher": 9,
+        "renamed_lower": 104,
+        "sign_p": 0.0,
+        "relative": -0.24275,
+        "relative_ci": [
+         -0.292828,
+         -0.197064
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 54,
+        "legacy": 0.971193,
+        "renamed": 0.983539,
+        "effect": 0.012346,
+        "effect_ci": [
+         -0.00823,
+         0.037037
+        ],
+        "renamed_higher": 6,
+        "renamed_lower": 4,
+        "sign_p": 0.753906,
+        "relative": 0.012712,
+        "relative_ci": [
+         -0.008421,
+         0.03871
+        ]
+       },
+       "unclear": {
+        "dialogues": 179,
+        "legacy": 0.659528,
+        "renamed": 0.424581,
+        "effect": -0.234947,
+        "effect_ci": [
+         -0.277467,
+         -0.19522
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 100,
+        "sign_p": 0.0,
+        "relative": -0.356235,
+        "relative_ci": [
+         -0.425602,
+         -0.292208
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.247293,
+        "effect_ci": [
+         0.20406,
+         0.292687
+        ],
+        "relative": 0.368947,
+        "relative_ci": [
+         0.306279,
+         0.440543
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 36,
+       "legacy": 0.950617,
+       "renamed": 0.785494,
+       "effect": -0.165123,
+       "effect_ci": [
+        -0.225309,
+        -0.103395
+       ],
+       "renamed_higher": 1,
+       "renamed_lower": 20,
+       "sign_p": 2.1e-05,
+       "relative": -0.173701,
+       "relative_ci": [
+        -0.240984,
+        -0.10815
+       ]
+      }
+     }
+    }
+   },
+   "unsupported": {
+    "f1": {
+     "deepseek": {
+      "main": {
+       "all": {
+        "dialogues": 805,
+        "legacy": 0.118012,
+        "renamed": 0.019876,
+        "effect": -0.098137,
+        "effect_ci": [
+         -0.120497,
+         -0.077019
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 82,
+        "sign_p": 0.0,
+        "relative": -0.831579,
+        "relative_ci": [
+         -0.90625,
+         -0.747573
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.25,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 800,
+        "legacy": 0.1175,
+        "renamed": 0.01875,
+        "effect": -0.09875,
+        "effect_ci": [
+         -0.12,
+         -0.0775
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 82,
+        "sign_p": 0.0,
+        "relative": -0.840426,
+        "relative_ci": [
+         -0.912088,
+         -0.764045
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 805,
+        "legacy": 0.118012,
+        "renamed": 0.019876,
+        "effect": -0.098137,
+        "effect_ci": [
+         -0.120497,
+         -0.077019
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 82,
+        "sign_p": 0.0,
+        "relative": -0.831579,
+        "relative_ci": [
+         -0.90625,
+         -0.747573
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.25,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 800,
+        "legacy": 0.1175,
+        "renamed": 0.01875,
+        "effect": -0.09875,
+        "effect_ci": [
+         -0.12,
+         -0.0775
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 82,
+        "sign_p": 0.0,
+        "relative": -0.840426,
+        "relative_ci": [
+         -0.912088,
+         -0.764045
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "gemma": {
+      "main": {
+       "all": {
+        "dialogues": 803,
+        "legacy": 0.190535,
+        "renamed": 0.012453,
+        "effect": -0.178082,
+        "effect_ci": [
+         -0.206725,
+         -0.15193
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 143,
+        "sign_p": 0.0,
+        "relative": -0.934641,
+        "relative_ci": [
+         -0.969697,
+         -0.89441
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 1.0,
+        "renamed": 0.25,
+        "effect": -0.75,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -0.75,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 798,
+        "legacy": 0.186717,
+        "renamed": 0.011278,
+        "effect": -0.175439,
+        "effect_ci": [
+         -0.203008,
+         -0.149123
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 140,
+        "sign_p": 0.0,
+        "relative": -0.939597,
+        "relative_ci": [
+         -0.975806,
+         -0.89697
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 803,
+        "legacy": 0.190535,
+        "renamed": 0.012453,
+        "effect": -0.178082,
+        "effect_ci": [
+         -0.206725,
+         -0.15193
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 143,
+        "sign_p": 0.0,
+        "relative": -0.934641,
+        "relative_ci": [
+         -0.969697,
+         -0.89441
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 1.0,
+        "renamed": 0.25,
+        "effect": -0.75,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -0.75,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 798,
+        "legacy": 0.186717,
+        "renamed": 0.011278,
+        "effect": -0.175439,
+        "effect_ci": [
+         -0.203008,
+         -0.149123
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 140,
+        "sign_p": 0.0,
+        "relative": -0.939597,
+        "relative_ci": [
+         -0.975806,
+         -0.89697
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.031392,
+        "renamed": 0.005783,
+        "effect": -0.025609,
+        "effect_ci": [
+         -0.035936,
+         -0.016109
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 28,
+        "sign_p": 0.0,
+        "relative": -0.815789,
+        "relative_ci": [
+         -0.955224,
+         -0.658824
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.0,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.030341,
+        "renamed": 0.005819,
+        "effect": -0.024522,
+        "effect_ci": [
+         -0.034913,
+         -0.015378
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 27,
+        "sign_p": 0.0,
+        "relative": -0.808219,
+        "relative_ci": [
+         -0.955224,
+         -0.65625
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.031392,
+        "renamed": 0.005783,
+        "effect": -0.025609,
+        "effect_ci": [
+         -0.035936,
+         -0.016109
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 28,
+        "sign_p": 0.0,
+        "relative": -0.815789,
+        "relative_ci": [
+         -0.955224,
+         -0.658824
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.0,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.030341,
+        "renamed": 0.005819,
+        "effect": -0.024522,
+        "effect_ci": [
+         -0.034913,
+         -0.015378
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 27,
+        "sign_p": 0.0,
+        "relative": -0.808219,
+        "relative_ci": [
+         -0.955224,
+         -0.65625
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.177613,
+        "renamed": 0.009087,
+        "effect": -0.168525,
+        "effect_ci": [
+         -0.193722,
+         -0.144981
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 172,
+        "sign_p": 0.0,
+        "relative": -0.948837,
+        "relative_ci": [
+         -0.980603,
+         -0.913043
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.0,
+        "effect": -0.5,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.176226,
+        "renamed": 0.009144,
+        "effect": -0.167082,
+        "effect_ci": [
+         -0.191604,
+         -0.144223
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 169,
+        "sign_p": 0.0,
+        "relative": -0.948113,
+        "relative_ci": [
+         -0.980861,
+         -0.913043
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.177613,
+        "renamed": 0.009087,
+        "effect": -0.168525,
+        "effect_ci": [
+         -0.193722,
+         -0.144981
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 172,
+        "sign_p": 0.0,
+        "relative": -0.948837,
+        "relative_ci": [
+         -0.980603,
+         -0.913043
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.0,
+        "effect": -0.5,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.176226,
+        "renamed": 0.009144,
+        "effect": -0.167082,
+        "effect_ci": [
+         -0.191604,
+         -0.144223
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 169,
+        "sign_p": 0.0,
+        "relative": -0.948113,
+        "relative_ci": [
+         -0.980861,
+         -0.913043
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "qwen": {
+      "main": {
+       "all": {
+        "dialogues": 725,
+        "legacy": 0.102069,
+        "renamed": 0.02069,
+        "effect": -0.081379,
+        "effect_ci": [
+         -0.104828,
+         -0.05931
+        ],
+        "renamed_higher": 9,
+        "renamed_lower": 68,
+        "sign_p": 0.0,
+        "relative": -0.797297,
+        "relative_ci": [
+         -0.891566,
+         -0.681818
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.25,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 720,
+        "legacy": 0.101389,
+        "renamed": 0.019444,
+        "effect": -0.081944,
+        "effect_ci": [
+         -0.105556,
+         -0.061111
+        ],
+        "renamed_higher": 8,
+        "renamed_lower": 67,
+        "sign_p": 0.0,
+        "relative": -0.808219,
+        "relative_ci": [
+         -0.90411,
+         -0.695652
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 725,
+        "legacy": 0.102069,
+        "renamed": 0.02069,
+        "effect": -0.081379,
+        "effect_ci": [
+         -0.104828,
+         -0.05931
+        ],
+        "renamed_higher": 9,
+        "renamed_lower": 68,
+        "sign_p": 0.0,
+        "relative": -0.797297,
+        "relative_ci": [
+         -0.891566,
+         -0.681818
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.25,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 720,
+        "legacy": 0.101389,
+        "renamed": 0.019444,
+        "effect": -0.081944,
+        "effect_ci": [
+         -0.105556,
+         -0.061111
+        ],
+        "renamed_higher": 8,
+        "renamed_lower": 67,
+        "sign_p": 0.0,
+        "relative": -0.808219,
+        "relative_ci": [
+         -0.90411,
+         -0.695652
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 805,
+        "legacy": 0.335404,
+        "renamed": 0.104348,
+        "effect": -0.231056,
+        "effect_ci": [
+         -0.259627,
+         -0.202484
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 186,
+        "sign_p": 0.0,
+        "relative": -0.688889,
+        "relative_ci": [
+         -0.742754,
+         -0.632143
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 1.0,
+        "renamed": 0.75,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.25,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 800,
+        "legacy": 0.3325,
+        "renamed": 0.10125,
+        "effect": -0.23125,
+        "effect_ci": [
+         -0.26,
+         -0.2025
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 185,
+        "sign_p": 0.0,
+        "relative": -0.695489,
+        "relative_ci": [
+         -0.751938,
+         -0.641509
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 805,
+        "legacy": 0.335404,
+        "renamed": 0.104348,
+        "effect": -0.231056,
+        "effect_ci": [
+         -0.259627,
+         -0.202484
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 186,
+        "sign_p": 0.0,
+        "relative": -0.688889,
+        "relative_ci": [
+         -0.742754,
+         -0.632143
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 1.0,
+        "renamed": 0.75,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.25,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 800,
+        "legacy": 0.3325,
+        "renamed": 0.10125,
+        "effect": -0.23125,
+        "effect_ci": [
+         -0.26,
+         -0.2025
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 185,
+        "sign_p": 0.0,
+        "relative": -0.695489,
+        "relative_ci": [
+         -0.751938,
+         -0.641509
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.140025,
+        "renamed": 0.02974,
+        "effect": -0.110285,
+        "effect_ci": [
+         -0.133003,
+         -0.090045
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 101,
+        "sign_p": 0.0,
+        "relative": -0.787611,
+        "relative_ci": [
+         -0.858824,
+         -0.713415
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.25,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.5,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.138404,
+        "renamed": 0.028678,
+        "effect": -0.109726,
+        "effect_ci": [
+         -0.130923,
+         -0.08936
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 100,
+        "sign_p": 0.0,
+        "relative": -0.792793,
+        "relative_ci": [
+         -0.867508,
+         -0.715625
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.140025,
+        "renamed": 0.02974,
+        "effect": -0.110285,
+        "effect_ci": [
+         -0.133003,
+         -0.090045
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 101,
+        "sign_p": 0.0,
+        "relative": -0.787611,
+        "relative_ci": [
+         -0.858824,
+         -0.713415
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.25,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.5,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.138404,
+        "renamed": 0.028678,
+        "effect": -0.109726,
+        "effect_ci": [
+         -0.130923,
+         -0.08936
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 100,
+        "sign_p": 0.0,
+        "relative": -0.792793,
+        "relative_ci": [
+         -0.867508,
+         -0.715625
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "pooled": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.159883,
+        "renamed": 0.029543,
+        "effect": -0.13034,
+        "effect_ci": [
+         -0.144905,
+         -0.115686
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 300,
+        "sign_p": 0.0,
+        "relative": -0.81522,
+        "relative_ci": [
+         -0.850603,
+         -0.777526
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.535714,
+        "renamed": 0.25,
+        "effect": -0.285714,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 3,
+        "sign_p": 0.625,
+        "relative": -0.533333,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.158208,
+        "renamed": 0.02848,
+        "effect": -0.129727,
+        "effect_ci": [
+         -0.145628,
+         -0.115774
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 297,
+        "sign_p": 0.0,
+        "relative": -0.819981,
+        "relative_ci": [
+         -0.857181,
+         -0.780894
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.159883,
+        "renamed": 0.029543,
+        "effect": -0.13034,
+        "effect_ci": [
+         -0.144905,
+         -0.115686
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 300,
+        "sign_p": 0.0,
+        "relative": -0.81522,
+        "relative_ci": [
+         -0.850603,
+         -0.777526
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.535714,
+        "renamed": 0.25,
+        "effect": -0.285714,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 3,
+        "sign_p": 0.625,
+        "relative": -0.533333,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.158208,
+        "renamed": 0.02848,
+        "effect": -0.129727,
+        "effect_ci": [
+         -0.145628,
+         -0.115774
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 297,
+        "sign_p": 0.0,
+        "relative": -0.819981,
+        "relative_ci": [
+         -0.857181,
+         -0.780894
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     }
+    },
+    "f6": {
+     "deepseek": {
+      "main": {
+       "all": {
+        "dialogues": 806,
+        "legacy": 0.117866,
+        "renamed": 0.043424,
+        "effect": -0.074442,
+        "effect_ci": [
+         -0.098015,
+         -0.05335
+        ],
+        "renamed_higher": 12,
+        "renamed_lower": 72,
+        "sign_p": 0.0,
+        "relative": -0.631579,
+        "relative_ci": [
+         -0.740741,
+         -0.505495
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.25,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 801,
+        "legacy": 0.117353,
+        "renamed": 0.042447,
+        "effect": -0.074906,
+        "effect_ci": [
+         -0.097378,
+         -0.053683
+        ],
+        "renamed_higher": 11,
+        "renamed_lower": 71,
+        "sign_p": 0.0,
+        "relative": -0.638298,
+        "relative_ci": [
+         -0.747368,
+         -0.511905
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 806,
+        "legacy": 0.117866,
+        "renamed": 0.043424,
+        "effect": -0.074442,
+        "effect_ci": [
+         -0.098015,
+         -0.05335
+        ],
+        "renamed_higher": 12,
+        "renamed_lower": 72,
+        "sign_p": 0.0,
+        "relative": -0.631579,
+        "relative_ci": [
+         -0.740741,
+         -0.505495
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.25,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 801,
+        "legacy": 0.117353,
+        "renamed": 0.042447,
+        "effect": -0.074906,
+        "effect_ci": [
+         -0.097378,
+         -0.053683
+        ],
+        "renamed_higher": 11,
+        "renamed_lower": 71,
+        "sign_p": 0.0,
+        "relative": -0.638298,
+        "relative_ci": [
+         -0.747368,
+         -0.511905
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "gemma": {
+      "main": {
+       "all": {
+        "dialogues": 800,
+        "legacy": 0.18875,
+        "renamed": 0.02125,
+        "effect": -0.1675,
+        "effect_ci": [
+         -0.195,
+         -0.14125
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 134,
+        "sign_p": 0.0,
+        "relative": -0.887417,
+        "relative_ci": [
+         -0.934132,
+         -0.836478
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 796,
+        "legacy": 0.18593,
+        "renamed": 0.017588,
+        "effect": -0.168342,
+        "effect_ci": [
+         -0.19598,
+         -0.143216
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 134,
+        "sign_p": 0.0,
+        "relative": -0.905405,
+        "relative_ci": [
+         -0.95,
+         -0.857143
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 800,
+        "legacy": 0.18875,
+        "renamed": 0.02125,
+        "effect": -0.1675,
+        "effect_ci": [
+         -0.195,
+         -0.14125
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 134,
+        "sign_p": 0.0,
+        "relative": -0.887417,
+        "relative_ci": [
+         -0.934132,
+         -0.836478
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 796,
+        "legacy": 0.18593,
+        "renamed": 0.017588,
+        "effect": -0.168342,
+        "effect_ci": [
+         -0.19598,
+         -0.143216
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 134,
+        "sign_p": 0.0,
+        "relative": -0.905405,
+        "relative_ci": [
+         -0.95,
+         -0.857143
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.031392,
+        "renamed": 0.022718,
+        "effect": -0.008674,
+        "effect_ci": [
+         -0.017348,
+         -0.000413
+        ],
+        "renamed_higher": 7,
+        "renamed_lower": 20,
+        "sign_p": 0.019157,
+        "relative": -0.276316,
+        "relative_ci": [
+         -0.5,
+         -0.018182
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.166667,
+        "effect": -0.083333,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.333333,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.030341,
+        "renamed": 0.022028,
+        "effect": -0.008313,
+        "effect_ci": [
+         -0.016625,
+         -0.000831
+        ],
+        "renamed_higher": 6,
+        "renamed_lower": 19,
+        "sign_p": 0.014633,
+        "relative": -0.273973,
+        "relative_ci": [
+         -0.494382,
+         -0.033333
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.031392,
+        "renamed": 0.022718,
+        "effect": -0.008674,
+        "effect_ci": [
+         -0.017348,
+         -0.000413
+        ],
+        "renamed_higher": 7,
+        "renamed_lower": 20,
+        "sign_p": 0.019157,
+        "relative": -0.276316,
+        "relative_ci": [
+         -0.5,
+         -0.018182
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.166667,
+        "effect": -0.083333,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.333333,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.030341,
+        "renamed": 0.022028,
+        "effect": -0.008313,
+        "effect_ci": [
+         -0.016625,
+         -0.000831
+        ],
+        "renamed_higher": 6,
+        "renamed_lower": 19,
+        "sign_p": 0.014633,
+        "relative": -0.273973,
+        "relative_ci": [
+         -0.494382,
+         -0.033333
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.177613,
+        "renamed": 0.027261,
+        "effect": -0.150351,
+        "effect_ci": [
+         -0.174308,
+         -0.128046
+        ],
+        "renamed_higher": 5,
+        "renamed_lower": 162,
+        "sign_p": 0.0,
+        "relative": -0.846512,
+        "relative_ci": [
+         -0.900256,
+         -0.790404
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.166667,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 3,
+        "sign_p": 0.625,
+        "relative": -0.666667,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.176226,
+        "renamed": 0.0266,
+        "effect": -0.149626,
+        "effect_ci": [
+         -0.173732,
+         -0.128013
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 159,
+        "sign_p": 0.0,
+        "relative": -0.849057,
+        "relative_ci": [
+         -0.9,
+         -0.795567
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.177613,
+        "renamed": 0.027261,
+        "effect": -0.150351,
+        "effect_ci": [
+         -0.174308,
+         -0.128046
+        ],
+        "renamed_higher": 5,
+        "renamed_lower": 162,
+        "sign_p": 0.0,
+        "relative": -0.846512,
+        "relative_ci": [
+         -0.900256,
+         -0.790404
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.166667,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 3,
+        "sign_p": 0.625,
+        "relative": -0.666667,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.176226,
+        "renamed": 0.0266,
+        "effect": -0.149626,
+        "effect_ci": [
+         -0.173732,
+         -0.128013
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 159,
+        "sign_p": 0.0,
+        "relative": -0.849057,
+        "relative_ci": [
+         -0.9,
+         -0.795567
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "qwen": {
+      "main": {
+       "all": {
+        "dialogues": 723,
+        "legacy": 0.102351,
+        "renamed": 0.049793,
+        "effect": -0.052559,
+        "effect_ci": [
+         -0.078838,
+         -0.027663
+        ],
+        "renamed_higher": 24,
+        "renamed_lower": 62,
+        "sign_p": 5.1e-05,
+        "relative": -0.513514,
+        "relative_ci": [
+         -0.676923,
+         -0.318841
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.0,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 718,
+        "legacy": 0.101671,
+        "renamed": 0.050139,
+        "effect": -0.051532,
+        "effect_ci": [
+         -0.077994,
+         -0.026462
+        ],
+        "renamed_higher": 24,
+        "renamed_lower": 61,
+        "sign_p": 7.4e-05,
+        "relative": -0.506849,
+        "relative_ci": [
+         -0.663462,
+         -0.315789
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 723,
+        "legacy": 0.102351,
+        "renamed": 0.049793,
+        "effect": -0.052559,
+        "effect_ci": [
+         -0.078838,
+         -0.027663
+        ],
+        "renamed_higher": 24,
+        "renamed_lower": 62,
+        "sign_p": 5.1e-05,
+        "relative": -0.513514,
+        "relative_ci": [
+         -0.676923,
+         -0.318841
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.25,
+        "renamed": 0.0,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 718,
+        "legacy": 0.101671,
+        "renamed": 0.050139,
+        "effect": -0.051532,
+        "effect_ci": [
+         -0.077994,
+         -0.026462
+        ],
+        "renamed_higher": 24,
+        "renamed_lower": 61,
+        "sign_p": 7.4e-05,
+        "relative": -0.506849,
+        "relative_ci": [
+         -0.663462,
+         -0.315789
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 805,
+        "legacy": 0.335404,
+        "renamed": 0.275776,
+        "effect": -0.059627,
+        "effect_ci": [
+         -0.078261,
+         -0.043478
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 51,
+        "sign_p": 0.0,
+        "relative": -0.177778,
+        "relative_ci": [
+         -0.228,
+         -0.131783
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 1.0,
+        "renamed": 0.75,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.25,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 800,
+        "legacy": 0.3325,
+        "renamed": 0.27375,
+        "effect": -0.05875,
+        "effect_ci": [
+         -0.07625,
+         -0.04125
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 50,
+        "sign_p": 0.0,
+        "relative": -0.176692,
+        "relative_ci": [
+         -0.226481,
+         -0.125506
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 805,
+        "legacy": 0.335404,
+        "renamed": 0.275776,
+        "effect": -0.059627,
+        "effect_ci": [
+         -0.078261,
+         -0.043478
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 51,
+        "sign_p": 0.0,
+        "relative": -0.177778,
+        "relative_ci": [
+         -0.228,
+         -0.131783
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 1.0,
+        "renamed": 0.75,
+        "effect": -0.25,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.25,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 800,
+        "legacy": 0.3325,
+        "renamed": 0.27375,
+        "effect": -0.05875,
+        "effect_ci": [
+         -0.07625,
+         -0.04125
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 50,
+        "sign_p": 0.0,
+        "relative": -0.176692,
+        "relative_ci": [
+         -0.226481,
+         -0.125506
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.140025,
+        "renamed": 0.023957,
+        "effect": -0.116068,
+        "effect_ci": [
+         -0.13796,
+         -0.095415
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 108,
+        "sign_p": 0.0,
+        "relative": -0.828909,
+        "relative_ci": [
+         -0.893891,
+         -0.759259
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.166667,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -0.666667,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.138404,
+        "renamed": 0.023275,
+        "effect": -0.115129,
+        "effect_ci": [
+         -0.136741,
+         -0.094347
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 106,
+        "sign_p": 0.0,
+        "relative": -0.831832,
+        "relative_ci": [
+         -0.895833,
+         -0.765172
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.140025,
+        "renamed": 0.023957,
+        "effect": -0.116068,
+        "effect_ci": [
+         -0.13796,
+         -0.095415
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 108,
+        "sign_p": 0.0,
+        "relative": -0.828909,
+        "relative_ci": [
+         -0.893891,
+         -0.759259
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.5,
+        "renamed": 0.166667,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -0.666667,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.138404,
+        "renamed": 0.023275,
+        "effect": -0.115129,
+        "effect_ci": [
+         -0.136741,
+         -0.094347
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 106,
+        "sign_p": 0.0,
+        "relative": -0.831832,
+        "relative_ci": [
+         -0.895833,
+         -0.765172
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     },
+     "pooled": {
+      "main": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.1598,
+        "renamed": 0.06792,
+        "effect": -0.091881,
+        "effect_ci": [
+         -0.105513,
+         -0.079552
+        ],
+        "renamed_higher": 21,
+        "renamed_lower": 250,
+        "sign_p": 0.0,
+        "relative": -0.574972,
+        "relative_ci": [
+         -0.615275,
+         -0.534554
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.521825,
+        "renamed": 0.321429,
+        "effect": -0.200397,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 2,
+        "sign_p": 1.0,
+        "relative": -0.38403,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.158194,
+        "renamed": 0.06674,
+        "effect": -0.091454,
+        "effect_ci": [
+         -0.104912,
+         -0.079187
+        ],
+        "renamed_higher": 20,
+        "renamed_lower": 248,
+        "sign_p": 0.0,
+        "relative": -0.578113,
+        "relative_ci": [
+         -0.616028,
+         -0.539118
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 807,
+        "legacy": 0.1598,
+        "renamed": 0.06792,
+        "effect": -0.091881,
+        "effect_ci": [
+         -0.105513,
+         -0.079552
+        ],
+        "renamed_higher": 21,
+        "renamed_lower": 250,
+        "sign_p": 0.0,
+        "relative": -0.574972,
+        "relative_ci": [
+         -0.615275,
+         -0.534554
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 4,
+        "legacy": 0.521825,
+        "renamed": 0.321429,
+        "effect": -0.200397,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 2,
+        "sign_p": 1.0,
+        "relative": -0.38403,
+        "relative_ci": null
+       },
+       "guesthouse_only": {
+        "dialogues": 1,
+        "legacy": 0.0,
+        "renamed": 0.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 802,
+        "legacy": 0.158194,
+        "renamed": 0.06674,
+        "effect": -0.091454,
+        "effect_ci": [
+         -0.104912,
+         -0.079187
+        ],
+        "renamed_higher": 20,
+        "renamed_lower": 248,
+        "sign_p": 0.0,
+        "relative": -0.578113,
+        "relative_ci": [
+         -0.616028,
+         -0.539118
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 0
+      }
+     }
+    }
+   }
+  },
+  "3": {
+   "correct": {
+    "t_renamed": {
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.649351,
+        "renamed": 0.454545,
+        "effect": -0.194805,
+        "effect_ci": [
+         -0.285714,
+         -0.103896
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 15,
+        "sign_p": 6.1e-05,
+        "relative": -0.3,
+        "relative_ci": [
+         -0.436364,
+         -0.173913
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 0.9,
+        "renamed": 0.9,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.561404,
+        "renamed": 0.298246,
+        "effect": -0.263158,
+        "effect_ci": [
+         -0.385965,
+         -0.157895
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 15,
+        "sign_p": 6.1e-05,
+        "relative": -0.46875,
+        "relative_ci": [
+         -0.64,
+         -0.290323
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.263158,
+        "effect_ci": [
+         0.157895,
+         0.385965
+        ],
+        "relative": 0.46875,
+        "relative_ci": [
+         0.294118,
+         0.64
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.649351,
+        "renamed": 0.454545,
+        "effect": -0.194805,
+        "effect_ci": [
+         -0.285714,
+         -0.103896
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 15,
+        "sign_p": 6.1e-05,
+        "relative": -0.3,
+        "relative_ci": [
+         -0.436364,
+         -0.173913
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 0.9,
+        "renamed": 0.9,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.61194,
+        "renamed": 0.38806,
+        "effect": -0.223881,
+        "effect_ci": [
+         -0.328358,
+         -0.134328
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 15,
+        "sign_p": 6.1e-05,
+        "relative": -0.365854,
+        "relative_ci": [
+         -0.512821,
+         -0.227273
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.223881,
+        "effect_ci": [
+         0.134328,
+         0.328358
+        ],
+        "relative": 0.365854,
+        "relative_ci": [
+         0.219512,
+         0.512195
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 0.9,
+       "renamed": 0.9,
+       "effect": 0.0,
+       "effect_ci": [
+        0.0,
+        0.0
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 0,
+       "sign_p": 1.0,
+       "relative": 0.0,
+       "relative_ci": [
+        0.0,
+        0.0
+       ]
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.480519,
+        "renamed": 0.246753,
+        "effect": -0.233766,
+        "effect_ci": [
+         -0.324675,
+         -0.142857
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 18,
+        "sign_p": 8e-06,
+        "relative": -0.486486,
+        "relative_ci": [
+         -0.65,
+         -0.325
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 0.9,
+        "renamed": 0.65,
+        "effect": -0.25,
+        "effect_ci": [
+         -0.45,
+         -0.05
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 5,
+        "sign_p": 0.0625,
+        "relative": -0.277778,
+        "relative_ci": [
+         -0.5,
+         -0.0625
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.333333,
+        "renamed": 0.105263,
+        "effect": -0.22807,
+        "effect_ci": [
+         -0.333333,
+         -0.122807
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 13,
+        "sign_p": 0.000244,
+        "relative": -0.684211,
+        "relative_ci": [
+         -0.882353,
+         -0.461538
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": -0.02193,
+        "effect_ci": [
+         -0.239474,
+         0.198246
+        ],
+        "relative": 0.406433,
+        "relative_ci": [
+         0.108359,
+         0.69697
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.480519,
+        "renamed": 0.246753,
+        "effect": -0.233766,
+        "effect_ci": [
+         -0.324675,
+         -0.142857
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 18,
+        "sign_p": 8e-06,
+        "relative": -0.486486,
+        "relative_ci": [
+         -0.65,
+         -0.325
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 0.9,
+        "renamed": 0.9,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.41791,
+        "renamed": 0.149254,
+        "effect": -0.268657,
+        "effect_ci": [
+         -0.373134,
+         -0.164179
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 18,
+        "sign_p": 8e-06,
+        "relative": -0.642857,
+        "relative_ci": [
+         -0.821429,
+         -0.448276
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.268657,
+        "effect_ci": [
+         0.164179,
+         0.373134
+        ],
+        "relative": 0.642857,
+        "relative_ci": [
+         0.454545,
+         0.818182
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 0.9,
+       "renamed": 0.4,
+       "effect": -0.5,
+       "effect_ci": [
+        -0.8,
+        -0.2
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 5,
+       "sign_p": 0.0625,
+       "relative": -0.555556,
+       "relative_ci": [
+        -0.888889,
+        -0.222222
+       ]
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.844156,
+        "renamed": 0.584416,
+        "effect": -0.25974,
+        "effect_ci": [
+         -0.363636,
+         -0.168831
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 20,
+        "sign_p": 2e-06,
+        "relative": -0.307692,
+        "relative_ci": [
+         -0.430556,
+         -0.2
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 0.95,
+        "renamed": 0.9,
+        "effect": -0.05,
+        "effect_ci": [
+         -0.15,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.052632,
+        "relative_ci": [
+         -0.166667,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.807018,
+        "renamed": 0.473684,
+        "effect": -0.333333,
+        "effect_ci": [
+         -0.45614,
+         -0.210526
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 19,
+        "sign_p": 4e-06,
+        "relative": -0.413043,
+        "relative_ci": [
+         -0.555556,
+         -0.270833
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.283333,
+        "effect_ci": [
+         0.113158,
+         0.423684
+        ],
+        "relative": 0.360412,
+        "relative_ci": [
+         0.163955,
+         0.529412
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.844156,
+        "renamed": 0.584416,
+        "effect": -0.25974,
+        "effect_ci": [
+         -0.363636,
+         -0.168831
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 20,
+        "sign_p": 2e-06,
+        "relative": -0.307692,
+        "relative_ci": [
+         -0.430556,
+         -0.2
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 0.9,
+        "renamed": 0.9,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.835821,
+        "renamed": 0.537313,
+        "effect": -0.298507,
+        "effect_ci": [
+         -0.402985,
+         -0.19403
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 20,
+        "sign_p": 2e-06,
+        "relative": -0.357143,
+        "relative_ci": [
+         -0.482143,
+         -0.230769
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.298507,
+        "effect_ci": [
+         0.19403,
+         0.41791
+        ],
+        "relative": 0.357143,
+        "relative_ci": [
+         0.226415,
+         0.490566
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 1.0,
+       "renamed": 0.9,
+       "effect": -0.1,
+       "effect_ci": [
+        -0.3,
+        0.0
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 1,
+       "sign_p": 1.0,
+       "relative": -0.1,
+       "relative_ci": [
+        -0.3,
+        0.0
+       ]
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.688312,
+        "renamed": 0.116883,
+        "effect": -0.571429,
+        "effect_ci": [
+         -0.675325,
+         -0.467532
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 44,
+        "sign_p": 0.0,
+        "relative": -0.830189,
+        "relative_ci": [
+         -0.925926,
+         -0.72549
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 1.0,
+        "renamed": 0.45,
+        "effect": -0.55,
+        "effect_ci": [
+         -0.75,
+         -0.3
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 11,
+        "sign_p": 0.000977,
+        "relative": -0.55,
+        "relative_ci": [
+         -0.75,
+         -0.3
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.578947,
+        "renamed": 0.0,
+        "effect": -0.578947,
+        "effect_ci": [
+         -0.719298,
+         -0.45614
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 33,
+        "sign_p": 0.0,
+        "relative": -1.0,
+        "relative_ci": [
+         -1.0,
+         -1.0
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.028947,
+        "effect_ci": [
+         -0.20614,
+         0.284211
+        ],
+        "relative": 0.45,
+        "relative_ci": [
+         0.25,
+         0.65
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.688312,
+        "renamed": 0.116883,
+        "effect": -0.571429,
+        "effect_ci": [
+         -0.675325,
+         -0.467532
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 44,
+        "sign_p": 0.0,
+        "relative": -0.830189,
+        "relative_ci": [
+         -0.925926,
+         -0.72549
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 1.0,
+        "renamed": 0.7,
+        "effect": -0.3,
+        "effect_ci": [
+         -0.6,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 3,
+        "sign_p": 0.25,
+        "relative": -0.3,
+        "relative_ci": [
+         -0.6,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.641791,
+        "renamed": 0.029851,
+        "effect": -0.61194,
+        "effect_ci": [
+         -0.731343,
+         -0.492537
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 41,
+        "sign_p": 0.0,
+        "relative": -0.953488,
+        "relative_ci": [
+         -1.0,
+         -0.878049
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.31194,
+        "effect_ci": [
+         -0.002985,
+         0.601493
+        ],
+        "relative": 0.653488,
+        "relative_ci": [
+         0.352381,
+         0.9
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 1.0,
+       "renamed": 0.2,
+       "effect": -0.8,
+       "effect_ci": [
+        -1.0,
+        -0.5
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 8,
+       "sign_p": 0.007812,
+       "relative": -0.8,
+       "relative_ci": [
+        -1.0,
+        -0.5
+       ]
+      }
+     },
+     "deepseek": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.493506,
+        "renamed": 0.285714,
+        "effect": -0.207792,
+        "effect_ci": [
+         -0.311688,
+         -0.116883
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 17,
+        "sign_p": 0.000145,
+        "relative": -0.421053,
+        "relative_ci": [
+         -0.583333,
+         -0.25
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 0.85,
+        "renamed": 0.7,
+        "effect": -0.15,
+        "effect_ci": [
+         -0.35,
+         0.05
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 4,
+        "sign_p": 0.375,
+        "relative": -0.176471,
+        "relative_ci": [
+         -0.411765,
+         0.066667
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.368421,
+        "renamed": 0.140351,
+        "effect": -0.22807,
+        "effect_ci": [
+         -0.350877,
+         -0.122807
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 13,
+        "sign_p": 0.000244,
+        "relative": -0.619048,
+        "relative_ci": [
+         -0.823529,
+         -0.4
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.07807,
+        "effect_ci": [
+         -0.17193,
+         0.310526
+        ],
+        "relative": 0.442577,
+        "relative_ci": [
+         0.109974,
+         0.766667
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.493506,
+        "renamed": 0.285714,
+        "effect": -0.207792,
+        "effect_ci": [
+         -0.311688,
+         -0.116883
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 17,
+        "sign_p": 0.000145,
+        "relative": -0.421053,
+        "relative_ci": [
+         -0.583333,
+         -0.25
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 0.8,
+        "renamed": 0.8,
+        "effect": 0.0,
+        "effect_ci": [
+         -0.3,
+         0.3
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         -0.333333,
+         0.5
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.447761,
+        "renamed": 0.208955,
+        "effect": -0.238806,
+        "effect_ci": [
+         -0.358209,
+         -0.149254
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 16,
+        "sign_p": 3.1e-05,
+        "relative": -0.533333,
+        "relative_ci": [
+         -0.72,
+         -0.354839
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.238806,
+        "effect_ci": [
+         -0.046269,
+         0.543284
+        ],
+        "relative": 0.533333,
+        "relative_ci": [
+         0.167488,
+         1.076923
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 0.9,
+       "renamed": 0.6,
+       "effect": -0.3,
+       "effect_ci": [
+        -0.6,
+        0.0
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 3,
+       "sign_p": 0.25,
+       "relative": -0.333333,
+       "relative_ci": [
+        -0.666667,
+        0.0
+       ]
+      }
+     },
+     "qwen": {
+      "main": {
+       "all": {
+        "dialogues": 60,
+        "legacy": 0.5,
+        "renamed": 0.266667,
+        "effect": -0.233333,
+        "effect_ci": [
+         -0.366667,
+         -0.1
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 18,
+        "sign_p": 0.004344,
+        "relative": -0.466667,
+        "relative_ci": [
+         -0.677419,
+         -0.222222
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 15,
+        "legacy": 0.8,
+        "renamed": 0.533333,
+        "effect": -0.266667,
+        "effect_ci": [
+         -0.6,
+         0.066667
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 6,
+        "sign_p": 0.289062,
+        "relative": -0.333333,
+        "relative_ci": [
+         -0.692308,
+         0.111111
+        ]
+       },
+       "unclear": {
+        "dialogues": 45,
+        "legacy": 0.4,
+        "renamed": 0.177778,
+        "effect": -0.222222,
+        "effect_ci": [
+         -0.377778,
+         -0.088889
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 12,
+        "sign_p": 0.012939,
+        "relative": -0.555556,
+        "relative_ci": [
+         -0.789474,
+         -0.25
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": -0.044444,
+        "effect_ci": [
+         -0.422222,
+         0.333333
+        ],
+        "relative": 0.222222,
+        "relative_ci": [
+         -0.236842,
+         0.769231
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 60,
+        "legacy": 0.5,
+        "renamed": 0.266667,
+        "effect": -0.233333,
+        "effect_ci": [
+         -0.366667,
+         -0.1
+        ],
+        "renamed_higher": 4,
+        "renamed_lower": 18,
+        "sign_p": 0.004344,
+        "relative": -0.466667,
+        "relative_ci": [
+         -0.677419,
+         -0.222222
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 7,
+        "legacy": 0.714286,
+        "renamed": 0.714286,
+        "effect": 0.0,
+        "effect_ci": [
+         -0.571429,
+         0.571429
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 2,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         -0.571429,
+         1.333333
+        ]
+       },
+       "unclear": {
+        "dialogues": 53,
+        "legacy": 0.471698,
+        "renamed": 0.207547,
+        "effect": -0.264151,
+        "effect_ci": [
+         -0.396226,
+         -0.113208
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 16,
+        "sign_p": 0.001312,
+        "relative": -0.56,
+        "relative_ci": [
+         -0.761905,
+         -0.304348
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.264151,
+        "effect_ci": [
+         -0.307278,
+         0.824798
+        ],
+        "relative": 0.56,
+        "relative_ci": [
+         -0.083333,
+         2.0
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 8,
+       "legacy": 0.875,
+       "renamed": 0.375,
+       "effect": -0.5,
+       "effect_ci": [
+        -0.875,
+        -0.125
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 4,
+       "sign_p": 0.125,
+       "relative": -0.571429,
+       "relative_ci": [
+        -1.0,
+        -0.2
+       ]
+      }
+     },
+     "gemma": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.701299,
+        "renamed": 0.363636,
+        "effect": -0.337662,
+        "effect_ci": [
+         -0.454545,
+         -0.233766
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 26,
+        "sign_p": 0.0,
+        "relative": -0.481481,
+        "relative_ci": [
+         -0.62,
+         -0.346154
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 0.95,
+        "renamed": 0.85,
+        "effect": -0.1,
+        "effect_ci": [
+         -0.25,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -0.105263,
+        "relative_ci": [
+         -0.263158,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.614035,
+        "renamed": 0.192982,
+        "effect": -0.421053,
+        "effect_ci": [
+         -0.561404,
+         -0.298246
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 24,
+        "sign_p": 0.0,
+        "relative": -0.685714,
+        "relative_ci": [
+         -0.833333,
+         -0.527778
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.321053,
+        "effect_ci": [
+         0.133333,
+         0.49386
+        ],
+        "relative": 0.580451,
+        "relative_ci": [
+         0.365385,
+         0.77594
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.701299,
+        "renamed": 0.363636,
+        "effect": -0.337662,
+        "effect_ci": [
+         -0.454545,
+         -0.233766
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 26,
+        "sign_p": 0.0,
+        "relative": -0.481481,
+        "relative_ci": [
+         -0.62,
+         -0.346154
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 0.9,
+        "renamed": 0.9,
+        "effect": 0.0,
+        "effect_ci": [
+         0.0,
+         0.0
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": [
+         0.0,
+         0.0
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.671642,
+        "renamed": 0.283582,
+        "effect": -0.38806,
+        "effect_ci": [
+         -0.507463,
+         -0.283582
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 26,
+        "sign_p": 0.0,
+        "relative": -0.577778,
+        "relative_ci": [
+         -0.727273,
+         -0.431818
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.38806,
+        "effect_ci": [
+         0.283582,
+         0.507463
+        ],
+        "relative": 0.577778,
+        "relative_ci": [
+         0.4375,
+         0.727273
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 1.0,
+       "renamed": 0.8,
+       "effect": -0.2,
+       "effect_ci": [
+        -0.5,
+        0.0
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 2,
+       "sign_p": 0.5,
+       "relative": -0.2,
+       "relative_ci": [
+        -0.5,
+        0.0
+       ]
+      }
+     },
+     "panel": {
+      "main": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.626778,
+        "renamed": 0.335498,
+        "effect": -0.29128,
+        "effect_ci": [
+         -0.350959,
+         -0.238714
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 60,
+        "sign_p": 0.0,
+        "relative": -0.464726,
+        "relative_ci": [
+         -0.55626,
+         -0.385335
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 20,
+        "legacy": 0.911905,
+        "renamed": 0.717857,
+        "effect": -0.194048,
+        "effect_ci": [
+         -0.30119,
+         -0.09881
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 13,
+        "sign_p": 0.007385,
+        "relative": -0.212794,
+        "relative_ci": [
+         -0.330861,
+         -0.108355
+        ]
+       },
+       "unclear": {
+        "dialogues": 57,
+        "legacy": 0.526734,
+        "renamed": 0.201337,
+        "effect": -0.325397,
+        "effect_ci": [
+         -0.390977,
+         -0.262322
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 47,
+        "sign_p": 0.0,
+        "relative": -0.617764,
+        "relative_ci": [
+         -0.704225,
+         -0.525979
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.131349,
+        "effect_ci": [
+         0.017126,
+         0.253446
+        ],
+        "relative": 0.40497,
+        "relative_ci": [
+         0.2674,
+         0.547925
+        ]
+       }
+      },
+      "strict": {
+       "all": {
+        "dialogues": 77,
+        "legacy": 0.626778,
+        "renamed": 0.335498,
+        "effect": -0.29128,
+        "effect_ci": [
+         -0.350959,
+         -0.238714
+        ],
+        "renamed_higher": 3,
+        "renamed_lower": 60,
+        "sign_p": 0.0,
+        "relative": -0.464726,
+        "relative_ci": [
+         -0.55626,
+         -0.385335
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 10,
+        "legacy": 0.885714,
+        "renamed": 0.840476,
+        "effect": -0.045238,
+        "effect_ci": [
+         -0.130952,
+         0.028571
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 4,
+        "sign_p": 0.6875,
+        "relative": -0.051075,
+        "relative_ci": [
+         -0.137681,
+         0.04359
+        ]
+       },
+       "unclear": {
+        "dialogues": 67,
+        "legacy": 0.588131,
+        "renamed": 0.260128,
+        "effect": -0.328003,
+        "effect_ci": [
+         -0.38877,
+         -0.268657
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 56,
+        "sign_p": 0.0,
+        "relative": -0.557704,
+        "relative_ci": [
+         -0.64489,
+         -0.47451
+        ]
+       },
+       "clear_minus_unclear": {
+        "effect": 0.282765,
+        "effect_ci": [
+         0.180952,
+         0.37914
+        ],
+        "relative": 0.506629,
+        "relative_ci": [
+         0.384307,
+         0.631786
+        ]
+       }
+      },
+      "derived_p_t_only": {
+       "dialogues": 10,
+       "legacy": 0.938095,
+       "renamed": 0.595238,
+       "effect": -0.342857,
+       "effect_ci": [
+        -0.466667,
+        -0.214286
+       ],
+       "renamed_higher": 0,
+       "renamed_lower": 9,
+       "sign_p": 0.003906,
+       "relative": -0.365482,
+       "relative_ci": [
+        -0.530055,
+        -0.220588
+       ]
+      }
+     }
+    }
+   },
+   "unsupported": {
+    "t_renamed": {
+     "sonnet": {
+      "main": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.150235,
+        "renamed": 0.032864,
+        "effect": -0.117371,
+        "effect_ci": [
+         -0.164319,
+         -0.079812
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 25,
+        "sign_p": 0.0,
+        "relative": -0.78125,
+        "relative_ci": [
+         -0.92,
+         -0.628571
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.666667,
+        "renamed": 0.333333,
+        "effect": -0.333333,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.5,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.142857,
+        "renamed": 0.028571,
+        "effect": -0.114286,
+        "effect_ci": [
+         -0.161905,
+         -0.071429
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 24,
+        "sign_p": 0.0,
+        "relative": -0.8,
+        "relative_ci": [
+         -0.939394,
+         -0.631579
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.150235,
+        "renamed": 0.032864,
+        "effect": -0.117371,
+        "effect_ci": [
+         -0.164319,
+         -0.079812
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 25,
+        "sign_p": 0.0,
+        "relative": -0.78125,
+        "relative_ci": [
+         -0.92,
+         -0.628571
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.5,
+        "renamed": 0.0,
+        "effect": -0.5,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 211,
+        "legacy": 0.146919,
+        "renamed": 0.033175,
+        "effect": -0.113744,
+        "effect_ci": [
+         -0.156398,
+         -0.07109
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 24,
+        "sign_p": 0.0,
+        "relative": -0.774194,
+        "relative_ci": [
+         -0.916667,
+         -0.619048
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 1.0,
+       "effect": 0.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 0,
+       "sign_p": 1.0,
+       "relative": 0.0,
+       "relative_ci": null
+      }
+     },
+     "haiku": {
+      "main": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.056338,
+        "renamed": 0.00939,
+        "effect": -0.046948,
+        "effect_ci": [
+         -0.075117,
+         -0.018779
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 10,
+        "sign_p": 0.001953,
+        "relative": -0.833333,
+        "relative_ci": [
+         -1.0,
+         -0.588235
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.666667,
+        "renamed": 0.0,
+        "effect": -0.666667,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.047619,
+        "renamed": 0.009524,
+        "effect": -0.038095,
+        "effect_ci": [
+         -0.066667,
+         -0.014286
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 8,
+        "sign_p": 0.007812,
+        "relative": -0.8,
+        "relative_ci": [
+         -1.0,
+         -0.5
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.056338,
+        "renamed": 0.00939,
+        "effect": -0.046948,
+        "effect_ci": [
+         -0.075117,
+         -0.018779
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 10,
+        "sign_p": 0.001953,
+        "relative": -0.833333,
+        "relative_ci": [
+         -1.0,
+         -0.588235
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.5,
+        "renamed": 0.0,
+        "effect": -0.5,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 211,
+        "legacy": 0.052133,
+        "renamed": 0.009479,
+        "effect": -0.042654,
+        "effect_ci": [
+         -0.07109,
+         -0.018957
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 9,
+        "sign_p": 0.003906,
+        "relative": -0.818182,
+        "relative_ci": [
+         -1.0,
+         -0.555556
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 0.0,
+       "effect": -1.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 1,
+       "sign_p": 1.0,
+       "relative": -1.0,
+       "relative_ci": null
+      }
+     },
+     "sol": {
+      "main": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.319249,
+        "renamed": 0.14554,
+        "effect": -0.173709,
+        "effect_ci": [
+         -0.230047,
+         -0.126761
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 37,
+        "sign_p": 0.0,
+        "relative": -0.544118,
+        "relative_ci": [
+         -0.666667,
+         -0.424242
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.666667,
+        "renamed": 0.666667,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.314286,
+        "renamed": 0.138095,
+        "effect": -0.17619,
+        "effect_ci": [
+         -0.228571,
+         -0.128571
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 37,
+        "sign_p": 0.0,
+        "relative": -0.560606,
+        "relative_ci": [
+         -0.680556,
+         -0.442623
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.319249,
+        "renamed": 0.14554,
+        "effect": -0.173709,
+        "effect_ci": [
+         -0.230047,
+         -0.126761
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 37,
+        "sign_p": 0.0,
+        "relative": -0.544118,
+        "relative_ci": [
+         -0.666667,
+         -0.424242
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.5,
+        "renamed": 0.5,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 211,
+        "legacy": 0.317536,
+        "renamed": 0.14218,
+        "effect": -0.175355,
+        "effect_ci": [
+         -0.227488,
+         -0.127962
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 37,
+        "sign_p": 0.0,
+        "relative": -0.552239,
+        "relative_ci": [
+         -0.671233,
+         -0.431034
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 1.0,
+       "effect": 0.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 0,
+       "sign_p": 1.0,
+       "relative": 0.0,
+       "relative_ci": null
+      }
+     },
+     "luna": {
+      "main": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.187793,
+        "renamed": 0.014085,
+        "effect": -0.173709,
+        "effect_ci": [
+         -0.230047,
+         -0.126761
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 37,
+        "sign_p": 0.0,
+        "relative": -0.925,
+        "relative_ci": [
+         -1.0,
+         -0.833333
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.666667,
+        "renamed": 0.0,
+        "effect": -0.666667,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.180952,
+        "renamed": 0.014286,
+        "effect": -0.166667,
+        "effect_ci": [
+         -0.219048,
+         -0.119048
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 35,
+        "sign_p": 0.0,
+        "relative": -0.921053,
+        "relative_ci": [
+         -1.0,
+         -0.823529
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.187793,
+        "renamed": 0.014085,
+        "effect": -0.173709,
+        "effect_ci": [
+         -0.230047,
+         -0.126761
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 37,
+        "sign_p": 0.0,
+        "relative": -0.925,
+        "relative_ci": [
+         -1.0,
+         -0.833333
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.5,
+        "renamed": 0.0,
+        "effect": -0.5,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 211,
+        "legacy": 0.184834,
+        "renamed": 0.014218,
+        "effect": -0.170616,
+        "effect_ci": [
+         -0.222749,
+         -0.123223
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 36,
+        "sign_p": 0.0,
+        "relative": -0.923077,
+        "relative_ci": [
+         -1.0,
+         -0.825
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 0.0,
+       "effect": -1.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 1,
+       "sign_p": 1.0,
+       "relative": -1.0,
+       "relative_ci": null
+      }
+     },
+     "deepseek": {
+      "main": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.15493,
+        "renamed": 0.037559,
+        "effect": -0.117371,
+        "effect_ci": [
+         -0.164319,
+         -0.075117
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 26,
+        "sign_p": 0.0,
+        "relative": -0.757576,
+        "relative_ci": [
+         -0.903226,
+         -0.59375
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.333333,
+        "renamed": 0.333333,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.152381,
+        "renamed": 0.033333,
+        "effect": -0.119048,
+        "effect_ci": [
+         -0.161905,
+         -0.07619
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 25,
+        "sign_p": 0.0,
+        "relative": -0.78125,
+        "relative_ci": [
+         -0.92,
+         -0.633333
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.15493,
+        "renamed": 0.037559,
+        "effect": -0.117371,
+        "effect_ci": [
+         -0.164319,
+         -0.075117
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 26,
+        "sign_p": 0.0,
+        "relative": -0.757576,
+        "relative_ci": [
+         -0.903226,
+         -0.59375
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.0,
+        "renamed": 0.5,
+        "effect": 0.5,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 211,
+        "legacy": 0.156398,
+        "renamed": 0.033175,
+        "effect": -0.123223,
+        "effect_ci": [
+         -0.170616,
+         -0.080569
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 26,
+        "sign_p": 0.0,
+        "relative": -0.787879,
+        "relative_ci": [
+         -0.923077,
+         -0.636364
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 0.0,
+       "effect": -1.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 1,
+       "sign_p": 1.0,
+       "relative": -1.0,
+       "relative_ci": null
+      }
+     },
+     "qwen": {
+      "main": {
+       "all": {
+        "dialogues": 187,
+        "legacy": 0.101604,
+        "renamed": 0.026738,
+        "effect": -0.074866,
+        "effect_ci": [
+         -0.122995,
+         -0.032086
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 16,
+        "sign_p": 0.001312,
+        "relative": -0.736842,
+        "relative_ci": [
+         -0.941176,
+         -0.466667
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.333333,
+        "renamed": 0.666667,
+        "effect": 0.333333,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 1.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 184,
+        "legacy": 0.097826,
+        "renamed": 0.016304,
+        "effect": -0.081522,
+        "effect_ci": [
+         -0.125,
+         -0.043478
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 16,
+        "sign_p": 0.000275,
+        "relative": -0.833333,
+        "relative_ci": [
+         -1.0,
+         -0.611111
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 187,
+        "legacy": 0.101604,
+        "renamed": 0.026738,
+        "effect": -0.074866,
+        "effect_ci": [
+         -0.122995,
+         -0.032086
+        ],
+        "renamed_higher": 2,
+        "renamed_lower": 16,
+        "sign_p": 0.001312,
+        "relative": -0.736842,
+        "relative_ci": [
+         -0.941176,
+         -0.466667
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.0,
+        "renamed": 0.5,
+        "effect": 0.5,
+        "effect_ci": null,
+        "renamed_higher": 1,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": null,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 185,
+        "legacy": 0.102703,
+        "renamed": 0.021622,
+        "effect": -0.081081,
+        "effect_ci": [
+         -0.124324,
+         -0.037838
+        ],
+        "renamed_higher": 1,
+        "renamed_lower": 16,
+        "sign_p": 0.000275,
+        "relative": -0.789474,
+        "relative_ci": [
+         -0.958333,
+         -0.538462
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 1.0,
+       "effect": 0.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 0,
+       "sign_p": 1.0,
+       "relative": 0.0,
+       "relative_ci": null
+      }
+     },
+     "gemma": {
+      "main": {
+       "all": {
+        "dialogues": 212,
+        "legacy": 0.216981,
+        "renamed": 0.037736,
+        "effect": -0.179245,
+        "effect_ci": [
+         -0.235849,
+         -0.132075
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.826087,
+        "relative_ci": [
+         -0.931818,
+         -0.708333
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 209,
+        "legacy": 0.205742,
+        "renamed": 0.023923,
+        "effect": -0.181818,
+        "effect_ci": [
+         -0.23445,
+         -0.129187
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.883721,
+        "relative_ci": [
+         -0.974359,
+         -0.777778
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 212,
+        "legacy": 0.216981,
+        "renamed": 0.037736,
+        "effect": -0.179245,
+        "effect_ci": [
+         -0.235849,
+         -0.132075
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.826087,
+        "relative_ci": [
+         -0.931818,
+         -0.708333
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 1.0,
+        "renamed": 1.0,
+        "effect": 0.0,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 0,
+        "sign_p": 1.0,
+        "relative": 0.0,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.209524,
+        "renamed": 0.028571,
+        "effect": -0.180952,
+        "effect_ci": [
+         -0.233333,
+         -0.128571
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 38,
+        "sign_p": 0.0,
+        "relative": -0.863636,
+        "relative_ci": [
+         -0.955556,
+         -0.75
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 1.0,
+       "effect": 0.0,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 0,
+       "sign_p": 1.0,
+       "relative": 0.0,
+       "relative_ci": null
+      }
+     },
+     "panel": {
+      "main": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.17429,
+        "renamed": 0.044757,
+        "effect": -0.129533,
+        "effect_ci": [
+         -0.159826,
+         -0.101252
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 75,
+        "sign_p": 0.0,
+        "relative": -0.743202,
+        "relative_ci": [
+         -0.816611,
+         -0.667358
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 3,
+        "legacy": 0.619048,
+        "renamed": 0.428571,
+        "effect": -0.190476,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 2,
+        "sign_p": 0.5,
+        "relative": -0.307692,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 210,
+        "legacy": 0.167937,
+        "renamed": 0.039274,
+        "effect": -0.128662,
+        "effect_ci": [
+         -0.160068,
+         -0.09873
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 73,
+        "sign_p": 0.0,
+        "relative": -0.766136,
+        "relative_ci": [
+         -0.838612,
+         -0.686223
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "strict": {
+       "all": {
+        "dialogues": 213,
+        "legacy": 0.17429,
+        "renamed": 0.044757,
+        "effect": -0.129533,
+        "effect_ci": [
+         -0.159826,
+         -0.101252
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 75,
+        "sign_p": 0.0,
+        "relative": -0.743202,
+        "relative_ci": [
+         -0.816611,
+         -0.667358
+        ]
+       },
+       "hotel_only": {
+        "dialogues": 2,
+        "legacy": 0.428571,
+        "renamed": 0.357143,
+        "effect": -0.071429,
+        "effect_ci": null,
+        "renamed_higher": 0,
+        "renamed_lower": 1,
+        "sign_p": 1.0,
+        "relative": -0.166667,
+        "relative_ci": null
+       },
+       "unclear": {
+        "dialogues": 211,
+        "legacy": 0.17188,
+        "renamed": 0.041796,
+        "effect": -0.130084,
+        "effect_ci": [
+         -0.159332,
+         -0.100767
+        ],
+        "renamed_higher": 0,
+        "renamed_lower": 74,
+        "sign_p": 0.0,
+        "relative": -0.756828,
+        "relative_ci": [
+         -0.828664,
+         -0.677207
+        ]
+       },
+       "clear_minus_unclear": null
+      },
+      "derived_p_t_only": {
+       "dialogues": 1,
+       "legacy": 1.0,
+       "renamed": 0.571429,
+       "effect": -0.428571,
+       "effect_ci": null,
+       "renamed_higher": 0,
+       "renamed_lower": 1,
+       "sign_p": 1.0,
+       "relative": -0.428571,
+       "relative_ci": null
+      }
+     }
+    }
+   }
+  }
+ }
+}

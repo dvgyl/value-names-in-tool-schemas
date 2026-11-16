@@ -1,0 +1,2333 @@
+{
+ "amendment": "R10-20",
+ "exploratory": true,
+ "pilot": false,
+ "L": 5,
+ "levels": {
+  "tool": 0.9875,
+  "form": 0.9916666666666667
+ },
+ "draws": 2000,
+ "seed": 20261112,
+ "missing": [],
+ "models": {
+  "sol": {
+   "channel": "tool",
+   "control": "t0",
+   "updates": {
+    "a": {
+     "cell": "trep",
+     "level": 0.9875,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -0.6696428571428571,
+       "interval": [
+        -2.455357142857143,
+        0.8928571428571429
+       ],
+       "up": 3,
+       "down": 6,
+       "sign_p": 0.5078125
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 9.032322912204664e-17,
+       "interval": [
+        -1.6949152542372883,
+        1.8644067796610169
+       ],
+       "up": 5,
+       "down": 5,
+       "sign_p": 1.0
+      },
+      "guesthouse": {
+       "pairs": 47,
+       "change": -2.127659574468085,
+       "interval": [
+        -8.51063829787234,
+        0.0
+       ],
+       "up": 0,
+       "down": 1,
+       "sign_p": 1.0
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "absent"
+      },
+      "release": "pass"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "within limits"
+      },
+      "release": "pass"
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 162,
+        "n": 448,
+        "share": 0.36160714285714285
+       },
+       "update": {
+        "k": 159,
+        "n": 448,
+        "share": 0.3549107142857143
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 498,
+        "n": 590,
+        "share": 0.8440677966101695
+       },
+       "update": {
+        "k": 498,
+        "n": 590,
+        "share": 0.8440677966101695
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 36,
+        "n": 47,
+        "share": 0.7659574468085106
+       },
+       "update": {
+        "k": 35,
+        "n": 47,
+        "share": 0.7446808510638298
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 2.9999999999999893,
+      "correct_lost": 0.0,
+      "ratio": 0.0,
+      "ratio_ci95": [
+       -0.349999999999999,
+       null
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 83,
+       "n": 448,
+       "share": 0.18526785714285715,
+       "ci95": [
+        0.14955357142857142,
+        0.22321428571428573
+       ]
+      },
+      "tedit": {
+       "k": 83,
+       "n": 448,
+       "share": 0.18526785714285715,
+       "ci95": [
+        0.14955357142857142,
+        0.22321428571428573
+       ]
+      }
+     }
+    },
+    "b": {
+     "cell": "tpar",
+     "level": 0.9875,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -0.44642857142857145,
+       "interval": [
+        -2.455357142857143,
+        1.3392857142857142
+       ],
+       "up": 5,
+       "down": 7,
+       "sign_p": 0.7744140625
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -0.16949152542372894,
+       "interval": [
+        -2.542372881355932,
+        2.3728813559322033
+       ],
+       "up": 6,
+       "down": 7,
+       "sign_p": 1.0
+      },
+      "guesthouse": {
+       "pairs": 47,
+       "change": 0.0,
+       "interval": [
+        0.0,
+        0.0
+       ],
+       "up": 0,
+       "down": 0,
+       "sign_p": 1.0
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "absent"
+      },
+      "release": "pass"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "within limits"
+      },
+      "release": "pass"
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 162,
+        "n": 448,
+        "share": 0.36160714285714285
+       },
+       "update": {
+        "k": 160,
+        "n": 448,
+        "share": 0.35714285714285715
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 498,
+        "n": 590,
+        "share": 0.8440677966101695
+       },
+       "update": {
+        "k": 497,
+        "n": 590,
+        "share": 0.8423728813559322
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 36,
+        "n": 47,
+        "share": 0.7659574468085106
+       },
+       "update": {
+        "k": 36,
+        "n": 47,
+        "share": 0.7659574468085106
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 1.999999999999993,
+      "correct_lost": 0.09999999999999842,
+      "ratio": 0.04999999999999939,
+      "ratio_ci95": [
+       -0.5000000000000004,
+       null
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 83,
+       "n": 448,
+       "share": 0.18526785714285715,
+       "ci95": [
+        0.14955357142857142,
+        0.22321428571428573
+       ]
+      },
+      "tedit": {
+       "k": 82,
+       "n": 448,
+       "share": 0.18303571428571427,
+       "ci95": [
+        0.14732142857142858,
+        0.22098214285714285
+       ]
+      }
+     }
+    },
+    "c": {
+     "cell": "t1",
+     "level": 0.9875,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -22.544642857142858,
+       "interval": [
+        -27.901785714285715,
+        -17.857142857142858
+       ],
+       "up": 0,
+       "down": 101,
+       "sign_p": 7.888609052210118e-31
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -62.03389830508475,
+       "interval": [
+        -74.57627118644068,
+        -48.644067796610166
+       ],
+       "up": 0,
+       "down": 46,
+       "sign_p": 2.842170943040401e-14
+      },
+      "guesthouse": {
+       "pairs": 47,
+       "change": -42.5531914893617,
+       "interval": [
+        -59.57446808510638,
+        -25.53191489361702
+       ],
+       "up": 0,
+       "down": 20,
+       "sign_p": 1.9073486328125e-06
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "flag-worthy",
+       "specific": "flag-worthy"
+      },
+      "release": "flag"
+     },
+     "revised": {
+      "sets": {
+       "open": "meets flag rule",
+       "specific": "meets flag rule"
+      },
+      "release": "flag"
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 162,
+        "n": 448,
+        "share": 0.36160714285714285
+       },
+       "update": {
+        "k": 61,
+        "n": 448,
+        "share": 0.13616071428571427
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 498,
+        "n": 590,
+        "share": 0.8440677966101695
+       },
+       "update": {
+        "k": 132,
+        "n": 590,
+        "share": 0.22372881355932203
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 36,
+        "n": 47,
+        "share": 0.7659574468085106
+       },
+       "update": {
+        "k": 16,
+        "n": 47,
+        "share": 0.3404255319148936
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 101.0,
+      "correct_lost": 36.6,
+      "ratio": 0.36237623762376237,
+      "ratio_ci95": [
+       0.28250000000000003,
+       0.4604395604395604
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 83,
+       "n": 448,
+       "share": 0.18526785714285715,
+       "ci95": [
+        0.14955357142857142,
+        0.22321428571428573
+       ]
+      },
+      "tedit": {
+       "k": 36,
+       "n": 448,
+       "share": 0.08035714285714286,
+       "ci95": [
+        0.05580357142857143,
+        0.10714285714285714
+       ]
+      }
+     }
+    }
+   },
+   "kinds": {
+    "t0": {
+     "search": 1085
+    },
+    "trep": {
+     "search": 1085
+    },
+    "tpar": {
+     "search": 1085
+    },
+    "t1": {
+     "search": 1085
+    }
+   }
+  },
+  "luna": {
+   "channel": "tool",
+   "control": "t0",
+   "updates": {
+    "a": {
+     "cell": "trep",
+     "level": 0.9875,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -2.232142857142857,
+       "interval": [
+        -4.6875,
+        0.0
+       ],
+       "up": 3,
+       "down": 13,
+       "sign_p": 0.021270751953125
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 0.5084745762711862,
+       "interval": [
+        -2.3728813559322037,
+        3.7288135593220337
+       ],
+       "up": 5,
+       "down": 7,
+       "sign_p": 0.7744140625
+      },
+      "guesthouse": {
+       "pairs": 47,
+       "change": 2.127659574468085,
+       "interval": [
+        -10.638297872340425,
+        14.893617021276595
+       ],
+       "up": 3,
+       "down": 2,
+       "sign_p": 1.0
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "absent"
+      },
+      "release": "pass"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "within limits"
+      },
+      "release": "pass"
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 90,
+        "n": 448,
+        "share": 0.20089285714285715
+       },
+       "update": {
+        "k": 80,
+        "n": 448,
+        "share": 0.17857142857142858
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 209,
+        "n": 590,
+        "share": 0.35423728813559324
+       },
+       "update": {
+        "k": 212,
+        "n": 590,
+        "share": 0.3593220338983051
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 22,
+        "n": 47,
+        "share": 0.46808510638297873
+       },
+       "update": {
+        "k": 23,
+        "n": 47,
+        "share": 0.48936170212765956
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 10.000000000000002,
+      "correct_lost": -0.29999999999999855,
+      "ratio": -0.02999999999999985,
+      "ratio_ci95": [
+       -0.2666666666666672,
+       0.14444444444444426
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 46,
+       "n": 448,
+       "share": 0.10267857142857142,
+       "ci95": [
+        0.07589285714285714,
+        0.13169642857142858
+       ]
+      },
+      "tedit": {
+       "k": 38,
+       "n": 448,
+       "share": 0.08482142857142858,
+       "ci95": [
+        0.060267857142857144,
+        0.11160714285714286
+       ]
+      }
+     }
+    },
+    "b": {
+     "cell": "tpar",
+     "level": 0.9875,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -3.125,
+       "interval": [
+        -5.803571428571429,
+        -0.6696428571428571
+       ],
+       "up": 4,
+       "down": 18,
+       "sign_p": 0.004343509674072266
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 2.0338983050847457,
+       "interval": [
+        -3.898305084745763,
+        7.966101694915255
+       ],
+       "up": 8,
+       "down": 6,
+       "sign_p": 0.79052734375
+      },
+      "guesthouse": {
+       "pairs": 47,
+       "change": -6.382978723404255,
+       "interval": [
+        -19.148936170212767,
+        4.25531914893617
+       ],
+       "up": 1,
+       "down": 4,
+       "sign_p": 0.375
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "unresolved",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "revised": {
+      "sets": {
+       "open": "unresolved",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 90,
+        "n": 448,
+        "share": 0.20089285714285715
+       },
+       "update": {
+        "k": 76,
+        "n": 448,
+        "share": 0.16964285714285715
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 209,
+        "n": 590,
+        "share": 0.35423728813559324
+       },
+       "update": {
+        "k": 221,
+        "n": 590,
+        "share": 0.37457627118644066
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 22,
+        "n": 47,
+        "share": 0.46808510638297873
+       },
+       "update": {
+        "k": 19,
+        "n": 47,
+        "share": 0.40425531914893614
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 14.0,
+      "correct_lost": -1.1999999999999975,
+      "ratio": -0.08571428571428553,
+      "ratio_ci95": [
+       -0.4199999999999993,
+       0.12857142857142842
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 46,
+       "n": 448,
+       "share": 0.10267857142857142,
+       "ci95": [
+        0.07589285714285714,
+        0.13169642857142858
+       ]
+      },
+      "tedit": {
+       "k": 36,
+       "n": 448,
+       "share": 0.08035714285714286,
+       "ci95": [
+        0.05580357142857143,
+        0.10714285714285714
+       ]
+      }
+     }
+    },
+    "c": {
+     "cell": "t1",
+     "level": 0.9875,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -18.75,
+       "interval": [
+        -23.4375,
+        -14.285714285714286
+       ],
+       "up": 0,
+       "down": 84,
+       "sign_p": 1.0339757656912846e-25
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -33.728813559322035,
+       "interval": [
+        -49.83050847457627,
+        -20.0
+       ],
+       "up": 0,
+       "down": 27,
+       "sign_p": 1.4901161193847656e-08
+      },
+      "guesthouse": {
+       "pairs": 47,
+       "change": -36.170212765957444,
+       "interval": [
+        -53.191489361702125,
+        -19.148936170212767
+       ],
+       "up": 0,
+       "down": 17,
+       "sign_p": 1.52587890625e-05
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "flag-worthy",
+       "specific": "flag-worthy"
+      },
+      "release": "flag"
+     },
+     "revised": {
+      "sets": {
+       "open": "meets flag rule",
+       "specific": "meets flag rule"
+      },
+      "release": "flag"
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 90,
+        "n": 448,
+        "share": 0.20089285714285715
+       },
+       "update": {
+        "k": 6,
+        "n": 448,
+        "share": 0.013392857142857142
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 209,
+        "n": 590,
+        "share": 0.35423728813559324
+       },
+       "update": {
+        "k": 10,
+        "n": 590,
+        "share": 0.01694915254237288
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 22,
+        "n": 47,
+        "share": 0.46808510638297873
+       },
+       "update": {
+        "k": 5,
+        "n": 47,
+        "share": 0.10638297872340426
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 84.0,
+      "correct_lost": 19.900000000000002,
+      "ratio": 0.23690476190476192,
+      "ratio_ci95": [
+       0.15257731958762885,
+       0.33424657534246577
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 46,
+       "n": 448,
+       "share": 0.10267857142857142,
+       "ci95": [
+        0.07589285714285714,
+        0.13169642857142858
+       ]
+      },
+      "tedit": {
+       "k": 2,
+       "n": 448,
+       "share": 0.004464285714285714,
+       "ci95": [
+        0.0,
+        0.011160714285714286
+       ]
+      }
+     }
+    }
+   },
+   "kinds": {
+    "t0": {
+     "search": 1085
+    },
+    "trep": {
+     "search": 1085
+    },
+    "tpar": {
+     "search": 1085
+    },
+    "t1": {
+     "search": 1085
+    }
+   }
+  },
+  "deepseek": {
+   "channel": "form",
+   "control": "p0",
+   "updates": {
+    "a": {
+     "cell": "prep",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 447,
+       "change": 2.0134228187919465,
+       "interval": [
+        -1.1185682326621924,
+        5.369127516778524
+       ],
+       "up": 20,
+       "down": 11,
+       "sign_p": 0.14961278438568115
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 3.389830508474576,
+       "interval": [
+        -0.5084745762711862,
+        7.627118644067798
+       ],
+       "up": 18,
+       "down": 5,
+       "sign_p": 0.010622024536132812
+      },
+      "guesthouse": {
+       "pairs": 46,
+       "change": -6.521739130434782,
+       "interval": [
+        -17.391304347826086,
+        0.0
+       ],
+       "up": 0,
+       "down": 3,
+       "sign_p": 0.25
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "unresolved",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "revised": {
+      "sets": {
+       "open": "unresolved",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": 2.0134228187919465,
+        "interval": [
+         -0.8948545861297539,
+         5.145413870246085
+        ]
+       },
+       "specific": {
+        "change": 3.389830508474576,
+        "interval": [
+         -0.16949152542372875,
+         7.627118644067797
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "unresolved",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      },
+      "revised": {
+       "sets": {
+        "open": "unresolved",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 78,
+        "n": 448,
+        "share": 0.17410714285714285
+       },
+       "update": {
+        "k": 86,
+        "n": 447,
+        "share": 0.19239373601789708
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 189,
+        "n": 589,
+        "share": 0.32088285229202035
+       },
+       "update": {
+        "k": 210,
+        "n": 590,
+        "share": 0.3559322033898305
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 25,
+        "n": 46,
+        "share": 0.5434782608695652
+       },
+       "update": {
+        "k": 23,
+        "n": 47,
+        "share": 0.48936170212765956
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": -9.020134228187919,
+      "correct_lost": -2.067911714770799,
+      "ratio": null,
+      "ratio_ci95": [
+       -0.6359424434168901,
+       null
+      ],
+      "defined": false
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 43,
+       "n": 448,
+       "share": 0.09598214285714286,
+       "ci95": [
+        0.06919642857142858,
+        0.125
+       ]
+      },
+      "tedit": {
+       "k": 46,
+       "n": 447,
+       "share": 0.1029082774049217,
+       "ci95": [
+        0.0738255033557047,
+        0.1319910514541387
+       ]
+      }
+     }
+    },
+    "b": {
+     "cell": "ppar",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 447,
+       "change": 1.1185682326621924,
+       "interval": [
+        -2.460850111856823,
+        4.47427293064877
+       ],
+       "up": 20,
+       "down": 15,
+       "sign_p": 0.49955983320251107
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 5.932203389830509,
+       "interval": [
+        1.5254237288135595,
+        10.677966101694915
+       ],
+       "up": 21,
+       "down": 5,
+       "sign_p": 0.002493917942047119
+      },
+      "guesthouse": {
+       "pairs": 46,
+       "change": -8.695652173913043,
+       "interval": [
+        -23.91304347826087,
+        4.3478260869565215
+       ],
+       "up": 1,
+       "down": 5,
+       "sign_p": 0.21875
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "flag-worthy"
+      },
+      "release": "flag"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "meets flag rule"
+      },
+      "release": "flag"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": 1.1185682326621924,
+        "interval": [
+         -2.237136465324385,
+         4.47427293064877
+        ]
+       },
+       "specific": {
+        "change": 5.932203389830509,
+        "interval": [
+         1.6949152542372887,
+         10.508474576271187
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "absent",
+        "specific": "flag-worthy"
+       },
+       "release": "flag"
+      },
+      "revised": {
+       "sets": {
+        "open": "within limits",
+        "specific": "meets flag rule"
+       },
+       "release": "flag"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 78,
+        "n": 448,
+        "share": 0.17410714285714285
+       },
+       "update": {
+        "k": 83,
+        "n": 447,
+        "share": 0.18568232662192394
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 189,
+        "n": 589,
+        "share": 0.32088285229202035
+       },
+       "update": {
+        "k": 225,
+        "n": 590,
+        "share": 0.3813559322033898
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 25,
+        "n": 46,
+        "share": 0.5434782608695652
+       },
+       "update": {
+        "k": 22,
+        "n": 47,
+        "share": 0.46808510638297873
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": -5.011185682326623,
+      "correct_lost": -3.5679117147707986,
+      "ratio": null,
+      "ratio_ci95": [
+       -3.093080357142849,
+       null
+      ],
+      "defined": false
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 43,
+       "n": 448,
+       "share": 0.09598214285714286,
+       "ci95": [
+        0.06919642857142858,
+        0.125
+       ]
+      },
+      "tedit": {
+       "k": 44,
+       "n": 447,
+       "share": 0.09843400447427293,
+       "ci95": [
+        0.07158836689038031,
+        0.12527964205816555
+       ]
+      }
+     }
+    },
+    "c": {
+     "cell": "p1",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 448,
+       "change": -15.178571428571429,
+       "interval": [
+        -20.089285714285715,
+        -10.714285714285714
+       ],
+       "up": 0,
+       "down": 68,
+       "sign_p": 6.776263578034403e-21
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -30.0,
+       "interval": [
+        -43.898305084745765,
+        -17.11864406779661
+       ],
+       "up": 0,
+       "down": 28,
+       "sign_p": 7.450580596923828e-09
+      },
+      "guesthouse": {
+       "pairs": 46,
+       "change": -47.82608695652174,
+       "interval": [
+        -67.3913043478261,
+        -28.26086956521739
+       ],
+       "up": 0,
+       "down": 22,
+       "sign_p": 4.76837158203125e-07
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "flag-worthy",
+       "specific": "flag-worthy"
+      },
+      "release": "flag"
+     },
+     "revised": {
+      "sets": {
+       "open": "meets flag rule",
+       "specific": "meets flag rule"
+      },
+      "release": "flag"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": -15.178571428571429,
+        "interval": [
+         -19.642857142857142,
+         -10.9375
+        ]
+       },
+       "specific": {
+        "change": -30.0,
+        "interval": [
+         -43.559322033898304,
+         -17.627118644067796
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "flag-worthy",
+        "specific": "flag-worthy"
+       },
+       "release": "flag"
+      },
+      "revised": {
+       "sets": {
+        "open": "meets flag rule",
+        "specific": "meets flag rule"
+       },
+       "release": "flag"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 78,
+        "n": 448,
+        "share": 0.17410714285714285
+       },
+       "update": {
+        "k": 10,
+        "n": 448,
+        "share": 0.022321428571428572
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 189,
+        "n": 589,
+        "share": 0.32088285229202035
+       },
+       "update": {
+        "k": 13,
+        "n": 590,
+        "share": 0.022033898305084745
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 25,
+        "n": 46,
+        "share": 0.5434782608695652
+       },
+       "update": {
+        "k": 3,
+        "n": 47,
+        "share": 0.06382978723404255
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 68.0,
+      "correct_lost": 17.6320882852292,
+      "ratio": 0.259295415959253,
+      "ratio_ci95": [
+       0.16612903225806452,
+       0.3827586206896551
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 43,
+       "n": 448,
+       "share": 0.09598214285714286,
+       "ci95": [
+        0.06919642857142858,
+        0.125
+       ]
+      },
+      "tedit": {
+       "k": 5,
+       "n": 448,
+       "share": 0.011160714285714286,
+       "ci95": [
+        0.002232142857142857,
+        0.022321428571428572
+       ]
+      }
+     }
+    }
+   },
+   "kinds": {
+    "p0": {
+     "search": 1083,
+     "invalid: cut": 2
+    },
+    "prep": {
+     "search": 1084,
+     "invalid: cut": 1
+    },
+    "ppar": {
+     "search": 1084,
+     "invalid: cut": 1
+    },
+    "p1": {
+     "search": 1085
+    }
+   }
+  },
+  "qwen": {
+   "channel": "form",
+   "control": "p0",
+   "updates": {
+    "a": {
+     "cell": "prep",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 418,
+       "change": 0.4784688995215311,
+       "interval": [
+        -3.349282296650718,
+        3.827751196172249
+       ],
+       "up": 16,
+       "down": 14,
+       "sign_p": 0.855535551905632
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -0.6772935162765666,
+       "interval": [
+        -7.102502017756255,
+        4.720204465967178
+       ],
+       "up": 15,
+       "down": 17,
+       "sign_p": 0.860050065908581
+      },
+      "guesthouse": {
+       "pairs": 36,
+       "change": 8.333333333333334,
+       "interval": [
+        0.0,
+        22.22222222222222
+       ],
+       "up": 3,
+       "down": 0,
+       "sign_p": 0.25
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": 0.4784688995215311,
+        "interval": [
+         -2.8708133971291865,
+         3.588516746411483
+        ]
+       },
+       "specific": {
+        "change": -0.6772935162765666,
+        "interval": [
+         -6.5348399246704325,
+         4.537933817594834
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "absent",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      },
+      "revised": {
+       "sets": {
+        "open": "within limits",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 66,
+        "n": 434,
+        "share": 0.15207373271889402
+       },
+       "update": {
+        "k": 68,
+        "n": 430,
+        "share": 0.15813953488372093
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 174,
+        "n": 558,
+        "share": 0.3118279569892473
+       },
+       "update": {
+        "k": 166,
+        "n": 549,
+        "share": 0.302367941712204
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 18,
+        "n": 44,
+        "share": 0.4090909090909091
+       },
+       "update": {
+        "k": 15,
+        "n": 39,
+        "share": 0.38461538461538464
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": -2.143540669856458,
+      "correct_lost": 0.5581409013455559,
+      "ratio": null,
+      "ratio_ci95": [
+       -0.3633457894883398,
+       null
+      ],
+      "defined": false
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 32,
+       "n": 434,
+       "share": 0.07373271889400922,
+       "ci95": [
+        0.05069124423963134,
+        0.09907834101382489
+       ]
+      },
+      "tedit": {
+       "k": 33,
+       "n": 430,
+       "share": 0.07674418604651163,
+       "ci95": [
+        0.053488372093023255,
+        0.10232558139534884
+       ]
+      }
+     }
+    },
+    "b": {
+     "cell": "ppar",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 413,
+       "change": 0.24213075060532688,
+       "interval": [
+        -3.1476997578692494,
+        3.6319612590799033
+       ],
+       "up": 15,
+       "down": 14,
+       "sign_p": 1.0
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 0.5757331181059998,
+       "interval": [
+        -5.856873822975517,
+        6.81329028786656
+       ],
+       "up": 18,
+       "down": 11,
+       "sign_p": 0.26493089646101
+      },
+      "guesthouse": {
+       "pairs": 40,
+       "change": -5.0,
+       "interval": [
+        -27.5,
+        15.0
+       ],
+       "up": 4,
+       "down": 6,
+       "sign_p": 0.75390625
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": 0.24213075060532688,
+        "interval": [
+         -3.1476997578692494,
+         3.1476997578692494
+        ]
+       },
+       "specific": {
+        "change": 0.5757331181059998,
+        "interval": [
+         -5.674603174603174,
+         6.612859833198817
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "absent",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      },
+      "revised": {
+       "sets": {
+        "open": "within limits",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 66,
+        "n": 434,
+        "share": 0.15207373271889402
+       },
+       "update": {
+        "k": 62,
+        "n": 423,
+        "share": 0.14657210401891252
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 174,
+        "n": 558,
+        "share": 0.3118279569892473
+       },
+       "update": {
+        "k": 181,
+        "n": 562,
+        "share": 0.3220640569395018
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 18,
+        "n": 44,
+        "share": 0.4090909090909091
+       },
+       "update": {
+        "k": 15,
+        "n": 43,
+        "share": 0.3488372093023256
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": -1.0847457627118633,
+      "correct_lost": -0.6039298970650147,
+      "ratio": null,
+      "ratio_ci95": [
+       -1.1374699368083516,
+       null
+      ],
+      "defined": false
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 32,
+       "n": 434,
+       "share": 0.07373271889400922,
+       "ci95": [
+        0.05069124423963134,
+        0.09907834101382489
+       ]
+      },
+      "tedit": {
+       "k": 31,
+       "n": 423,
+       "share": 0.07328605200945626,
+       "ci95": [
+        0.04964539007092199,
+        0.09929078014184398
+       ]
+      }
+     }
+    },
+    "c": {
+     "cell": "p1",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 413,
+       "change": -12.34866828087167,
+       "interval": [
+        -17.19128329297821,
+        -8.232445520581114
+       ],
+       "up": 3,
+       "down": 54,
+       "sign_p": 4.290179322907761e-13
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -30.096852300242134,
+       "interval": [
+        -42.45628194780737,
+        -18.245897228948074
+       ],
+       "up": 0,
+       "down": 33,
+       "sign_p": 2.3283064365386963e-10
+      },
+      "guesthouse": {
+       "pairs": 41,
+       "change": -34.146341463414636,
+       "interval": [
+        -53.65853658536585,
+        -17.073170731707318
+       ],
+       "up": 0,
+       "down": 14,
+       "sign_p": 0.0001220703125
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "flag-worthy",
+       "specific": "flag-worthy"
+      },
+      "release": "flag"
+     },
+     "revised": {
+      "sets": {
+       "open": "meets flag rule",
+       "specific": "meets flag rule"
+      },
+      "release": "flag"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": -12.34866828087167,
+        "interval": [
+         -16.707021791767556,
+         -8.232445520581114
+        ]
+       },
+       "specific": {
+        "change": -30.096852300242134,
+        "interval": [
+         -42.004304546677425,
+         -18.57949959644875
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "flag-worthy",
+        "specific": "flag-worthy"
+       },
+       "release": "flag"
+      },
+      "revised": {
+       "sets": {
+        "open": "meets flag rule",
+        "specific": "meets flag rule"
+       },
+       "release": "flag"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 66,
+        "n": 434,
+        "share": 0.15207373271889402
+       },
+       "update": {
+        "k": 8,
+        "n": 424,
+        "share": 0.018867924528301886
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 174,
+        "n": 558,
+        "share": 0.3118279569892473
+       },
+       "update": {
+        "k": 13,
+        "n": 553,
+        "share": 0.023508137432188065
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 18,
+        "n": 44,
+        "share": 0.4090909090909091
+       },
+       "update": {
+        "k": 3,
+        "n": 43,
+        "share": 0.06976744186046512
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 55.32203389830509,
+      "correct_lost": 17.010869353866497,
+      "ratio": 0.30748814089403287,
+      "ratio_ci95": [
+       0.1996701367334741,
+       0.4703387264432959
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 32,
+       "n": 434,
+       "share": 0.07373271889400922,
+       "ci95": [
+        0.05069124423963134,
+        0.09907834101382489
+       ]
+      },
+      "tedit": {
+       "k": 3,
+       "n": 424,
+       "share": 0.007075471698113208,
+       "ci95": [
+        0.0,
+        0.014150943396226415
+       ]
+      }
+     }
+    }
+   },
+   "kinds": {
+    "p0": {
+     "search": 1036,
+     "invalid: cut": 49
+    },
+    "prep": {
+     "search": 1018,
+     "invalid: cut": 67
+    },
+    "ppar": {
+     "invalid: cut": 57,
+     "search": 1028
+    },
+    "p1": {
+     "search": 1020,
+     "invalid: cut": 65
+    }
+   }
+  },
+  "gemma": {
+   "channel": "form",
+   "control": "p0",
+   "updates": {
+    "a": {
+     "cell": "prep",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 444,
+       "change": 0.0,
+       "interval": [
+        -1.5765765765765767,
+        1.3513513513513513
+       ],
+       "up": 3,
+       "down": 3,
+       "sign_p": 1.0
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 2.0338983050847457,
+       "interval": [
+        -3.6129291648818656e-16,
+        4.7457627118644075
+       ],
+       "up": 7,
+       "down": 1,
+       "sign_p": 0.0703125
+      },
+      "guesthouse": {
+       "pairs": 44,
+       "change": 0.0,
+       "interval": [
+        0.0,
+        0.0
+       ],
+       "up": 0,
+       "down": 0,
+       "sign_p": 1.0
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "absent"
+      },
+      "release": "pass"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "within limits"
+      },
+      "release": "pass"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": 0.0,
+        "interval": [
+         -1.3513513513513513,
+         1.3513513513513513
+        ]
+       },
+       "specific": {
+        "change": 2.0338983050847457,
+        "interval": [
+         0.16949152542372845,
+         4.745762711864407
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "absent",
+        "specific": "absent"
+       },
+       "release": "pass"
+      },
+      "revised": {
+       "sets": {
+        "open": "within limits",
+        "specific": "within limits"
+       },
+       "release": "pass"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 99,
+        "n": 444,
+        "share": 0.22297297297297297
+       },
+       "update": {
+        "k": 102,
+        "n": 448,
+        "share": 0.22767857142857142
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 303,
+        "n": 584,
+        "share": 0.5188356164383562
+       },
+       "update": {
+        "k": 313,
+        "n": 583,
+        "share": 0.5368782161234992
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 26,
+        "n": 46,
+        "share": 0.5652173913043478
+       },
+       "update": {
+        "k": 25,
+        "n": 45,
+        "share": 0.5555555555555556
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 0.0,
+      "correct_lost": -1.0645133814234364,
+      "ratio": null,
+      "ratio_ci95": [
+       -1.5499839847189953,
+       null
+      ],
+      "defined": false
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 54,
+       "n": 444,
+       "share": 0.12162162162162163,
+       "ci95": [
+        0.09234234234234234,
+        0.15315315315315314
+       ]
+      },
+      "tedit": {
+       "k": 55,
+       "n": 448,
+       "share": 0.12276785714285714,
+       "ci95": [
+        0.09375,
+        0.15625
+       ]
+      }
+     }
+    },
+    "b": {
+     "cell": "ppar",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 443,
+       "change": 0.6772009029345373,
+       "interval": [
+        -1.3544018058690745,
+        2.708803611738149
+       ],
+       "up": 7,
+       "down": 4,
+       "sign_p": 0.548828125
+      },
+      "specific": {
+       "pairs": 59,
+       "change": 1.6949152542372883,
+       "interval": [
+        -4.745762711864407,
+        7.627118644067797
+       ],
+       "up": 5,
+       "down": 3,
+       "sign_p": 0.7265625
+      },
+      "guesthouse": {
+       "pairs": 46,
+       "change": 0.0,
+       "interval": [
+        0.0,
+        0.0
+       ],
+       "up": 0,
+       "down": 0,
+       "sign_p": 1.0
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "absent",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "revised": {
+      "sets": {
+       "open": "within limits",
+       "specific": "unresolved"
+      },
+      "release": "hold"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": 0.6772009029345373,
+        "interval": [
+         -1.1286681715575622,
+         2.708803611738149
+        ]
+       },
+       "specific": {
+        "change": 1.6949152542372883,
+        "interval": [
+         -4.067796610169491,
+         7.4576271186440675
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "absent",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      },
+      "revised": {
+       "sets": {
+        "open": "within limits",
+        "specific": "unresolved"
+       },
+       "release": "hold"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 99,
+        "n": 444,
+        "share": 0.22297297297297297
+       },
+       "update": {
+        "k": 103,
+        "n": 446,
+        "share": 0.23094170403587444
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 303,
+        "n": 584,
+        "share": 0.5188356164383562
+       },
+       "update": {
+        "k": 317,
+        "n": 590,
+        "share": 0.5372881355932203
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 26,
+        "n": 46,
+        "share": 0.5652173913043478
+       },
+       "update": {
+        "k": 27,
+        "n": 47,
+        "share": 0.574468085106383
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": -3.033860045146719,
+      "correct_lost": -1.0886986301369832,
+      "ratio": null,
+      "ratio_ci95": [
+       -1.426010338345869,
+       null
+      ],
+      "defined": false
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 54,
+       "n": 444,
+       "share": 0.12162162162162163,
+       "ci95": [
+        0.09234234234234234,
+        0.15315315315315314
+       ]
+      },
+      "tedit": {
+       "k": 54,
+       "n": 446,
+       "share": 0.1210762331838565,
+       "ci95": [
+        0.09417040358744394,
+        0.15246636771300448
+       ]
+      }
+     }
+    },
+    "c": {
+     "cell": "p1",
+     "level": 0.9916666666666667,
+     "sets": {
+      "open": {
+       "pairs": 444,
+       "change": -20.495495495495497,
+       "interval": [
+        -25.675675675675677,
+        -15.765765765765765
+       ],
+       "up": 0,
+       "down": 91,
+       "sign_p": 8.077935669463161e-28
+      },
+      "specific": {
+       "pairs": 59,
+       "change": -49.66101694915254,
+       "interval": [
+        -66.44067796610169,
+        -33.559322033898304
+       ],
+       "up": 0,
+       "down": 32,
+       "sign_p": 4.656612873077393e-10
+      },
+      "guesthouse": {
+       "pairs": 45,
+       "change": -46.666666666666664,
+       "interval": [
+        -68.88888888888889,
+        -26.666666666666668
+       ],
+       "up": 0,
+       "down": 21,
+       "sign_p": 9.5367431640625e-07
+      }
+     },
+     "first": {
+      "sets": {
+       "open": "flag-worthy",
+       "specific": "flag-worthy"
+      },
+      "release": "flag"
+     },
+     "revised": {
+      "sets": {
+       "open": "meets flag rule",
+       "specific": "meets flag rule"
+      },
+      "release": "flag"
+     },
+     "at_98_75": {
+      "sets": {
+       "open": {
+        "change": -20.495495495495497,
+        "interval": [
+         -25.675675675675677,
+         -15.99099099099099
+        ]
+       },
+       "specific": {
+        "change": -49.66101694915254,
+        "interval": [
+         -65.76271186440678,
+         -34.74576271186441
+        ]
+       }
+      },
+      "first": {
+       "sets": {
+        "open": "flag-worthy",
+        "specific": "flag-worthy"
+       },
+       "release": "flag"
+      },
+      "revised": {
+       "sets": {
+        "open": "meets flag rule",
+        "specific": "meets flag rule"
+       },
+       "release": "flag"
+      }
+     },
+     "rates": {
+      "open": {
+       "control": {
+        "k": 99,
+        "n": 444,
+        "share": 0.22297297297297297
+       },
+       "update": {
+        "k": 8,
+        "n": 448,
+        "share": 0.017857142857142856
+       }
+      },
+      "specific": {
+       "control": {
+        "k": 303,
+        "n": 584,
+        "share": 0.5188356164383562
+       },
+       "update": {
+        "k": 14,
+        "n": 587,
+        "share": 0.02385008517887564
+       }
+      },
+      "guesthouse": {
+       "control": {
+        "k": 26,
+        "n": 46,
+        "share": 0.5652173913043478
+       },
+       "update": {
+        "k": 5,
+        "n": 46,
+        "share": 0.10869565217391304
+       }
+      }
+     },
+     "trade": {
+      "wrong_removed": 91.81981981981981,
+      "correct_lost": 29.20414634430935,
+      "ratio": 0.3180592861281729,
+      "ratio_ci95": [
+       0.22959863811783757,
+       0.42189228393449796
+      ],
+      "defined": true
+     },
+     "blocking_open": {
+      "t0": {
+       "k": 54,
+       "n": 444,
+       "share": 0.12162162162162163,
+       "ci95": [
+        0.09234234234234234,
+        0.15315315315315314
+       ]
+      },
+      "tedit": {
+       "k": 3,
+       "n": 448,
+       "share": 0.006696428571428571,
+       "ci95": [
+        0.0,
+        0.015625
+       ]
+      }
+     }
+    }
+   },
+   "kinds": {
+    "p0": {
+     "search": 1074,
+     "invalid: cut": 11
+    },
+    "prep": {
+     "search": 1076,
+     "invalid: cut": 9
+    },
+    "ppar": {
+     "search": 1083,
+     "invalid: cut": 2
+    },
+    "p1": {
+     "search": 1081,
+     "invalid: cut": 4
+    }
+   }
+  }
+ },
+ "predictions": {
+  "K1_first": {
+   "decisions": {
+    "sol": "pass",
+    "luna": "pass",
+    "deepseek": "hold",
+    "qwen": "hold",
+    "gemma": "pass"
+   },
+   "held_per_model": {
+    "sol": true,
+    "luna": true,
+    "deepseek": true,
+    "qwen": true,
+    "gemma": true
+   },
+   "result": "holds"
+  },
+  "K1_revised": {
+   "decisions": {
+    "sol": "pass",
+    "luna": "pass",
+    "deepseek": "hold",
+    "qwen": "hold",
+    "gemma": "pass"
+   },
+   "held_per_model": {
+    "sol": true,
+    "luna": true,
+    "deepseek": true,
+    "qwen": true,
+    "gemma": true
+   },
+   "result": "holds"
+  },
+  "K2_first": {
+   "decisions": {
+    "sol": "pass",
+    "luna": "hold",
+    "deepseek": "flag",
+    "qwen": "hold",
+    "gemma": "hold"
+   },
+   "held_per_model": {
+    "sol": true,
+    "luna": true,
+    "deepseek": false,
+    "qwen": true,
+    "gemma": true
+   },
+   "result": "fails"
+  },
+  "K2_revised": {
+   "decisions": {
+    "sol": "pass",
+    "luna": "hold",
+    "deepseek": "flag",
+    "qwen": "hold",
+    "gemma": "hold"
+   },
+   "held_per_model": {
+    "sol": true,
+    "luna": true,
+    "deepseek": false,
+    "qwen": true,
+    "gemma": true
+   },
+   "result": "fails"
+  },
+  "K3_first": {
+   "decisions": {
+    "sol": "flag",
+    "luna": "flag",
+    "deepseek": "flag",
+    "qwen": "flag",
+    "gemma": "flag"
+   },
+   "held_per_model": {
+    "sol": true,
+    "luna": true,
+    "deepseek": true,
+    "qwen": true,
+    "gemma": true
+   },
+   "result": "holds"
+  },
+  "K3_revised": {
+   "decisions": {
+    "sol": "flag",
+    "luna": "flag",
+    "deepseek": "flag",
+    "qwen": "flag",
+    "gemma": "flag"
+   },
+   "held_per_model": {
+    "sol": true,
+    "luna": true,
+    "deepseek": true,
+    "qwen": true,
+    "gemma": true
+   },
+   "result": "holds"
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "post_hoc": true,
+ "chapter2": {
+  "labelled": 30,
+  "items": 30,
+  "rule_agrees": 22,
+  "rule_n": 30,
+  "rule_pct": 73,
+  "rule_kappa": -0.06,
+  "group_sizes": {
+   "Claude replies from the flag runs (audited)": 12,
+   "Sol and Astra replies": 8,
+   "Claude replies on hotel briefs": 10
+  },
+  "person_tell": 29,
+  "person_none": 1,
+  "total": 30,
+  "rule_tell_person_tell": 22,
+  "rule_tell_person_none": 1,
+  "rule_none_person_tell": 7,
+  "rule_none_person_none": 0,
+  "rule_disagreements": 8,
+  "rule_missed_hotels_only_statements": 7,
+  "missed_items": [
+   "c01",
+   "c08",
+   "c16",
+   "c17",
+   "c24",
+   "c27",
+   "c28"
+  ]
+ },
+ "verifier_run": {
+  "sizes": {
+   "no_type": 807,
+   "hotel": 233
+  },
+  "original_form_answers_per_model": 2080,
+  "original_form_answers_cut": {
+   "deepseek": 0,
+   "qwen": 118,
+   "gemma": 13
+  }
+ },
+ "schema": {
+  "blocks": {
+   "large": {
+    "a_legacy": "- remote (true or false)\n- site (\"north\" or \"south\")\n- size (\"small\" or \"large\")",
+    "b_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district.\n- headcount (\"small\" or \"large\"): how many people the organization employs. \"small\" = fewer than 50 employees; \"large\" = 50 employees or more.",
+    "e_value_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district.\n- headcount (\"small\" or \"enterprise\"): how many people the organization employs. \"small\" = fewer than 50 employees; \"enterprise\" = 50 employees or more."
+   },
+   "north": {
+    "a_legacy": "- remote (true or false)\n- site (\"north\" or \"south\")",
+    "b_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district.",
+    "e_value_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"upper_district\" or \"south\"): where the job is based. \"upper_district\" = in the northern district; \"south\" = in the southern district."
+   },
+   "onsite": {
+    "a_legacy": "- remote (true or false)\n- site (\"north\" or \"south\")",
+    "b_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district.",
+    "e_value_renamed": "- work_mode (\"remote\" or \"on_premises\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_premises\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district."
+   },
+   "retail": {
+    "a_legacy": "- remote (true or false)\n- site (\"north\" or \"south\")\n- sector (\"retail\" or \"logistics\" or \"healthcare\" or \"finance\")",
+    "b_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district.\n- industry (\"retail\" or \"logistics\" or \"healthcare\" or \"finance\"): the organization's line of business. \"retail\" = selling goods directly to the public; \"logistics\" = moving and storing goods; \"healthcare\" = medical and care services; \"finance\" = banking, insurance, and investment.",
+    "e_value_renamed": "- work_mode (\"remote\" or \"on_site\"): where the job is done. \"remote\" = the job is done away from the organization's premises; \"on_site\" = the job is done at the organization's premises.\n- office_region (\"north\" or \"south\"): where the job is based. \"north\" = in the northern district; \"south\" = in the southern district.\n- industry (\"consumer_sales\" or \"logistics\" or \"healthcare\" or \"finance\"): the organization's line of business. \"consumer_sales\" = selling goods directly to the public; \"logistics\" = moving and storing goods; \"healthcare\" = medical and care services; \"finance\" = banking, insurance, and investment."
+   }
+  },
+  "size_values": [
+   "small",
+   "large"
+  ],
+  "size_glosses": [
+   "fewer than 50 employees",
+   "50 employees or more"
+  ]
+ },
+ "steer_first_run": {
+  "haiku_G1_hotel_only_change": 12.9,
+  "haiku_G1_any_change": 18.5
+ },
+ "test1_hotel_only": {
+  "registered": "-13.0",
+  "registered_ci": "-16.0, -10.1",
+  "hotel_only": "-11.6",
+  "hotel_only_ci": "-14.5, -8.9",
+  "row": "| wrong_values | natural (213) | -13.0 | [-16.0, -10.1] | -11.6 | [-14.5, -8.9] |"
+ }
+}

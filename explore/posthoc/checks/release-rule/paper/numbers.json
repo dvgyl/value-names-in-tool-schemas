@@ -1,0 +1,214 @@
+{
+ "t3": {
+  "rows": [
+   {
+    "key": "five-model|luna|a",
+    "rule": "final",
+    "d2000": "hold",
+    "d20000": "pass",
+    "d100000": [
+     "pass",
+     "pass",
+     "pass",
+     "pass",
+     "pass"
+    ],
+    "end_2000": -5.133928571428571,
+    "end_range_100000": [
+     -4.910714285714286,
+     -4.910714285714286
+    ],
+    "set": "open",
+    "boundary": "\u2212L"
+   },
+   {
+    "key": "five-model|gemma|a",
+    "rule": "final",
+    "d2000": "pass",
+    "d20000": "pass",
+    "d100000": [
+     "pass",
+     "pass",
+     "pass",
+     "pass",
+     "pass"
+    ],
+    "end_2000": 4.915254237288137,
+    "end_range_100000": [
+     4.745762711864407,
+     4.7457627118644075
+    ],
+    "set": "specific",
+    "boundary": "+L"
+   },
+   {
+    "key": "stored|sonnet|era1 read 1|era1 read 2",
+    "rule": "original",
+    "d2000": "flag",
+    "d20000": "flag",
+    "d100000": [
+     "flag",
+     "flag",
+     "flag",
+     "flag",
+     "flag"
+    ],
+    "end_2000": 1.694915254237288,
+    "end_range_100000": [
+     1.694915254237288,
+     1.694915254237288
+    ],
+    "set": "specific",
+    "boundary": "0"
+   },
+   {
+    "key": "stored|sonnet|era1 read 1|erp",
+    "rule": "original",
+    "d2000": "flag",
+    "d20000": "flag",
+    "d100000": [
+     "flag",
+     "flag",
+     "flag",
+     "flag",
+     "flag"
+    ],
+    "end_2000": 1.694915254237288,
+    "end_range_100000": [
+     1.694915254237288,
+     1.694915254237288
+    ],
+    "set": "specific",
+    "boundary": "0"
+   },
+   {
+    "key": "fresh|luna|paraphrase 1",
+    "rule": "final",
+    "d2000": "pass",
+    "d20000": "pass",
+    "d100000": [
+     "pass",
+     "pass",
+     "pass",
+     "pass",
+     "pass"
+    ],
+    "end_2000": -4.745762711864407,
+    "end_range_100000": [
+     -4.915254237288136,
+     -4.745762711864407
+    ],
+    "set": "specific",
+    "boundary": "\u2212L"
+   }
+  ],
+  "n_total": 187,
+  "n_comparisons": 67,
+  "n_others": 182,
+  "zero_distance_cases": [
+   [
+    "Sonnet: era1 read 2 v fill read 3",
+    "original"
+   ],
+   [
+    "Sonnet: fill read 3 v erp",
+    "original"
+   ]
+  ],
+  "smallest_positive_distance": {
+   "label": "Luna, paraphrase 1",
+   "rule": "revised",
+   "distance": 0.08474576271186418,
+   "boundary": "-L",
+   "set": "specific"
+  },
+  "changed": [
+   [
+    "Luna, repeat",
+    "final"
+   ]
+  ]
+ },
+ "beyond_margin": {
+  "original": {
+   "wrong_passes": 2,
+   "trials": 58000,
+   "share": 3.4482758620689657e-05,
+   "largest": {
+    "id": "B-spec|sol|shift +6 specific|n59m10",
+    "k": 1,
+    "n": 2000,
+    "share": 0.0005,
+    "ci95": [
+     8.82677297307957e-05,
+     0.002826862534395573
+    ]
+   }
+  },
+  "revised": {
+   "wrong_passes": 2,
+   "trials": 58000,
+   "share": 3.4482758620689657e-05,
+   "largest": {
+    "id": "B-spec|sol|shift +6 specific|n59m10",
+    "k": 1,
+    "n": 2000,
+    "share": 0.0005,
+    "ci95": [
+     8.82677297307957e-05,
+     0.002826862534395573
+    ]
+   }
+  },
+  "final": {
+   "wrong_passes": 2,
+   "trials": 58000,
+   "share": 3.4482758620689657e-05,
+   "largest": {
+    "id": "B-spec|sol|shift +6 specific|n59m10",
+    "k": 1,
+    "n": 2000,
+    "share": 0.0005,
+    "ci95": [
+     8.82677297307957e-05,
+     0.002826862534395573
+    ]
+   }
+  },
+  "strat_nosign": {
+   "wrong_passes": 2,
+   "trials": 58000,
+   "share": 3.4482758620689657e-05,
+   "largest": {
+    "id": "B-spec|sol|shift +6 specific|n59m10",
+    "k": 1,
+    "n": 2000,
+    "share": 0.0005,
+    "ci95": [
+     8.82677297307957e-05,
+     0.002826862534395573
+    ]
+   }
+  },
+  "pooled": {
+   "wrong_passes": 34258,
+   "trials": 58000,
+   "share": 0.5906551724137931,
+   "largest": {
+    "id": "S-sparse|haiku|sparse +8 specific|n59m10",
+    "k": 2000,
+    "n": 2000,
+    "share": 1.0,
+    "ci95": [
+     0.9980829526885622,
+     1.0
+    ]
+   }
+  }
+ },
+ "mean_changed_sparse": {
+  "haiku": 12.0375,
+  "deepseek": 25.062,
+  "sol": 17.66
+ }
+}

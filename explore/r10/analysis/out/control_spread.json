@@ -1,0 +1,224 @@
+{
+ "amendment": "R10-16",
+ "post_hoc": true,
+ "updates": {
+  "haiku trep (a)": {
+   "open": {
+    "pairs": 448,
+    "mean": 0.22321428571428573,
+    "sd_sample": 10.573877585086937,
+    "sd_population": 10.562069789572304,
+    "rise": 3,
+    "fall": 2,
+    "same": 443,
+    "abs_30_or_more": 5,
+    "largest_rises": [
+     100.0,
+     100.0,
+     100.0,
+     0.0,
+     0.0
+    ],
+    "largest_falls": [
+     -100.0,
+     -100.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "abs_30_or_more_counts": [
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     }
+    ]
+   },
+   "specific": {
+    "pairs": 59,
+    "mean": 0.09416195856873828,
+    "sd_sample": 5.884109010741226,
+    "sd_population": 5.83403057654636,
+    "rise": 4,
+    "fall": 4,
+    "same": 51,
+    "abs_30_or_more": 1,
+    "largest_rises": [
+     30.0,
+     10.0,
+     10.0,
+     10.0,
+     0.0
+    ],
+    "largest_falls": [
+     -20.0,
+     -14.4,
+     -10.0,
+     -10.0,
+     0.0
+    ],
+    "abs_30_or_more_counts": [
+     {
+      "change": 30.0,
+      "control": "2/10",
+      "update": "5/10"
+     }
+    ]
+   }
+  },
+  "haiku tord (b)": {
+   "open": {
+    "pairs": 448,
+    "mean": 0.22321428571428573,
+    "sd_sample": 17.05220819748442,
+    "sd_population": 17.033166083004783,
+    "rise": 7,
+    "fall": 6,
+    "same": 435,
+    "abs_30_or_more": 13,
+    "largest_rises": [
+     100.0,
+     100.0,
+     100.0,
+     100.0,
+     100.0
+    ],
+    "largest_falls": [
+     -100.0,
+     -100.0,
+     -100.0,
+     -100.0,
+     -100.0
+    ],
+    "abs_30_or_more_counts": [
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": -100.0,
+      "control": "1/1",
+      "update": "0/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     },
+     {
+      "change": 100.0,
+      "control": "0/1",
+      "update": "1/1"
+     }
+    ]
+   },
+   "specific": {
+    "pairs": 59,
+    "mean": 1.1864406779661014,
+    "sd_sample": 16.09077115688196,
+    "sd_population": 15.953825933220465,
+    "rise": 4,
+    "fall": 5,
+    "same": 50,
+    "abs_30_or_more": 3,
+    "largest_rises": [
+     90.0,
+     50.0,
+     20.0,
+     10.0,
+     0.0
+    ],
+    "largest_falls": [
+     -60.0,
+     -10.0,
+     -10.0,
+     -10.0,
+     -10.0
+    ],
+    "abs_30_or_more_counts": [
+     {
+      "change": -60.0,
+      "control": "8/10",
+      "update": "2/10"
+     },
+     {
+      "change": 50.0,
+      "control": "2/10",
+      "update": "7/10"
+     },
+     {
+      "change": 90.0,
+      "control": "0/10",
+      "update": "9/10"
+     }
+    ]
+   }
+  }
+ }
+}

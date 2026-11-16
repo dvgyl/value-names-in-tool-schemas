@@ -1,0 +1,192 @@
+{
+ "transitions": {
+  "sonnet": {
+   "pairs": 1344,
+   "original exclusions": 144,
+   "original exclusion -> renamed no-call": 1,
+   "original no-call": 1,
+   "renamed no-call": 3
+  },
+  "haiku": {
+   "pairs": 894,
+   "original exclusions": 28,
+   "original exclusion -> renamed no-call": 0,
+   "original no-call": 29,
+   "renamed no-call": 35
+  },
+  "opus": {
+   "pairs": 896,
+   "original exclusions": 107,
+   "original exclusion -> renamed no-call": 0,
+   "original no-call": 0,
+   "renamed no-call": 0
+  },
+  "sol": {
+   "pairs": 1344,
+   "original exclusions": 243,
+   "original exclusion -> renamed no-call": 0,
+   "original no-call": 0,
+   "renamed no-call": 0
+  },
+  "luna": {
+   "pairs": 896,
+   "original exclusions": 85,
+   "original exclusion -> renamed no-call": 0,
+   "original no-call": 0,
+   "renamed no-call": 0
+  },
+  "astra": {
+   "pairs": 448,
+   "original exclusions": 85,
+   "original exclusion -> renamed no-call": 0,
+   "original no-call": 0,
+   "renamed no-call": 0
+  }
+ },
+ "step2": {
+  "sonnet": {
+   "stored": {
+    "trials": 96,
+    "removes": 13,
+    "mentions": 48,
+    "no_mention": 35,
+    "shares": [
+     13.541666666666666,
+     50.0,
+     36.458333333333336
+    ]
+   },
+   "sensitivity": {
+    "trials": 94,
+    "removes": 12,
+    "mentions": 47,
+    "no_mention": 35,
+    "shares": [
+     12.76595744680851,
+     50.0,
+     37.234042553191486
+    ]
+   }
+  },
+  "haiku": {
+   "stored": {
+    "trials": 28,
+    "removes": 5,
+    "mentions": 11,
+    "no_mention": 12,
+    "shares": [
+     17.857142857142858,
+     39.285714285714285,
+     42.857142857142854
+    ]
+   },
+   "sensitivity": {
+    "trials": 23,
+    "removes": 2,
+    "mentions": 9,
+    "no_mention": 12,
+    "shares": [
+     8.695652173913043,
+     39.130434782608695,
+     52.17391304347826
+    ]
+   }
+  },
+  "opus": {
+   "stored": {
+    "trials": 51,
+    "removes": 1,
+    "mentions": 26,
+    "no_mention": 24,
+    "shares": [
+     1.9607843137254901,
+     50.98039215686274,
+     47.05882352941177
+    ]
+   },
+   "sensitivity": {
+    "trials": 46,
+    "removes": 1,
+    "mentions": 21,
+    "no_mention": 24,
+    "shares": [
+     2.1739130434782608,
+     45.65217391304348,
+     52.17391304347826
+    ]
+   }
+  },
+  "sol": {
+   "stored": {
+    "trials": 161,
+    "removes": 0,
+    "mentions": 24,
+    "no_mention": 137,
+    "shares": [
+     0.0,
+     14.906832298136646,
+     85.09316770186335
+    ]
+   },
+   "sensitivity": {
+    "trials": 161,
+    "removes": 0,
+    "mentions": 24,
+    "no_mention": 137,
+    "shares": [
+     0.0,
+     14.906832298136646,
+     85.09316770186335
+    ]
+   }
+  },
+  "luna": {
+   "stored": {
+    "trials": 85,
+    "removes": 7,
+    "mentions": 0,
+    "no_mention": 78,
+    "shares": [
+     8.235294117647058,
+     0.0,
+     91.76470588235294
+    ]
+   },
+   "sensitivity": {
+    "trials": 85,
+    "removes": 7,
+    "mentions": 0,
+    "no_mention": 78,
+    "shares": [
+     8.235294117647058,
+     0.0,
+     91.76470588235294
+    ]
+   }
+  },
+  "astra": {
+   "stored": {
+    "trials": 85,
+    "removes": 0,
+    "mentions": 12,
+    "no_mention": 73,
+    "shares": [
+     0.0,
+     14.117647058823529,
+     85.88235294117646
+    ]
+   },
+   "sensitivity": {
+    "trials": 85,
+    "removes": 0,
+    "mentions": 12,
+    "no_mention": 73,
+    "shares": [
+     0.0,
+     14.117647058823529,
+     85.88235294117646
+    ]
+   }
+  }
+ }
+}

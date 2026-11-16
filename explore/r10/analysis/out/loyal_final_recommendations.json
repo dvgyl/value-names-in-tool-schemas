@@ -1,0 +1,259 @@
+{
+ "post_hoc": true,
+ "no_model_call": true,
+ "spec": "loyal_final_recommendations_spec.md",
+ "arms": {
+  "t0": {
+   "all": {
+    "n": 260,
+    "agent_turns": {
+     "4": 260
+    },
+    "traveller_msgs": {
+     "3": 260
+    },
+    "final_empty": 0,
+    "last_stop": {
+     "end_turn": 258,
+     "tool_use": 2
+    },
+    "pending_search_at_limit": 2,
+    "named_0": 81,
+    "named_1": 138,
+    "named_2plus": 41,
+    "shadowed_name": 0,
+    "one_named_shown": 136,
+    "one_named_cue": 22,
+    "none_named_earlier_named": 81,
+    "traveller_last_suit": 35,
+    "with_unparsed_call": 0,
+    "choice_fields": [],
+    "tools": [
+     "search_hotels"
+    ]
+   },
+   "F": {
+    "n": 130,
+    "agent_turns": {
+     "4": 130
+    },
+    "traveller_msgs": {
+     "3": 130
+    },
+    "final_empty": 0,
+    "last_stop": {
+     "end_turn": 129,
+     "tool_use": 1
+    },
+    "pending_search_at_limit": 1,
+    "named_0": 39,
+    "named_1": 67,
+    "named_2plus": 24,
+    "shadowed_name": 0,
+    "one_named_shown": 66,
+    "one_named_cue": 10,
+    "none_named_earlier_named": 39,
+    "traveller_last_suit": 12,
+    "with_unparsed_call": 0,
+    "choice_fields": [],
+    "tools": [
+     "search_hotels"
+    ]
+   },
+   "R": {
+    "n": 130,
+    "agent_turns": {
+     "4": 130
+    },
+    "traveller_msgs": {
+     "3": 130
+    },
+    "final_empty": 0,
+    "last_stop": {
+     "end_turn": 129,
+     "tool_use": 1
+    },
+    "pending_search_at_limit": 1,
+    "named_0": 42,
+    "named_1": 71,
+    "named_2plus": 17,
+    "shadowed_name": 0,
+    "one_named_shown": 70,
+    "one_named_cue": 12,
+    "none_named_earlier_named": 42,
+    "traveller_last_suit": 23,
+    "with_unparsed_call": 0,
+    "choice_fields": [],
+    "tools": [
+     "search_hotels"
+    ]
+   }
+  },
+  "t1": {
+   "all": {
+    "n": 260,
+    "agent_turns": {
+     "4": 260
+    },
+    "traveller_msgs": {
+     "3": 260
+    },
+    "final_empty": 0,
+    "last_stop": {
+     "end_turn": 260
+    },
+    "pending_search_at_limit": 0,
+    "named_0": 78,
+    "named_1": 152,
+    "named_2plus": 30,
+    "shadowed_name": 0,
+    "one_named_shown": 150,
+    "one_named_cue": 15,
+    "none_named_earlier_named": 77,
+    "traveller_last_suit": 35,
+    "with_unparsed_call": 0,
+    "choice_fields": [],
+    "tools": [
+     "search_hotels"
+    ]
+   },
+   "F": {
+    "n": 130,
+    "agent_turns": {
+     "4": 130
+    },
+    "traveller_msgs": {
+     "3": 130
+    },
+    "final_empty": 0,
+    "last_stop": {
+     "end_turn": 130
+    },
+    "pending_search_at_limit": 0,
+    "named_0": 37,
+    "named_1": 84,
+    "named_2plus": 9,
+    "shadowed_name": 0,
+    "one_named_shown": 84,
+    "one_named_cue": 9,
+    "none_named_earlier_named": 37,
+    "traveller_last_suit": 12,
+    "with_unparsed_call": 0,
+    "choice_fields": [],
+    "tools": [
+     "search_hotels"
+    ]
+   },
+   "R": {
+    "n": 130,
+    "agent_turns": {
+     "4": 130
+    },
+    "traveller_msgs": {
+     "3": 130
+    },
+    "final_empty": 0,
+    "last_stop": {
+     "end_turn": 130
+    },
+    "pending_search_at_limit": 0,
+    "named_0": 41,
+    "named_1": 68,
+    "named_2plus": 21,
+    "shadowed_name": 0,
+    "one_named_shown": 66,
+    "one_named_cue": 6,
+    "none_named_earlier_named": 40,
+    "traveller_last_suit": 23,
+    "with_unparsed_call": 0,
+    "choice_fields": [],
+    "tools": [
+     "search_hotels"
+    ]
+   }
+  }
+ },
+ "records": {
+  "t0": {
+   "records": 261,
+   "complete": 260,
+   "status": {
+    "complete": 260,
+    "cap": 1
+   },
+   "record_keys": [
+    "arm",
+    "brief",
+    "calls",
+    "cap",
+    "cost",
+    "dialogue",
+    "group",
+    "replies",
+    "searches",
+    "status",
+    "traveller"
+   ]
+  },
+  "t1": {
+   "records": 260,
+   "complete": 260,
+   "status": {
+    "complete": 260
+   },
+   "record_keys": [
+    "arm",
+    "brief",
+    "calls",
+    "cost",
+    "dialogue",
+    "group",
+    "replies",
+    "searches",
+    "status",
+    "traveller"
+   ]
+  }
+ },
+ "not_valid_conversations_stored": {
+  "t0": {
+   "complete conversations": 22
+  },
+  "t1": {
+   "complete conversations": 8
+  }
+ },
+ "system_text": {
+  "t0": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. You may call search_hotels more than one time. When you are ready, answer the traveller.",
+  "t1": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, property_kind, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. property_kind: guesthouse, large_property. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. You may call search_hotels more than one time. When you are ready, answer the traveller."
+ },
+ "system_format_words": {
+  "t0": [],
+  "t1": []
+ },
+ "decision": {
+  "t0": {
+   "F1": false,
+   "F2": false,
+   "F3a": false,
+   "F3b": false,
+   "F3c": true,
+   "F3": false,
+   "share_named_1": 0.5307692307692308,
+   "share_cue_among_1": 0.15942028985507245,
+   "share_shown_among_1": 0.9855072463768116
+  },
+  "t1": {
+   "F1": false,
+   "F2": false,
+   "F3a": false,
+   "F3b": false,
+   "F3c": true,
+   "F3": false,
+   "share_named_1": 0.5846153846153846,
+   "share_cue_among_1": 0.09868421052631579,
+   "share_shown_among_1": 0.9868421052631579
+  }
+ },
+ "usable": false
+}

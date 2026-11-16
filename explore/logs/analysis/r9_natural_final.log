@@ -1,0 +1,505 @@
+== 1. reads with type = hotel (group, model, form: units, hits/reads)
+S1t              deepseek f0         994 units    165/  994 ( 16.6%)
+S1t              deepseek f1         990 units     30/  990 (  3.0%)
+S1t              deepseek f2         992 units     27/  992 (  2.7%)
+S1t              deepseek f3         993 units    208/  993 ( 20.9%)
+S1t              deepseek f4         992 units     16/  992 (  1.6%)
+S1t              deepseek f5         994 units    164/  994 ( 16.5%)
+S1t              deepseek f6         993 units     62/  993 (  6.2%)
+S1t              gemma    f0         989 units    248/  989 ( 25.1%)
+S1t              gemma    f1         993 units     31/  993 (  3.1%)
+S1t              gemma    f2         990 units     33/  990 (  3.3%)
+S1t              gemma    f3         991 units    266/  991 ( 26.8%)
+S1t              gemma    f4         983 units      3/  983 (  0.3%)
+S1t              gemma    f5         994 units    242/  994 ( 24.3%)
+S1t              gemma    f6         987 units     44/  987 (  4.5%)
+S1t              haiku    f0         994 units    151/ 2982 (  5.1%)
+S1t              haiku    f0_drift   195 units     25/  585 (  4.3%)
+S1t              haiku    f1         994 units     38/ 2982 (  1.3%)
+S1t              haiku    f2         994 units     54/ 2982 (  1.8%)
+S1t              haiku    f3         994 units    177/ 2982 (  5.9%)
+S1t              haiku    f4         994 units     55/ 2982 (  1.8%)
+S1t              haiku    f5         994 units    144/ 2982 (  4.8%)
+S1t              haiku    f6         994 units    116/ 2982 (  3.9%)
+S1t              luna     f0         994 units    680/ 2982 ( 22.8%)
+S1t              luna     f1         994 units     53/ 2982 (  1.8%)
+S1t              luna     f2         994 units     55/ 2982 (  1.8%)
+S1t              luna     f3         994 units    623/ 2982 ( 20.9%)
+S1t              luna     f4         994 units     27/ 2982 (  0.9%)
+S1t              luna     f5         994 units    710/ 2982 ( 23.8%)
+S1t              luna     f6         994 units    146/ 2982 (  4.9%)
+S1t              qwen     f0         932 units    141/  932 ( 15.1%)
+S1t              qwen     f1         930 units     34/  930 (  3.7%)
+S1t              qwen     f2         922 units     24/  922 (  2.6%)
+S1t              qwen     f3         937 units    150/  937 ( 16.0%)
+S1t              qwen     f4         925 units     22/  925 (  2.4%)
+S1t              qwen     f5         922 units    150/  922 ( 16.3%)
+S1t              qwen     f6         932 units     65/  932 (  7.0%)
+S1t              sol      f0         992 units    413/  992 ( 41.6%)
+S1t              sol      f1         994 units    146/  994 ( 14.7%)
+S1t              sol      f2         993 units    190/  993 ( 19.1%)
+S1t              sol      f4         994 units     90/  994 (  9.1%)
+S1t              sol      f6         994 units    340/  994 ( 34.2%)
+S1t              sonnet   f0         994 units    550/ 2982 ( 18.4%)
+S1t              sonnet   f0_drift   195 units     87/  585 ( 14.9%)
+S1t              sonnet   f1         994 units    154/ 2982 (  5.2%)
+S1t              sonnet   f2         994 units    105/ 2982 (  3.5%)
+S1t              sonnet   f3         994 units    569/ 2982 ( 19.1%)
+S1t              sonnet   f4         994 units     35/ 2982 (  1.2%)
+S1t              sonnet   f5         994 units    626/ 2982 ( 21.0%)
+S1t              sonnet   f6         994 units    143/ 2982 (  4.8%)
+S1               deepseek f0        1136 units    170/ 1136 ( 15.0%)
+S1               deepseek f1        1132 units     31/ 1132 (  2.7%)
+S1               deepseek f2        1133 units     29/ 1133 (  2.6%)
+S1               deepseek f3        1135 units    212/ 1135 ( 18.7%)
+S1               deepseek f4        1134 units     16/ 1134 (  1.4%)
+S1               deepseek f5        1136 units    170/ 1136 ( 15.0%)
+S1               deepseek f6        1135 units     64/ 1135 (  5.6%)
+S1               gemma    f0        1130 units    249/ 1130 ( 22.0%)
+S1               gemma    f1        1134 units     31/ 1134 (  2.7%)
+S1               gemma    f2        1131 units     35/ 1131 (  3.1%)
+S1               gemma    f3        1132 units    266/ 1132 ( 23.5%)
+S1               gemma    f4        1124 units      3/ 1124 (  0.3%)
+S1               gemma    f5        1136 units    242/ 1136 ( 21.3%)
+S1               gemma    f6        1127 units     44/ 1127 (  3.9%)
+S1               haiku    f0        1136 units    154/ 3408 (  4.5%)
+S1               haiku    f0_drift   228 units     28/  684 (  4.1%)
+S1               haiku    f1        1136 units     41/ 3408 (  1.2%)
+S1               haiku    f2        1136 units     55/ 3408 (  1.6%)
+S1               haiku    f3        1136 units    182/ 3408 (  5.3%)
+S1               haiku    f4        1136 units     57/ 3408 (  1.7%)
+S1               haiku    f5        1136 units    150/ 3408 (  4.4%)
+S1               haiku    f6        1136 units    122/ 3408 (  3.6%)
+S1               luna     f0        1136 units    698/ 3408 ( 20.5%)
+S1               luna     f1        1136 units     57/ 3408 (  1.7%)
+S1               luna     f2        1136 units     60/ 3408 (  1.8%)
+S1               luna     f3        1136 units    645/ 3408 ( 18.9%)
+S1               luna     f4        1136 units     29/ 3408 (  0.9%)
+S1               luna     f5        1136 units    727/ 3408 ( 21.3%)
+S1               luna     f6        1136 units    150/ 3408 (  4.4%)
+S1               qwen     f0        1066 units    147/ 1066 ( 13.8%)
+S1               qwen     f1        1062 units     36/ 1062 (  3.4%)
+S1               qwen     f2        1049 units     25/ 1049 (  2.4%)
+S1               qwen     f3        1073 units    164/ 1073 ( 15.3%)
+S1               qwen     f4        1056 units     23/ 1056 (  2.2%)
+S1               qwen     f5        1052 units    155/ 1052 ( 14.7%)
+S1               qwen     f6        1063 units     67/ 1063 (  6.3%)
+S1               sol      f0        1133 units    413/ 1133 ( 36.5%)
+S1               sol      f1        1135 units    146/ 1135 ( 12.9%)
+S1               sol      f2        1134 units    190/ 1134 ( 16.8%)
+S1               sol      f4        1136 units     90/ 1136 (  7.9%)
+S1               sol      f6        1136 units    340/ 1136 ( 29.9%)
+S1               sonnet   f0        1136 units    550/ 3408 ( 16.1%)
+S1               sonnet   f0_drift   228 units     87/  684 ( 12.7%)
+S1               sonnet   f1        1136 units    154/ 3408 (  4.5%)
+S1               sonnet   f2        1136 units    105/ 3408 (  3.1%)
+S1               sonnet   f3        1136 units    569/ 3408 ( 16.7%)
+S1               sonnet   f4        1136 units     35/ 3408 (  1.0%)
+S1               sonnet   f5        1136 units    626/ 3408 ( 18.4%)
+S1               sonnet   f6        1136 units    143/ 3408 (  4.2%)
+S2               deepseek f0         545 units    292/  545 ( 53.6%)
+S2               deepseek f1         545 units    148/  545 ( 27.2%)
+S2               deepseek f4         545 units     84/  545 ( 15.4%)
+S2               gemma    f0         539 units    401/  539 ( 74.4%)
+S2               gemma    f1         544 units    196/  544 ( 36.0%)
+S2               gemma    f4         539 units     44/  539 (  8.2%)
+S2               haiku    f0         545 units    652/ 1635 ( 39.9%)
+S2               haiku    f1         545 units    355/ 1635 ( 21.7%)
+S2               haiku    f2         545 units    397/ 1635 ( 24.3%)
+S2               haiku    f4         545 units    369/ 1635 ( 22.6%)
+S2               haiku    f6         545 units    585/ 1635 ( 35.8%)
+S2               luna     f0         545 units   1111/ 1635 ( 68.0%)
+S2               luna     f1         545 units    395/ 1635 ( 24.2%)
+S2               luna     f2         545 units    417/ 1635 ( 25.5%)
+S2               luna     f3         545 units   1048/ 1635 ( 64.1%)
+S2               luna     f4         545 units    229/ 1635 ( 14.0%)
+S2               luna     f5         545 units   1118/ 1635 ( 68.4%)
+S2               luna     f6         545 units    668/ 1635 ( 40.9%)
+S2               qwen     f0         488 units    254/  488 ( 52.0%)
+S2               qwen     f1         493 units     98/  493 ( 19.9%)
+S2               qwen     f4         499 units     76/  499 ( 15.2%)
+S2               sol      f0         229 units    210/  229 ( 91.7%)
+S2               sol      f1         229 units    142/  229 ( 62.0%)
+S2               sol      f4         228 units    115/  228 ( 50.4%)
+S2               sonnet   f0         545 units    748/ 1090 ( 68.6%)
+S2               sonnet   f1         545 units    472/ 1090 ( 43.3%)
+S2               sonnet   f2         545 units    403/ 1090 ( 37.0%)
+S2               sonnet   f4         545 units    201/ 1090 ( 18.4%)
+S2               sonnet   f6         545 units    472/ 1090 ( 43.3%)
+S2_booked_hotel  deepseek f0         293 units    175/  293 ( 59.7%)
+S2_booked_hotel  deepseek f1         293 units     80/  293 ( 27.3%)
+S2_booked_hotel  deepseek f4         293 units     52/  293 ( 17.7%)
+S2_booked_hotel  gemma    f0         289 units    241/  289 ( 83.4%)
+S2_booked_hotel  gemma    f1         292 units    113/  292 ( 38.7%)
+S2_booked_hotel  gemma    f4         289 units     25/  289 (  8.7%)
+S2_booked_hotel  haiku    f0         293 units    380/  879 ( 43.2%)
+S2_booked_hotel  haiku    f1         293 units    221/  879 ( 25.1%)
+S2_booked_hotel  haiku    f2         293 units    236/  879 ( 26.8%)
+S2_booked_hotel  haiku    f4         293 units    225/  879 ( 25.6%)
+S2_booked_hotel  haiku    f6         293 units    330/  879 ( 37.5%)
+S2_booked_hotel  luna     f0         293 units    653/  879 ( 74.3%)
+S2_booked_hotel  luna     f1         293 units    233/  879 ( 26.5%)
+S2_booked_hotel  luna     f2         293 units    251/  879 ( 28.6%)
+S2_booked_hotel  luna     f3         293 units    624/  879 ( 71.0%)
+S2_booked_hotel  luna     f4         293 units    138/  879 ( 15.7%)
+S2_booked_hotel  luna     f5         293 units    668/  879 ( 76.0%)
+S2_booked_hotel  luna     f6         293 units    391/  879 ( 44.5%)
+S2_booked_hotel  qwen     f0         266 units    147/  266 ( 55.3%)
+S2_booked_hotel  qwen     f1         261 units     59/  261 ( 22.6%)
+S2_booked_hotel  qwen     f4         266 units     47/  266 ( 17.7%)
+S2_booked_hotel  sol      f0         120 units    117/  120 ( 97.5%)
+S2_booked_hotel  sol      f1         120 units     85/  120 ( 70.8%)
+S2_booked_hotel  sol      f4         119 units     65/  119 ( 54.6%)
+S2_booked_hotel  sonnet   f0         293 units    451/  586 ( 77.0%)
+S2_booked_hotel  sonnet   f1         293 units    282/  586 ( 48.1%)
+S2_booked_hotel  sonnet   f2         293 units    235/  586 ( 40.1%)
+S2_booked_hotel  sonnet   f4         293 units    127/  586 ( 21.7%)
+S2_booked_hotel  sonnet   f6         293 units    278/  586 ( 47.4%)
+S2_brief_hotel   deepseek f0         233 units    153/  233 ( 65.7%)
+S2_brief_hotel   deepseek f1         233 units     86/  233 ( 36.9%)
+S2_brief_hotel   deepseek f4         233 units     51/  233 ( 21.9%)
+S2_brief_hotel   gemma    f0         232 units    199/  232 ( 85.8%)
+S2_brief_hotel   gemma    f1         233 units    115/  233 ( 49.4%)
+S2_brief_hotel   gemma    f4         231 units     36/  231 ( 15.6%)
+S2_brief_hotel   haiku    f0         233 units    391/  699 ( 55.9%)
+S2_brief_hotel   haiku    f1         233 units    211/  699 ( 30.2%)
+S2_brief_hotel   haiku    f2         233 units    240/  699 ( 34.3%)
+S2_brief_hotel   haiku    f4         233 units    227/  699 ( 32.5%)
+S2_brief_hotel   haiku    f6         233 units    338/  699 ( 48.4%)
+S2_brief_hotel   luna     f0         233 units    557/  699 ( 79.7%)
+S2_brief_hotel   luna     f1         233 units    239/  699 ( 34.2%)
+S2_brief_hotel   luna     f2         233 units    252/  699 ( 36.1%)
+S2_brief_hotel   luna     f3         233 units    540/  699 ( 77.3%)
+S2_brief_hotel   luna     f4         233 units    144/  699 ( 20.6%)
+S2_brief_hotel   luna     f5         233 units    563/  699 ( 80.5%)
+S2_brief_hotel   luna     f6         233 units    401/  699 ( 57.4%)
+S2_brief_hotel   qwen     f0         210 units    138/  210 ( 65.7%)
+S2_brief_hotel   qwen     f1         215 units     59/  215 ( 27.4%)
+S2_brief_hotel   qwen     f4         219 units     47/  219 ( 21.5%)
+S2_brief_hotel   sol      f0         103 units    101/  103 ( 98.1%)
+S2_brief_hotel   sol      f1         103 units     82/  103 ( 79.6%)
+S2_brief_hotel   sol      f4         103 units     75/  103 ( 72.8%)
+S2_brief_hotel   sonnet   f0         233 units    391/  466 ( 83.9%)
+S2_brief_hotel   sonnet   f1         233 units    274/  466 ( 58.8%)
+S2_brief_hotel   sonnet   f2         233 units    245/  466 ( 52.6%)
+S2_brief_hotel   sonnet   f4         233 units    134/  466 ( 28.8%)
+S2_brief_hotel   sonnet   f6         233 units    282/  466 ( 60.5%)
+S3               haiku    f0         490 units     63/ 1470 (  4.3%)
+S3               haiku    f1         490 units     15/ 1470 (  1.0%)
+S3               haiku    f2         490 units     14/ 1470 (  1.0%)
+S3               haiku    f4         490 units     11/ 1470 (  0.7%)
+S3               haiku    f6         490 units     37/ 1470 (  2.5%)
+S3               luna     f0         490 units    167/ 1470 ( 11.4%)
+S3               luna     f1         490 units     28/ 1470 (  1.9%)
+S3               luna     f4         490 units     21/ 1470 (  1.4%)
+S3               sol      f0         201 units     23/  201 ( 11.4%)
+S3               sol      f1         201 units     12/  201 (  6.0%)
+S3               sol      f4         201 units     10/  201 (  5.0%)
+S3               sonnet   f0         490 units     69/  980 (  7.0%)
+S3               sonnet   f1         490 units     24/  980 (  2.4%)
+S3               sonnet   f2         490 units     22/  980 (  2.2%)
+S3               sonnet   f4         490 units      8/  980 (  0.8%)
+S3               sonnet   f6         490 units     21/  980 (  2.1%)
+S4               haiku    f0         423 units      3/ 1269 (  0.2%)
+S4               haiku    f1         423 units      0/ 1269 (  0.0%)
+S4               haiku    f2         423 units      1/ 1269 (  0.1%)
+S4               haiku    f4         423 units      0/ 1269 (  0.0%)
+S4               haiku    f6         423 units      1/ 1269 (  0.1%)
+S4               luna     f0         423 units      3/ 1269 (  0.2%)
+S4               luna     f1         423 units      0/ 1269 (  0.0%)
+S4               luna     f4         423 units      0/ 1269 (  0.0%)
+S4               sol      f0         170 units      1/  170 (  0.6%)
+S4               sol      f1         170 units      0/  170 (  0.0%)
+S4               sol      f4         170 units      0/  170 (  0.0%)
+S4               sonnet   f0         423 units      2/  846 (  0.2%)
+S4               sonnet   f1         423 units      0/  846 (  0.0%)
+S4               sonnet   f2         423 units      0/  846 (  0.0%)
+S4               sonnet   f4         423 units      0/  846 (  0.0%)
+S4               sonnet   f6         423 units      0/  846 (  0.0%)
+S5               haiku    f0         280 units     38/  840 (  4.5%)
+S5               haiku    f1         280 units     16/  840 (  1.9%)
+S5               haiku    f2         280 units     17/  840 (  2.0%)
+S5               haiku    f4         280 units     27/  840 (  3.2%)
+S5               haiku    f6         280 units     33/  840 (  3.9%)
+S5               luna     f0         280 units     57/  840 (  6.8%)
+S5               luna     f1         280 units     21/  840 (  2.5%)
+S5               luna     f4         280 units     27/  840 (  3.2%)
+S5               sonnet   f0         280 units     20/  560 (  3.6%)
+S5               sonnet   f1         280 units     14/  560 (  2.5%)
+S5               sonnet   f2         280 units     15/  560 (  2.7%)
+S5               sonnet   f4         280 units     11/  560 (  2.0%)
+S5               sonnet   f6         280 units     13/  560 (  2.3%)
+drift            deepseek f0         228 units     28/  228 ( 12.3%)
+drift            gemma    f0         227 units     48/  227 ( 21.1%)
+drift            haiku    f0         228 units     25/  684 (  3.7%)
+drift            haiku    f0_drift   228 units     28/  684 (  4.1%)
+drift            luna     f0         228 units    119/  684 ( 17.4%)
+drift            qwen     f0         215 units     27/  215 ( 12.6%)
+drift            sol      f0         228 units     84/  228 ( 36.8%)
+drift            sonnet   f0         228 units     87/  684 ( 12.7%)
+drift            sonnet   f0_drift   228 units     87/  684 ( 12.7%)
+tc_amb           haiku    f0          40 units      0/  280 (  0.0%)
+tc_amb           haiku    f1          40 units      0/  280 (  0.0%)
+tc_amb           haiku    f2          40 units      0/  280 (  0.0%)
+tc_amb           haiku    f4          40 units      0/  280 (  0.0%)
+tc_amb           sonnet   f0          40 units    151/  240 ( 62.9%)
+tc_amb           sonnet   f1          40 units      0/  240 (  0.0%)
+tc_amb           sonnet   f2          40 units      0/  240 (  0.0%)
+tc_amb           sonnet   f4          40 units      0/  240 (  0.0%)
+tc_clr           haiku    f0          40 units    280/  280 (100.0%)
+tc_clr           haiku    f1          40 units    280/  280 (100.0%)
+tc_clr           haiku    f2          40 units    278/  280 ( 99.3%)
+tc_clr           haiku    f4          40 units    278/  280 ( 99.3%)
+tc_clr           sonnet   f0          40 units    240/  240 (100.0%)
+tc_clr           sonnet   f1          40 units    240/  240 (100.0%)
+tc_clr           sonnet   f2          40 units    240/  240 (100.0%)
+tc_clr           sonnet   f4          40 units    240/  240 (100.0%)
+
+== 2. exact sign test against F0 (units where F0 has the higher share, the lower share, p)
+S1t              deepseek f1       F0 higher  139, lower    4, p = 3.1e-36
+S1t              deepseek f2       F0 higher  140, lower    2, p = 3.6e-39
+S1t              deepseek f3       F0 higher   36, lower   79, p = 7.5e-05
+S1t              deepseek f4       F0 higher  151, lower    2, p = 2.1e-42
+S1t              deepseek f5       F0 higher   51, lower   50, p = 1
+S1t              deepseek f6       F0 higher  117, lower   14, p = 2e-21
+S1t              gemma    f1       F0 higher  217, lower    0, p = 9.5e-66
+S1t              gemma    f2       F0 higher  213, lower    0, p = 1.5e-64
+S1t              gemma    f3       F0 higher    3, lower   20, p = 0.00049
+S1t              gemma    f4       F0 higher  241, lower    0, p = 5.7e-73
+S1t              gemma    f5       F0 higher   13, lower    5, p = 0.096
+S1t              gemma    f6       F0 higher  200, lower    0, p = 1.2e-60
+S1t              haiku    f1       F0 higher   48, lower    2, p = 2.3e-12
+S1t              haiku    f2       F0 higher   44, lower    3, p = 2.5e-10
+S1t              haiku    f3       F0 higher   12, lower   22, p = 0.12
+S1t              haiku    f4       F0 higher   46, lower    2, p = 8.4e-12
+S1t              haiku    f5       F0 higher   19, lower   12, p = 0.28
+S1t              haiku    f6       F0 higher   28, lower   14, p = 0.044
+S1t              luna     f1       F0 higher  261, lower    0, p = 5.4e-79
+S1t              luna     f2       F0 higher  261, lower    3, p = 2.1e-73
+S1t              luna     f3       F0 higher   80, lower   46, p = 0.0031
+S1t              luna     f4       F0 higher  270, lower    0, p = 1.1e-81
+S1t              luna     f5       F0 higher   51, lower   69, p = 0.12
+S1t              luna     f6       F0 higher  235, lower    7, p = 2.6e-60
+S1t              qwen     f1       F0 higher  108, lower   12, p = 1.8e-20
+S1t              qwen     f2       F0 higher  113, lower    9, p = 5e-24
+S1t              qwen     f3       F0 higher   57, lower   60, p = 0.85
+S1t              qwen     f4       F0 higher  116, lower    4, p = 1.3e-29
+S1t              qwen     f5       F0 higher   53, lower   56, p = 0.85
+S1t              qwen     f6       F0 higher  100, lower   31, p = 1.2e-09
+S1t              sol      f1       F0 higher  267, lower    0, p = 8.4e-81
+S1t              sol      f2       F0 higher  224, lower    1, p = 8.4e-66
+S1t              sol      f4       F0 higher  323, lower    0, p = 1.2e-97
+S1t              sol      f6       F0 higher   76, lower    3, p = 2.7e-19
+S1t              sonnet   f1       F0 higher  150, lower    1, p = 1.1e-43
+S1t              sonnet   f2       F0 higher  167, lower    0, p = 1.1e-50
+S1t              sonnet   f3       F0 higher   41, lower   48, p = 0.53
+S1t              sonnet   f4       F0 higher  189, lower    0, p = 2.5e-57
+S1t              sonnet   f5       F0 higher   19, lower   55, p = 3.4e-05
+S1t              sonnet   f6       F0 higher  156, lower    1, p = 1.7e-45
+S1               deepseek f1       F0 higher  144, lower    5, p = 1.7e-36
+S1               deepseek f2       F0 higher  143, lower    3, p = 1.2e-38
+S1               deepseek f3       F0 higher   40, lower   82, p = 0.00018
+S1               deepseek f4       F0 higher  156, lower    2, p = 6.9e-44
+S1               deepseek f5       F0 higher   53, lower   53, p = 1
+S1               deepseek f6       F0 higher  121, lower   15, p = 9e-22
+S1               gemma    f1       F0 higher  218, lower    0, p = 4.7e-66
+S1               gemma    f2       F0 higher  213, lower    1, p = 1.6e-62
+S1               gemma    f3       F0 higher    4, lower   20, p = 0.0015
+S1               gemma    f4       F0 higher  242, lower    0, p = 2.8e-73
+S1               gemma    f5       F0 higher   14, lower    5, p = 0.064
+S1               gemma    f6       F0 higher  201, lower    0, p = 6.2e-61
+S1               haiku    f1       F0 higher   49, lower    3, p = 1e-11
+S1               haiku    f2       F0 higher   45, lower    3, p = 1.3e-10
+S1               haiku    f3       F0 higher   12, lower   23, p = 0.09
+S1               haiku    f4       F0 higher   47, lower    2, p = 4.4e-12
+S1               haiku    f5       F0 higher   19, lower   13, p = 0.38
+S1               haiku    f6       F0 higher   28, lower   16, p = 0.096
+S1               luna     f1       F0 higher  270, lower    2, p = 9.8e-78
+S1               luna     f2       F0 higher  270, lower    5, p = 4.2e-73
+S1               luna     f3       F0 higher   85, lower   52, p = 0.0061
+S1               luna     f4       F0 higher  279, lower    1, p = 2.9e-82
+S1               luna     f5       F0 higher   53, lower   72, p = 0.11
+S1               luna     f6       F0 higher  244, lower    7, p = 6.5e-63
+S1               qwen     f1       F0 higher  113, lower   13, p = 4.5e-21
+S1               qwen     f2       F0 higher  119, lower   10, p = 7.9e-25
+S1               qwen     f3       F0 higher   60, lower   69, p = 0.48
+S1               qwen     f4       F0 higher  122, lower    5, p = 3.1e-30
+S1               qwen     f5       F0 higher   57, lower   60, p = 0.85
+S1               qwen     f6       F0 higher  105, lower   32, p = 2.9e-10
+S1               sol      f1       F0 higher  267, lower    0, p = 8.4e-81
+S1               sol      f2       F0 higher  224, lower    1, p = 8.4e-66
+S1               sol      f4       F0 higher  323, lower    0, p = 1.2e-97
+S1               sol      f6       F0 higher   76, lower    3, p = 2.7e-19
+S1               sonnet   f1       F0 higher  150, lower    1, p = 1.1e-43
+S1               sonnet   f2       F0 higher  167, lower    0, p = 1.1e-50
+S1               sonnet   f3       F0 higher   41, lower   48, p = 0.53
+S1               sonnet   f4       F0 higher  189, lower    0, p = 2.5e-57
+S1               sonnet   f5       F0 higher   19, lower   55, p = 3.4e-05
+S1               sonnet   f6       F0 higher  156, lower    1, p = 1.7e-45
+S2               deepseek f1       F0 higher  161, lower   17, p = 1.3e-30
+S2               deepseek f4       F0 higher  214, lower    6, p = 1.8e-55
+S2               gemma    f1       F0 higher  207, lower    1, p = 1e-60
+S2               gemma    f4       F0 higher  352, lower    0, p = 2.2e-106
+S2               haiku    f1       F0 higher  127, lower    8, p = 1.1e-28
+S2               haiku    f2       F0 higher  120, lower    7, p = 1.1e-27
+S2               haiku    f4       F0 higher  129, lower    5, p = 3.2e-32
+S2               haiku    f6       F0 higher   58, lower   26, p = 0.00063
+S2               luna     f1       F0 higher  290, lower    2, p = 1.1e-83
+S2               luna     f2       F0 higher  276, lower    1, p = 2.3e-81
+S2               luna     f3       F0 higher   62, lower   26, p = 0.00016
+S2               luna     f4       F0 higher  344, lower    1, p = 9.7e-102
+S2               luna     f5       F0 higher   37, lower   42, p = 0.65
+S2               luna     f6       F0 higher  179, lower    2, p = 1.1e-50
+S2               qwen     f1       F0 higher  154, lower   14, p = 5.5e-31
+S2               qwen     f4       F0 higher  189, lower   16, p = 1.1e-38
+S2               sol      f1       F0 higher   68, lower    0, p = 6.8e-21
+S2               sol      f4       F0 higher   94, lower    0, p = 1e-28
+S2               sonnet   f1       F0 higher  151, lower    2, p = 2.1e-42
+S2               sonnet   f2       F0 higher  187, lower    2, p = 4.6e-53
+S2               sonnet   f4       F0 higher  288, lower    0, p = 4e-87
+S2               sonnet   f6       F0 higher  152, lower    2, p = 1e-42
+S2_booked_hotel  deepseek f1       F0 higher  101, lower    6, p = 2.4e-23
+S2_booked_hotel  deepseek f4       F0 higher  124, lower    1, p = 5.9e-36
+S2_booked_hotel  gemma    f1       F0 higher  129, lower    0, p = 2.9e-39
+S2_booked_hotel  gemma    f4       F0 higher  213, lower    0, p = 1.5e-64
+S2_booked_hotel  haiku    f1       F0 higher   68, lower    3, p = 5.1e-17
+S2_booked_hotel  haiku    f2       F0 higher   69, lower    3, p = 2.6e-17
+S2_booked_hotel  haiku    f4       F0 higher   71, lower    3, p = 7.2e-18
+S2_booked_hotel  haiku    f6       F0 higher   33, lower   11, p = 0.0013
+S2_booked_hotel  luna     f1       F0 higher  164, lower    0, p = 8.6e-50
+S2_booked_hotel  luna     f2       F0 higher  158, lower    0, p = 5.5e-48
+S2_booked_hotel  luna     f3       F0 higher   28, lower   12, p = 0.017
+S2_booked_hotel  luna     f4       F0 higher  201, lower    0, p = 6.2e-61
+S2_booked_hotel  luna     f5       F0 higher   15, lower   24, p = 0.2
+S2_booked_hotel  luna     f6       F0 higher  103, lower    0, p = 2e-31
+S2_booked_hotel  qwen     f1       F0 higher   88, lower    8, p = 3.7e-18
+S2_booked_hotel  qwen     f4       F0 higher  109, lower   11, p = 1.9e-21
+S2_booked_hotel  sol      f1       F0 higher   32, lower    0, p = 4.7e-10
+S2_booked_hotel  sol      f4       F0 higher   51, lower    0, p = 8.9e-16
+S2_booked_hotel  sonnet   f1       F0 higher   92, lower    0, p = 4e-28
+S2_booked_hotel  sonnet   f2       F0 higher  115, lower    0, p = 4.8e-35
+S2_booked_hotel  sonnet   f4       F0 higher  171, lower    0, p = 6.7e-52
+S2_booked_hotel  sonnet   f6       F0 higher   94, lower    0, p = 1e-28
+S2_brief_hotel   deepseek f1       F0 higher   76, lower    9, p = 2.4e-14
+S2_brief_hotel   deepseek f4       F0 higher  105, lower    3, p = 1.3e-27
+S2_brief_hotel   gemma    f1       F0 higher   85, lower    0, p = 5.2e-26
+S2_brief_hotel   gemma    f4       F0 higher  162, lower    0, p = 3.4e-49
+S2_brief_hotel   haiku    f1       F0 higher   76, lower    4, p = 2.8e-18
+S2_brief_hotel   haiku    f2       F0 higher   73, lower    4, p = 1.9e-17
+S2_brief_hotel   haiku    f4       F0 higher   77, lower    4, p = 1.4e-18
+S2_brief_hotel   haiku    f6       F0 higher   34, lower   10, p = 0.00039
+S2_brief_hotel   luna     f1       F0 higher  128, lower    2, p = 1.3e-35
+S2_brief_hotel   luna     f2       F0 higher  120, lower    1, p = 9.2e-35
+S2_brief_hotel   luna     f3       F0 higher   20, lower   10, p = 0.099
+S2_brief_hotel   luna     f4       F0 higher  162, lower    1, p = 2.8e-47
+S2_brief_hotel   luna     f5       F0 higher   12, lower   16, p = 0.57
+S2_brief_hotel   luna     f6       F0 higher   65, lower    2, p = 3.1e-17
+S2_brief_hotel   qwen     f1       F0 higher   82, lower    8, p = 1.4e-16
+S2_brief_hotel   qwen     f4       F0 higher  100, lower   10, p = 8e-20
+S2_brief_hotel   sol      f1       F0 higher   19, lower    0, p = 3.8e-06
+S2_brief_hotel   sol      f4       F0 higher   26, lower    0, p = 3e-08
+S2_brief_hotel   sonnet   f1       F0 higher   63, lower    0, p = 2.2e-19
+S2_brief_hotel   sonnet   f2       F0 higher   79, lower    0, p = 3.3e-24
+S2_brief_hotel   sonnet   f4       F0 higher  136, lower    0, p = 2.3e-41
+S2_brief_hotel   sonnet   f6       F0 higher   59, lower    0, p = 3.5e-18
+S3               haiku    f1       F0 higher   22, lower    2, p = 3.6e-05
+S3               haiku    f2       F0 higher   21, lower    0, p = 9.5e-07
+S3               haiku    f4       F0 higher   22, lower    0, p = 4.8e-07
+S3               haiku    f6       F0 higher   15, lower    3, p = 0.0075
+S3               luna     f1       F0 higher   61, lower    1, p = 2.7e-17
+S3               luna     f4       F0 higher   66, lower    1, p = 9.2e-19
+S3               sol      f1       F0 higher   12, lower    1, p = 0.0034
+S3               sol      f4       F0 higher   14, lower    1, p = 0.00098
+S3               sonnet   f1       F0 higher   28, lower    0, p = 7.5e-09
+S3               sonnet   f2       F0 higher   29, lower    0, p = 3.7e-09
+S3               sonnet   f4       F0 higher   35, lower    0, p = 5.8e-11
+S3               sonnet   f6       F0 higher   29, lower    0, p = 3.7e-09
+S4               haiku    f1       F0 higher    1, lower    0, p = 1
+S4               haiku    f2       F0 higher    1, lower    0, p = 1
+S4               haiku    f4       F0 higher    1, lower    0, p = 1
+S4               haiku    f6       F0 higher    1, lower    1, p = 1
+S4               luna     f1       F0 higher    2, lower    0, p = 0.5
+S4               luna     f4       F0 higher    2, lower    0, p = 0.5
+S4               sol      f1       F0 higher    1, lower    0, p = 1
+S4               sol      f4       F0 higher    1, lower    0, p = 1
+S4               sonnet   f1       F0 higher    1, lower    0, p = 1
+S4               sonnet   f2       F0 higher    1, lower    0, p = 1
+S4               sonnet   f4       F0 higher    1, lower    0, p = 1
+S4               sonnet   f6       F0 higher    1, lower    0, p = 1
+S5               haiku    f1       F0 higher   10, lower    3, p = 0.092
+S5               haiku    f2       F0 higher   11, lower    3, p = 0.057
+S5               haiku    f4       F0 higher    8, lower    2, p = 0.11
+S5               haiku    f6       F0 higher    6, lower    4, p = 0.75
+S5               luna     f1       F0 higher   18, lower    2, p = 0.0004
+S5               luna     f4       F0 higher   16, lower    3, p = 0.0044
+S5               sonnet   f1       F0 higher    4, lower    0, p = 0.12
+S5               sonnet   f2       F0 higher    3, lower    0, p = 0.25
+S5               sonnet   f4       F0 higher    6, lower    2, p = 0.29
+S5               sonnet   f6       F0 higher    4, lower    0, p = 0.12
+drift            haiku    f0_drift F0 higher    2, lower    4, p = 0.69
+drift            sonnet   f0_drift F0 higher    3, lower    4, p = 1
+tc_amb           haiku    f1       F0 higher    0, lower    0, p = 1
+tc_amb           haiku    f2       F0 higher    0, lower    0, p = 1
+tc_amb           haiku    f4       F0 higher    0, lower    0, p = 1
+tc_amb           sonnet   f1       F0 higher   28, lower    0, p = 7.5e-09
+tc_amb           sonnet   f2       F0 higher   28, lower    0, p = 7.5e-09
+tc_amb           sonnet   f4       F0 higher   28, lower    0, p = 7.5e-09
+tc_clr           haiku    f1       F0 higher    0, lower    0, p = 1
+tc_clr           haiku    f2       F0 higher    1, lower    0, p = 1
+tc_clr           haiku    f4       F0 higher    1, lower    0, p = 1
+tc_clr           sonnet   f1       F0 higher    0, lower    0, p = 1
+tc_clr           sonnet   f2       F0 higher    0, lower    0, p = 1
+tc_clr           sonnet   f4       F0 higher    0, lower    0, p = 1
+
+== 3. booked-venue exclusion on S1t: reads whose type hides every guesthouse, by the booked type
+deepseek f0       | guesthouse    32/  355 (  9.0%) | hotel    44/  199 ( 22.1%) | none    77/  440 ( 17.5%) | guesthouse dialogues with a hiding F0 read: 32
+deepseek f1       | guesthouse     3/  354 (  0.8%) | hotel     7/  197 (  3.6%) | none    12/  439 (  2.7%) | guesthouse dialogues with a hiding F0 read: 32; sign 29 to 0, p = 3.7e-09
+deepseek f2       | guesthouse     3/  354 (  0.8%) | hotel     9/  199 (  4.5%) | none    10/  439 (  2.3%) | guesthouse dialogues with a hiding F0 read: 32; sign 29 to 0, p = 3.7e-09
+deepseek f3       | guesthouse    44/  355 ( 12.4%) | hotel    60/  199 ( 30.2%) | none    97/  439 ( 22.1%) | guesthouse dialogues with a hiding F0 read: 32; sign 7 to 19, p = 0.029
+deepseek f4       | guesthouse     2/  355 (  0.6%) | hotel     3/  199 (  1.5%) | none     5/  438 (  1.1%) | guesthouse dialogues with a hiding F0 read: 32; sign 30 to 0, p = 1.9e-09
+deepseek f5       | guesthouse    35/  355 (  9.9%) | hotel    47/  199 ( 23.6%) | none    68/  440 ( 15.5%) | guesthouse dialogues with a hiding F0 read: 32; sign 10 to 13, p = 0.68
+deepseek f6       | guesthouse     5/  355 (  1.4%) | hotel    13/  199 (  6.5%) | none    35/  439 (  8.0%) | guesthouse dialogues with a hiding F0 read: 32; sign 28 to 1, p = 1.1e-07
+gemma    f0       | guesthouse    71/  355 ( 20.0%) | hotel    66/  197 ( 33.5%) | none   101/  437 ( 23.1%) | guesthouse dialogues with a hiding F0 read: 71
+gemma    f1       | guesthouse     3/  354 (  0.8%) | hotel    10/  199 (  5.0%) | none    14/  440 (  3.2%) | guesthouse dialogues with a hiding F0 read: 71; sign 67 to 0, p = 1.4e-20
+gemma    f2       | guesthouse     3/  353 (  0.8%) | hotel    10/  198 (  5.1%) | none    16/  439 (  3.6%) | guesthouse dialogues with a hiding F0 read: 71; sign 66 to 0, p = 2.7e-20
+gemma    f3       | guesthouse    76/  353 ( 21.5%) | hotel    72/  199 ( 36.2%) | none   103/  439 ( 23.5%) | guesthouse dialogues with a hiding F0 read: 71; sign 2 to 7, p = 0.18
+gemma    f4       | guesthouse     0/  353 (  0.0%) | hotel     0/  197 (  0.0%) | none     3/  433 (  0.7%) | guesthouse dialogues with a hiding F0 read: 71; sign 71 to 0, p = 8.5e-22
+gemma    f5       | guesthouse    68/  355 ( 19.2%) | hotel    69/  199 ( 34.7%) | none    97/  440 ( 22.0%) | guesthouse dialogues with a hiding F0 read: 71; sign 3 to 0, p = 0.25
+gemma    f6       | guesthouse     5/  352 (  1.4%) | hotel    14/  199 (  7.0%) | none    22/  436 (  5.0%) | guesthouse dialogues with a hiding F0 read: 71; sign 64 to 0, p = 1.1e-19
+haiku    f0       | guesthouse    10/ 1065 (  0.9%) | hotel    45/  597 (  7.5%) | none    81/ 1320 (  6.1%) | guesthouse dialogues with a hiding F0 read: 4
+haiku    f0_drift | guesthouse     3/  171 (  1.8%) | hotel     9/  129 (  7.0%) | none     9/  285 (  3.2%) | guesthouse dialogues with a hiding F0 read: 4; sign 0 to 1, p = 1
+haiku    f1       | guesthouse     2/ 1065 (  0.2%) | hotel    17/  597 (  2.8%) | none    15/ 1320 (  1.1%) | guesthouse dialogues with a hiding F0 read: 4; sign 3 to 0, p = 0.25
+haiku    f2       | guesthouse     0/ 1065 (  0.0%) | hotel    20/  597 (  3.4%) | none    21/ 1320 (  1.6%) | guesthouse dialogues with a hiding F0 read: 4; sign 4 to 0, p = 0.12
+haiku    f3       | guesthouse    16/ 1065 (  1.5%) | hotel    45/  597 (  7.5%) | none    98/ 1320 (  7.4%) | guesthouse dialogues with a hiding F0 read: 4; sign 0 to 4, p = 0.12
+haiku    f4       | guesthouse     0/ 1065 (  0.0%) | hotel    21/  597 (  3.5%) | none    11/ 1320 (  0.8%) | guesthouse dialogues with a hiding F0 read: 4; sign 4 to 0, p = 0.12
+haiku    f5       | guesthouse    11/ 1065 (  1.0%) | hotel    43/  597 (  7.2%) | none    72/ 1320 (  5.5%) | guesthouse dialogues with a hiding F0 read: 4; sign 1 to 1, p = 1
+haiku    f6       | guesthouse     8/ 1065 (  0.8%) | hotel    38/  597 (  6.4%) | none    59/ 1320 (  4.5%) | guesthouse dialogues with a hiding F0 read: 4; sign 2 to 2, p = 1
+luna     f0       | guesthouse   167/ 1065 ( 15.7%) | hotel   190/  597 ( 31.8%) | none   285/ 1320 ( 21.6%) | guesthouse dialogues with a hiding F0 read: 73
+luna     f1       | guesthouse     2/ 1065 (  0.2%) | hotel    20/  597 (  3.4%) | none    25/ 1320 (  1.9%) | guesthouse dialogues with a hiding F0 read: 73; sign 73 to 0, p = 2.1e-22
+luna     f2       | guesthouse     5/ 1065 (  0.5%) | hotel    19/  597 (  3.2%) | none    21/ 1320 (  1.6%) | guesthouse dialogues with a hiding F0 read: 73; sign 72 to 1, p = 1.6e-20
+luna     f3       | guesthouse   138/ 1065 ( 13.0%) | hotel   176/  597 ( 29.5%) | none   268/ 1320 ( 20.3%) | guesthouse dialogues with a hiding F0 read: 73; sign 30 to 11, p = 0.0043
+luna     f4       | guesthouse     1/ 1065 (  0.1%) | hotel    12/  597 (  2.0%) | none     8/ 1320 (  0.6%) | guesthouse dialogues with a hiding F0 read: 73; sign 73 to 0, p = 2.1e-22
+luna     f5       | guesthouse   169/ 1065 ( 15.9%) | hotel   193/  597 ( 32.3%) | none   302/ 1320 ( 22.9%) | guesthouse dialogues with a hiding F0 read: 73; sign 24 to 27, p = 0.78
+luna     f6       | guesthouse    11/ 1065 (  1.0%) | hotel    43/  597 (  7.2%) | none    78/ 1320 (  5.9%) | guesthouse dialogues with a hiding F0 read: 73; sign 69 to 0, p = 3.4e-21
+qwen     f0       | guesthouse    23/  336 (  6.8%) | hotel    39/  184 ( 21.2%) | none    52/  412 ( 12.6%) | guesthouse dialogues with a hiding F0 read: 23
+qwen     f1       | guesthouse     3/  336 (  0.9%) | hotel     8/  185 (  4.3%) | none    15/  409 (  3.7%) | guesthouse dialogues with a hiding F0 read: 23; sign 20 to 1, p = 2.1e-05
+qwen     f2       | guesthouse     1/  327 (  0.3%) | hotel     7/  182 (  3.8%) | none    10/  413 (  2.4%) | guesthouse dialogues with a hiding F0 read: 23; sign 15 to 0, p = 6.1e-05
+qwen     f3       | guesthouse    27/  340 (  7.9%) | hotel    33/  181 ( 18.2%) | none    64/  416 ( 15.4%) | guesthouse dialogues with a hiding F0 read: 23; sign 11 to 15, p = 0.56
+qwen     f4       | guesthouse     1/  331 (  0.3%) | hotel     5/  185 (  2.7%) | none     5/  409 (  1.2%) | guesthouse dialogues with a hiding F0 read: 23; sign 19 to 0, p = 3.8e-06
+qwen     f5       | guesthouse    23/  333 (  6.9%) | hotel    34/  181 ( 18.8%) | none    66/  408 ( 16.2%) | guesthouse dialogues with a hiding F0 read: 23; sign 11 to 12, p = 1
+qwen     f6       | guesthouse    10/  333 (  3.0%) | hotel    12/  180 (  6.7%) | none    24/  419 (  5.7%) | guesthouse dialogues with a hiding F0 read: 23; sign 18 to 7, p = 0.043
+sol      f0       | guesthouse   131/  353 ( 37.1%) | hotel   105/  199 ( 52.8%) | none   174/  440 ( 39.5%) | guesthouse dialogues with a hiding F0 read: 131
+sol      f1       | guesthouse    30/  355 (  8.5%) | hotel    48/  199 ( 24.1%) | none    66/  440 ( 15.0%) | guesthouse dialogues with a hiding F0 read: 131; sign 101 to 0, p = 7.9e-31
+sol      f2       | guesthouse    48/  354 ( 13.6%) | hotel    52/  199 ( 26.1%) | none    88/  440 ( 20.0%) | guesthouse dialogues with a hiding F0 read: 131; sign 83 to 0, p = 2.1e-25
+sol      f4       | guesthouse    14/  355 (  3.9%) | hotel    27/  199 ( 13.6%) | none    47/  440 ( 10.7%) | guesthouse dialogues with a hiding F0 read: 131; sign 117 to 0, p = 1.2e-35
+sol      f6       | guesthouse   106/  355 ( 29.9%) | hotel    85/  199 ( 42.7%) | none   146/  440 ( 33.2%) | guesthouse dialogues with a hiding F0 read: 131; sign 27 to 2, p = 1.6e-06
+sonnet   f0       | guesthouse   141/ 1065 ( 13.2%) | hotel   151/  597 ( 25.3%) | none   244/ 1320 ( 18.5%) | guesthouse dialogues with a hiding F0 read: 53
+sonnet   f0_drift | guesthouse    10/  171 (  5.8%) | hotel    31/  129 ( 24.0%) | none    46/  285 ( 16.1%) | guesthouse dialogues with a hiding F0 read: 53; sign 1 to 0, p = 1
+sonnet   f1       | guesthouse    22/ 1065 (  2.1%) | hotel    53/  597 (  8.9%) | none    67/ 1320 (  5.1%) | guesthouse dialogues with a hiding F0 read: 53; sign 46 to 1, p = 6.8e-13
+sonnet   f2       | guesthouse    13/ 1065 (  1.2%) | hotel    35/  597 (  5.9%) | none    47/ 1320 (  3.6%) | guesthouse dialogues with a hiding F0 read: 53; sign 49 to 1, p = 9.1e-14
+sonnet   f3       | guesthouse   150/ 1065 ( 14.1%) | hotel   165/  597 ( 27.6%) | none   244/ 1320 ( 18.5%) | guesthouse dialogues with a hiding F0 read: 53; sign 15 to 15, p = 1
+sonnet   f4       | guesthouse     1/ 1065 (  0.1%) | hotel    10/  597 (  1.7%) | none    14/ 1320 (  1.1%) | guesthouse dialogues with a hiding F0 read: 53; sign 53 to 0, p = 2.2e-16
+sonnet   f5       | guesthouse   171/ 1065 ( 16.1%) | hotel   167/  597 ( 28.0%) | none   272/ 1320 ( 20.6%) | guesthouse dialogues with a hiding F0 read: 53; sign 7 to 24, p = 0.0033
+sonnet   f6       | guesthouse    19/ 1065 (  1.8%) | hotel    40/  597 (  6.7%) | none    74/ 1320 (  5.6%) | guesthouse dialogues with a hiding F0 read: 53; sign 47 to 0, p = 1.4e-14
+
+invalid rows (not succeeded, not end_turn, or not parsed): deepseek f1 4, deepseek f2 3, deepseek f3 1, deepseek f4 2, deepseek f6 1, gemma f0 12, gemma f1 3, gemma f2 5, gemma f3 4, gemma f4 18, gemma f6 9, qwen f0 127, qwen f1 126, qwen f2 87, qwen f3 63, qwen f4 126, qwen f5 84, qwen f6 73, sol f0 3, sol f1 1, sol f2 2, sol f4 1

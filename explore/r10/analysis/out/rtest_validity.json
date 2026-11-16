@@ -1,0 +1,21 @@
+{
+ "post_hoc_report_of_a_stored_count": true,
+ "rule": "A V0 failure, a cut reply, or any other request without a valid read is a missing cell. The primary test leaves it out. The worst case scores it in the direction that shrinks the paired difference.",
+ "family_read1_cells": 4060,
+ "family_read1_missing_stored": 55,
+ "family_read1_missing_recounted": 55,
+ "family_read1_valid": 4005,
+ "family_read1_missing_reasons": {
+  "stop max_tokens": 55
+ },
+ "family_read1_missing_by_model": {
+  "gemma": 1,
+  "qwen": 54
+ },
+ "family_read1_schema_failures": 0,
+ "all_parts_read1_missing_reasons": {
+  "stop max_tokens": 156
+ },
+ "all_parts_read1_schema_failures": 0,
+ "note": "family = the two registered tests: parts nat (213 open dialogues) and hot (77 specific dialogues), forms t_legacy and t_renamed, 7 models: 7 x 290 x 2 = 4,060 first answers. Only first answers have stored reasons; the repeat answers of 20% of the dialogues are not counted here."
+}

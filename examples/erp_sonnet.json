@@ -1,0 +1,492 @@
+{
+ "run": "erp_sonnet",
+ "experiment": "R",
+ "model": "sonnet",
+ "cells": [
+  "t0",
+  "tedit"
+ ],
+ "pairs": [
+  {
+   "custom_id": "erp_sonnet-MUL0001-t0-1",
+   "request": {
+    "custom_id": "erp_sonnet-MUL0001-t0-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either."
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with one call of the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Call search_hotels one time, and write no other text.",
+     "thinking": {
+      "type": "between_tools"
+     },
+     "tools": [
+      {
+       "name": "search_hotels",
+       "description": "Search the hotel database of Cambridge with the traveller's requirements. Each argument is a requirement in the same form as described in the instructions.",
+       "input_schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      }
+     ],
+     "tool_choice": {
+      "type": "auto",
+      "disable_parallel_tool_use": true
+     }
+    },
+    "cell": "t0"
+   },
+   "answer": {
+    "custom_id": "erp_sonnet-MUL0001-t0-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "tool_use",
+    "input_tokens": 1534,
+    "output_tokens": 248,
+    "text": "\"In the area\" most plausibly refers to the centre, which the traveller specified for the restaurant. The traveller doesn't need wifi, so internet is \"no\" (stated requirement).",
+    "tool_calls": [
+     {
+      "name": "search_hotels",
+      "input": {
+       "name": "null",
+       "area": [
+        "centre"
+       ],
+       "pricerange": "null",
+       "stars": [
+        "3"
+       ],
+       "type": "null",
+       "parking": "null",
+       "internet": [
+        "no"
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "custom_id": "erp_sonnet-MUL0001-tedit-1",
+   "request": {
+    "custom_id": "erp_sonnet-MUL0001-tedit-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I'd really like to take my client out to a nice restaurant that serves indian food.\nAssistant: I show many restaurants that serve Indian food in that price range. What area would you like to travel to?\nTraveller: I am looking for an expensive indian restaurant in the area of centre.\nAssistant: Might I recommend Saffron Brasserie? That is an expensive Indian restaurant in the center of town. I can book a table for you, if you like.\nTraveller: Sure thing, please book for 6 people at 19:30 on Saturday.\nAssistant: Booking was successful. The table will be reserved for 15 minutes. Your Reference number is : RF00JUFQ.\nTraveller: Okay great! Thank you so much. Could you also help me find a 3 star hotel in the area. I don't need wifi either."
+      }
+     ],
+     "system": "You read a conversation between a traveller and a hotel booking assistant in Cambridge. Search for hotels that meet the traveller's requirements with one call of the tool search_hotels. Use only what the traveller said or agreed to. Fields: name, area, pricerange, stars, type, parking, internet. Give name as the hotel name if the traveller asked for one hotel by name, else null. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. stars: 0, 1, 2, 3, 4, 5. type: guesthouse, hotel. parking: yes, no. internet: yes, no. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Call search_hotels one time, and write no other text.",
+     "thinking": {
+      "type": "between_tools"
+     },
+     "tools": [
+      {
+       "name": "search_hotels",
+       "description": "Search the database of places to stay in Cambridge, UK, and return those that match the traveller's stated requirements. Every parameter is required. Each one takes one of three kinds of value. (1) null: the traveller has not mentioned this attribute yet, so it does not filter results. (2) \"dont_care\": the traveller has explicitly said they have no preference, so it does not filter results either. (3) A list of acceptable values: results must match at least one value in the list. Use one value for a single preference, such as [\"cheap\"], or several for alternatives, such as [\"cheap\", \"moderate\"]. Only include values the traveller actually asked for or accepted. Do not guess or add preferences they did not express. Pass null for attributes they have not mentioned.",
+       "input_schema": {
+        "type": "object",
+        "properties": {
+         "name": {
+          "description": "The name of a specific place to stay, if the traveller asked about one by name (for example, \"acorn guest house\"). Use null if they did not name a particular place.",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string"
+           }
+          ]
+         },
+         "area": {
+          "description": "The part of Cambridge where the place is located. Use null if not mentioned or \"dont_care\" if the traveller has no preference. Otherwise, give a list of acceptable areas: \"centre\" (city centre), \"north\", \"south\", \"east\", \"west\".",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "dont_care"
+            ]
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "description": "The price level of the place. Use null if not mentioned or \"dont_care\" if the traveller has no preference. Otherwise, give a list of acceptable price levels: \"cheap\", \"moderate\", \"expensive\".",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "dont_care"
+            ]
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "stars": {
+          "description": "The star rating of the place, from \"0\" (unrated) to \"5\". Use null if not mentioned or \"dont_care\" if the traveller has no preference. Otherwise, give a list of every acceptable rating as a string. For example, \"at least 4 stars\" becomes [\"4\", \"5\"].",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "dont_care"
+            ]
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "description": "The kind of accommodation. Use null if not mentioned or \"dont_care\" if the traveller has no preference. Otherwise, give a list of acceptable kinds: \"guesthouse\" (a guest house or B&B) or \"hotel\".",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "dont_care"
+            ]
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "guesthouse",
+              "hotel"
+             ]
+            }
+           }
+          ]
+         },
+         "parking": {
+          "description": "Whether the place offers parking. Use null if not mentioned or \"dont_care\" if the traveller has no preference. Use [\"yes\"] if they need parking. Use [\"no\"] only if they specifically want a place without parking.",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "dont_care"
+            ]
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         },
+         "internet": {
+          "description": "Whether the place offers internet or wifi. Use null if not mentioned or \"dont_care\" if the traveller has no preference. Use [\"yes\"] if they need internet. Use [\"no\"] only if they specifically want a place without internet.",
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "dont_care"
+            ]
+           },
+           {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+             "type": "string",
+             "enum": [
+              "yes",
+              "no"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "name",
+         "area",
+         "pricerange",
+         "stars",
+         "type",
+         "parking",
+         "internet"
+        ],
+        "additionalProperties": false
+       },
+       "strict": true
+      }
+     ],
+     "tool_choice": {
+      "type": "auto",
+      "disable_parallel_tool_use": true
+     }
+    },
+    "cell": "tedit"
+   },
+   "answer": {
+    "custom_id": "erp_sonnet-MUL0001-tedit-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "tool_use",
+    "input_tokens": 2386,
+    "output_tokens": 254,
+    "text": "The traveller wants a 3-star hotel in the same area as the restaurant (centre) and doesn't need wifi. I read \"don't need wifi\" as no preference rather than a requirement for no internet.",
+    "tool_calls": [
+     {
+      "name": "search_hotels",
+      "input": {
+       "name": "null",
+       "area": [
+        "centre"
+       ],
+       "pricerange": "null",
+       "stars": [
+        "3"
+       ],
+       "type": "null",
+       "parking": "null",
+       "internet": "dont_care"
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

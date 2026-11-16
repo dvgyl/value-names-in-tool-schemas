@@ -1,0 +1,359 @@
+{
+ "run": "erh_sonnet",
+ "experiment": "H",
+ "model": "sonnet",
+ "cells": [
+  "g0",
+  "g4"
+ ],
+ "pairs": [
+  {
+   "custom_id": "erh_sonnet-table_00_unclear_word-g0-1",
+   "request": {
+    "custom_id": "erh_sonnet-table_00_unclear_word-g0-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "people": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "1",
+              "2"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "booth",
+              "bar seat",
+              "table"
+             ]
+            }
+           }
+          ]
+         },
+         "day": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday",
+              "saturday",
+              "sunday"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "area",
+         "pricerange",
+         "people",
+         "type",
+         "day"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I need a table for one on Monday. The restaurant should be cheap and in the south."
+      }
+     ],
+     "system": "You read a conversation between a traveller and a table booking assistant in Cambridge. Write down the traveller's requirements for the table as one JSON object. Use only what the traveller said or agreed to. Fields: area, pricerange, people, type, day. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. people: 1, 2. type: booth, bar seat, table. day: monday, tuesday, wednesday, thursday, friday, saturday, sunday. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "between_tools"
+     }
+    },
+    "cell": "g0"
+   },
+   "answer": {
+    "custom_id": "erh_sonnet-table_00_unclear_word-g0-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1175,
+    "output_tokens": 42,
+    "text": "{\"area\":[\"south\"],\"pricerange\":[\"cheap\"],\"people\":[\"1\"],\"type\":null,\"day\":[\"monday\"]}"
+   }
+  },
+  {
+   "custom_id": "erh_sonnet-table_00_unclear_word-g4-1",
+   "request": {
+    "custom_id": "erh_sonnet-table_00_unclear_word-g4-1",
+    "params": {
+     "model": "claude-sonnet-5-5",
+     "max_tokens": 4096,
+     "output_config": {
+      "effort": "high",
+      "format": {
+       "type": "json_schema",
+       "schema": {
+        "type": "object",
+        "properties": {
+         "area": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "centre",
+              "north",
+              "south",
+              "east",
+              "west"
+             ]
+            }
+           }
+          ]
+         },
+         "pricerange": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "cheap",
+              "moderate",
+              "expensive"
+             ]
+            }
+           }
+          ]
+         },
+         "people": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "1",
+              "2"
+             ]
+            }
+           }
+          ]
+         },
+         "type": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "booth",
+              "bar seat",
+              "open_floor"
+             ]
+            }
+           }
+          ]
+         },
+         "day": {
+          "anyOf": [
+           {
+            "type": "null"
+           },
+           {
+            "type": "string",
+            "enum": [
+             "any"
+            ]
+           },
+           {
+            "type": "array",
+            "items": {
+             "type": "string",
+             "enum": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday",
+              "saturday",
+              "sunday"
+             ]
+            }
+           }
+          ]
+         }
+        },
+        "required": [
+         "area",
+         "pricerange",
+         "people",
+         "type",
+         "day"
+        ],
+        "additionalProperties": false
+       }
+      }
+     },
+     "messages": [
+      {
+       "role": "user",
+       "content": "Traveller: I need a table for one on Monday. The restaurant should be cheap and in the south."
+      }
+     ],
+     "system": "You read a conversation between a traveller and a table booking assistant in Cambridge. Write down the traveller's requirements for the table as one JSON object. Use only what the traveller said or agreed to. Fields: area, pricerange, people, type, day. For each field give null if the traveller never stated a requirement, \"any\" if the traveller said it does not matter, or a list of acceptable values in the traveller's order of preference (first is most preferred). Allowed values: area: centre, north, south, east, west. pricerange: cheap, moderate, expensive. people: 1, 2. type: booth, bar seat, open_floor. day: monday, tuesday, wednesday, thursday, friday, saturday, sunday. If the traveller changed their mind, give the final requirement. An option that the traveller only accepted from the assistant's offers is not a requirement. Output only the JSON object.",
+     "thinking": {
+      "type": "between_tools"
+     }
+    },
+    "cell": "g4"
+   },
+   "answer": {
+    "custom_id": "erh_sonnet-table_00_unclear_word-g4-1",
+    "type": "succeeded",
+    "model": "claude-sonnet-5-5",
+    "stop": "end_turn",
+    "input_tokens": 1181,
+    "output_tokens": 42,
+    "text": "{\"area\":[\"south\"],\"pricerange\":[\"cheap\"],\"people\":[\"1\"],\"type\":null,\"day\":[\"monday\"]}"
+   }
+  }
+ ]
+}

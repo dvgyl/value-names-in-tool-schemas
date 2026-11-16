@@ -1,0 +1,15 @@
+{
+ "about": "Expected values of smoke_test.py: run era1_haiku, cell t0 (the original tool). The values come from the stored result files r10/analysis/out/a.md and r10/analysis/out/tool_validity.md. No script writes this file.",
+ "values": [
+  {"key": "hotel_share_original_tool", "label": "hotel-filter share, original tool, 554 first requests",
+   "k": 92, "n": 1104, "printed": "8.3%", "source": "r10/analysis/out/a.md, rate of type = hotel per arm, row haiku, column T0 (tool)"},
+  {"key": "exclusion_original_tool", "label": "exclusion share, original tool, 448 first requests whose brief sets no type",
+   "k": 28, "n": 894, "printed": "3.1%", "source": "r10/analysis/out/a.md, cost of the call, row haiku, column Search failure T0"},
+  {"key": "schema_invalid_calls_original_tool", "label": "original-tool search calls that do not fit the full input schema after the declared normalization",
+   "count": 80, "source": "r10/analysis/out/tool_validity.md, row first request, haiku, original tool (t0), column Invalid after normalization"},
+  {"key": "schema_invalid_calls_scorable", "label": "of these calls, the scorable ones (valid = 1, schema_valid = 0)",
+   "count": 76, "source": "tables/answers_hotel.csv.gz; the other 4 calls do not parse (valid = 0)"},
+  {"key": "exclusion_original_tool_schema_valid", "label": "exclusion share, original tool, schema-invalid search calls counted as missing",
+   "k": 25, "n": 839, "printed": "3.0%", "source": "r10/analysis/out/tool_validity.md, blocking filters on the 448 no-type prefixes, haiku, original"}
+ ]
+}

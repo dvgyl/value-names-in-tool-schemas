@@ -1,0 +1,823 @@
+{
+ "spec": "SPEC-N2-gated-soft.md",
+ "status": "exploratory; new policy on reused development dialogues",
+ "models": {
+  "sonnet": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 140.0,
+    "losses": 35.0
+   },
+   "counts": {
+    "answers": 1040,
+    "triggered": 294,
+    "second_search": 95,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 988,
+    "G_equals_soft": 52
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 26.0,
+     "failures_ended": 26.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 2.0,
+      "not_stated": 6.0
+     }
+    },
+    "verify": {
+     "net_avoided": 37.0,
+     "failures_ended": 37.0,
+     "failures_caused": 0.0,
+     "gross_losses": 8.0,
+     "gross_gains": 0.0,
+     "net_added": 8.0,
+     "guesthouse_newly_shown": {
+      "stated": 6.0,
+      "not_stated": 32.0
+     }
+    },
+    "relax_any": {
+     "net_avoided": 37.0,
+     "failures_ended": 37.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 1.0,
+     "net_added": -1.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 0.0
+     }
+    },
+    "soft": {
+     "net_avoided": 37.0,
+     "failures_ended": 37.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 1.0,
+     "net_added": -1.0,
+     "guesthouse_newly_shown": {
+      "stated": 44.0,
+      "not_stated": 41.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -11.0,
+    -18.0,
+    -5.0
+   ],
+   "G_minus_soft": [
+    -11.0,
+    -18.0,
+    -5.0
+   ],
+   "answers": 1040,
+   "conditional_calls_share": 0.2826923076923077,
+   "second_search_share": 0.09134615384615384,
+   "historical_calls_per_answer": 1.0
+  },
+  "haiku": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 124.0,
+    "losses": 41.5
+   },
+   "counts": {
+    "answers": 2080,
+    "triggered": 288,
+    "second_search": 43,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 2062,
+    "G_equals_soft": 18
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 0.0,
+     "failures_ended": 0.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 3.5,
+      "not_stated": 3.5
+     }
+    },
+    "verify": {
+     "net_avoided": 0.5,
+     "failures_ended": 0.5,
+     "failures_caused": 0.0,
+     "gross_losses": 4.5,
+     "gross_gains": 0.0,
+     "net_added": 4.5,
+     "guesthouse_newly_shown": {
+      "stated": 6.0,
+      "not_stated": 5.5
+     }
+    },
+    "relax_any": {
+     "net_avoided": 3.5,
+     "failures_ended": 3.5,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.5,
+      "not_stated": 0.0
+     }
+    },
+    "soft": {
+     "net_avoided": 3.5,
+     "failures_ended": 3.5,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 33.0,
+      "not_stated": 18.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -0.5,
+    -1.5,
+    0.0
+   ],
+   "G_minus_soft": [
+    -3.5,
+    -7.5,
+    -0.5
+   ],
+   "answers": 2080,
+   "conditional_calls_share": 0.13846153846153847,
+   "second_search_share": 0.020673076923076922,
+   "historical_calls_per_answer": 1.0
+  },
+  "sol": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 215.0,
+    "losses": 29.0
+   },
+   "counts": {
+    "answers": 1040,
+    "triggered": 474,
+    "second_search": 162,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 906,
+    "G_equals_soft": 134
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 90.0,
+     "failures_ended": 90.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 4.0
+     }
+    },
+    "verify": {
+     "net_avoided": 99.0,
+     "failures_ended": 100.0,
+     "failures_caused": 1.0,
+     "gross_losses": 4.0,
+     "gross_gains": 0.0,
+     "net_added": 4.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 31.0
+     }
+    },
+    "relax_any": {
+     "net_avoided": 103.0,
+     "failures_ended": 103.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 4.0
+     }
+    },
+    "soft": {
+     "net_avoided": 109.0,
+     "failures_ended": 109.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 49.0,
+      "not_stated": 64.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -9.0,
+    -16.0,
+    -3.0
+   ],
+   "G_minus_soft": [
+    -19.0,
+    -27.0,
+    -11.0
+   ],
+   "answers": 1040,
+   "conditional_calls_share": 0.45576923076923076,
+   "second_search_share": 0.15576923076923077,
+   "historical_calls_per_answer": 1.0
+  },
+  "luna": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 187.5,
+    "losses": 42.5
+   },
+   "counts": {
+    "answers": 2080,
+    "triggered": 601,
+    "second_search": 239,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 1962,
+    "G_equals_soft": 118
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 25.0,
+     "failures_ended": 25.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 11.5,
+      "not_stated": 9.5
+     }
+    },
+    "verify": {
+     "net_avoided": 36.5,
+     "failures_ended": 36.5,
+     "failures_caused": 0.0,
+     "gross_losses": 9.0,
+     "gross_gains": 0.0,
+     "net_added": 9.0,
+     "guesthouse_newly_shown": {
+      "stated": 18.5,
+      "not_stated": 23.5
+     }
+    },
+    "relax_any": {
+     "net_avoided": 33.5,
+     "failures_ended": 33.5,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 1.0
+     }
+    },
+    "soft": {
+     "net_avoided": 36.5,
+     "failures_ended": 36.5,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 39.5,
+      "not_stated": 32.5
+     }
+    }
+   },
+   "G_minus_verify": [
+    -11.5,
+    -18.0,
+    -6.0
+   ],
+   "G_minus_soft": [
+    -11.5,
+    -18.0,
+    -6.0
+   ],
+   "answers": 2080,
+   "conditional_calls_share": 0.28894230769230766,
+   "second_search_share": 0.11490384615384615,
+   "historical_calls_per_answer": 1.0
+  },
+  "opus": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 98.0,
+    "losses": 29.0
+   },
+   "counts": {
+    "answers": 1040,
+    "triggered": 287,
+    "second_search": 58,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 1006,
+    "G_equals_soft": 34
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 18.0,
+     "failures_ended": 18.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 3.0
+     }
+    },
+    "verify": {
+     "net_avoided": 21.0,
+     "failures_ended": 22.0,
+     "failures_caused": 1.0,
+     "gross_losses": 3.0,
+     "gross_gains": 0.0,
+     "net_added": 3.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 22.0
+     }
+    },
+    "relax_any": {
+     "net_avoided": 23.0,
+     "failures_ended": 23.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 1.0,
+     "net_added": -1.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 0.0
+     }
+    },
+    "soft": {
+     "net_avoided": 25.0,
+     "failures_ended": 25.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 1.0,
+     "net_added": -1.0,
+     "guesthouse_newly_shown": {
+      "stated": 51.0,
+      "not_stated": 52.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -3.0,
+    -7.0,
+    1.0
+   ],
+   "G_minus_soft": [
+    -7.0,
+    -13.0,
+    -2.0
+   ],
+   "answers": 1040,
+   "conditional_calls_share": 0.2759615384615385,
+   "second_search_share": 0.05576923076923077,
+   "historical_calls_per_answer": 1.0
+  },
+  "astra": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 212.0,
+    "losses": 29.0
+   },
+   "counts": {
+    "answers": 1040,
+    "triggered": 478,
+    "second_search": 160,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 907,
+    "G_equals_soft": 133
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 90.0,
+     "failures_ended": 90.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 5.0
+     }
+    },
+    "verify": {
+     "net_avoided": 107.0,
+     "failures_ended": 108.0,
+     "failures_caused": 1.0,
+     "gross_losses": 7.0,
+     "gross_gains": 0.0,
+     "net_added": 7.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 39.0
+     }
+    },
+    "relax_any": {
+     "net_avoided": 105.0,
+     "failures_ended": 105.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 1.0,
+     "net_added": -1.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 5.0
+     }
+    },
+    "soft": {
+     "net_avoided": 110.0,
+     "failures_ended": 110.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 1.0,
+     "net_added": -1.0,
+     "guesthouse_newly_shown": {
+      "stated": 50.0,
+      "not_stated": 63.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -17.0,
+    -26.0,
+    -9.0
+   ],
+   "G_minus_soft": [
+    -20.0,
+    -30.0,
+    -12.0
+   ],
+   "answers": 1040,
+   "conditional_calls_share": 0.4596153846153846,
+   "second_search_share": 0.15384615384615385,
+   "historical_calls_per_answer": 1.0
+  },
+  "deepseek": {
+   "dialogues": {
+    "nt": 807,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 177.5,
+    "losses": 51.0
+   },
+   "counts": {
+    "answers": 2080,
+    "triggered": 458,
+    "second_search": 177,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 1986,
+    "G_equals_soft": 94
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 24.0,
+     "failures_ended": 24.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 2.0,
+      "not_stated": 6.5
+     }
+    },
+    "verify": {
+     "net_avoided": 30.0,
+     "failures_ended": 30.0,
+     "failures_caused": 0.0,
+     "gross_losses": 5.0,
+     "gross_gains": 0.0,
+     "net_added": 5.0,
+     "guesthouse_newly_shown": {
+      "stated": 4.0,
+      "not_stated": 12.5
+     }
+    },
+    "relax_any": {
+     "net_avoided": 31.5,
+     "failures_ended": 31.5,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 1.0
+     }
+    },
+    "soft": {
+     "net_avoided": 35.0,
+     "failures_ended": 35.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 29.5,
+      "not_stated": 28.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -6.0,
+    -10.5,
+    -2.0
+   ],
+   "G_minus_soft": [
+    -11.0,
+    -17.0,
+    -6.0
+   ],
+   "answers": 2080,
+   "conditional_calls_share": 0.2201923076923077,
+   "second_search_share": 0.08509615384615385,
+   "historical_calls_per_answer": 1.0
+  },
+  "qwen": {
+   "dialogues": {
+    "nt": 801,
+    "h": 227,
+    "h_stated": 87
+   },
+   "original": {
+    "failures": 224.0,
+    "losses": 63.5
+   },
+   "counts": {
+    "answers": 1962,
+    "triggered": 317,
+    "second_search": 218,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 1839,
+    "G_equals_soft": 123,
+    "left_out_original_invalid": 118,
+    "dialogues_without_base_answer_nt": 6,
+    "dialogues_without_base_answer_h": 6
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 16.0,
+     "failures_ended": 16.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 13.0,
+      "not_stated": 20.0
+     }
+    },
+    "verify": {
+     "net_avoided": 16.5,
+     "failures_ended": 19.5,
+     "failures_caused": 3.0,
+     "gross_losses": 20.0,
+     "gross_gains": 0.0,
+     "net_added": 20.0,
+     "guesthouse_newly_shown": {
+      "stated": 19.0,
+      "not_stated": 29.5
+     }
+    },
+    "relax_any": {
+     "net_avoided": 15.0,
+     "failures_ended": 15.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 1.0
+     }
+    },
+    "soft": {
+     "net_avoided": 20.5,
+     "failures_ended": 20.5,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 33.5,
+      "not_stated": 29.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -0.5,
+    -5.0,
+    3.5
+   ],
+   "G_minus_soft": [
+    -4.5,
+    -8.0,
+    -1.5
+   ],
+   "answers": 1962,
+   "conditional_calls_share": 0.16156982670744138,
+   "second_search_share": 0.1111111111111111,
+   "historical_calls_per_answer": 1.0
+  },
+  "gemma": {
+   "dialogues": {
+    "nt": 806,
+    "h": 233,
+    "h_stated": 89
+   },
+   "original": {
+    "failures": 206.5,
+    "losses": 40.5
+   },
+   "counts": {
+    "answers": 2067,
+    "triggered": 653,
+    "second_search": 244,
+    "prefix_violation_G": 0,
+    "prefix_violation_soft": 0,
+    "G_equals_original": 1923,
+    "G_equals_soft": 144,
+    "left_out_original_invalid": 13,
+    "dialogues_without_base_answer_nt": 1
+   },
+   "policies": {
+    "G": {
+     "net_avoided": 45.0,
+     "failures_ended": 45.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 1.0,
+      "not_stated": 5.0
+     }
+    },
+    "verify": {
+     "net_avoided": 54.5,
+     "failures_ended": 54.5,
+     "failures_caused": 0.0,
+     "gross_losses": 5.0,
+     "gross_gains": 0.0,
+     "net_added": 5.0,
+     "guesthouse_newly_shown": {
+      "stated": 4.0,
+      "not_stated": 22.5
+     }
+    },
+    "relax_any": {
+     "net_avoided": 55.0,
+     "failures_ended": 55.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 0.0,
+      "not_stated": 0.0
+     }
+    },
+    "soft": {
+     "net_avoided": 58.0,
+     "failures_ended": 58.0,
+     "failures_caused": 0.0,
+     "gross_losses": 0.0,
+     "gross_gains": 0.0,
+     "net_added": 0.0,
+     "guesthouse_newly_shown": {
+      "stated": 40.0,
+      "not_stated": 34.0
+     }
+    }
+   },
+   "G_minus_verify": [
+    -9.5,
+    -15.5,
+    -4.5
+   ],
+   "G_minus_soft": [
+    -13.0,
+    -20.0,
+    -6.5
+   ],
+   "answers": 2067,
+   "conditional_calls_share": 0.31591678761490083,
+   "second_search_share": 0.11804547653604257,
+   "historical_calls_per_answer": 1.0
+  }
+ },
+ "self_check": {
+  "sonnet": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "haiku": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "sol": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "luna": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "opus": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "astra": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "deepseek": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "qwen": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  },
+  "gemma": {
+   "verify": true,
+   "relax_any": true,
+   "soft": true,
+   "original": true
+  }
+ }
+}

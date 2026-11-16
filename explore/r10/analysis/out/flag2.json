@@ -1,0 +1,1363 @@
+{
+ "amendment": "R10-13",
+ "exploratory": true,
+ "pilot": false,
+ "missing": [],
+ "arm_a": {
+  "sonnet": {
+   "calls": 38,
+   "dialogues": 23,
+   "kinds": {
+    "plain": {
+     "widen_told": 22,
+     "widen_silent": 12,
+     "tell": 4
+    },
+    "flag": {
+     "widen_told": 16,
+     "tell": 5,
+     "widen_silent": 16,
+     "kept": 1
+    },
+    "xplain": {
+     "kept": 23,
+     "widen_silent": 4,
+     "tell": 10,
+     "widen_told": 1
+    },
+    "xflag": {
+     "tell": 26,
+     "kept": 10,
+     "widen_silent": 2
+    }
+   },
+   "rates": {
+    "silent_widening": {
+     "plain": [
+      0.3157894736842105,
+      0.14705882352941177,
+      0.5
+     ],
+     "flag": [
+      0.42105263157894735,
+      0.2894736842105263,
+      0.5428571428571428
+     ],
+     "xplain": [
+      0.10526315789473684,
+      0.0,
+      0.23684210526315788
+     ],
+     "xflag": [
+      0.05263157894736842,
+      0.0,
+      0.13157894736842105
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.10526315789473684,
+      0.0,
+      0.25
+     ],
+     "flag": [
+      0.13157894736842105,
+      0.02564102564102564,
+      0.2702702702702703
+     ],
+     "xplain": [
+      0.2631578947368421,
+      0.08333333333333333,
+      0.46153846153846156
+     ],
+     "xflag": [
+      0.6842105263157895,
+      0.5121951219512195,
+      0.8536585365853658
+     ]
+    },
+    "any_widening": {
+     "plain": [
+      0.8947368421052632,
+      0.75,
+      1.0
+     ],
+     "flag": [
+      0.8421052631578947,
+      0.6944444444444444,
+      0.9512195121951219
+     ],
+     "xplain": [
+      0.13157894736842105,
+      0.02564102564102564,
+      0.2631578947368421
+     ],
+     "xflag": [
+      0.05263157894736842,
+      0.0,
+      0.13157894736842105
+     ]
+    },
+    "tell_word_rule": {
+     "plain": [
+      0.07894736842105263,
+      0.0,
+      0.21052631578947367
+     ],
+     "flag": [
+      0.13157894736842105,
+      0.02564102564102564,
+      0.2702702702702703
+     ],
+     "xplain": [
+      0.2631578947368421,
+      0.08333333333333333,
+      0.46153846153846156
+     ],
+     "xflag": [
+      0.6842105263157895,
+      0.5121951219512195,
+      0.8536585365853658
+     ]
+    }
+   },
+   "contrasts": {
+    "flag_minus_plain (brief)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.13043478260869565,
+      "ci": [
+       -0.043478260869565216,
+       0.30434782608695654
+      ],
+      "higher": 7,
+      "lower": 2,
+      "sign_p": 0.1796875
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.0,
+      "ci": [
+       -0.13043478260869565,
+       0.08695652173913043
+      ],
+      "higher": 2,
+      "lower": 1,
+      "sign_p": 1.0
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.021739130434782608,
+      "ci": [
+       -0.13043478260869565,
+       0.10869565217391304
+      ],
+      "higher": 1,
+      "lower": 3,
+      "sign_p": 0.625
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.043478260869565216,
+      "ci": [
+       0.0,
+       0.10869565217391304
+      ],
+      "higher": 2,
+      "lower": 0,
+      "sign_p": 0.5
+     }
+    },
+    "flag_minus_plain (explicit)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.043478260869565216,
+      "ci": [
+       -0.13043478260869565,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 1,
+      "sign_p": 1.0
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.43478260869565216,
+      "ci": [
+       0.1956521739130435,
+       0.6521739130434783
+      ],
+      "higher": 13,
+      "lower": 1,
+      "sign_p": 0.0018310546875
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.06521739130434782,
+      "ci": [
+       -0.17391304347826086,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 2,
+      "sign_p": 0.5
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.43478260869565216,
+      "ci": [
+       0.1956521739130435,
+       0.6521739130434783
+      ],
+      "higher": 13,
+      "lower": 1,
+      "sign_p": 0.0018310546875
+     }
+    },
+    "explicit_minus_brief (plain)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.1956521739130435,
+      "ci": [
+       -0.41304347826086957,
+       0.043478260869565216
+      ],
+      "higher": 3,
+      "lower": 9,
+      "sign_p": 0.14599609375
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.10869565217391304,
+      "ci": [
+       -0.06521739130434782,
+       0.2826086956521739
+      ],
+      "higher": 4,
+      "lower": 1,
+      "sign_p": 0.375
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.7391304347826086,
+      "ci": [
+       -0.8913043478260869,
+       -0.5652173913043478
+      ],
+      "higher": 0,
+      "lower": 18,
+      "sign_p": 7.62939453125e-06
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.15217391304347827,
+      "ci": [
+       0.021739130434782608,
+       0.30434782608695654
+      ],
+      "higher": 4,
+      "lower": 0,
+      "sign_p": 0.125
+     }
+    },
+    "explicit_minus_brief (flag)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.3695652173913043,
+      "ci": [
+       -0.5434782608695652,
+       -0.17391304347826086
+      ],
+      "higher": 1,
+      "lower": 14,
+      "sign_p": 0.0009765625
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.5434782608695652,
+      "ci": [
+       0.32608695652173914,
+       0.7391304347826086
+      ],
+      "higher": 16,
+      "lower": 1,
+      "sign_p": 0.000274658203125
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.782608695652174,
+      "ci": [
+       -0.9130434782608695,
+       -0.6304347826086957
+      ],
+      "higher": 0,
+      "lower": 20,
+      "sign_p": 1.9073486328125e-06
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.5434782608695652,
+      "ci": [
+       0.32608695652173914,
+       0.7391304347826086
+      ],
+      "higher": 16,
+      "lower": 1,
+      "sign_p": 0.000274658203125
+     }
+    }
+   },
+   "widen_text": {
+    "plain": {
+     "word rule": 22,
+     "other text": 10,
+     "no text": 2
+    },
+    "flag": {
+     "word rule": 16,
+     "other text": 13,
+     "no text": 3
+    },
+    "xplain": {
+     "word rule": 1,
+     "other text": 4
+    },
+    "xflag": {
+     "other text": 2
+    }
+   }
+  },
+  "haiku": {
+   "calls": 38,
+   "dialogues": 23,
+   "kinds": {
+    "plain": {
+     "tell": 10,
+     "widen_silent": 14,
+     "widen_told": 10,
+     "kept": 4
+    },
+    "flag": {
+     "widen_told": 19,
+     "widen_silent": 11,
+     "tell": 8
+    },
+    "xplain": {
+     "tell": 24,
+     "kept": 14
+    },
+    "xflag": {
+     "tell": 28,
+     "kept": 10
+    }
+   },
+   "rates": {
+    "silent_widening": {
+     "plain": [
+      0.3684210526315789,
+      0.21621621621621623,
+      0.5238095238095238
+     ],
+     "flag": [
+      0.2894736842105263,
+      0.14285714285714285,
+      0.4473684210526316
+     ],
+     "xplain": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "xflag": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.2631578947368421,
+      0.1111111111111111,
+      0.4358974358974359
+     ],
+     "flag": [
+      0.21052631578947367,
+      0.07894736842105263,
+      0.35294117647058826
+     ],
+     "xplain": [
+      0.631578947368421,
+      0.4594594594594595,
+      0.8
+     ],
+     "xflag": [
+      0.7368421052631579,
+      0.5675675675675675,
+      0.8974358974358975
+     ]
+    },
+    "any_widening": {
+     "plain": [
+      0.631578947368421,
+      0.4375,
+      0.8
+     ],
+     "flag": [
+      0.7894736842105263,
+      0.6470588235294118,
+      0.918918918918919
+     ],
+     "xplain": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "xflag": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    },
+    "tell_word_rule": {
+     "plain": [
+      0.23684210526315788,
+      0.08823529411764706,
+      0.41025641025641024
+     ],
+     "flag": [
+      0.21052631578947367,
+      0.07894736842105263,
+      0.35294117647058826
+     ],
+     "xplain": [
+      0.5789473684210527,
+      0.3888888888888889,
+      0.7575757575757576
+     ],
+     "xflag": [
+      0.7368421052631579,
+      0.5675675675675675,
+      0.8974358974358975
+     ]
+    }
+   },
+   "contrasts": {
+    "flag_minus_plain (brief)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.10869565217391304,
+      "ci": [
+       -0.2608695652173913,
+       0.021739130434782608
+      ],
+      "higher": 2,
+      "lower": 5,
+      "sign_p": 0.453125
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.043478260869565216,
+      "ci": [
+       -0.21739130434782608,
+       0.10869565217391304
+      ],
+      "higher": 3,
+      "lower": 4,
+      "sign_p": 1.0
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.17391304347826086,
+      "ci": [
+       0.021739130434782608,
+       0.3695652173913043
+      ],
+      "higher": 6,
+      "lower": 2,
+      "sign_p": 0.2890625
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.0,
+      "ci": [
+       -0.1956521739130435,
+       0.17391304347826086
+      ],
+      "higher": 4,
+      "lower": 4,
+      "sign_p": 1.0
+     }
+    },
+    "flag_minus_plain (explicit)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 0,
+      "sign_p": 1.0
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.13043478260869565,
+      "ci": [
+       0.0,
+       0.2826086956521739
+      ],
+      "higher": 6,
+      "lower": 2,
+      "sign_p": 0.2890625
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.0,
+      "ci": [
+       0.0,
+       0.0
+      ],
+      "higher": 0,
+      "lower": 0,
+      "sign_p": 1.0
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.1956521739130435,
+      "ci": [
+       0.021739130434782608,
+       0.391304347826087
+      ],
+      "higher": 7,
+      "lower": 2,
+      "sign_p": 0.1796875
+     }
+    },
+    "explicit_minus_brief (plain)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.3695652173913043,
+      "ci": [
+       -0.5434782608695652,
+       -0.21739130434782608
+      ],
+      "higher": 0,
+      "lower": 12,
+      "sign_p": 0.00048828125
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.34782608695652173,
+      "ci": [
+       0.17391304347826086,
+       0.5434782608695652
+      ],
+      "higher": 12,
+      "lower": 1,
+      "sign_p": 0.00341796875
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.5869565217391305,
+      "ci": [
+       -0.782608695652174,
+       -0.391304347826087
+      ],
+      "higher": 0,
+      "lower": 15,
+      "sign_p": 6.103515625e-05
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.32608695652173914,
+      "ci": [
+       0.15217391304347827,
+       0.5217391304347826
+      ],
+      "higher": 11,
+      "lower": 1,
+      "sign_p": 0.00634765625
+     }
+    },
+    "explicit_minus_brief (flag)": {
+     "silent_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.2608695652173913,
+      "ci": [
+       -0.41304347826086957,
+       -0.13043478260869565
+      ],
+      "higher": 0,
+      "lower": 9,
+      "sign_p": 0.00390625
+     },
+     "tell": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.5217391304347826,
+      "ci": [
+       0.34782608695652173,
+       0.6956521739130435
+      ],
+      "higher": 15,
+      "lower": 0,
+      "sign_p": 6.103515625e-05
+     },
+     "any_widening": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": -0.7608695652173914,
+      "ci": [
+       -0.9130434782608695,
+       -0.6086956521739131
+      ],
+      "higher": 0,
+      "lower": 19,
+      "sign_p": 3.814697265625e-06
+     },
+     "tell_word_rule": {
+      "dialogues": 23,
+      "pairs": 38,
+      "mean": 0.5217391304347826,
+      "ci": [
+       0.34782608695652173,
+       0.6956521739130435
+      ],
+      "higher": 15,
+      "lower": 0,
+      "sign_p": 6.103515625e-05
+     }
+    }
+   },
+   "widen_text": {
+    "flag": {
+     "other text": 11,
+     "word rule": 19
+    },
+    "plain": {
+     "word rule": 10,
+     "other text": 14
+    }
+   }
+  },
+  "opus": {
+   "calls": 25,
+   "dialogues": 25,
+   "kinds": {
+    "plain": {
+     "widen_silent": 22,
+     "tell": 3
+    },
+    "flag": {
+     "tell": 20,
+     "widen_silent": 5
+    },
+    "xplain": {
+     "tell": 21,
+     "kept": 4
+    },
+    "xflag": {
+     "tell": 24,
+     "widen_silent": 1
+    }
+   },
+   "rates": {
+    "silent_widening": {
+     "plain": [
+      0.88,
+      0.76,
+      1.0
+     ],
+     "flag": [
+      0.2,
+      0.08,
+      0.36
+     ],
+     "xplain": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "xflag": [
+      0.04,
+      0.0,
+      0.12
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.12,
+      0.0,
+      0.24
+     ],
+     "flag": [
+      0.8,
+      0.64,
+      0.92
+     ],
+     "xplain": [
+      0.84,
+      0.68,
+      0.96
+     ],
+     "xflag": [
+      0.96,
+      0.88,
+      1.0
+     ]
+    },
+    "any_widening": {
+     "plain": [
+      0.88,
+      0.76,
+      1.0
+     ],
+     "flag": [
+      0.2,
+      0.08,
+      0.36
+     ],
+     "xplain": [
+      0.0,
+      0.0,
+      0.0
+     ],
+     "xflag": [
+      0.04,
+      0.0,
+      0.12
+     ]
+    },
+    "tell_word_rule": {
+     "plain": [
+      0.12,
+      0.0,
+      0.24
+     ],
+     "flag": [
+      0.8,
+      0.64,
+      0.92
+     ],
+     "xplain": [
+      0.84,
+      0.68,
+      0.96
+     ],
+     "xflag": [
+      0.96,
+      0.88,
+      1.0
+     ]
+    }
+   },
+   "contrasts": {
+    "flag_minus_plain (brief)": {
+     "silent_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": -0.68,
+      "ci": [
+       -0.84,
+       -0.48
+      ],
+      "higher": 0,
+      "lower": 17,
+      "sign_p": 1.52587890625e-05
+     },
+     "tell": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.68,
+      "ci": [
+       0.48,
+       0.84
+      ],
+      "higher": 17,
+      "lower": 0,
+      "sign_p": 1.52587890625e-05
+     },
+     "any_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": -0.68,
+      "ci": [
+       -0.84,
+       -0.48
+      ],
+      "higher": 0,
+      "lower": 17,
+      "sign_p": 1.52587890625e-05
+     },
+     "tell_word_rule": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.68,
+      "ci": [
+       0.48,
+       0.84
+      ],
+      "higher": 17,
+      "lower": 0,
+      "sign_p": 1.52587890625e-05
+     }
+    },
+    "flag_minus_plain (explicit)": {
+     "silent_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.04,
+      "ci": [
+       0.0,
+       0.12
+      ],
+      "higher": 1,
+      "lower": 0,
+      "sign_p": 1.0
+     },
+     "tell": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.12,
+      "ci": [
+       -0.04,
+       0.32
+      ],
+      "higher": 4,
+      "lower": 1,
+      "sign_p": 0.375
+     },
+     "any_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.04,
+      "ci": [
+       0.0,
+       0.12
+      ],
+      "higher": 1,
+      "lower": 0,
+      "sign_p": 1.0
+     },
+     "tell_word_rule": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.12,
+      "ci": [
+       -0.04,
+       0.32
+      ],
+      "higher": 4,
+      "lower": 1,
+      "sign_p": 0.375
+     }
+    },
+    "explicit_minus_brief (plain)": {
+     "silent_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": -0.88,
+      "ci": [
+       -1.0,
+       -0.76
+      ],
+      "higher": 0,
+      "lower": 22,
+      "sign_p": 4.76837158203125e-07
+     },
+     "tell": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.72,
+      "ci": [
+       0.48,
+       0.88
+      ],
+      "higher": 19,
+      "lower": 1,
+      "sign_p": 4.00543212890625e-05
+     },
+     "any_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": -0.88,
+      "ci": [
+       -1.0,
+       -0.76
+      ],
+      "higher": 0,
+      "lower": 22,
+      "sign_p": 4.76837158203125e-07
+     },
+     "tell_word_rule": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.72,
+      "ci": [
+       0.48,
+       0.88
+      ],
+      "higher": 19,
+      "lower": 1,
+      "sign_p": 4.00543212890625e-05
+     }
+    },
+    "explicit_minus_brief (flag)": {
+     "silent_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": -0.16,
+      "ci": [
+       -0.32,
+       -0.04
+      ],
+      "higher": 0,
+      "lower": 4,
+      "sign_p": 0.125
+     },
+     "tell": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.16,
+      "ci": [
+       0.04,
+       0.32
+      ],
+      "higher": 4,
+      "lower": 0,
+      "sign_p": 0.125
+     },
+     "any_widening": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": -0.16,
+      "ci": [
+       -0.32,
+       -0.04
+      ],
+      "higher": 0,
+      "lower": 4,
+      "sign_p": 0.125
+     },
+     "tell_word_rule": {
+      "dialogues": 25,
+      "pairs": 25,
+      "mean": 0.16,
+      "ci": [
+       0.04,
+       0.32
+      ],
+      "higher": 4,
+      "lower": 0,
+      "sign_p": 0.125
+     }
+    }
+   },
+   "widen_text": {
+    "plain": {
+     "no text": 22
+    },
+    "xflag": {
+     "no text": 1
+    },
+    "flag": {
+     "no text": 5
+    }
+   }
+  }
+ },
+ "arm_b": {
+  "sol": {
+   "calls": 96,
+   "dialogues": 49,
+   "kinds": {
+    "plain": {
+     "other": 46,
+     "tell": 46,
+     "widen": 4
+    },
+    "flag": {
+     "tell": 86,
+     "other": 3,
+     "widen": 5,
+     "kept": 2
+    }
+   },
+   "rates": {
+    "recovery": {
+     "plain": [
+      0.5208333333333334,
+      0.3870967741935484,
+      0.648936170212766
+     ],
+     "flag": [
+      0.9479166666666666,
+      0.8865979381443299,
+      0.9896907216494846
+     ]
+    },
+    "widen": {
+     "plain": [
+      0.041666666666666664,
+      0.0,
+      0.10526315789473684
+     ],
+     "flag": [
+      0.052083333333333336,
+      0.01020408163265306,
+      0.11458333333333333
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.4791666666666667,
+      0.35106382978723405,
+      0.6041666666666666
+     ],
+     "flag": [
+      0.8958333333333334,
+      0.8105263157894737,
+      0.968421052631579
+     ]
+    }
+   },
+   "flag_minus_plain": {
+    "recovery": {
+     "dialogues": 49,
+     "pairs": 96,
+     "mean": 0.4387755102040816,
+     "ci": [
+      0.30612244897959184,
+      0.5714285714285714
+     ],
+     "higher": 27,
+     "lower": 2,
+     "sign_p": 1.6242265701293945e-06
+    },
+    "widen": {
+     "dialogues": 49,
+     "pairs": 96,
+     "mean": 0.02040816326530612,
+     "ci": [
+      -0.02040816326530612,
+      0.07142857142857142
+     ],
+     "higher": 2,
+     "lower": 1,
+     "sign_p": 1.0
+    },
+    "tell": {
+     "dialogues": 49,
+     "pairs": 96,
+     "mean": 0.41836734693877553,
+     "ci": [
+      0.2857142857142857,
+      0.5510204081632653
+     ],
+     "higher": 26,
+     "lower": 2,
+     "sign_p": 3.032386302947998e-06
+    }
+   },
+   "widen_text": {
+    "flag": {
+     "no text": 5
+    },
+    "plain": {
+     "no text": 4
+    }
+   },
+   "no_type_only": {
+    "calls": 70,
+    "dialogues": 36,
+    "rates": {
+     "recovery": {
+      "plain": [
+       0.5285714285714286,
+       0.37142857142857144,
+       0.6811594202898551
+      ],
+      "flag": [
+       0.9714285714285714,
+       0.9285714285714286,
+       1.0
+      ]
+     }
+    },
+    "flag_minus_plain": {
+     "recovery": {
+      "dialogues": 36,
+      "pairs": 70,
+      "mean": 0.4583333333333333,
+      "ci": [
+       0.2916666666666667,
+       0.625
+      ],
+      "higher": 20,
+      "lower": 2,
+      "sign_p": 0.00012111663818359375
+     }
+    }
+   },
+   "era2": {
+    "kinds": {
+     "other": 69,
+     "tell": 27
+    },
+    "recovery": 0.28125
+   }
+  },
+  "astra": {
+   "calls": 51,
+   "dialogues": 51,
+   "kinds": {
+    "plain": {
+     "other": 28,
+     "tell": 21,
+     "widen": 2
+    },
+    "flag": {
+     "tell": 44,
+     "other": 3,
+     "widen": 3,
+     "kept": 1
+    }
+   },
+   "rates": {
+    "recovery": {
+     "plain": [
+      0.45098039215686275,
+      0.3137254901960784,
+      0.5882352941176471
+     ],
+     "flag": [
+      0.9215686274509803,
+      0.8431372549019608,
+      0.9803921568627451
+     ]
+    },
+    "widen": {
+     "plain": [
+      0.0392156862745098,
+      0.0,
+      0.09803921568627451
+     ],
+     "flag": [
+      0.058823529411764705,
+      0.0,
+      0.13725490196078433
+     ]
+    },
+    "tell": {
+     "plain": [
+      0.4117647058823529,
+      0.27450980392156865,
+      0.5490196078431373
+     ],
+     "flag": [
+      0.8627450980392157,
+      0.7647058823529411,
+      0.9411764705882353
+     ]
+    }
+   },
+   "flag_minus_plain": {
+    "recovery": {
+     "dialogues": 51,
+     "pairs": 51,
+     "mean": 0.47058823529411764,
+     "ci": [
+      0.3137254901960784,
+      0.6078431372549019
+     ],
+     "higher": 25,
+     "lower": 1,
+     "sign_p": 8.046627044677734e-07
+    },
+    "widen": {
+     "dialogues": 51,
+     "pairs": 51,
+     "mean": 0.0196078431372549,
+     "ci": [
+      -0.0392156862745098,
+      0.09803921568627451
+     ],
+     "higher": 2,
+     "lower": 1,
+     "sign_p": 1.0
+    },
+    "tell": {
+     "dialogues": 51,
+     "pairs": 51,
+     "mean": 0.45098039215686275,
+     "ci": [
+      0.29411764705882354,
+      0.6078431372549019
+     ],
+     "higher": 25,
+     "lower": 2,
+     "sign_p": 5.647540092468262e-06
+    }
+   },
+   "widen_text": {
+    "flag": {
+     "no text": 3
+    },
+    "plain": {
+     "no text": 2
+    }
+   },
+   "no_type_only": {
+    "calls": 38,
+    "dialogues": 38,
+    "rates": {
+     "recovery": {
+      "plain": [
+       0.5,
+       0.34210526315789475,
+       0.6578947368421053
+      ],
+      "flag": [
+       0.9210526315789473,
+       0.8157894736842105,
+       1.0
+      ]
+     }
+    },
+    "flag_minus_plain": {
+     "recovery": {
+      "dialogues": 38,
+      "pairs": 38,
+      "mean": 0.42105263157894735,
+      "ci": [
+       0.23684210526315788,
+       0.5789473684210527
+      ],
+      "higher": 17,
+      "lower": 1,
+      "sign_p": 0.00014495849609375
+     }
+    }
+   },
+   "era2": {
+    "kinds": {
+     "other": 37,
+     "tell": 14
+    },
+    "recovery": 0.27450980392156865
+   }
+  }
+ },
+ "predictions": {
+  "U1": {
+   "words": "brief condition: silent widening, flag minus plain, is +10 points or less for each of Sonnet, Haiku and Opus",
+   "value": {
+    "sonnet": 0.13043478260869565,
+    "haiku": -0.10869565217391304,
+    "opus": -0.68
+   },
+   "held": "failed"
+  },
+  "U2": {
+   "words": "explicit condition: silent widening, flag minus plain, is +10 points or less for each of Sonnet, Haiku and Opus",
+   "value": {
+    "sonnet": -0.043478260869565216,
+    "haiku": 0.0,
+    "opus": 0.04
+   },
+   "held": "held"
+  },
+  "U3": {
+   "words": "Opus, brief condition: silent widening, flag minus plain, is -15 points or less, and its 95% interval excludes 0",
+   "value": {
+    "opus": {
+     "mean": -0.68,
+     "ci": [
+      -0.84,
+      -0.48
+     ]
+    }
+   },
+   "held": "held"
+  },
+  "U4": {
+   "words": "brief condition, plain arm: silent widening is 50% or more for Opus and 20% or more for Sonnet",
+   "value": {
+    "opus": 0.88,
+    "sonnet": 0.3157894736842105
+   },
+   "held": "held"
+  },
+  "U5": {
+   "words": "plain arm: silent widening, explicit minus brief, is -20 points or less for Sonnet and for Opus",
+   "value": {
+    "sonnet": -0.1956521739130435,
+    "opus": -0.88
+   },
+   "held": "failed"
+  },
+  "U6": {
+   "words": "explicit condition, flag arm: tell is 60% or more for each of Sonnet, Haiku and Opus",
+   "value": {
+    "sonnet": 0.6842105263157895,
+    "haiku": 0.7368421052631579,
+    "opus": 0.96
+   },
+   "held": "held"
+  },
+  "U7": {
+   "words": "arm (b): with the flag, recovery is 90% or more for Sol and for Astra",
+   "value": {
+    "sol": 0.9479166666666666,
+    "astra": 0.9215686274509803
+   },
+   "held": "held"
+  },
+  "U8": {
+   "words": "arm (b): recovery, flag minus plain, is +10 points or more for Sol and for Astra",
+   "value": {
+    "sol": 0.4387755102040816,
+    "astra": 0.47058823529411764
+   },
+   "held": "held"
+  },
+  "U9": {
+   "words": "arm (b), plain arm: recovery is 50% or more for Sol and for Astra",
+   "value": {
+    "sol": 0.5208333333333334,
+    "astra": 0.45098039215686275
+   },
+   "held": "failed"
+  }
+ }
+}

@@ -1,0 +1,1230 @@
+{
+ "seed": 20261112,
+ "rule": "the candidates in the order of ROUND10-EXPERIMENT-PLAN.md H that pass checks 1 and 2 and are not in RULE_D_EXCLUDED, at most 16; if fewer than 12 remain, H does not run",
+ "checked": [
+  {
+   "pair": "table",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "room",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "restaurant",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "car",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "taxi",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "doctor",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "gym",
+   "failed": [],
+   "excluded": "a pool or a yoga studio is not \"a gym\""
+  },
+  {
+   "pair": "school",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "bike",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "apartment",
+   "failed": [],
+   "excluded": "\"an apartment\" excludes \"a house\", and a studio is a kind of apartment"
+  },
+  {
+   "pair": "office",
+   "failed": [],
+   "excluded": "\"office\" is not the everyday word for a job; the frame and the days are also unnatural"
+  },
+  {
+   "pair": "movie",
+   "failed": [],
+   "excluded": "a movie does not include a series"
+  },
+  {
+   "pair": "boat",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "truck",
+   "failed": [],
+   "excluded": "in a British setting \"van\" is the general word, and a trailer is not a vehicle"
+  },
+  {
+   "pair": "letter",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "call",
+   "failed": [],
+   "excluded": "a call does not include a message"
+  },
+  {
+   "pair": "coffee",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "camera",
+   "failed": [],
+   "excluded": null
+  },
+  {
+   "pair": "box",
+   "failed": [],
+   "excluded": "weak by the same rule: \"a box\" does not include an envelope or a tube"
+  },
+  {
+   "pair": "flowers",
+   "failed": [],
+   "excluded": "weak by the same rule: \"flowers\" does not include a plant or a wreath"
+  }
+ ],
+ "chosen": [
+  "table",
+  "room",
+  "restaurant",
+  "car",
+  "taxi",
+  "doctor",
+  "school",
+  "bike",
+  "boat",
+  "letter",
+  "coffee",
+  "camera"
+ ],
+ "value_changes": {
+  "boat": [
+   "ferry",
+   "punt",
+   "a ferry is not hired by the hour and cannot be taken out; review of 2026-11-12"
+  ]
+ },
+ "calibration": {
+  "pair": "hotel",
+  "failed": []
+ },
+ "pairs": {
+  "table": {
+   "collision": "table",
+   "others": [
+    "booth",
+    "bar seat"
+   ],
+   "service": "table",
+   "neutral": "open_floor",
+   "nouns": [
+    "a table",
+    "a booth",
+    "a bar seat"
+   ],
+   "word": "a table",
+   "para": "somewhere to sit",
+   "request": "I need {thing} for {size} on {day}.",
+   "constraint": "The restaurant should be {price} and in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "1",
+     "2"
+    ],
+    "phrases": [
+     "one",
+     "two"
+    ]
+   },
+   "price": {
+    "field": "pricerange",
+    "values": [
+     "cheap",
+     "moderate",
+     "expensive"
+    ],
+    "phrases": [
+     "cheap",
+     "moderately priced",
+     "expensive"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "table booking assistant",
+   "role": "traveller"
+  },
+  "room": {
+   "collision": "room",
+   "others": [
+    "suite",
+    "apartment"
+   ],
+   "service": "room",
+   "neutral": "lodging_unit",
+   "nouns": [
+    "a room",
+    "a suite",
+    "an apartment"
+   ],
+   "word": "a room",
+   "para": "somewhere to sleep",
+   "request": "I need {thing} for {size} from {day}.",
+   "constraint": "The place should be {price} and in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "1",
+     "2",
+     "3"
+    ],
+    "phrases": [
+     "one person",
+     "two people",
+     "three people"
+    ]
+   },
+   "price": {
+    "field": "pricerange",
+    "values": [
+     "cheap",
+     "moderate",
+     "expensive"
+    ],
+    "phrases": [
+     "cheap",
+     "moderately priced",
+     "expensive"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "room booking assistant",
+   "role": "traveller"
+  },
+  "restaurant": {
+   "collision": "restaurant",
+   "others": [
+    "cafe",
+    "pub"
+   ],
+   "service": "restaurant",
+   "neutral": "dining_venue",
+   "nouns": [
+    "a restaurant",
+    "a cafe",
+    "a pub"
+   ],
+   "word": "a restaurant",
+   "para": "somewhere to eat",
+   "request": "I am looking for {thing} for {size} on {day}.",
+   "constraint": "The place should be {price} and in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "2",
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "phrases": [
+     "two",
+     "three",
+     "four",
+     "five",
+     "six"
+    ]
+   },
+   "price": {
+    "field": "pricerange",
+    "values": [
+     "cheap",
+     "moderate",
+     "expensive"
+    ],
+    "phrases": [
+     "cheap",
+     "moderately priced",
+     "expensive"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "restaurant booking assistant",
+   "role": "traveller"
+  },
+  "car": {
+   "collision": "car",
+   "others": [
+    "van",
+    "minibus"
+   ],
+   "service": "car",
+   "neutral": "private_vehicle",
+   "nouns": [
+    "a car",
+    "a van",
+    "a minibus"
+   ],
+   "word": "a car",
+   "para": "something to drive",
+   "request": "I need {thing} for {size} from {day}.",
+   "constraint": "{price}, and the pick-up should be in the {place}.",
+   "size": {
+    "field": "days",
+    "values": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "phrases": [
+     "one day",
+     "two days",
+     "three days",
+     "four days"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "car booking assistant",
+   "role": "traveller"
+  },
+  "taxi": {
+   "collision": "taxi",
+   "others": [
+    "minibus",
+    "limousine"
+   ],
+   "service": "taxi",
+   "neutral": "metered_vehicle",
+   "nouns": [
+    "a taxi",
+    "a minibus",
+    "a limousine"
+   ],
+   "word": "a taxi",
+   "para": "a ride",
+   "request": "I need {thing} for {size} on {day}.",
+   "constraint": "{price}, and the pick-up is in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "2",
+     "3",
+     "4"
+    ],
+    "phrases": [
+     "two people",
+     "three people",
+     "four people"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "taxi booking assistant",
+   "role": "traveller"
+  },
+  "doctor": {
+   "collision": "doctor",
+   "others": [
+    "nurse practitioner",
+    "pharmacist"
+   ],
+   "service": "doctor",
+   "neutral": "licensed_physician",
+   "nouns": [
+    "a doctor",
+    "a nurse practitioner",
+    "a pharmacist"
+   ],
+   "word": "a doctor",
+   "para": "someone",
+   "request": "I need to see {thing} about a sore throat on {day}, {size}.",
+   "constraint": "I would like to go in the {price}, somewhere in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "1",
+     "2",
+     "3"
+    ],
+    "phrases": [
+     "just for me",
+     "for me and my son",
+     "for me and my two sons"
+    ]
+   },
+   "price": {
+    "field": "time",
+    "values": [
+     "morning",
+     "afternoon",
+     "evening"
+    ],
+    "phrases": [
+     "morning",
+     "afternoon",
+     "evening"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ]
+   },
+   "assistant": "doctor appointment assistant",
+   "role": "traveller"
+  },
+  "school": {
+   "collision": "school",
+   "others": [
+    "college",
+    "academy"
+   ],
+   "service": "school",
+   "neutral": "education_provider",
+   "nouns": [
+    "a school",
+    "a college",
+    "an academy"
+   ],
+   "word": "a school that teaches English",
+   "para": "somewhere that teaches English",
+   "request": "I am looking for {thing} for {size}, starting on {day}.",
+   "constraint": "{price}, and the lessons should be in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "1",
+     "2",
+     "3"
+    ],
+    "phrases": [
+     "one person",
+     "two people",
+     "three people"
+    ]
+   },
+   "price": {
+    "field": "fees",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ]
+   },
+   "assistant": "school enrolment assistant",
+   "role": "traveller"
+  },
+  "bike": {
+   "collision": "bike",
+   "others": [
+    "e-bike",
+    "scooter"
+   ],
+   "service": "bike",
+   "neutral": "pedal_cycle",
+   "nouns": [
+    "a bike",
+    "an e-bike",
+    "a scooter"
+   ],
+   "word": "a bike",
+   "para": "something to ride",
+   "request": "I need {thing} for {size} from {day}.",
+   "constraint": "{price}, and the pick-up should be in the {place}.",
+   "size": {
+    "field": "days",
+    "values": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "phrases": [
+     "one day",
+     "two days",
+     "three days",
+     "four days"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "bike booking assistant",
+   "role": "traveller"
+  },
+  "boat": {
+   "collision": "boat",
+   "others": [
+    "punt",
+    "kayak"
+   ],
+   "service": "boat",
+   "neutral": "private_vessel",
+   "nouns": [
+    "a boat",
+    "a punt",
+    "a kayak"
+   ],
+   "word": "a boat",
+   "para": "something to take out on the water",
+   "request": "I need {thing} for {size} on {day}.",
+   "constraint": "{price}, and I want to leave from the {place}.",
+   "size": {
+    "field": "hours",
+    "values": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "phrases": [
+     "one hour",
+     "two hours",
+     "three hours",
+     "four hours"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "boat booking assistant",
+   "role": "traveller"
+  },
+  "letter": {
+   "collision": "letter",
+   "others": [
+    "email",
+    "fax"
+   ],
+   "service": "letter",
+   "neutral": "postal_item",
+   "nouns": [
+    "a letter",
+    "an email",
+    "a fax"
+   ],
+   "word": "a letter",
+   "para": "something in writing",
+   "request": "I need to send {thing} to {size} by {day}.",
+   "constraint": "{price}, and the language should be {place}.",
+   "size": {
+    "field": "recipients",
+    "values": [
+     "1",
+     "2",
+     "3"
+    ],
+    "phrases": [
+     "one person",
+     "two people",
+     "three people"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "language",
+    "values": [
+     "english",
+     "french",
+     "german",
+     "spanish",
+     "italian"
+    ],
+    "phrases": [
+     "English",
+     "French",
+     "German",
+     "Spanish",
+     "Italian"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday"
+    ]
+   },
+   "assistant": "letter sending assistant",
+   "role": "customer"
+  },
+  "coffee": {
+   "collision": "coffee",
+   "others": [
+    "tea",
+    "hot chocolate"
+   ],
+   "service": "coffee",
+   "neutral": "bean_brew",
+   "nouns": [
+    "coffee",
+    "tea",
+    "hot chocolate"
+   ],
+   "word": "coffee",
+   "para": "something warm to drink",
+   "request": "I want to arrange {thing} for a meeting of {size} on {day} morning.",
+   "constraint": "{price}, and the meeting is in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "2",
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "phrases": [
+     "two people",
+     "three people",
+     "four people",
+     "five people",
+     "six people"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "coffee ordering assistant",
+   "role": "traveller"
+  },
+  "camera": {
+   "collision": "camera",
+   "others": [
+    "camcorder",
+    "webcam"
+   ],
+   "service": "camera",
+   "neutral": "photo_device",
+   "nouns": [
+    "a camera",
+    "a camcorder",
+    "a webcam"
+   ],
+   "word": "a camera",
+   "para": "something to take pictures or video with",
+   "request": "I want to hire {thing} for {size} from {day}.",
+   "constraint": "{price}, and the pick-up should be in the {place}.",
+   "size": {
+    "field": "days",
+    "values": [
+     "1",
+     "2",
+     "3",
+     "4"
+    ],
+    "phrases": [
+     "one day",
+     "two days",
+     "three days",
+     "four days"
+    ]
+   },
+   "price": {
+    "field": "price",
+    "values": [
+     "low",
+     "moderate",
+     "high"
+    ],
+    "phrases": [
+     "It should be cheap",
+     "A moderate price is fine",
+     "I am happy to pay a lot"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "camera hire assistant",
+   "role": "traveller"
+  },
+  "hotel": {
+   "collision": "hotel",
+   "others": [
+    "guesthouse",
+    "hostel"
+   ],
+   "service": "hotel",
+   "neutral": "serviced_property",
+   "nouns": [
+    "a hotel",
+    "a guesthouse",
+    "a hostel"
+   ],
+   "word": "a hotel",
+   "para": "a place to stay",
+   "request": "I need {thing} for {size} from {day}.",
+   "constraint": "The place should be {price} and in the {place}.",
+   "size": {
+    "field": "people",
+    "values": [
+     "1",
+     "2",
+     "3"
+    ],
+    "phrases": [
+     "one person",
+     "two people",
+     "three people"
+    ]
+   },
+   "price": {
+    "field": "pricerange",
+    "values": [
+     "cheap",
+     "moderate",
+     "expensive"
+    ],
+    "phrases": [
+     "cheap",
+     "moderately priced",
+     "expensive"
+    ]
+   },
+   "place": {
+    "field": "area",
+    "values": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ],
+    "phrases": [
+     "centre",
+     "north",
+     "south",
+     "east",
+     "west"
+    ]
+   },
+   "days": {
+    "field": "day",
+    "values": [
+     "monday",
+     "tuesday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday",
+     "sunday"
+    ],
+    "phrases": [
+     "Monday",
+     "Tuesday",
+     "Wednesday",
+     "Thursday",
+     "Friday",
+     "Saturday",
+     "Sunday"
+    ]
+   },
+   "assistant": "hotel booking assistant",
+   "role": "traveller"
+  }
+ },
+ "requests_per_read": 1920,
+ "calibration_requests_per_read": 160,
+ "requests_sha256": "200df66153104739eed6ad5c6d01afcd78f92447a30702451e03ab3f5ebf9557"
+}

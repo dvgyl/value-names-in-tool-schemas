@@ -1,0 +1,136 @@
+{
+ "what": "T2: floor of the sign condition (exact arithmetic) and observed nonzero differences in the existing simulation",
+ "p_min": {
+  "1": {
+   "fraction": "1",
+   "decimal": 1.0
+  },
+  "2": {
+   "fraction": "1/2",
+   "decimal": 0.5
+  },
+  "3": {
+   "fraction": "1/4",
+   "decimal": 0.25
+  },
+  "4": {
+   "fraction": "1/8",
+   "decimal": 0.125
+  },
+  "5": {
+   "fraction": "1/16",
+   "decimal": 0.0625
+  },
+  "6": {
+   "fraction": "1/32",
+   "decimal": 0.03125
+  },
+  "7": {
+   "fraction": "1/64",
+   "decimal": 0.015625
+  },
+  "8": {
+   "fraction": "1/128",
+   "decimal": 0.0078125
+  },
+  "9": {
+   "fraction": "1/256",
+   "decimal": 0.00390625
+  },
+  "10": {
+   "fraction": "1/512",
+   "decimal": 0.001953125
+  },
+  "11": {
+   "fraction": "1/1024",
+   "decimal": 0.0009765625
+  },
+  "12": {
+   "fraction": "1/2048",
+   "decimal": 0.00048828125
+  }
+ },
+ "floors": {
+  "2": {
+   "level": 0.975,
+   "alpha_over_C": 0.025,
+   "used": "97.5% (fresh test, Luna-only updates)",
+   "d_min": 7,
+   "p_at_d_min": 0.015625,
+   "p_at_d_min_minus_1": 0.03125,
+   "change_floor_points_59x1": 11.864406779661017,
+   "change_floor_points_448x1": 1.5625,
+   "change_floor_points_59x10": 1.1864406779661016
+  },
+  "4": {
+   "level": 0.9875,
+   "alpha_over_C": 0.0125,
+   "used": "98.75% (tool calls, two-model test, fresh test)",
+   "d_min": 8,
+   "p_at_d_min": 0.0078125,
+   "p_at_d_min_minus_1": 0.015625,
+   "change_floor_points_59x1": 13.559322033898304,
+   "change_floor_points_448x1": 1.7857142857142858,
+   "change_floor_points_59x10": 1.3559322033898304
+  },
+  "6": {
+   "level": 0.9916666666666667,
+   "alpha_over_C": 0.008333333333333333,
+   "used": "99.17% (forms in the five-model test; final rule for Haiku's field-order edit)",
+   "d_min": 8,
+   "p_at_d_min": 0.0078125,
+   "p_at_d_min_minus_1": 0.015625,
+   "change_floor_points_59x1": 13.559322033898304,
+   "change_floor_points_448x1": 1.7857142857142858,
+   "change_floor_points_59x10": 1.3559322033898304
+  },
+  "10": {
+   "level": 0.995,
+   "alpha_over_C": 0.005,
+   "used": "99.5% (final rule, five-model test and stored comparisons)",
+   "d_min": 9,
+   "p_at_d_min": 0.00390625,
+   "p_at_d_min_minus_1": 0.0078125,
+   "change_floor_points_59x1": 15.254237288135593,
+   "change_floor_points_448x1": 2.0089285714285716,
+   "change_floor_points_59x10": 1.5254237288135593
+  },
+  "12": {
+   "level": 0.9958333333333333,
+   "alpha_over_C": 0.004166666666666667,
+   "used": "99.58% (final rule, Haiku's repeat)",
+   "d_min": 9,
+   "p_at_d_min": 0.00390625,
+   "p_at_d_min_minus_1": 0.0078125,
+   "change_floor_points_59x1": 15.254237288135593,
+   "change_floor_points_448x1": 2.0089285714285716,
+   "change_floor_points_59x10": 1.5254237288135593
+  }
+ },
+ "sim_means": {
+  "A-both|haiku|no change|n59m10": {
+   "truly_changed_specific": 0,
+   "observed_nonzero_specific": 6.1995
+  },
+  "A-both|deepseek|no change|n59m10": {
+   "truly_changed_specific": 0,
+   "observed_nonzero_specific": 20.195
+  },
+  "A-both|sol|no change|n59m10": {
+   "truly_changed_specific": 0,
+   "observed_nonzero_specific": 12.1205
+  },
+  "S-sparse|haiku|sparse +8 specific|n59m10": {
+   "truly_changed_specific": 6.0,
+   "observed_nonzero_specific": 12.0375
+  },
+  "S-sparse|deepseek|sparse +8 specific|n59m10": {
+   "truly_changed_specific": 6.0,
+   "observed_nonzero_specific": 25.062
+  },
+  "S-sparse|sol|sparse -8 specific|n59m10": {
+   "truly_changed_specific": 6.0,
+   "observed_nonzero_specific": 17.66
+  }
+ }
+}

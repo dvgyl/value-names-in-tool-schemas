@@ -1,0 +1,497 @@
+{
+ "post_hoc": true,
+ "no_model_call": true,
+ "groups": {
+  "brief hotel": 59,
+  "brief no type": 448,
+  "brief guesthouse": 47
+ },
+ "models": {
+  "sonnet": {
+   "types": {
+    "t0 brief hotel": {
+     "hotel only": 91,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 84,
+     "any": 0,
+     "other": 0,
+     "non-call": 2
+    },
+    "t0 brief no type": {
+     "hotel only": 298,
+     "both types": 0,
+     "guesthouse only": 3,
+     "null": 1033,
+     "any": 7,
+     "other": 2,
+     "non-call": 1
+    },
+    "t0 brief guesthouse": {
+     "hotel only": 73,
+     "both types": 3,
+     "guesthouse only": 12,
+     "null": 53,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief hotel": {
+     "hotel only": 8,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 168,
+     "any": 0,
+     "other": 0,
+     "non-call": 1
+    },
+    "t1 brief no type": {
+     "hotel only": 41,
+     "both types": 0,
+     "guesthouse only": 4,
+     "null": 1285,
+     "any": 10,
+     "other": 1,
+     "non-call": 3
+    },
+    "t1 brief guesthouse": {
+     "hotel only": 12,
+     "both types": 3,
+     "guesthouse only": 12,
+     "null": 113,
+     "any": 0,
+     "other": 0,
+     "non-call": 1
+    }
+   },
+   "hotel_only_rate": {
+    "t0": {
+     "k": 91,
+     "n": 177,
+     "share": 0.5141242937853108
+    },
+    "t1": {
+     "k": 8,
+     "n": 177,
+     "share": 0.04519774011299435
+    }
+   },
+   "hotel_only_change": {
+    "dialogues": 59,
+    "mean": -0.4689265536723164,
+    "ci": [
+     -0.5988700564971752,
+     -0.35028248587570626
+    ],
+    "higher": 0,
+    "lower": 31,
+    "sign_p": 9.313225746154785e-10
+   }
+  },
+  "haiku": {
+   "types": {
+    "t0 brief hotel": {
+     "hotel only": 11,
+     "both types": 2,
+     "guesthouse only": 0,
+     "null": 100,
+     "any": 1,
+     "other": 1,
+     "non-call": 1
+    },
+    "t0 brief no type": {
+     "hotel only": 64,
+     "both types": 0,
+     "guesthouse only": 10,
+     "null": 734,
+     "any": 41,
+     "other": 16,
+     "non-call": 29
+    },
+    "t0 brief guesthouse": {
+     "hotel only": 13,
+     "both types": 2,
+     "guesthouse only": 9,
+     "null": 63,
+     "any": 1,
+     "other": 4,
+     "non-call": 2
+    },
+    "t1 brief hotel": {
+     "hotel only": 2,
+     "both types": 1,
+     "guesthouse only": 1,
+     "null": 106,
+     "any": 3,
+     "other": 3,
+     "non-call": 2
+    },
+    "t1 brief no type": {
+     "hotel only": 12,
+     "both types": 0,
+     "guesthouse only": 11,
+     "null": 794,
+     "any": 24,
+     "other": 19,
+     "non-call": 35
+    },
+    "t1 brief guesthouse": {
+     "hotel only": 7,
+     "both types": 2,
+     "guesthouse only": 9,
+     "null": 69,
+     "any": 3,
+     "other": 1,
+     "non-call": 3
+    }
+   },
+   "hotel_only_rate": {
+    "t0": {
+     "k": 11,
+     "n": 116,
+     "share": 0.09482758620689655
+    },
+    "t1": {
+     "k": 2,
+     "n": 118,
+     "share": 0.01694915254237288
+    }
+   },
+   "hotel_only_change": {
+    "dialogues": 58,
+    "mean": -0.07758620689655173,
+    "ci": [
+     -0.15517241379310345,
+     -0.017241379310344827
+    ],
+    "higher": 0,
+    "lower": 5,
+    "sign_p": 0.0625
+   }
+  },
+  "opus": {
+   "types": {
+    "t0 brief hotel": {
+     "hotel only": 82,
+     "both types": 2,
+     "guesthouse only": 0,
+     "null": 34,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief no type": {
+     "hotel only": 232,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 654,
+     "any": 3,
+     "other": 7,
+     "non-call": 0
+    },
+    "t0 brief guesthouse": {
+     "hotel only": 54,
+     "both types": 2,
+     "guesthouse only": 8,
+     "null": 30,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief hotel": {
+     "hotel only": 23,
+     "both types": 1,
+     "guesthouse only": 0,
+     "null": 94,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief no type": {
+     "hotel only": 36,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 849,
+     "any": 1,
+     "other": 10,
+     "non-call": 0
+    },
+    "t1 brief guesthouse": {
+     "hotel only": 17,
+     "both types": 2,
+     "guesthouse only": 8,
+     "null": 67,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    }
+   },
+   "hotel_only_rate": {
+    "t0": {
+     "k": 82,
+     "n": 118,
+     "share": 0.6949152542372882
+    },
+    "t1": {
+     "k": 23,
+     "n": 118,
+     "share": 0.19491525423728814
+    }
+   },
+   "hotel_only_change": {
+    "dialogues": 59,
+    "mean": -0.5,
+    "ci": [
+     -0.6186440677966102,
+     -0.3813559322033898
+    ],
+    "higher": 0,
+    "lower": 34,
+    "sign_p": 1.1641532182693481e-10
+   }
+  },
+  "sol": {
+   "types": {
+    "t0 brief hotel": {
+     "hotel only": 143,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 34,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief no type": {
+     "hotel only": 479,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 856,
+     "any": 9,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief guesthouse": {
+     "hotel only": 106,
+     "both types": 3,
+     "guesthouse only": 12,
+     "null": 20,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief hotel": {
+     "hotel only": 42,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 135,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief no type": {
+     "hotel only": 157,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 1178,
+     "any": 9,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief guesthouse": {
+     "hotel only": 39,
+     "both types": 3,
+     "guesthouse only": 12,
+     "null": 87,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    }
+   },
+   "hotel_only_rate": {
+    "t0": {
+     "k": 143,
+     "n": 177,
+     "share": 0.807909604519774
+    },
+    "t1": {
+     "k": 42,
+     "n": 177,
+     "share": 0.23728813559322035
+    }
+   },
+   "hotel_only_change": {
+    "dialogues": 59,
+    "mean": -0.5706214689265536,
+    "ci": [
+     -0.6836158192090396,
+     -0.4519774011299435
+    ],
+    "higher": 0,
+    "lower": 38,
+    "sign_p": 7.275957614183426e-12
+   }
+  },
+  "luna": {
+   "types": {
+    "t0 brief hotel": {
+     "hotel only": 42,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 76,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief no type": {
+     "hotel only": 167,
+     "both types": 1,
+     "guesthouse only": 11,
+     "null": 709,
+     "any": 8,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief guesthouse": {
+     "hotel only": 40,
+     "both types": 2,
+     "guesthouse only": 10,
+     "null": 41,
+     "any": 1,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief hotel": {
+     "hotel only": 2,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 116,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief no type": {
+     "hotel only": 5,
+     "both types": 0,
+     "guesthouse only": 9,
+     "null": 874,
+     "any": 8,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief guesthouse": {
+     "hotel only": 7,
+     "both types": 2,
+     "guesthouse only": 8,
+     "null": 77,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    }
+   },
+   "hotel_only_rate": {
+    "t0": {
+     "k": 42,
+     "n": 118,
+     "share": 0.3559322033898305
+    },
+    "t1": {
+     "k": 2,
+     "n": 118,
+     "share": 0.01694915254237288
+    }
+   },
+   "hotel_only_change": {
+    "dialogues": 59,
+    "mean": -0.3389830508474576,
+    "ci": [
+     -0.4661016949152542,
+     -0.22033898305084745
+    ],
+    "higher": 0,
+    "lower": 23,
+    "sign_p": 2.384185791015625e-07
+   }
+  },
+  "astra": {
+   "types": {
+    "t0 brief hotel": {
+     "hotel only": 54,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 5,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief no type": {
+     "hotel only": 163,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 282,
+     "any": 3,
+     "other": 0,
+     "non-call": 0
+    },
+    "t0 brief guesthouse": {
+     "hotel only": 36,
+     "both types": 1,
+     "guesthouse only": 4,
+     "null": 6,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief hotel": {
+     "hotel only": 7,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 52,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief no type": {
+     "hotel only": 24,
+     "both types": 0,
+     "guesthouse only": 0,
+     "null": 421,
+     "any": 3,
+     "other": 0,
+     "non-call": 0
+    },
+    "t1 brief guesthouse": {
+     "hotel only": 8,
+     "both types": 1,
+     "guesthouse only": 4,
+     "null": 34,
+     "any": 0,
+     "other": 0,
+     "non-call": 0
+    }
+   },
+   "hotel_only_rate": {
+    "t0": {
+     "k": 54,
+     "n": 59,
+     "share": 0.9152542372881356
+    },
+    "t1": {
+     "k": 7,
+     "n": 59,
+     "share": 0.11864406779661017
+    }
+   },
+   "hotel_only_change": {
+    "dialogues": 59,
+    "mean": -0.7966101694915254,
+    "ci": [
+     -0.8983050847457628,
+     -0.6949152542372882
+    ],
+    "higher": 0,
+    "lower": 47,
+    "sign_p": 1.4210854715202004e-14
+   }
+  }
+ }
+}

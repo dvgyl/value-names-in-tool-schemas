@@ -1,0 +1,896 @@
+domain	slot	value	slot_size	not_candidate	word_dialogues	mismatch	rule_b	briefs	rule_l	rank_50	rank_120	selected	rule_b_info_only
+train	destination	ely	25		265	155	0.5849	125		1	1	x3_high,z4	0.5849
+train	departure	stevenage	28		223	129	0.5785	109		2	2	x3_high	0.5785
+attraction	area	north	9		264	148	0.5606	164		3	3	x3_high	0.5606
+train	destination	kings lynn	25		241	134	0.5560	114		4	4	x3_high,z4	0.5560
+train	departure	ely	28		265	146	0.5509	124		5	5		0.5509
+train	departure	stansted airport	28		228	121	0.5307	123		6	6		0.5307
+train	destination	leicester	25		258	135	0.5233	138		7	7	z4	0.5233
+train	departure	peterborough	28		249	130	0.5221	131		8	8		0.5221
+train	departure	bishops stortford	28		215	112	0.5209	116		9	9		0.5209
+train	destination	london kings cross	25		194	101	0.5206	126		10	10	z4	0.5206
+train	destination	norwich	25		241	125	0.5187	126		11	11		0.5187
+train	destination	broxbourne	25		236	122	0.5169	122		12	12		0.5169
+train	departure	cambridge	28		2749	1391	0.5060	1568		13	13	z4	0.5060
+train	departure	birmingham new street	28		220	110	0.5000	126		16	16	z4	0.5000
+train	departure	london liverpool street	28		242	121	0.5000	137		14	14		0.5000
+train	destination	birmingham new street	25		220	110	0.5000	126		17	17		0.5000
+train	destination	london liverpool street	25		242	121	0.5000	148		15	15		0.5000
+train	destination	cambridge	25		2749	1358	0.4940	1549		18	18		0.4940
+train	departure	london kings cross	28		194	95	0.4897	119		19	19	z4	0.4897
+train	destination	peterborough	25		249	121	0.4859	147		20	20		0.4859
+train	departure	leicester	28		258	125	0.4845	146		21	21		0.4845
+train	departure	broxbourne	28		236	114	0.4831	131		22	22	z4	0.4831
+train	departure	norwich	28		241	116	0.4813	136		23	23		0.4813
+train	destination	bishops stortford	25		215	103	0.4791	128		24	24		0.4791
+train	destination	stansted airport	25		228	107	0.4693	136		25	25	z4	0.4693
+train	departure	kings lynn	28		241	107	0.4440	151		26	26		0.4440
+train	destination	stevenage	25		223	94	0.4215	132		27	27		0.4215
+attraction	area	south	9		257	100	0.3891	202		28	28	z4	0.3891
+restaurant	area	north	9		450	156	0.3467	339		29	29		0.3467
+attraction	area	east	9		261	90	0.3448	211		30	30		0.3448
+attraction	area	west	9		308	84	0.2727	266		31	31	z4	0.2760
+restaurant	area	east	9		353	84	0.2380	318		32	32		0.2380
+restaurant	area	south	9		388	84	0.2165	343		33	33		0.2165
+train	day	thursday	10		498	102	0.2048	436		34	34	z4	0.2048
+train	day	friday	10		524	107	0.2042	466		35	35		0.2042
+restaurant	area	west	9		386	77	0.1995	354		36	36		0.1995
+train	day	sunday	10		543	97	0.1786	472		37	37	z4	0.1786
+restaurant	pricerange	cheap	8		668	118	0.1766	651		38	38		0.1766
+attraction	area	centre	9		995	175	0.1759	960		39	39		0.1759
+train	day	wednesday	10		475	83	0.1747	431		40	40	z4	0.1747
+train	day	monday	10		465	81	0.1742	424		41	41		0.1742
+train	day	tuesday	10		487	84	0.1725	452		42	42		0.1725
+restaurant	pricerange	moderate	8		484	80	0.1653	893		43	43	z4	0.1653
+train	day	saturday	10		474	74	0.1561	436		44	44		0.1561
+restaurant	area	centre	9		1220	160	0.1311	1315		45	45	x3_control	0.1320
+restaurant	pricerange	expensive	8		1152	106	0.0920	1184		46	46	x3_control,z4	0.0938
+attraction	name	abbey pool	150	slot has 150 values in ontology.json	12	12	1.0000	0					1.0000
+attraction	name	abbey pool and astroturf	150	slot has 150 values in ontology.json	4	4	1.0000	0					1.0000
+attraction	name	adc	150	slot has 150 values in ontology.json	14	14	1.0000	0					1.0000
+attraction	name	aylesbray lodge guest house	150	slot has 150 values in ontology.json	8	8	1.0000	0					1.0000
+attraction	name	bangkok city	150	slot has 150 values in ontology.json	4	4	1.0000	0					1.0000
+attraction	name	boat	150	slot has 150 values in ontology.json	105	105	1.0000	0					1.0000
+attraction	name	botanic gardens	150	slot has 150 values in ontology.json	13	13	1.0000	0					1.0000
+attraction	name	cafe uno	150	slot has 150 values in ontology.json	2	2	1.0000	0					1.0000
+attraction	name	cambridge	150	slot has 150 values in ontology.json	1234	1234	1.0000	0					1.0000
+attraction	name	cambridge and country folk museum	150	slot has 150 values in ontology.json	2	2	1.0000	0					1.0000
+attraction	name	cambridge contemporary art museum	150	slot has 150 values in ontology.json	2	2	1.0000	0					1.0000
+attraction	name	cambridge punter	150	slot has 150 values in ontology.json	7	7	1.0000	0					1.0000
+attraction	name	cambridge temporary art	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	cherry hinton hall	150	slot has 150 values in ontology.json	10	10	1.0000	0					1.0000
+attraction	name	cherry hinton village centre	150	slot has 150 values in ontology.json	7	7	1.0000	0					1.0000
+attraction	name	christ college	150	slot has 150 values in ontology.json	3	3	1.0000	0					1.0000
+attraction	name	churchill	150	slot has 150 values in ontology.json	15	15	1.0000	0					1.0000
+attraction	name	city	150	slot has 150 values in ontology.json	124	124	1.0000	0	head word of 'bangkok city'				1.0000
+attraction	name	college	150	slot has 150 values in ontology.json	502	502	1.0000	0	head word of 'christ college'				1.0000
+attraction	name	contemporary art museum	150	slot has 150 values in ontology.json	4	4	1.0000	0					1.0000
+attraction	name	county folk museum	150	slot has 150 values in ontology.json	14	14	1.0000	0					1.0000
+attraction	name	fitzwilliam museum	150	slot has 150 values in ontology.json	9	9	1.0000	0					1.0000
+attraction	name	free	150	slot has 150 values in ontology.json	578	578	1.0000	0					1.0000
+attraction	name	gallery	150	slot has 150 values in ontology.json	76	76	1.0000	0	head word of 'broughton house gallery'				1.0000
+attraction	name	gonville and caius	150	slot has 150 values in ontology.json	7	7	1.0000	0					1.0000
+attraction	name	gonville hotel	150	slot has 150 values in ontology.json	17	17	1.0000	0					1.0000
+attraction	name	history of science museum	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	hobsons house	150	slot has 150 values in ontology.json	4	4	1.0000	0					1.0000
+attraction	name	home from home	150	slot has 150 values in ontology.json	3	3	1.0000	0					1.0000
+attraction	name	jesus green	150	slot has 150 values in ontology.json	15	15	1.0000	0					1.0000
+attraction	name	kettles yard	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	kings college	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	kohinoor	150	slot has 150 values in ontology.json	6	6	1.0000	0					1.0000
+attraction	name	lammas land park	150	slot has 150 values in ontology.json	7	7	1.0000	0					1.0000
+attraction	name	little saint marys church	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	man on the moon	150	slot has 150 values in ontology.json	15	15	1.0000	0					1.0000
+attraction	name	museum	150	slot has 150 values in ontology.json	600	600	1.0000	0	head word of 'cambridge and country folk museum'				1.0000
+attraction	name	museum of archaelogy	150	slot has 150 values in ontology.json	6	6	1.0000	0					1.0000
+attraction	name	museum of archaeology and anthropology	150	slot has 150 values in ontology.json	2	2	1.0000	0					1.0000
+attraction	name	older churches	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	peoples portraits exhibition	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	peoples portraits exhibition at girton college	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	pizza	150	slot has 150 values in ontology.json	18	18	1.0000	0					1.0000
+attraction	name	place	150	slot has 150 values in ontology.json	1378	1378	1.0000	0	head word of 'the place'				1.0000
+attraction	name	queens	150	slot has 150 values in ontology.json	7	7	1.0000	0					1.0000
+attraction	name	queens college	150	slot has 150 values in ontology.json	2	2	1.0000	0					1.0000
+attraction	name	saint johns college	150	slot has 150 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	name	salsa	150	slot has 150 values in ontology.json	20	20	1.0000	0	head word of 'club salsa'				1.0000
+attraction	name	scudamore	150	slot has 150 values in ontology.json	8	8	1.0000	0					1.0000
+attraction	name	sidney sussex	150	slot has 150 values in ontology.json	7	7	1.0000	0					1.0000
+attraction	name	thanh	150	slot has 150 values in ontology.json	5	5	1.0000	0					1.0000
+attraction	name	the wandlebury	150	slot has 150 values in ontology.json	5	5	1.0000	0					1.0000
+attraction	name	university arms hotel	150	slot has 150 values in ontology.json	11	11	1.0000	0					1.0000
+attraction	name	worth house	150	slot has 150 values in ontology.json	6	6	1.0000	0					1.0000
+attraction	type	boating	43	slot has 43 values in ontology.json	31	31	1.0000	0					1.0000
+attraction	type	camboats	43	slot has 43 values in ontology.json	19	19	1.0000	0					1.0000
+attraction	type	church	43	slot has 43 values in ontology.json	85	85	1.0000	0					1.0000
+attraction	type	cinemas	43	slot has 43 values in ontology.json	19	19	1.0000	0					1.0000
+attraction	type	concert	43	slot has 43 values in ontology.json	24	24	1.0000	0					1.0000
+attraction	type	concert hall	43	slot has 43 values in ontology.json	22	22	1.0000	0					1.0000
+attraction	type	gallery	43	slot has 43 values in ontology.json	76	76	1.0000	0					1.0000
+attraction	type	gastropub	43	slot has 43 values in ontology.json	27	27	1.0000	0					1.0000
+attraction	type	hiking	43	slot has 43 values in ontology.json	1	1	1.0000	0					1.0000
+attraction	type	historical	43	slot has 43 values in ontology.json	4	4	1.0000	0					1.0000
+attraction	type	hotel	43	slot has 43 values in ontology.json	711	711	1.0000	0					1.0000
+attraction	type	multiple sports	43	slot has 43 values in ontology.json	89	89	1.0000	0					1.0000
+attraction	type	museums	43	slot has 43 values in ontology.json	152	152	1.0000	0					1.0000
+attraction	type	night club	43	slot has 43 values in ontology.json	12	12	1.0000	0					1.0000
+attraction	type	pool	43	slot has 43 values in ontology.json	149	149	1.0000	0	head word of 'swimming pool'				1.0000
+attraction	type	special	43	slot has 43 values in ontology.json	4	4	1.0000	0					1.0000
+attraction	type	sports	43	slot has 43 values in ontology.json	126	126	1.0000	0	head word of 'multiple sports'				1.0000
+attraction	type	swimming pool	43	slot has 43 values in ontology.json	105	105	1.0000	0					1.0000
+attraction	type	theater	43	slot has 43 values in ontology.json	35	35	1.0000	0					1.0000
+attraction	type	theatres	43	slot has 43 values in ontology.json	26	26	1.0000	0					1.0000
+restaurant	book day	friday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	420	420	1.0000	0					1.0000
+restaurant	book day	monday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	376	376	1.0000	0					1.0000
+restaurant	book day	saturday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	415	415	1.0000	0					1.0000
+restaurant	book day	sunday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	409	409	1.0000	0					1.0000
+restaurant	book day	thursday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	396	396	1.0000	0					1.0000
+restaurant	book day	tomorrow	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	4	4	1.0000	0					1.0000
+restaurant	book day	tuesday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	352	352	1.0000	0					1.0000
+restaurant	book day	wednesday	14	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	411	411	1.0000	0					1.0000
+restaurant	book people	1	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	256	256	1.0000	0					1.0000
+restaurant	book people	2	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	446	446	1.0000	0					1.0000
+restaurant	book people	3	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	492	492	1.0000	0					1.0000
+restaurant	book people	4	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	594	594	1.0000	0					1.0000
+restaurant	book people	5	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	425	425	1.0000	0					1.0000
+restaurant	book people	6	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	307	307	1.0000	0					1.0000
+restaurant	book people	7	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	304	304	1.0000	0					1.0000
+restaurant	book people	8	10	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	344	344	1.0000	0					1.0000
+restaurant	book time	01:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	1	1	1.0000	0					1.0000
+restaurant	book time	06:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	4	4	1.0000	0					1.0000
+restaurant	book time	08:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	10	10	1.0000	0					1.0000
+restaurant	book time	09:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	12	12	1.0000	0					1.0000
+restaurant	book time	09:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	18	18	1.0000	0					1.0000
+restaurant	book time	09:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	19	19	1.0000	0					1.0000
+restaurant	book time	09:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	19	19	1.0000	0					1.0000
+restaurant	book time	10:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	33	33	1.0000	0					1.0000
+restaurant	book time	10:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	35	35	1.0000	0					1.0000
+restaurant	book time	10:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	23	23	1.0000	0					1.0000
+restaurant	book time	10:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	31	31	1.0000	0					1.0000
+restaurant	book time	1145	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	1	1	1.0000	0					1.0000
+restaurant	book time	11:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	81	81	1.0000	0					1.0000
+restaurant	book time	11:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	86	86	1.0000	0					1.0000
+restaurant	book time	11:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	77	77	1.0000	0					1.0000
+restaurant	book time	11:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	77	77	1.0000	0					1.0000
+restaurant	book time	12:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	83	83	1.0000	0					1.0000
+restaurant	book time	12:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	79	79	1.0000	0					1.0000
+restaurant	book time	12:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	87	87	1.0000	0					1.0000
+restaurant	book time	12:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	82	82	1.0000	0					1.0000
+restaurant	book time	1330	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	2	2	1.0000	0					1.0000
+restaurant	book time	13:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	85	85	1.0000	0					1.0000
+restaurant	book time	13:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	72	72	1.0000	0					1.0000
+restaurant	book time	13:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	72	72	1.0000	0					1.0000
+restaurant	book time	13:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	83	83	1.0000	0					1.0000
+restaurant	book time	14:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	77	77	1.0000	0					1.0000
+restaurant	book time	14:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	61	61	1.0000	0					1.0000
+restaurant	book time	14:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	71	71	1.0000	0					1.0000
+restaurant	book time	14:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	95	95	1.0000	0					1.0000
+restaurant	book time	15:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	70	70	1.0000	0					1.0000
+restaurant	book time	15:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	77	77	1.0000	0					1.0000
+restaurant	book time	15:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	81	81	1.0000	0					1.0000
+restaurant	book time	15:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	64	64	1.0000	0					1.0000
+restaurant	book time	16:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	83	83	1.0000	0					1.0000
+restaurant	book time	16:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	69	69	1.0000	0					1.0000
+restaurant	book time	16:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	79	79	1.0000	0					1.0000
+restaurant	book time	16:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	84	84	1.0000	0					1.0000
+restaurant	book time	17:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	96	96	1.0000	0					1.0000
+restaurant	book time	17:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	81	81	1.0000	0					1.0000
+restaurant	book time	17:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	82	82	1.0000	0					1.0000
+restaurant	book time	17:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	79	79	1.0000	0					1.0000
+restaurant	book time	18:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	86	86	1.0000	0					1.0000
+restaurant	book time	18:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	81	81	1.0000	0					1.0000
+restaurant	book time	18:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	60	60	1.0000	0					1.0000
+restaurant	book time	18:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	65	65	1.0000	0					1.0000
+restaurant	book time	19:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	70	70	1.0000	0					1.0000
+restaurant	book time	19:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	62	62	1.0000	0					1.0000
+restaurant	book time	19:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	66	66	1.0000	0					1.0000
+restaurant	book time	19:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	51	51	1.0000	0					1.0000
+restaurant	book time	20:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	71	71	1.0000	0					1.0000
+restaurant	book time	20:15	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	26	26	1.0000	0					1.0000
+restaurant	book time	20:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	24	24	1.0000	0					1.0000
+restaurant	book time	20:45	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	14	14	1.0000	0					1.0000
+restaurant	book time	21:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	28	28	1.0000	0					1.0000
+restaurant	book time	21:30	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	18	18	1.0000	0					1.0000
+restaurant	book time	22:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	4	4	1.0000	0					1.0000
+restaurant	book time	4pm	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	1	1	1.0000	0					1.0000
+restaurant	book time	9	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	55	55	1.0000	0					1.0000
+restaurant	food	american	114	slot has 114 values in ontology.json	64	64	1.0000	0	head word of 'latin american'				1.0000
+restaurant	food	asian	114	slot has 114 values in ontology.json	122	122	1.0000	0					1.0000
+restaurant	food	dojo noodle bar	114	slot has 114 values in ontology.json	17	17	1.0000	0					1.0000
+restaurant	food	portugese	114	slot has 114 values in ontology.json	3	3	1.0000	0					1.0000
+restaurant	food	sushi	114	slot has 114 values in ontology.json	2	2	1.0000	0					1.0000
+restaurant	food	thai and chinese	114	slot has 114 values in ontology.json	1	1	1.0000	0					1.0000
+restaurant	food	traditional american	114	slot has 114 values in ontology.json	1	1	1.0000	0					1.0000
+restaurant	name	Kohinoor	180	slot has 180 values in ontology.json	13	13	1.0000	0					1.0000
+restaurant	name	alimentum	180	slot has 180 values in ontology.json	10	10	1.0000	0	head word of 'restaurant alimentum'				1.0000
+restaurant	name	ashley hotel	180	slot has 180 values in ontology.json	13	13	1.0000	0					1.0000
+restaurant	name	autumn house	180	slot has 180 values in ontology.json	10	10	1.0000	0					1.0000
+restaurant	name	binh	180	slot has 180 values in ontology.json	13	13	1.0000	0	head word of 'thanh binh'				1.0000
+restaurant	name	broughton house gallery	180	slot has 180 values in ontology.json	6	6	1.0000	0					1.0000
+restaurant	name	cafe uno	180	slot has 180 values in ontology.json	6	6	1.0000	0					1.0000
+restaurant	name	cambridge chop house	180	slot has 180 values in ontology.json	9	9	1.0000	0					1.0000
+restaurant	name	chiquito	180	slot has 180 values in ontology.json	7	7	1.0000	0					1.0000
+restaurant	name	copper kettle	180	slot has 180 values in ontology.json	13	13	1.0000	0					1.0000
+restaurant	name	cow pizza kitchen and bar	180	slot has 180 values in ontology.json	10	10	1.0000	0					1.0000
+restaurant	name	dojo noodle  bar	180	slot has 180 values in ontology.json	17	17	1.0000	0					1.0000
+restaurant	name	efes	180	slot has 180 values in ontology.json	10	10	1.0000	0					1.0000
+restaurant	name	european	180	slot has 180 values in ontology.json	278	278	1.0000	0					1.0000
+restaurant	name	funky	180	slot has 180 values in ontology.json	5	5	1.0000	0					1.0000
+restaurant	name	gardenia	180	slot has 180 values in ontology.json	11	11	1.0000	0	head word of 'the gardenia'				1.0000
+restaurant	name	golden curry	180	slot has 180 values in ontology.json	8	8	1.0000	0					1.0000
+restaurant	name	good luck	180	slot has 180 values in ontology.json	4	4	1.0000	0					1.0000
+restaurant	name	grafton hotel	180	slot has 180 values in ontology.json	5	5	1.0000	0					1.0000
+restaurant	name	hobsons house	180	slot has 180 values in ontology.json	5	5	1.0000	0					1.0000
+restaurant	name	hotpot	180	slot has 180 values in ontology.json	10	10	1.0000	0	head word of 'the hotpot'				1.0000
+restaurant	name	ian hong house	180	slot has 180 values in ontology.json	4	4	1.0000	0					1.0000
+restaurant	name	kitchen and bar	180	slot has 180 values in ontology.json	11	11	1.0000	0					1.0000
+restaurant	name	limehouse	180	slot has 180 values in ontology.json	5	5	1.0000	0					1.0000
+restaurant	name	lucky star	180	slot has 180 values in ontology.json	12	12	1.0000	0					1.0000
+restaurant	name	mahal	180	slot has 180 values in ontology.json	6	6	1.0000	0					1.0000
+restaurant	name	meze bar	180	slot has 180 values in ontology.json	7	7	1.0000	0					1.0000
+restaurant	name	missing sock	180	slot has 180 values in ontology.json	10	10	1.0000	0					1.0000
+restaurant	name	molecular gastronomy	180	slot has 180 values in ontology.json	9	9	1.0000	0					1.0000
+restaurant	name	nil	180	slot has 180 values in ontology.json	1	1	1.0000	0					1.0000
+restaurant	name	nirala	180	slot has 180 values in ontology.json	16	16	1.0000	0					1.0000
+restaurant	name	no	180	slot has 180 values in ontology.json	1721	1721	1.0000	0					1.0000
+restaurant	name	nusha	180	slot has 180 values in ontology.json	4	4	1.0000	0					1.0000
+restaurant	name	oak bistro	180	slot has 180 values in ontology.json	11	11	1.0000	0					1.0000
+restaurant	name	one seven	180	slot has 180 values in ontology.json	7	7	1.0000	0					1.0000
+restaurant	name	parkside pools	180	slot has 180 values in ontology.json	5	5	1.0000	0					1.0000
+restaurant	name	pizza hut	180	slot has 180 values in ontology.json	30	30	1.0000	0					1.0000
+restaurant	name	primavera	180	slot has 180 values in ontology.json	6	6	1.0000	0					1.0000
+restaurant	name	river bar steakhouse and grill	180	slot has 180 values in ontology.json	1	1	1.0000	0					1.0000
+restaurant	name	shanghai	180	slot has 180 values in ontology.json	9	9	1.0000	0					1.0000
+restaurant	name	shiraz	180	slot has 180 values in ontology.json	11	11	1.0000	0					1.0000
+restaurant	name	sitar	180	slot has 180 values in ontology.json	14	14	1.0000	0					1.0000
+restaurant	name	slug and lettuce	180	slot has 180 values in ontology.json	9	9	1.0000	0					1.0000
+restaurant	name	south	180	slot has 180 values in ontology.json	388	388	1.0000	0					1.0000
+restaurant	name	tandoori	180	slot has 180 values in ontology.json	46	46	1.0000	0	head word of 'sitar tandoori'				1.0000
+restaurant	name	the grafton hotel	180	slot has 180 values in ontology.json	4	4	1.0000	0					1.0000
+restaurant	name	the maharajah tandoor	180	slot has 180 values in ontology.json	2	2	1.0000	0					1.0000
+restaurant	name	two two	180	slot has 180 values in ontology.json	8	8	1.0000	0					1.0000
+restaurant	name	worth house	180	slot has 180 values in ontology.json	8	8	1.0000	0					1.0000
+train	arriveby	02:30	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	06:30	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	07:15	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	07:52	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	08:07	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	09:32	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	10:07	127	slot has 127 values in ontology.json	2	2	1.0000	0					1.0000
+train	arriveby	10:32	127	slot has 127 values in ontology.json	2	2	1.0000	0					1.0000
+train	arriveby	10:43	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	12:07	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	13:17	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	15:01	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	18:03	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	20:20	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	22:00	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	arriveby	22:01	127	slot has 127 values in ontology.json	1	1	1.0000	0					1.0000
+train	book people	1	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	211	211	1.0000	0					1.0000
+train	book people	10	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	251	251	1.0000	0					1.0000
+train	book people	15	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	1050	1050	1.0000	0					1.0000
+train	book people	2	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	412	412	1.0000	0					1.0000
+train	book people	3	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	442	442	1.0000	0					1.0000
+train	book people	4	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	571	571	1.0000	0					1.0000
+train	book people	5	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	406	406	1.0000	0					1.0000
+train	book people	6	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	233	233	1.0000	0					1.0000
+train	book people	7	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	283	283	1.0000	0					1.0000
+train	book people	8	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	364	364	1.0000	0					1.0000
+train	book people	9	13	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	126	126	1.0000	0					1.0000
+train	day	tomorrow	10	0 briefs set the value, fewer than 25	3	3	1.0000	0					1.0000
+train	departure	aylesbray lodge guest	28	0 briefs set the value, fewer than 25	3	3	1.0000	0					1.0000
+train	departure	brookshite	28	0 briefs set the value, fewer than 25	1	1	1.0000	0					1.0000
+train	departure	cineworld	28	0 briefs set the value, fewer than 25	3	3	1.0000	0					1.0000
+train	departure	city hall	28	0 briefs set the value, fewer than 25	1	1	1.0000	0					1.0000
+train	departure	east london	28	0 briefs set the value, fewer than 25	1	1	1.0000	0					1.0000
+train	departure	huntingdon	28	0 briefs set the value, fewer than 25	8	8	1.0000	0					1.0000
+train	departure	liverpool	28	0 briefs set the value, fewer than 25	259	259	1.0000	0	head word of 'london liverpool'				1.0000
+train	departure	london	28	0 briefs set the value, fewer than 25	481	481	1.0000	0	head word of 'east london'				1.0000
+train	departure	london liverpool	28	0 briefs set the value, fewer than 25	246	246	1.0000	0					1.0000
+train	departure	stratford	28	0 briefs set the value, fewer than 25	3	3	1.0000	0					1.0000
+train	departure	wandlebury country park	28	0 briefs set the value, fewer than 25	1	1	1.0000	0					1.0000
+train	destination	bournemouth	25	0 briefs set the value, fewer than 25	1	1	1.0000	0					1.0000
+train	destination	centre	25	0 briefs set the value, fewer than 25	703	703	1.0000	0					1.0000
+train	destination	city centre north	25	0 briefs set the value, fewer than 25	9	9	1.0000	0					1.0000
+train	destination	curry prince	25	0 briefs set the value, fewer than 25	7	7	1.0000	0					1.0000
+train	destination	huntingdon marriott hotel	25	0 briefs set the value, fewer than 25	6	6	1.0000	0					1.0000
+train	destination	liverpool	25	0 briefs set the value, fewer than 25	259	259	1.0000	0					1.0000
+train	destination	liverpool street	25	0 briefs set the value, fewer than 25	253	253	1.0000	0					1.0000
+train	destination	london	25	0 briefs set the value, fewer than 25	481	481	1.0000	0					1.0000
+train	destination	norway	25	0 briefs set the value, fewer than 25	1	1	1.0000	0					1.0000
+train	leaveat	06:01	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	06:30	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	07:06	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	07:15	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	08:01	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	09:39	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	10:19	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	10:32	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	11:01	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	11:11	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	11:21	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	11:29	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	11:39	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	12:26	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	13:01	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	13:11	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	13:35	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	15:16	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	15:24	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	15:39	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	17:21	177	slot has 177 values in ontology.json	3	3	1.0000	0					1.0000
+train	leaveat	17:29	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	17:59	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	18:36	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	18:40	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	19:17	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	19:35	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	19:40	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	19:54	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	21:11	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	21:39	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	21:40	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	21:50	177	slot has 177 values in ontology.json	2	2	1.0000	0					1.0000
+train	leaveat	22:00	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	22:01	177	slot has 177 values in ontology.json	1	1	1.0000	0					1.0000
+train	leaveat	9	177	slot has 177 values in ontology.json	126	126	1.0000	0					1.0000
+train	leaveat	after 16:30	177	slot has 177 values in ontology.json	27	27	1.0000	0					1.0000
+train	leaveat	afternoon	177	slot has 177 values in ontology.json	17	17	1.0000	0					1.0000
+train	leaveat	morning	177	slot has 177 values in ontology.json	26	26	1.0000	0					1.0000
+attraction	name	the junction	150	slot has 150 values in ontology.json	9	8	0.8889	8					0.8889
+restaurant	name	nandos	180	slot has 180 values in ontology.json	27	24	0.8889	4					0.8889
+attraction	name	all saints church	150	slot has 150 values in ontology.json	25	22	0.8800	4					0.8800
+restaurant	name	curry prince	180	slot has 180 values in ontology.json	22	19	0.8636	6					0.8636
+attraction	name	corpus christi	150	slot has 150 values in ontology.json	15	12	0.8000	4					0.8000
+restaurant	name	ask	180	slot has 180 values in ontology.json	30	24	0.8000	6					0.8000
+restaurant	name	pipasha restaurant	180	slot has 180 values in ontology.json	5	4	0.8000	4					0.8000
+restaurant	food	brazilian	114	slot has 114 values in ontology.json	9	7	0.7778	2					1.0000
+attraction	name	cambridge artworks	150	slot has 150 values in ontology.json	22	17	0.7727	13					0.7727
+restaurant	name	la tasca	180	slot has 180 values in ontology.json	13	10	0.7692	5					0.7692
+train	arriveby	15:00	127	slot has 127 values in ontology.json	56	43	0.7679	17					0.7679
+attraction	name	the place	150	slot has 150 values in ontology.json	30	23	0.7667	8					0.7667
+attraction	name	ballare	150	slot has 150 values in ontology.json	17	13	0.7647	8					0.7647
+restaurant	name	dojo noodle bar	180	slot has 180 values in ontology.json	17	13	0.7647	8					0.7647
+train	arriveby	17:00	127	slot has 127 values in ontology.json	76	58	0.7632	20					0.7632
+train	leaveat	20:30	177	slot has 177 values in ontology.json	46	35	0.7609	13					0.7609
+attraction	name	cafe jello gallery	150	slot has 150 values in ontology.json	16	12	0.7500	6					0.7500
+restaurant	name	backstreet bistro	180	slot has 180 values in ontology.json	8	6	0.7500	6					0.7500
+restaurant	name	clowns cafe	180	slot has 180 values in ontology.json	4	3	0.7500	4					0.7500
+restaurant	name	pizza hut cherry hinton	180	slot has 180 values in ontology.json	8	6	0.7500	6					0.7500
+restaurant	name	prezzo	180	slot has 180 values in ontology.json	12	9	0.7500	4					0.7500
+restaurant	name	the lucky star	180	slot has 180 values in ontology.json	8	6	0.7500	5					0.7500
+train	arriveby	18:00	127	slot has 127 values in ontology.json	60	45	0.7500	19					0.7500
+restaurant	name	anatolia	180	slot has 180 values in ontology.json	31	23	0.7419	9					0.7419
+restaurant	name	hakka	180	slot has 180 values in ontology.json	23	17	0.7391	8					0.7391
+train	leaveat	19:00	177	slot has 177 values in ontology.json	50	36	0.7200	17					0.7200
+train	arriveby	18:45	127	slot has 127 values in ontology.json	53	38	0.7170	16					0.7170
+attraction	name	broughton house gallery	150	slot has 150 values in ontology.json	14	10	0.7143	7					0.7143
+restaurant	name	saigon city	180	slot has 180 values in ontology.json	7	5	0.7143	2					0.7143
+train	arriveby	21:00	127	slot has 127 values in ontology.json	63	45	0.7143	20					0.7143
+train	leaveat	14:00	177	slot has 177 values in ontology.json	58	41	0.7069	21					0.7069
+restaurant	name	curry garden	180	slot has 180 values in ontology.json	17	12	0.7059	6					0.7059
+attraction	name	mumford theatre	150	slot has 150 values in ontology.json	10	7	0.7000	8					0.7000
+restaurant	name	pizza express	180	slot has 180 values in ontology.json	20	14	0.7000	7					0.7500
+restaurant	name	zizzi cambridge	180	slot has 180 values in ontology.json	10	7	0.7000	3					0.7000
+train	arriveby	20:00	127	slot has 127 values in ontology.json	63	44	0.6984	20					0.6984
+train	arriveby	10:00	127	slot has 127 values in ontology.json	53	37	0.6981	18					0.6981
+train	arriveby	19:15	127	slot has 127 values in ontology.json	53	37	0.6981	17					0.6981
+restaurant	food	bistro	114	slot has 114 values in ontology.json	39	27	0.6923	12					1.0000
+restaurant	name	la mimosa	180	slot has 180 values in ontology.json	13	9	0.6923	6					0.6923
+train	leaveat	19:30	177	slot has 177 values in ontology.json	61	42	0.6885	22					0.6885
+attraction	name	old schools	150	slot has 150 values in ontology.json	19	13	0.6842	7					0.6842
+restaurant	name	golden wok	180	slot has 180 values in ontology.json	19	13	0.6842	6					0.6842
+train	arriveby	15:30	127	slot has 127 values in ontology.json	66	45	0.6818	24					0.6818
+train	arriveby	18:30	127	slot has 127 values in ontology.json	56	38	0.6786	23					0.6786
+train	leaveat	12:45	177	slot has 177 values in ontology.json	84	57	0.6786	27					0.6786
+train	arriveby	11:00	127	slot has 127 values in ontology.json	65	44	0.6769	24					0.6769
+train	leaveat	09:45	177	slot has 177 values in ontology.json	43	29	0.6744	24					0.6744
+train	leaveat	17:15	177	slot has 177 values in ontology.json	61	41	0.6721	21					0.6721
+train	leaveat	16:45	177	slot has 177 values in ontology.json	70	47	0.6714	26					0.6714
+train	arriveby	14:45	127	slot has 127 values in ontology.json	73	49	0.6712	29					0.6712
+attraction	name	funky fun house	150	slot has 150 values in ontology.json	15	10	0.6667	9					0.6667
+attraction	name	the cambridge punter	150	slot has 150 values in ontology.json	6	4	0.6667	3					0.6667
+restaurant	name	hotel du vin and bistro	180	slot has 180 values in ontology.json	3	2	0.6667	4					0.6667
+restaurant	name	jinling noodle bar	180	slot has 180 values in ontology.json	6	4	0.6667	3					0.6667
+restaurant	name	saint johns chop house	180	slot has 180 values in ontology.json	6	4	0.6667	3					0.6667
+restaurant	name	the oak bistro	180	slot has 180 values in ontology.json	9	6	0.6667	3					0.6667
+restaurant	name	wagamama	180	slot has 180 values in ontology.json	3	2	0.6667	2					0.6667
+train	arriveby	15:15	127	slot has 127 values in ontology.json	81	54	0.6667	30					0.6667
+train	leaveat	16:00	177	slot has 177 values in ontology.json	69	46	0.6667	24					0.6667
+train	leaveat	20:00	177	slot has 177 values in ontology.json	63	42	0.6667	22					0.6667
+train	arriveby	14:15	127	slot has 127 values in ontology.json	53	35	0.6604	27					0.6604
+train	leaveat	17:00	177	slot has 177 values in ontology.json	76	50	0.6579	27					0.6579
+train	leaveat	11:30	177	slot has 177 values in ontology.json	73	48	0.6575	30					0.6575
+train	arriveby	15:45	127	slot has 127 values in ontology.json	70	46	0.6571	25					0.6571
+train	leaveat	12:00	177	slot has 177 values in ontology.json	64	42	0.6562	24					0.6562
+train	arriveby	16:30	127	slot has 127 values in ontology.json	72	47	0.6528	28					0.6528
+attraction	name	club salsa	150	slot has 150 values in ontology.json	20	13	0.6500	12					0.6500
+train	leaveat	18:00	177	slot has 177 values in ontology.json	60	39	0.6500	26					0.6500
+train	leaveat	11:45	177	slot has 177 values in ontology.json	77	50	0.6494	28					0.6494
+restaurant	name	bedouin	180	slot has 180 values in ontology.json	17	11	0.6471	11					0.6471
+train	leaveat	13:30	177	slot has 177 values in ontology.json	51	33	0.6471	20					0.6471
+train	arriveby	14:00	127	slot has 127 values in ontology.json	58	37	0.6379	27					0.6379
+train	arriveby	14:30	127	slot has 127 values in ontology.json	58	37	0.6379	28					0.6379
+restaurant	name	gourmet burger kitchen	180	slot has 180 values in ontology.json	11	7	0.6364	6					0.6364
+restaurant	name	rice house	180	slot has 180 values in ontology.json	11	7	0.6364	6					0.6364
+restaurant	name	the gardenia	180	slot has 180 values in ontology.json	11	7	0.6364	4					0.6364
+attraction	name	camboats	150	slot has 150 values in ontology.json	19	12	0.6316	9					0.6316
+train	arriveby	18:15	127	slot has 127 values in ontology.json	65	41	0.6308	25					0.6308
+train	leaveat	13:45	177	slot has 177 values in ontology.json	70	44	0.6286	30					0.6286
+train	arriveby	16:15	127	slot has 127 values in ontology.json	67	42	0.6269	25					0.6269
+restaurant	name	rajmahal	180	slot has 180 values in ontology.json	8	5	0.6250	3					0.6250
+restaurant	name	restaurant alimentum	180	slot has 180 values in ontology.json	8	5	0.6250	5					0.6250
+train	arriveby	12:00	127	slot has 127 values in ontology.json	64	40	0.6250	29					0.6250
+train	arriveby	12:15	127	slot has 127 values in ontology.json	80	50	0.6250	31					0.6250
+train	leaveat	12:30	177	slot has 177 values in ontology.json	74	46	0.6216	30					0.6216
+restaurant	name	graffiti	180	slot has 180 values in ontology.json	21	13	0.6190	12					0.6190
+train	arriveby	13:15	127	slot has 127 values in ontology.json	73	45	0.6164	31					0.6164
+attraction	name	vue cinema	150	slot has 150 values in ontology.json	13	8	0.6154	7					0.6154
+restaurant	name	kohinoor	180	slot has 180 values in ontology.json	13	8	0.6154	8					0.6154
+restaurant	name	la raza	180	slot has 180 values in ontology.json	13	8	0.6154	9					0.6154
+train	leaveat	10:45	177	slot has 177 values in ontology.json	57	35	0.6140	23					0.6140
+train	leaveat	12:15	177	slot has 177 values in ontology.json	80	49	0.6125	35					0.6125
+restaurant	name	charlie chan	180	slot has 180 values in ontology.json	18	11	0.6111	10					0.6111
+train	arriveby	19:45	127	slot has 127 values in ontology.json	41	25	0.6098	18					0.6098
+train	arriveby	20:30	127	slot has 127 values in ontology.json	46	28	0.6087	20					0.6087
+train	leaveat	17:45	177	slot has 177 values in ontology.json	74	45	0.6081	33					0.6081
+train	leaveat	13:00	177	slot has 177 values in ontology.json	79	48	0.6076	31					0.6076
+train	arriveby	19:30	127	slot has 127 values in ontology.json	61	37	0.6066	27					0.6066
+train	leaveat	15:15	177	slot has 177 values in ontology.json	81	49	0.6049	33					0.6049
+train	leaveat	18:45	177	slot has 177 values in ontology.json	53	32	0.6038	22					0.6038
+train	arriveby	20:15	127	slot has 127 values in ontology.json	58	35	0.6034	26					0.6034
+train	arriveby	21:15	127	slot has 127 values in ontology.json	58	35	0.6034	24					0.6034
+train	leaveat	10:30	177	slot has 177 values in ontology.json	58	35	0.6034	25					0.6034
+train	leaveat	13:15	177	slot has 177 values in ontology.json	73	44	0.6027	32					0.6027
+train	leaveat	14:45	177	slot has 177 values in ontology.json	73	44	0.6027	34					0.6027
+attraction	name	kings hedges learner pool	150	slot has 150 values in ontology.json	10	6	0.6000	8					0.6000
+attraction	name	nusha	150	slot has 150 values in ontology.json	15	9	0.6000	10					0.6000
+attraction	name	wandlebury country park	150	slot has 150 values in ontology.json	10	6	0.6000	12					0.6000
+restaurant	name	ugly duckling	180	slot has 180 values in ontology.json	15	9	0.6000	7					0.6000
+restaurant	name	yu garden	180	slot has 180 values in ontology.json	15	9	0.6000	8					0.6000
+train	arriveby	11:15	127	slot has 127 values in ontology.json	70	42	0.6000	31					0.6000
+train	arriveby	19:00	127	slot has 127 values in ontology.json	50	30	0.6000	24					0.6000
+train	leaveat	11:15	177	slot has 177 values in ontology.json	70	42	0.6000	29					0.6000
+train	leaveat	16:30	177	slot has 177 values in ontology.json	72	43	0.5972	30	head word of 'after 16:30'				0.5972
+train	leaveat	16:15	177	slot has 177 values in ontology.json	67	40	0.5970	30					0.5970
+train	leaveat	10:15	177	slot has 177 values in ontology.json	62	37	0.5968	28					0.5968
+train	leaveat	09:15	177	slot has 177 values in ontology.json	42	25	0.5952	33					0.5952
+train	arriveby	16:00	127	slot has 127 values in ontology.json	69	41	0.5942	31					0.5942
+train	leaveat	08:00	177	slot has 177 values in ontology.json	32	19	0.5938	25					0.5938
+restaurant	name	royal spice	180	slot has 180 values in ontology.json	22	13	0.5909	11					0.5909
+attraction	name	downing college	150	slot has 150 values in ontology.json	17	10	0.5882	13					0.5882
+train	leaveat	20:45	177	slot has 177 values in ontology.json	51	30	0.5882	25					0.5882
+train	leaveat	21:00	177	slot has 177 values in ontology.json	63	37	0.5873	30					0.5873
+train	leaveat	19:45	177	slot has 177 values in ontology.json	41	24	0.5854	19					0.5854
+train	leaveat	10:00	177	slot has 177 values in ontology.json	53	31	0.5849	27					0.5849
+train	leaveat	14:15	177	slot has 177 values in ontology.json	53	31	0.5849	25					0.5849
+train	leaveat	19:15	177	slot has 177 values in ontology.json	53	31	0.5849	22					0.5849
+train	leaveat	11:00	177	slot has 177 values in ontology.json	65	38	0.5846	29					0.5846
+train	leaveat	18:15	177	slot has 177 values in ontology.json	65	38	0.5846	28					0.5846
+attraction	name	riverboat georgina	150	slot has 150 values in ontology.json	12	7	0.5833	6					0.5833
+restaurant	name	eraina	180	slot has 180 values in ontology.json	12	7	0.5833	9					0.5833
+restaurant	name	frankie and bennys	180	slot has 180 values in ontology.json	12	7	0.5833	7					0.5833
+restaurant	name	galleria	180	slot has 180 values in ontology.json	12	7	0.5833	8					0.5833
+train	arriveby	12:45	127	slot has 127 values in ontology.json	84	49	0.5833	37					0.5833
+train	leaveat	09:00	177	slot has 177 values in ontology.json	36	21	0.5833	27					0.5833
+train	arriveby	17:45	127	slot has 127 values in ontology.json	74	43	0.5811	35					0.5811
+train	arriveby	10:15	127	slot has 127 values in ontology.json	62	36	0.5806	32					0.5806
+attraction	name	clare hall	150	slot has 150 values in ontology.json	19	11	0.5789	9					0.5789
+restaurant	food	malaysian	114	slot has 114 values in ontology.json	19	11	0.5789	9					1.0000
+train	leaveat	09:30	177	slot has 177 values in ontology.json	38	22	0.5789	26					0.5789
+train	leaveat	17:30	177	slot has 177 values in ontology.json	45	26	0.5778	21					0.5778
+attraction	name	holy trinity church	150	slot has 150 values in ontology.json	14	8	0.5714	10					0.5714
+restaurant	name	ali baba	180	slot has 180 values in ontology.json	7	4	0.5714	5					0.5714
+restaurant	name	kymmoy	180	slot has 180 values in ontology.json	7	4	0.5714	3					0.5714
+restaurant	name	the gandhi	180	slot has 180 values in ontology.json	14	8	0.5714	9					0.5714
+train	arriveby	13:45	127	slot has 127 values in ontology.json	70	40	0.5714	32					0.5714
+train	leaveat	14:30	177	slot has 177 values in ontology.json	58	33	0.5690	29					0.5690
+train	leaveat	20:15	177	slot has 177 values in ontology.json	58	33	0.5690	25					0.5690
+train	arriveby	13:30	127	slot has 127 values in ontology.json	51	29	0.5686	34					0.5686
+attraction	name	castle galleries	150	slot has 150 values in ontology.json	16	9	0.5625	11					0.5625
+train	leaveat	08:45	177	slot has 177 values in ontology.json	32	18	0.5625	19					0.5625
+train	arriveby	11:45	127	slot has 127 values in ontology.json	77	43	0.5584	37					0.5584
+train	arriveby	16:45	127	slot has 127 values in ontology.json	70	39	0.5571	32					0.5571
+train	arriveby	13:00	127	slot has 127 values in ontology.json	79	44	0.5570	39					0.5570
+restaurant	name	cote	180	slot has 180 values in ontology.json	9	5	0.5556	5	head word of 'two two and cote'				0.5556
+restaurant	name	the slug and lettuce	180	slot has 180 values in ontology.json	9	5	0.5556	7					0.5556
+train	arriveby	17:30	127	slot has 127 values in ontology.json	45	25	0.5556	23					0.5556
+train	arriveby	12:30	127	slot has 127 values in ontology.json	74	41	0.5541	34					0.5541
+train	leaveat	18:30	177	slot has 177 values in ontology.json	56	31	0.5536	25					0.5536
+attraction	name	tenpin	150	slot has 150 values in ontology.json	20	11	0.5500	12					0.5500
+restaurant	food	english	114	slot has 114 values in ontology.json	11	6	0.5455	5	head word of 'modern english'				1.0000
+restaurant	name	cocum	180	slot has 180 values in ontology.json	11	6	0.5455	5					0.5455
+restaurant	name	sala thong	180	slot has 180 values in ontology.json	11	6	0.5455	13					0.5455
+train	arriveby	21:45	127	slot has 127 values in ontology.json	46	25	0.5435	23					0.5435
+train	leaveat	15:45	177	slot has 177 values in ontology.json	70	38	0.5429	35					0.5429
+train	arriveby	17:15	127	slot has 127 values in ontology.json	61	33	0.5410	31					0.5410
+attraction	name	parkside pools	150	slot has 150 values in ontology.json	13	7	0.5385	7					0.5385
+train	arriveby	11:30	127	slot has 127 values in ontology.json	73	39	0.5342	37					0.5342
+attraction	name	whale of a time	150	slot has 150 values in ontology.json	15	8	0.5333	8					0.5333
+restaurant	name	da vinci pizzeria	180	slot has 180 values in ontology.json	15	8	0.5333	8					0.5333
+restaurant	name	peking restaurant	180	slot has 180 values in ontology.json	15	8	0.5333	11					0.5333
+restaurant	name	tandoori palace	180	slot has 180 values in ontology.json	15	8	0.5333	8					0.5333
+restaurant	food	christmas	114	slot has 114 values in ontology.json	17	9	0.5294	8					1.0000
+restaurant	food	irish	114	slot has 114 values in ontology.json	19	10	0.5263	10					1.0000
+train	arriveby	10:45	127	slot has 127 values in ontology.json	57	30	0.5263	31					0.5263
+train	leaveat	08:30	177	slot has 177 values in ontology.json	38	20	0.5263	34					0.5263
+train	leaveat	08:15	177	slot has 177 values in ontology.json	46	24	0.5217	35					0.5217
+train	leaveat	15:00	177	slot has 177 values in ontology.json	56	29	0.5179	28					0.5179
+train	arriveby	10:30	127	slot has 127 values in ontology.json	58	30	0.5172	29					0.5172
+train	leaveat	15:30	177	slot has 177 values in ontology.json	66	34	0.5152	37					0.5152
+train	leaveat	21:30	177	slot has 177 values in ontology.json	57	29	0.5088	30					0.5088
+attraction	name	byard art	150	slot has 150 values in ontology.json	12	6	0.5000	11					0.5000
+attraction	name	cambridge arts theatre	150	slot has 150 values in ontology.json	8	4	0.5000	8					0.5000
+attraction	name	hughes hall	150	slot has 150 values in ontology.json	6	3	0.5000	4					0.5000
+attraction	name	pembroke college	150	slot has 150 values in ontology.json	6	3	0.5000	4					0.5000
+attraction	name	the man on the moon	150	slot has 150 values in ontology.json	14	7	0.5000	8					0.5000
+restaurant	food	canapes	114	slot has 114 values in ontology.json	6	3	0.5000	3					1.0000
+restaurant	food	cantonese	114	slot has 114 values in ontology.json	14	7	0.5000	7					1.0000
+restaurant	food	traditional	114	slot has 114 values in ontology.json	14	7	0.5000	7					1.0000
+restaurant	food	welsh	114	slot has 114 values in ontology.json	12	6	0.5000	7					1.0000
+restaurant	food	world	114	slot has 114 values in ontology.json	12	6	0.5000	7					1.0000
+restaurant	name	cambridge lodge restaurant	180	slot has 180 values in ontology.json	2	1	0.5000	5					0.5000
+restaurant	name	fitzbillies restaurant	180	slot has 180 values in ontology.json	4	2	0.5000	5					0.5000
+restaurant	name	meghna	180	slot has 180 values in ontology.json	8	4	0.5000	7					0.5000
+restaurant	name	midsummer house restaurant	180	slot has 180 values in ontology.json	4	2	0.5000	6					0.5000
+restaurant	name	restaurant two two	180	slot has 180 values in ontology.json	6	3	0.5000	7					0.5000
+restaurant	name	riverside brasserie	180	slot has 180 values in ontology.json	10	5	0.5000	6					0.5000
+restaurant	name	thanh binh	180	slot has 180 values in ontology.json	12	6	0.5000	11					0.5000
+restaurant	name	the missing sock	180	slot has 180 values in ontology.json	10	5	0.5000	7					0.5000
+restaurant	name	yippee noodle bar	180	slot has 180 values in ontology.json	10	5	0.5000	7					0.5000
+train	leaveat	21:01	177	slot has 177 values in ontology.json	2	1	0.5000	1					0.5000
+train	arriveby	21:30	127	slot has 127 values in ontology.json	57	28	0.4912	33					0.4912
+train	arriveby	20:45	127	slot has 127 values in ontology.json	51	25	0.4902	30					0.4902
+restaurant	food	european	114	slot has 114 values in ontology.json	278	133	0.4784	147	head word of 'eastern european'				0.4964
+train	arriveby	08:15	127	slot has 127 values in ontology.json	46	22	0.4783	31					0.4783
+train	arriveby	08:30	127	slot has 127 values in ontology.json	38	18	0.4737	42					0.4737
+restaurant	food	caribbean	114	slot has 114 values in ontology.json	17	8	0.4706	11					1.0000
+restaurant	food	vegetarian	114	slot has 114 values in ontology.json	17	8	0.4706	9					1.0000
+train	arriveby	08:45	127	slot has 127 values in ontology.json	32	15	0.4688	33					0.4688
+attraction	name	emmanuel college	150	slot has 150 values in ontology.json	15	7	0.4667	12					0.4667
+attraction	name	milton country park	150	slot has 150 values in ontology.json	15	7	0.4667	10					0.4667
+train	leaveat	21:45	177	slot has 177 values in ontology.json	46	21	0.4565	28					0.4565
+attraction	name	cambridge contemporary art	150	slot has 150 values in ontology.json	11	5	0.4545	8					0.4545
+restaurant	food	fusion	114	slot has 114 values in ontology.json	22	10	0.4545	12					1.0000
+restaurant	food	scandinavian	114	slot has 114 values in ontology.json	11	5	0.4545	6					1.0000
+restaurant	food	african	114	slot has 114 values in ontology.json	58	26	0.4483	33	head word of 'north african'				0.6379
+restaurant	food	panasian	114	slot has 114 values in ontology.json	9	4	0.4444	5					1.0000
+restaurant	food	swedish	114	slot has 114 values in ontology.json	18	8	0.4444	10					1.0000
+restaurant	name	la margherita	180	slot has 180 values in ontology.json	9	4	0.4444	5					0.4444
+restaurant	name	little seoul	180	slot has 180 values in ontology.json	9	4	0.4444	10					0.4444
+restaurant	name	the hotpot	180	slot has 180 values in ontology.json	9	4	0.4444	6					0.4444
+train	arriveby	09:00	127	slot has 127 values in ontology.json	36	16	0.4444	30					0.4444
+train	arriveby	08:00	127	slot has 127 values in ontology.json	32	14	0.4375	36					0.4375
+attraction	name	soul tree nightclub	150	slot has 150 values in ontology.json	14	6	0.4286	11					0.4286
+restaurant	name	travellers rest	180	slot has 180 values in ontology.json	14	6	0.4286	10					0.4286
+train	arriveby	09:15	127	slot has 127 values in ontology.json	42	18	0.4286	40					0.4286
+train	arriveby	09:30	127	slot has 127 values in ontology.json	38	16	0.4211	42					0.4211
+attraction	name	adc theatre	150	slot has 150 values in ontology.json	12	5	0.4167	9					0.4167
+attraction	name	cambridge museum of technology	150	slot has 150 values in ontology.json	12	5	0.4167	9					0.4167
+restaurant	food	persian	114	slot has 114 values in ontology.json	17	7	0.4118	10					1.0000
+attraction	name	primavera	150	slot has 150 values in ontology.json	15	6	0.4000	14					0.4000
+restaurant	food	barbeque	114	slot has 114 values in ontology.json	10	4	0.4000	8					1.0000
+restaurant	food	basque	114	slot has 114 values in ontology.json	10	4	0.4000	6					1.0000
+restaurant	food	corsica	114	slot has 114 values in ontology.json	15	6	0.4000	11					1.0000
+restaurant	name	bangkok city	180	slot has 180 values in ontology.json	15	6	0.4000	10					0.4000
+restaurant	name	cotto	180	slot has 180 values in ontology.json	5	2	0.4000	7					0.4000
+restaurant	name	grafton hotel restaurant	180	slot has 180 values in ontology.json	5	2	0.4000	6					0.4000
+restaurant	name	meze bar restaurant	180	slot has 180 values in ontology.json	5	2	0.4000	6					0.4000
+train	leaveat	21:15	177	slot has 177 values in ontology.json	58	23	0.3966	38					0.3966
+attraction	type	cinema	43	slot has 43 values in ontology.json	96	38	0.3958	71					0.5521
+restaurant	food	mexican	114	slot has 114 values in ontology.json	47	18	0.3830	29					0.4894
+restaurant	name	golden house	180	slot has 180 values in ontology.json	8	3	0.3750	5					0.3750
+restaurant	name	sesame restaurant and bar	180	slot has 180 values in ontology.json	8	3	0.3750	6					0.3750
+train	arriveby	09:45	127	slot has 127 values in ontology.json	43	16	0.3721	42					0.3721
+restaurant	food	halal	114	slot has 114 values in ontology.json	11	4	0.3636	7					1.0000
+restaurant	food	indonesian	114	slot has 114 values in ontology.json	14	5	0.3571	9					1.0000
+restaurant	food	moroccan	114	slot has 114 values in ontology.json	14	5	0.3571	11					1.0000
+restaurant	name	sitar tandoori	180	slot has 180 values in ontology.json	14	5	0.3571	13					0.3571
+attraction	name	clare college	150	slot has 150 values in ontology.json	9	3	0.3333	9					0.3333
+restaurant	food	catalan	114	slot has 114 values in ontology.json	12	4	0.3333	10					1.0000
+restaurant	food	danish	114	slot has 114 values in ontology.json	21	7	0.3333	14					1.0000
+restaurant	food	jamaican	114	slot has 114 values in ontology.json	21	7	0.3333	14					1.0000
+restaurant	food	steakhouse	114	slot has 114 values in ontology.json	12	4	0.3333	8					1.0000
+restaurant	name	hk fusion	180	slot has 180 values in ontology.json	6	2	0.3333	5					0.3333
+restaurant	name	loch fyne	180	slot has 180 values in ontology.json	9	3	0.3333	7					0.3333
+restaurant	name	saffron brasserie	180	slot has 180 values in ontology.json	12	4	0.3333	9					0.3333
+restaurant	name	taj tandoori	180	slot has 180 values in ontology.json	9	3	0.3333	7					0.3333
+restaurant	name	tang chinese	180	slot has 180 values in ontology.json	6	2	0.3333	4					0.3333
+restaurant	name	the varsity restaurant	180	slot has 180 values in ontology.json	9	3	0.3333	6					0.3333
+attraction	name	jesus green outdoor pool	150	slot has 150 values in ontology.json	13	4	0.3077	11					0.3077
+attraction	name	magdalene college	150	slot has 150 values in ontology.json	13	4	0.3077	12					0.3077
+restaurant	food	hungarian	114	slot has 114 values in ontology.json	13	4	0.3077	9					1.0000
+restaurant	food	tuscan	114	slot has 114 values in ontology.json	13	4	0.3077	9					1.0000
+attraction	type	park	43	slot has 43 values in ontology.json	179	54	0.3017	143					0.3408
+attraction	name	cineworld cinema	150	slot has 150 values in ontology.json	10	3	0.3000	9					0.3000
+restaurant	name	royal standard	180	slot has 180 values in ontology.json	10	3	0.3000	11					0.3000
+restaurant	food	greek	114	slot has 114 values in ontology.json	17	5	0.2941	12					1.0000
+restaurant	food	swiss	114	slot has 114 values in ontology.json	17	5	0.2941	12					1.0000
+attraction	name	the fez club	150	slot has 150 values in ontology.json	7	2	0.2857	12					0.2857
+attraction	name	trinity college	150	slot has 150 values in ontology.json	7	2	0.2857	6					0.2857
+restaurant	food	afghan	114	slot has 114 values in ontology.json	14	4	0.2857	10					1.0000
+restaurant	food	kosher	114	slot has 114 values in ontology.json	14	4	0.2857	10					1.0000
+restaurant	name	bloomsbury restaurant	180	slot has 180 values in ontology.json	7	2	0.2857	5					0.2857
+restaurant	food	belgian	114	slot has 114 values in ontology.json	11	3	0.2727	8					1.0000
+restaurant	name	india house	180	slot has 180 values in ontology.json	11	3	0.2727	11					0.2727
+attraction	type	museum	43	slot has 43 values in ontology.json	600	163	0.2717	472					0.2750
+restaurant	food	cuban	114	slot has 114 values in ontology.json	15	4	0.2667	11					1.0000
+restaurant	food	russian	114	slot has 114 values in ontology.json	15	4	0.2667	11					1.0000
+restaurant	food	scottish	114	slot has 114 values in ontology.json	15	4	0.2667	11					1.0000
+restaurant	food	venetian	114	slot has 114 values in ontology.json	15	4	0.2667	11					1.0000
+attraction	type	college	43	slot has 43 values in ontology.json	502	126	0.2510	394	head word of 'churchills college'				0.2809
+attraction	name	regency gallery	150	slot has 150 values in ontology.json	4	1	0.2500	5					0.2500
+restaurant	food	polish	114	slot has 114 values in ontology.json	12	3	0.2500	9					1.0000
+restaurant	name	chiquito restaurant bar	180	slot has 180 values in ontology.json	4	1	0.2500	4					0.2500
+restaurant	food	unusual	114	slot has 114 values in ontology.json	13	3	0.2308	10					1.0000
+attraction	name	kambar	150	slot has 150 values in ontology.json	9	2	0.2222	10					0.2222
+restaurant	name	nandos city centre	180	slot has 180 values in ontology.json	9	2	0.2222	9					0.2222
+restaurant	food	australian	114	slot has 114 values in ontology.json	14	3	0.2143	12					1.0000
+restaurant	food	creative	114	slot has 114 values in ontology.json	14	3	0.2143	11					1.0000
+restaurant	food	austrian	114	slot has 114 values in ontology.json	24	5	0.2083	19					1.0000
+attraction	type	nightclub	43	slot has 43 values in ontology.json	144	29	0.2014	148					0.3194
+attraction	name	cherry hinton water play	150	slot has 150 values in ontology.json	5	1	0.2000	5					0.2000
+attraction	name	ruskin gallery	150	slot has 150 values in ontology.json	5	1	0.2000	6					0.2000
+attraction	name	whipple museum of the history of science	150	slot has 150 values in ontology.json	5	1	0.2000	6					0.2000
+attraction	type	boat	43	slot has 43 values in ontology.json	105	21	0.2000	116					0.2952
+restaurant	name	efes restaurant	180	slot has 180 values in ontology.json	5	1	0.2000	7					0.2000
+restaurant	name	the cow pizza kitchen and bar	180	slot has 180 values in ontology.json	10	2	0.2000	11					0.2000
+restaurant	name	rice boat	180	slot has 180 values in ontology.json	16	3	0.1875	15					0.1875
+restaurant	food	eritrean	114	slot has 114 values in ontology.json	11	2	0.1818	10					1.0000
+restaurant	name	city stop restaurant	180	slot has 180 values in ontology.json	11	2	0.1818	11					0.1818
+attraction	type	theatre	43	slot has 43 values in ontology.json	125	22	0.1760	130					0.2400
+attraction	name	museum of archaelogy and anthropology	150	slot has 150 values in ontology.json	6	1	0.1667	10					0.1667
+restaurant	name	darrys cookhouse and wine shop	180	slot has 180 values in ontology.json	6	1	0.1667	6					0.1667
+restaurant	name	de luca cucina and bar	180	slot has 180 values in ontology.json	6	1	0.1667	7					0.1667
+restaurant	food	italian	114	slot has 114 values in ontology.json	389	63	0.1620	337					0.1645
+restaurant	food	chinese	114	slot has 114 values in ontology.json	434	65	0.1498	380	head word of 'thai and chinese'				0.1521
+attraction	name	gonville and caius college	150	slot has 150 values in ontology.json	7	1	0.1429	11					0.1429
+restaurant	food	singaporean	114	slot has 114 values in ontology.json	7	1	0.1429	6					1.0000
+restaurant	name	pizza hut city centre	180	slot has 180 values in ontology.json	7	1	0.1429	7					0.1429
+restaurant	name	restaurant one seven	180	slot has 180 values in ontology.json	7	1	0.1429	9					0.1429
+restaurant	name	stazione restaurant and coffee bar	180	slot has 180 values in ontology.json	7	1	0.1429	10					0.1429
+restaurant	food	thai	114	slot has 114 values in ontology.json	69	9	0.1304	61					0.1884
+attraction	name	cambridge university botanic gardens	150	slot has 150 values in ontology.json	8	1	0.1250	11					0.1250
+attraction	name	cherry hinton hall and grounds	150	slot has 150 values in ontology.json	8	1	0.1250	10					0.1250
+restaurant	food	german	114	slot has 114 values in ontology.json	16	2	0.1250	14					1.0000
+restaurant	food	french	114	slot has 114 values in ontology.json	66	8	0.1212	58					0.2727
+restaurant	food	indian	114	slot has 114 values in ontology.json	477	55	0.1153	442	head word of 'north indian'				0.1216
+restaurant	food	romanian	114	slot has 114 values in ontology.json	9	1	0.1111	8					1.0000
+restaurant	food	vietnamese	114	slot has 114 values in ontology.json	58	6	0.1034	54					0.2931
+restaurant	name	j restaurant	180	slot has 180 values in ontology.json	10	1	0.1000	10					0.1000
+restaurant	name	panahar	180	slot has 180 values in ontology.json	10	1	0.1000	12					0.1000
+attraction	name	museum of classical archaeology	150	slot has 150 values in ontology.json	11	1	0.0909	11					0.0909
+attraction	name	williams art and antiques	150	slot has 150 values in ontology.json	11	1	0.0909	14					0.0909
+restaurant	food	british	114	slot has 114 values in ontology.json	264	23	0.0871	249					0.1023
+attraction	name	cambridge and county folk museum	150	slot has 150 values in ontology.json	12	1	0.0833	14					0.0833
+attraction	name	scott polar museum	150	slot has 150 values in ontology.json	12	1	0.0833	15					0.0833
+restaurant	food	seafood	114	slot has 114 values in ontology.json	24	2	0.0833	24					0.3333
+restaurant	food	north american	114	slot has 114 values in ontology.json	39	3	0.0769	36					0.2308
+restaurant	food	lebanese	114	slot has 114 values in ontology.json	40	3	0.0750	39					0.2750
+restaurant	food	crossover	114	slot has 114 values in ontology.json	14	1	0.0714	13					1.0000
+attraction	type	entertainment	43	slot has 43 values in ontology.json	220	15	0.0682	240					0.5591
+attraction	type	architecture	43	slot has 43 values in ontology.json	122	7	0.0574	149					0.2131
+restaurant	food	portuguese	114	slot has 114 values in ontology.json	77	4	0.0519	79					0.1558
+restaurant	food	asian oriental	114	slot has 114 values in ontology.json	107	5	0.0467	116					0.0654
+restaurant	food	gastropub	114	slot has 114 values in ontology.json	92	4	0.0435	93					0.0652
+restaurant	food	spanish	114	slot has 114 values in ontology.json	69	3	0.0435	66					0.1014
+restaurant	food	international	114	slot has 114 values in ontology.json	83	3	0.0361	87					0.0964
+attraction	type	concerthall	43	slot has 43 values in ontology.json	31	1	0.0323	69					0.4839
+restaurant	food	japanese	114	slot has 114 values in ontology.json	35	1	0.0286	34					0.2571
+restaurant	food	mediterranean	114	slot has 114 values in ontology.json	73	2	0.0274	72					0.0548
+restaurant	food	turkish	114	slot has 114 values in ontology.json	83	2	0.0241	85					0.0843
+restaurant	food	modern european	114	slot has 114 values in ontology.json	109	2	0.0183	115					0.0275
+attraction	name	abbey pool and astroturf pitch	150	slot has 150 values in ontology.json	4	0	0.0000	5					0.0000
+attraction	name	cambridge arts theater	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	cambridge book and print gallery	150	slot has 150 values in ontology.json	8	0	0.0000	11					0.0000
+attraction	name	cambridge botanic gardens	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	cambridge punters	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	cherry hinton water play park	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	christs college	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	churchills college	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	cinema cinema	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	gallery at twelve a high street	150	slot has 150 values in ontology.json	4	0	0.0000	8					0.0000
+attraction	name	great saint marys church	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	jesus college	150	slot has 150 values in ontology.json	3	0	0.0000	6					0.0000
+attraction	name	king hedges learner pool	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	lynne strover gallery	150	slot has 150 values in ontology.json	5	0	0.0000	10					0.0000
+attraction	name	saint barnabas press gallery	150	slot has 150 values in ontology.json	6	0	0.0000	8					0.0000
+attraction	name	saint catharines college	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	scudamores punti co	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	scudamores punting co	150	slot has 150 values in ontology.json	6	0	0.0000	9					0.0000
+attraction	name	sheeps green	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	sheeps green and lammas land park fen causeway	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	sidney sussex college	150	slot has 150 values in ontology.json	7	0	0.0000	9					0.0000
+attraction	name	soultree	150	slot has 150 values in ontology.json	0	0		0					
+attraction	name	the cambridge corn exchange	150	slot has 150 values in ontology.json	6	0	0.0000	8					0.0000
+attraction	name	trinity street college	150	slot has 150 values in ontology.json	0	0		0					
+attraction	type	churchills college	43	slot has 43 values in ontology.json	0	0		0					
+attraction	type	museum kettles yard	43	slot has 43 values in ontology.json	0	0		0					
+restaurant	book time	03:00	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	book time	10:48	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	book time	1345	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	book time	1430	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	book time	14:40	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	book time	17:16	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	book time	8pm	78	booking slot: the brief sets it in goal.<domain>.book, which Rule B does not read	0	0		0					
+restaurant	food	afternoon tea	114	slot has 114 values in ontology.json	5	0	0.0000	5					1.0000
+restaurant	food	eastern european	114	slot has 114 values in ontology.json	5	0	0.0000	5					1.0000
+restaurant	food	korean	114	slot has 114 values in ontology.json	50	0	0.0000	50					0.2400
+restaurant	food	latin american	114	slot has 114 values in ontology.json	9	0	0.0000	10					1.0000
+restaurant	food	light bites	114	slot has 114 values in ontology.json	8	0	0.0000	8					1.0000
+restaurant	food	middle eastern	114	slot has 114 values in ontology.json	3	0	0.0000	4					1.0000
+restaurant	food	modern american	114	slot has 114 values in ontology.json	11	0	0.0000	11					1.0000
+restaurant	food	modern eclectic	114	slot has 114 values in ontology.json	8	0	0.0000	8					1.0000
+restaurant	food	modern english	114	slot has 114 values in ontology.json	0	0		0					
+restaurant	food	modern global	114	slot has 114 values in ontology.json	4	0	0.0000	6					1.0000
+restaurant	food	molecular gastronomy	114	slot has 114 values in ontology.json	9	0	0.0000	9					1.0000
+restaurant	food	new zealand	114	slot has 114 values in ontology.json	6	0	0.0000	6					1.0000
+restaurant	food	north african	114	slot has 114 values in ontology.json	9	0	0.0000	9					1.0000
+restaurant	food	north indian	114	slot has 114 values in ontology.json	13	0	0.0000	13					1.0000
+restaurant	food	northern european	114	slot has 114 values in ontology.json	7	0	0.0000	8					1.0000
+restaurant	food	polynesian	114	slot has 114 values in ontology.json	11	0	0.0000	12					1.0000
+restaurant	food	south african	114	slot has 114 values in ontology.json	10	0	0.0000	10					1.0000
+restaurant	food	south indian	114	slot has 114 values in ontology.json	8	0	0.0000	9					1.0000
+restaurant	food	sri lankan	114	slot has 114 values in ontology.json	10	0	0.0000	11					1.0000
+restaurant	food	the americas	114	slot has 114 values in ontology.json	10	0	0.0000	15					1.0000
+restaurant	name	4 kings parade city centre	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	adden	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	alex	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	anatolia and efes restaurant	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	barbakan	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	cityr	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	curry king	180	slot has 180 values in ontology.json	6	0	0.0000	8					0.0000
+restaurant	name	curry queen	180	slot has 180 values in ontology.json	1	0	0.0000	2					0.0000
+restaurant	name	don pasquale pizzeria	180	slot has 180 values in ontology.json	5	0	0.0000	6					0.0000
+restaurant	name	el shaddia guesthouse	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	eraina and michaelhouse cafe	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	gourmet formal kitchen	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	india west	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	lan hong house	180	slot has 180 values in ontology.json	2	0	0.0000	6					0.0000
+restaurant	name	lovel	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	mahal of cambridge	180	slot has 180 values in ontology.json	4	0	0.0000	5					0.0000
+restaurant	name	maharajah tandoori restaurant	180	slot has 180 values in ontology.json	5	0	0.0000	12					0.0000
+restaurant	name	michaelhouse cafe	180	slot has 180 values in ontology.json	2	0	0.0000	5					0.0000
+restaurant	name	nus	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	pizza express fenditton	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	pizza hut fenditton	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	restaurant 22	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	shanghai family restaurant	180	slot has 180 values in ontology.json	7	0	0.0000	9					0.0000
+restaurant	name	the peking restaurant:	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	the river bar steakhouse and grill	180	slot has 180 values in ontology.json	0	0		5					
+restaurant	name	two two and cote	180	slot has 180 values in ontology.json	0	0		0					
+restaurant	name	wise buddha	180	slot has 180 values in ontology.json	0	0		0					
+train	arriveby	02:00	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	03:00	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	05:30	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	05:52	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	06:43	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	06:45	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	06:55	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	07:00	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	07:01	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	07:35	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	08:44	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	08:54	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	09:01	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	09:06	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	10:44	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	10:54	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	1100	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	11:06	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	11:52	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	11:54	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	12:08	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	13:03	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	13:32	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	13:38	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	13:51	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	13:52	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	14:07	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	14:43	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	1545	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	15:06	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	15:07	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	15:54	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	16:23	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	16:32	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	16:58	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	17:51	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	17:58	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	18:01	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	18:07	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	18:10	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	18:23	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	19:27	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	19:32	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	19:57	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	19:58	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	20:07	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	20:54	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	20:56	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	21:20	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	22:07	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	23:00	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	23:27	127	slot has 127 values in ontology.json	0	0		0					
+train	arriveby	23:30	127	slot has 127 values in ontology.json	0	0		0					
+train	departure	duxford	28	0 briefs set the value, fewer than 25	0	0		0					
+train	departure	panahar	28	0 briefs set the value, fewer than 25	0	0		0					
+train	destination	glastonbury	25	0 briefs set the value, fewer than 25	0	0		0					
+train	leaveat	00:00	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	02:00	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	02:15	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:00	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:11	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:15	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:16	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:17	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:24	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:29	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:30	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:35	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:36	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:40	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:45	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	05:54	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	06:00	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	06:09	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	06:40	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	06:45	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:00	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:17	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:21	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:27	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:35	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:45	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	07:54	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	08:09	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	08:10	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	08:16	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	08:32	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	08:52	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:11	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:23	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:29	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:40	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:50	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:54	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	09:59	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	10:34	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	10:35	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	10:36	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	1145	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	11:35	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	11:50	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	12:19	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	12:32	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	12:48	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	1329	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	13:09	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	13:29	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	13:39	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	13:54	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	14:09	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	14:40	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	1532	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	1545	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	15:11	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	15:17	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	15:29	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	15:50	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	15:54	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	16:01	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	17:01	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	17:32	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	18:06	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	18:21	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	19:11	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	19:16	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	19:36	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	19:59	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	20:01	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	20:19	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	20:36	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	20:40	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	21:29	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	22:09	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	845	177	slot has 177 values in ontology.json	0	0		0					
+train	leaveat	after lunch	177	slot has 177 values in ontology.json	0	0		0					

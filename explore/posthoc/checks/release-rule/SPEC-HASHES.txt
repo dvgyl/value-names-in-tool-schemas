@@ -1,0 +1,8 @@
+# SHA-256 of each spec, recorded before its analysis ran (date -u: Sun Nov 15 22:55:16 UTC 2026)
+a540581d41001d8c34f667389514e7440c0e51efcd7105459f870d00e5203a3b  SPEC-T1-rule-comparison.md
+e3c9eea78efcbbf8c8298696253a4f711f0d82c4e160f016bcd1e7e1407ca320  SPEC-T2-sign-floor.md
+28f9aade07ef8f45e72f37191e6f9a917594dedd83c91de88bcee8f66cdadeb4  SPEC-T3-bootstrap-precision.md
+# Addendum (presentation only), recorded after the T3 output; date -u: Sun Nov 15 23:05:58 UTC 2026
+3ed4a3a8b9202e3f6e0a64ffd5db5c6ec44541d3b161f0f0a5a43b62f5fb690a  SPEC-T3-addendum-table-rows.md
+# Derived-check spec, recorded after the T1 output and before t1_derived.py ran; date -u: Sun Nov 15 23:36:39 UTC 2026
+22e12208b80f1c1b62e46c676423fadb6e0ee4c206465b6cbea4f4fe9c97899f  SPEC-T1b-derived-checks.md

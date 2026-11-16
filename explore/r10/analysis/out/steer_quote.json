@@ -1,0 +1,1135 @@
+{
+ "note": "post hoc; word check not checked by a person",
+ "agents": {
+  "sonnet": {
+   "switchers": 53,
+   "with_text": 25,
+   "reason_word": 25,
+   "rows": [
+    {
+     "dialogue": "MUL0022.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "The Oak Bistro for 5 people on Sunday at 16:45.  Also I am looking for a 3 star hotel in the expensive price range with free parking."
+    },
+    {
+     "dialogue": "MUL0079.json",
+     "text": "The traveller asked for a hotel, so I'll set type to hotel. They want parking and wifi, and \"close to local restaurants\" doesn't map to a specific area, so area stays null.",
+     "reason_word": true,
+     "traveller": "I need to find a hotel with free parking and wifi that is close to local restaurants."
+    },
+    {
+     "dialogue": "MUL0176.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need a hotel for 2 people on 4 nights starting on Friday"
+    },
+    {
+     "dialogue": "MUL0606.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Yes, can you also help me find a hotel that has free parking and is expensive?"
+    },
+    {
+     "dialogue": "MUL0688.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Great. I'm also looking for a 3 star hotel with free parking."
+    },
+    {
+     "dialogue": "MUL0770.json",
+     "text": "Traveller said \"hotel\" in the response (\"moderate priced hotel\"), which accepts the assistant's mention of hotels. The traveller didn't explicitly request hotel type initially, but they did say \"I would like a moderate priced hotel please,\" which states a hotel preference.",
+     "reason_word": true,
+     "traveller": "I would like a moderate priced hotel please."
+    },
+    {
+     "dialogue": "MUL1043.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "That is great can you also find me a hotel with a 0 star in the same area as the theatre"
+    },
+    {
+     "dialogue": "MUL1080.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thank you. Can you help me in finding a hotel in the centre of town?"
+    },
+    {
+     "dialogue": "MUL1105.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Can you give me some information on the Allenbell? It's a hotel."
+    },
+    {
+     "dialogue": "MUL1142.json",
+     "text": "The traveller said \"hotel\", so the type is an explicit requirement, and the area is west.",
+     "reason_word": true,
+     "traveller": "Hi! Can you help me find a hotel somewhere on the west side of town please?"
+    },
+    {
+     "dialogue": "MUL1143.json",
+     "text": "The traveller asked for a hotel, so type is [\"hotel\"]. Price is cheap and stars is 4. Area was only mentioned for attractions, so it is null. Parking and internet were never mentioned.",
+     "reason_word": true,
+     "traveller": "Great. I'm going to need a hotel too. It needs to be cheap but have a 4 star rating."
+    },
+    {
+     "dialogue": "MUL1172.json",
+     "text": "The traveller asked for a hotel, so I'll search with type hotel, free wifi, and parking as \"any\".",
+     "reason_word": true,
+     "traveller": "Yes, I would like to book a hotel that has free wifi. Parking doesn't matter."
+    },
+    {
+     "dialogue": "MUL1334.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am also looking for a hotel. I would like it to be expensive and in the same area as the restaurant."
+    },
+    {
+     "dialogue": "MUL1374.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need to find a 4 star hotel in the north"
+    },
+    {
+     "dialogue": "MUL2554.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Sweet! Can I also get some information on hotels?"
+    },
+    {
+     "dialogue": "MUL2555.json",
+     "text": "I'm inferring that \"near downtown\" means the centre area. The traveller then asked for a hotel in the same area as a swimming pool, but they never named a pool's location, so I'm keeping the centre area. Type is now explicitly \"hotel\".",
+     "reason_word": true,
+     "traveller": "Actually, I think that what I really want is a hotel that is in the same area as a swimming pool.  Are there any public swimming pools in town?"
+    },
+    {
+     "dialogue": "PMUL0018.json",
+     "text": "Traveller said \"hotel room\", which I'll treat as a stated preference for hotels.",
+     "reason_word": true,
+     "traveller": "I need a hotel room.  Are there any left?"
+    },
+    {
+     "dialogue": "PMUL0277.json",
+     "text": "The traveller said \"hotels\" in their follow-up, so I'll treat the type as hotel. They said they don't need internet, which I'm reading as \"any\" rather than \"no\".",
+     "reason_word": true,
+     "traveller": "So, you are saying there are no cheap hotels in all of Cambridge?  Can you maybe look one more time?  Thanks!"
+    },
+    {
+     "dialogue": "PMUL0300.json",
+     "text": "The traveller asked for a hotel, so I'll search with type \"hotel\".",
+     "reason_word": true,
+     "traveller": "Would alike a hotel in the East with free WiFi and free parking that is a 3 star."
+    },
+    {
+     "dialogue": "PMUL0338.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Can you also help me find a hotel?"
+    },
+    {
+     "dialogue": "PMUL0364.json",
+     "text": "The traveller asked for a \"hotel\" in the centre with free wifi, so I'll set the type to hotel as stated.",
+     "reason_word": true,
+     "traveller": "Yes. I would like a hotel in the centre that has free wifi."
+    },
+    {
+     "dialogue": "PMUL0388.json",
+     "text": "Traveller asked for a 5 star hotel; the type is stated as hotel. Area and price were for the restaurant, not the hotel.",
+     "reason_word": true,
+     "traveller": "Thank you!  I am also looking for a 5 star hotel."
+    },
+    {
+     "dialogue": "PMUL0424.json",
+     "text": "The traveller asked for a \"condo style hotel\", which I treated as a hotel request.",
+     "reason_word": true,
+     "traveller": "I need to find a moderately priced condo style hotel in Cambridge that includes free parking."
+    },
+    {
+     "dialogue": "PMUL0428.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi. I'm looking for a particular hotel if you could help me with that?"
+    },
+    {
+     "dialogue": "PMUL0429.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Yes, I also need to find a cheap hotel."
+    },
+    {
+     "dialogue": "PMUL1523.json",
+     "text": "The traveller said \"hotel\" explicitly, so I'll search for hotels with free wifi, free parking, and 4 stars.",
+     "reason_word": true,
+     "traveller": "i am also looking for a place to stay. The hotel should include free wifi and should include free parking."
+    },
+    {
+     "dialogue": "PMUL1555.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like a 4 star hotel in the moderate price range that includes free parking."
+    },
+    {
+     "dialogue": "PMUL1662.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for a particular hotel."
+    },
+    {
+     "dialogue": "PMUL1669.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm also looking for a recommendation on a hotel with free parking in the north."
+    },
+    {
+     "dialogue": "PMUL1691.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need some information on a hotel, can you help with that?"
+    },
+    {
+     "dialogue": "PMUL1745.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "How about a 4 star hotel?"
+    },
+    {
+     "dialogue": "PMUL1749.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm sorry I don't need a restaurant, I need to find a hotel that has 2 stars."
+    },
+    {
+     "dialogue": "PMUL1838.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "The price range is on the expensive side and I would like if they provide free wifi and parking. I want the hotel to be located on the north side."
+    },
+    {
+     "dialogue": "PMUL1868.json",
+     "text": "The traveller said \"hotel\", so type is hotel.",
+     "reason_word": true,
+     "traveller": "Can you help me find a hotel to stay at with a 4 star rating but also in the cheaper price range? Thanks."
+    },
+    {
+     "dialogue": "PMUL1870.json",
+     "text": "Name given: \"leverton house\". The traveller said it's a hotel, so type is stated as hotel.",
+     "reason_word": true,
+     "traveller": "I need directions to leverton house, a hotel in Cambridge, can you help me?"
+    },
+    {
+     "dialogue": "PMUL1885.json",
+     "text": "The traveller said \"hotel\" but did not state a type explicitly beyond that, so I'll use hotel as the type.",
+     "reason_word": true,
+     "traveller": "Yes, please. I'm also looking for a hotel that's cheap and in the north."
+    },
+    {
+     "dialogue": "PMUL2592.json",
+     "text": "The traveller asked about hotels in general, so I'm treating the type as hotel and leaving every other field unset.",
+     "reason_word": true,
+     "traveller": "Do you know much about hotels?"
+    },
+    {
+     "dialogue": "PMUL2624.json",
+     "text": "The traveller asked for a hotel, so type is [\"hotel\"].",
+     "reason_word": true,
+     "traveller": "I would like to book a hotel."
+    },
+    {
+     "dialogue": "PMUL2626.json",
+     "text": "The traveller said \"hotel\", so type is hotel; area north; pricerange moderate.",
+     "reason_word": true,
+     "traveller": "Yes please.  I am looking for a hotel in the north side of town in the moderate price range as well.  Any suggestions?"
+    },
+    {
+     "dialogue": "PMUL2761.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Can I get the address for Milton County Park and the entrance fee? I would also like to look for a cheap hotel in the centre with free wifi."
+    },
+    {
+     "dialogue": "PMUL2794.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thank you. I'd also like some hotel information."
+    },
+    {
+     "dialogue": "PMUL2838.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thank you. I also need a hotel in the same area as the Cambridge Punter."
+    },
+    {
+     "dialogue": "PMUL2871.json",
+     "text": "The traveller said \"hotel\", so type is a hotel. The area, price, stars, parking and internet are not mentioned.",
+     "reason_word": true,
+     "traveller": "I need a hotel the next town over."
+    },
+    {
+     "dialogue": "PMUL2957.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for a specific hotel."
+    },
+    {
+     "dialogue": "PMUL2976.json",
+     "text": "The traveller wants a hotel in the same area as the attraction (centre), with 0 stars, and explicitly asked for a hotel.",
+     "reason_word": true,
+     "traveller": "No I also need to find a hotel in the same area as my attraction and have a rating of only 0."
+    },
+    {
+     "dialogue": "PMUL2994.json",
+     "text": "The traveller now asks for other hotels, so I'll search without restricting the type to guesthouses.",
+     "reason_word": true,
+     "traveller": "Do you know any other hotels that fit my criteria which you could contact at the moment?"
+    },
+    {
+     "dialogue": "PMUL3633.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thanks. I also need a hotel in the south."
+    },
+    {
+     "dialogue": "PMUL3745.json",
+     "text": "The traveller said \"hotel\", so I'll search with type hotel.",
+     "reason_word": true,
+     "traveller": "Can you help me find a hotel to stay at with a 4 star rating but also in the cheaper price range? Thanks."
+    },
+    {
+     "dialogue": "PMUL4385.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thanks. I'm also looking for information on moderately priced hotels with free wifi."
+    },
+    {
+     "dialogue": "PMUL4406.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "i'm looking  for a particular hotel"
+    },
+    {
+     "dialogue": "PMUL4475.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "So I'm planning a trip and I need some information about where to stay in the North. I prefer hotels with free parking"
+    },
+    {
+     "dialogue": "PMUL4584.json",
+     "text": "The traveller said \"hotel\", so the type is hotel, not guesthouse.",
+     "reason_word": true,
+     "traveller": "I'm planning a trip to Cambridge and I would like to find a hotel on the East side that offers free parking"
+    },
+    {
+     "dialogue": "PMUL4746.json",
+     "text": "Traveller wants an expensive hotel with free wifi. Type: the traveller said \"hotel\", so use [\"hotel\"].",
+     "reason_word": true,
+     "traveller": "Thank you so much. Can you also find me an expensive hotel with free wifi?"
+    }
+   ]
+  },
+  "haiku": {
+   "switchers": 133,
+   "with_text": 63,
+   "reason_word": 60,
+   "rows": [
+    {
+     "dialogue": "MUL0008.json",
+     "text": "Traveller wants a hotel (they said \"the hotel should include free wifi\"), no stated area or price range, no star preference stated, no parking requirement (\"doesn't need to have free parking\" means parking not required, so \"any\"? It says it doesn't need parking, so parking is \"any\"). Type: they said \"hotel\", so use hotel.",
+     "reason_word": true,
+     "traveller": "The hotel should include free wifi and doesn't need to have free parking."
+    },
+    {
+     "dialogue": "MUL0022.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "The Oak Bistro for 5 people on Sunday at 16:45.  Also I am looking for a 3 star hotel in the expensive price range with free parking."
+    },
+    {
+     "dialogue": "MUL0038.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi, I am  looking for a cheap 4-star hotel near local restaurants."
+    },
+    {
+     "dialogue": "MUL0053.json",
+     "text": "I'm not searching again here: the traveller's last question is about the distance between the restaurant and the hotel, which doesn't require a new accommodation search, and the instructions say to make one search_hotels call only when searching for hotels that meet the requirements. Since the current request is for a distance question and the accommodation requirements are already settled (4 stars, free wifi, free parking, any area, any price, hotel type not restricted to guesthouses), I'll run the search to reflect those requirements.",
+     "reason_word": false,
+     "traveller": "Thank you. How far away is the Restaurant from the hotel?"
+    },
+    {
+     "dialogue": "MUL0085.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Yes, I am also looking for a place to stay. I would like a 4 star hotel in the west part of town, please."
+    },
+    {
+     "dialogue": "MUL0091.json",
+     "text": "The traveller wants a hotel in the same area (centre) and price range as the restaurant (expensive). They said \"hotel\", so type is hotel.",
+     "reason_word": true,
+     "traveller": "I also need a hotel in the same area and price range as the restaurant."
+    },
+    {
+     "dialogue": "MUL0094.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "That sounds good. May I have their telephone number? Also could you help me finding a 4 star hotel in the same area?"
+    },
+    {
+     "dialogue": "MUL0120.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Yes, I also need a restaurant with Turkish food near the hotel in the centre area please."
+    },
+    {
+     "dialogue": "MUL0134.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for information on the hamilton lodge hotel."
+    },
+    {
+     "dialogue": "MUL0137.json",
+     "text": "The traveller asks for a hotel specifically, so type is [\"hotel\"]. \"Very nice\" and money not an issue suggests expensive, and stars might be high, but the traveller did not state a star rating, so stars stays null. Area is west, price expensive, no name, no parking or internet requirements stated.",
+     "reason_word": true,
+     "traveller": "Can you find me a very nice hotel in the west? Money is not an issue."
+    },
+    {
+     "dialogue": "MUL0146.json",
+     "text": "Traveller wants budget (cheap), free parking yes, type not stated so guesthouse first. Hotels explicitly requested? They said \"budget hotel\" \u2014 that's a stated hotel preference, so type should be [\"hotel\"].",
+     "reason_word": true,
+     "traveller": "Find a budget hotel with free parking in Cambridge."
+    },
+    {
+     "dialogue": "MUL0163.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Great I am also looking for a hotel with a 2 star rating that has free parking."
+    },
+    {
+     "dialogue": "MUL0170.json",
+     "text": "Traveller asked for centrally located hotels with free parking. Type: hotel explicitly. Price, stars, internet not stated.",
+     "reason_word": true,
+     "traveller": "Hello, are there any centrally located hotels in Cambridge with free parking?"
+    },
+    {
+     "dialogue": "MUL0176.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need a hotel for 2 people on 4 nights starting on Friday"
+    },
+    {
+     "dialogue": "MUL0188.json",
+     "text": "Reviewing the requirements: the traveller wants an expensive place in the west, and the Huntingdon Marriott Hotel was discussed. They named a specific hotel (the Huntingdon Marriott Hotel) and want to book it, so the name is set. The traveller said they don't really need internet, so internet is \"any\". They want parking (since it \"sounds like everything else I want\", which included free parking). Type is hotel since they're booking the Marriott.",
+     "reason_word": true,
+     "traveller": "Actually, I would like to book the hotel for 6 people for 4 nights starting on Sunday."
+    },
+    {
+     "dialogue": "MUL0670.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi I am looking for a hotel called limehouse."
+    },
+    {
+     "dialogue": "MUL0688.json",
+     "text": "Traveller wants a 3-star hotel with free parking. No type stated for accommodation beyond \"hotel\" implied by \"3 star hotel\" \u2014 the traveller explicitly said hotel, so type is [\"hotel\"]. No area, price, or internet preference stated.",
+     "reason_word": true,
+     "traveller": "Great. I'm also looking for a 3 star hotel with free parking."
+    },
+    {
+     "dialogue": "MUL0700.json",
+     "text": "Traveller wants a hotel (explicitly), moderate price, free wifi. Area, stars, parking not stated \u2192 null.",
+     "reason_word": true,
+     "traveller": "I am looking for a moderately priced hotel that has free wifi."
+    },
+    {
+     "dialogue": "MUL0701.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for a hotel called Hobsons House."
+    },
+    {
+     "dialogue": "MUL0741.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for a cheap hotel with free parking."
+    },
+    {
+     "dialogue": "MUL0755.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "No need to book the train yet, thanks.  I'd like a hotel in the south with free wifi."
+    },
+    {
+     "dialogue": "MUL0767.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like a 2 star hotel."
+    },
+    {
+     "dialogue": "MUL0776.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a 3 star hotel in the north area."
+    },
+    {
+     "dialogue": "MUL1012.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a hotel named Express by Holiday Inn Cambridge. Do you have any information on that?"
+    },
+    {
+     "dialogue": "MUL1014.json",
+     "text": "The traveller wants a hotel, north side, no parking needed. Other requirements not stated, so null.",
+     "reason_word": true,
+     "traveller": "Yes I am looking for a hotel on the North side of town. I am not needing parking."
+    },
+    {
+     "dialogue": "MUL1043.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "That is great can you also find me a hotel with a 0 star in the same area as the theatre"
+    },
+    {
+     "dialogue": "MUL1075.json",
+     "text": "Traveller wants a hotel, expensive, internet not necessary (so \"any\"). No area, stars, or parking stated, so null. Type: hotel explicitly requested.",
+     "reason_word": true,
+     "traveller": "I'm looking for a hotel in the expensive price range. Internet is not necessary."
+    },
+    {
+     "dialogue": "MUL1085.json",
+     "text": "Traveller wants a hotel with free wifi. Type explicitly \"hotel\", internet yes. Other fields not stated: null.",
+     "reason_word": true,
+     "traveller": "I am looking for a hotel with free wifi."
+    },
+    {
+     "dialogue": "MUL1087.json",
+     "text": "The traveller wants an expensive hotel in the South area, no internet needed. They did not mention parking or stars, so those are null. Area was not stated for the hotel specifically; the earlier conversation was about the South part of town for attractions, but the traveller did not state the hotel area, so I'll leave it null.",
+     "reason_word": true,
+     "traveller": "Thank you. I am also looking for a nice expensive hotel. It does not need internet. Can you help with that?"
+    },
+    {
+     "dialogue": "MUL1120.json",
+     "text": "No call needed for that question; I'm only making the database search. Based on the conversation, the traveller's final requirements are: expensive price range, free parking, western area, and hotel (they accepted the Huntingdown Marriott, a hotel). They did not state a star rating preference beyond accepting 4 stars from the assistant's offer, so stars stay null.",
+     "reason_word": false,
+     "traveller": "Are there anythings to do in the area around the hotel?"
+    },
+    {
+     "dialogue": "MUL1127.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm also looking for a hotel. I want a place with a 3 star rating and free wifi."
+    },
+    {
+     "dialogue": "MUL1136.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "i need a moderately priced hotel in south cambridge."
+    },
+    {
+     "dialogue": "MUL1143.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Great. I'm going to need a hotel too. It needs to be cheap but have a 4 star rating."
+    },
+    {
+     "dialogue": "MUL1150.json",
+     "text": "The traveller explicitly asked for a hotel, so type is [\"hotel\"]. Stars: 4. Area: east. Other requirements not mentioned: null.",
+     "reason_word": true,
+     "traveller": "I need a hotel that is 4 stars on the east side of town."
+    },
+    {
+     "dialogue": "MUL1179.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi, can you help me find a 2 star hotel that has free wifi?"
+    },
+    {
+     "dialogue": "MUL1199.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi, I'm looking for upscale hotels in the north part of Cambridge. Are there any that also include free parking?"
+    },
+    {
+     "dialogue": "MUL1219.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Can you tell me some info on the Avalon hotel?"
+    },
+    {
+     "dialogue": "MUL1296.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Are you sure you can't find me a hotel in the centre area, 4 stars, free wifi with availability for 2 people for three nights starting on monday?"
+    },
+    {
+     "dialogue": "MUL1334.json",
+     "text": "Searching for expensive hotels in the west, since the traveller wants the same area as the restaurant and has stated no type preference beyond \"hotel\" wording... They said \"a hotel\", so the type should be hotel.",
+     "reason_word": true,
+     "traveller": "I am also looking for a hotel. I would like it to be expensive and in the same area as the restaurant."
+    },
+    {
+     "dialogue": "MUL1364.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi, I'd like a 3 star hotel please. And also internet!"
+    },
+    {
+     "dialogue": "MUL1366.json",
+     "text": "Traveller wants a hotel (explicitly), free wifi, no need for parking (does not matter, so \"any\"). No area, price, or star preferences stated, so null.",
+     "reason_word": true,
+     "traveller": "I need a hotel with free wifi but I don't need free parking."
+    },
+    {
+     "dialogue": "MUL1374.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need to find a 4 star hotel in the north"
+    },
+    {
+     "dialogue": "MUL2102.json",
+     "text": "Traveller wants a place in the north, free wifi, 4 stars. Type not stated, so start with guesthouse per instructions? But traveller stated stars 4, and guesthouses typically have no stars... The instructions say search guesthouses first when type not stated, and never replace a stated preference for hotels. The traveller said \"the hotel should have a star of 4\", which refers to a hotel. Hmm\u2014\"Never replace a stated preference for hotels\" applies when they explicitly ask for hotels; here they say \"hotel\", which is a fairly explicit mention. I'll use hotel.\n\nPrice range not stated: null. Parking not stated: null.",
+     "reason_word": true,
+     "traveller": "Yes, I would like free wifi and the hotel should have a star of 4."
+    },
+    {
+     "dialogue": "MUL2131.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I also need to book a hotel as well, called the Lensfield hotel."
+    },
+    {
+     "dialogue": "MUL2134.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'd like some information on the Hamilton Lodge hotel, please."
+    },
+    {
+     "dialogue": "MUL2189.json",
+     "text": "Traveller wants moderately priced hotels with free parking. Type is explicitly hotel. No area, stars, or internet stated.",
+     "reason_word": true,
+     "traveller": "Are there any moderately priced hotels that have free parking, or do they all charge extra for that?"
+    },
+    {
+     "dialogue": "MUL2237.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Does the Lensfield Hotel include parking?"
+    },
+    {
+     "dialogue": "MUL2502.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for an expensive hotel and have no preference about location."
+    },
+    {
+     "dialogue": "MUL2561.json",
+     "text": "The traveller asked for a hotel specifically, so type is [\"hotel\"]. They need free parking and free wifi. No area, price, or star preference was stated.",
+     "reason_word": true,
+     "traveller": "I am looking for a hotel in cambridge that includes free parking and wifi can you help?"
+    },
+    {
+     "dialogue": "MUL2599.json",
+     "text": "The traveller explicitly wants a hotel, so type is [\"hotel\"]. Area is centre, parking yes, and other fields are not stated.",
+     "reason_word": true,
+     "traveller": "I want a hotel with free parking in the center of town."
+    },
+    {
+     "dialogue": "MUL2611.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Book the gonville hotel for 3 people and 3 nights starting Tuesday. May I have the reference number too?"
+    },
+    {
+     "dialogue": "PMUL0035.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like the Cow Pizza Kitchen for 4 people at 13:15 on Saturday. I need a cheap hotel in center too."
+    },
+    {
+     "dialogue": "PMUL0049.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am interested in finding the Lensfield Hotel."
+    },
+    {
+     "dialogue": "PMUL0063.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a hotel called avalon."
+    },
+    {
+     "dialogue": "PMUL0099.json",
+     "text": "Traveller wants a hotel (explicitly), north area, free parking. No price range or star rating stated for the hotel; the expensive restaurant preference was for a restaurant, not the hotel, so pricerange stays null. Internet not mentioned: null.",
+     "reason_word": true,
+     "traveller": "I am looking for a hotel in the same area that has free parking."
+    },
+    {
+     "dialogue": "PMUL0123.json",
+     "text": "The traveller wants a hotel (explicitly stated) in the south, no preference on price, stars not stated, parking and internet not required (any).",
+     "reason_word": true,
+     "traveller": "I'd like a hotel in the south to stay at. It doesn't need to include internet, nor no need to have free parking. Closer to the restaurant would be preferred."
+    },
+    {
+     "dialogue": "PMUL0160.json",
+     "text": "Traveller wants a 2-star hotel with free wifi. No area, price range, or parking stated. Type is explicitly hotel.",
+     "reason_word": true,
+     "traveller": "I am looking for a 2 star hotel with free wifi."
+    },
+    {
+     "dialogue": "PMUL0169.json",
+     "text": "The traveller explicitly asked for a hotel, so type is [\"hotel\"]. Stars: 4. Parking: yes. Other fields not mentioned: null.",
+     "reason_word": true,
+     "traveller": "Please find me a hotel in cambridge with 4 star rating and free parking."
+    },
+    {
+     "dialogue": "PMUL0170.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like a 3-star hotel with free WiFi, please."
+    },
+    {
+     "dialogue": "PMUL0186.json",
+     "text": "The traveller now wants a hotel in the west area with free wifi. They did not state a price range, star rating, or parking requirement, so those are null. They said \"a hotel,\" so type is hotel.",
+     "reason_word": true,
+     "traveller": "I am also looking for a hotel in the same area that offers free wifi."
+    },
+    {
+     "dialogue": "PMUL0211.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thanks! I'm also looking to stay at a hotel called Lovell Lodge, can you help me with that?"
+    },
+    {
+     "dialogue": "PMUL0234.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi, I am looking for a 4 star hotel to stay at.  Free parking is not necessary."
+    },
+    {
+     "dialogue": "PMUL0246.json",
+     "text": "The traveller wants a place to stay: expensive, free wifi, 4-star, free parking, any area, and hotel type was not stated explicitly but they said \"hotel\" implicitly by asking for a 4-star hotel. Since they specified a hotel, use type hotel.",
+     "reason_word": true,
+     "traveller": "I'm not really set on an area, however, please make sure that they are a 4 star hotel with free parking."
+    },
+    {
+     "dialogue": "PMUL0291.json",
+     "text": "Searching again for a moderately priced 4-star hotel with free parking and internet, with no area preference stated.",
+     "reason_word": true,
+     "traveller": "Surely there's got to be a moderately priced 4 star hotel in the Cambridge area that offers free parking and internet. Can you please check again?"
+    },
+    {
+     "dialogue": "PMUL0300.json",
+     "text": "Traveller wants a hotel (explicitly \"hotel\"), East area, free WiFi (internet yes), free parking (yes), 3 stars. Price range not stated, so null.",
+     "reason_word": true,
+     "traveller": "Would alike a hotel in the East with free WiFi and free parking that is a 3 star."
+    },
+    {
+     "dialogue": "PMUL0304.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am also looking for a Hotel by the name of Allenbell."
+    },
+    {
+     "dialogue": "PMUL0362.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a hotel called kirkwood house"
+    },
+    {
+     "dialogue": "PMUL0364.json",
+     "text": "Traveller wants a hotel in the centre with free wifi. They didn't state price, stars, or parking requirements, so those are null. The type is explicitly \"hotel\".",
+     "reason_word": true,
+     "traveller": "Yes. I would like a hotel in the centre that has free wifi."
+    },
+    {
+     "dialogue": "PMUL0370.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm sorry, I was just told I should go ahead and make the reservation. Do you have a hotel that has the same 4 star rating but in the north?"
+    },
+    {
+     "dialogue": "PMUL0388.json",
+     "text": "The traveller now wants a 5-star hotel. They did not state an area or price for the hotel, and they did not say they need parking or internet, so those are null. Type is hotel since they said \"hotel\" and asked for a 5-star one.",
+     "reason_word": true,
+     "traveller": "Thank you!  I am also looking for a 5 star hotel."
+    },
+    {
+     "dialogue": "PMUL0392.json",
+     "text": "Looking at the final requirements: the traveller wants University Arms Hotel, in the centre, expensive, with free wifi and parking. They named the hotel explicitly, so the name is set. Stars: they accepted 4 stars from the assistant's offer only indirectly, so I leave stars null. Type: the traveller named a hotel, so type is hotel.",
+     "reason_word": true,
+     "traveller": "I will take the University Arms Hotel, please. I would like it booked for 4 nights on Friday. There are 5 people in my group."
+    },
+    {
+     "dialogue": "PMUL0424.json",
+     "text": "The traveller wants a moderately priced hotel with free parking. They said \"condo style hotel,\" which doesn't map to guesthouse; they asked for a hotel-type property, so type should be [\"hotel\"]. Area, stars, and internet were not stated.",
+     "reason_word": true,
+     "traveller": "I need to find a moderately priced condo style hotel in Cambridge that includes free parking."
+    },
+    {
+     "dialogue": "PMUL0429.json",
+     "text": "The traveller now wants a cheap hotel. No area, stars, parking, or internet requirements were stated for this hotel search, and the traveller said \"hotel\", so type is hotel.",
+     "reason_word": true,
+     "traveller": "Yes, I also need to find a cheap hotel."
+    },
+    {
+     "dialogue": "PMUL0439.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "If it could be a 4 star hotel with free wifi, that would be perfect."
+    },
+    {
+     "dialogue": "PMUL0479.json",
+     "text": "The traveller's latest request is for a taxi, which isn't something the search_hotels tool can handle. However, the instructions say to call search_hotels once for the hotel requirements. Based on the conversation, the traveller's final hotel requirements are: any area, expensive price range, 4 stars, free parking, free internet, and they accepted the Huntingdon Marriott (named by the assistant, but the traveller said \"sounds great\" and then booked it, so the name is accepted as a hotel choice). The traveller did not ask for one hotel by name originally, so name is null.",
+     "reason_word": true,
+     "traveller": "I need a taxi from the hotel to the restaurant by 14:15. Please provide the car type and contact number"
+    },
+    {
+     "dialogue": "PMUL0482.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a hotel called home from home."
+    },
+    {
+     "dialogue": "PMUL1523.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "i am also looking for a place to stay. The hotel should include free wifi and should include free parking."
+    },
+    {
+     "dialogue": "PMUL1539.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "That doesn't matter. I would like a 4 star hotel though, please."
+    },
+    {
+     "dialogue": "PMUL1555.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like a 4 star hotel in the moderate price range that includes free parking."
+    },
+    {
+     "dialogue": "PMUL1597.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "That doesn't matter as long as the hotel is expensive."
+    },
+    {
+     "dialogue": "PMUL1622.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a 4 star hotel in the north."
+    },
+    {
+     "dialogue": "PMUL1628.json",
+     "text": "Traveller wants Ashley Hotel, north area, 2 stars. Type: they named a hotel, so type should be hotel. Name is specified as the hotel name since they asked for one hotel by name. Price and parking/internet not stated.",
+     "reason_word": true,
+     "traveller": "Bood ashley hotel for 2 people and 3 nights starting from Thursday.  What is the reference number please?"
+    },
+    {
+     "dialogue": "PMUL1652.json",
+     "text": "Traveller explicitly asked for a hotel, so type is [\"hotel\"]. Area centre, internet yes. Other requirements not stated: pricerange null, stars null, parking null, name null.",
+     "reason_word": true,
+     "traveller": "I'm looking for a hotel in the centre that has free wifi."
+    },
+    {
+     "dialogue": "PMUL1737.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "No but I do need help finding a particular hotel called the Gonville HOtel."
+    },
+    {
+     "dialogue": "PMUL1745.json",
+     "text": "Searching for a 4-star hotel with free parking and free wifi, in any area, with no price preference stated.",
+     "reason_word": true,
+     "traveller": "How about a 4 star hotel?"
+    },
+    {
+     "dialogue": "PMUL1749.json",
+     "text": "The traveller wants a 2-star hotel. They didn't state area, price, type (they said \"hotel\"), parking, or internet preferences.",
+     "reason_word": true,
+     "traveller": "I'm sorry I don't need a restaurant, I need to find a hotel that has 2 stars."
+    },
+    {
+     "dialogue": "PMUL1752.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like to find a moderately priced hotel in the center with free parking and wifi."
+    },
+    {
+     "dialogue": "PMUL1870.json",
+     "text": "The traveller asks for directions to a named hotel, Leverton House. Per instructions, I must call search_hotels once with the name set, and other fields null since no requirements were stated.",
+     "reason_word": true,
+     "traveller": "I need directions to leverton house, a hotel in Cambridge, can you help me?"
+    },
+    {
+     "dialogue": "PMUL1885.json",
+     "text": "Based on the conversation, the traveller now wants a cheap hotel in the north of Cambridge. They did not state a type explicitly beyond \"hotel\", so type is hotel. No stars, parking, or internet requirements were stated, so those are null.",
+     "reason_word": true,
+     "traveller": "Yes, please. I'm also looking for a hotel that's cheap and in the north."
+    },
+    {
+     "dialogue": "PMUL1933.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like to find an expensive hotel to stay at that also has free wifi. Can you help?"
+    },
+    {
+     "dialogue": "PMUL1979.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need a 4 star hotel in the east, please."
+    },
+    {
+     "dialogue": "PMUL2531.json",
+     "text": "Searching for a moderately priced hotel in the centre with free internet and free parking. The traveller explicitly asked for a hotel, so type is hotel.",
+     "reason_word": true,
+     "traveller": "Can you recommend a moderately priced hotel in the centre, that has free internet and free parking?"
+    },
+    {
+     "dialogue": "PMUL2551.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Okay, book the Gonville Hotel for 4 nights starting with Sunday. There will be 7 guests."
+    },
+    {
+     "dialogue": "PMUL2626.json",
+     "text": "The traveller explicitly asks for a hotel in the north, moderate price range. No name, no stars or parking/internet stated.",
+     "reason_word": true,
+     "traveller": "Yes please.  I am looking for a hotel in the north side of town in the moderate price range as well.  Any suggestions?"
+    },
+    {
+     "dialogue": "PMUL2650.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I don't know what area it is in, but I was hoping you could make a reservation for me at the Lensfield Hotel."
+    },
+    {
+     "dialogue": "PMUL2653.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Yes, can you get me information about Huntingdon Marriott Hotel?"
+    },
+    {
+     "dialogue": "PMUL2664.json",
+     "text": "Traveller wants a 3-star lodging with free parking, near the centre, and is open to the Gonville Hotel (price not an issue). Type: the traveller asked for lodgings but the Gonville Hotel is a hotel; they accepted it, so hotel type fits. Area: centre. Internet not mentioned, so null.",
+     "reason_word": true,
+     "traveller": "The Gonville Hotel sounds good. As long as it is close to the attraction."
+    },
+    {
+     "dialogue": "PMUL2681.json",
+     "text": "Traveller wants: area centre, moderate price, 0 stars, hotel type (explicitly stated), free parking yes, internet not mentioned so null.",
+     "reason_word": true,
+     "traveller": "I want to stay in the center of town in a 0 star hotel that is moderately priced and has free parking."
+    },
+    {
+     "dialogue": "PMUL2694.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking to stay at the Lovell Lodge hotel and to see the areas local attractions."
+    },
+    {
+     "dialogue": "PMUL2749.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a hotel called the Leverton house. Can you help me find it?"
+    },
+    {
+     "dialogue": "PMUL2791.json",
+     "text": "Ashley Hotel is the final choice, and the traveller wants a moderate price, 2-star, north area. The traveller explicitly asked for a hotel by name, so I'll search by name.",
+     "reason_word": true,
+     "traveller": "Let's go with Ashley Hotel.  For 8 people and 2 nights starting from Saturday.  I need the reference number."
+    },
+    {
+     "dialogue": "PMUL2886.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I'm looking for a hotel called Cityroomz, do you know anything about that?"
+    },
+    {
+     "dialogue": "PMUL2888.json",
+     "text": "Traveller wants a moderate, 3-star hotel with free parking and free wifi. Area not stated, so null. Type: hotel explicitly stated.",
+     "reason_word": true,
+     "traveller": "I am looking for a moderate priced 3 star hotel with free parking and free WiFi."
+    },
+    {
+     "dialogue": "PMUL2964.json",
+     "text": "The traveller explicitly asked for a hotel called \"Home from Home\" by name, so I'll search by name with the other fields unspecified.",
+     "reason_word": true,
+     "traveller": "Thank you. I also need a hotel called home from home."
+    },
+    {
+     "dialogue": "PMUL2974.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Thanks.  I am also looking for a hotel in the north.  I want something with a 3 star rating.  Are there any available?"
+    },
+    {
+     "dialogue": "PMUL2982.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hi! What can you tell me about the Lensfield Hotel?"
+    },
+    {
+     "dialogue": "PMUL3026.json",
+     "text": "Searching for moderately priced hotels with free internet, since the traveller specifically asked for hotels.",
+     "reason_word": true,
+     "traveller": "Can you help me find a moderately priced hotels that has Wifi?"
+    },
+    {
+     "dialogue": "PMUL3053.json",
+     "text": "Searching for the University Arms Hotel, the traveller's final choice.",
+     "reason_word": false,
+     "traveller": "Allrighty, can I book a room for 3 people at the University Arms Hotel, for 4 nights starting on Saturday?"
+    },
+    {
+     "dialogue": "PMUL3118.json",
+     "text": "Traveller wants a hotel (explicitly), moderate price, free parking. No area, stars, or internet stated.",
+     "reason_word": true,
+     "traveller": "Is there any moderately priced hotel that offers free parking by any chance?"
+    },
+    {
+     "dialogue": "PMUL3157.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Hello, can you recommend a moderately-priced 4-star hotel, please?"
+    },
+    {
+     "dialogue": "PMUL3180.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need a moderately priced 4 star hotel."
+    },
+    {
+     "dialogue": "PMUL3198.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "i am looking for a hotel in Cambridge called the cambridge belfry"
+    },
+    {
+     "dialogue": "PMUL3216.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I need help finding a 4 star hotel"
+    },
+    {
+     "dialogue": "PMUL3255.json",
+     "text": "Searching for a moderately priced 4-star hotel in the north with free wifi. The traveller explicitly asked for a hotel, so type is hotel, and parking was not mentioned.",
+     "reason_word": true,
+     "traveller": "The hotel should be in the moderate price range and should have a star of 4."
+    },
+    {
+     "dialogue": "PMUL3339.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "i am looking for the gonville hotel"
+    },
+    {
+     "dialogue": "PMUL3581.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like to find an expensive hotel to stay at that also has free wifi. Can you help?"
+    },
+    {
+     "dialogue": "PMUL3609.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I am looking for a hotel called huntingdon marriott hotel."
+    },
+    {
+     "dialogue": "PMUL3633.json",
+     "text": "The traveller now wants a hotel in the south. They explicitly said hotel, so type is [\"hotel\"]. No price, stars, parking, or internet requirements were stated, so those are null.",
+     "reason_word": true,
+     "traveller": "Thanks. I also need a hotel in the south."
+    },
+    {
+     "dialogue": "PMUL3682.json",
+     "text": "The traveller asked for a specific hotel by name, Leverton House. I'll search for it by name, leaving other requirements unstated.",
+     "reason_word": true,
+     "traveller": "I need directions to leverton house, a hotel in Cambridge, can you help me?"
+    },
+    {
+     "dialogue": "PMUL3693.json",
+     "text": "Traveller now wants a hotel (not guesthouse) with 4 stars or more, East area, free parking, internet not needed, any price range.",
+     "reason_word": true,
+     "traveller": "Sorry, my wife just said that we won't stay in a hotel with any less than 4 stars, do you have something that meets that criteria?"
+    },
+    {
+     "dialogue": "PMUL3989.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I will bee a hotel called hobsons house."
+    },
+    {
+     "dialogue": "PMUL4016.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I would like information on the Gonville hotel."
+    },
+    {
+     "dialogue": "PMUL4116.json",
+     "text": "The traveller asks for a specific hotel named \"the allenbell\". The tool requires a search with name set and other fields null or as stated. The traveller didn't state area, price, stars, type preferences, parking, or internet for this hotel, so those are null. Type: the traveller named a hotel-like place but did not state type explicitly; they asked for \"a hotel called\" \u2014 they did say hotel, so type should be [\"hotel\"]? The instruction says never replace a stated preference for hotels, and the traveller said \"hotel\", so type is [\"hotel\"].",
+     "reason_word": true,
+     "traveller": "Yeah, I'm also looking for a hotel called the allenbell."
+    },
+    {
+     "dialogue": "PMUL4145.json",
+     "text": "Searching for 4-star, moderately priced hotels. The traveller has not stated an area, parking, or internet needs, and the type is \"hotel\" as they asked for hotels.",
+     "reason_word": true,
+     "traveller": "I'm also looking for a recommendation on 4 star, moderately priced hotels."
+    },
+    {
+     "dialogue": "PMUL4204.json",
+     "text": "The traveller asks for a hotel with a 2-star rating in the expensive price range. They did not state an area, parking, internet, or type preference beyond \"hotel\" being implied by their wording (\"hotel with a 2 star rating\"). The restaurant request is not a hotel requirement, and no hotel name was requested.",
+     "reason_word": true,
+     "traveller": "16:15 for 4 people, I am also needing a hotel with a 2 star rating and in the expensive price range."
+    },
+    {
+     "dialogue": "PMUL4297.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "I also need a hotel in moderate price range and star rating of 0."
+    },
+    {
+     "dialogue": "PMUL4340.json",
+     "text": "No requirements have been stated for the hotel beyond it being a hotel, so I'll search with no specific preferences except the type.",
+     "reason_word": true,
+     "traveller": "I also need a hotel."
+    },
+    {
+     "dialogue": "PMUL4376.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "Yes. I need a place to stay in the north, just a 0 star hotel is fine."
+    },
+    {
+     "dialogue": "PMUL4475.json",
+     "text": "",
+     "reason_word": false,
+     "traveller": "So I'm planning a trip and I need some information about where to stay in the North. I prefer hotels with free parking"
+    },
+    {
+     "dialogue": "PMUL4600.json",
+     "text": "Traveller wants a hotel with 4 stars and free parking. Type explicitly hotel. Area, price, internet not stated \u2192 null.",
+     "reason_word": true,
+     "traveller": "I need a place to stay, some hotel with 4 star rating and free parking."
+    },
+    {
+     "dialogue": "PMUL4617.json",
+     "text": "The traveller now only asks for a phone number for the Cambridge Belfry Hotel, which they already booked. They explicitly want a 4-star hotel with free wifi and parking in the west, and the booking has already been made. The task asks me to search once for accommodation matching their requirements, so I'll run that search.",
+     "reason_word": true,
+     "traveller": "Can you provide me with the telephone number to Cambridge Belfry Hotel in case i need to get further assistance on directions."
+    },
+    {
+     "dialogue": "PMUL4661.json",
+     "text": "Traveller wants east area, any price (expensive, moderate, cheap all acceptable \u2014 \"isn't an issue\" means any), 4 stars, no internet requirement stated explicitly (\"does not need to include internet\" \u2014 means internet not needed, so internet \"any\"). Type: traveller said \"hotel\" in the last message (\"the hotel should be four stars\"), so type is hotel. Parking not mentioned: null.",
+     "reason_word": true,
+     "traveller": "Price isn't an issue for me, but the hotel should be four stars"
+    },
+    {
+     "dialogue": "PMUL4746.json",
+     "text": "The traveller wants an expensive hotel with free wifi, in the centre (the area stated earlier in the conversation was the centre, but for hotels they haven't specified an area, so I'll use null). They said \"hotel\" explicitly, so type is hotel. Parking was not mentioned, so null. Stars not mentioned, so null.",
+     "reason_word": true,
+     "traveller": "Thank you so much. Can you also find me an expensive hotel with free wifi?"
+    }
+   ]
+  }
+ }
+}

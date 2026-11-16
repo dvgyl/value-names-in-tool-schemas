@@ -1,0 +1,11 @@
+{
+ "no_type_dialogues": 213,
+ "matched_booking": 128,
+ "booked_type": {
+  "guesthouse": 85,
+  "hotel": 43
+ },
+ "only_guesthouses_fit": 128,
+ "overlap": 79,
+ "briefs_name_a_venue": 113
+}

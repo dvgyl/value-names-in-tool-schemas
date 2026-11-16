@@ -1,0 +1,3566 @@
+{
+ "what": "rules.py and the frozen bootstrap on the stored comparisons of the paper (amendment R10-26)",
+ "checks_passed": 282,
+ "checks": 282,
+ "all_pass": true,
+ "tallies_29": {
+  "original 98.75": {
+   "flag": 2,
+   "hold": 25,
+   "pass": 2
+  },
+  "revised 98.75": {
+   "hold": 27,
+   "pass": 2
+  },
+  "final 99.5": {
+   "hold": 29
+  }
+ },
+ "check_list": [
+  {
+   "check": "R10-20 sol a open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-0.6696 [-2.4554, 0.8929] 3/6"
+  },
+  {
+   "check": "R10-20 sol a open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22120.7', '\u22122.5', '+0.9', 3, 6, '= 0.5078') vs {'change': '\u22120.7', 'lo': '\u22122.5', 'hi': '+0.9', 'up': 3, 'down': 6, 'p': '= 0.5078'}"
+  },
+  {
+   "check": "R10-20 sol a specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.0000 [-1.6949, 1.8644] 5/5"
+  },
+  {
+   "check": "R10-20 sol a specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.0', '\u22121.7', '+1.9', 5, 5, '= 1.0000') vs {'change': '+0.0', 'lo': '\u22121.7', 'hi': '+1.9', 'up': 5, 'down': 5, 'p': '= 1.0000'}"
+  },
+  {
+   "check": "R10-20 sol a: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "R10-20 sol a: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 sol a: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "pass/pass/pass vs pass/pass/pass"
+  },
+  {
+   "check": "R10-20 sol a: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 sol b open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-0.4464 [-2.4554, 1.3393] 5/7"
+  },
+  {
+   "check": "R10-20 sol b open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22120.4', '\u22122.5', '+1.3', 5, 7, '= 0.7744') vs {'change': '\u22120.4', 'lo': '\u22122.5', 'hi': '+1.3', 'up': 5, 'down': 7, 'p': '= 0.7744'}"
+  },
+  {
+   "check": "R10-20 sol b specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-0.1695 [-2.5424, 2.3729] 6/7"
+  },
+  {
+   "check": "R10-20 sol b specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22120.2', '\u22122.5', '+2.4', 6, 7, '= 1.0000') vs {'change': '\u22120.2', 'lo': '\u22122.5', 'hi': '+2.4', 'up': 6, 'down': 7, 'p': '= 1.0000'}"
+  },
+  {
+   "check": "R10-20 sol b: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "R10-20 sol b: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 sol b: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "pass/pass/pass vs pass/pass/pass"
+  },
+  {
+   "check": "R10-20 sol b: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 sol c open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-22.5446 [-27.9018, -17.8571] 0/101"
+  },
+  {
+   "check": "R10-20 sol c open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221222.5', '\u221227.9', '\u221217.9', 0, 101, '< 0.0001') vs {'change': '\u221222.5', 'lo': '\u221227.9', 'hi': '\u221217.9', 'up': 0, 'down': 101, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 sol c specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-62.0339 [-74.5763, -48.6441] 0/46"
+  },
+  {
+   "check": "R10-20 sol c specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221262.0', '\u221274.6', '\u221248.6', 0, 46, '< 0.0001') vs {'change': '\u221262.0', 'lo': '\u221274.6', 'hi': '\u221248.6', 'up': 0, 'down': 46, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 sol c: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, flag"
+  },
+  {
+   "check": "R10-20 sol c: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 sol c: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/flag/flag vs flag/flag/flag"
+  },
+  {
+   "check": "R10-20 sol c: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 luna a open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-2.2321 [-4.6875, 0.0000] 3/13"
+  },
+  {
+   "check": "R10-20 luna a open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22122.2', '\u22124.7', '+0.0', 3, 13, '= 0.0213') vs {'change': '\u22122.2', 'lo': '\u22124.7', 'hi': '+0.0', 'up': 3, 'down': 13, 'p': '= 0.0213'}"
+  },
+  {
+   "check": "R10-20 luna a specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.5085 [-2.3729, 3.7288] 5/7"
+  },
+  {
+   "check": "R10-20 luna a specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.5', '\u22122.4', '+3.7', 5, 7, '= 0.7744') vs {'change': '+0.5', 'lo': '\u22122.4', 'hi': '+3.7', 'up': 5, 'down': 7, 'p': '= 0.7744'}"
+  },
+  {
+   "check": "R10-20 luna a: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "R10-20 luna a: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 luna a: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "pass/pass/hold vs pass/pass/hold"
+  },
+  {
+   "check": "R10-20 luna a: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 luna b open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-3.1250 [-5.8036, -0.6696] 4/18"
+  },
+  {
+   "check": "R10-20 luna b open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22123.1', '\u22125.8', '\u22120.7', 4, 18, '= 0.0043') vs {'change': '\u22123.1', 'lo': '\u22125.8', 'hi': '\u22120.7', 'up': 4, 'down': 18, 'p': '= 0.0043'}"
+  },
+  {
+   "check": "R10-20 luna b specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "2.0339 [-3.8983, 7.9661] 8/6"
+  },
+  {
+   "check": "R10-20 luna b specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+2.0', '\u22123.9', '+8.0', 8, 6, '= 0.7905') vs {'change': '+2.0', 'lo': '\u22123.9', 'hi': '+8.0', 'up': 8, 'down': 6, 'p': '= 0.7905'}"
+  },
+  {
+   "check": "R10-20 luna b: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-20 luna b: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 luna b: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-20 luna b: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 luna c open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-18.7500 [-23.4375, -14.2857] 0/84"
+  },
+  {
+   "check": "R10-20 luna c open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221218.8', '\u221223.4', '\u221214.3', 0, 84, '< 0.0001') vs {'change': '\u221218.8', 'lo': '\u221223.4', 'hi': '\u221214.3', 'up': 0, 'down': 84, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 luna c specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-33.7288 [-49.8305, -20.0000] 0/27"
+  },
+  {
+   "check": "R10-20 luna c specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221233.7', '\u221249.8', '\u221220.0', 0, 27, '< 0.0001') vs {'change': '\u221233.7', 'lo': '\u221249.8', 'hi': '\u221220.0', 'up': 0, 'down': 27, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 luna c: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, flag"
+  },
+  {
+   "check": "R10-20 luna c: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 luna c: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/flag/flag vs flag/flag/flag"
+  },
+  {
+   "check": "R10-20 luna c: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 deepseek a open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "2.0134 [-1.1186, 5.3691] 20/11"
+  },
+  {
+   "check": "R10-20 deepseek a open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+2.0', '\u22121.1', '+5.4', 20, 11, '= 0.1496') vs {'change': '+2.0', 'lo': '\u22121.1', 'hi': '+5.4', 'up': 20, 'down': 11, 'p': '= 0.1496'}"
+  },
+  {
+   "check": "R10-20 deepseek a specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "3.3898 [-0.5085, 7.6271] 18/5"
+  },
+  {
+   "check": "R10-20 deepseek a specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+3.4', '\u22120.5', '+7.6', 18, 5, '= 0.0106') vs {'change': '+3.4', 'lo': '\u22120.5', 'hi': '+7.6', 'up': 18, 'down': 5, 'p': '= 0.0106'}"
+  },
+  {
+   "check": "R10-20 deepseek a: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-20 deepseek a: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 deepseek a: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-20 deepseek a: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 deepseek b open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "1.1186 [-2.4609, 4.4743] 20/15"
+  },
+  {
+   "check": "R10-20 deepseek b open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+1.1', '\u22122.5', '+4.5', 20, 15, '= 0.4996') vs {'change': '+1.1', 'lo': '\u22122.5', 'hi': '+4.5', 'up': 20, 'down': 15, 'p': '= 0.4996'}"
+  },
+  {
+   "check": "R10-20 deepseek b specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "5.9322 [1.5254, 10.6780] 21/5"
+  },
+  {
+   "check": "R10-20 deepseek b specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+5.9', '+1.5', '+10.7', 21, 5, '= 0.0025') vs {'change': '+5.9', 'lo': '+1.5', 'hi': '+10.7', 'up': 21, 'down': 5, 'p': '= 0.0025'}"
+  },
+  {
+   "check": "R10-20 deepseek b: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, flag"
+  },
+  {
+   "check": "R10-20 deepseek b: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 deepseek b: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/flag/flag vs flag/flag/flag"
+  },
+  {
+   "check": "R10-20 deepseek b: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 deepseek c open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-15.1786 [-20.0893, -10.7143] 0/68"
+  },
+  {
+   "check": "R10-20 deepseek c open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221215.2', '\u221220.1', '\u221210.7', 0, 68, '< 0.0001') vs {'change': '\u221215.2', 'lo': '\u221220.1', 'hi': '\u221210.7', 'up': 0, 'down': 68, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 deepseek c specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-30.0000 [-43.8983, -17.1186] 0/28"
+  },
+  {
+   "check": "R10-20 deepseek c specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221230.0', '\u221243.9', '\u221217.1', 0, 28, '< 0.0001') vs {'change': '\u221230.0', 'lo': '\u221243.9', 'hi': '\u221217.1', 'up': 0, 'down': 28, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 deepseek c: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, flag"
+  },
+  {
+   "check": "R10-20 deepseek c: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 deepseek c: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/flag/flag vs flag/flag/flag"
+  },
+  {
+   "check": "R10-20 deepseek c: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 qwen a open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.4785 [-3.3493, 3.8278] 16/14"
+  },
+  {
+   "check": "R10-20 qwen a open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.5', '\u22123.3', '+3.8', 16, 14, '= 0.8555') vs {'change': '+0.5', 'lo': '\u22123.3', 'hi': '+3.8', 'up': 16, 'down': 14, 'p': '= 0.8555'}"
+  },
+  {
+   "check": "R10-20 qwen a specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-0.6773 [-7.1025, 4.7202] 15/17"
+  },
+  {
+   "check": "R10-20 qwen a specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22120.7', '\u22127.1', '+4.7', 15, 17, '= 0.8601') vs {'change': '\u22120.7', 'lo': '\u22127.1', 'hi': '+4.7', 'up': 15, 'down': 17, 'p': '= 0.8601'}"
+  },
+  {
+   "check": "R10-20 qwen a: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-20 qwen a: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 qwen a: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-20 qwen a: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 qwen b open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.2421 [-3.1477, 3.6320] 15/14"
+  },
+  {
+   "check": "R10-20 qwen b open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.2', '\u22123.1', '+3.6', 15, 14, '= 1.0000') vs {'change': '+0.2', 'lo': '\u22123.1', 'hi': '+3.6', 'up': 15, 'down': 14, 'p': '= 1.0000'}"
+  },
+  {
+   "check": "R10-20 qwen b specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.5757 [-5.8569, 6.8133] 18/11"
+  },
+  {
+   "check": "R10-20 qwen b specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.6', '\u22125.9', '+6.8', 18, 11, '= 0.2649') vs {'change': '+0.6', 'lo': '\u22125.9', 'hi': '+6.8', 'up': 18, 'down': 11, 'p': '= 0.2649'}"
+  },
+  {
+   "check": "R10-20 qwen b: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-20 qwen b: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 qwen b: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-20 qwen b: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 qwen c open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-12.3487 [-17.1913, -8.2324] 3/54"
+  },
+  {
+   "check": "R10-20 qwen c open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221212.3', '\u221217.2', '\u22128.2', 3, 54, '< 0.0001') vs {'change': '\u221212.3', 'lo': '\u221217.2', 'hi': '\u22128.2', 'up': 3, 'down': 54, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 qwen c specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-30.0969 [-42.4563, -18.2459] 0/33"
+  },
+  {
+   "check": "R10-20 qwen c specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221230.1', '\u221242.5', '\u221218.2', 0, 33, '< 0.0001') vs {'change': '\u221230.1', 'lo': '\u221242.5', 'hi': '\u221218.2', 'up': 0, 'down': 33, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 qwen c: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, flag"
+  },
+  {
+   "check": "R10-20 qwen c: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 qwen c: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/flag/flag vs flag/flag/flag"
+  },
+  {
+   "check": "R10-20 qwen c: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 gemma a open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.0000 [-1.5766, 1.3514] 3/3"
+  },
+  {
+   "check": "R10-20 gemma a open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.0', '\u22121.6', '+1.4', 3, 3, '= 1.0000') vs {'change': '+0.0', 'lo': '\u22121.6', 'hi': '+1.4', 'up': 3, 'down': 3, 'p': '= 1.0000'}"
+  },
+  {
+   "check": "R10-20 gemma a specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "2.0339 [-0.0000, 4.7458] 7/1"
+  },
+  {
+   "check": "R10-20 gemma a specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+2.0', '\u22120.0', '+4.7', 7, 1, '= 0.0703') vs {'change': '+2.0', 'lo': '\u22120.0', 'hi': '+4.7', 'up': 7, 'down': 1, 'p': '= 0.0703'}"
+  },
+  {
+   "check": "R10-20 gemma a: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "R10-20 gemma a: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 gemma a: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "pass/pass/pass vs pass/pass/pass"
+  },
+  {
+   "check": "R10-20 gemma a: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-20 gemma b open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "0.6772 [-1.3544, 2.7088] 7/4"
+  },
+  {
+   "check": "R10-20 gemma b open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+0.7', '\u22121.4', '+2.7', 7, 4, '= 0.5488') vs {'change': '+0.7', 'lo': '\u22121.4', 'hi': '+2.7', 'up': 7, 'down': 4, 'p': '= 0.5488'}"
+  },
+  {
+   "check": "R10-20 gemma b specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "1.6949 [-4.7458, 7.6271] 5/3"
+  },
+  {
+   "check": "R10-20 gemma b specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+1.7', '\u22124.7', '+7.6', 5, 3, '= 0.7266') vs {'change': '+1.7', 'lo': '\u22124.7', 'hi': '+7.6', 'up': 5, 'down': 3, 'p': '= 0.7266'}"
+  },
+  {
+   "check": "R10-20 gemma b: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-20 gemma b: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 gemma b: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-20 gemma b: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-20 gemma c open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-20.4955 [-25.6757, -15.7658] 0/91"
+  },
+  {
+   "check": "R10-20 gemma c open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221220.5', '\u221225.7', '\u221215.8', 0, 91, '< 0.0001') vs {'change': '\u221220.5', 'lo': '\u221225.7', 'hi': '\u221215.8', 'up': 0, 'down': 91, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 gemma c specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-49.6610 [-66.4407, -33.5593] 0/32"
+  },
+  {
+   "check": "R10-20 gemma c specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u221249.7', '\u221266.4', '\u221233.6', 0, 32, '< 0.0001') vs {'change': '\u221249.7', 'lo': '\u221266.4', 'hi': '\u221233.6', 'up': 0, 'down': 32, 'p': '< 0.0001'}"
+  },
+  {
+   "check": "R10-20 gemma c: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, flag"
+  },
+  {
+   "check": "R10-20 gemma c: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-20 gemma c: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/flag/flag vs flag/flag/flag"
+  },
+  {
+   "check": "R10-20 gemma c: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-22 sol d open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-1.7857 [-3.7946, 0.0000] 2/10"
+  },
+  {
+   "check": "R10-22 sol d open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22121.8', '\u22123.8', '+0.0', 2, 10, '= 0.0386') vs {'change': '\u22121.8', 'lo': '\u22123.8', 'hi': '+0.0', 'up': 2, 'down': 10, 'p': '= 0.0386'}"
+  },
+  {
+   "check": "R10-22 sol d specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-1.1864 [-5.7627, 3.3898] 5/8"
+  },
+  {
+   "check": "R10-22 sol d specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22121.2', '\u22125.8', '+3.4', 5, 8, '= 0.5811') vs {'change': '\u22121.2', 'lo': '\u22125.8', 'hi': '+3.4', 'up': 5, 'down': 8, 'p': '= 0.5811'}"
+  },
+  {
+   "check": "R10-22 sol d: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-22 sol d: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-22 sol d: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-22 sol d: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-22 sol e open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-0.2232 [-2.4554, 1.7857] 6/7"
+  },
+  {
+   "check": "R10-22 sol e open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22120.2', '\u22122.5', '+1.8', 6, 7, '= 1.0000') vs {'change': '\u22120.2', 'lo': '\u22122.5', 'hi': '+1.8', 'up': 6, 'down': 7, 'p': '= 1.0000'}"
+  },
+  {
+   "check": "R10-22 sol e specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-0.5085 [-4.5763, 3.7288] 5/8"
+  },
+  {
+   "check": "R10-22 sol e specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22120.5', '\u22124.6', '+3.7', 5, 8, '= 0.5811') vs {'change': '\u22120.5', 'lo': '\u22124.6', 'hi': '+3.7', 'up': 5, 'down': 8, 'p': '= 0.5811'}"
+  },
+  {
+   "check": "R10-22 sol e: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "R10-22 sol e: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-22 sol e: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "pass/pass/pass vs pass/pass/pass"
+  },
+  {
+   "check": "R10-22 sol e: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-22 luna d open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "3.7946 [1.1161, 6.6964] 22/5"
+  },
+  {
+   "check": "R10-22 luna d open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+3.8', '+1.1', '+6.7', 22, 5, '= 0.0015') vs {'change': '+3.8', 'lo': '+1.1', 'hi': '+6.7', 'up': 22, 'down': 5, 'p': '= 0.0015'}"
+  },
+  {
+   "check": "R10-22 luna d specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "3.8983 [-2.0339, 11.0169] 9/5"
+  },
+  {
+   "check": "R10-22 luna d specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('+3.9', '\u22122.0', '+11.0', 9, 5, '= 0.4240') vs {'change': '+3.9', 'lo': '\u22122.0', 'hi': '+11.0', 'up': 9, 'down': 5, 'p': '= 0.4240'}"
+  },
+  {
+   "check": "R10-22 luna d: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "R10-22 luna d: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-22 luna d: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "hold/hold/hold vs hold/hold/hold"
+  },
+  {
+   "check": "R10-22 luna d: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-22 luna e open: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-1.1161 [-4.0179, 1.5625] 10/15"
+  },
+  {
+   "check": "R10-22 luna e open: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22121.1', '\u22124.0', '+1.6', 10, 15, '= 0.4244') vs {'change': '\u22121.1', 'lo': '\u22124.0', 'hi': '+1.6', 'up': 10, 'down': 15, 'p': '= 0.4244'}"
+  },
+  {
+   "check": "R10-22 luna e specific: change, interval, up/down equal to the stored result",
+   "ok": true,
+   "detail": "-5.9322 [-12.2034, -1.0169] 4/12"
+  },
+  {
+   "check": "R10-22 luna e specific: values equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "('\u22125.9', '\u221212.2', '\u22121.0', 4, 12, '= 0.0768') vs {'change': '\u22125.9', 'lo': '\u221212.2', 'hi': '\u22121.0', 'up': 4, 'down': 12, 'p': '= 0.0768'}"
+  },
+  {
+   "check": "R10-22 luna e: original and revised decisions equal to the stored result",
+   "ok": true,
+   "detail": "flag, hold"
+  },
+  {
+   "check": "R10-22 luna e: final decision equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-22 luna e: three decisions equal to Table 12 of the paper",
+   "ok": true,
+   "detail": "flag/hold/hold vs flag/hold/hold"
+  },
+  {
+   "check": "R10-22 luna e: original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) open: change and interval equal to control.json",
+   "ok": true,
+   "detail": "0.2232 [-0.8929, 1.5625]"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) open: set class equal to control.json",
+   "ok": true,
+   "detail": "within vs absent"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) open: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('+0.2', '\u22120.9', '+1.6') vs {'change': '+0.2', 'lo': '\u22120.9', 'hi': '+1.6', 'set_decision': 'within limits', 'first': None}"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) open: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "within limits vs within limits"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) specific: change and interval equal to control.json",
+   "ok": true,
+   "detail": "0.0942 [-1.7514, 2.2034]"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) specific: set class equal to control.json",
+   "ok": true,
+   "detail": "within vs absent"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) specific: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('+0.1', '\u22121.8', '+2.2') vs {'change': '+0.1', 'lo': '\u22121.8', 'hi': '+2.2', 'set_decision': 'within limits', 'first': {'change': '\u22121.7', 'lo': '\u221210.2', 'hi': '+5.1', 'set_decision': 'unresolved'}}"
+  },
+  {
+   "check": "R10-16 haiku a (all answers) specific: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "within limits vs within limits"
+  },
+  {
+   "check": "R10-16 haiku a (all answers): original decision equal to control.json",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-16 haiku a (all answers): original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-16 haiku a (all answers): final decision equal to rtest_final9 (C = 12)",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) open: change and interval equal to control.json",
+   "ok": true,
+   "detail": "0.2232 [-1.7857, 2.2321]"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) open: set class equal to control.json",
+   "ok": true,
+   "detail": "within vs absent"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) open: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('+0.2', '\u22121.8', '+2.2') vs {'change': '+0.2', 'lo': '\u22121.8', 'hi': '+2.2', 'set_decision': 'within limits', 'first': None}"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) open: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "within limits vs within limits"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) specific: change and interval equal to control.json",
+   "ok": true,
+   "detail": "1.1864 [-3.5593, 6.6102]"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) specific: set class equal to control.json",
+   "ok": true,
+   "detail": "unresolved vs unresolved"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) specific: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('+1.2', '\u22123.6', '+6.6') vs {'change': '+1.2', 'lo': '\u22123.6', 'hi': '+6.6', 'set_decision': 'unresolved', 'first': {'change': '\u22125.1', 'lo': '\u221216.9', 'hi': '+3.4', 'set_decision': 'unresolved'}}"
+  },
+  {
+   "check": "R10-16 haiku d (all answers) specific: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "unresolved vs unresolved"
+  },
+  {
+   "check": "R10-16 haiku d (all answers): original decision equal to control.json",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-16 haiku d (all answers): original decision equal to Table 5 of the paper",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-16 haiku d (all answers): final decision equal to rtest_final9 (C = 6)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) open: change and interval equal to control.json",
+   "ok": true,
+   "detail": "0.2232 [-0.8929, 1.5625]"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) open: set class equal to control.json",
+   "ok": true,
+   "detail": "within vs absent"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) open: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('+0.2', '\u22120.9', '+1.6') vs {'change': '+0.2', 'lo': '\u22120.9', 'hi': '+1.6', 'set_decision': 'within limits', 'first': None}"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) open: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "within limits vs within limits"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) specific: change and interval equal to control.json",
+   "ok": true,
+   "detail": "-1.6949 [-10.1695, 5.0847]"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) specific: set class equal to control.json",
+   "ok": true,
+   "detail": "unresolved vs unresolved"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) specific: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('\u22121.7', '\u221210.2', '+5.1') vs {'change': '\u22121.7', 'lo': '\u221210.2', 'hi': '+5.1', 'set_decision': 'unresolved'}"
+  },
+  {
+   "check": "R10-16 haiku a (first answer) specific: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "unresolved vs unresolved"
+  },
+  {
+   "check": "R10-16 haiku a (first answer): original decision equal to control.json",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) open: change and interval equal to control.json",
+   "ok": true,
+   "detail": "0.2232 [-1.7857, 2.2321]"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) open: set class equal to control.json",
+   "ok": true,
+   "detail": "within vs absent"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) open: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('+0.2', '\u22121.8', '+2.2') vs {'change': '+0.2', 'lo': '\u22121.8', 'hi': '+2.2', 'set_decision': 'within limits', 'first': None}"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) open: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "within limits vs within limits"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) specific: change and interval equal to control.json",
+   "ok": true,
+   "detail": "-5.0847 [-16.9492, 3.3898]"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) specific: set class equal to control.json",
+   "ok": true,
+   "detail": "unresolved vs unresolved"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) specific: values equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "('\u22125.1', '\u221216.9', '+3.4') vs {'change': '\u22125.1', 'lo': '\u221216.9', 'hi': '+3.4', 'set_decision': 'unresolved'}"
+  },
+  {
+   "check": "R10-16 haiku d (first answer) specific: set decision equal to Table 11 of the paper",
+   "ok": true,
+   "detail": "unresolved vs unresolved"
+  },
+  {
+   "check": "R10-16 haiku d (first answer): original decision equal to control.json",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v era1 read 2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "flag, hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v era1 read 2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v era1 read 2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v fill read 3: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v fill read 3: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v fill read 3: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v erp: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "flag, hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v erp: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "flag vs flag"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 1 v erp: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 2 v fill read 3: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 2 v fill read 3: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 2 v fill read 3: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 2 v erp: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 2 v erp: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "unchanged sonnet: era1 read 2 v erp: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: fill read 3 v erp: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sonnet: fill read 3 v erp: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sonnet: fill read 3 v erp: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v era1 read 2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v era1 read 2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v era1 read 2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erm: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erm: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erm: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v ers: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v ers: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v ers: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erc: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erc: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erc: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erc2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erc2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 1 v erc2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erm: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erm: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erm: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v ers: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v ers: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v ers: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erc: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erc: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erc: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erc2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erc2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: era1 read 2 v erc2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erm v ers: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: erm v ers: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erm v ers: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erm v erc: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: erm v erc: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erm v erc: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erm v erc2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "pass, pass"
+  },
+  {
+   "check": "unchanged haiku: erm v erc2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "pass vs pass"
+  },
+  {
+   "check": "unchanged haiku: erm v erc2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: ers v erc: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: ers v erc: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: ers v erc: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: ers v erc2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: ers v erc2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: ers v erc2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erc v erc2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged haiku: erc v erc2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged haiku: erc v erc2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v era1 read 2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v era1 read 2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v era1 read 2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v fill read 3: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v fill read 3: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v fill read 3: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v erp: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v erp: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 1 v erp: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 2 v fill read 3: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 2 v fill read 3: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 2 v fill read 3: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 2 v erp: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 2 v erp: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: era1 read 2 v erp: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: fill read 3 v erp: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged sol: fill read 3 v erp: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged sol: fill read 3 v erp: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged opus: era1 read 1 v fill read 2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged opus: era1 read 1 v fill read 2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged opus: era1 read 1 v fill read 2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged luna: era1 read 1 v era1 read 2: original and revised decisions at 98.75% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold, hold"
+  },
+  {
+   "check": "unchanged luna: era1 read 1 v era1 read 2: original decision equal to the independent check (rtest_check_values.json)",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "unchanged luna: era1 read 1 v era1 read 2: final decision at 99.5% equal to rtest_final9",
+   "ok": true,
+   "detail": "hold vs hold"
+  },
+  {
+   "check": "29 stored comparisons, original 98.75: tally {'flag': 2, 'pass': 2, 'hold': 25} (paper, Section 7 and Appendix H)",
+   "ok": true,
+   "detail": "{\"flag\": 2, \"hold\": 25, \"pass\": 2}"
+  },
+  {
+   "check": "29 stored comparisons, revised 98.75: tally {'pass': 2, 'hold': 27} (paper, Section 7 and Appendix H)",
+   "ok": true,
+   "detail": "{\"hold\": 27, \"pass\": 2}"
+  },
+  {
+   "check": "29 stored comparisons, final 99.5: tally {'hold': 29} (paper, Section 7 and Appendix H)",
+   "ok": true,
+   "detail": "{\"hold\": 29}"
+  }
+ ],
+ "rows": [
+  {
+   "name": "R10-20 sol a",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.6696428571428571,
+    9.032322912204664e-17
+   ],
+   "interval_as_run": [
+    [
+     -2.455357142857143,
+     0.8928571428571429
+    ],
+    [
+     -1.6949152542372883,
+     1.8644067796610169
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     6
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "sign_p": [
+    0.5078125,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "pass",
+   "revised": "pass",
+   "final": "pass"
+  },
+  {
+   "name": "R10-20 sol b",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.44642857142857145,
+    -0.16949152542372894
+   ],
+   "interval_as_run": [
+    [
+     -2.455357142857143,
+     1.3392857142857142
+    ],
+    [
+     -2.542372881355932,
+     2.3728813559322033
+    ]
+   ],
+   "up_down": [
+    [
+     5,
+     7
+    ],
+    [
+     6,
+     7
+    ]
+   ],
+   "sign_p": [
+    0.7744140625,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "pass",
+   "revised": "pass",
+   "final": "pass"
+  },
+  {
+   "name": "R10-20 sol c",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -22.544642857142858,
+    -62.03389830508475
+   ],
+   "interval_as_run": [
+    [
+     -27.901785714285715,
+     -17.857142857142858
+    ],
+    [
+     -74.57627118644068,
+     -48.644067796610166
+    ]
+   ],
+   "up_down": [
+    [
+     0,
+     101
+    ],
+    [
+     0,
+     46
+    ]
+   ],
+   "sign_p": [
+    7.888609052210118e-31,
+    2.842170943040401e-14
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "flag",
+   "final": "flag"
+  },
+  {
+   "name": "R10-20 luna a",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -2.232142857142857,
+    0.5084745762711862
+   ],
+   "interval_as_run": [
+    [
+     -4.6875,
+     0.0
+    ],
+    [
+     -2.3728813559322037,
+     3.7288135593220337
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     13
+    ],
+    [
+     5,
+     7
+    ]
+   ],
+   "sign_p": [
+    0.021270751953125,
+    0.7744140625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "pass",
+   "revised": "pass",
+   "final": "hold"
+  },
+  {
+   "name": "R10-20 luna b",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -3.125,
+    2.0338983050847457
+   ],
+   "interval_as_run": [
+    [
+     -5.803571428571429,
+     -0.6696428571428571
+    ],
+    [
+     -3.898305084745763,
+     7.966101694915255
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     18
+    ],
+    [
+     8,
+     6
+    ]
+   ],
+   "sign_p": [
+    0.004343509674072266,
+    0.79052734375
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-20 luna c",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -18.75,
+    -33.728813559322035
+   ],
+   "interval_as_run": [
+    [
+     -23.4375,
+     -14.285714285714286
+    ],
+    [
+     -49.83050847457627,
+     -20.0
+    ]
+   ],
+   "up_down": [
+    [
+     0,
+     84
+    ],
+    [
+     0,
+     27
+    ]
+   ],
+   "sign_p": [
+    1.0339757656912846e-25,
+    1.4901161193847656e-08
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "flag",
+   "final": "flag"
+  },
+  {
+   "name": "R10-20 deepseek a",
+   "table": "12",
+   "pairs": [
+    447,
+    59
+   ],
+   "change": [
+    2.0134228187919465,
+    3.389830508474576
+   ],
+   "interval_as_run": [
+    [
+     -1.1185682326621924,
+     5.369127516778524
+    ],
+    [
+     -0.5084745762711862,
+     7.627118644067798
+    ]
+   ],
+   "up_down": [
+    [
+     20,
+     11
+    ],
+    [
+     18,
+     5
+    ]
+   ],
+   "sign_p": [
+    0.14961278438568115,
+    0.010622024536132812
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-20 deepseek b",
+   "table": "12",
+   "pairs": [
+    447,
+    59
+   ],
+   "change": [
+    1.1185682326621924,
+    5.932203389830509
+   ],
+   "interval_as_run": [
+    [
+     -2.460850111856823,
+     4.47427293064877
+    ],
+    [
+     1.5254237288135595,
+     10.677966101694915
+    ]
+   ],
+   "up_down": [
+    [
+     20,
+     15
+    ],
+    [
+     21,
+     5
+    ]
+   ],
+   "sign_p": [
+    0.49955983320251107,
+    0.002493917942047119
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "flag",
+   "final": "flag"
+  },
+  {
+   "name": "R10-20 deepseek c",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -15.178571428571429,
+    -30.0
+   ],
+   "interval_as_run": [
+    [
+     -20.089285714285715,
+     -10.714285714285714
+    ],
+    [
+     -43.898305084745765,
+     -17.11864406779661
+    ]
+   ],
+   "up_down": [
+    [
+     0,
+     68
+    ],
+    [
+     0,
+     28
+    ]
+   ],
+   "sign_p": [
+    6.776263578034403e-21,
+    7.450580596923828e-09
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "flag",
+   "final": "flag"
+  },
+  {
+   "name": "R10-20 qwen a",
+   "table": "12",
+   "pairs": [
+    418,
+    59
+   ],
+   "change": [
+    0.4784688995215311,
+    -0.6772935162765666
+   ],
+   "interval_as_run": [
+    [
+     -3.349282296650718,
+     3.827751196172249
+    ],
+    [
+     -7.102502017756255,
+     4.720204465967178
+    ]
+   ],
+   "up_down": [
+    [
+     16,
+     14
+    ],
+    [
+     15,
+     17
+    ]
+   ],
+   "sign_p": [
+    0.855535551905632,
+    0.860050065908581
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-20 qwen b",
+   "table": "12",
+   "pairs": [
+    413,
+    59
+   ],
+   "change": [
+    0.24213075060532688,
+    0.5757331181059998
+   ],
+   "interval_as_run": [
+    [
+     -3.1476997578692494,
+     3.6319612590799033
+    ],
+    [
+     -5.856873822975517,
+     6.81329028786656
+    ]
+   ],
+   "up_down": [
+    [
+     15,
+     14
+    ],
+    [
+     18,
+     11
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.26493089646101
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-20 qwen c",
+   "table": "12",
+   "pairs": [
+    413,
+    59
+   ],
+   "change": [
+    -12.34866828087167,
+    -30.096852300242134
+   ],
+   "interval_as_run": [
+    [
+     -17.19128329297821,
+     -8.232445520581114
+    ],
+    [
+     -42.45628194780737,
+     -18.245897228948074
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     54
+    ],
+    [
+     0,
+     33
+    ]
+   ],
+   "sign_p": [
+    4.290179322907761e-13,
+    2.3283064365386963e-10
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "flag",
+   "final": "flag"
+  },
+  {
+   "name": "R10-20 gemma a",
+   "table": "12",
+   "pairs": [
+    444,
+    59
+   ],
+   "change": [
+    0.0,
+    2.0338983050847457
+   ],
+   "interval_as_run": [
+    [
+     -1.5765765765765767,
+     1.3513513513513513
+    ],
+    [
+     -3.6129291648818656e-16,
+     4.7457627118644075
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     3
+    ],
+    [
+     7,
+     1
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.0703125
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "pass",
+   "revised": "pass",
+   "final": "pass"
+  },
+  {
+   "name": "R10-20 gemma b",
+   "table": "12",
+   "pairs": [
+    443,
+    59
+   ],
+   "change": [
+    0.6772009029345373,
+    1.6949152542372883
+   ],
+   "interval_as_run": [
+    [
+     -1.3544018058690745,
+     2.708803611738149
+    ],
+    [
+     -4.745762711864407,
+     7.627118644067797
+    ]
+   ],
+   "up_down": [
+    [
+     7,
+     4
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "sign_p": [
+    0.548828125,
+    0.7265625
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-20 gemma c",
+   "table": "12",
+   "pairs": [
+    444,
+    59
+   ],
+   "change": [
+    -20.495495495495497,
+    -49.66101694915254
+   ],
+   "interval_as_run": [
+    [
+     -25.675675675675677,
+     -15.765765765765765
+    ],
+    [
+     -66.44067796610169,
+     -33.559322033898304
+    ]
+   ],
+   "up_down": [
+    [
+     0,
+     91
+    ],
+    [
+     0,
+     32
+    ]
+   ],
+   "sign_p": [
+    8.077935669463161e-28,
+    4.656612873077393e-10
+   ],
+   "level_run": 0.9916666666666667,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "flag",
+   "final": "flag"
+  },
+  {
+   "name": "R10-22 sol d",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -1.7857142857142858,
+    -1.1864406779661012
+   ],
+   "interval_as_run": [
+    [
+     -3.794642857142857,
+     0.0
+    ],
+    [
+     -5.7627118644067785,
+     3.389830508474576
+    ]
+   ],
+   "up_down": [
+    [
+     2,
+     10
+    ],
+    [
+     5,
+     8
+    ]
+   ],
+   "sign_p": [
+    0.03857421875,
+    0.5810546875
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9875,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-22 sol e",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.22321428571428573,
+    -0.5084745762711862
+   ],
+   "interval_as_run": [
+    [
+     -2.455357142857143,
+     1.7857142857142858
+    ],
+    [
+     -4.576271186440678,
+     3.7288135593220337
+    ]
+   ],
+   "up_down": [
+    [
+     6,
+     7
+    ],
+    [
+     5,
+     8
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.5810546875
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9875,
+   "original": "pass",
+   "revised": "pass",
+   "final": "pass"
+  },
+  {
+   "name": "R10-22 luna d",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    3.794642857142857,
+    3.8983050847457625
+   ],
+   "interval_as_run": [
+    [
+     1.1160714285714286,
+     6.696428571428571
+    ],
+    [
+     -2.0338983050847457,
+     11.016949152542374
+    ]
+   ],
+   "up_down": [
+    [
+     22,
+     5
+    ],
+    [
+     9,
+     5
+    ]
+   ],
+   "sign_p": [
+    0.0015137195587158203,
+    0.4239501953125
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9875,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-22 luna e",
+   "table": "12",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -1.1160714285714286,
+    -5.932203389830509
+   ],
+   "interval_as_run": [
+    [
+     -4.017857142857143,
+     1.5625
+    ],
+    [
+     -12.203389830508474,
+     -1.0169491525423728
+    ]
+   ],
+   "up_down": [
+    [
+     10,
+     15
+    ],
+    [
+     4,
+     12
+    ]
+   ],
+   "sign_p": [
+    0.42435622215270996,
+    0.076812744140625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9875,
+   "original": "flag",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-16 haiku a (all answers)",
+   "table": "11",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    0.09416195856873828
+   ],
+   "interval_as_run": [
+    [
+     -0.8928571428571429,
+     1.5625
+    ],
+    [
+     -1.751412429378531,
+     2.2033898305084745
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9958333333333333,
+   "original": "pass",
+   "revised": "pass",
+   "final": "pass"
+  },
+  {
+   "name": "R10-16 haiku d (all answers)",
+   "table": "11",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    1.1864406779661014
+   ],
+   "interval_as_run": [
+    [
+     -1.7857142857142858,
+     2.232142857142857
+    ],
+    [
+     -3.5593220338983054,
+     6.610169491525424
+    ]
+   ],
+   "up_down": [
+    [
+     7,
+     6
+    ],
+    [
+     4,
+     5
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9916666666666667,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-16 haiku a (first answer)",
+   "table": "11",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    -1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -0.8928571428571429,
+     1.5625
+    ],
+    [
+     -10.169491525423728,
+     5.084745762711864
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9958333333333333,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "R10-16 haiku d (first answer)",
+   "table": "11",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    -5.084745762711864
+   ],
+   "interval_as_run": [
+    [
+     -1.7857142857142858,
+     2.232142857142857
+    ],
+    [
+     -16.949152542372882,
+     3.389830508474576
+    ]
+   ],
+   "up_down": [
+    [
+     7,
+     6
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.375
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.9916666666666667,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sonnet: era1 read 1 v era1 read 2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.22321428571428573,
+    8.474576271186441
+   ],
+   "interval_as_run": [
+    [
+     -1.5625,
+     1.1160714285714286
+    ],
+    [
+     1.694915254237288,
+     18.64406779661017
+    ]
+   ],
+   "up_down": [
+    [
+     2,
+     3
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.0625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sonnet: era1 read 1 v fill read 3",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.22321428571428573,
+    3.389830508474576
+   ],
+   "interval_as_run": [
+    [
+     -1.7857142857142858,
+     1.3392857142857142
+    ],
+    [
+     -5.084745762711864,
+     11.864406779661017
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sonnet: era1 read 1 v erp",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -1.3392857142857142,
+    8.474576271186441
+   ],
+   "interval_as_run": [
+    [
+     -3.5714285714285716,
+     0.8928571428571429
+    ],
+    [
+     1.694915254237288,
+     18.64406779661017
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "sign_p": [
+    0.1795654296875,
+    0.0625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "flag",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sonnet: era1 read 2 v fill read 3",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.0,
+    -5.084745762711864
+   ],
+   "interval_as_run": [
+    [
+     -1.7857142857142858,
+     1.7857142857142858
+    ],
+    [
+     -13.559322033898304,
+     0.0
+    ]
+   ],
+   "up_down": [
+    [
+     6,
+     6
+    ],
+    [
+     0,
+     3
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.25
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sonnet: era1 read 2 v erp",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -1.1160714285714286,
+    0.0
+   ],
+   "interval_as_run": [
+    [
+     -3.3482142857142856,
+     1.1160714285714286
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "up_down": [
+    [
+     5,
+     10
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "sign_p": [
+    0.3017578125,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "pass",
+   "revised": "pass",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sonnet: fill read 3 v erp",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -1.1160714285714286,
+    5.084745762711864
+   ],
+   "interval_as_run": [
+    [
+     -3.3482142857142856,
+     0.8928571428571429
+    ],
+    [
+     0.0,
+     11.864406779661017
+    ]
+   ],
+   "up_down": [
+    [
+     5,
+     10
+    ],
+    [
+     3,
+     0
+    ]
+   ],
+   "sign_p": [
+    0.3017578125,
+    0.25
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 1 v era1 read 2",
+   "table": "29 stored",
+   "pairs": [
+    446,
+    58
+   ],
+   "change": [
+    0.8968609865470852,
+    -1.7241379310344827
+   ],
+   "interval_as_run": [
+    [
+     -0.672645739910314,
+     2.690582959641256
+    ],
+    [
+     -6.896551724137931,
+     0.0
+    ]
+   ],
+   "up_down": [
+    [
+     7,
+     3
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.34375,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 1 v erm",
+   "table": "29 stored",
+   "pairs": [
+    446,
+    58
+   ],
+   "change": [
+    -0.4484304932735426,
+    1.7241379310344827
+   ],
+   "interval_as_run": [
+    [
+     -1.7937219730941705,
+     0.672645739910314
+    ],
+    [
+     -5.172413793103448,
+     10.344827586206897
+    ]
+   ],
+   "up_down": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.625,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 1 v ers",
+   "table": "29 stored",
+   "pairs": [
+    446,
+    58
+   ],
+   "change": [
+    -0.2242152466367713,
+    3.4482758620689653
+   ],
+   "interval_as_run": [
+    [
+     -1.7937219730941705,
+     1.5695067264573992
+    ],
+    [
+     -5.172413793103448,
+     12.068965517241379
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     5
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    0.625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 1 v erc",
+   "table": "29 stored",
+   "pairs": [
+    446,
+    58
+   ],
+   "change": [
+    0.0,
+    1.7241379310344827
+   ],
+   "interval_as_run": [
+    [
+     -1.5695067264573992,
+     1.5695067264573992
+    ],
+    [
+     0.0,
+     6.896551724137931
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 1 v erc2",
+   "table": "29 stored",
+   "pairs": [
+    446,
+    58
+   ],
+   "change": [
+    0.2242152466367713,
+    1.7241379310344827
+   ],
+   "interval_as_run": [
+    [
+     -1.5695067264573992,
+     2.0179372197309418
+    ],
+    [
+     -5.172413793103448,
+     10.344827586206897
+    ]
+   ],
+   "up_down": [
+    [
+     5,
+     4
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 2 v erm",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    58
+   ],
+   "change": [
+    -1.1160714285714286,
+    3.4482758620689653
+   ],
+   "interval_as_run": [
+    [
+     -3.125,
+     0.6696428571428571
+    ],
+    [
+     -3.4482758620689653,
+     12.068965517241379
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     8
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.2265625,
+    0.625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 2 v ers",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    58
+   ],
+   "change": [
+    -0.8928571428571429,
+    5.172413793103448
+   ],
+   "interval_as_run": [
+    [
+     -2.9017857142857144,
+     1.1160714285714286
+    ],
+    [
+     -3.4482758620689653,
+     15.517241379310345
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     8
+    ],
+    [
+     4,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.3876953125,
+    0.375
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 2 v erc",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    58
+   ],
+   "change": [
+    -0.6696428571428571,
+    3.4482758620689653
+   ],
+   "interval_as_run": [
+    [
+     -2.455357142857143,
+     1.1160714285714286
+    ],
+    [
+     0.0,
+     10.344827586206897
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     6
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "sign_p": [
+    0.5078125,
+    0.5
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: era1 read 2 v erc2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    58
+   ],
+   "change": [
+    -0.44642857142857145,
+    3.4482758620689653
+   ],
+   "interval_as_run": [
+    [
+     -2.232142857142857,
+     1.1160714285714286
+    ],
+    [
+     -3.4482758620689653,
+     12.068965517241379
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.7265625,
+    0.625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: erm v ers",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -1.3392857142857142,
+     1.7857142857142858
+    ],
+    [
+     0.0,
+     6.779661016949152
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     3
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: erm v erc",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.44642857142857145,
+    1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -0.8928571428571429,
+     2.0089285714285716
+    ],
+    [
+     -5.084745762711864,
+     10.169491525423728
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     2
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.6875,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: erm v erc2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.6696428571428571,
+    0.0
+   ],
+   "interval_as_run": [
+    [
+     -0.8928571428571429,
+     2.232142857142857
+    ],
+    [
+     0.0,
+     0.0
+    ]
+   ],
+   "up_down": [
+    [
+     5,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "sign_p": [
+    0.453125,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "pass",
+   "revised": "pass",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: ers v erc",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    0.0
+   ],
+   "interval_as_run": [
+    [
+     -1.1160714285714286,
+     1.7857142857142858
+    ],
+    [
+     -10.169491525423728,
+     8.474576271186441
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     3
+    ],
+    [
+     2,
+     2
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: ers v erc2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.44642857142857145,
+    -1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -0.8928571428571429,
+     1.7857142857142858
+    ],
+    [
+     -6.779661016949152,
+     0.0
+    ]
+   ],
+   "up_down": [
+    [
+     4,
+     2
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.6875,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged haiku: erc v erc2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.22321428571428573,
+    -1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -0.8928571428571429,
+     1.5625
+    ],
+    [
+     -10.169491525423728,
+     5.084745762711864
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     2
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "sign_p": [
+    1.0,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sol: era1 read 1 v era1 read 2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    1.5625,
+    -1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -0.6696428571428571,
+     3.794642857142857
+    ],
+    [
+     -11.864406779661017,
+     8.474576271186441
+    ]
+   ],
+   "up_down": [
+    [
+     12,
+     5
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "sign_p": [
+    0.143463134765625,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sol: era1 read 1 v fill read 3",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.8928571428571429,
+    0.0
+   ],
+   "interval_as_run": [
+    [
+     -1.1160714285714286,
+     2.9017857142857144
+    ],
+    [
+     -6.779661016949152,
+     5.084745762711864
+    ]
+   ],
+   "up_down": [
+    [
+     8,
+     4
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.3876953125,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sol: era1 read 1 v erp",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.44642857142857145,
+    1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -2.455357142857143,
+     1.5625
+    ],
+    [
+     -11.864406779661017,
+     11.864406779661017
+    ]
+   ],
+   "up_down": [
+    [
+     6,
+     8
+    ],
+    [
+     4,
+     3
+    ]
+   ],
+   "sign_p": [
+    0.79052734375,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sol: era1 read 2 v fill read 3",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -0.6696428571428571,
+    1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -2.9017857142857144,
+     1.5625
+    ],
+    [
+     -5.084745762711864,
+     10.169491525423728
+    ]
+   ],
+   "up_down": [
+    [
+     6,
+     9
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.60723876953125,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sol: era1 read 2 v erp",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -2.0089285714285716,
+    3.389830508474576
+   ],
+   "interval_as_run": [
+    [
+     -4.464285714285714,
+     0.0
+    ],
+    [
+     -6.779661016949152,
+     13.559322033898304
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     12
+    ],
+    [
+     4,
+     2
+    ]
+   ],
+   "sign_p": [
+    0.03515625,
+    0.6875
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged sol: fill read 3 v erp",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    -1.3392857142857142,
+    1.694915254237288
+   ],
+   "interval_as_run": [
+    [
+     -3.3482142857142856,
+     0.44642857142857145
+    ],
+    [
+     -10.169491525423728,
+     11.864406779661017
+    ]
+   ],
+   "up_down": [
+    [
+     3,
+     9
+    ],
+    [
+     3,
+     2
+    ]
+   ],
+   "sign_p": [
+    0.14599609375,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged opus: era1 read 1 v fill read 2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    1.3392857142857142,
+    3.389830508474576
+   ],
+   "interval_as_run": [
+    [
+     -1.3392857142857142,
+     4.464285714285714
+    ],
+    [
+     -5.084745762711864,
+     13.559322033898304
+    ]
+   ],
+   "up_down": [
+    [
+     16,
+     10
+    ],
+    [
+     3,
+     1
+    ]
+   ],
+   "sign_p": [
+    0.32693958282470703,
+    0.625
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  },
+  {
+   "name": "unchanged luna: era1 read 1 v era1 read 2",
+   "table": "29 stored",
+   "pairs": [
+    448,
+    59
+   ],
+   "change": [
+    0.8928571428571429,
+    0.0
+   ],
+   "interval_as_run": [
+    [
+     -1.5625,
+     3.3482142857142856
+    ],
+    [
+     -10.169491525423728,
+     10.169491525423728
+    ]
+   ],
+   "up_down": [
+    [
+     11,
+     7
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "sign_p": [
+    0.480682373046875,
+    1.0
+   ],
+   "level_run": 0.9875,
+   "level_final": 0.995,
+   "original": "hold",
+   "revised": "hold",
+   "final": "hold"
+  }
+ ]
+}

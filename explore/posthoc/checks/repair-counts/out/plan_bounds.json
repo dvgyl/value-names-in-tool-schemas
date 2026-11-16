@@ -1,0 +1,269 @@
+{
+ "post_hoc": true,
+ "ns01": {
+  "registered_mean": -0.29128,
+  "dialogues": 77,
+  "final_guesthouse": 11,
+  "mean_66_at_most_points": -17.315999999999995,
+  "mean_66_at_least_points": -50.64933333333333
+ },
+ "ns06_zero_loss_bound": {
+  "13": 0.20581666518655073,
+  "17": 0.16156611126074016,
+  "18": 0.1533175539572782
+ },
+ "ns08": {
+  "sonnet": {
+   "missing_first_answers": {
+    "NT": 0,
+    "H": 0,
+    "H stated": 0
+   },
+   "observed": {
+    "share_removed": 0.9,
+    "ratio": 0.2621452621452621,
+    "ratio_stored": 0.2621452621452621,
+    "brief_ratio": 1.7039442039442039,
+    "brief_ratio_stored": 1.7039442039442039
+   }
+  },
+  "haiku": {
+   "missing_first_answers": {
+    "NT": 0,
+    "H": 0,
+    "H stated": 0
+   },
+   "observed": {
+    "share_removed": 0.2727272727272727,
+    "ratio": 1.1796536796536796,
+    "ratio_stored": 1.1796536796536796,
+    "brief_ratio": 4.128787878787879,
+    "brief_ratio_stored": 4.128787878787879
+   }
+  },
+  "sol": {
+   "missing_first_answers": {
+    "NT": 0,
+    "H": 0,
+    "H stated": 0
+   },
+   "observed": {
+    "share_removed": 0.7164179104477612,
+    "ratio": 0.0,
+    "ratio_stored": 0.0,
+    "brief_ratio": 0.7372835497835498,
+    "brief_ratio_stored": 0.7372835497835498
+   }
+  },
+  "luna": {
+   "missing_first_answers": {
+    "NT": 0,
+    "H": 0,
+    "H stated": 0
+   },
+   "observed": {
+    "share_removed": 0.9696969696969697,
+    "ratio": 0.38707386363636365,
+    "ratio_stored": 0.38707386363636365,
+    "brief_ratio": 1.935369318181818,
+    "brief_ratio_stored": 1.935369318181818
+   }
+  },
+  "deepseek": {
+   "missing_first_answers": {
+    "NT": 0,
+    "H": 0,
+    "H stated": 0
+   },
+   "observed": {
+    "share_removed": 0.6551724137931034,
+    "ratio": 0.27939166097060836,
+    "ratio_stored": 0.27939166097060836,
+    "brief_ratio": 1.024436090225564,
+    "brief_ratio_stored": 1.024436090225564
+   }
+  },
+  "qwen": {
+   "missing_first_answers": {
+    "NT": 14,
+    "H": 6,
+    "H stated": 1
+   },
+   "observed": {
+    "share_removed": 0.8947368421052632,
+    "ratio": 0.4278810115595535,
+    "ratio_stored": 0.4278810115595535,
+    "brief_ratio": 2.2463753106876556,
+    "brief_ratio_stored": 2.2463753106876556
+   },
+   "worst": {
+    "share_removed": 0.5151515151515151,
+    "ratio": 0.5204354469060352
+   },
+   "best": {
+    "share_removed": 0.9393939393939394,
+    "ratio": 0.22832006702974447,
+    "brief_ratio": 1.1986803519061584
+   },
+   "rule_met_if": {
+    "missing_stated_losses_0": {
+     "removals_needed": 7,
+     "share_removed": 0.7272727272727273,
+     "ratio": 0.2949134199134199,
+     "ratio_one_fewer": 0.3077357425183512
+    },
+    "missing_stated_losses_1": {
+     "removals_needed": 13,
+     "share_removed": 0.9090909090909091,
+     "ratio": 0.2949134199134199,
+     "ratio_one_fewer": 0.3050828481862965
+    }
+   },
+   "relax_minus_verifier": {
+    "observed_points": -0.5025125628140703,
+    "worst_points": -7.042253521126761,
+    "best_points": 6.103286384976526
+   },
+   "soft_minus_verifier": {
+    "observed_points": 0.5025125628140703,
+    "worst_points": -6.103286384976526,
+    "best_points": 7.042253521126761
+   }
+  },
+  "gemma": {
+   "missing_first_answers": {
+    "NT": 1,
+    "H": 0,
+    "H stated": 0
+   },
+   "observed": {
+    "share_removed": 0.9210526315789473,
+    "ratio": 0.20127692562300212,
+    "ratio_stored": 0.20127692562300212,
+    "brief_ratio": 1.2579807851437632,
+    "brief_ratio_stored": 1.2579807851437632
+   },
+   "worst": {
+    "share_removed": 0.8974358974358975,
+    "ratio": 0.20222634508348794
+   },
+   "best": {
+    "share_removed": 0.9230769230769231,
+    "ratio": 0.19660894660894662,
+    "brief_ratio": 1.2288059163059164
+   },
+   "rule_met_if": {
+    "missing_stated_losses_0": {
+     "removals_needed": 0,
+     "share_removed": 0.8974358974358975,
+     "ratio": 0.20222634508348794,
+     "ratio_one_fewer": null
+    }
+   },
+   "relax_minus_verifier": {
+    "observed_points": 0.4716981132075472,
+    "worst_points": 0.0,
+    "best_points": 0.9389671361502347
+   },
+   "soft_minus_verifier": {
+    "observed_points": 0.4716981132075472,
+    "worst_points": 0.0,
+    "best_points": 0.9389671361502347
+   }
+  }
+ },
+ "ns09": {
+  "sonnet": {
+   "first_answers": 290,
+   "verifier_calls_read1": 76,
+   "calls_per_first_answer": 0.2620689655172414,
+   "verifier_calls_all_reads": 105,
+   "second_search_share_relax": 0.048275862068965614,
+   "second_search_share_soft": 0.27241379310344827,
+   "relax_any_on_H": {
+    "dialogues_changed": 1,
+    "stated_dialogues_changed": 1,
+    "answers_changed_show_guesthouse": 1
+   }
+  },
+  "haiku": {
+   "first_answers": 290,
+   "verifier_calls_read1": 48,
+   "calls_per_first_answer": 0.16551724137931034,
+   "verifier_calls_all_reads": 70,
+   "second_search_share_relax": 0.01379310344827589,
+   "second_search_share_soft": 0.26206896551724146,
+   "relax_any_on_H": {
+    "dialogues_changed": 0,
+    "stated_dialogues_changed": 0,
+    "answers_changed_show_guesthouse": 0
+   }
+  },
+  "sol": {
+   "first_answers": 290,
+   "verifier_calls_read1": 131,
+   "calls_per_first_answer": 0.4517241379310345,
+   "verifier_calls_all_reads": 181,
+   "second_search_share_relax": 0.14827586206896548,
+   "second_search_share_soft": 0.43448275862068964,
+   "relax_any_on_H": {
+    "dialogues_changed": 0,
+    "stated_dialogues_changed": 0,
+    "answers_changed_show_guesthouse": 0
+   }
+  },
+  "luna": {
+   "first_answers": 290,
+   "verifier_calls_read1": 79,
+   "calls_per_first_answer": 0.27241379310344827,
+   "verifier_calls_all_reads": 113,
+   "second_search_share_relax": 0.08275862068965512,
+   "second_search_share_soft": 0.33448275862068955,
+   "relax_any_on_H": {
+    "dialogues_changed": 2,
+    "stated_dialogues_changed": 1,
+    "answers_changed_show_guesthouse": 2
+   }
+  },
+  "deepseek": {
+   "first_answers": 290,
+   "verifier_calls_read1": 63,
+   "calls_per_first_answer": 0.21724137931034482,
+   "verifier_calls_all_reads": 85,
+   "second_search_share_relax": 0.06206896551724128,
+   "second_search_share_soft": 0.4172413793103449,
+   "relax_any_on_H": {
+    "dialogues_changed": 0,
+    "stated_dialogues_changed": 0,
+    "answers_changed_show_guesthouse": 0
+   }
+  },
+  "qwen": {
+   "first_answers": 268,
+   "verifier_calls_read1": 49,
+   "calls_per_first_answer": 0.1828358208955224,
+   "verifier_calls_all_reads": 67,
+   "second_search_share_relax": 0.05597014925373145,
+   "second_search_share_soft": 0.3320895522388059,
+   "relax_any_on_H": {
+    "dialogues_changed": 0,
+    "stated_dialogues_changed": 0,
+    "answers_changed_show_guesthouse": 0
+   }
+  },
+  "gemma": {
+   "first_answers": 289,
+   "verifier_calls_read1": 87,
+   "calls_per_first_answer": 0.30103806228373703,
+   "verifier_calls_all_reads": 123,
+   "second_search_share_relax": 0.08996539792387548,
+   "second_search_share_soft": 0.3494809688581315,
+   "relax_any_on_H": {
+    "dialogues_changed": 0,
+    "stated_dialogues_changed": 0,
+    "answers_changed_show_guesthouse": 0
+   }
+  }
+ },
+ "ns09_total_calls_all_reads": 744
+}
