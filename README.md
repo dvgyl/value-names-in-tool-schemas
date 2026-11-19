@@ -1,8 +1,8 @@
 # How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24270645.svg)](https://doi.org/10.5281/zenodo.24270645)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24270644.svg)](https://doi.org/10.5281/zenodo.24270644)
 
-Code, data and results for the preprint by Dev D. Goyal (Independent Researcher), 2026. Archived on Zenodo: https://doi.org/10.5281/zenodo.24270645.
+Code, data and results for the preprint by Dev D. Goyal (Independent Researcher), 2026. Archived on Zenodo: https://doi.org/10.5281/zenodo.24270644.
 
 - The preprint: `paper/preprint.pdf`.
 - Registration A, filed 2026-11-12: https://osf.io/bv8q9
@@ -473,7 +473,7 @@ The dialogue text of the corpus, which is in `examples/` and in some answers, co
 
 Please cite the preprint:
 
-> Dev D. Goyal. 2026. How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid. Preprint. Zenodo. https://doi.org/10.5281/zenodo.24270645
+> Dev D. Goyal. 2026. How an Everyday Word in a Tool Schema Changes AI Agents' Searches While Every Call Stays Valid. Preprint. Zenodo. https://doi.org/10.5281/zenodo.24270644
 
 ```bibtex
 @misc{goyal2026valuenames,
@@ -482,8 +482,8 @@ Please cite the preprint:
   year         = {2026},
   note         = {Preprint},
   publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.24270645},
-  url          = {https://doi.org/10.5281/zenodo.24270645}
+  doi          = {10.5281/zenodo.24270644},
+  url          = {https://doi.org/10.5281/zenodo.24270644}
 }
 ```
 
